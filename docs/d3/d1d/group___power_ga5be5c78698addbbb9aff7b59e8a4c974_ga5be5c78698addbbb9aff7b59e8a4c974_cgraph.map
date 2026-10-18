@@ -1,0 +1,59 @@
+<map id="calculate_max_brightness_for_power_mW" name="calculate_max_brightness_for_power_mW">
+<area shape="rect" id="Node000001" title="Determines the highest brightness level you can use and still stay under the specified power budget f..." alt="" coords="5,403,197,443"/>
+<area shape="rect" id="Node000002" href="$d1/d2a/power__mgt_8cpp_8hpp_aef46c64d09d08f251357005ab93492fb.html#aef46c64d09d08f251357005ab93492fb" title=" " alt="" coords="245,107,435,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,401,318,141,322,145,121,405"/>
+<area shape="rect" id="Node000005" href="$d3/d1d/group___power_ga15d5095d36ceee00d096e63623eacdf6.html#ga15d5095d36ceee00d096e63623eacdf6" title="Applies the configured power&#45;scaling response to a total power value." alt="" coords="491,5,693,31"/>
+<area shape="poly" id="edge33_Node000001_Node000005" title=" " alt="" coords="102,403,114,342,138,257,156,212,180,168,209,127,244,92,297,58,357,35,418,21,477,15,477,20,419,27,359,40,300,63,247,96,213,131,184,171,161,214,143,259,119,343,108,404"/>
+<area shape="rect" id="Node000007" href="$d3/d1d/group___power_ga6cfbb5884299e6ba453e6d228244a2ed.html#ga6cfbb5884299e6ba453e6d228244a2ed" title="dither_reserve_mW() for a controller that dithers, and zero for one that does not: a mode other than ..." alt="" coords="483,436,701,461"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="197,426,469,440,469,445,197,431"/>
+<area shape="rect" id="Node000016" href="$d3/d1d/group___power_gab0fe00ae87981daa125f0c9ec3812fae.html#gab0fe00ae87981daa125f0c9ec3812fae" title="One controller&#39;s demand at full brightness, in mW, including idle draw – the quantity the limiter sum..." alt="" coords="265,295,415,335"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="145,401,281,339,283,344,148,406"/>
+<area shape="rect" id="Node000020" href="$d1/d2a/power__mgt_8cpp_8hpp_ae2245147a795b67228a288a7f5f5bafb.html#ae2245147a795b67228a288a7f5f5bafb" title=" " alt="" coords="770,328,903,353"/>
+<area shape="poly" id="edge25_Node000001_Node000020" title=" " alt="" coords="197,416,427,401,564,387,701,369,774,354,775,359,702,374,565,392,428,406,198,422"/>
+<area shape="rect" id="Node000021" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a4d10d41f89ce46d06fd504c2019dc291.html#a4d10d41f89ce46d06fd504c2019dc291" title="Get the first LED controller in the linked list of controllers." alt="" coords="272,486,408,526"/>
+<area shape="poly" id="edge27_Node000001_Node000021" title=" " alt="" coords="161,441,269,479,267,484,159,446"/>
+<area shape="rect" id="Node000025" href="$d8/da0/classfl_1_1_c_l_e_d_controller_ad9abf4aa42ae3bb2876f82857514a7be.html#ad9abf4aa42ae3bb2876f82857514a7be" title="Get the next controller in the linked list after this one." alt="" coords="272,550,408,590"/>
+<area shape="poly" id="edge31_Node000001_Node000025" title=" " alt="" coords="125,442,178,488,211,513,247,536,260,542,258,547,244,540,208,518,175,492,121,446"/>
+<area shape="rect" id="Node000026" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a88f8d705bdf667aa546bb5bb55a78a00.html#a88f8d705bdf667aa546bb5bb55a78a00" title="How many LEDs does this controller manage?" alt="" coords="272,614,408,654"/>
+<area shape="poly" id="edge34_Node000001_Node000026" title=" " alt="" coords="116,442,166,519,203,562,247,600,261,608,258,613,244,604,200,566,162,522,111,445"/>
+<area shape="rect" id="Node000003" href="$d1/d2a/power__mgt_8cpp_8hpp_a881fdbf812bd88a44dfcda9ae14312fd.html#a881fdbf812bd88a44dfcda9ae14312fd" title=" " alt="" coords="766,116,907,141"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="398,104,482,91,592,84,640,85,702,91,784,109,783,115,701,97,640,90,592,89,483,97,399,109"/>
+<area shape="rect" id="Node000004" href="$d3/d1d/group___power_ga3202c54ac45d9164e61193067027596c.html#ga3202c54ac45d9164e61193067027596c" title="min(255, floor(255 * num / den)) for den &gt; 0, computed in 32&#45;bit arithmetic." alt="" coords="517,107,667,132"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="435,117,503,117,503,122,435,122"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="363,104,417,77,482,48,527,32,529,37,484,52,419,81,366,109"/>
+<area shape="rect" id="Node000006" href="$d1/d2a/power__mgt_8cpp_8hpp_afd49d3490996e2a098da2cbe3cdb4ab6.html#afd49d3490996e2a098da2cbe3cdb4ab6" title=" " alt="" coords="513,156,671,181"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="406,129,513,151,512,156,405,135"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="647,28,702,48,759,77,807,106,805,111,757,81,700,52,645,33"/>
+<area shape="rect" id="Node000008" href="$d3/d1d/group___power_ga33a15f1c11b553733d491c8563779098.html#ga33a15f1c11b553733d491c8563779098" title="The most BINARY_DITHER can add to one latched frame of leds, in mW (#4342, contract R4: &quot;quantization..." alt="" coords="762,427,911,452"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="701,442,748,440,748,445,702,447"/>
+<area shape="rect" id="Node000010" href="$d1/d2a/power__mgt_8cpp_8hpp_a7638b72faa72dcc8f561718efc04d9f0.html#a7638b72faa72dcc8f561718efc04d9f0" title="What one output code can cost at the steepest point of the response, in the 0&#45;255 scaled units calcul..." alt="" coords="988,476,1121,501"/>
+<area shape="poly" id="edge15_Node000007_Node000010" title=" " alt="" coords="702,457,750,462,974,480,974,486,749,467,701,463"/>
+<area shape="rect" id="Node000011" href="$d1/d2a/power__mgt_8cpp_8hpp_a8454821e9d1ebf7961d5fec218766136.html#a8454821e9d1ebf7961d5fec218766136" title=" " alt="" coords="749,377,924,403"/>
+<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="645,433,769,403,770,409,646,439"/>
+<area shape="rect" id="Node000009" href="$d1/d2a/power__mgt_8cpp_8hpp_a3dd4773c5555fac4b128f19243f307a7.html#a3dd4773c5555fac4b128f19243f307a7" title="Global RGB power model (initialized to WS2812 @ 5V defaults, linear response)" alt="" coords="999,328,1110,353"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="895,424,923,412,937,400,946,388,955,375,971,362,985,355,988,360,973,367,959,379,950,391,941,404,925,416,897,429"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="894,449,985,470,984,476,893,455"/>
+<area shape="poly" id="edge12_Node000011_Node000009" title=" " alt="" coords="893,375,985,354,986,359,894,380"/>
+<area shape="rect" id="Node000012" href="$d1/d2a/power__mgt_8cpp_8hpp_a952f184598f266fa133543690d2b60b5.html#a952f184598f266fa133543690d2b60b5" title=" " alt="" coords="972,427,1137,452"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="894,400,985,421,984,426,893,405"/>
+<area shape="rect" id="Node000015" href="$d1/d2a/power__mgt_8cpp_8hpp_af6bb76aef3cb5c05e9c3ad5541dc68ba.html#af6bb76aef3cb5c05e9c3ad5541dc68ba" title=" " alt="" coords="977,377,1133,403"/>
+<area shape="poly" id="edge14_Node000011_Node000015" title=" " alt="" coords="924,387,963,387,963,393,924,393"/>
+<area shape="rect" id="Node000017" href="$d9/d5f/group___power_model_ga59769f5bca8a5e78ad6989b00973366b.html#ga59769f5bca8a5e78ad6989b00973366b" title="Charge already&#45;solved physical output bytes in source emitter order: RGB, RGBW, or RGB + warm white +..." alt="" coords="513,270,671,310"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="415,305,499,297,500,302,415,311"/>
+<area shape="rect" id="Node000018" href="$d3/d1d/group___power_ga16d74a195554eafa8fa4f34e45c6251d.html#ga16d74a195554eafa8fa4f34e45c6251d" title="Determines how many milliwatts the current LED data would draw at max brightness (255)" alt="" coords="519,206,665,246"/>
+<area shape="poly" id="edge21_Node000016_Node000018" title=" " alt="" coords="387,293,482,255,506,247,508,253,484,261,389,298"/>
+<area shape="rect" id="Node000019" href="$d4/d36/namespacefl_a77e438ae9277ff68b05e14f2979785c5.html#a77e438ae9277ff68b05e14f2979785c5" title="The installed hooks." alt="" coords="511,335,673,360"/>
+<area shape="poly" id="edge24_Node000016_Node000019" title=" " alt="" coords="415,322,497,333,496,338,414,327"/>
+<area shape="poly" id="edge20_Node000017_Node000003" title=" " alt="" coords="670,270,700,256,735,232,767,203,815,150,819,154,770,207,738,236,703,260,672,274"/>
+<area shape="poly" id="edge19_Node000017_Node000009" title=" " alt="" coords="671,291,791,299,924,313,986,323,985,328,924,318,790,304,671,296"/>
+<area shape="poly" id="edge18_Node000017_Node000011" title=" " alt="" coords="672,306,703,320,718,331,727,342,737,352,751,362,767,370,765,375,748,367,733,356,723,345,714,335,700,324,670,311"/>
+<area shape="poly" id="edge23_Node000018_Node000003" title=" " alt="" coords="663,203,700,190,798,145,800,150,702,195,664,208"/>
+<area shape="poly" id="edge22_Node000018_Node000009" title=" " alt="" coords="666,233,788,254,925,286,1015,320,1013,325,923,291,787,259,665,238"/>
+<area shape="poly" id="edge26_Node000020_Node000009" title=" " alt="" coords="904,338,985,338,985,343,904,343"/>
+<area shape="rect" id="Node000022" href="$d8/da0/classfl_1_1_c_l_e_d_controller_ae0828dffacb43dca565ddf8145153ed0.html#ae0828dffacb43dca565ddf8145153ed0" title="Protected constructor with registration mode." alt="" coords="524,538,660,578"/>
+<area shape="poly" id="edge28_Node000021_Node000022" title=" " alt="" coords="409,517,511,539,510,544,408,523"/>
+<area shape="rect" id="Node000023" href="$d8/da0/classfl_1_1_c_l_e_d_controller_af0c5f56a02ad4e919df8181d3b267390.html#af0c5f56a02ad4e919df8181d3b267390" title="Add this controller to the linked list." alt="" coords="769,538,905,578"/>
+<area shape="poly" id="edge29_Node000022_Node000023" title=" " alt="" coords="660,563,755,564,755,569,660,569"/>
+<area shape="poly" id="edge30_Node000023_Node000022" title=" " alt="" coords="768,553,673,552,673,547,768,547"/>
+<area shape="poly" id="edge32_Node000025_Node000022" title=" " alt="" coords="408,564,510,559,510,565,408,569"/>
+</map>

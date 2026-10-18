@@ -6,5 +6,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="fl::asset_detail::AssetEntry",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dde/namespacefl_1_1asset__detail.html#da/dfc/structfl_1_1asset__detail_1_1_asset_entry",tooltip="Process-local registry of (asset_path → resolved URL) pairs."];
+  Node0 [id="Node000000",label="fl::asset_ref",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/dac/classfl_1_1asset__ref.html",tooltip="Opaque handle to a sketch-local asset."];
 }

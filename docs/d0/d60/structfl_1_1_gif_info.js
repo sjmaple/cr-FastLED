@@ -1,7 +1,7 @@
 var structfl_1_1_gif_info =
 [
     [ "GifInfo", "d0/d60/structfl_1_1_gif_info_a416600c704eda5e59d7513295801d19b.html#a416600c704eda5e59d7513295801d19b", null ],
-    [ "GifInfo", "d0/d60/structfl_1_1_gif_info_a5b1a59af9305154590196160cc0f0e8a.html#a5b1a59af9305154590196160cc0f0e8a", null ],
+    [ "GifInfo", "d0/d60/structfl_1_1_gif_info_abab413ef0d027decaf8190572da6bd5b.html#abab413ef0d027decaf8190572da6bd5b", null ],
     [ "bitsPerPixel", "d0/d60/structfl_1_1_gif_info_a754d5fbedd676cd058004b60cd76298d.html#a754d5fbedd676cd058004b60cd76298d", null ],
     [ "frameCount", "d0/d60/structfl_1_1_gif_info_aa1f1cc790c57d2323cbe77331992ad0f.html#aa1f1cc790c57d2323cbe77331992ad0f", null ],
     [ "height", "d0/d60/structfl_1_1_gif_info_a1847adcb96e70e32840a38da965cf175.html#a1847adcb96e70e32840a38da965cf175", null ],

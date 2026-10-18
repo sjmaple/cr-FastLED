@@ -20,5 +20,8 @@ digraph "fl::Gamma8::getOrCreate"
   Node6 [id="Node000006",label="fl::weak_ptr::shared_ptr",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/dd6/classfl_1_1weak__ptr_ab2104fa6e839672da3c30400e8325e52.html#ab2104fa6e839672da3c30400e8325e52",tooltip=" "];
   Node6 -> Node6 [id="edge7_Node000006_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node7 [id="edge8_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="fl::make_shared",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af",tooltip=" "];
+  Node7 [id="Node000007",label="fl::adl_barrier::make\l_shared",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c",tooltip=" "];
+  Node7 -> Node8 [id="edge9_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="fl::adl_barrier::forward",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_ac53ccff21210ad77549fafb987263051.html#ac53ccff21210ad77549fafb987263051",tooltip=" "];
+  Node7 -> Node7 [id="edge10_Node000007_Node000007",color="steelblue1",style="solid",tooltip=" "];
 }

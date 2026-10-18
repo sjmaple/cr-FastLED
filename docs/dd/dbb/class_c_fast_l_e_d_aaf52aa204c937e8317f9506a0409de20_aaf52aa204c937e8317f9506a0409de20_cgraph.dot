@@ -15,4 +15,5 @@ digraph "CFastLED::setRgbwColorimetricProfile"
   Node4 [id="Node000004",label="fl::FL_ALIGN_AS_T",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a1e67c0c24ebcd98fcf8554753d1639a6.html#a1e67c0c24ebcd98fcf8554753d1639a6",tooltip=" "];
   Node2 -> Node5 [id="edge4_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
   Node5 [id="Node000005",label="fl::prepare_rgbw_colorimetric",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a56f31e1bfb8fb5b90de25aff94b906d8.html#a56f31e1bfb8fb5b90de25aff94b906d8",tooltip=" "];
+  Node1 -> Node1 [id="edge5_Node000001_Node000001",color="steelblue1",style="solid",tooltip=" "];
 }

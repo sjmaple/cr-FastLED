@@ -36,7 +36,7 @@ digraph "fl::ColorManagedPixelSource::loadAndScaleRGBW"
   Node1 -> Node15 [id="edge16_Node000001_Node000015",color="steelblue1",style="solid",tooltip=" "];
   Node15 [id="Node000015",label="fl::ColorManagedPixelSource\l::quantizeDithered",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/da5/classfl_1_1_color_managed_pixel_source_af2528805da5b224482ffea7566031d7f.html#af2528805da5b224482ffea7566031d7f",tooltip="quantize with the pipeline's temporal dither (P8, C5): floor(x) or floor(x) + 1 of the exact code x,..."];
   Node1 -> Node16 [id="edge17_Node000001_Node000016",color="steelblue1",style="solid",tooltip=" "];
-  Node16 [id="Node000016",label="fl::rgbw_partial_reorder",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a0cca52aaf53d5949a14512e8102e5bd9.html#a0cca52aaf53d5949a14512e8102e5bd9",tooltip=" "];
+  Node16 [id="Node000016",label="fl::rgbw_partial_reorder",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a4ab7970bd150284b7202696df8e33f45.html#a4ab7970bd150284b7202696df8e33f45",tooltip=" "];
   Node1 -> Node17 [id="edge18_Node000001_Node000017",color="steelblue1",style="solid",tooltip=" "];
   Node17 [id="Node000017",label="fl::ColorManagedPixelSource\l::temporalDitherEnabled",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/da5/classfl_1_1_color_managed_pixel_source_a5b98ab9b6112de877383a866568b6109.html#a5b98ab9b6112de877383a866568b6109",tooltip="True when the channel asked for dither this frame."];
 }

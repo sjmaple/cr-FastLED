@@ -1,0 +1,19 @@
+digraph "fl::audio::detector::Backbeat::Backbeat"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="fl::audio::detector\l::Backbeat::Backbeat",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Construct with shared Beat."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::audio::detector\l::Backbeat::Backbeat",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/dd1/classfl_1_1audio_1_1detector_1_1_backbeat_af42665c5b070f2c41efa170375f54cfc.html#af42665c5b070f2c41efa170375f54cfc",tooltip="Construct with standalone Beat."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::audio::detector\l::Backbeat::Backbeat",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/dd1/classfl_1_1audio_1_1detector_1_1_backbeat_ab3a64ebc60e875865b689f2b4af043b4.html#ab3a64ebc60e875865b689f2b4af043b4",tooltip="Construct with shared Beat and Downbeat."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::audio::detector\l::Backbeat::update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/dd1/classfl_1_1audio_1_1detector_1_1_backbeat_aa9c0c745d50e22efc5c43a1e38b8b252.html#aa9c0c745d50e22efc5c43a1e38b8b252",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::audio::detector\l::Backbeat::~Backbeat",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/dd1/classfl_1_1audio_1_1detector_1_1_backbeat_a6de22a7698960d169db012977effe6a2.html#a6de22a7698960d169db012977effe6a2",tooltip=" "];
+  Node4 -> Node4 [id="edge5_Node000004_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

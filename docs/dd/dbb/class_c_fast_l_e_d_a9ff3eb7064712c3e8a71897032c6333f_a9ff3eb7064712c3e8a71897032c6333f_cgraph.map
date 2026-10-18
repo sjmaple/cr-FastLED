@@ -1,0 +1,44 @@
+<map id="CFastLED::addLedsSpiChannel" name="CFastLED::addLedsSpiChannel">
+<area shape="rect" id="Node000001" title="Add an SPI based CLEDController via Channel API (default RGB order and speed)." alt="" coords="5,396,223,421"/>
+<area shape="rect" id="Node000002" href="$dd/dbb/class_c_fast_l_e_d_a82bdda9716f3150b2c6e902b262cc784.html#a82bdda9716f3150b2c6e902b262cc784" title=" " alt="" coords="271,199,492,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,394,350,230,354,234,134,398"/>
+<area shape="rect" id="Node000013" href="$d0/d69/structfl_1_1_spi_encoder_a70ab533d731ab69cc043b02be20473c8.html#a70ab533d731ab69cc043b02be20473c8" title="Look up the default SpiEncoder for a given chipset." alt="" coords="287,417,476,457"/>
+<area shape="poly" id="edge5_Node000001_Node000013" title=" " alt="" coords="223,417,273,423,273,428,223,423"/>
+<area shape="rect" id="Node000003" href="$dd/dbb/class_c_fast_l_e_d_ad7d7051d7b3e2d9dbd6a5c09f2125d80.html#ad7d7051d7b3e2d9dbd6a5c09f2125d80" title="Add a CLEDController instance to the world." alt="" coords="561,29,705,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="391,197,449,134,491,97,539,65,556,57,559,62,541,70,495,101,453,138,395,200"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="601,31,594,21,597,11,611,5,633,3,660,6,672,15,668,19,658,11,633,8,612,10,601,15,599,20,605,28"/>
+<area shape="rect" id="Node000004" href="$dd/dbb/class_c_fast_l_e_d_a1ee7dba71ce7a3ae65c1e1852cedb2f3.html#a1ee7dba71ce7a3ae65c1e1852cedb2f3" title="Add a Channel&#45;based LED controller (from ChannelPtr)" alt="" coords="775,29,889,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="705,39,761,39,761,45,705,45"/>
+<area shape="rect" id="Node000014" href="$d0/d69/structfl_1_1_spi_encoder_a7a025094f11fb213c7b3054075f7a8a1.html#a7a025094f11fb213c7b3054075f7a8a1" title="Create APA102 encoder configuration." alt="" coords="550,79,717,104"/>
+<area shape="poly" id="edge6_Node000013_Node000014" title=" " alt="" coords="392,415,437,337,490,236,501,201,507,171,516,143,538,115,546,109,549,113,542,119,520,146,512,172,506,202,494,238,442,340,397,418"/>
+<area shape="rect" id="Node000015" href="$d0/d69/structfl_1_1_spi_encoder_a8fc549c0a4f94334e1b25fcbae940226.html#a8fc549c0a4f94334e1b25fcbae940226" title="Create APA102HD encoder configuration (per&#45;LED brightness via HD gamma)" alt="" coords="540,128,727,153"/>
+<area shape="poly" id="edge7_Node000013_Node000015" title=" " alt="" coords="391,415,468,274,510,203,538,164,549,157,552,161,542,168,514,206,472,277,396,418"/>
+<area shape="rect" id="Node000016" href="$d0/d69/structfl_1_1_spi_encoder_ac8e0f0d110fa0edddbc14d58b959b3ef.html#ac8e0f0d110fa0edddbc14d58b959b3ef" title="Create DOTSTAR encoder configuration (alias for APA102)" alt="" coords="551,177,715,203"/>
+<area shape="poly" id="edge8_Node000013_Node000016" title=" " alt="" coords="389,415,410,373,442,318,485,262,511,236,538,213,550,206,553,211,542,218,514,240,489,265,446,321,414,376,394,418"/>
+<area shape="rect" id="Node000017" href="$d0/d69/structfl_1_1_spi_encoder_a6845d32272fa83226f38ae55f8853b4a.html#a6845d32272fa83226f38ae55f8853b4a" title="Create DOTSTARHD encoder configuration (alias for APA102HD)" alt="" coords="541,227,725,252"/>
+<area shape="poly" id="edge9_Node000013_Node000017" title=" " alt="" coords="393,415,450,340,491,298,539,262,554,254,556,259,541,267,495,302,454,344,398,418"/>
+<area shape="rect" id="Node000018" href="$d0/d69/structfl_1_1_spi_encoder_ae060d9c1da640440532aa4d55ef12a60.html#ae060d9c1da640440532aa4d55ef12a60" title="Create HD107 encoder configuration." alt="" coords="554,276,713,301"/>
+<area shape="poly" id="edge10_Node000013_Node000018" title=" " alt="" coords="401,414,460,363,498,335,539,312,558,303,560,308,541,316,501,340,463,367,405,418"/>
+<area shape="rect" id="Node000019" href="$d0/d69/structfl_1_1_spi_encoder_a901555767195c09bb6830c76cb80afad.html#a901555767195c09bb6830c76cb80afad" title="Create HD107HD encoder configuration." alt="" coords="544,325,723,351"/>
+<area shape="poly" id="edge11_Node000013_Node000019" title=" " alt="" coords="420,414,476,387,539,361,566,352,568,357,541,366,478,392,422,419"/>
+<area shape="rect" id="Node000020" href="$d0/d69/structfl_1_1_spi_encoder_a73958fd7080dd2e5439354cc40791811.html#a73958fd7080dd2e5439354cc40791811" title="Create HD108 encoder configuration." alt="" coords="554,375,713,400"/>
+<area shape="poly" id="edge12_Node000013_Node000020" title=" " alt="" coords="476,416,554,400,555,405,477,421"/>
+<area shape="rect" id="Node000021" href="$d0/d69/structfl_1_1_spi_encoder_aaa4d77146e4d8dd602e9141d2f76c10d.html#aaa4d77146e4d8dd602e9141d2f76c10d" title="Create LPD6803 encoder configuration." alt="" coords="548,424,719,449"/>
+<area shape="poly" id="edge13_Node000013_Node000021" title=" " alt="" coords="476,434,534,434,534,439,476,439"/>
+<area shape="rect" id="Node000022" href="$d0/d69/structfl_1_1_spi_encoder_ac042c1e3dc29b1238bc16a9340d42b16.html#ac042c1e3dc29b1238bc16a9340d42b16" title="Create LPD8806 encoder configuration." alt="" coords="548,473,719,499"/>
+<area shape="poly" id="edge14_Node000013_Node000022" title=" " alt="" coords="477,453,555,468,554,473,476,458"/>
+<area shape="rect" id="Node000023" href="$d0/d69/structfl_1_1_spi_encoder_a383b0c8db4769cb455a2e3caff0164a5.html#a383b0c8db4769cb455a2e3caff0164a5" title="Create MY9221 encoder configuration." alt="" coords="548,523,719,548"/>
+<area shape="poly" id="edge15_Node000013_Node000023" title=" " alt="" coords="421,454,477,482,541,509,564,516,562,521,539,514,475,487,419,459"/>
+<area shape="rect" id="Node000024" href="$d0/d69/structfl_1_1_spi_encoder_a8f9bd45633eecd7f5f51a81deaeab8a0.html#a8f9bd45633eecd7f5f51a81deaeab8a0" title="Create P9813 encoder configuration." alt="" coords="554,572,713,597"/>
+<area shape="poly" id="edge16_Node000013_Node000024" title=" " alt="" coords="404,455,463,507,501,535,541,558,557,565,555,570,539,563,498,539,460,511,401,459"/>
+<area shape="rect" id="Node000025" href="$d0/d69/structfl_1_1_spi_encoder_a7aa4236a8221e07c1d3d21d0e8df6bcb.html#a7aa4236a8221e07c1d3d21d0e8df6bcb" title="Create SK9822 encoder configuration." alt="" coords="551,621,716,647"/>
+<area shape="poly" id="edge17_Node000013_Node000025" title=" " alt="" coords="397,455,421,489,454,530,494,572,541,608,553,614,551,619,539,612,491,576,450,534,416,492,393,458"/>
+<area shape="rect" id="Node000026" href="$d0/d69/structfl_1_1_spi_encoder_af34e0e3ca679bc9627284517957387a6.html#af34e0e3ca679bc9627284517957387a6" title="Create SK9822HD encoder configuration." alt="" coords="541,671,726,696"/>
+<area shape="poly" id="edge18_Node000013_Node000026" title=" " alt="" coords="393,456,414,498,446,553,489,610,514,635,542,657,551,663,548,667,538,662,510,639,485,613,442,556,409,501,389,458"/>
+<area shape="rect" id="Node000027" href="$d0/d69/structfl_1_1_spi_encoder_a19e51baa498fa62074f01b328ff4c2d2.html#a19e51baa498fa62074f01b328ff4c2d2" title="Create SM16716 encoder configuration." alt="" coords="544,720,723,745"/>
+<area shape="poly" id="edge19_Node000013_Node000027" title=" " alt="" coords="391,456,408,507,439,575,483,646,510,679,542,707,549,712,546,716,538,711,507,682,479,649,434,577,403,509,386,458"/>
+<area shape="rect" id="Node000028" href="$d0/d69/structfl_1_1_spi_encoder_ae999b0bb429cb88f341edcb27f34c619.html#ae999b0bb429cb88f341edcb27f34c619" title="Create WS2801 encoder configuration." alt="" coords="549,769,717,795"/>
+<area shape="poly" id="edge20_Node000013_Node000028" title=" " alt="" coords="389,456,404,516,432,597,453,640,477,683,507,722,542,756,548,761,545,765,538,760,503,726,473,686,448,643,427,599,399,517,384,458"/>
+<area shape="rect" id="Node000029" href="$d0/d69/structfl_1_1_spi_encoder_af49ab084fce419e164ce9fdd39551c2e.html#af49ab084fce419e164ce9fdd39551c2e" title="Create WS2803 encoder configuration." alt="" coords="549,819,717,844"/>
+<area shape="poly" id="edge21_Node000013_Node000029" title=" " alt="" coords="388,456,400,524,426,618,446,669,472,719,503,765,542,805,547,810,544,814,538,809,499,769,467,722,441,671,421,620,394,525,382,457"/>
+</map>

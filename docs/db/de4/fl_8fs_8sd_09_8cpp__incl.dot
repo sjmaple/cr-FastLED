@@ -19,14 +19,14 @@ digraph "fl/build/fl.fs.sd+.cpp"
   Node6 -> Node7 [id="edge6_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
   Node7 [id="Node000007",label="fl/fs/fs.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d26/fs_8h.html",tooltip=" "];
   Node6 -> Node4 [id="edge7_Node000006_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node6 -> Node97 [id="edge8_Node000006_Node000097",color="steelblue1",style="solid",tooltip=" "];
-  Node97 [id="Node000097",label="fl/log/log.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d7/d7f/log_8h.html",tooltip="Centralized logging categories for FastLED hardware interfaces and subsystems."];
-  Node6 -> Node22 [id="edge9_Node000006_Node000022",color="steelblue1",style="solid",tooltip=" "];
-  Node22 [id="Node000022",label="platforms/is_platform.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
-  Node5 -> Node104 [id="edge10_Node000005_Node000104",color="steelblue1",style="solid",tooltip=" "];
-  Node104 [id="Node000104",label="fl/fs/sd/fs_sdcard\l_arduino.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/df3/fs__sdcard__arduino_8cpp_8hpp.html",tooltip=" "];
-  Node104 -> Node4 [id="edge11_Node000104_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node104 -> Node105 [id="edge12_Node000104_Node000105",color="steelblue1",style="solid",tooltip=" "];
-  Node105 [id="Node000105",label="fl/fs/sd/fs_sdcard\l_arduino.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/dcd/fs__sdcard__arduino_8h.html",tooltip=" "];
-  Node104 -> Node22 [id="edge13_Node000104_Node000022",color="steelblue1",style="solid",tooltip=" "];
+  Node6 -> Node98 [id="edge8_Node000006_Node000098",color="steelblue1",style="solid",tooltip=" "];
+  Node98 [id="Node000098",label="fl/log/log.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d7/d7f/log_8h.html",tooltip="Centralized logging categories for FastLED hardware interfaces and subsystems."];
+  Node6 -> Node16 [id="edge9_Node000006_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="platforms/is_platform.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node5 -> Node105 [id="edge10_Node000005_Node000105",color="steelblue1",style="solid",tooltip=" "];
+  Node105 [id="Node000105",label="fl/fs/sd/fs_sdcard\l_arduino.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/df3/fs__sdcard__arduino_8cpp_8hpp.html",tooltip=" "];
+  Node105 -> Node4 [id="edge11_Node000105_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node105 -> Node106 [id="edge12_Node000105_Node000106",color="steelblue1",style="solid",tooltip=" "];
+  Node106 [id="Node000106",label="fl/fs/sd/fs_sdcard\l_arduino.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/dcd/fs__sdcard__arduino_8h.html",tooltip=" "];
+  Node105 -> Node16 [id="edge13_Node000105_Node000016",color="steelblue1",style="solid",tooltip=" "];
 }

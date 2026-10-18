@@ -1,0 +1,34 @@
+digraph "PixelController::loadAndScaleRGBWW"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="PixelController::loadAnd\lScaleRGBWW",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Load + scale a single pixel to 5-channel RGBWW (issue #2558)."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="PixelController::loadAnd\lScale0",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_ac781d584232fa20252e834c6443b01df.html#ac781d584232fa20252e834c6443b01df",tooltip="non-template alias of loadAndScale<0>()"];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="PixelController::loadAnd\lScale",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_a28eb1755a900be9b4a008a8f8672f51e.html#a28eb1755a900be9b4a008a8f8672f51e",tooltip="Complete pipeline: load â†’ dither â†’ scale (THE MAGIC HAPPENS HERE!) Order is critical: pixel + dit..."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="PixelController::PixelController",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/dee/struct_pixel_controller_a15c94e0bc05c85f6e4a790abea8f0050.html#a15c94e0bc05c85f6e4a790abea8f0050",tooltip="Copy constructor."];
+  Node4 -> Node4 [id="edge4_Node000004_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="PixelController::loadAnd\lScale1",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_a4cdddff28824a4128241865201b079f3.html#a4cdddff28824a4128241865201b079f3",tooltip="non-template alias of loadAndScale<1>()"];
+  Node6 -> Node3 [id="edge6_Node000006_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node7 [id="edge7_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="PixelController::loadAnd\lScale2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_abfe5d7e4f55da80cc41d6b6bf75c1d7b.html#abfe5d7e4f55da80cc41d6b6bf75c1d7b",tooltip="non-template alias of loadAndScale<2>()"];
+  Node7 -> Node3 [id="edge8_Node000007_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node8 [id="edge9_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="PixelController::loadAnd\lScaleRGBWWUnordered",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_aacf4590eedb79bdcf64e8fb03872bf3f.html#aacf4590eedb79bdcf64e8fb03872bf3f",tooltip="loadAndScaleRGBWW before its wire reorder. See loadAndScaleRGBWUnordered."];
+  Node8 -> Node9 [id="edge10_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="PixelController::loadAnd\lScaleChannel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_a51a13a6ff889168738e41eb793daf5c8.html#a51a13a6ff889168738e41eb793daf5c8",tooltip="One source channel, loaded, dithered and scaled – loadAndScale<SLOT> with RO(SLOT) replaced by a runt..."];
+  Node9 -> Node10 [id="edge11_Node000009_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="fl::BinaryDither::apply",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d6c/structfl_1_1_binary_dither_a855eeda5bd1b617b06acd895eeba5b03.html#a855eeda5bd1b617b06acd895eeba5b03",tooltip="Add the offset to a source byte, before scaling. Black is never lifted."];
+  Node8 -> Node11 [id="edge12_Node000008_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="fl::rgb_2_rgbww",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ad4f9f0e8a803c639d39f18fb703dfbed.html#ad4f9f0e8a803c639d39f18fb703dfbed",tooltip=" "];
+  Node11 -> Node11 [id="edge13_Node000011_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node12 [id="edge14_Node000001_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="fl::rgbww_partial_reorder",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a0ada914bf8a8dbf0fc5a374efccb6007.html#a0ada914bf8a8dbf0fc5a374efccb6007",tooltip="Dispatch RGB->RGBWW for a given mode."];
+}

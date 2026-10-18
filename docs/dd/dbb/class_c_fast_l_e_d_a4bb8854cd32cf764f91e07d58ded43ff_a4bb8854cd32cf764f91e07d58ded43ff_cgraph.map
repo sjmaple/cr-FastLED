@@ -1,0 +1,38 @@
+<map id="CFastLED::clear" name="CFastLED::clear">
+<area shape="rect" id="Node000001" title="Clear/reset FastLED state based on the provided flags." alt="" coords="5,219,128,245"/>
+<area shape="rect" id="Node000002" href="$d4/d36/namespacefl_a1cc01267f6bdd7251959883412b11bbb.html#a1cc01267f6bdd7251959883412b11bbb" title="Get the global ChannelManager singleton instance." alt="" coords="177,91,323,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,217,218,122,221,127,88,221"/>
+<area shape="rect" id="Node000011" href="$dd/dbb/class_c_fast_l_e_d_a80d8b10e1cd71e49a08cb2598920ec43.html#a80d8b10e1cd71e49a08cb2598920ec43" title="stored ChannelPtrs to keep them alive" alt="" coords="417,169,565,194"/>
+<area shape="poly" id="edge7_Node000001_Node000011" title=" " alt="" coords="115,217,176,204,295,190,404,182,404,187,295,195,176,209,116,222"/>
+<area shape="rect" id="Node000012" href="$d2/d6b/classfl_1_1_channel_manager_a743b1256280a8a80b7d47d644088464e.html#a743b1256280a8a80b7d47d644088464e" title="Remove all drivers from the manager." alt="" coords="176,336,324,376"/>
+<area shape="poly" id="edge8_Node000001_Node000012" title=" " alt="" coords="83,243,124,280,177,320,189,327,187,332,175,325,120,284,79,247"/>
+<area shape="rect" id="Node000027" href="$dd/dbb/class_c_fast_l_e_d_a552073caa67c0d3bda06dbdbeaab1982.html#a552073caa67c0d3bda06dbdbeaab1982" title="Remove a channel from the LED controller list." alt="" coords="180,219,320,245"/>
+<area shape="poly" id="edge12_Node000001_Node000027" title=" " alt="" coords="128,229,166,229,166,235,128,235"/>
+<area shape="rect" id="Node000035" href="$d2/d6b/classfl_1_1_channel_manager_a3b733c7354a68ef0935614419e77688b.html#a3b733c7354a68ef0935614419e77688b" title="Reset bus manager state, clearing all enqueued and transmitting channels." alt="" coords="176,271,324,311"/>
+<area shape="poly" id="edge19_Node000001_Node000035" title=" " alt="" coords="108,242,174,264,173,269,106,247"/>
+<area shape="rect" id="Node000003" href="$d2/d6b/classfl_1_1_channel_manager_a76013c6913045962ce5bb8d227e760b3.html#a76013c6913045962ce5bb8d227e760b3" title="Get the global singleton instance." alt="" coords="417,57,565,97"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="323,93,403,84,404,90,324,99"/>
+<area shape="rect" id="Node000004" href="$d2/d6b/classfl_1_1_channel_manager_a3f0e1823366151d87c97be78f4273755.html#a3f0e1823366151d87c97be78f4273755" title="Constructor." alt="" coords="877,29,1025,69"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="565,58,658,43,744,39,829,43,864,43,864,49,829,48,744,45,659,48,566,63"/>
+<area shape="rect" id="Node000008" href="$d2/d6b/classfl_1_1_channel_manager_a58d12a4cf75bb181c7093141240bb94b.html#a58d12a4cf75bb181c7093141240bb94b" title="Get the singleton WITHOUT registering platform default drivers." alt="" coords="670,57,818,97"/>
+<area shape="poly" id="edge5_Node000003_Node000008" title=" " alt="" coords="566,75,656,75,656,80,566,80"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="913,30,910,20,917,11,930,5,951,3,975,6,989,13,986,18,974,11,951,8,932,10,920,15,916,21,918,28"/>
+<area shape="poly" id="edge6_Node000008_Node000004" title=" " alt="" coords="818,65,864,58,864,64,818,70"/>
+<area shape="rect" id="Node000013" href="$d2/d6b/classfl_1_1_channel_manager_af3041b5d8b20269dc1909667d8714de6.html#af3041b5d8b20269dc1909667d8714de6" title="Wait for all drivers to become READY." alt="" coords="417,337,565,377"/>
+<area shape="poly" id="edge9_Node000012_Node000013" title=" " alt="" coords="324,354,404,354,404,360,324,359"/>
+<area shape="rect" id="Node000014" href="$d2/d6b/classfl_1_1_channel_manager_a677e3e6da29b0e3ac8ba096e51c3be16.html#a677e3e6da29b0e3ac8ba096e51c3be16" title="Poll all registered drivers and return aggregate state." alt="" coords="670,401,818,441"/>
+<area shape="poly" id="edge10_Node000013_Node000014" title=" " alt="" coords="566,373,657,397,656,402,565,379"/>
+<area shape="rect" id="Node000016" href="$d2/d6b/classfl_1_1_channel_manager_ad2dad2fdb0279c8f211fd524025e14f0.html#ad2dad2fdb0279c8f211fd524025e14f0" title="Wait until a condition is met, with check&#45;pump&#45;delay logic." alt="" coords="670,337,818,377"/>
+<area shape="poly" id="edge11_Node000013_Node000016" title=" " alt="" coords="566,355,656,355,656,360,566,360"/>
+<area shape="poly" id="edge13_Node000027_Node000011" title=" " alt="" coords="311,217,417,194,418,199,312,222"/>
+<area shape="rect" id="Node000028" href="$d5/d8b/classfl_1_1_channel_a6af735d7d472cad55d003661ed8d6d0c.html#a6af735d7d472cad55d003661ed8d6d0c" title="Remove this channel from the global controller draw list." alt="" coords="372,219,611,245"/>
+<area shape="poly" id="edge14_Node000027_Node000028" title=" " alt="" coords="320,229,358,229,358,235,320,235"/>
+<area shape="rect" id="Node000029" href="$da/db7/structfl_1_1_channel_events_a236247170dd1280410a535a0777e1abe.html#a236247170dd1280410a535a0777e1abe" title=" " alt="" coords="673,209,815,249"/>
+<area shape="poly" id="edge15_Node000028_Node000029" title=" " alt="" coords="611,228,659,228,659,233,611,233"/>
+<area shape="rect" id="Node000030" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a346ffe73124af2abf1ccf82a96daee72.html#a346ffe73124af2abf1ccf82a96daee72" title="Check if this controller is in the linked list." alt="" coords="676,273,812,313"/>
+<area shape="poly" id="edge16_Node000028_Node000030" title=" " alt="" coords="545,242,663,271,662,276,544,247"/>
+<area shape="rect" id="Node000033" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a94b61a1117536f4ca62d34397623ed45.html#a94b61a1117536f4ca62d34397623ed45" title="Remove this controller from the draw list." alt="" coords="659,145,829,185"/>
+<area shape="poly" id="edge17_Node000028_Node000033" title=" " alt="" coords="552,217,610,203,666,187,667,192,611,208,554,222"/>
+<area shape="poly" id="edge18_Node000033_Node000033" title=" " alt="" coords="705,146,703,136,709,127,723,121,744,119,768,122,781,129,779,134,766,127,744,124,724,126,713,131,708,137,710,144"/>
+<area shape="poly" id="edge20_Node000035_Node000013" title=" " alt="" coords="324,308,406,331,404,336,322,313"/>
+</map>

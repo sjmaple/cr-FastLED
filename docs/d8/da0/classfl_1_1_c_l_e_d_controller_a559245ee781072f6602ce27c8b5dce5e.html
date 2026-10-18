@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -124,30 +124,35 @@ $(function(){initNavTree('d8/da0/classfl_1_1_c_l_e_d_controller_a559245ee781072f
 </div><div class="memdoc">
 
 <p>Configure this channel for 5-channel RGBWW (RGB + warm-W + cool-W) output. </p>
-<p>See issue #2558. Driver-side support arrives in later phases of the RGBWW work; today this just sets the configuration alternative. Symmetric with setRgbw: passing <a class="el" href="../../d3/d33/structfl_1_1_rgbww_invalid_a14535e5d62b94f0bea2a7503a9c525ef.html#a14535e5d62b94f0bea2a7503a9c525ef">RgbwwInvalid::value()</a> clears the channel to plain RGB rather than storing an inactive <a class="el" href="../../d4/df9/structfl_1_1_rgbww.html" title="Per-strip RGBWW configuration.">Rgbww</a>. </p>
+<p>See issue #2558. Driver-side support arrives in later phases of the RGBWW work; today this just sets the configuration alternative. Symmetric with setRgbw: passing <a class="el" href="../../d3/d33/structfl_1_1_rgbww_invalid_a14535e5d62b94f0bea2a7503a9c525ef.html#a14535e5d62b94f0bea2a7503a9c525ef">RgbwwInvalid::value()</a> clears the channel to plain RGB rather than storing an inactive <a class="el" href="../../d4/df9/structfl_1_1_rgbww.html">Rgbww</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00149">149</a> of file <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html">cled_controller.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  149</span>                                                                                  {</div>
-<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a95ede2f374809004d76c246f747d056b.html#a95ede2f374809004d76c246f747d056b">rejectFixedWhiteChannelChange</a>(<span class="stringliteral">&quot;setRgbww()&quot;</span>)) {</div>
-<div class="line"><span class="lineno">  151</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  152</span>        }</div>
-<div class="line"><span class="lineno">  153</span>        <span class="keywordflow">if</span> (!arg.active()) {</div>
-<div class="line"><span class="lineno">  154</span>            <a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ab755095ff9f9a11b38650c0726537386.html#ab755095ff9f9a11b38650c0726537386">mSettings</a>.mWhiteCfg.reset();</div>
-<div class="line"><span class="lineno">  155</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  156</span>            <a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ab755095ff9f9a11b38650c0726537386.html#ab755095ff9f9a11b38650c0726537386">mSettings</a>.mWhiteCfg = arg;</div>
-<div class="line"><span class="lineno">  157</span>        }</div>
-<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  159</span>    }</div>
-<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_a95ede2f374809004d76c246f747d056b_html_a95ede2f374809004d76c246f747d056b"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a95ede2f374809004d76c246f747d056b.html#a95ede2f374809004d76c246f747d056b">fl::CLEDController::rejectFixedWhiteChannelChange</a></div><div class="ttdeci">bool rejectFixedWhiteChannelChange(const char *operation) const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00090">cled_controller.h:90</a></div></div>
-<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_ab755095ff9f9a11b38650c0726537386_html_ab755095ff9f9a11b38650c0726537386"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ab755095ff9f9a11b38650c0726537386.html#ab755095ff9f9a11b38650c0726537386">fl::CLEDController::mSettings</a></div><div class="ttdeci">ChannelOptions mSettings</div><div class="ttdoc">Optional channel settings (correction, temperature, dither, rgbw, affinity)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00044">cled_controller.h:44</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00175">175</a> of file <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html">cled_controller.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  175</span>                                                                                  {</div>
+<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a95ede2f374809004d76c246f747d056b.html#a95ede2f374809004d76c246f747d056b">rejectFixedWhiteChannelChange</a>(<span class="stringliteral">&quot;setRgbww()&quot;</span>)) {</div>
+<div class="line"><span class="lineno">  177</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  178</span>        }</div>
+<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">if</span> (!arg.active()) {</div>
+<div class="line"><span class="lineno">  180</span>            <a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a74a93f39b05b86fe3e466f8ff40463aa.html#a74a93f39b05b86fe3e466f8ff40463aa">mLegacySettings</a>.mWhiteCfg.reset();</div>
+<div class="line"><span class="lineno">  181</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  182</span>            <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_a2fb5059d4c10926f7daabcf655beff43.html#a2fb5059d4c10926f7daabcf655beff43">detail::enable_rgbww_conversion</a>();  <span class="comment">// see setRgbw (#4795)</span></div>
+<div class="line"><span class="lineno">  183</span>            <a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a74a93f39b05b86fe3e466f8ff40463aa.html#a74a93f39b05b86fe3e466f8ff40463aa">mLegacySettings</a>.mWhiteCfg = arg;</div>
+<div class="line"><span class="lineno">  184</span>        }</div>
+<div class="line"><span class="lineno">  185</span>        <a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a555ab146529e7623e53c780bdf111067.html#a555ab146529e7623e53c780bdf111067">settingsChanged</a>(<a class="code hl_enumvalue" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ad4c7208c3cf2ae2814819d31fcd8d58d.html#ad4c7208c3cf2ae2814819d31fcd8d58da25a81701fbfa4a1efdf660a950c1d006">SettingsChange::White</a>);</div>
+<div class="line"><span class="lineno">  186</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  187</span>    }</div>
+<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_a555ab146529e7623e53c780bdf111067_html_a555ab146529e7623e53c780bdf111067"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a555ab146529e7623e53c780bdf111067.html#a555ab146529e7623e53c780bdf111067">fl::CLEDController::settingsChanged</a></div><div class="ttdeci">void settingsChanged(SettingsChange change) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00066">cled_controller.h:66</a></div></div>
+<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_a74a93f39b05b86fe3e466f8ff40463aa_html_a74a93f39b05b86fe3e466f8ff40463aa"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a74a93f39b05b86fe3e466f8ff40463aa.html#a74a93f39b05b86fe3e466f8ff40463aa">fl::CLEDController::mLegacySettings</a></div><div class="ttdeci">LegacySettings mLegacySettings</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00052">cled_controller.h:52</a></div></div>
+<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_a95ede2f374809004d76c246f747d056b_html_a95ede2f374809004d76c246f747d056b"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a95ede2f374809004d76c246f747d056b.html#a95ede2f374809004d76c246f747d056b">fl::CLEDController::rejectFixedWhiteChannelChange</a></div><div class="ttdeci">bool rejectFixedWhiteChannelChange(const char *operation) const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00105">cled_controller.h:105</a></div></div>
+<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_ad4c7208c3cf2ae2814819d31fcd8d58d_html_ad4c7208c3cf2ae2814819d31fcd8d58da25a81701fbfa4a1efdf660a950c1d006"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ad4c7208c3cf2ae2814819d31fcd8d58d.html#ad4c7208c3cf2ae2814819d31fcd8d58da25a81701fbfa4a1efdf660a950c1d006">fl::CLEDController::SettingsChange::White</a></div><div class="ttdeci">@ White</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00058">cled_controller.h:58</a></div></div>
+<div class="ttc" id="anamespacefl_1_1detail_a2fb5059d4c10926f7daabcf655beff43_html_a2fb5059d4c10926f7daabcf655beff43"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_a2fb5059d4c10926f7daabcf655beff43.html#a2fb5059d4c10926f7daabcf655beff43">fl::detail::enable_rgbww_conversion</a></div><div class="ttdeci">void enable_rgbww_conversion() FL_NO_EXCEPT</div><div class="ttdoc">Installs the RGBWW pixel conversion (see enable_rgbw_conversion, #4795).</div><div class="ttdef"><b>Definition</b> <a href="../../df/d0b/rgbww_8cpp_8hpp_source.html#l00418">rgbww.cpp.hpp:418</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00028">CLEDController()</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00044">mSettings</a>, <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00090">rejectFixedWhiteChannelChange()</a>, and <a class="el" href="../../d4/d98/rgbww_8h_source.html#l00097">fl::RgbwwDefault::value()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00029">CLEDController()</a>, <a class="el" href="../../df/d0b/rgbww_8cpp_8hpp_source.html#l00418">fl::detail::enable_rgbww_conversion()</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00052">mLegacySettings</a>, <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00105">rejectFixedWhiteChannelChange()</a>, <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00066">settingsChanged()</a>, <a class="el" href="../../d4/d98/rgbww_8h_source.html#l00118">fl::RgbwwDefault::value()</a>, and <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00058">White</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d8/da0/classfl_1_1_c_l_e_d_controller_a559245ee781072f6602ce27c8b5dce5e_a559245ee781072f6602ce27c8b5dce5e_cgraph.svg" width="100%" height="503"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d8/da0/classfl_1_1_c_l_e_d_controller_a559245ee781072f6602ce27c8b5dce5e_a559245ee781072f6602ce27c8b5dce5e_cgraph.svg" width="100%" height="567"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -159,7 +164,7 @@ $(function(){initNavTree('d8/da0/classfl_1_1_c_l_e_d_controller_a559245ee781072f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d8/da0/classfl_1_1_c_l_e_d_controller.html">CLEDController</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

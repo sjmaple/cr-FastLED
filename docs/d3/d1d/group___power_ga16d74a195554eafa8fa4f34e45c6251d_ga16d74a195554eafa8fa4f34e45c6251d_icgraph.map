@@ -1,0 +1,39 @@
+<map id="calculate_unscaled_power_mW" name="calculate_unscaled_power_mW">
+<area shape="rect" id="Node000001" title="Determines how many milliwatts the current LED data would draw at max brightness (255)" alt="" coords="792,165,939,205"/>
+<area shape="rect" id="Node000002" href="$d3/d1d/group___power_ga275c8b5b79fc979d7a014d1eb019afb4.html#ga275c8b5b79fc979d7a014d1eb019afb4" title="Determines the highest brightness level you can use and still stay under the specified power budget f..." alt="" coords="552,37,744,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="832,158,791,124,743,92,717,80,719,75,745,87,794,120,835,154"/>
+<area shape="rect" id="Node000006" href="$d3/d1d/group___power_ga67308d866fbb9692a554b6fa60eae422.html#ga67308d866fbb9692a554b6fa60eae422" title="Determines how many milliwatts the current LED data would draw at max brightness (255)" alt="" coords="575,101,721,141"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="783,164,716,144,717,139,785,159"/>
+<area shape="rect" id="Node000007" href="$d3/d1d/group___power_ga8f233a8a889834c31b6a02667c2d74c3.html#ga8f233a8a889834c31b6a02667c2d74c3" title="Same, for a strip driven through the RGBW conversion." alt="" coords="575,165,721,205"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="778,188,722,188,722,183,778,183"/>
+<area shape="rect" id="Node000008" href="$d3/d1d/group___power_gab0fe00ae87981daa125f0c9ec3812fae.html#gab0fe00ae87981daa125f0c9ec3812fae" title="One controller&#39;s demand at full brightness, in mW, including idle draw – the quantity the limiter sum..." alt="" coords="573,229,723,269"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="785,212,717,232,716,227,783,207"/>
+<area shape="rect" id="Node000011" href="$df/d9e/namespacefl_1_1detail_a83b17df77e02e45a7def3c9d9e256945.html#a83b17df77e02e45a7def3c9d9e256945" title="Lets the power limiter charge a controller&#39;s RGBW conversion." alt="" coords="561,293,735,333"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="835,217,794,251,745,284,719,296,717,291,743,279,791,247,832,213"/>
+<area shape="rect" id="Node000003" href="$d3/d1d/group___power_ga16019b9dbb68c524daccec42a66e6854.html#ga16019b9dbb68c524daccec42a66e6854" title="Determines the highest brightness level you can use and still stay under the specified power budget f..." alt="" coords="294,5,486,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="538,46,486,40,487,35,539,41"/>
+<area shape="rect" id="Node000004" href="$dd/dbb/class_c_fast_l_e_d_a5cf551094778fa28d3e4782ee32914b7.html#a5cf551094778fa28d3e4782ee32914b7" title="Set the maximum power to be used, given in milliwatts." alt="" coords="281,69,499,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="539,74,500,78,499,73,538,68"/>
+<area shape="rect" id="Node000005" href="$dd/dbb/class_c_fast_l_e_d_a6777ae860f0cf80f3e76f0ca90d8e475.html#a6777ae860f0cf80f3e76f0ca90d8e475" title="Set the maximum power to be used, given in volts and milliamps." alt="" coords="5,69,228,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="267,92,228,92,228,87,267,87"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="163,58,147,51,117,48,90,50,74,55,68,61,71,68,66,70,63,60,71,50,89,45,117,43,148,45,165,53"/>
+<area shape="rect" id="Node000009" href="$d3/d1d/group___power_ga5be5c78698addbbb9aff7b59e8a4c974.html#ga5be5c78698addbbb9aff7b59e8a4c974" title="Determines the highest brightness level you can use and still stay under the specified power budget f..." alt="" coords="294,165,486,205"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="560,230,471,208,472,203,561,225"/>
+<area shape="rect" id="Node000010" href="$dd/dbb/class_c_fast_l_e_d_af0cadc7e6d3589d09e6929dfb5bc50f3.html#af0cadc7e6d3589d09e6929dfb5bc50f3" title="Get estimated power consumption in milliwatts." alt="" coords="281,229,499,269"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="559,252,499,252,499,247,559,247"/>
+<area shape="rect" id="Node000012" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a37429a6c10feb5f7159244d07bb27b21.html#a37429a6c10feb5f7159244d07bb27b21" title=" " alt="" coords="322,293,458,333"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="548,316,458,316,458,311,548,311"/>
+<area shape="rect" id="Node000017" href="$d5/d8b/classfl_1_1_channel_ab5951b5ecb47c0d815960793054849f1.html#ab5951b5ecb47c0d815960793054849f1" title=" " alt="" coords="276,382,504,407"/>
+<area shape="poly" id="edge16_Node000011_Node000017" title=" " alt="" coords="571,340,432,384,431,379,570,335"/>
+<area shape="rect" id="Node000013" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a5deb7f24434255cda4210316a43b7507.html#a5deb7f24434255cda4210316a43b7507" title="Configure a chipset&#45;owned RGBW policy that public white&#45;channel setters cannot replace." alt="" coords="49,205,185,245"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="308,295,275,284,227,260,184,245,186,240,229,255,277,279,310,290"/>
+<area shape="rect" id="Node000014" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a364042729b1cf127821d255d67f0f91c.html#a364042729b1cf127821d255d67f0f91c" title=" " alt="" coords="49,293,185,333"/>
+<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="308,316,185,316,185,311,308,311"/>
+<area shape="poly" id="edge15_Node000014_Node000014" title=" " alt="" coords="163,282,147,275,117,272,90,274,74,279,68,285,71,292,66,294,63,284,71,274,89,269,117,267,148,269,165,277"/>
+<area shape="rect" id="Node000018" href="$d5/d8b/classfl_1_1_channel_aa19c8e51e8dd59b5474c8dfa9cc9c98f.html#aa19c8e51e8dd59b5474c8dfa9cc9c98f" title="Private constructor (use create() factory method)" alt="" coords="41,358,193,383"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="262,386,193,380,193,375,262,381"/>
+<area shape="rect" id="Node000044" href="$d5/d8b/classfl_1_1_channel_a8c13b18e633465e6c0e4ea2ab2fac125.html#a8c13b18e633465e6c0e4ea2ab2fac125" title="Backwards&#45;compatible constructor (deprecated)" alt="" coords="41,407,193,433"/>
+<area shape="poly" id="edge18_Node000017_Node000044" title=" " alt="" coords="262,409,193,416,193,410,262,404"/>
+<area shape="rect" id="Node000045" href="$d5/d8b/classfl_1_1_channel_ad19bdc3ce2ad1ee27ed541aea42c134a.html#ad19bdc3ce2ad1ee27ed541aea42c134a" title="Apply reconfigurable settings from a ChannelConfig." alt="" coords="29,457,205,482"/>
+<area shape="poly" id="edge19_Node000017_Node000045" title=" " alt="" coords="339,414,229,448,182,459,180,454,227,443,338,409"/>
+</map>

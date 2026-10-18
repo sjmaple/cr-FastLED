@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -123,29 +123,29 @@ This method updates an internal cache - not thread-safe </dd>
 <dd>
 <a class="el" href="../../d2/db2/classfl_1_1string.html">fl::string</a> copies are cheap (shared pointer internally, no heap allocation) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00367">367</a> of file <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html">manager.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  367</span>                                                              {</div>
-<div class="line"><span class="lineno">  368</span>    <span class="comment">// Update cache with current driver state</span></div>
-<div class="line"><span class="lineno">  369</span>    <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_ab690974955017a9071015c8203a0800c.html#ab690974955017a9071015c8203a0800c">mCachedDriverInfo</a>.clear();</div>
-<div class="line"><span class="lineno">  370</span>    <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_ab690974955017a9071015c8203a0800c.html#ab690974955017a9071015c8203a0800c">mCachedDriverInfo</a>.reserve(<a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">mDrivers</a>.size());</div>
-<div class="line"><span class="lineno">  371</span> </div>
-<div class="line"><span class="lineno">  372</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; entry : <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">mDrivers</a>) {</div>
-<div class="line"><span class="lineno">  373</span>        <span class="comment">// fl::string copy is cheap (shared pointer internally, no heap allocation)</span></div>
-<div class="line"><span class="lineno">  374</span>        <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_ab690974955017a9071015c8203a0800c.html#ab690974955017a9071015c8203a0800c">mCachedDriverInfo</a>.push_back({</div>
-<div class="line"><span class="lineno">  375</span>            entry.name,</div>
-<div class="line"><span class="lineno">  376</span>            entry.priority,</div>
-<div class="line"><span class="lineno">  377</span>            entry.enabled</div>
-<div class="line"><span class="lineno">  378</span>        });</div>
-<div class="line"><span class="lineno">  379</span>    }</div>
-<div class="line"><span class="lineno">  380</span> </div>
-<div class="line"><span class="lineno">  381</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_ab690974955017a9071015c8203a0800c.html#ab690974955017a9071015c8203a0800c">mCachedDriverInfo</a>;</div>
-<div class="line"><span class="lineno">  382</span>}</div>
-<div class="ttc" id="aclassfl_1_1_channel_manager_ab690974955017a9071015c8203a0800c_html_ab690974955017a9071015c8203a0800c"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_ab690974955017a9071015c8203a0800c.html#ab690974955017a9071015c8203a0800c">fl::ChannelManager::mCachedDriverInfo</a></div><div class="ttdeci">fl::vector&lt; DriverInfo &gt; mCachedDriverInfo</div><div class="ttdoc">Cached driver info for getDriverInfos() to avoid allocations.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/manager_8h_source.html#l00325">manager.h:325</a></div></div>
-<div class="ttc" id="aclassfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4_html_adc5f4506b80dc60555293e39438918c4"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">fl::ChannelManager::mDrivers</a></div><div class="ttdeci">fl::vector&lt; EngineEntry &gt; mDrivers</div><div class="ttdoc">Shared drivers sorted by priority descending (higher values first)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/manager_8h_source.html#l00321">manager.h:321</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00377">377</a> of file <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html">manager.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  377</span>                                                                           {</div>
+<div class="line"><span class="lineno">  378</span>    <span class="comment">// Update cache with current driver state</span></div>
+<div class="line"><span class="lineno">  379</span>    <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_ab690974955017a9071015c8203a0800c.html#ab690974955017a9071015c8203a0800c">mCachedDriverInfo</a>.clear();</div>
+<div class="line"><span class="lineno">  380</span>    <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_ab690974955017a9071015c8203a0800c.html#ab690974955017a9071015c8203a0800c">mCachedDriverInfo</a>.reserve(<a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">mDrivers</a>.size());</div>
+<div class="line"><span class="lineno">  381</span> </div>
+<div class="line"><span class="lineno">  382</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; entry : <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">mDrivers</a>) {</div>
+<div class="line"><span class="lineno">  383</span>        <span class="comment">// fl::string copy is cheap (shared pointer internally, no heap allocation)</span></div>
+<div class="line"><span class="lineno">  384</span>        <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_ab690974955017a9071015c8203a0800c.html#ab690974955017a9071015c8203a0800c">mCachedDriverInfo</a>.push_back({</div>
+<div class="line"><span class="lineno">  385</span>            entry.name,</div>
+<div class="line"><span class="lineno">  386</span>            entry.priority,</div>
+<div class="line"><span class="lineno">  387</span>            entry.enabled</div>
+<div class="line"><span class="lineno">  388</span>        });</div>
+<div class="line"><span class="lineno">  389</span>    }</div>
+<div class="line"><span class="lineno">  390</span> </div>
+<div class="line"><span class="lineno">  391</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_ab690974955017a9071015c8203a0800c.html#ab690974955017a9071015c8203a0800c">mCachedDriverInfo</a>;</div>
+<div class="line"><span class="lineno">  392</span>}</div>
+<div class="ttc" id="aclassfl_1_1_channel_manager_ab690974955017a9071015c8203a0800c_html_ab690974955017a9071015c8203a0800c"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_ab690974955017a9071015c8203a0800c.html#ab690974955017a9071015c8203a0800c">fl::ChannelManager::mCachedDriverInfo</a></div><div class="ttdeci">fl::vector&lt; DriverInfo &gt; mCachedDriverInfo</div><div class="ttdoc">Cached driver info for getDriverInfos() to avoid allocations.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/manager_8h_source.html#l00331">manager.h:331</a></div></div>
+<div class="ttc" id="aclassfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4_html_adc5f4506b80dc60555293e39438918c4"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">fl::ChannelManager::mDrivers</a></div><div class="ttdeci">fl::vector&lt; EngineEntry &gt; mDrivers</div><div class="ttdoc">Shared drivers sorted by priority descending (higher values first)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/manager_8h_source.html#l00327">manager.h:327</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../db/d45/manager_8h_source.html#l00325">mCachedDriverInfo</a>, and <a class="el" href="../../db/d45/manager_8h_source.html#l00321">mDrivers</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d45/manager_8h_source.html#l00331">mCachedDriverInfo</a>, and <a class="el" href="../../db/d45/manager_8h_source.html#l00327">mDrivers</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_source.html#l00765">CFastLED::getDriverInfos()</a>, <a class="el" href="../../da/d75/platform_8cpp_8hpp_source.html#l00020">fl::validation::printEngineValidation()</a>, and <a class="el" href="../../da/d75/platform_8cpp_8hpp_source.html#l00015">fl::validation::validateExpectedEngines()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_source.html#l00782">CFastLED::getDriverInfos()</a>, <a class="el" href="../../da/d75/platform_8cpp_8hpp_source.html#l00021">fl::validation::printEngineValidation()</a>, and <a class="el" href="../../da/d75/platform_8cpp_8hpp_source.html#l00016">fl::validation::validateExpectedEngines()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -163,7 +163,7 @@ This method updates an internal cache - not thread-safe </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d2/d6b/classfl_1_1_channel_manager.html">ChannelManager</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

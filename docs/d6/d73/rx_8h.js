@@ -20,7 +20,8 @@ var rx_8h =
       [ "fl::DecodeError::OK", "d4/d36/namespacefl_ac30c8a1bc13273eec6d149523a756b5f.html#ac30c8a1bc13273eec6d149523a756b5fae0aa021e21dddbd6d8cecec71e9cf564", null ],
       [ "fl::DecodeError::HIGH_ERROR_RATE", "d4/d36/namespacefl_ac30c8a1bc13273eec6d149523a756b5f.html#ac30c8a1bc13273eec6d149523a756b5fa8df95538d437dec29e8339366e0ca826", null ],
       [ "fl::DecodeError::BUFFER_OVERFLOW", "d4/d36/namespacefl_ac30c8a1bc13273eec6d149523a756b5f.html#ac30c8a1bc13273eec6d149523a756b5fad53c9f7d5b985bba6cb80cdf8ae665e4", null ],
-      [ "fl::DecodeError::INVALID_ARGUMENT", "d4/d36/namespacefl_ac30c8a1bc13273eec6d149523a756b5f.html#ac30c8a1bc13273eec6d149523a756b5faf295a0c3e37c94f078e1c5476479132d", null ]
+      [ "fl::DecodeError::INVALID_ARGUMENT", "d4/d36/namespacefl_ac30c8a1bc13273eec6d149523a756b5f.html#ac30c8a1bc13273eec6d149523a756b5faf295a0c3e37c94f078e1c5476479132d", null ],
+      [ "fl::DecodeError::CAPTURE_OVERRUN", "d4/d36/namespacefl_ac30c8a1bc13273eec6d149523a756b5f.html#ac30c8a1bc13273eec6d149523a756b5fa1d7844a4ade9158b19ecfc101e906a64", null ]
     ] ],
     [ "fl::RxDeviceType", "d4/d36/namespacefl_acf4be728c6cec387b6601072b61872fb.html#acf4be728c6cec387b6601072b61872fb", [
       [ "fl::RxDeviceType::PIO", "d4/d36/namespacefl_acf4be728c6cec387b6601072b61872fb.html#acf4be728c6cec387b6601072b61872fba7a876fbec890f829703bc77a76e8ef45", null ],

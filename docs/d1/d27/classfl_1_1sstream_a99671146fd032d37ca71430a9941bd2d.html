@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -101,7 +101,7 @@ $(function(){initNavTree('d1/d27/classfl_1_1sstream_a99671146fd032d37ca71430a994
 
 <div class="contents">
 <a id="a99671146fd032d37ca71430a9941bd2d" name="a99671146fd032d37ca71430a9941bd2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99671146fd032d37ca71430a9941bd2d">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[29/30]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a99671146fd032d37ca71430a9941bd2d">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[30/31]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,16 +125,16 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d00/strstream_8h_source.html#l00318">318</a> of file <a class="el" href="../../d8/d00/strstream_8h_source.html">strstream.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  319</span>                                   {</div>
-<div class="line"><span class="lineno">  320</span>        <span class="keyword">using </span>target_t = <span class="keyword">typename</span> <a class="code hl_typedef" href="../../dc/d4d/namespacefl_1_1int__cast__detail.html#a192ed130b6d4b855b5227f3cb6bab415">int_cast_detail::cast_target&lt;T&gt;::type</a>;</div>
-<div class="line"><span class="lineno">  321</span>        <a class="code hl_function" href="../../d1/d27/classfl_1_1sstream_a612f4b59b43026cf785264c1e69242f0.html#a612f4b59b43026cf785264c1e69242f0">appendFormatted</a>(<span class="keyword">static_cast&lt;</span>target_t<span class="keyword">&gt;</span>(val));</div>
-<div class="line"><span class="lineno">  322</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  323</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/d00/strstream_8h_source.html#l00326">326</a> of file <a class="el" href="../../d8/d00/strstream_8h_source.html">strstream.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  327</span>                                   {</div>
+<div class="line"><span class="lineno">  328</span>        <span class="keyword">using </span>target_t = <span class="keyword">typename</span> <a class="code hl_typedef" href="../../dc/d4d/namespacefl_1_1int__cast__detail.html#a192ed130b6d4b855b5227f3cb6bab415">int_cast_detail::cast_target&lt;T&gt;::type</a>;</div>
+<div class="line"><span class="lineno">  329</span>        <a class="code hl_function" href="../../d1/d27/classfl_1_1sstream_a612f4b59b43026cf785264c1e69242f0.html#a612f4b59b43026cf785264c1e69242f0">appendFormatted</a>(<span class="keyword">static_cast&lt;</span>target_t<span class="keyword">&gt;</span>(val));</div>
+<div class="line"><span class="lineno">  330</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  331</span>    }</div>
 <div class="ttc" id="aclassfl_1_1sstream_a612f4b59b43026cf785264c1e69242f0_html_a612f4b59b43026cf785264c1e69242f0"><div class="ttname"><a href="../../d1/d27/classfl_1_1sstream_a612f4b59b43026cf785264c1e69242f0.html#a612f4b59b43026cf785264c1e69242f0">fl::sstream::appendFormatted</a></div><div class="ttdeci">void appendFormatted(fl::i8 val) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d53/strstream_8cpp_8hpp_source.html#l00062">strstream.cpp.hpp:62</a></div></div>
-<div class="ttc" id="anamespacefl_1_1int__cast__detail_html_a192ed130b6d4b855b5227f3cb6bab415"><div class="ttname"><a href="../../dc/d4d/namespacefl_1_1int__cast__detail.html#a192ed130b6d4b855b5227f3cb6bab415">fl::int_cast_detail::cast_target::type</a></div><div class="ttdeci">typename fl::conditional&lt; IsSigned, typename fl::conditional&lt; Size==1, fl::i8, typename fl::conditional&lt; Size==2, fl::i16, typename fl::conditional&lt; Size==4, fl::i32, typename fl::conditional&lt; Size==8, fl::i64, fl::i64 &gt;::type &gt;::type &gt;::type &gt;::type, typename fl::conditional&lt; Size==1, fl::u16, typename fl::conditional&lt; Size==2, fl::u16, typename fl::conditional&lt; Size==4, fl::u32, typename fl::conditional&lt; Size==8, fl::u64, fl::u64 &gt;::type &gt;::type &gt;::type &gt;::type &gt;::type type</div><div class="ttdef"><b>Definition</b> <a href="../../df/d63/type__traits_8h_source.html#l01045">type_traits.h:1045</a></div></div>
+<div class="ttc" id="anamespacefl_1_1int__cast__detail_html_a192ed130b6d4b855b5227f3cb6bab415"><div class="ttname"><a href="../../dc/d4d/namespacefl_1_1int__cast__detail.html#a192ed130b6d4b855b5227f3cb6bab415">fl::int_cast_detail::cast_target::type</a></div><div class="ttdeci">typename fl::conditional&lt; IsSigned, typename fl::conditional&lt; Size==1, fl::i8, typename fl::conditional&lt; Size==2, fl::i16, typename fl::conditional&lt; Size==4, fl::i32, typename fl::conditional&lt; Size==8, fl::i64, fl::i64 &gt;::type &gt;::type &gt;::type &gt;::type, typename fl::conditional&lt; Size==1, fl::u16, typename fl::conditional&lt; Size==2, fl::u16, typename fl::conditional&lt; Size==4, fl::u32, typename fl::conditional&lt; Size==8, fl::u64, fl::u64 &gt;::type &gt;::type &gt;::type &gt;::type &gt;::type type</div><div class="ttdef"><b>Definition</b> <a href="../../df/d63/type__traits_8h_source.html#l01058">type_traits.h:1058</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d1/d27/classfl_1_1sstream_a82abb5028a968e6ec3b62d3e6a881857.html#a82abb5028a968e6ec3b62d3e6a881857">sstream()</a>, <a class="el" href="../../d3/d53/strstream_8cpp_8hpp_source.html#l00062">appendFormatted()</a>, and <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d27/classfl_1_1sstream_a82abb5028a968e6ec3b62d3e6a881857.html#a82abb5028a968e6ec3b62d3e6a881857">sstream()</a>, <a class="el" href="../../d3/d53/strstream_8cpp_8hpp_source.html#l00062">appendFormatted()</a>, and <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -152,7 +152,7 @@ template&lt;typename T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d1/d27/classfl_1_1sstream.html">sstream</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:32 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

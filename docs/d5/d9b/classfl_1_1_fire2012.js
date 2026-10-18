@@ -1,9 +1,9 @@
 var classfl_1_1_fire2012 =
 [
-    [ "Fire2012", "d5/d9b/classfl_1_1_fire2012_a0dd970c99039b1a5b4f55f138edc1c58.html#a0dd970c99039b1a5b4f55f138edc1c58", null ],
+    [ "Fire2012", "d5/d9b/classfl_1_1_fire2012_a1cfae82fb0f06c0a041710e78ac68617.html#a1cfae82fb0f06c0a041710e78ac68617", null ],
     [ "~Fire2012", "d5/d9b/classfl_1_1_fire2012_a8e62e64e2456d7e1ec374316d62999dd.html#a8e62e64e2456d7e1ec374316d62999dd", null ],
-    [ "draw", "d5/d9b/classfl_1_1_fire2012_a39d20a6dc4f3a771b8b12696db9c4a15.html#a39d20a6dc4f3a771b8b12696db9c4a15", null ],
-    [ "fxName", "d5/d9b/classfl_1_1_fire2012_aceff36eaee47227cf0e2d7d19daae9a7.html#aceff36eaee47227cf0e2d7d19daae9a7", null ],
+    [ "draw", "d5/d9b/classfl_1_1_fire2012_a4913cac33e05563be47e030262d1f49e.html#a4913cac33e05563be47e030262d1f49e", null ],
+    [ "fxName", "d5/d9b/classfl_1_1_fire2012_aa49fadbd913f583a7e831c65b4ba6308.html#aa49fadbd913f583a7e831c65b4ba6308", null ],
     [ "cooling", "d5/d9b/classfl_1_1_fire2012_a55a9499647b87c327656d0be0c3add65.html#a55a9499647b87c327656d0be0c3add65", null ],
     [ "heat", "d5/d9b/classfl_1_1_fire2012_a4bd28ef727f38be61a219eee0b49882b.html#a4bd28ef727f38be61a219eee0b49882b", null ],
     [ "palette", "d5/d9b/classfl_1_1_fire2012_a0ba5aa3f5847785d423687a2744794c1.html#a0ba5aa3f5847785d423687a2744794c1", null ],

@@ -24,11 +24,15 @@ digraph "CFastLED::setExclusiveDriver"
   Node12 [id="Node000012",label="fl::ChannelManager\l::addDriver",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d6b/classfl_1_1_channel_manager_ae6eb27ff8398726d8c5fcb9052ea9528.html#ae6eb27ff8398726d8c5fcb9052ea9528",tooltip="Add a driver with priority (higher priority = preferred)"];
   Node12 -> Node13 [id="edge10_Node000012_Node000013",color="steelblue1",style="solid",tooltip=" "];
   Node13 [id="Node000013",label="fl::ChannelManager\l::addDriverSlow",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d6b/classfl_1_1_channel_manager_a9d5c6d37df9f78ddacf9e44073b4fe18.html#a9d5c6d37df9f78ddacf9e44073b4fe18",tooltip="Handle validation failures and the uncommon replacement flow outside the normal driver-registration p..."];
-  Node12 -> Node40 [id="edge11_Node000012_Node000040",color="steelblue1",style="solid",tooltip=" "];
-  Node40 [id="Node000040",label="fl::basic_string::c_str",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$de/d66/classfl_1_1basic__string_ac7b40587b637d254d009cc32f530fb83.html#ac7b40587b637d254d009cc32f530fb83",tooltip=" "];
+  Node12 -> Node28 [id="edge11_Node000012_Node000028",color="steelblue1",style="solid",tooltip=" "];
+  Node28 [id="Node000028",label="fl::basic_string::c_str",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$de/d66/classfl_1_1basic__string_ac7b40587b637d254d009cc32f530fb83.html#ac7b40587b637d254d009cc32f530fb83",tooltip=" "];
   Node12 -> Node16 [id="edge12_Node000012_Node000016",color="steelblue1",style="solid",tooltip=" "];
   Node16 [id="Node000016",label="fl::basic_string::empty",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb",tooltip=" "];
-  Node12 -> Node50 [id="edge13_Node000012_Node000050",color="steelblue1",style="solid",tooltip=" "];
-  Node50 [id="Node000050",label="fl::sort_small",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_abc76b289e45e1c247accf27c76992bfc.html#abc76b289e45e1c247accf27c76992bfc",tooltip=" "];
-  Node11 -> Node11 [id="edge14_Node000011_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node12 -> Node40 [id="edge13_Node000012_Node000040",color="steelblue1",style="solid",tooltip=" "];
+  Node40 [id="Node000040",label="fl::adl_barrier::sort\l_small",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a680fec5d468872d231a6d10d9c27860f.html#a680fec5d468872d231a6d10d9c27860f",tooltip=" "];
+  Node11 -> Node43 [id="edge14_Node000011_Node000043",color="steelblue1",style="solid",tooltip=" "];
+  Node43 [id="Node000043",label="fl::detail::enable\l_clockless",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a9f56a736505d79fc774a092232ebe4d0.html#a9f56a736505d79fc774a092232ebe4d0",tooltip=" "];
+  Node43 -> Node44 [id="edge15_Node000043_Node000044",color="steelblue1",style="solid",tooltip=" "];
+  Node44 [id="Node000044",label="fl::detail::enable\l_clockless_impl",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a8e3a01cc9b3125ca4163d0c44dadd223.html#a8e3a01cc9b3125ca4163d0c44dadd223",tooltip="Call Traits::enableClockless() when the bus provides one."];
+  Node11 -> Node11 [id="edge16_Node000011_Node000011",color="steelblue1",style="solid",tooltip=" "];
 }

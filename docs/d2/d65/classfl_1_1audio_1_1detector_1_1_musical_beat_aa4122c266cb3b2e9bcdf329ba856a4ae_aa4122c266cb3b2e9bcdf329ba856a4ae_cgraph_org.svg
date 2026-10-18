@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_aa3fe998bea55ed148d76230699db4b43.html#aa3fe998bea55ed148d76230699db4b43" target="_top" xlink:title="Configure the beat detector.">
+<g id="a_Node000003"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a27f22f0c8351a03d5a9fc99127a72e17.html#a27f22f0c8351a03d5a9fc99127a72e17" target="_top" xlink:title="Configure the beat detector.">
 <polygon fill="white" stroke="#666666" points="350.5,-338 216.5,-338 216.5,-308 350.5,-308 350.5,-338"/>
 <text text-anchor="start" x="224.5" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::detector</text>
 <text text-anchor="middle" x="283.5" y="-315" font-family="Helvetica,sans-Serif" font-size="10.00">::MusicalBeat::configure</text>
@@ -59,7 +59,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a79e3a2459c58dda6768e059545035644.html#a79e3a2459c58dda6768e059545035644" target="_top" xlink:title="Reset internal state (clear history, reset BPM)">
+<g id="a_Node000004"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a5920388b593628e250c6c42bc9fb093b.html#a5920388b593628e250c6c42bc9fb093b" target="_top" xlink:title="Reset internal state (clear history, reset BPM)">
 <polygon fill="white" stroke="#666666" points="560.5,-319 447.5,-319 447.5,-289 560.5,-289 560.5,-319"/>
 <text text-anchor="start" x="455.5" y="-307" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::detector</text>
 <text text-anchor="middle" x="504" y="-296" font-family="Helvetica,sans-Serif" font-size="10.00">::MusicalBeat::reset</text>
@@ -78,7 +78,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_aa892bcc192e2ecd6b2031c290f4b7725.html#aa892bcc192e2ecd6b2031c290f4b7725" target="_top" xlink:title="Get inter&#45;beat interval (IBI) statistics.">
+<g id="a_Node000005"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_aaf4a9ac8b88fde78be995eb25a71098a.html#aaf4a9ac8b88fde78be995eb25a71098a" target="_top" xlink:title="Get inter&#45;beat interval (IBI) statistics.">
 <polygon fill="white" stroke="#666666" points="803,-239 646,-239 646,-209 803,-209 803,-239"/>
 <text text-anchor="start" x="654" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::detector</text>
 <text text-anchor="middle" x="724.5" y="-216" font-family="Helvetica,sans-Serif" font-size="10.00">::MusicalBeat::getAverageIBI</text>
@@ -97,7 +97,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a2fe5ec0054341565f4278eda6c8303a4.html#a2fe5ec0054341565f4278eda6c8303a4" target="_top" xlink:title="Get beat confidence for the last detected beat.">
+<g id="a_Node000006"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a410693eb57d70bf2670826b20ae0ac2f.html#a410693eb57d70bf2670826b20ae0ac2f" target="_top" xlink:title="Get beat confidence for the last detected beat.">
 <polygon fill="white" stroke="#666666" points="374,-166 193,-166 193,-136 374,-136 374,-166"/>
 <text text-anchor="start" x="201" y="-154" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::detector</text>
 <text text-anchor="middle" x="283.5" y="-143" font-family="Helvetica,sans-Serif" font-size="10.00">::MusicalBeat::getBeatConfidence</text>
@@ -116,7 +116,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_acae9037a2d919a71bac727c788306f99.html#acae9037a2d919a71bac727c788306f99" target="_top" xlink:title="Get current BPM estimate.">
+<g id="a_Node000007"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a6fe4e820d9b0e2b6bfdf8bd6661f7947.html#a6fe4e820d9b0e2b6bfdf8bd6661f7947" target="_top" xlink:title="Get current BPM estimate.">
 <polygon fill="white" stroke="#666666" points="346.5,-118 220.5,-118 220.5,-88 346.5,-88 346.5,-118"/>
 <text text-anchor="start" x="228.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::detector</text>
 <text text-anchor="middle" x="283.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">::MusicalBeat::getBPM</text>
@@ -135,7 +135,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a71e6e9f5e435e069bb2efa40eb992f3a.html#a71e6e9f5e435e069bb2efa40eb992f3a" target="_top" xlink:title="Check if a musical beat was detected in the last frame.">
+<g id="a_Node000008"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_aaab74df6da4a99eeb67b2a12ffb672b7.html#aaab74df6da4a99eeb67b2a12ffb672b7" target="_top" xlink:title="Check if a musical beat was detected in the last frame.">
 <polygon fill="white" stroke="#666666" points="343,-70 224,-70 224,-40 343,-40 343,-70"/>
 <text text-anchor="start" x="232" y="-58" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::detector</text>
 <text text-anchor="middle" x="283.5" y="-47" font-family="Helvetica,sans-Serif" font-size="10.00">::MusicalBeat::isBeat</text>
@@ -154,7 +154,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a14368f704c7c67d888b81f70c7004dcb.html#a14368f704c7c67d888b81f70c7004dcb" target="_top" xlink:title="Process one audio frame.">
+<g id="a_Node000009"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a5802c8b40f504c755cfe71566adcd1fd.html#a5802c8b40f504c755cfe71566adcd1fd" target="_top" xlink:title="Process one audio frame.">
 <polygon fill="white" stroke="#666666" points="365,-214 202,-214 202,-184 365,-184 365,-214"/>
 <text text-anchor="start" x="210" y="-202" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::detector</text>
 <text text-anchor="middle" x="283.5" y="-191" font-family="Helvetica,sans-Serif" font-size="10.00">::MusicalBeat::processSample</text>
@@ -218,7 +218,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a25756788660507be8a6660dc23f82624.html#a25756788660507be8a6660dc23f82624" target="_top" xlink:title="Calculate beat confidence based on rhythmic consistency.">
+<g id="a_Node000010"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_ad8a28f9179177db2bc6680c101a00e45.html#ad8a28f9179177db2bc6680c101a00e45" target="_top" xlink:title="Calculate beat confidence based on rhythmic consistency.">
 <polygon fill="white" stroke="#666666" points="581.5,-127.5 426.5,-127.5 426.5,-86.5 581.5,-86.5 581.5,-127.5"/>
 <text text-anchor="start" x="434.5" y="-115.5" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::detector</text>
 <text text-anchor="start" x="434.5" y="-104.5" font-family="Helvetica,sans-Serif" font-size="10.00">::MusicalBeat::calculateBeat</text>
@@ -238,7 +238,7 @@
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a23c3f97cc42b2f345503145ce16499c8.html#a23c3f97cc42b2f345503145ce16499c8" target="_top" xlink:title="Check if IBI is within valid BPM range.">
+<g id="a_Node000015"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_ad1e23c52ecd8698f30c24533817d81c2.html#ad1e23c52ecd8698f30c24533817d81c2" target="_top" xlink:title="Check if IBI is within valid BPM range.">
 <polygon fill="white" stroke="#666666" points="791.5,-30 657.5,-30 657.5,0 791.5,0 791.5,-30"/>
 <text text-anchor="start" x="665.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::detector</text>
 <text text-anchor="middle" x="724.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::MusicalBeat::isValidIBI</text>
@@ -257,7 +257,7 @@
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_Node000020"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_ae8c4e7e2d6ed27b8d955a9e2e1cd3db2.html#ae8c4e7e2d6ed27b8d955a9e2e1cd3db2" target="_top" xlink:title="Update BPM estimate from inter&#45;beat intervals.">
+<g id="a_Node000020"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a5d8f5a99f38a120515a87180a5d2d422.html#a5d8f5a99f38a120515a87180a5d2d422" target="_top" xlink:title="Update BPM estimate from inter&#45;beat intervals.">
 <polygon fill="white" stroke="#666666" points="598,-176 410,-176 410,-146 598,-146 598,-176"/>
 <text text-anchor="start" x="418" y="-164" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::detector</text>
 <text text-anchor="middle" x="504" y="-153" font-family="Helvetica,sans-Serif" font-size="10.00">::MusicalBeat::updateBPMEstimate</text>
@@ -276,7 +276,7 @@
 <!-- Node22 -->
 <g id="Node000022" class="node">
 <title>Node22</title>
-<g id="a_Node000022"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_abef5ac55aa91cb94f03cda4f2c34d229.html#abef5ac55aa91cb94f03cda4f2c34d229" target="_top" xlink:title="Validate if an onset is a true musical beat.">
+<g id="a_Node000022"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a124dcc0294cb49fdbc3688a4632c4951.html#a124dcc0294cb49fdbc3688a4632c4951" target="_top" xlink:title="Validate if an onset is a true musical beat.">
 <polygon fill="white" stroke="#666666" points="579.5,-30 428.5,-30 428.5,0 579.5,0 579.5,-30"/>
 <text text-anchor="start" x="436.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::detector</text>
 <text text-anchor="middle" x="504" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::MusicalBeat::validateBeat</text>
@@ -322,7 +322,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_af7ccbbd6059884bc88da1f7c171455b9.html#af7ccbbd6059884bc88da1f7c171455b9" target="_top" xlink:title="Calculate standard deviation of IBI history.">
+<g id="a_Node000012"><a xlink:href="../../d2/d65/classfl_1_1audio_1_1detector_1_1_musical_beat_a80dc1f8456d8ec57df69d2c3f5afd4b4.html#a80dc1f8456d8ec57df69d2c3f5afd4b4" target="_top" xlink:title="Calculate standard deviation of IBI history.">
 <polygon fill="#fff0f0" stroke="red" points="815,-116 634,-116 634,-86 815,-86 815,-116"/>
 <text text-anchor="start" x="642" y="-104" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::detector</text>
 <text text-anchor="middle" x="724.5" y="-93" font-family="Helvetica,sans-Serif" font-size="10.00">::MusicalBeat::calculateIBIStdDev</text>

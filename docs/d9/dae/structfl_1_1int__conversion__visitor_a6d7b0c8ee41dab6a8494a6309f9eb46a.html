@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FastLED: fl::int_conversion_visitor::operator()</title>
+<title>FastLED: fl::int_conversion_visitor&lt; i64 &gt;::operator()</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -101,20 +101,16 @@ $(function(){initNavTree('d9/dae/structfl_1_1int__conversion__visitor_a6d7b0c8ee
 
 <div class="contents">
 <a id="a6d7b0c8ee41dab6a8494a6309f9eb46a" name="a6d7b0c8ee41dab6a8494a6309f9eb46a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d7b0c8ee41dab6a8494a6309f9eb46a">&#9670;&#160;</a></span>operator()() <span class="overload">[3/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d7b0c8ee41dab6a8494a6309f9eb46a">&#9670;&#160;</a></span>operator()() <span class="overload">[4/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename IntType = i64&gt; </div>
-<div class="memtemplate">
-template&lt;typename T = IntType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d4/d36/namespacefl.html#d5/d67/structfl_1_1enable__if">fl::enable_if</a>&lt;!<a class="el" href="../../d3/d46/structfl_1_1is__same.html">fl::is_same</a>&lt; T, double &gt;<a class="el" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">::value</a>, void &gt;::type <a class="el" href="../../d9/dae/structfl_1_1int__conversion__visitor.html">fl::int_conversion_visitor</a>&lt; IntType &gt;::operator() </td>
+          <td class="memname"><a class="el" href="../../d4/d36/namespacefl.html#d5/d67/structfl_1_1enable__if">fl::enable_if</a>&lt;!<a class="el" href="../../d3/d46/structfl_1_1is__same.html">fl::is_same</a>&lt; T, double &gt;<a class="el" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">::value</a>, void &gt;::type <a class="el" href="../../d9/dae/structfl_1_1int__conversion__visitor.html">fl::int_conversion_visitor</a>&lt; <a class="el" href="../../df/dd8/stdint_8h_a79fef9c4a308200d2ac107f3f05ee849.html#a79fef9c4a308200d2ac107f3f05ee849">i64</a> &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td></td>
@@ -130,13 +126,11 @@ template&lt;typename T = IntType&gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../d7/d5e/fl_2stl_2json_2types_8h_source.html#l00238">238</a> of file <a class="el" href="../../d7/d5e/fl_2stl_2json_2types_8h_source.html">types.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  238</span>                                                 {</div>
 <div class="line"><span class="lineno">  239</span>        <span class="comment">// NEW INSTRUCTIONS: AUTO CONVERT FLOAT TO INT</span></div>
-<div class="line"><span class="lineno">  240</span>        <a class="code hl_variable" href="../../d9/dae/structfl_1_1int__conversion__visitor_a60de40e8fd981d3bb3c6c673f53a184d.html#a60de40e8fd981d3bb3c6c673f53a184d">result</a> = <span class="keyword">static_cast&lt;</span><a class="code hl_struct" href="../../d9/dae/structfl_1_1int__conversion__visitor.html">IntType</a><span class="keyword">&gt;</span>(<a class="code hl_struct" href="../../d9/dae/structfl_1_1int__conversion__visitor.html">value</a>);</div>
+<div class="line"><span class="lineno">  240</span>        <a class="code hl_variable" href="../../df/d61/structfl_1_1int__conversion__visitor_3_01i64_01_4_a09b89e9ab009f1cc30042bba9855d640.html#a09b89e9ab009f1cc30042bba9855d640">result</a> = <span class="keyword">static_cast&lt;</span><a class="code hl_struct" href="../../d9/dae/structfl_1_1int__conversion__visitor.html">IntType</a><span class="keyword">&gt;</span>(<a class="code hl_struct" href="../../d9/dae/structfl_1_1int__conversion__visitor.html">value</a>);</div>
 <div class="line"><span class="lineno">  241</span>    }</div>
-<div class="ttc" id="astructfl_1_1int__conversion__visitor_a60de40e8fd981d3bb3c6c673f53a184d_html_a60de40e8fd981d3bb3c6c673f53a184d"><div class="ttname"><a href="../../d9/dae/structfl_1_1int__conversion__visitor_a60de40e8fd981d3bb3c6c673f53a184d.html#a60de40e8fd981d3bb3c6c673f53a184d">fl::int_conversion_visitor::result</a></div><div class="ttdeci">fl::optional&lt; IntType &gt; result</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d5e/fl_2stl_2json_2types_8h_source.html#l00164">types.h:164</a></div></div>
+<div class="ttc" id="astructfl_1_1int__conversion__visitor_3_01i64_01_4_a09b89e9ab009f1cc30042bba9855d640_html_a09b89e9ab009f1cc30042bba9855d640"><div class="ttname"><a href="../../df/d61/structfl_1_1int__conversion__visitor_3_01i64_01_4_a09b89e9ab009f1cc30042bba9855d640.html#a09b89e9ab009f1cc30042bba9855d640">fl::int_conversion_visitor&lt; i64 &gt;::result</a></div><div class="ttdeci">fl::optional&lt; i64 &gt; result</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d5e/fl_2stl_2json_2types_8h_source.html#l00279">types.h:279</a></div></div>
 <div class="ttc" id="astructfl_1_1int__conversion__visitor_html"><div class="ttname"><a href="../../d9/dae/structfl_1_1int__conversion__visitor.html">fl::int_conversion_visitor</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d5e/fl_2stl_2json_2types_8h_source.html#l00163">types.h:163</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d7/d5e/fl_2stl_2json_2types_8h_source.html#l00164">result</a>, and <a class="el" href="../../dd/d37/static__constexpr__defs_8cpp_8hpp_source.html#l00082">fl::type_rank&lt; T &gt;::value</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -145,8 +139,8 @@ template&lt;typename T = IntType&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d9/dae/structfl_1_1int__conversion__visitor.html">int_conversion_visitor</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:09 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../df/d61/structfl_1_1int__conversion__visitor_3_01i64_01_4.html">int_conversion_visitor&lt; i64 &gt;</a></li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:30 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

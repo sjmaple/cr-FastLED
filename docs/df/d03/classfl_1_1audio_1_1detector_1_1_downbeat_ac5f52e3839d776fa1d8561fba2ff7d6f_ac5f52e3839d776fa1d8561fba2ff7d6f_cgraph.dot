@@ -1,0 +1,36 @@
+digraph "fl::audio::detector::Downbeat::update"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fl::audio::detector\l::Downbeat::update",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::audio::detector\l::Downbeat::Downbeat",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d03/classfl_1_1audio_1_1detector_1_1_downbeat_a68f035ebc9e0fa4ee061713e78fbf268.html#a68f035ebc9e0fa4ee061713e78fbf268",tooltip="Construct with shared Beat (recommended)"];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::audio::detector\l::Downbeat::calculateBeatAccent",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d03/classfl_1_1audio_1_1detector_1_1_downbeat_a521517c6ebb46bc437b757fca5240e6c.html#a521517c6ebb46bc437b757fca5240e6c",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::audio::detector\l::Downbeat::detectDownbeat",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d03/classfl_1_1audio_1_1detector_1_1_downbeat_abfd774849974d4dfb8c41f19c0c0eb52.html#abfd774849974d4dfb8c41f19c0c0eb52",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::abs",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_aea39aa3747a937b0dbefabdf22cf2bbc.html#aea39aa3747a937b0dbefabdf22cf2bbc",tooltip=" "];
+  Node4 -> Node6 [id="edge5_Node000004_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::clamp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a391721290a9307391d39a0a897d9b9f4.html#a391721290a9307391d39a0a897d9b9f4",tooltip=" "];
+  Node4 -> Node7 [id="edge6_Node000004_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl::audio::detector\l::Downbeat::isDownbeat",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d03/classfl_1_1audio_1_1detector_1_1_downbeat_ad2419ef5bb14dfbab1e837f229a9bd8c.html#ad2419ef5bb14dfbab1e837f229a9bd8c",tooltip="Returns true if downbeat was detected this frame."];
+  Node7 -> Node7 [id="edge7_Node000007_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node4 -> Node8 [id="edge8_Node000004_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="fl::max",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a07c69292ef50aa1083046faff1c52ead.html#a07c69292ef50aa1083046faff1c52ead",tooltip=" "];
+  Node1 -> Node9 [id="edge9_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="fl::audio::detector\l::Downbeat::detectMeter",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d03/classfl_1_1audio_1_1detector_1_1_downbeat_a0a31461361d6634f668e3a5545c7a790.html#a0a31461361d6634f668e3a5545c7a790",tooltip=" "];
+  Node9 -> Node10 [id="edge10_Node000009_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="fl::audio::detector\l::Downbeat::findMostCommon\lMeter",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d03/classfl_1_1audio_1_1detector_1_1_downbeat_ac3a22abff47bd1c671feacf36b2d240d.html#ac3a22abff47bd1c671feacf36b2d240d",tooltip=" "];
+  Node9 -> Node11 [id="edge11_Node000009_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="fl::array::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dca/classfl_1_1array_a8c9e43b382b857a1b89e2734863bbaa9.html#a8c9e43b382b857a1b89e2734863bbaa9",tooltip=" "];
+  Node1 -> Node1 [id="edge12_Node000001_Node000001",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node12 [id="edge13_Node000001_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="fl::audio::detector\l::Downbeat::updateBeatDetector",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d03/classfl_1_1audio_1_1detector_1_1_downbeat_a39cb71e8330b4b343d3620b4e5ddecfc.html#a39cb71e8330b4b343d3620b4e5ddecfc",tooltip=" "];
+  Node1 -> Node13 [id="edge14_Node000001_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="fl::audio::detector\l::Downbeat::updateMeasurePhase",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d03/classfl_1_1audio_1_1detector_1_1_downbeat_a58f2044fbee260bf25380305c93b5a28.html#a58f2044fbee260bf25380305c93b5a28",tooltip=" "];
+}

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -117,30 +117,30 @@ $(function(){initNavTree('d4/d36/namespacefl_a89b5f61735be1dc4eb839356aeffdb8e.h
 
 <p>16-bit quadratic ease-in/ease-out function Takes an input value 0-65535 and returns an eased value 0-65535 </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html#l00195">195</a> of file <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html">ease.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  195</span>                           {</div>
-<div class="line"><span class="lineno">  196</span>    <span class="comment">// 16-bit quadratic ease-in / ease-out function</span></div>
-<div class="line"><span class="lineno">  197</span>    <span class="keyword">constexpr</span> u32 MAX = 0xFFFF;          <span class="comment">// 65535</span></div>
-<div class="line"><span class="lineno">  198</span>    <span class="keyword">constexpr</span> u32 HALF = (MAX + 1) &gt;&gt; 1; <span class="comment">// 32768</span></div>
-<div class="line"><span class="lineno">  199</span>    <span class="keyword">constexpr</span> u32 DENOM = MAX;           <span class="comment">// divisor</span></div>
-<div class="line"><span class="lineno">  200</span>    <span class="keyword">constexpr</span> u32 ROUND = DENOM &gt;&gt; 1;    <span class="comment">// for rounding</span></div>
-<div class="line"><span class="lineno">  201</span> </div>
-<div class="line"><span class="lineno">  202</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a> &lt; HALF) {</div>
-<div class="line"><span class="lineno">  203</span>        <span class="comment">// first half: y = 2·(x/MAX)² → y_i = 2·x² / MAX</span></div>
-<div class="line"><span class="lineno">  204</span>        fl::u64 xi = <a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a>;</div>
-<div class="line"><span class="lineno">  205</span>        fl::u64 num = 2 * xi * xi + ROUND; <span class="comment">// 2*x², +half for rounding</span></div>
-<div class="line"><span class="lineno">  206</span>        <span class="keywordflow">return</span> u16(num / DENOM);</div>
-<div class="line"><span class="lineno">  207</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  208</span>        <span class="comment">// second half: y = 1 − 2·(1−x/MAX)² → y_i = MAX − (2·(MAX−x)² / MAX)</span></div>
-<div class="line"><span class="lineno">  209</span>        fl::u64 d = MAX - <a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
-<div class="line"><span class="lineno">  210</span>        fl::u64 num = 2 * d * d + ROUND; <span class="comment">// 2*(MAX−x)², +half for rounding</span></div>
-<div class="line"><span class="lineno">  211</span>        <span class="keywordflow">return</span> u16(MAX - (num / DENOM));</div>
-<div class="line"><span class="lineno">  212</span>    }</div>
-<div class="line"><span class="lineno">  213</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html#l00196">196</a> of file <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html">ease.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  196</span>                                        {</div>
+<div class="line"><span class="lineno">  197</span>    <span class="comment">// 16-bit quadratic ease-in / ease-out function</span></div>
+<div class="line"><span class="lineno">  198</span>    <span class="keyword">constexpr</span> u32 MAX = 0xFFFF;          <span class="comment">// 65535</span></div>
+<div class="line"><span class="lineno">  199</span>    <span class="keyword">constexpr</span> u32 HALF = (MAX + 1) &gt;&gt; 1; <span class="comment">// 32768</span></div>
+<div class="line"><span class="lineno">  200</span>    <span class="keyword">constexpr</span> u32 DENOM = MAX;           <span class="comment">// divisor</span></div>
+<div class="line"><span class="lineno">  201</span>    <span class="keyword">constexpr</span> u32 ROUND = DENOM &gt;&gt; 1;    <span class="comment">// for rounding</span></div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a> &lt; HALF) {</div>
+<div class="line"><span class="lineno">  204</span>        <span class="comment">// first half: y = 2·(x/MAX)² → y_i = 2·x² / MAX</span></div>
+<div class="line"><span class="lineno">  205</span>        fl::u64 xi = <a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a>;</div>
+<div class="line"><span class="lineno">  206</span>        fl::u64 num = 2 * xi * xi + ROUND; <span class="comment">// 2*x², +half for rounding</span></div>
+<div class="line"><span class="lineno">  207</span>        <span class="keywordflow">return</span> u16(num / DENOM);</div>
+<div class="line"><span class="lineno">  208</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  209</span>        <span class="comment">// second half: y = 1 − 2·(1−x/MAX)² → y_i = MAX − (2·(MAX−x)² / MAX)</span></div>
+<div class="line"><span class="lineno">  210</span>        fl::u64 d = MAX - <a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><span class="lineno">  211</span>        fl::u64 num = 2 * d * d + ROUND; <span class="comment">// 2*(MAX−x)², +half for rounding</span></div>
+<div class="line"><span class="lineno">  212</span>        <span class="keywordflow">return</span> u16(MAX - (num / DENOM));</div>
+<div class="line"><span class="lineno">  213</span>    }</div>
+<div class="line"><span class="lineno">  214</span>}</div>
 <div class="ttc" id="a_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> <a href="../../db/d49/_audio_2simple_2simple_8h_source.html#l00092">simple.h:92</a></div></div>
-<div class="ttc" id="anamespacefl_a01deac84db27d10f737f8a92973bea86_html_a01deac84db27d10f737f8a92973bea86"><div class="ttname"><a href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">fl::x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00024">transposition.cpp.hpp:24</a></div></div>
+<div class="ttc" id="anamespacefl_a01deac84db27d10f737f8a92973bea86_html_a01deac84db27d10f737f8a92973bea86"><div class="ttname"><a href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">fl::x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00025">transposition.cpp.hpp:25</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00024">x</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">FL_NO_EXCEPT</a>, and <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00025">x</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d19/ease_8h_source.html#l00148">ease16()</a>, and <a class="el" href="../../db/d19/ease_8h_source.html#l00132">ease16()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -160,7 +160,7 @@ $(function(){initNavTree('d4/d36/namespacefl_a89b5f61735be1dc4eb839356aeffdb8e.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:07 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:28 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

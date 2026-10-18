@@ -42,6 +42,7 @@ var classfl_1_1vector__basic =
     [ "trivial_default_construct", "d4/dad/classfl_1_1vector__basic_a7dd1d01552073d268103c0e77e7b3c11.html#a7dd1d01552073d268103c0e77e7b3c11", null ],
     [ "trivial_move_left", "d4/dad/classfl_1_1vector__basic_a94d47180cc37668178a5db984f73d5ef.html#a94d47180cc37668178a5db984f73d5ef", null ],
     [ "trivial_swap", "d4/dad/classfl_1_1vector__basic_a271f57d520c0b92f40f3a5cf6e462b50.html#a271f57d520c0b92f40f3a5cf6e462b50", null ],
+    [ "uninitialized_move_n_impl", "d4/dad/classfl_1_1vector__basic_a92d9250650133807a2b5049c3f69e08b.html#a92d9250650133807a2b5049c3f69e08b", null ],
     [ "mArray", "d4/dad/classfl_1_1vector__basic_ac815354c15072ab6a0f6b9f4eb7a5e57.html#ac815354c15072ab6a0f6b9f4eb7a5e57", null ],
     [ "mCapacity", "d4/dad/classfl_1_1vector__basic_a934eb2b574453f80d31984ddb7f3748b.html#a934eb2b574453f80d31984ddb7f3748b", null ],
     [ "mElementSize", "d4/dad/classfl_1_1vector__basic_a5fe2801591fa054cc99f7cc5ac9ee580.html#a5fe2801591fa054cc99f7cc5ac9ee580", null ],

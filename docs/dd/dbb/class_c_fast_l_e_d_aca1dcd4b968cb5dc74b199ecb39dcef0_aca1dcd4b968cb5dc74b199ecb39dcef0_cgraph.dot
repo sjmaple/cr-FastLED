@@ -10,5 +10,12 @@ digraph "CFastLED::_FL_MAP_CLOCKED_CHIPSET"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="CFastLED::_FL_MAP_CLOCKED\l_CHIPSET",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_a0b54e78f5f27a6278351e0ff18784b3a.html#a0b54e78f5f27a6278351e0ff18784b3a",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="CFastLED::addLeds",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_af05a7eb54282b7c43293e2905b7405bb.html#af05a7eb54282b7c43293e2905b7405bb",tooltip="Add a CLEDController instance to the world."];
+  Node3 [id="Node000003",label="CFastLED::addLeds",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_ad7d7051d7b3e2d9dbd6a5c09f2125d80.html#ad7d7051d7b3e2d9dbd6a5c09f2125d80",tooltip="Add a CLEDController instance to the world."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="CFastLED::add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_a1ee7dba71ce7a3ae65c1e1852cedb2f3.html#a1ee7dba71ce7a3ae65c1e1852cedb2f3",tooltip="Add a Channel-based LED controller (from ChannelPtr)"];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::Channel::addToDrawList",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d8b/classfl_1_1_channel_ae0102aea5d5fd5b258e140440236eced.html#ae0102aea5d5fd5b258e140440236eced",tooltip="Add this channel to the global controller draw list."];
+  Node4 -> Node12 [id="edge5_Node000004_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="CFastLED::channels",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_a80d8b10e1cd71e49a08cb2598920ec43.html#a80d8b10e1cd71e49a08cb2598920ec43",tooltip="stored ChannelPtrs to keep them alive"];
+  Node3 -> Node3 [id="edge6_Node000003_Node000003",color="steelblue1",style="solid",tooltip=" "];
 }

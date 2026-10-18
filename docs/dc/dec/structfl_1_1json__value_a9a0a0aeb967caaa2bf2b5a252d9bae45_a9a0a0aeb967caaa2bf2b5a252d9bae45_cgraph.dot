@@ -15,6 +15,6 @@ digraph "fl::json_value::operator="
   Node4 [id="Node000004",label="fl::soft_double_to\l_float",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ab02435f98049f246ffc5bd375763e67c.html#ab02435f98049f246ffc5bd375763e67c",tooltip=" "];
   Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
   Node5 [id="Node000005",label="fl::detail::soft_bit_copy",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d9e/namespacefl_1_1detail_a2e398873edd996a0b45e5c3ff9ac5549.html#a2e398873edd996a0b45e5c3ff9ac5549",tooltip=" "];
-  Node4 -> Node9 [id="edge5_Node000004_Node000009",color="steelblue1",style="solid",tooltip=" "];
-  Node9 [id="Node000009",label="fl::soft_float_bits\l_from_double_bits",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a7ce4b4443a469a93f6be4967eeca7d62.html#a7ce4b4443a469a93f6be4967eeca7d62",tooltip=" "];
+  Node4 -> Node10 [id="edge5_Node000004_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="fl::soft_float_bits\l_from_double_bits",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a7ce4b4443a469a93f6be4967eeca7d62.html#a7ce4b4443a469a93f6be4967eeca7d62",tooltip=" "];
 }

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -120,9 +120,9 @@ $(function(){initNavTree('d2/db2/classfl_1_1string_afcf9f08ef8be6e031c31827a3877
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00232">232</a> of file <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html">basic_string.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  467</span>                                                       {</div>
+<div class="fragment"><div class="line"><span class="lineno">  467</span>                                                                    {</div>
 <div class="line"><span class="lineno">  468</span>    <span class="keywordflow">if</span> (count == 0) {</div>
-<div class="line"><span class="lineno">  469</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_a29022c57817c486135e4939abce404d6.html#a29022c57817c486135e4939abce404d6">clear</a>();</div>
+<div class="line"><span class="lineno">  469</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_a5485fc57f43084ac700cd20f89a4b8f5.html#a5485fc57f43084ac700cd20f89a4b8f5">clear</a>();</div>
 <div class="line"><span class="lineno">  470</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  471</span>    }</div>
 <div class="line"><span class="lineno">  472</span>    <a class="code hl_variable" href="../../de/d66/classfl_1_1basic__string_a9fd4a1143177b317978e8ba38939c060.html#a9fd4a1143177b317978e8ba38939c060">mLength</a> = count;</div>
@@ -135,7 +135,7 @@ $(function(){initNavTree('d2/db2/classfl_1_1string_afcf9f08ef8be6e031c31827a3877
 <div class="line"><span class="lineno">  479</span>        }</div>
 <div class="line"><span class="lineno">  480</span>        <a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_a8f1ed124471f133d9efee78fe4bb69b3.html#a8f1ed124471f133d9efee78fe4bb69b3">inlineBufferPtr</a>()[count] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><span class="lineno">  481</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  482</span>        <a class="code hl_variable" href="../../de/d66/classfl_1_1basic__string_aa4b96230d35407cdaac045c72aba42f7.html#aa4b96230d35407cdaac045c72aba42f7">mStorage</a> = <a class="code hl_typedef" href="../../d4/d36/namespacefl_a2233e1360d6e45faf846d710c36fcb37.html#a2233e1360d6e45faf846d710c36fcb37">NotNullStringHolderPtr</a>(<a class="code hl_function" href="../../d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared&lt;StringHolder&gt;</a>(count));</div>
+<div class="line"><span class="lineno">  482</span>        <a class="code hl_variable" href="../../de/d66/classfl_1_1basic__string_aa4b96230d35407cdaac045c72aba42f7.html#aa4b96230d35407cdaac045c72aba42f7">mStorage</a> = <a class="code hl_typedef" href="../../d4/d36/namespacefl_a2233e1360d6e45faf846d710c36fcb37.html#a2233e1360d6e45faf846d710c36fcb37">NotNullStringHolderPtr</a>(<a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::make_shared&lt;StringHolder&gt;</a>(count));</div>
 <div class="line"><span class="lineno">  483</span>        <a class="code hl_typedef" href="../../d4/d36/namespacefl_a2233e1360d6e45faf846d710c36fcb37.html#a2233e1360d6e45faf846d710c36fcb37">NotNullStringHolderPtr</a>&amp; ptr = <a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_a3bf0d8d5d4ce1d502decb6d3c4c1cb8f.html#a3bf0d8d5d4ce1d502decb6d3c4c1cb8f">heapData</a>();</div>
 <div class="line"><span class="lineno">  484</span>        <span class="keywordflow">for</span> (fl::size i = 0; i &lt; count; ++i) {</div>
 <div class="line"><span class="lineno">  485</span>            ptr-&gt;data()[i] = c;</div>
@@ -150,9 +150,9 @@ $(function(){initNavTree('d2/db2/classfl_1_1string_afcf9f08ef8be6e031c31827a3877
 <div class="ttc" id="aclassfl_1_1basic__string_a9fd4a1143177b317978e8ba38939c060_html_a9fd4a1143177b317978e8ba38939c060"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_a9fd4a1143177b317978e8ba38939c060.html#a9fd4a1143177b317978e8ba38939c060">fl::basic_string::mLength</a></div><div class="ttdeci">fl::size mLength</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00490">basic_string.h:490</a></div></div>
 <div class="ttc" id="aclassfl_1_1basic__string_aa0b7792704593e48b18d7ce909f4e7fa_html_aa0b7792704593e48b18d7ce909f4e7fa"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_aa0b7792704593e48b18d7ce909f4e7fa.html#aa0b7792704593e48b18d7ce909f4e7fa">fl::basic_string::isInline</a></div><div class="ttdeci">bool isInline() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00502">basic_string.h:502</a></div></div>
 <div class="ttc" id="aclassfl_1_1basic__string_aa4b96230d35407cdaac045c72aba42f7_html_aa4b96230d35407cdaac045c72aba42f7"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_aa4b96230d35407cdaac045c72aba42f7.html#aa4b96230d35407cdaac045c72aba42f7">fl::basic_string::mStorage</a></div><div class="ttdeci">fl::variant&lt; NotNullStringHolderPtr, ConstLiteral, ConstView &gt; mStorage</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00491">basic_string.h:491</a></div></div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c_html_a9fb4ec44d15efca3aed1890e7b57410c"><div class="ttname"><a href="../../df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::adl_barrier::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args &amp;&amp;... args) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00423">shared_ptr.h:423</a></div></div>
 <div class="ttc" id="anamespacefl_a2233e1360d6e45faf846d710c36fcb37_html_a2233e1360d6e45faf846d710c36fcb37"><div class="ttname"><a href="../../d4/d36/namespacefl_a2233e1360d6e45faf846d710c36fcb37.html#a2233e1360d6e45faf846d710c36fcb37">fl::NotNullStringHolderPtr</a></div><div class="ttdeci">fl::not_null&lt; StringHolderPtr &gt; NotNullStringHolderPtr</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00035">basic_string.h:35</a></div></div>
-<div class="ttc" id="anamespacefl_a29022c57817c486135e4939abce404d6_html_a29022c57817c486135e4939abce404d6"><div class="ttname"><a href="../../d4/d36/namespacefl_a29022c57817c486135e4939abce404d6.html#a29022c57817c486135e4939abce404d6">fl::clear</a></div><div class="ttdeci">void clear(CRGB(&amp;arr)[N])</div><div class="ttdef"><b>Definition</b> <a href="../../df/db0/clear_8h_source.html#l00012">clear.h:12</a></div></div>
-<div class="ttc" id="anamespacefl_a87ae8a24cc8b709a64f39370e71846af_html_a87ae8a24cc8b709a64f39370e71846af"><div class="ttname"><a href="../../d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args &amp;&amp;... args) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00414">shared_ptr.h:414</a></div></div>
+<div class="ttc" id="anamespacefl_a5485fc57f43084ac700cd20f89a4b8f5_html_a5485fc57f43084ac700cd20f89a4b8f5"><div class="ttname"><a href="../../d4/d36/namespacefl_a5485fc57f43084ac700cd20f89a4b8f5.html#a5485fc57f43084ac700cd20f89a4b8f5">fl::clear</a></div><div class="ttdeci">void clear(CRGB(&amp;arr)[N]) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/db0/clear_8h_source.html#l00014">clear.h:14</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -163,7 +163,7 @@ $(function(){initNavTree('d2/db2/classfl_1_1string_afcf9f08ef8be6e031c31827a3877
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d2/db2/classfl_1_1string.html">string</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:32 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

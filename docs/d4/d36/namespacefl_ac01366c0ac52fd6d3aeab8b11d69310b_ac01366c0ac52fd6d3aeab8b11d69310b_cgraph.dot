@@ -8,7 +8,7 @@ digraph "fl::cosf"
   rankdir="LR";
   Node1 [id="Node000001",label="fl::cosf",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::cos_impl_float",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a82dc97b9808ee5c39eb57f649d20a2fd.html#a82dc97b9808ee5c39eb57f649d20a2fd",tooltip=" "];
+  Node2 [id="Node000002",label="fl::cos_impl_float",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_af8aa7b2f018f8fb335e392b1e31e915f.html#af8aa7b2f018f8fb335e392b1e31e915f",tooltip=" "];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="fl::detail::cos_reduce_",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_ac2273fa1bad46159181e978dff14b9b2.html#ac2273fa1bad46159181e978dff14b9b2",tooltip=" "];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];

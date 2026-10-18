@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 619;
+var viewWidth = 646;
 var viewHeight = 168;
 var sectionId = 'dynsection-1';
 </script>
@@ -59,17 +59,17 @@ var sectionId = 'dynsection-1';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="611,-92 450,-92 450,-73 611,-73 611,-92"/>
-<text text-anchor="middle" x="530.5" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00">fl::EngineEvents::onEndFrame</text>
+<polygon fill="#999999" stroke="#666666" points="638,-92 477,-92 477,-73 638,-73 638,-92"/>
+<text text-anchor="middle" x="557.5" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00">fl::EngineEvents::onEndFrame</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../dd/dbb/class_c_fast_l_e_d_a0f2e873e64e881bd843e188d92cd8caa.html#a0f2e873e64e881bd843e188d92cd8caa" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="414,-123 286,-123 286,-104 414,-104 414,-123"/>
-<text text-anchor="middle" x="350" y="-111" font-family="Helvetica,sans-Serif" font-size="10.00">CFastLED::onEndFrame</text>
+<g id="a_Node000002"><a xlink:href="../../dd/dbb/class_c_fast_l_e_d_a9e6c77ad844893b329be32dda9ff5a14.html#a9e6c77ad844893b329be32dda9ff5a14" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="441,-123 313,-123 313,-104 441,-104 441,-123"/>
+<text text-anchor="middle" x="377" y="-111" font-family="Helvetica,sans-Serif" font-size="10.00">CFastLED::onEndFrame</text>
 </a>
 </g>
 </g>
@@ -77,36 +77,36 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M464.58,-93.77C445.31,-97.12 424.4,-100.75 405.83,-103.98"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="465.23,-97.21 474.49,-92.05 464.04,-90.32 465.23,-97.21"/>
+<path fill="none" stroke="#63b8ff" d="M491.58,-93.77C472.31,-97.12 451.4,-100.75 432.83,-103.98"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="492.23,-97.21 501.49,-92.05 491.04,-90.32 492.23,-97.21"/>
 </a>
 </g>
 </g>
-<!-- Node6 -->
-<g id="Node000006" class="node">
-<title>Node6</title>
-<g id="a_Node000006"><a xlink:href="../../d8/da0/classfl_1_1_c_l_e_d_controller_af05507dfcd5212fde80c557c63fbd018.html#af05507dfcd5212fde80c557c63fbd018" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="401,-67.5 299,-67.5 299,-37.5 401,-37.5 401,-67.5"/>
-<text text-anchor="start" x="307" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">fl::CLEDController</text>
-<text text-anchor="middle" x="350" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">::showLeds</text>
+<!-- Node7 -->
+<g id="Node000007" class="node">
+<title>Node7</title>
+<g id="a_Node000007"><a xlink:href="../../d8/da0/classfl_1_1_c_l_e_d_controller_af05507dfcd5212fde80c557c63fbd018.html#af05507dfcd5212fde80c557c63fbd018" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="428,-67.5 326,-67.5 326,-37.5 428,-37.5 428,-67.5"/>
+<text text-anchor="start" x="334" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">fl::CLEDController</text>
+<text text-anchor="middle" x="377" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">::showLeds</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge5_Node000001_Node000006" class="edge">
-<title>Node1&#45;&gt;Node6</title>
-<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M462.39,-71.22C442.07,-67.81 420.11,-64.12 401.11,-60.92"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="462.09,-74.72 472.53,-72.93 463.25,-67.82 462.09,-74.72"/>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge7_Node000001_Node000007" class="edge">
+<title>Node1&#45;&gt;Node7</title>
+<g id="a_edge7_Node000001_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M489.39,-71.22C469.07,-67.81 447.11,-64.12 428.11,-60.92"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="489.09,-74.72 499.53,-72.93 490.25,-67.82 489.09,-74.72"/>
 </a>
 </g>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../dd/dbb/class_c_fast_l_e_d_a93471b4babe96100496e8e25062cba3f.html#a93471b4babe96100496e8e25062cba3f" target="_top" xlink:title="Update all our controllers with the current led colors, using the passed in brightness.">
-<polygon fill="white" stroke="#666666" points="235.5,-160 142.5,-160 142.5,-141 235.5,-141 235.5,-160"/>
-<text text-anchor="middle" x="189" y="-148" font-family="Helvetica,sans-Serif" font-size="10.00">CFastLED::show</text>
+<g id="a_Node000003"><a xlink:href="../../dd/dbb/class_c_fast_l_e_d_a5929c4c4c55bd81c7ce3859c94beb4ff.html#a5929c4c4c55bd81c7ce3859c94beb4ff" target="_top" xlink:title="Update all our controllers with the current led colors, using the passed in brightness.">
+<polygon fill="white" stroke="#666666" points="262.5,-160 169.5,-160 169.5,-141 262.5,-141 262.5,-160"/>
+<text text-anchor="middle" x="216" y="-148" font-family="Helvetica,sans-Serif" font-size="10.00">CFastLED::show</text>
 </a>
 </g>
 </g>
@@ -114,17 +114,17 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M298.05,-125.36C276.41,-130.39 251.52,-136.18 231.08,-140.94"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="299.11,-128.7 308.05,-123.03 297.52,-121.89 299.11,-128.7"/>
+<path fill="none" stroke="#63b8ff" d="M325.05,-125.36C303.41,-130.39 278.52,-136.18 258.08,-140.94"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="326.11,-128.7 335.05,-123.03 324.52,-121.89 326.11,-128.7"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../dd/dbb/class_c_fast_l_e_d_a50e30222e81562a7ef334dbe4fdfa856.html#a50e30222e81562a7ef334dbe4fdfa856" target="_top" xlink:title="Set all leds on all controllers to the given color/scale.">
-<polygon fill="white" stroke="#666666" points="248.5,-123 129.5,-123 129.5,-104 248.5,-104 248.5,-123"/>
-<text text-anchor="middle" x="189" y="-111" font-family="Helvetica,sans-Serif" font-size="10.00">CFastLED::showColor</text>
+<g id="a_Node000004"><a xlink:href="../../dd/dbb/class_c_fast_l_e_d_a95ca26d3b5877b87eda4f9d8877a33c0.html#a95ca26d3b5877b87eda4f9d8877a33c0" target="_top" xlink:title="Set all leds on all controllers to the given color/scale.">
+<polygon fill="white" stroke="#666666" points="275.5,-123 156.5,-123 156.5,-104 275.5,-104 275.5,-123"/>
+<text text-anchor="middle" x="216" y="-111" font-family="Helvetica,sans-Serif" font-size="10.00">CFastLED::showColor</text>
 </a>
 </g>
 </g>
@@ -132,17 +132,17 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000002_Node000004" class="edge">
 <title>Node2&#45;&gt;Node4</title>
 <g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M275.59,-113.5C266.57,-113.5 257.45,-113.5 248.69,-113.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="275.7,-117 285.7,-113.5 275.7,-110 275.7,-117"/>
+<path fill="none" stroke="#63b8ff" d="M302.59,-113.5C293.57,-113.5 284.45,-113.5 275.69,-113.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="302.7,-117 312.7,-113.5 302.7,-110 302.7,-117"/>
 </a>
 </g>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="../../dd/dbb/class_c_fast_l_e_d_aeb7bd3e8f2dbced6284a2182191d5fcb.html#aeb7bd3e8f2dbced6284a2182191d5fcb" target="_top" xlink:title="Clear the leds, wiping the local array of data.">
-<polygon fill="white" stroke="#666666" points="92,-123 0,-123 0,-104 92,-104 92,-123"/>
-<text text-anchor="middle" x="46" y="-111" font-family="Helvetica,sans-Serif" font-size="10.00">CFastLED::clear</text>
+<g id="a_Node000005"><a xlink:href="../../dd/dbb/class_c_fast_l_e_d_a03374b32846e96197af65fe5ebdc1985.html#a03374b32846e96197af65fe5ebdc1985" target="_top" xlink:title="Clear the leds, wiping the local array of data.">
+<polygon fill="white" stroke="#666666" points="105.5,-150 13.5,-150 13.5,-131 105.5,-131 105.5,-150"/>
+<text text-anchor="middle" x="59.5" y="-138" font-family="Helvetica,sans-Serif" font-size="10.00">CFastLED::clear</text>
 </a>
 </g>
 </g>
@@ -150,54 +150,81 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M119.17,-113.5C110.04,-113.5 100.87,-113.5 92.28,-113.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="119.43,-117 129.43,-113.5 119.43,-110 119.43,-117"/>
+<path fill="none" stroke="#63b8ff" d="M150.3,-124.81C135.34,-127.42 119.73,-130.15 105.8,-132.58"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="151.28,-128.19 160.53,-123.02 150.08,-121.29 151.28,-128.19"/>
 </a>
 </g>
 </g>
-<!-- Node7 -->
-<g id="Node000007" class="node">
-<title>Node7</title>
-<g id="a_Node000007"><a xlink:href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a6c295e80958b0f814f6771902521478b.html#a6c295e80958b0f814f6771902521478b" target="_top" xlink:title="Clear out/zero out the given number of LEDs.">
-<polygon fill="white" stroke="#666666" points="240,-67.5 138,-67.5 138,-37.5 240,-37.5 240,-67.5"/>
-<text text-anchor="start" x="146" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">fl::CLEDController</text>
-<text text-anchor="middle" x="189" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">::clearLeds</text>
+<!-- Node6 -->
+<g id="Node000006" class="node">
+<title>Node6</title>
+<g id="a_Node000006"><a xlink:href="../../dd/dbb/class_c_fast_l_e_d_aa078775ee48e1aa3ee97887b6ce3540f.html#aa078775ee48e1aa3ee97887b6ce3540f" target="_top" xlink:title="Set all leds on all controllers to the given color.">
+<polygon fill="white" stroke="#666666" points="119,-95 0,-95 0,-76 119,-76 119,-95"/>
+<text text-anchor="middle" x="59.5" y="-83" font-family="Helvetica,sans-Serif" font-size="10.00">CFastLED::showColor</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node7 -->
-<g id="edge6_Node000006_Node000007" class="edge">
-<title>Node6&#45;&gt;Node7</title>
-<g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M288.43,-52.5C272.52,-52.5 255.55,-52.5 240.25,-52.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="288.69,-56 298.69,-52.5 288.69,-49 288.69,-56"/>
+<!-- Node4&#45;&gt;Node6 -->
+<g id="edge5_Node000004_Node000006" class="edge">
+<title>Node4&#45;&gt;Node6</title>
+<g id="a_edge5_Node000004_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M152.4,-102.16C139.32,-99.79 125.67,-97.31 113,-95.01"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="151.8,-105.6 162.26,-103.94 153.05,-98.72 151.8,-105.6"/>
+</a>
+</g>
+</g>
+<!-- Node6&#45;&gt;Node6 -->
+<g id="edge6_Node000006_Node000006" class="edge">
+<title>Node6&#45;&gt;Node6</title>
+<g id="a_edge6_Node000006_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M88.62,-103.82C87.4,-109.01 77.7,-113 59.5,-113 31.77,-113 23.76,-103.73 35.46,-95.08"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="91.59,-101.97 83.54,-95.08 85.54,-105.49 91.59,-101.97"/>
 </a>
 </g>
 </g>
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="../../d5/d8b/classfl_1_1_channel_a56c6fceae41ac78584e120f7e01f7aff.html#a56c6fceae41ac78584e120f7e01f7aff" target="_top" xlink:title="Show the LEDs with optional brightness scaling.">
-<polygon fill="white" stroke="#666666" points="250,-19 128,-19 128,0 250,0 250,-19"/>
-<text text-anchor="middle" x="189" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">fl::Channel::showLeds</text>
+<g id="a_Node000008"><a xlink:href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a6c295e80958b0f814f6771902521478b.html#a6c295e80958b0f814f6771902521478b" target="_top" xlink:title="Clear out/zero out the given number of LEDs.">
+<polygon fill="white" stroke="#666666" points="267,-67.5 165,-67.5 165,-37.5 267,-37.5 267,-67.5"/>
+<text text-anchor="start" x="173" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">fl::CLEDController</text>
+<text text-anchor="middle" x="216" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">::clearLeds</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node8 -->
-<g id="edge8_Node000006_Node000008" class="edge">
-<title>Node6&#45;&gt;Node8</title>
-<g id="a_edge8_Node000006_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M289,-36.27C267.55,-30.47 244.09,-24.13 225.39,-19.07"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="288.12,-39.66 298.69,-38.89 289.95,-32.91 288.12,-39.66"/>
+<!-- Node7&#45;&gt;Node8 -->
+<g id="edge8_Node000007_Node000008" class="edge">
+<title>Node7&#45;&gt;Node8</title>
+<g id="a_edge8_Node000007_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M315.43,-52.5C299.52,-52.5 282.55,-52.5 267.25,-52.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="315.69,-56 325.69,-52.5 315.69,-49 315.69,-56"/>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node7 -->
-<g id="edge7_Node000007_Node000007" class="edge">
-<title>Node7&#45;&gt;Node7</title>
-<g id="a_edge7_Node000007_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M213.86,-78.1C210.46,-82.47 202.17,-85.5 189,-85.5 166.81,-85.5 158.49,-76.91 164.04,-67.78"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="217.36,-77.81 213.96,-67.78 210.36,-77.74 217.36,-77.81"/>
+<!-- Node9 -->
+<g id="Node000009" class="node">
+<title>Node9</title>
+<g id="a_Node000009"><a xlink:href="../../d5/d8b/classfl_1_1_channel_a559f0817b702d2d40cbe4acec873cd08.html#a559f0817b702d2d40cbe4acec873cd08" target="_top" xlink:title="Show the LEDs with optional brightness scaling.">
+<polygon fill="white" stroke="#666666" points="277,-19 155,-19 155,0 277,0 277,-19"/>
+<text text-anchor="middle" x="216" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">fl::Channel::showLeds</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node9 -->
+<g id="edge10_Node000007_Node000009" class="edge">
+<title>Node7&#45;&gt;Node9</title>
+<g id="a_edge10_Node000007_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M316,-36.27C294.55,-30.47 271.09,-24.13 252.39,-19.07"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="315.12,-39.66 325.69,-38.89 316.95,-32.91 315.12,-39.66"/>
+</a>
+</g>
+</g>
+<!-- Node8&#45;&gt;Node8 -->
+<g id="edge9_Node000008_Node000008" class="edge">
+<title>Node8&#45;&gt;Node8</title>
+<g id="a_edge9_Node000008_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M243.31,-78.1C239.57,-82.47 230.47,-85.5 216,-85.5 191.62,-85.5 182.48,-76.91 188.58,-67.78"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="246.81,-77.81 243.42,-67.78 239.81,-77.74 246.81,-77.81"/>
 </a>
 </g>
 </g>

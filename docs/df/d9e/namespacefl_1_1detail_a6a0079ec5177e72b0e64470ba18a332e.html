@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -125,30 +125,30 @@ template&lt;typename F&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00265">265</a> of file <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html">math.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  265</span>                                       {</div>
-<div class="line"><span class="lineno">  266</span>    <span class="keyword">const</span> F kPi      = F(3.14159265358979323846);</div>
-<div class="line"><span class="lineno">  267</span>    <span class="keyword">const</span> F kTwoPi   = F(6.28318530717958647692);</div>
-<div class="line"><span class="lineno">  268</span>    <span class="keyword">const</span> F kPiHalf  = F(1.57079632679489661923);</div>
-<div class="line"><span class="lineno">  269</span>    <span class="comment">// Reduce to [-π, π]: subtract floor(x / 2π) * 2π.</span></div>
-<div class="line"><span class="lineno">  270</span>    <span class="comment">// For the FastLED use cases we expect |x| &lt; ~100, so this loop runs a</span></div>
-<div class="line"><span class="lineno">  271</span>    <span class="comment">// bounded number of times. For pathological inputs we cap iterations.</span></div>
-<div class="line"><span class="lineno">  272</span>    <span class="keywordtype">int</span> guard = 32;</div>
-<div class="line"><span class="lineno">  273</span>    <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a> &gt; kPi &amp;&amp; guard &gt; 0) { <a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a> -= kTwoPi; --guard; }</div>
-<div class="line"><span class="lineno">  274</span>    <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x &lt; -kPi &amp;&amp; guard &gt;</a> 0) { <a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a> += kTwoPi; --guard; }</div>
-<div class="line"><span class="lineno">  275</span>    <span class="comment">// Map to [-π/2, π/2] using sin(π - x) = sin(x).</span></div>
-<div class="line"><span class="lineno">  276</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &gt; kPiHalf)  <a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = kPi - <a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
-<div class="line"><span class="lineno">  277</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; -kPiHalf) <a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = -kPi - <a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
-<div class="line"><span class="lineno">  278</span>    <span class="comment">// [-π/2, π/2] -- the polynomial works fine here (max |x| ≈ 1.57).</span></div>
-<div class="line"><span class="lineno">  279</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_aafe0e6f5ecf613c661dc909f733385d1.html#aafe0e6f5ecf613c661dc909f733385d1">sin_poly_quarterturn_</a>(<a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>);</div>
-<div class="line"><span class="lineno">  280</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00266">266</a> of file <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html">math.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  266</span>                                       {</div>
+<div class="line"><span class="lineno">  267</span>    <span class="keyword">const</span> F kPi      = F(3.14159265358979323846);</div>
+<div class="line"><span class="lineno">  268</span>    <span class="keyword">const</span> F kTwoPi   = F(6.28318530717958647692);</div>
+<div class="line"><span class="lineno">  269</span>    <span class="keyword">const</span> F kPiHalf  = F(1.57079632679489661923);</div>
+<div class="line"><span class="lineno">  270</span>    <span class="comment">// Reduce to [-π, π]: subtract floor(x / 2π) * 2π.</span></div>
+<div class="line"><span class="lineno">  271</span>    <span class="comment">// For the FastLED use cases we expect |x| &lt; ~100, so this loop runs a</span></div>
+<div class="line"><span class="lineno">  272</span>    <span class="comment">// bounded number of times. For pathological inputs we cap iterations.</span></div>
+<div class="line"><span class="lineno">  273</span>    <span class="keywordtype">int</span> guard = 32;</div>
+<div class="line"><span class="lineno">  274</span>    <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a> &gt; kPi &amp;&amp; guard &gt; 0) { <a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a> -= kTwoPi; --guard; }</div>
+<div class="line"><span class="lineno">  275</span>    <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x &lt; -kPi &amp;&amp; guard &gt;</a> 0) { <a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a> += kTwoPi; --guard; }</div>
+<div class="line"><span class="lineno">  276</span>    <span class="comment">// Map to [-π/2, π/2] using sin(π - x) = sin(x).</span></div>
+<div class="line"><span class="lineno">  277</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &gt; kPiHalf)  <a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = kPi - <a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><span class="lineno">  278</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; -kPiHalf) <a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = -kPi - <a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><span class="lineno">  279</span>    <span class="comment">// [-π/2, π/2] -- the polynomial works fine here (max |x| ≈ 1.57).</span></div>
+<div class="line"><span class="lineno">  280</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_aafe0e6f5ecf613c661dc909f733385d1.html#aafe0e6f5ecf613c661dc909f733385d1">sin_poly_quarterturn_</a>(<a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>);</div>
+<div class="line"><span class="lineno">  281</span>}</div>
 <div class="ttc" id="a_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> <a href="../../db/d49/_audio_2simple_2simple_8h_source.html#l00092">simple.h:92</a></div></div>
-<div class="ttc" id="anamespacefl_1_1detail_aafe0e6f5ecf613c661dc909f733385d1_html_aafe0e6f5ecf613c661dc909f733385d1"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_aafe0e6f5ecf613c661dc909f733385d1.html#aafe0e6f5ecf613c661dc909f733385d1">fl::detail::sin_poly_quarterturn_</a></div><div class="ttdeci">F sin_poly_quarterturn_(F x) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d02/math_8cpp_8hpp_source.html#l00251">math.cpp.hpp:251</a></div></div>
-<div class="ttc" id="anamespacefl_a01deac84db27d10f737f8a92973bea86_html_a01deac84db27d10f737f8a92973bea86"><div class="ttname"><a href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">fl::x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00024">transposition.cpp.hpp:24</a></div></div>
+<div class="ttc" id="anamespacefl_1_1detail_aafe0e6f5ecf613c661dc909f733385d1_html_aafe0e6f5ecf613c661dc909f733385d1"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_aafe0e6f5ecf613c661dc909f733385d1.html#aafe0e6f5ecf613c661dc909f733385d1">fl::detail::sin_poly_quarterturn_</a></div><div class="ttdeci">F sin_poly_quarterturn_(F x) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d02/math_8cpp_8hpp_source.html#l00252">math.cpp.hpp:252</a></div></div>
+<div class="ttc" id="anamespacefl_a01deac84db27d10f737f8a92973bea86_html_a01deac84db27d10f737f8a92973bea86"><div class="ttname"><a href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">fl::x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00025">transposition.cpp.hpp:25</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00251">sin_poly_quarterturn_()</a>, and <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00024">fl::x</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00252">sin_poly_quarterturn_()</a>, and <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00025">fl::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00283">cos_reduce_()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00345">fl::sin_impl_double()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00337">fl::sin_impl_float()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00679">fl::tan_impl_double()</a>, and <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00669">fl::tan_impl_float()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00284">cos_reduce_()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00346">fl::sin_impl_double()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00338">fl::sin_impl_float()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00680">fl::tan_impl_double()</a>, and <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00670">fl::tan_impl_float()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -173,7 +173,7 @@ template&lt;typename F&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../df/d9e/namespacefl_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

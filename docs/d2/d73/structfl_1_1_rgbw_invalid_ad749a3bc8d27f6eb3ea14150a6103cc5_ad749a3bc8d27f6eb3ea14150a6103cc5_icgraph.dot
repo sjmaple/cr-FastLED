@@ -9,4 +9,6 @@ digraph "fl::RgbwInvalid::value"
   Node1 [id="Node000001",label="fl::RgbwInvalid::value",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="fl::ChannelOptions\l::rgbw",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d87/structfl_1_1_channel_options_ad5921d9174c84ba4afffaae287f192fb.html#ad5921d9174c84ba4afffaae287f192fb",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::LegacySettings\l::rgbw",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/dc1/structfl_1_1_legacy_settings_a49e3bfb544eac44262d02702859a5416.html#a49e3bfb544eac44262d02702859a5416",tooltip=" "];
 }

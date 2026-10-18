@@ -1,5 +1,6 @@
 var fl_2gfx_2rgbw_8h =
 [
+    [ "fl::detail::RgbwNoEncoder", "df/d9e/namespacefl_1_1detail.html#df/df2/structfl_1_1detail_1_1_rgbw_no_encoder", null ],
     [ "fl::DiodeProfile", "d4/d36/namespacefl.html#d5/db5/structfl_1_1_diode_profile", [
       [ "input_xy_b", "d4/d36/namespacefl.html#a324cdd7a2b1bab7a74419a5f8230f4cc", null ],
       [ "input_xy_g", "d4/d36/namespacefl.html#a97424eba3953d33e71aa711a1f7a3791", null ],
@@ -20,6 +21,7 @@ var fl_2gfx_2rgbw_8h =
     [ "fl::RgbwInvalid", "d2/d73/structfl_1_1_rgbw_invalid.html", "d2/d73/structfl_1_1_rgbw_invalid" ],
     [ "fl::RgbwWhiteIsOff", "d6/da6/structfl_1_1_rgbw_white_is_off.html", "d6/da6/structfl_1_1_rgbw_white_is_off" ],
     [ "fl::rgb_2_rgbw_function", "d4/d36/namespacefl_a8c314e86da46874360e5f1559895c4b8.html#a8c314e86da46874360e5f1559895c4b8", null ],
+    [ "fl::detail::RgbwConvertFn", "df/d9e/namespacefl_1_1detail_a0bc0be843ccc24f38b6278995a82d841.html#a0bc0be843ccc24f38b6278995a82d841", null ],
     [ "fl::InputGamut", "d4/d36/namespacefl_a5e134991ca3d4f6b173edbc7cf115cfe.html#a5e134991ca3d4f6b173edbc7cf115cfe", [
       [ "fl::InputGamut::Native", "d4/d36/namespacefl_a5e134991ca3d4f6b173edbc7cf115cfe.html#a5e134991ca3d4f6b173edbc7cf115cfea925641e0b76c28cc940e8f3ca178d826", null ],
       [ "fl::InputGamut::Rec709", "d4/d36/namespacefl_a5e134991ca3d4f6b173edbc7cf115cfe.html#a5e134991ca3d4f6b173edbc7cf115cfeafbd64bc8f23fcba2321c6efbb5b3814a", null ],
@@ -27,15 +29,15 @@ var fl_2gfx_2rgbw_8h =
       [ "fl::InputGamut::DciP3D65", "d4/d36/namespacefl_a5e134991ca3d4f6b173edbc7cf115cfe.html#a5e134991ca3d4f6b173edbc7cf115cfea655c4e4188cfbda384ca9a9e21428859", null ],
       [ "fl::InputGamut::DciP3D60", "d4/d36/namespacefl_a5e134991ca3d4f6b173edbc7cf115cfe.html#a5e134991ca3d4f6b173edbc7cf115cfea412ccb866595429c9470dbe83592d6c6", null ]
     ] ],
-    [ "fl::RGBW_MODE", "d4/d36/namespacefl_a4d0b913888f510f2bc0ac2093750e963.html#a4d0b913888f510f2bc0ac2093750e963", [
-      [ "fl::RGBW_MODE::kRGBWInvalid", "d4/d36/namespacefl_a4d0b913888f510f2bc0ac2093750e963.html#a4d0b913888f510f2bc0ac2093750e963aff8cf7c0341d43e29fcea1ec2c666ca0", null ],
-      [ "fl::RGBW_MODE::kRGBWNullWhitePixel", "d4/d36/namespacefl_a4d0b913888f510f2bc0ac2093750e963.html#a4d0b913888f510f2bc0ac2093750e963a56fb29a6eca310e1f1fa7debf2dbdaff", null ],
-      [ "fl::RGBW_MODE::kRGBWExactColors", "d4/d36/namespacefl_a4d0b913888f510f2bc0ac2093750e963.html#a4d0b913888f510f2bc0ac2093750e963adef79da5dfe3562456cbf141d1f1cc86", null ],
-      [ "fl::RGBW_MODE::kRGBWBoostedWhite", "d4/d36/namespacefl_a4d0b913888f510f2bc0ac2093750e963.html#a4d0b913888f510f2bc0ac2093750e963aa121959867fe92308ac70b7aea3db16a", null ],
-      [ "fl::RGBW_MODE::kRGBWMaxBrightness", "d4/d36/namespacefl_a4d0b913888f510f2bc0ac2093750e963.html#a4d0b913888f510f2bc0ac2093750e963a6c522eb07bab20c347de16d93c49d5ce", null ],
-      [ "fl::RGBW_MODE::kRGBWColorimetric", "d4/d36/namespacefl_a4d0b913888f510f2bc0ac2093750e963.html#a4d0b913888f510f2bc0ac2093750e963a7ceb0601b4b9a688cddf109ec8df2602", null ],
-      [ "fl::RGBW_MODE::kRGBWColorimetricBoosted", "d4/d36/namespacefl_a4d0b913888f510f2bc0ac2093750e963.html#a4d0b913888f510f2bc0ac2093750e963a636fb4803b6b87e9d5c7f678f3ed8412", null ],
-      [ "fl::RGBW_MODE::kRGBWUserFunction", "d4/d36/namespacefl_a4d0b913888f510f2bc0ac2093750e963.html#a4d0b913888f510f2bc0ac2093750e963a131fad68596ec3bbfd143a0661ddc1e1", null ]
+    [ "fl::RGBW_MODE", "d4/d36/namespacefl_ac2bdedd8a4c7bd6a45bd36d6c4658aae.html#ac2bdedd8a4c7bd6a45bd36d6c4658aae", [
+      [ "fl::RGBW_MODE::kRGBWInvalid", "d4/d36/namespacefl_ac2bdedd8a4c7bd6a45bd36d6c4658aae.html#ac2bdedd8a4c7bd6a45bd36d6c4658aaeaff8cf7c0341d43e29fcea1ec2c666ca0", null ],
+      [ "fl::RGBW_MODE::kRGBWNullWhitePixel", "d4/d36/namespacefl_ac2bdedd8a4c7bd6a45bd36d6c4658aae.html#ac2bdedd8a4c7bd6a45bd36d6c4658aaea56fb29a6eca310e1f1fa7debf2dbdaff", null ],
+      [ "fl::RGBW_MODE::kRGBWExactColors", "d4/d36/namespacefl_ac2bdedd8a4c7bd6a45bd36d6c4658aae.html#ac2bdedd8a4c7bd6a45bd36d6c4658aaeadef79da5dfe3562456cbf141d1f1cc86", null ],
+      [ "fl::RGBW_MODE::kRGBWBoostedWhite", "d4/d36/namespacefl_ac2bdedd8a4c7bd6a45bd36d6c4658aae.html#ac2bdedd8a4c7bd6a45bd36d6c4658aaeaa121959867fe92308ac70b7aea3db16a", null ],
+      [ "fl::RGBW_MODE::kRGBWMaxBrightness", "d4/d36/namespacefl_ac2bdedd8a4c7bd6a45bd36d6c4658aae.html#ac2bdedd8a4c7bd6a45bd36d6c4658aaea6c522eb07bab20c347de16d93c49d5ce", null ],
+      [ "fl::RGBW_MODE::kRGBWColorimetric", "d4/d36/namespacefl_ac2bdedd8a4c7bd6a45bd36d6c4658aae.html#ac2bdedd8a4c7bd6a45bd36d6c4658aaea7ceb0601b4b9a688cddf109ec8df2602", null ],
+      [ "fl::RGBW_MODE::kRGBWColorimetricBoosted", "d4/d36/namespacefl_ac2bdedd8a4c7bd6a45bd36d6c4658aae.html#ac2bdedd8a4c7bd6a45bd36d6c4658aaea636fb4803b6b87e9d5c7f678f3ed8412", null ],
+      [ "fl::RGBW_MODE::kRGBWUserFunction", "d4/d36/namespacefl_ac2bdedd8a4c7bd6a45bd36d6c4658aae.html#ac2bdedd8a4c7bd6a45bd36d6c4658aaea131fad68596ec3bbfd143a0661ddc1e1", null ]
     ] ],
     [ "fl::RgbwLutInterp", "d4/d36/namespacefl_a72d3610391944a758ec8bc47b227b6a9.html#a72d3610391944a758ec8bc47b227b6a9", [
       [ "fl::RgbwLutInterp::Bilinear", "d4/d36/namespacefl_a72d3610391944a758ec8bc47b227b6a9.html#a72d3610391944a758ec8bc47b227b6a9aaf17c98bbd83c27d6426d2ff3fa81d7f", null ],
@@ -44,6 +46,7 @@ var fl_2gfx_2rgbw_8h =
     [ "fl::disable_rgbw_colorimetric_lut", "d4/d36/namespacefl_a8d5852426279db0178ce8e6117e39e39.html#a8d5852426279db0178ce8e6117e39e39", null ],
     [ "fl::enable_rgbw_colorimetric_lut", "d4/d36/namespacefl_ad08129458461c5e867eebf653bd6f6df.html#ad08129458461c5e867eebf653bd6f6df", null ],
     [ "fl::enable_rgbw_colorimetric_lut", "d4/d36/namespacefl_ae814c680198d198d69d82f71681b2b0f.html#ae814c680198d198d69d82f71681b2b0f", null ],
+    [ "fl::detail::enable_rgbw_conversion", "df/d9e/namespacefl_1_1detail_a71bbadf2721f57dad6744a2ac4d239ab.html#a71bbadf2721f57dad6744a2ac4d239ab", null ],
     [ "fl::FL_DEPRECATED", "d4/d36/namespacefl_aef9c1c05498d71f2fa31c4d12331bdfb.html#aef9c1c05498d71f2fa31c4d12331bdfb", null ],
     [ "fl::FL_DEPRECATED", "d4/d36/namespacefl_a68741c87239312cb63db489a3cbc150a.html#a68741c87239312cb63db489a3cbc150a", null ],
     [ "fl::get_rgbw_colorimetric_profile", "d4/d36/namespacefl_a926d7e662b37a619a6bff3a84dd6a2ed.html#a926d7e662b37a619a6bff3a84dd6a2ed", null ],
@@ -61,15 +64,15 @@ var fl_2gfx_2rgbw_8h =
     [ "fl::rgb_2_rgbw_exact", "d4/d36/namespacefl_a6aa3f7f2e78c62689adead6bf6345fc2.html#a6aa3f7f2e78c62689adead6bf6345fc2", null ],
     [ "fl::rgb_2_rgbw_max_brightness", "d4/d36/namespacefl_aa1613ee1e95b25e5378d780742d73719.html#aa1613ee1e95b25e5378d780742d73719", null ],
     [ "fl::rgb_2_rgbw_null_white_pixel", "d4/d36/namespacefl_a127a41ddb75b964f9c4fd9b495116195.html#a127a41ddb75b964f9c4fd9b495116195", null ],
-    [ "fl::rgb_2_rgbw_user_function", "d4/d36/namespacefl_ada2d5e03b4fc0a4720ff3fcbc0769945.html#ada2d5e03b4fc0a4720ff3fcbc0769945", null ],
+    [ "fl::rgb_2_rgbw_user_function", "d4/d36/namespacefl_a026d160d22f564528df70c6bfca44db5.html#a026d160d22f564528df70c6bfca44db5", null ],
     [ "fl::rgb_2_rgbw_white_boosted", "d4/d36/namespacefl_af35efd61260f0d8d2bf7da89f49ac821.html#af35efd61260f0d8d2bf7da89f49ac821", null ],
     [ "fl::rgbw_colorimetric_lut_enabled", "d4/d36/namespacefl_a6b958105b6fe1383d69f9ea429c8f13e.html#a6b958105b6fe1383d69f9ea429c8f13e", null ],
     [ "fl::rgbw_colorimetric_lut_memory_bytes", "d4/d36/namespacefl_a26972b82750cb892be65030575796cbb.html#a26972b82750cb892be65030575796cbb", null ],
-    [ "fl::rgbw_partial_reorder", "d4/d36/namespacefl_a0cca52aaf53d5949a14512e8102e5bd9.html#a0cca52aaf53d5949a14512e8102e5bd9", null ],
+    [ "fl::detail::rgbw_conversion", "df/d9e/namespacefl_1_1detail_ad5686d9486a49137d8c5cf783cf360ff.html#ad5686d9486a49137d8c5cf783cf360ff", null ],
+    [ "fl::rgbw_partial_reorder", "d4/d36/namespacefl_a4ab7970bd150284b7202696df8e33f45.html#a4ab7970bd150284b7202696df8e33f45", null ],
     [ "fl::set_input_gamut", "d4/d36/namespacefl_ad64e03f213d339b01aed485c9fb3fff7.html#ad64e03f213d339b01aed485c9fb3fff7", null ],
     [ "fl::set_input_gamut", "d4/d36/namespacefl_ae8069d2ad0f8eba4e3d7b75a0b6eab8b.html#ae8069d2ad0f8eba4e3d7b75a0b6eab8b", null ],
-    [ "fl::set_rgb_2_rgbw_function", "d4/d36/namespacefl_aefd6226cb20125a11f8f45bbac83be79.html#aefd6226cb20125a11f8f45bbac83be79", null ],
+    [ "fl::set_rgb_2_rgbw_function", "d4/d36/namespacefl_ae9e2f679135042593c8d527979a0926f.html#ae9e2f679135042593c8d527979a0926f", null ],
     [ "fl::set_rgbw_colorimetric_profile", "d4/d36/namespacefl_aadf9b0aff96f2fa548f7a12858f67cad.html#aadf9b0aff96f2fa548f7a12858f67cad", null ],
-    [ "fl::FL_NO_EXCEPT", "d4/d36/namespacefl_aa317f89ca911371e798d08a93770402f.html#aa317f89ca911371e798d08a93770402f", null ],
     [ "fl::g", "d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b", null ]
 ];

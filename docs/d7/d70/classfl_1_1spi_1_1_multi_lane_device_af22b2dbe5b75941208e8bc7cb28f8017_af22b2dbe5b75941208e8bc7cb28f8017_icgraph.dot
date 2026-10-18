@@ -1,0 +1,34 @@
+digraph "fl::spi::MultiLaneDevice::isReady"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="fl::spi::MultiLaneDevice\l::isReady",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Check if device is initialized."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::spi::MultiLaneDevice\l::flush",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_a7f6ed3316fa7cd53fc05aba464759d31.html#a7f6ed3316fa7cd53fc05aba464759d31",tooltip="Flush all lanes (transpose and transmit)"];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::spi::MultiLaneDevice\l::operator=",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_a552f915191464193c98a7a385a6eb05b.html#a552f915191464193c98a7a385a6eb05b",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::spi::MultiLaneDevice\l::isBusy",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_a81c607204c8fce969b164de841c1a8cc.html#a81c607204c8fce969b164de841c1a8cc",tooltip="Check if transmission is in progress."];
+  Node1 -> Node3 [id="edge4_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge5_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::spi::MultiLaneDevice\l::waitComplete",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_a19cc6929c3748f7f851ea2cc4ae93905.html#a19cc6929c3748f7f851ea2cc4ae93905",tooltip="Wait for pending transmission to complete."];
+  Node5 -> Node6 [id="edge6_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::spi::MultiLaneDevice::end",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_a8f2c63730b747e839f11c6f7198b9814.html#a8f2c63730b747e839f11c6f7198b9814",tooltip="Shutdown hardware and release resources."];
+  Node6 -> Node7 [id="edge7_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl::spi::MultiLaneDevice\l::~MultiLaneDevice",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_ac79b2d7a46e44ebe0e0858f8a1f63877.html#ac79b2d7a46e44ebe0e0858f8a1f63877",tooltip="Destructor - releases hardware resources."];
+  Node6 -> Node3 [id="edge8_Node000006_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node3 [id="edge9_Node000005_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node8 [id="edge10_Node000005_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="fl::spi::MultiLaneDevice\l::wait",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_a54b4e2ece61f39c27618f2efc4c86058.html#a54b4e2ece61f39c27618f2efc4c86058",tooltip="Convenience method - wait for transmission to complete."];
+  Node8 -> Node8 [id="edge11_Node000008_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node9 [id="edge12_Node000005_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="fl::spi::MultiLaneDevice\l::writeImpl",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_ab4cc63c187081f20836c76601bf30372.html#ab4cc63c187081f20836c76601bf30372",tooltip="Internal implementation - write all lanes atomically."];
+  Node9 -> Node10 [id="edge13_Node000009_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="fl::spi::MultiLaneDevice\l::write",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_a1c70d86d1200bce96508346b4f887393.html#a1c70d86d1200bce96508346b4f887393",tooltip="Convenience method - write multiple lanes in parallel (variadic template)"];
+  Node10 -> Node10 [id="edge14_Node000010_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node9 [id="edge15_Node000001_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

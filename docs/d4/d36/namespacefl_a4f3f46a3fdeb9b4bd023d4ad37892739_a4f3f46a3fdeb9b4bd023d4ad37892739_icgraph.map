@@ -1,0 +1,11 @@
+<map id="fl::bootGuardValid" name="fl::bootGuardValid">
+<area shape="rect" id="Node000001" title="True when r holds a valid record written by firmware image." alt="" coords="513,31,652,56"/>
+<area shape="rect" id="Node000002" href="$d4/d36/namespacefl_ab124bf789eb3f8cc90f4de43a3bcb08b.html#ab124bf789eb3f8cc90f4de43a3bcb08b" title="Boot count stored in r, or 0 if r is not a valid record of image." alt="" coords="285,5,439,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="499,36,439,29,440,24,500,31"/>
+<area shape="rect" id="Node000004" href="$d4/d36/namespacefl_a839b9e70966a3366c3e493c744c62f53.html#a839b9e70966a3366c3e493c744c62f53" title="Crash count stored in r, or 0 if r is not a valid record of image." alt="" coords="259,55,465,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="500,55,466,59,465,53,499,50"/>
+<area shape="rect" id="Node000003" href="$d4/d36/namespacefl_af5d33df2a6d789f73e544f9f0ee2c847.html#af5d33df2a6d789f73e544f9f0ee2c847" title="Store crashes, keeping the boot count (0 if the record is invalid)." alt="" coords="5,5,211,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="271,21,211,21,211,15,271,15"/>
+<area shape="rect" id="Node000005" href="$d4/d36/namespacefl_a8c6345a6c22c7c64942c227eda9ab025.html#a8c6345a6c22c7c64942c227eda9ab025" title="Store boots, keeping the crash count (0 if the record is invalid)." alt="" coords="31,55,185,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="245,70,185,70,185,65,245,65"/>
+</map>

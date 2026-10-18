@@ -21,7 +21,7 @@ var pair_8h =
     [ "fl::get", "d4/d36/namespacefl_a58ba7210699f7c65ff4915b3866930bb.html#a58ba7210699f7c65ff4915b3866930bb", null ],
     [ "fl::get", "d4/d36/namespacefl_aaea97025641d69c1e119f094f0276669.html#aaea97025641d69c1e119f094f0276669", null ],
     [ "fl::get", "d4/d36/namespacefl_a250a837c4770f8222bac5414e55f12cc.html#a250a837c4770f8222bac5414e55f12cc", null ],
-    [ "fl::make_pair", "d4/d36/namespacefl_a53d5062c3cacc67b60ff5bc033333817.html#a53d5062c3cacc67b60ff5bc033333817", null ],
+    [ "fl::adl_barrier::make_pair", "df/d34/namespacefl_1_1adl__barrier_a2d13dba5fb6db91888eed78860f78f98.html#a2d13dba5fb6db91888eed78860f78f98", null ],
     [ "fl::operator!=", "d4/d36/namespacefl_abc572acacbfe31600aac6c829bd952d3.html#abc572acacbfe31600aac6c829bd952d3", null ],
     [ "fl::operator<", "d4/d36/namespacefl_ae304d250a3290237d2ff96fbd84522b1.html#ae304d250a3290237d2ff96fbd84522b1", null ],
     [ "fl::operator<=", "d4/d36/namespacefl_ac9955373b51c159937c02311ecceef03.html#ac9955373b51c159937c02311ecceef03", null ],

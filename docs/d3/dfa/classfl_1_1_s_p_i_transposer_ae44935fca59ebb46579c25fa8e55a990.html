@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -136,46 +136,39 @@ $(function(){initNavTree('d3/dfa/classfl_1_1_s_p_i_transposer_ae44935fca59ebb465
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d9/d9e/_2home_2runner_2work_2_fast_l_e_d_2_fast_l_e_d_2src_2fl_2math_2transposition_8h-example.html#a17">/home/runner/work/FastLED/FastLED/src/fl/math/transposition.h</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00300">300</a> of file <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html">transposition.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  300</span>                                                                                    {</div>
-<div class="line"><span class="lineno">  301</span>    <span class="comment">// Calculate padding needed for this lane</span></div>
-<div class="line"><span class="lineno">  302</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> lane_size = lane.payload.size();</div>
-<div class="line"><span class="lineno">  303</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> padding_bytes = max_size - lane_size;</div>
-<div class="line"><span class="lineno">  304</span> </div>
-<div class="line"><span class="lineno">  305</span>    <span class="comment">// If we&#39;re in the padding region (prepended to beginning)</span></div>
-<div class="line"><span class="lineno">  306</span>    <span class="keywordflow">if</span> (byte_idx &lt; padding_bytes) {</div>
-<div class="line"><span class="lineno">  307</span>        <span class="comment">// Return padding frame byte (repeating pattern)</span></div>
-<div class="line"><span class="lineno">  308</span>        <span class="keywordflow">if</span> (!lane.padding_frame.empty()) {</div>
-<div class="line"><span class="lineno">  309</span>            <span class="keywordflow">return</span> lane.padding_frame[byte_idx % lane.padding_frame.size()];</div>
-<div class="line"><span class="lineno">  310</span>        }</div>
-<div class="line"><span class="lineno">  311</span>        <span class="keywordflow">return</span> 0x00;  <span class="comment">// Fallback to zero</span></div>
-<div class="line"><span class="lineno">  312</span>    }</div>
-<div class="line"><span class="lineno">  313</span> </div>
-<div class="line"><span class="lineno">  314</span>    <span class="comment">// We&#39;re in the data region</span></div>
-<div class="line"><span class="lineno">  315</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> data_idx = byte_idx - padding_bytes;</div>
-<div class="line"><span class="lineno">  316</span>    <span class="keywordflow">if</span> (data_idx &lt; lane_size) {</div>
-<div class="line"><span class="lineno">  317</span>        <span class="keywordflow">return</span> lane.payload[data_idx];</div>
-<div class="line"><span class="lineno">  318</span>    }</div>
-<div class="line"><span class="lineno">  319</span> </div>
-<div class="line"><span class="lineno">  320</span>    <span class="comment">// Should never reach here if max_size is correct</span></div>
-<div class="line"><span class="lineno">  321</span>    <span class="keywordflow">return</span> 0x00;</div>
-<div class="line"><span class="lineno">  322</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00301">301</a> of file <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html">transposition.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  301</span>                                                                                                 {</div>
+<div class="line"><span class="lineno">  302</span>    <span class="comment">// Calculate padding needed for this lane</span></div>
+<div class="line"><span class="lineno">  303</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> lane_size = lane.payload.size();</div>
+<div class="line"><span class="lineno">  304</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> padding_bytes = max_size - lane_size;</div>
+<div class="line"><span class="lineno">  305</span> </div>
+<div class="line"><span class="lineno">  306</span>    <span class="comment">// If we&#39;re in the padding region (prepended to beginning)</span></div>
+<div class="line"><span class="lineno">  307</span>    <span class="keywordflow">if</span> (byte_idx &lt; padding_bytes) {</div>
+<div class="line"><span class="lineno">  308</span>        <span class="comment">// Return padding frame byte (repeating pattern)</span></div>
+<div class="line"><span class="lineno">  309</span>        <span class="keywordflow">if</span> (!lane.padding_frame.empty()) {</div>
+<div class="line"><span class="lineno">  310</span>            <span class="keywordflow">return</span> lane.padding_frame[byte_idx % lane.padding_frame.size()];</div>
+<div class="line"><span class="lineno">  311</span>        }</div>
+<div class="line"><span class="lineno">  312</span>        <span class="keywordflow">return</span> 0x00;  <span class="comment">// Fallback to zero</span></div>
+<div class="line"><span class="lineno">  313</span>    }</div>
+<div class="line"><span class="lineno">  314</span> </div>
+<div class="line"><span class="lineno">  315</span>    <span class="comment">// We&#39;re in the data region</span></div>
+<div class="line"><span class="lineno">  316</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> data_idx = byte_idx - padding_bytes;</div>
+<div class="line"><span class="lineno">  317</span>    <span class="keywordflow">if</span> (data_idx &lt; lane_size) {</div>
+<div class="line"><span class="lineno">  318</span>        <span class="keywordflow">return</span> lane.payload[data_idx];</div>
+<div class="line"><span class="lineno">  319</span>    }</div>
+<div class="line"><span class="lineno">  320</span> </div>
+<div class="line"><span class="lineno">  321</span>    <span class="comment">// Should never reach here if max_size is correct</span></div>
+<div class="line"><span class="lineno">  322</span>    <span class="keywordflow">return</span> 0x00;</div>
+<div class="line"><span class="lineno">  323</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d7a/span_8h_source.html#l00535">fl::span&lt; T, Extent &gt;::empty()</a>, <a class="el" href="../../d9/d31/transposition_8h_source.html#l00588">fl::SPITransposer::LaneData::padding_frame</a>, <a class="el" href="../../d9/d31/transposition_8h_source.html#l00587">fl::SPITransposer::LaneData::payload</a>, and <a class="el" href="../../d4/d7a/span_8h_source.html#l00483">fl::span&lt; T, Extent &gt;::size()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00240">transpose16()</a>, <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00053">transpose2()</a>, <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00114">transpose4()</a>, and <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00180">transpose8()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00241">transpose16()</a>, <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00054">transpose2()</a>, <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00115">transpose4()</a>, and <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00181">transpose8()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dfa/classfl_1_1_s_p_i_transposer_ae44935fca59ebb46579c25fa8e55a990_ae44935fca59ebb46579c25fa8e55a990_cgraph.svg" width="314" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/dfa/classfl_1_1_s_p_i_transposer_ae44935fca59ebb46579c25fa8e55a990_ae44935fca59ebb46579c25fa8e55a990_icgraph.svg" width="100%" height="482"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -188,7 +181,7 @@ $(function(){initNavTree('d3/dfa/classfl_1_1_s_p_i_transposer_ae44935fca59ebb465
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d3/dfa/classfl_1_1_s_p_i_transposer.html">SPITransposer</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:32 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

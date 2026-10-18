@@ -10,7 +10,7 @@ digraph "fl::CLEDController::getAdjustment"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="fl::CLEDController\l::getAdjustmentData",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/da0/classfl_1_1_c_l_e_d_controller_a3f2b87f193fc384830563b6689e31e3e.html#a3f2b87f193fc384830563b6689e31e3e",tooltip=" "];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="CPixelLEDController\l::show",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dc9/class_c_pixel_l_e_d_controller_a8af733ab9cdbbc87742932cf18e22346.html#a8af733ab9cdbbc87742932cf18e22346",tooltip="Write the passed in RGB data out to the LEDs managed by this controller."];
+  Node3 [id="Node000003",label="CPixelLEDController\l::show",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dc9/class_c_pixel_l_e_d_controller_a3062f702053d950b7d0c7a0b668176d8.html#a3062f702053d950b7d0c7a0b668176d8",tooltip="Write the passed in RGB data out to the LEDs managed by this controller."];
   Node2 -> Node4 [id="edge3_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="CPixelLEDController\l::showColor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dc9/class_c_pixel_l_e_d_controller_aab8df51126298945b1c08385b7b4cac1.html#aab8df51126298945b1c08385b7b4cac1",tooltip="Set all the LEDs on the controller to a given color."];
+  Node4 [id="Node000004",label="CPixelLEDController\l::showColor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dc9/class_c_pixel_l_e_d_controller_a810f5e22b489fb072c75e2519ca1a4de.html#a810f5e22b489fb072c75e2519ca1a4de",tooltip="Set all the LEDs on the controller to a given color."];
 }

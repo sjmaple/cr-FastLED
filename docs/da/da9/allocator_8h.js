@@ -38,11 +38,11 @@ var allocator_8h =
     [ "fl::allocator_inlined_psram", "d4/d36/namespacefl_affa918027ef8a6a0b989f067793f6234.html#affa918027ef8a6a0b989f067793f6234", null ],
     [ "fl::allocator_inlined_slab", "d4/d36/namespacefl_ab83fe390c09ae8f671c94f378b2375f0.html#ab83fe390c09ae8f671c94f378b2375f0", null ],
     [ "fl::allocator_inlined_slab_psram", "d4/d36/namespacefl_af0e6b27e0237e0a9214b38083cac7e40.html#af0e6b27e0237e0a9214b38083cac7e40", null ],
-    [ "fl::Free", "d4/d36/namespacefl_a01907b76b610d0663ed9b4204cdf68a2.html#a01907b76b610d0663ed9b4204cdf68a2", null ],
-    [ "fl::Malloc", "d4/d36/namespacefl_a95dbc431c0b3451c8ffd336fe2793a47.html#a95dbc431c0b3451c8ffd336fe2793a47", null ],
-    [ "fl::PSRamAllocate", "d4/d36/namespacefl_ad9927f98d169c838ddb33a6b020cb0c8.html#ad9927f98d169c838ddb33a6b020cb0c8", null ],
-    [ "fl::PSRamDeallocate", "d4/d36/namespacefl_a927c08fb5d28927acc0e318fabf79985.html#a927c08fb5d28927acc0e318fabf79985", null ],
-    [ "fl::SetPSRamAllocator", "d4/d36/namespacefl_a8a058a2783745ceaf1e2313f5060c3e9.html#a8a058a2783745ceaf1e2313f5060c3e9", null ],
-    [ "fl::detail::slab_allocator_registry_get", "df/d9e/namespacefl_1_1detail_a763632edd218e22277a2b5762d6a2777.html#a763632edd218e22277a2b5762d6a2777", null ],
-    [ "fl::detail::slab_allocator_registry_set", "df/d9e/namespacefl_1_1detail_ad88457ea9358af062d784aebaae9d6d5.html#ad88457ea9358af062d784aebaae9d6d5", null ]
+    [ "fl::Free", "d4/d36/namespacefl_a4343890eed79592c52cdafd696bacd74.html#a4343890eed79592c52cdafd696bacd74", null ],
+    [ "fl::Malloc", "d4/d36/namespacefl_aedfb40c3aea1536bdc7d516855aebee3.html#aedfb40c3aea1536bdc7d516855aebee3", null ],
+    [ "fl::PSRamAllocate", "d4/d36/namespacefl_ab0aea733f15c2b9d83247a5a45d71396.html#ab0aea733f15c2b9d83247a5a45d71396", null ],
+    [ "fl::PSRamDeallocate", "d4/d36/namespacefl_aff8326965da26fb6a5498a456c17d3fa.html#aff8326965da26fb6a5498a456c17d3fa", null ],
+    [ "fl::SetPSRamAllocator", "d4/d36/namespacefl_a3c0c29b5d1e57b8ddac726bceeece53b.html#a3c0c29b5d1e57b8ddac726bceeece53b", null ],
+    [ "fl::detail::slab_allocator_registry_get", "df/d9e/namespacefl_1_1detail_a48e751dbe27e000b7759f8ea354dfe18.html#a48e751dbe27e000b7759f8ea354dfe18", null ],
+    [ "fl::detail::slab_allocator_registry_set", "df/d9e/namespacefl_1_1detail_add5b42eeb2b8d6ccc5e21e286c12974d.html#add5b42eeb2b8d6ccc5e21e286c12974d", null ]
 ];

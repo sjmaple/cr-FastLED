@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -125,7 +125,7 @@ $(function(){initNavTree('d2/db2/classfl_1_1string_abcd6056728a75b66ab6822361ffb
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00226">226</a> of file <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html">basic_string.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  421</span>                                                                    {</div>
+<div class="fragment"><div class="line"><span class="lineno">  421</span>                                                                                 {</div>
 <div class="line"><span class="lineno">  422</span>    <span class="keywordflow">if</span> (!dest) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  423</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d0c/_blur_8ino_a29716abd4f651ba9d6f1476ea79fa7ae.html#a29716abd4f651ba9d6f1476ea79fa7ae">pos</a> &gt;= <a class="code hl_variable" href="../../de/d66/classfl_1_1basic__string_a9fd4a1143177b317978e8ba38939c060.html#a9fd4a1143177b317978e8ba38939c060">mLength</a>) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  424</span>    fl::size actualCount = count;</div>
@@ -133,15 +133,24 @@ $(function(){initNavTree('d2/db2/classfl_1_1string_abcd6056728a75b66ab6822361ffb
 <div class="line"><span class="lineno">  426</span>        actualCount = <a class="code hl_variable" href="../../de/d66/classfl_1_1basic__string_a9fd4a1143177b317978e8ba38939c060.html#a9fd4a1143177b317978e8ba38939c060">mLength</a> - <a class="code hl_variable" href="../../d4/d0c/_blur_8ino_a29716abd4f651ba9d6f1476ea79fa7ae.html#a29716abd4f651ba9d6f1476ea79fa7ae">pos</a>;</div>
 <div class="line"><span class="lineno">  427</span>    }</div>
 <div class="line"><span class="lineno">  428</span>    <span class="keywordflow">if</span> (actualCount &gt; 0) {</div>
-<div class="line"><span class="lineno">  429</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_a35ff6755912c639a5e5bd35fc59e57ff.html#a35ff6755912c639a5e5bd35fc59e57ff">fl::memcpy</a>(dest, <a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_ac7b40587b637d254d009cc32f530fb83.html#ac7b40587b637d254d009cc32f530fb83">c_str</a>() + <a class="code hl_variable" href="../../d4/d0c/_blur_8ino_a29716abd4f651ba9d6f1476ea79fa7ae.html#a29716abd4f651ba9d6f1476ea79fa7ae">pos</a>, actualCount);</div>
+<div class="line"><span class="lineno">  429</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_a7b6c734893ba8183b7e611e507b73984.html#a7b6c734893ba8183b7e611e507b73984">fl::memcpy</a>(dest, <a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_ac7b40587b637d254d009cc32f530fb83.html#ac7b40587b637d254d009cc32f530fb83">c_str</a>() + <a class="code hl_variable" href="../../d4/d0c/_blur_8ino_a29716abd4f651ba9d6f1476ea79fa7ae.html#a29716abd4f651ba9d6f1476ea79fa7ae">pos</a>, actualCount);</div>
 <div class="line"><span class="lineno">  430</span>    }</div>
 <div class="line"><span class="lineno">  431</span>    <span class="keywordflow">return</span> actualCount;</div>
 <div class="line"><span class="lineno">  432</span>}</div>
 <div class="ttc" id="a_blur_8ino_a29716abd4f651ba9d6f1476ea79fa7ae_html_a29716abd4f651ba9d6f1476ea79fa7ae"><div class="ttname"><a href="../../d4/d0c/_blur_8ino_a29716abd4f651ba9d6f1476ea79fa7ae.html#a29716abd4f651ba9d6f1476ea79fa7ae">pos</a></div><div class="ttdeci">uint8_t pos</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d0c/_blur_8ino_source.html#l00011">Blur.ino:11</a></div></div>
 <div class="ttc" id="aclassfl_1_1basic__string_a9fd4a1143177b317978e8ba38939c060_html_a9fd4a1143177b317978e8ba38939c060"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_a9fd4a1143177b317978e8ba38939c060.html#a9fd4a1143177b317978e8ba38939c060">fl::basic_string::mLength</a></div><div class="ttdeci">fl::size mLength</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00490">basic_string.h:490</a></div></div>
 <div class="ttc" id="aclassfl_1_1basic__string_ac7b40587b637d254d009cc32f530fb83_html_ac7b40587b637d254d009cc32f530fb83"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_ac7b40587b637d254d009cc32f530fb83.html#ac7b40587b637d254d009cc32f530fb83">fl::basic_string::c_str</a></div><div class="ttdeci">const char * c_str() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00033">basic_string.cpp.hpp:33</a></div></div>
-<div class="ttc" id="anamespacefl_a35ff6755912c639a5e5bd35fc59e57ff_html_a35ff6755912c639a5e5bd35fc59e57ff"><div class="ttname"><a href="../../d4/d36/namespacefl_a35ff6755912c639a5e5bd35fc59e57ff.html#a35ff6755912c639a5e5bd35fc59e57ff">fl::memcpy</a></div><div class="ttdeci">void * memcpy(void *dest, const void *src, size_t n) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/da3/cstring_8cpp_8hpp_source.html#l00128">cstring.cpp.hpp:128</a></div></div>
+<div class="ttc" id="anamespacefl_a7b6c734893ba8183b7e611e507b73984_html_a7b6c734893ba8183b7e611e507b73984"><div class="ttname"><a href="../../d4/d36/namespacefl_a7b6c734893ba8183b7e611e507b73984.html#a7b6c734893ba8183b7e611e507b73984">fl::memcpy</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void * memcpy(void *dest, const void *src, size_t n) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d8d/cstring_8h_source.html#l00136">cstring.h:136</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00219">fl::basic_string::write()</a>.</p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/db2/classfl_1_1string_abcd6056728a75b66ab6822361ffb91b4_abcd6056728a75b66ab6822361ffb91b4_cgraph.svg" width="100%" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -151,7 +160,7 @@ $(function(){initNavTree('d2/db2/classfl_1_1string_abcd6056728a75b66ab6822361ffb
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d2/db2/classfl_1_1string.html">string</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:32 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

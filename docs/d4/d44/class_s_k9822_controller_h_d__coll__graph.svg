@@ -127,29 +127,29 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node13 -->
-<g id="Node000013" class="node">
-<title>Node13</title>
-<g id="a_Node000013"><a xlink:href="../../d0/dc9/class_c_pixel_l_e_d_controller.html" target="_top" xlink:title=" ">
+<!-- Node11 -->
+<g id="Node000011" class="node">
+<title>Node11</title>
+<g id="a_Node000011"><a xlink:href="../../d0/dc9/class_c_pixel_l_e_d_controller.html" target="_top" xlink:title=" ">
 <polygon fill="#fff0f0" stroke="red" points="240,-49 127,-49 127,-19 240,-19 240,-49"/>
 <text text-anchor="start" x="135" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">CPixelLEDController</text>
 <text text-anchor="middle" x="183.5" y="-26" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; RGB &gt;</text>
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node13 -->
-<g id="edge6_Node000013_Node000004" class="edge">
-<title>Node4&#45;&gt;Node13</title>
-<g id="a_edge6_Node000013_Node000004"><a xlink:title=" ">
+<!-- Node4&#45;&gt;Node11 -->
+<g id="edge6_Node000011_Node000004" class="edge">
+<title>Node4&#45;&gt;Node11</title>
+<g id="a_edge6_Node000011_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M100.39,-47.23C109.12,-45.83 118.17,-44.37 126.93,-42.96"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="99.63,-43.81 90.32,-48.86 100.75,-50.72 99.63,-43.81"/>
 </a>
 </g>
 </g>
-<!-- Node12 -->
-<g id="Node000012" class="node">
-<title>Node12</title>
-<g id="a_Node000012"><a xlink:href="../../d4/d96/class_a_p_a102_controller.html" target="_top" xlink:title="APA102 controller class.">
+<!-- Node10 -->
+<g id="Node000010" class="node">
+<title>Node10</title>
+<g id="a_Node000010"><a xlink:href="../../d4/d96/class_a_p_a102_controller.html" target="_top" xlink:title="APA102 controller class.">
 <polygon fill="white" stroke="#666666" points="612,-52 406,-52 406,0 612,0 612,-52"/>
 <text text-anchor="start" x="414" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">APA102Controller&lt; DATA</text>
 <text text-anchor="start" x="414" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">_PIN, CLOCK_PIN, RGB_ORDER,</text>
@@ -158,10 +158,10 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node2 -->
-<g id="edge4_Node000002_Node000012" class="edge">
-<title>Node12&#45;&gt;Node2</title>
-<g id="a_edge4_Node000002_Node000012"><a xlink:title=" ">
+<!-- Node10&#45;&gt;Node2 -->
+<g id="edge4_Node000002_Node000010" class="edge">
+<title>Node10&#45;&gt;Node2</title>
+<g id="a_edge4_Node000002_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M622.39,-14.66C679.96,-11.06 751.01,-10.03 814,-19 819.86,-19.83 825.84,-20.89 831.85,-22.12"/>
 <polygon fill="orange" stroke="orange" points="621.92,-11.18 612.17,-15.33 622.38,-18.17 621.92,-11.18"/>
 </a>
@@ -172,10 +172,10 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="630" y="-33" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">::kFiveBitGammaCorrectionMode</text>
 <text text-anchor="middle" x="722" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">_BitShift, 0x00000000, 0xFFFFFFFF &gt;</text>
 </g>
-<!-- Node13&#45;&gt;Node12 -->
-<g id="edge5_Node000012_Node000013" class="edge">
-<title>Node13&#45;&gt;Node12</title>
-<g id="a_edge5_Node000012_Node000013"><a xlink:title=" ">
+<!-- Node11&#45;&gt;Node10 -->
+<g id="edge5_Node000010_Node000011" class="edge">
+<title>Node11&#45;&gt;Node10</title>
+<g id="a_edge5_Node000010_Node000011"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M250.26,-32.37C294.95,-31.27 354.94,-29.78 405.81,-28.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="250.02,-28.88 240.11,-32.62 250.2,-35.88 250.02,-28.88"/>
 </a>

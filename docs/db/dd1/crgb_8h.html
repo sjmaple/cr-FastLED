@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -116,6 +116,7 @@ $(function(){initNavTree('db/dd1/crgb_8h.html','../../'); initResizable(true); }
 <code>#include &quot;<a class="el" href="../../d8/dd0/chsv_8h_source.html">chsv.h</a>&quot;</code><br />
 <code>#include &quot;platforms/is_platform.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../de/d9a/hsv2rgb_8h_source.html">hsv2rgb.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d01/noexcept_8h_source.html">fl/stl/noexcept.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for crgb.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -145,11 +146,11 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a157722b593d32c306e8bb4b95b4d135b" id="r_a157722b593d32c306e8bb4b95b4d135b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d54/compiler__control_8h_a2f767b53d92c9d761d9f8d28a35d80c7.html#a2f767b53d92c9d761d9f8d28a35d80c7">FASTLED_FORCE_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd1/crgb_8h_a157722b593d32c306e8bb4b95b4d135b.html#a157722b593d32c306e8bb4b95b4d135b">hsv2rgb_dispatch</a> (const <a class="el" href="../../dd/dc7/group___h_s_v2_r_g_b_ga259e6d3ae92ca32d2390e7d8eaa1c7ae.html#ga259e6d3ae92ca32d2390e7d8eaa1c7ae">CHSV</a> &amp;hsv, <a class="el" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a> &amp;rgb)</td></tr>
-<tr class="separator:a157722b593d32c306e8bb4b95b4d135b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae1fad39513e4829746c9ba4b5c2fd7" id="r_aeae1fad39513e4829746c9ba4b5c2fd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d54/compiler__control_8h_a2f767b53d92c9d761d9f8d28a35d80c7.html#a2f767b53d92c9d761d9f8d28a35d80c7">FASTLED_FORCE_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd1/crgb_8h_aeae1fad39513e4829746c9ba4b5c2fd7.html#aeae1fad39513e4829746c9ba4b5c2fd7">hsv2rgb_dispatch</a> (const <a class="el" href="../../dd/dc7/group___h_s_v2_r_g_b_ga259e6d3ae92ca32d2390e7d8eaa1c7ae.html#ga259e6d3ae92ca32d2390e7d8eaa1c7ae">CHSV</a> *phsv, <a class="el" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a> *prgb, int numLeds)</td></tr>
-<tr class="memdesc:aeae1fad39513e4829746c9ba4b5c2fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">HSV conversion function selection based on compile-time defines This allows users to configure which HSV conversion algorithm to use by setting one of the following defines:  <br /></td></tr>
-<tr class="separator:aeae1fad39513e4829746c9ba4b5c2fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef50fffebf141a73cfb41b156901160" id="r_a6ef50fffebf141a73cfb41b156901160"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d54/compiler__control_8h_a2f767b53d92c9d761d9f8d28a35d80c7.html#a2f767b53d92c9d761d9f8d28a35d80c7">FASTLED_FORCE_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd1/crgb_8h_a6ef50fffebf141a73cfb41b156901160.html#a6ef50fffebf141a73cfb41b156901160">hsv2rgb_dispatch</a> (const <a class="el" href="../../dd/dc7/group___h_s_v2_r_g_b_ga259e6d3ae92ca32d2390e7d8eaa1c7ae.html#ga259e6d3ae92ca32d2390e7d8eaa1c7ae">CHSV</a> &amp;hsv, <a class="el" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a> &amp;rgb) <a class="el" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></td></tr>
+<tr class="separator:a6ef50fffebf141a73cfb41b156901160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5a1ece0b114daf0bad77d1e32baee1" id="r_adb5a1ece0b114daf0bad77d1e32baee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d54/compiler__control_8h_a2f767b53d92c9d761d9f8d28a35d80c7.html#a2f767b53d92c9d761d9f8d28a35d80c7">FASTLED_FORCE_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd1/crgb_8h_adb5a1ece0b114daf0bad77d1e32baee1.html#adb5a1ece0b114daf0bad77d1e32baee1">hsv2rgb_dispatch</a> (const <a class="el" href="../../dd/dc7/group___h_s_v2_r_g_b_ga259e6d3ae92ca32d2390e7d8eaa1c7ae.html#ga259e6d3ae92ca32d2390e7d8eaa1c7ae">CHSV</a> *phsv, <a class="el" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a> *prgb, int numLeds) <a class="el" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:adb5a1ece0b114daf0bad77d1e32baee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">HSV conversion function selection based on compile-time defines This allows users to configure which HSV conversion algorithm to use by setting one of the following defines:  <br /></td></tr>
+<tr class="separator:adb5a1ece0b114daf0bad77d1e32baee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -158,7 +159,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/dd1/crgb_8h.html">crgb.h</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:03 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:18 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

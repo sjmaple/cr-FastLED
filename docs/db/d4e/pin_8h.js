@@ -19,15 +19,15 @@ var pin_8h =
       [ "fl::PinValue::Low", "d4/d36/namespacefl_a4dc4d2d43415a9cb99c9b30b9f8a07d7.html#a4dc4d2d43415a9cb99c9b30b9f8a07d7a28d0edd045e05cf5af64e35ae0c4c6ef", null ],
       [ "fl::PinValue::High", "d4/d36/namespacefl_a4dc4d2d43415a9cb99c9b30b9f8a07d7.html#a4dc4d2d43415a9cb99c9b30b9f8a07d7a655d20c1ca69519ca647684edbb2db35", null ]
     ] ],
-    [ "fl::analogRead", "d4/d36/namespacefl_acefe08abf3b725b34bd2c61c94001506.html#acefe08abf3b725b34bd2c61c94001506", null ],
-    [ "fl::analogWrite", "d4/d36/namespacefl_ab7b2495da785c92a36e91b0a59cde46b.html#ab7b2495da785c92a36e91b0a59cde46b", null ],
-    [ "fl::analogWrite16", "d4/d36/namespacefl_abccc821ac69303bc62b15cc61a5e4217.html#abccc821ac69303bc62b15cc61a5e4217", null ],
-    [ "fl::digitalRead", "d4/d36/namespacefl_aa8c98e0a4c897eb7f4ce639498a78c5a.html#aa8c98e0a4c897eb7f4ce639498a78c5a", null ],
-    [ "fl::digitalWrite", "d4/d36/namespacefl_ab91b418b90c32e475842ad7ce3785afb.html#ab91b418b90c32e475842ad7ce3785afb", null ],
-    [ "fl::getPwmFrequency", "d4/d36/namespacefl_a277fd63efca228ed3df7bb778b7ab842.html#a277fd63efca228ed3df7bb778b7ab842", null ],
-    [ "fl::pinMode", "d4/d36/namespacefl_aa7a47cf722a2586453e75f6e70284dad.html#aa7a47cf722a2586453e75f6e70284dad", null ],
-    [ "fl::pwmEnd", "d4/d36/namespacefl_a799e0254efc7ac0e21305c2c38685f0b.html#a799e0254efc7ac0e21305c2c38685f0b", null ],
-    [ "fl::setAdcRange", "d4/d36/namespacefl_a240482db0b163909a7ad42a9cca18004.html#a240482db0b163909a7ad42a9cca18004", null ],
-    [ "fl::setPwm16", "d4/d36/namespacefl_a4576b062b8c708eaee16aace718f85f6.html#a4576b062b8c708eaee16aace718f85f6", null ],
-    [ "fl::setPwmFrequency", "d4/d36/namespacefl_a77306b4a5327eb19e8d003b550b1a0a5.html#a77306b4a5327eb19e8d003b550b1a0a5", null ]
+    [ "fl::analogRead", "d4/d36/namespacefl_a541ed76264c1036a02bebcd2d35ae783.html#a541ed76264c1036a02bebcd2d35ae783", null ],
+    [ "fl::analogWrite", "d4/d36/namespacefl_a9397e73d802140e4bb4ae856da893ec4.html#a9397e73d802140e4bb4ae856da893ec4", null ],
+    [ "fl::analogWrite16", "d4/d36/namespacefl_aa7ea0e303058ef9d591246200f202a93.html#aa7ea0e303058ef9d591246200f202a93", null ],
+    [ "fl::digitalRead", "d4/d36/namespacefl_ae8b02c12f1bb89f5e0db858b04e09b1b.html#ae8b02c12f1bb89f5e0db858b04e09b1b", null ],
+    [ "fl::digitalWrite", "d4/d36/namespacefl_ae788da8b961892d226176aeb6d79e721.html#ae788da8b961892d226176aeb6d79e721", null ],
+    [ "fl::getPwmFrequency", "d4/d36/namespacefl_a38e35a9b6ecd83831d3bfed9da203bef.html#a38e35a9b6ecd83831d3bfed9da203bef", null ],
+    [ "fl::pinMode", "d4/d36/namespacefl_afd308586a147e06f84e8a83dc55be796.html#afd308586a147e06f84e8a83dc55be796", null ],
+    [ "fl::pwmEnd", "d4/d36/namespacefl_ac9ea2646039a55c061e518d7ab6b5fa4.html#ac9ea2646039a55c061e518d7ab6b5fa4", null ],
+    [ "fl::setAdcRange", "d4/d36/namespacefl_a7443e4034ca3deb3b5a62b142525de5e.html#a7443e4034ca3deb3b5a62b142525de5e", null ],
+    [ "fl::setPwm16", "d4/d36/namespacefl_aefd073f3820c07286a9e1e92a5e91a9b.html#aefd073f3820c07286a9e1e92a5e91a9b", null ],
+    [ "fl::setPwmFrequency", "d4/d36/namespacefl_ad2c8f7a22cf33614c78d755fcd42e516.html#ad2c8f7a22cf33614c78d755fcd42e516", null ]
 ];

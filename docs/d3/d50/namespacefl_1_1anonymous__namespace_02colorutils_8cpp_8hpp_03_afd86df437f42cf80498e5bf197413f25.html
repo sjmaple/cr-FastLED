@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -115,38 +115,38 @@ $(function(){initNavTree('d3/d50/namespacefl_1_1anonymous__namespace_02colorutil
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d4e/colorutils_8cpp_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../db/d4e/colorutils_8cpp_8hpp_source.html">colorutils.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>                                               {</div>
-<div class="line"><span class="lineno">   36</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> red = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="../../d4/d36/namespacefl.html#d6/dd3/structfl_1_1rgb">rgb</a>.r) / 255.0f;</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> green = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="../../d4/d36/namespacefl.html#d6/dd3/structfl_1_1rgb">rgb</a>.g) / 255.0f;</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> blue = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="../../d4/d36/namespacefl.html#d6/dd3/structfl_1_1rgb">rgb</a>.b) / 255.0f;</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> l = 0.4122214708f * red + 0.5363325363f * green +</div>
-<div class="line"><span class="lineno">   41</span>                    0.0514459929f * blue;</div>
-<div class="line"><span class="lineno">   42</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> m = 0.2119034982f * red + 0.6806995451f * green +</div>
-<div class="line"><span class="lineno">   43</span>                    0.1073969566f * blue;</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> s = 0.0883024619f * red + 0.2817188376f * green +</div>
-<div class="line"><span class="lineno">   45</span>                    0.6299787005f * blue;</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> lRoot = <a class="code hl_function" href="../../d3/d50/namespacefl_1_1anonymous__namespace_02colorutils_8cpp_8hpp_03_ab264776964b824fbc7e312de0b3a93a0.html#ab264776964b824fbc7e312de0b3a93a0">signedCubeRoot</a>(l);</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> mRoot = <a class="code hl_function" href="../../d3/d50/namespacefl_1_1anonymous__namespace_02colorutils_8cpp_8hpp_03_ab264776964b824fbc7e312de0b3a93a0.html#ab264776964b824fbc7e312de0b3a93a0">signedCubeRoot</a>(m);</div>
-<div class="line"><span class="lineno">   49</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> sRoot = <a class="code hl_function" href="../../d3/d50/namespacefl_1_1anonymous__namespace_02colorutils_8cpp_8hpp_03_ab264776964b824fbc7e312de0b3a93a0.html#ab264776964b824fbc7e312de0b3a93a0">signedCubeRoot</a>(s);</div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> {</div>
-<div class="line"><span class="lineno">   52</span>        0.2104542553f * lRoot + 0.7936177850f * mRoot -</div>
-<div class="line"><span class="lineno">   53</span>            0.0040720468f * sRoot,</div>
-<div class="line"><span class="lineno">   54</span>        1.9779984951f * lRoot - 2.4285922050f * mRoot +</div>
-<div class="line"><span class="lineno">   55</span>            0.4505937099f * sRoot,</div>
-<div class="line"><span class="lineno">   56</span>        0.0259040371f * lRoot + 0.7827717662f * mRoot -</div>
-<div class="line"><span class="lineno">   57</span>            0.8086757660f * sRoot,</div>
-<div class="line"><span class="lineno">   58</span>    };</div>
-<div class="line"><span class="lineno">   59</span>}</div>
-<div class="ttc" id="anamespacefl_1_1anonymous__namespace_02colorutils_8cpp_8hpp_03_ab264776964b824fbc7e312de0b3a93a0_html_ab264776964b824fbc7e312de0b3a93a0"><div class="ttname"><a href="../../d3/d50/namespacefl_1_1anonymous__namespace_02colorutils_8cpp_8hpp_03_ab264776964b824fbc7e312de0b3a93a0.html#ab264776964b824fbc7e312de0b3a93a0">fl::anonymous_namespace{colorutils.cpp.hpp}::signedCubeRoot</a></div><div class="ttdeci">float signedCubeRoot(float value) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d4e/colorutils_8cpp_8hpp_source.html#l00030">colorutils.cpp.hpp:30</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../db/d4e/colorutils_8cpp_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../db/d4e/colorutils_8cpp_8hpp_source.html">colorutils.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>                                               {</div>
+<div class="line"><span class="lineno">   37</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> red = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="../../d4/d36/namespacefl.html#d6/dd3/structfl_1_1rgb">rgb</a>.r) / 255.0f;</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> green = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="../../d4/d36/namespacefl.html#d6/dd3/structfl_1_1rgb">rgb</a>.g) / 255.0f;</div>
+<div class="line"><span class="lineno">   39</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> blue = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="../../d4/d36/namespacefl.html#d6/dd3/structfl_1_1rgb">rgb</a>.b) / 255.0f;</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> l = 0.4122214708f * red + 0.5363325363f * green +</div>
+<div class="line"><span class="lineno">   42</span>                    0.0514459929f * blue;</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> m = 0.2119034982f * red + 0.6806995451f * green +</div>
+<div class="line"><span class="lineno">   44</span>                    0.1073969566f * blue;</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> s = 0.0883024619f * red + 0.2817188376f * green +</div>
+<div class="line"><span class="lineno">   46</span>                    0.6299787005f * blue;</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> lRoot = <a class="code hl_function" href="../../d3/d50/namespacefl_1_1anonymous__namespace_02colorutils_8cpp_8hpp_03_ab264776964b824fbc7e312de0b3a93a0.html#ab264776964b824fbc7e312de0b3a93a0">signedCubeRoot</a>(l);</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> mRoot = <a class="code hl_function" href="../../d3/d50/namespacefl_1_1anonymous__namespace_02colorutils_8cpp_8hpp_03_ab264776964b824fbc7e312de0b3a93a0.html#ab264776964b824fbc7e312de0b3a93a0">signedCubeRoot</a>(m);</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> sRoot = <a class="code hl_function" href="../../d3/d50/namespacefl_1_1anonymous__namespace_02colorutils_8cpp_8hpp_03_ab264776964b824fbc7e312de0b3a93a0.html#ab264776964b824fbc7e312de0b3a93a0">signedCubeRoot</a>(s);</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> {</div>
+<div class="line"><span class="lineno">   53</span>        0.2104542553f * lRoot + 0.7936177850f * mRoot -</div>
+<div class="line"><span class="lineno">   54</span>            0.0040720468f * sRoot,</div>
+<div class="line"><span class="lineno">   55</span>        1.9779984951f * lRoot - 2.4285922050f * mRoot +</div>
+<div class="line"><span class="lineno">   56</span>            0.4505937099f * sRoot,</div>
+<div class="line"><span class="lineno">   57</span>        0.0259040371f * lRoot + 0.7827717662f * mRoot -</div>
+<div class="line"><span class="lineno">   58</span>            0.8086757660f * sRoot,</div>
+<div class="line"><span class="lineno">   59</span>    };</div>
+<div class="line"><span class="lineno">   60</span>}</div>
+<div class="ttc" id="anamespacefl_1_1anonymous__namespace_02colorutils_8cpp_8hpp_03_ab264776964b824fbc7e312de0b3a93a0_html_ab264776964b824fbc7e312de0b3a93a0"><div class="ttname"><a href="../../d3/d50/namespacefl_1_1anonymous__namespace_02colorutils_8cpp_8hpp_03_ab264776964b824fbc7e312de0b3a93a0.html#ab264776964b824fbc7e312de0b3a93a0">fl::anonymous_namespace{colorutils.cpp.hpp}::signedCubeRoot</a></div><div class="ttdeci">float signedCubeRoot(float value) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d4e/colorutils_8cpp_8hpp_source.html#l00031">colorutils.cpp.hpp:31</a></div></div>
 <div class="ttc" id="anamespacefl_html_d6/dd3/structfl_1_1rgb"><div class="ttname"><a href="../../d4/d36/namespacefl.html#d6/dd3/structfl_1_1rgb">fl::rgb</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d96/core__types_8h_source.html#l00043">core_types.h:43</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d4e/colorutils_8cpp_8hpp_source.html#l00035">rgbToOklab()</a>, and <a class="el" href="../../db/d4e/colorutils_8cpp_8hpp_source.html#l00030">signedCubeRoot()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d4e/colorutils_8cpp_8hpp_source.html#l00036">rgbToOklab()</a>, and <a class="el" href="../../db/d4e/colorutils_8cpp_8hpp_source.html#l00031">signedCubeRoot()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d4e/colorutils_8cpp_8hpp_source.html#l00035">rgbToOklab()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d4e/colorutils_8cpp_8hpp_source.html#l00036">rgbToOklab()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -171,7 +171,7 @@ $(function(){initNavTree('d3/d50/namespacefl_1_1anonymous__namespace_02colorutil
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d3/d50/namespacefl_1_1anonymous__namespace_02colorutils_8cpp_8hpp_03.html">anonymous_namespace{colorutils.cpp.hpp}</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

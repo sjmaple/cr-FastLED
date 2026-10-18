@@ -11,5 +11,6 @@ digraph "fl::CLEDController::isInList"
   Node2 [id="Node000002",label="fl::CLEDController\l::CLEDController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/da0/classfl_1_1_c_l_e_d_controller_ae0828dffacb43dca565ddf8145153ed0.html#ae0828dffacb43dca565ddf8145153ed0",tooltip="Protected constructor with registration mode."];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="fl::CLEDController\l::addToList",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/da0/classfl_1_1_c_l_e_d_controller_af0c5f56a02ad4e919df8181d3b267390.html#af0c5f56a02ad4e919df8181d3b267390",tooltip="Add this controller to the linked list."];
-  Node3 -> Node1 [id="edge3_Node000003_Node000001",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node2 [id="edge3_Node000003_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node1 [id="edge4_Node000003_Node000001",color="steelblue1",style="solid",tooltip=" "];
 }

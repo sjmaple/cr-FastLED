@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -173,12 +173,12 @@ FastLED Third-Party Namespace Architecture</h1>
 <div class="line"><span class="comment">// FastLED provides clean wrappers</span></div>
 <div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="d4/d36/namespacefl.html">fl</a> {</div>
 <div class="line">    <span class="keyword">class </span>Jpeg {  <span class="comment">// Clean C++ API following FastLED conventions</span></div>
-<div class="line">        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="df/d28/classfl_1_1_jpeg_a4ae4f0c3b070a0fec0ece929c39983ef.html#a4ae4f0c3b070a0fec0ece929c39983ef">decode</a>(<span class="keyword">const</span> JpegDecoderConfig&amp; config, <span class="comment">/* ... */</span>);</div>
+<div class="line">        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="df/d28/classfl_1_1_jpeg_a2b1082abec270405ceb36dd55606c71b.html#a2b1082abec270405ceb36dd55606c71b">decode</a>(<span class="keyword">const</span> JpegDecoderConfig&amp; config, <span class="comment">/* ... */</span>);</div>
 <div class="line">    <span class="keyword">private</span>:</div>
 <div class="line">        <a class="code hl_class" href="de/d82/classfl_1_1third__party_1_1_t_jpg___decoder.html">fl::third_party::TJpg_Decoder</a> decoder_;  <span class="comment">// Wrapped implementation</span></div>
 <div class="line">    };</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassfl_1_1_jpeg_a4ae4f0c3b070a0fec0ece929c39983ef_html_a4ae4f0c3b070a0fec0ece929c39983ef"><div class="ttname"><a href="df/d28/classfl_1_1_jpeg_a4ae4f0c3b070a0fec0ece929c39983ef.html#a4ae4f0c3b070a0fec0ece929c39983ef">fl::Jpeg::decode</a></div><div class="ttdeci">static bool decode(const JpegConfig &amp;config, fl::span&lt; const fl::u8 &gt; data, Frame *frame, fl::string *error_message=nullptr)</div><div class="ttdef"><b>Definition</b> <a href="dd/d39/jpeg_8cpp_8hpp_source.html#l00296">jpeg.cpp.hpp:296</a></div></div>
+<div class="ttc" id="aclassfl_1_1_jpeg_a2b1082abec270405ceb36dd55606c71b_html_a2b1082abec270405ceb36dd55606c71b"><div class="ttname"><a href="df/d28/classfl_1_1_jpeg_a2b1082abec270405ceb36dd55606c71b.html#a2b1082abec270405ceb36dd55606c71b">fl::Jpeg::decode</a></div><div class="ttdeci">static bool decode(const JpegConfig &amp;config, fl::span&lt; const fl::u8 &gt; data, Frame *frame, fl::string *error_message=nullptr) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="dd/d39/jpeg_8cpp_8hpp_source.html#l00296">jpeg.cpp.hpp:296</a></div></div>
 <div class="ttc" id="aclassfl_1_1third__party_1_1_t_jpg___decoder_html"><div class="ttname"><a href="de/d82/classfl_1_1third__party_1_1_t_jpg___decoder.html">fl::third_party::TJpg_Decoder</a></div><div class="ttdef"><b>Definition</b> <a href="dc/d4f/_t_jpg___decoder_8h_source.html#l00033">TJpg_Decoder.h:33</a></div></div>
 <div class="ttc" id="anamespacefl_1_1third__party_html"><div class="ttname"><a href="d1/d86/namespacefl_1_1third__party.html">fl::third_party</a></div><div class="ttdef"><b>Definition</b> <a href="d3/df6/mp3_8cpp_8hpp_source.html#l00013">mp3.cpp.hpp:13</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md786"></a>
@@ -222,7 +222,7 @@ FastLED Third-Party Namespace Architecture</h1>
 <div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="d4/d36/namespacefl.html">fl</a> {</div>
 <div class="line">    <span class="comment">// Clean FastLED API</span></div>
 <div class="line">    <span class="keyword">class </span><a class="code hl_class" href="df/d28/classfl_1_1_jpeg.html">Jpeg</a> {</div>
-<div class="line">        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="df/d28/classfl_1_1_jpeg_a4ae4f0c3b070a0fec0ece929c39983ef.html#a4ae4f0c3b070a0fec0ece929c39983ef">decode</a>(<span class="keyword">const</span> JpegDecoderConfig&amp; config,</div>
+<div class="line">        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="df/d28/classfl_1_1_jpeg_a2b1082abec270405ceb36dd55606c71b.html#a2b1082abec270405ceb36dd55606c71b">decode</a>(<span class="keyword">const</span> JpegDecoderConfig&amp; config,</div>
 <div class="line">                          fl::span&lt;const fl::u8&gt; data,</div>
 <div class="line">                          Frame* frame,</div>
 <div class="line">                          fl::string* error_message = <span class="keyword">nullptr</span>);</div>
@@ -349,14 +349,14 @@ Basic Usage</h2>
 <div class="line">config.quality = fl::JpegDecoderConfig::Medium;</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_class" href="d2/db2/classfl_1_1string.html">fl::string</a> error;</div>
-<div class="line"><span class="keyword">auto</span> frame = <a class="code hl_function" href="df/d28/classfl_1_1_jpeg_a4ae4f0c3b070a0fec0ece929c39983ef.html#a4ae4f0c3b070a0fec0ece929c39983ef">fl::Jpeg::decode</a>(config, jpeg_data_span, &amp;error);</div>
+<div class="line"><span class="keyword">auto</span> frame = <a class="code hl_function" href="df/d28/classfl_1_1_jpeg_a2b1082abec270405ceb36dd55606c71b.html#a2b1082abec270405ceb36dd55606c71b">fl::Jpeg::decode</a>(config, jpeg_data_span, &amp;error);</div>
 <div class="line"><span class="keywordflow">if</span> (!frame) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;JPEG decode failed: %s\n&quot;</span>, error.<a class="code hl_function" href="de/d66/classfl_1_1basic__string_ac7b40587b637d254d009cc32f530fb83.html#ac7b40587b637d254d009cc32f530fb83">c_str</a>());</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassfl_1_1basic__string_ac7b40587b637d254d009cc32f530fb83_html_ac7b40587b637d254d009cc32f530fb83"><div class="ttname"><a href="de/d66/classfl_1_1basic__string_ac7b40587b637d254d009cc32f530fb83.html#ac7b40587b637d254d009cc32f530fb83">fl::basic_string::c_str</a></div><div class="ttdeci">const char * c_str() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="d1/d86/basic__string_8cpp_8hpp_source.html#l00033">basic_string.cpp.hpp:33</a></div></div>
 <div class="ttc" id="aclassfl_1_1string_html"><div class="ttname"><a href="d2/db2/classfl_1_1string.html">fl::string</a></div><div class="ttdef"><b>Definition</b> <a href="da/d66/string_8h_source.html#l00202">string.h:202</a></div></div>
 <div class="ttc" id="ajpeg_8h_html"><div class="ttname"><a href="d3/d31/jpeg_8h.html">jpeg.h</a></div></div>
-<div class="ttc" id="anamespacefl_aef30cbd1dac648887ffa5dc1086b0164_html_aef30cbd1dac648887ffa5dc1086b0164a30ff380a3be74628024063a99fba10f0"><div class="ttname"><a href="d4/d36/namespacefl_aef30cbd1dac648887ffa5dc1086b0164.html#aef30cbd1dac648887ffa5dc1086b0164a30ff380a3be74628024063a99fba10f0">fl::PixelFormat::RGB888</a></div><div class="ttdeci">@ RGB888</div><div class="ttdef"><b>Definition</b> <a href="dd/dcd/pixel_8h_source.html#l00009">pixel.h:9</a></div></div>
+<div class="ttc" id="anamespacefl_aef30cbd1dac648887ffa5dc1086b0164_html_aef30cbd1dac648887ffa5dc1086b0164a30ff380a3be74628024063a99fba10f0"><div class="ttname"><a href="d4/d36/namespacefl_aef30cbd1dac648887ffa5dc1086b0164.html#aef30cbd1dac648887ffa5dc1086b0164a30ff380a3be74628024063a99fba10f0">fl::PixelFormat::RGB888</a></div><div class="ttdeci">@ RGB888</div><div class="ttdef"><b>Definition</b> <a href="dd/dcd/pixel_8h_source.html#l00010">pixel.h:10</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md799"></a>
 Advanced Configuration</h2>
 <div class="fragment"><div class="line"><span class="comment">// Custom configuration</span></div>
@@ -368,18 +368,18 @@ Advanced Configuration</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Decode to existing Frame</span></div>
 <div class="line"><a class="code hl_class" href="d1/de0/classfl_1_1_frame.html">fl::Frame</a> myFrame(width, height);</div>
-<div class="line"><span class="keywordtype">bool</span> success = <a class="code hl_function" href="df/d28/classfl_1_1_jpeg_a4ae4f0c3b070a0fec0ece929c39983ef.html#a4ae4f0c3b070a0fec0ece929c39983ef">fl::Jpeg::decode</a>(config, jpeg_data, &amp;myFrame, &amp;error);</div>
+<div class="line"><span class="keywordtype">bool</span> success = <a class="code hl_function" href="df/d28/classfl_1_1_jpeg_a2b1082abec270405ceb36dd55606c71b.html#a2b1082abec270405ceb36dd55606c71b">fl::Jpeg::decode</a>(config, jpeg_data, &amp;myFrame, &amp;error);</div>
 <div class="ttc" id="aclassfl_1_1_frame_html"><div class="ttname"><a href="d1/de0/classfl_1_1_frame.html">fl::Frame</a></div><div class="ttdef"><b>Definition</b> <a href="df/d7d/frame_8h_source.html#l00024">frame.h:24</a></div></div>
-<div class="ttc" id="anamespacefl_aef30cbd1dac648887ffa5dc1086b0164_html_aef30cbd1dac648887ffa5dc1086b0164a165f06116e7b8d9b2481dfc805db4619"><div class="ttname"><a href="d4/d36/namespacefl_aef30cbd1dac648887ffa5dc1086b0164.html#aef30cbd1dac648887ffa5dc1086b0164a165f06116e7b8d9b2481dfc805db4619">fl::PixelFormat::RGBA8888</a></div><div class="ttdeci">@ RGBA8888</div><div class="ttdef"><b>Definition</b> <a href="dd/dcd/pixel_8h_source.html#l00010">pixel.h:10</a></div></div>
+<div class="ttc" id="anamespacefl_aef30cbd1dac648887ffa5dc1086b0164_html_aef30cbd1dac648887ffa5dc1086b0164a165f06116e7b8d9b2481dfc805db4619"><div class="ttname"><a href="d4/d36/namespacefl_aef30cbd1dac648887ffa5dc1086b0164.html#aef30cbd1dac648887ffa5dc1086b0164a165f06116e7b8d9b2481dfc805db4619">fl::PixelFormat::RGBA8888</a></div><div class="ttdeci">@ RGBA8888</div><div class="ttdef"><b>Definition</b> <a href="dd/dcd/pixel_8h_source.html#l00011">pixel.h:11</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md800"></a>
 Platform Support</h2>
 <div class="fragment"><div class="line"><span class="comment">// Check if JPEG decoding is available</span></div>
-<div class="line"><span class="keywordflow">if</span> (<a class="code hl_function" href="df/d28/classfl_1_1_jpeg_aa0b8ebb360b7273e17fc833cf8da77dd.html#aa0b8ebb360b7273e17fc833cf8da77dd">fl::Jpeg::isSupported</a>()) {</div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_function" href="df/d28/classfl_1_1_jpeg_a34263beebec3a417344388712dbe8114.html#a34263beebec3a417344388712dbe8114">fl::Jpeg::isSupported</a>()) {</div>
 <div class="line">    <span class="comment">// JPEG decoding available</span></div>
 <div class="line">} <span class="keywordflow">else</span> {</div>
 <div class="line">    <span class="comment">// Platform doesn&#39;t support JPEG</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aclassfl_1_1_jpeg_aa0b8ebb360b7273e17fc833cf8da77dd_html_aa0b8ebb360b7273e17fc833cf8da77dd"><div class="ttname"><a href="df/d28/classfl_1_1_jpeg_aa0b8ebb360b7273e17fc833cf8da77dd.html#aa0b8ebb360b7273e17fc833cf8da77dd">fl::Jpeg::isSupported</a></div><div class="ttdeci">static bool isSupported()</div><div class="ttdef"><b>Definition</b> <a href="dd/d39/jpeg_8cpp_8hpp_source.html#l00376">jpeg.cpp.hpp:376</a></div></div>
+<div class="ttc" id="aclassfl_1_1_jpeg_a34263beebec3a417344388712dbe8114_html_a34263beebec3a417344388712dbe8114"><div class="ttname"><a href="df/d28/classfl_1_1_jpeg_a34263beebec3a417344388712dbe8114.html#a34263beebec3a417344388712dbe8114">fl::Jpeg::isSupported</a></div><div class="ttdeci">static bool isSupported() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="dd/d39/jpeg_8cpp_8hpp_source.html#l00376">jpeg.cpp.hpp:376</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md801"></a>
 Integration with FastLED Codecs</h2>
 <p>The JPEG decoder integrates seamlessly with FastLED's codec architecture:</p><ul>
@@ -465,8 +465,8 @@ Integration with Existing Test Suite</h2>
 <h1><a class="anchor" id="autotoc_md810"></a>
 API Integration (COMPLETED)</h1>
 <p>Main FastLED API entry point: <code><a class="el" href="d3/d31/jpeg_8h.html">src/fl/codec/jpeg.h</a></code></p><ul>
-<li>✅ <code><a class="el" href="df/d28/classfl_1_1_jpeg_a4ae4f0c3b070a0fec0ece929c39983ef.html#a4ae4f0c3b070a0fec0ece929c39983ef">fl::Jpeg::decode()</a></code> - Static decode methods (replaces factory pattern)</li>
-<li>✅ <code><a class="el" href="df/d28/classfl_1_1_jpeg_aa0b8ebb360b7273e17fc833cf8da77dd.html#aa0b8ebb360b7273e17fc833cf8da77dd">fl::Jpeg::isSupported()</a></code> - Platform detection</li>
+<li>✅ <code><a class="el" href="df/d28/classfl_1_1_jpeg_a2b1082abec270405ceb36dd55606c71b.html#a2b1082abec270405ceb36dd55606c71b">fl::Jpeg::decode()</a></code> - Static decode methods (replaces factory pattern)</li>
+<li>✅ <code><a class="el" href="df/d28/classfl_1_1_jpeg_a34263beebec3a417344388712dbe8114.html#a34263beebec3a417344388712dbe8114">fl::Jpeg::isSupported()</a></code> - Platform detection</li>
 <li>✅ <code>JpegDecoderConfig</code> - Configuration structure</li>
 <li>✅ Full integration with FastLED <code>Frame</code> and <code>PixelFormat</code> systems</li>
 </ul>
@@ -489,7 +489,7 @@ Summary</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c30bdf76ce759a4eae8387be42921388.html">third_party</a></li><li class="navelem"><a class="el" href="dir_74fa384bc6c2709b506cd0a5f7555d59.html">TJpg_Decoder</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:13 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:38 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

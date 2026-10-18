@@ -14,5 +14,6 @@ var structfl_1_1_rx_channel_config =
     [ "signal_range_min_ns", "d0/ddd/structfl_1_1_rx_channel_config_abb8228fb164d1e10de4e46ee0b6feb65.html#abb8228fb164d1e10de4e46ee0b6feb65", null ],
     [ "skip_signals", "d0/ddd/structfl_1_1_rx_channel_config_ac20f91eadafe12a73a860295f88e623a.html#ac20f91eadafe12a73a860295f88e623a", null ],
     [ "start_low", "d0/ddd/structfl_1_1_rx_channel_config_aad063a446c3bd2f939a7347b08f9bede.html#aad063a446c3bd2f939a7347b08f9bede", null ],
+    [ "stream_timing", "d0/ddd/structfl_1_1_rx_channel_config_a84f68f916b65862b86ffa96d6cf68215.html#a84f68f916b65862b86ffa96d6cf68215", null ],
     [ "use_dma", "d0/ddd/structfl_1_1_rx_channel_config_ad244cc15bdb2df5f4dc27bd97d450789.html#ad244cc15bdb2df5f4dc27bd97d450789", null ]
 ];

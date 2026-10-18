@@ -3,7 +3,7 @@ var pipeline__binding_8h =
     [ "fl::ColorPipelineHooks", "d4/d36/namespacefl.html#d9/d9e/structfl_1_1_color_pipeline_hooks", [
       [ "build", "d4/d36/namespacefl.html#a062c1f836dc129c972dcb997ef88df7a", null ],
       [ "destroyIterator", "d4/d36/namespacefl.html#a1153d27e37789b94423a70fbfb2a7915", null ],
-      [ "encodeManagedSpi", "d4/d36/namespacefl.html#aea2848971957dca63315ab3c53ad2607", null ],
+      [ "encodeManagedSpi", "d4/d36/namespacefl.html#a60b691c2ba024d36408c39457b7ee53b", null ],
       [ "makeIterator", "d4/d36/namespacefl.html#ae092efd0afba1f5ef5e02c3101062aef", null ],
       [ "notifyProfileClearedByLegacy", "d4/d36/namespacefl.html#aa09c243558f9131b21387fe8cbadc208", null ]
     ] ],

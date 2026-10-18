@@ -8,5 +8,5 @@ digraph "fl::detail::wave8_transpose_16x4_pipe4"
   rankdir="RL";
   Node1 [id="Node000001",label="fl::detail::wave8_transpose\l_16x4_pipe4",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::wave8Transpose\l_16x4_pipe4",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a8ab9ceed35077aee8198f828008bf565.html#a8ab9ceed35077aee8198f828008bf565",tooltip="Pipe4: transpose 16-lane × 4-byte-positions (#2548)."];
+  Node2 [id="Node000002",label="fl::wave8Transpose\l_16x4_pipe4",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a0d9913f42c2c320dd0b665be20cb14d2.html#a0d9913f42c2c320dd0b665be20cb14d2",tooltip="Pipe4: transpose 16-lane × 4-byte-positions (#2548)."];
 }

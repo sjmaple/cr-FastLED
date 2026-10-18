@@ -12,13 +12,13 @@ digraph "waveSim"
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="loop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d94/_wave2d_8h_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f",tooltip=" "];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="fl::WaveCrgbGradientMap\l::mapWaveToLEDs",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/da7/classfl_1_1_wave_crgb_gradient_map_ad61a059764202924ff17456df354d6b5.html#ad61a059764202924ff17456df354d6b5",tooltip="Map wave values to gradient-colored LEDs."];
+  Node4 [id="Node000004",label="fl::WaveCrgbGradientMap\l::mapWaveToLEDs",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/da7/classfl_1_1_wave_crgb_gradient_map_a8d2d4740b680ff7937a88faaa648a5db.html#a8d2d4740b680ff7937a88faaa648a5db",tooltip="Map wave values to gradient-colored LEDs."];
   Node4 -> Node2 [id="edge4_Node000004_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node5 [id="edge5_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="fl::WaveCrgbMap::mapWave\lToLEDs",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/dce/classfl_1_1_wave_crgb_map_af223c1d9018508b95caa2051ff578d76.html#af223c1d9018508b95caa2051ff578d76",tooltip="Convert wave simulation values to LED colors."];
+  Node5 [id="Node000005",label="fl::WaveCrgbMap::mapWave\lToLEDs",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/dce/classfl_1_1_wave_crgb_map_af4d4db07785b2773752e5ffa0b3616bc.html#af4d4db07785b2773752e5ffa0b3616bc",tooltip="Convert wave simulation values to LED colors."];
   Node5 -> Node5 [id="edge6_Node000005_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node6 [id="edge7_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="fl::WaveCrgbMapDefault\l::mapWaveToLEDs",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d99/classfl_1_1_wave_crgb_map_default_a66461ce15c4c0f20cb2efa033bd32bcb.html#a66461ce15c4c0f20cb2efa033bd32bcb",tooltip="Map wave values to grayscale LED colors."];
+  Node6 [id="Node000006",label="fl::WaveCrgbMapDefault\l::mapWaveToLEDs",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d99/classfl_1_1_wave_crgb_map_default_a0e196b17f9ed9c16c9c504e154d941c9.html#a0e196b17f9ed9c16c9c504e154d941c9",tooltip="Map wave values to grayscale LED colors."];
   Node1 -> Node7 [id="edge8_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node7 [id="Node000007",label="triggerRipple",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d78/examples_2_wave_2wave_8h_ab4fbc04440d455f77823cdca4be70b34.html#ab4fbc04440d455f77823cdca4be70b34",tooltip=" "];
   Node7 -> Node8 [id="edge9_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];

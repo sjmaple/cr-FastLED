@@ -12,9 +12,13 @@ digraph "fl::basic_string::erase"
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="fl::basic_string::erase",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d66/classfl_1_1basic__string_a7c3db6f2972588a3c581bab08dd7eeed.html#a7c3db6f2972588a3c581bab08dd7eeed",tooltip=" "];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="fl::basic_string::replace",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d66/classfl_1_1basic__string_a271181eba92f69b08b7f37907b959240.html#a271181eba92f69b08b7f37907b959240",tooltip=" "];
-  Node1 -> Node5 [id="edge4_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="fl::basic_string::replace",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d66/classfl_1_1basic__string_addf8a6f65cd51c28ff5dc69394498356.html#addf8a6f65cd51c28ff5dc69394498356",tooltip=" "];
+  Node4 [id="Node000004",label="fl::Remote::processRpc",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/ddb/classfl_1_1_remote_a7d1fa34ebbd0461362821b85e88749f9.html#a7d1fa34ebbd0461362821b85e88749f9",tooltip="Process JSON-RPC request (with optional \"timestamp\" field for scheduling) Returns JSON-RPC response: ..."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::Remote::Remote",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/ddb/classfl_1_1_remote_a549234968f4a850e2e774a27c0ca5ff2.html#a549234968f4a850e2e774a27c0ca5ff2",tooltip="Construct with I/O callbacks, including streamed response output."];
   Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="fl::basic_string::replace",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d66/classfl_1_1basic__string_a9ea4f9e1ba66cd299c39b9405f9966df.html#a9ea4f9e1ba66cd299c39b9405f9966df",tooltip=" "];
+  Node6 [id="Node000006",label="fl::basic_string::replace",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d66/classfl_1_1basic__string_a271181eba92f69b08b7f37907b959240.html#a271181eba92f69b08b7f37907b959240",tooltip=" "];
+  Node1 -> Node7 [id="edge6_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl::basic_string::replace",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d66/classfl_1_1basic__string_addf8a6f65cd51c28ff5dc69394498356.html#addf8a6f65cd51c28ff5dc69394498356",tooltip=" "];
+  Node1 -> Node8 [id="edge7_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="fl::basic_string::replace",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d66/classfl_1_1basic__string_a9ea4f9e1ba66cd299c39b9405f9966df.html#a9ea4f9e1ba66cd299c39b9405f9966df",tooltip=" "];
 }

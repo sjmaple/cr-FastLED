@@ -6,7 +6,7 @@ var namespacefl_1_1third__party_1_1hexwave =
     [ "HexWaveParameters", "dd/d76/namespacefl_1_1third__party_1_1hexwave.html#d7/d15/structfl_1_1third__party_1_1hexwave_1_1_hex_wave_parameters", "dd/d76/namespacefl_1_1third__party_1_1hexwave_d7/d15/structfl_1_1third__party_1_1hexwave_1_1_hex_wave_parameters_dup" ],
     [ "cos", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a2bda17f9c7e7ed8cc89536cfd39f35e2.html#a2bda17f9c7e7ed8cc89536cfd39f35e2", null ],
     [ "fabs", "dd/d76/namespacefl_1_1third__party_1_1hexwave_ab4d4c93cb75e3d2abb59cf7893a0949d.html#ab4d4c93cb75e3d2abb59cf7893a0949d", null ],
-    [ "free", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a8d74e9eb1fcd03c2d38cf1c23fb33b82.html#a8d74e9eb1fcd03c2d38cf1c23fb33b82", null ],
+    [ "free", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a29c1d27c1c4e3d5b9e1666ab97bb9ca6.html#a29c1d27c1c4e3d5b9e1666ab97bb9ca6", null ],
     [ "hex_add_oversampled_bleplike", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a29a4a58e45f7ae0ad1cf9277ffd35651.html#a29a4a58e45f7ae0ad1cf9277ffd35651", null ],
     [ "hex_blamp", "dd/d76/namespacefl_1_1third__party_1_1hexwave_afdf15748c6cb1ec43eed22838ea23b9a.html#afdf15748c6cb1ec43eed22838ea23b9a", null ],
     [ "hex_blep", "dd/d76/namespacefl_1_1third__party_1_1hexwave_ac75ade41607197b2c5dd68b01ea13d3f.html#ac75ade41607197b2c5dd68b01ea13d3f", null ],
@@ -19,10 +19,10 @@ var namespacefl_1_1third__party_1_1hexwave =
     [ "hexwave_generate_samples", "dd/d76/namespacefl_1_1third__party_1_1hexwave_ab4ee5bc9adb1f96a6bc100ed3d3714f0.html#ab4ee5bc9adb1f96a6bc100ed3d3714f0", null ],
     [ "hexwave_init", "dd/d76/namespacefl_1_1third__party_1_1hexwave_acf75dfc3efad30e0203f2adfcf379f2a.html#acf75dfc3efad30e0203f2adfcf379f2a", null ],
     [ "hexwave_shutdown", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a5dfba6f4edb0d0eba22df4c0029fba45.html#a5dfba6f4edb0d0eba22df4c0029fba45", null ],
-    [ "malloc", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a800f05fe5ce25fa8f4c2b55c45ba300f.html#a800f05fe5ce25fa8f4c2b55c45ba300f", null ],
-    [ "memcpy", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a35ff6755912c639a5e5bd35fc59e57ff.html#a35ff6755912c639a5e5bd35fc59e57ff", null ],
-    [ "memmove", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a63666ef9f14482d7c900d8ae5016beb3.html#a63666ef9f14482d7c900d8ae5016beb3", null ],
-    [ "memset", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a9416b2c34c489ae11032cb58c2d3c58c.html#a9416b2c34c489ae11032cb58c2d3c58c", null ],
+    [ "malloc", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a54b0497aee91c68712ecaedbf503a39d.html#a54b0497aee91c68712ecaedbf503a39d", null ],
+    [ "memcpy", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a7b6c734893ba8183b7e611e507b73984.html#a7b6c734893ba8183b7e611e507b73984", null ],
+    [ "memmove", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a762753c794667b7711aed317075cecfa.html#a762753c794667b7711aed317075cecfa", null ],
+    [ "memset", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a65c49e81b0a971a6a41de06a7328b571.html#a65c49e81b0a971a6a41de06a7328b571", null ],
     [ "sin", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a080e32a9d5b39b1674c35757eaa2daf9.html#a080e32a9d5b39b1674c35757eaa2daf9", null ],
     [ "sGlobalEngine", "dd/d76/namespacefl_1_1third__party_1_1hexwave_a04be47efdad096f9c4b4b918491f794d.html#a04be47efdad096f9c4b4b918491f794d", null ]
 ];

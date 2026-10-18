@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -117,41 +117,44 @@ $(function(){initNavTree('d5/d00/chasing__spiral__state_8h_source.html','../../'
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/ddf/align_8h.html">fl/stl/align.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/dd8/stdint_8h.html">fl/stl/stdint.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../d6/d68/vector_8h.html">fl/stl/vector.h</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d36/namespacefl.html">fl</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// FL_ALIGNAS(16): aligns the struct itself to 16 bytes, satisfying SSE2</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// requirements for load_u32_4_aligned at BOUNDARY A in the SIMD inner loop.</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// The fl::vector heap buffers inside this struct rely on the platform allocator</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// providing &gt;= 16-byte alignment for allocations &gt;= 16 bytes (guaranteed by</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// glibc, musl, Darwin, Windows CRT, and ESP-IDF heap on all SIMD-capable targets).</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">struct </span><a class="code hl_function" href="../../d4/d36/namespacefl_a9439569ede870eaca8e687b00bb58f4e.html#a9439569ede870eaca8e687b00bb58f4e">FL_ALIGNAS</a>(16) ChasingSpiralState {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// SoA pixel geometry — built once when grid size changes, reused every frame.</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// Each array has `count` valid entries, padded to the next multiple of 4</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// (so SIMD loads never read past the allocation).</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::i32&gt;</a> base_angle;    <span class="comment">// 3*theta - dist/3, raw s16x16</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::i32&gt;</a> dist_scaled;   <span class="comment">// distance * 0.1, raw s16x16</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::i32&gt;</a> rf3;           <span class="comment">// 3 * radial_filter, raw s16x16 (red)</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::i32&gt;</a> rf_half;       <span class="comment">// radial_filter / 2, raw s16x16 (green)</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::i32&gt;</a> rf_quarter;    <span class="comment">// radial_filter / 4, raw s16x16 (blue)</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::u16&gt;</a> pixel_idx;     <span class="comment">// pre-mapped xyMap(x,y) LED index</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">int</span> count = 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// Perlin fade LUT (257 entries, Q8.24 format).</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// FL_ALIGNAS(16): enables aligned SIMD loads in pnoise2d_raw_simd4_vec.</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_define" href="../../df/d96/s16x16x4_8h_aea56bd2a3313a0cf0eb877a46ca42086.html#aea56bd2a3313a0cf0eb877a46ca42086">FL_ALIGNAS</a>(16) fl::i32 fade_lut[257];</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">bool</span> fade_lut_initialized = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    ChasingSpiralState() : fade_lut{}, fade_lut_initialized(<span class="keyword">false</span>) {}</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/d01/noexcept_8h.html">fl/stl/noexcept.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d36/namespacefl.html">fl</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// FL_ALIGNAS(16): aligns the struct itself to 16 bytes, satisfying SSE2</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// requirements for load_u32_4_aligned at BOUNDARY A in the SIMD inner loop.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// The fl::vector heap buffers inside this struct rely on the platform allocator</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// providing &gt;= 16-byte alignment for allocations &gt;= 16 bytes (guaranteed by</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// glibc, musl, Darwin, Windows CRT, and ESP-IDF heap on all SIMD-capable targets).</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">struct </span><a class="code hl_function" href="../../d4/d36/namespacefl_a9439569ede870eaca8e687b00bb58f4e.html#a9439569ede870eaca8e687b00bb58f4e">FL_ALIGNAS</a>(16) ChasingSpiralState {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// SoA pixel geometry — built once when grid size changes, reused every frame.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// Each array has `count` valid entries, padded to the next multiple of 4</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">// (so SIMD loads never read past the allocation).</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::i32&gt;</a> base_angle;    <span class="comment">// 3*theta - dist/3, raw s16x16</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::i32&gt;</a> dist_scaled;   <span class="comment">// distance * 0.1, raw s16x16</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::i32&gt;</a> rf3;           <span class="comment">// 3 * radial_filter, raw s16x16 (red)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::i32&gt;</a> rf_half;       <span class="comment">// radial_filter / 2, raw s16x16 (green)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::i32&gt;</a> rf_quarter;    <span class="comment">// radial_filter / 4, raw s16x16 (blue)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::u16&gt;</a> pixel_idx;     <span class="comment">// pre-mapped xyMap(x,y) LED index</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">int</span> count = 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// Perlin fade LUT (257 entries, Q8.24 format).</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// FL_ALIGNAS(16): enables aligned SIMD loads in pnoise2d_raw_simd4_vec.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_define" href="../../df/d96/s16x16x4_8h_aea56bd2a3313a0cf0eb877a46ca42086.html#aea56bd2a3313a0cf0eb877a46ca42086">FL_ALIGNAS</a>(16) fl::i32 fade_lut[257];</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">bool</span> fade_lut_initialized = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    ChasingSpiralState() <a class="code hl_variable" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a> : fade_lut{}, fade_lut_initialized(<span class="keyword">false</span>) {}</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}  <span class="comment">// namespace fl</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}  <span class="comment">// namespace fl</span></div>
 <div class="ttc" id="aalign_8h_html"><div class="ttname"><a href="../../d1/ddf/align_8h.html">align.h</a></div><div class="ttdoc">Alignment macros and utilities for FastLED.</div></div>
 <div class="ttc" id="aclassfl_1_1vector_html"><div class="ttname"><a href="../../d2/d24/classfl_1_1vector.html">fl::vector</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d68/vector_8h_source.html#l00449">vector.h:449</a></div></div>
-<div class="ttc" id="anamespacefl_a9439569ede870eaca8e687b00bb58f4e_html_a9439569ede870eaca8e687b00bb58f4e"><div class="ttname"><a href="../../d4/d36/namespacefl_a9439569ede870eaca8e687b00bb58f4e.html#a9439569ede870eaca8e687b00bb58f4e">fl::FL_ALIGNAS</a></div><div class="ttdeci">struct FL_ALIGNAS(4) Wave3BitExpansionLut</div><div class="ttdoc">Lookup table for nibble-to-waveform expansion in wave3 format (32 bytes)</div><div class="ttdef"><b>Definition</b> <a href="../../da/db7/wave3_8h_source.html#l00001">wave3.h:31</a></div></div>
+<div class="ttc" id="anamespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5_html_a0f2fe8e60b0edbe21ace28f787ba7cb5"><div class="ttname"><a href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">fl::FL_NO_EXCEPT</a></div><div class="ttdeci">u8 u8 fract8 blur_amount FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d4/df5/blur_8h_source.html#l00186">blur.h:186</a></div></div>
+<div class="ttc" id="anamespacefl_a9439569ede870eaca8e687b00bb58f4e_html_a9439569ede870eaca8e687b00bb58f4e"><div class="ttname"><a href="../../d4/d36/namespacefl_a9439569ede870eaca8e687b00bb58f4e.html#a9439569ede870eaca8e687b00bb58f4e">fl::FL_ALIGNAS</a></div><div class="ttdeci">struct FL_ALIGNAS(4) Wave3BitExpansionLut</div><div class="ttdoc">Lookup table for nibble-to-waveform expansion in wave3 format (32 bytes)</div><div class="ttdef"><b>Definition</b> <a href="../../da/db7/wave3_8h_source.html#l00001">wave3.h:32</a></div></div>
 <div class="ttc" id="anamespacefl_html"><div class="ttname"><a href="../../d4/d36/namespacefl.html">fl</a></div><div class="ttdoc">Base definition for an LED controller.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d4b/crgb_8hpp_source.html#l00179">crgb.hpp:179</a></div></div>
+<div class="ttc" id="anoexcept_8h_html"><div class="ttname"><a href="../../db/d01/noexcept_8h.html">noexcept.h</a></div></div>
 <div class="ttc" id="as16x16x4_8h_aea56bd2a3313a0cf0eb877a46ca42086_html_aea56bd2a3313a0cf0eb877a46ca42086"><div class="ttname"><a href="../../df/d96/s16x16x4_8h_aea56bd2a3313a0cf0eb877a46ca42086.html#aea56bd2a3313a0cf0eb877a46ca42086">FL_ALIGNAS</a></div><div class="ttdeci">#define FL_ALIGNAS(N)</div></div>
 <div class="ttc" id="astdint_8h_html"><div class="ttname"><a href="../../df/dd8/stdint_8h.html">stdint.h</a></div></div>
 <div class="ttc" id="avector_8h_html"><div class="ttname"><a href="../../d6/d68/vector_8h.html">vector.h</a></div></div>
@@ -162,7 +165,7 @@ $(function(){initNavTree('d5/d00/chasing__spiral__state_8h_source.html','../../'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><a class="el" href="../../dir_d90d106199f3fa0759eaa8cec7e30de8.html">fx</a></li><li class="navelem"><a class="el" href="../../dir_ef4cc1a41c4d257473780bb85842dcc6.html">2d</a></li><li class="navelem"><a class="el" href="../../dir_c73f294a4e725b7f056175b06a115b93.html">animartrix_detail</a></li><li class="navelem"><a class="el" href="../../d5/d00/chasing__spiral__state_8h.html">chasing_spiral_state.h</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:00 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:14 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

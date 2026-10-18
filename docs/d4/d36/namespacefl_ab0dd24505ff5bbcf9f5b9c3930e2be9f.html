@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -117,20 +117,22 @@ $(function(){initNavTree('d4/d36/namespacefl_ab0dd24505ff5bbcf9f5b9c3930e2be9f.h
 
 <p>16-bit cubic ease-out function Takes an input value 0-65535 and returns an eased value 0-65535 </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html#l00261">261</a> of file <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html">ease.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  261</span>                          {</div>
-<div class="line"><span class="lineno">  262</span>    <span class="comment">// ease-out cubic: 1 - (1-t)³</span></div>
-<div class="line"><span class="lineno">  263</span>    <span class="comment">// For 16-bit: y = MAX - (MAX-i)³ / MAX²</span></div>
-<div class="line"><span class="lineno">  264</span>    <span class="keyword">constexpr</span> u32 MAX = 0xFFFF;                <span class="comment">// 65535</span></div>
-<div class="line"><span class="lineno">  265</span>    <span class="keyword">constexpr</span> fl::u64 DENOM = (fl::u64)MAX * MAX; <span class="comment">// 65535²</span></div>
-<div class="line"><span class="lineno">  266</span>    <span class="keyword">constexpr</span> fl::u64 ROUND = DENOM &gt;&gt; 1;          <span class="comment">// for rounding</span></div>
-<div class="line"><span class="lineno">  267</span> </div>
-<div class="line"><span class="lineno">  268</span>    fl::u64 d = MAX - i;      <span class="comment">// (MAX - i)</span></div>
-<div class="line"><span class="lineno">  269</span>    fl::u64 cube = d * d * d; <span class="comment">// (MAX-i)³</span></div>
-<div class="line"><span class="lineno">  270</span>    fl::u64 num = cube + ROUND;</div>
-<div class="line"><span class="lineno">  271</span>    <span class="keywordflow">return</span> u16(MAX - (num / DENOM));</div>
-<div class="line"><span class="lineno">  272</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html#l00262">262</a> of file <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html">ease.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  262</span>                                       {</div>
+<div class="line"><span class="lineno">  263</span>    <span class="comment">// ease-out cubic: 1 - (1-t)³</span></div>
+<div class="line"><span class="lineno">  264</span>    <span class="comment">// For 16-bit: y = MAX - (MAX-i)³ / MAX²</span></div>
+<div class="line"><span class="lineno">  265</span>    <span class="keyword">constexpr</span> u32 MAX = 0xFFFF;                <span class="comment">// 65535</span></div>
+<div class="line"><span class="lineno">  266</span>    <span class="keyword">constexpr</span> fl::u64 DENOM = (fl::u64)MAX * MAX; <span class="comment">// 65535²</span></div>
+<div class="line"><span class="lineno">  267</span>    <span class="keyword">constexpr</span> fl::u64 ROUND = DENOM &gt;&gt; 1;          <span class="comment">// for rounding</span></div>
+<div class="line"><span class="lineno">  268</span> </div>
+<div class="line"><span class="lineno">  269</span>    fl::u64 d = MAX - i;      <span class="comment">// (MAX - i)</span></div>
+<div class="line"><span class="lineno">  270</span>    fl::u64 cube = d * d * d; <span class="comment">// (MAX-i)³</span></div>
+<div class="line"><span class="lineno">  271</span>    fl::u64 num = cube + ROUND;</div>
+<div class="line"><span class="lineno">  272</span>    <span class="keywordflow">return</span> u16(MAX - (num / DENOM));</div>
+<div class="line"><span class="lineno">  273</span>}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">FL_NO_EXCEPT</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../db/d19/ease_8h_source.html#l00148">ease16()</a>, and <a class="el" href="../../db/d19/ease_8h_source.html#l00132">ease16()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -149,7 +151,7 @@ $(function(){initNavTree('d4/d36/namespacefl_ab0dd24505ff5bbcf9f5b9c3930e2be9f.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:07 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:28 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

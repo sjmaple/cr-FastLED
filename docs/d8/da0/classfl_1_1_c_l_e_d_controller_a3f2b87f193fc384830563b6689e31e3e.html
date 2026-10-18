@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -115,25 +115,25 @@ $(function(){initNavTree('d8/da0/classfl_1_1_c_l_e_d_controller_a3f2b87f193fc384
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00124">124</a> of file <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html">cled_controller.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  124</span>                                                                 {</div>
-<div class="line"><span class="lineno">  125</span>    <span class="comment">// *premixed = getAdjustment(brightness);</span></div>
-<div class="line"><span class="lineno">  126</span>    <span class="comment">// if (color_correction) {</span></div>
-<div class="line"><span class="lineno">  127</span>    <span class="comment">//     *color_correction = getAdjustment(255);</span></div>
-<div class="line"><span class="lineno">  128</span>    <span class="comment">// }</span></div>
-<div class="line"><span class="lineno">  129</span><span class="preprocessor">    #if FASTLED_HD_COLOR_MIXING</span></div>
-<div class="line"><span class="lineno">  130</span>    ColorAdjustment out = {this-&gt;<a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_af578764852f4bb08cb04a7a1be5a0bdc.html#af578764852f4bb08cb04a7a1be5a0bdc">getAdjustment</a>(<a class="code hl_variable" href="../../d6/d05/_animartrix_8ino_ab0d80715bb4b382856cf250c1eeb9b53.html#ab0d80715bb4b382856cf250c1eeb9b53">brightness</a>), this-&gt;<a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_af578764852f4bb08cb04a7a1be5a0bdc.html#af578764852f4bb08cb04a7a1be5a0bdc">getAdjustment</a>(255), <a class="code hl_variable" href="../../d6/d05/_animartrix_8ino_ab0d80715bb4b382856cf250c1eeb9b53.html#ab0d80715bb4b382856cf250c1eeb9b53">brightness</a>};</div>
-<div class="line"><span class="lineno">  131</span><span class="preprocessor">    #else</span></div>
-<div class="line"><span class="lineno">  132</span>    ColorAdjustment out = {<a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_af578764852f4bb08cb04a7a1be5a0bdc.html#af578764852f4bb08cb04a7a1be5a0bdc">getAdjustment</a>(<a class="code hl_variable" href="../../d6/d05/_animartrix_8ino_ab0d80715bb4b382856cf250c1eeb9b53.html#ab0d80715bb4b382856cf250c1eeb9b53">brightness</a>)};</div>
-<div class="line"><span class="lineno">  133</span><span class="preprocessor">    #endif</span></div>
-<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><span class="lineno">  135</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00127">127</a> of file <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html">cled_controller.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  127</span>                                                                              {</div>
+<div class="line"><span class="lineno">  128</span>    <span class="comment">// *premixed = getAdjustment(brightness);</span></div>
+<div class="line"><span class="lineno">  129</span>    <span class="comment">// if (color_correction) {</span></div>
+<div class="line"><span class="lineno">  130</span>    <span class="comment">//     *color_correction = getAdjustment(255);</span></div>
+<div class="line"><span class="lineno">  131</span>    <span class="comment">// }</span></div>
+<div class="line"><span class="lineno">  132</span><span class="preprocessor">    #if FASTLED_HD_COLOR_MIXING</span></div>
+<div class="line"><span class="lineno">  133</span>    ColorAdjustment out = {this-&gt;<a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_af578764852f4bb08cb04a7a1be5a0bdc.html#af578764852f4bb08cb04a7a1be5a0bdc">getAdjustment</a>(<a class="code hl_variable" href="../../d6/d05/_animartrix_8ino_ab0d80715bb4b382856cf250c1eeb9b53.html#ab0d80715bb4b382856cf250c1eeb9b53">brightness</a>), this-&gt;<a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_af578764852f4bb08cb04a7a1be5a0bdc.html#af578764852f4bb08cb04a7a1be5a0bdc">getAdjustment</a>(255), <a class="code hl_variable" href="../../d6/d05/_animartrix_8ino_ab0d80715bb4b382856cf250c1eeb9b53.html#ab0d80715bb4b382856cf250c1eeb9b53">brightness</a>};</div>
+<div class="line"><span class="lineno">  134</span><span class="preprocessor">    #else</span></div>
+<div class="line"><span class="lineno">  135</span>    ColorAdjustment out = {<a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_af578764852f4bb08cb04a7a1be5a0bdc.html#af578764852f4bb08cb04a7a1be5a0bdc">getAdjustment</a>(<a class="code hl_variable" href="../../d6/d05/_animartrix_8ino_ab0d80715bb4b382856cf250c1eeb9b53.html#ab0d80715bb4b382856cf250c1eeb9b53">brightness</a>)};</div>
+<div class="line"><span class="lineno">  136</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">  138</span>}</div>
 <div class="ttc" id="a_animartrix_8ino_ab0d80715bb4b382856cf250c1eeb9b53_html_ab0d80715bb4b382856cf250c1eeb9b53"><div class="ttname"><a href="../../d6/d05/_animartrix_8ino_ab0d80715bb4b382856cf250c1eeb9b53.html#ab0d80715bb4b382856cf250c1eeb9b53">brightness</a></div><div class="ttdeci">fl::UISlider brightness(&quot;Brightness&quot;, BRIGHTNESS, 0, 255)</div></div>
-<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_af578764852f4bb08cb04a7a1be5a0bdc_html_af578764852f4bb08cb04a7a1be5a0bdc"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_af578764852f4bb08cb04a7a1be5a0bdc.html#af578764852f4bb08cb04a7a1be5a0bdc">fl::CLEDController::getAdjustment</a></div><div class="ttdeci">CRGB getAdjustment(fl::u8 scale) FL_NO_EXCEPT</div><div class="ttdoc">Get the combined brightness/color adjustment for this controller.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00496">cled_controller.h:496</a></div></div>
+<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_af578764852f4bb08cb04a7a1be5a0bdc_html_af578764852f4bb08cb04a7a1be5a0bdc"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_af578764852f4bb08cb04a7a1be5a0bdc.html#af578764852f4bb08cb04a7a1be5a0bdc">fl::CLEDController::getAdjustment</a></div><div class="ttdeci">CRGB getAdjustment(fl::u8 scale) FL_NO_EXCEPT</div><div class="ttdoc">Get the combined brightness/color adjustment for this controller.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00484">cled_controller.h:484</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/d05/_animartrix_8ino_ab0d80715bb4b382856cf250c1eeb9b53.html#ab0d80715bb4b382856cf250c1eeb9b53">brightness</a>, and <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00496">getAdjustment()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d05/_animartrix_8ino_ab0d80715bb4b382856cf250c1eeb9b53.html#ab0d80715bb4b382856cf250c1eeb9b53">brightness</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00484">getAdjustment()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d57/cpixel__ledcontroller_8h_source.html#l00046">CPixelLEDController&lt; RGB_ORDER, LANES, MASK &gt;::show()</a>, and <a class="el" href="../../d9/d57/cpixel__ledcontroller_8h_source.html#l00033">CPixelLEDController&lt; RGB_ORDER, LANES, MASK &gt;::showColor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d57/cpixel__ledcontroller_8h_source.html#l00047">CPixelLEDController&lt; RGB_ORDER, LANES, MASK &gt;::show()</a>, and <a class="el" href="../../d9/d57/cpixel__ledcontroller_8h_source.html#l00034">CPixelLEDController&lt; RGB_ORDER, LANES, MASK &gt;::showColor()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -158,7 +158,7 @@ $(function(){initNavTree('d8/da0/classfl_1_1_c_l_e_d_controller_a3f2b87f193fc384
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d8/da0/classfl_1_1_c_l_e_d_controller.html">CLEDController</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

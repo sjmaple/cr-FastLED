@@ -15,4 +15,6 @@ digraph "fl::to_hex"
   Node4 [id="Node000004",label="fl::printf_detail::\lformat_floating",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/de0/namespacefl_1_1printf__detail_a8df18f60f30ea041a86a1919d0af2062.html#a8df18f60f30ea041a86a1919d0af2062",tooltip=" "];
   Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node5 [id="Node000005",label="fl::printf_detail::\lformat_scalar_arg",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/de0/namespacefl_1_1printf__detail_a7ca04cb319627978e8dfe806e55ee58f.html#a7ca04cb319627978e8dfe806e55ee58f",tooltip=" "];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::sstream::operator\<\<",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d27/classfl_1_1sstream_abd49cf04560237522a0ee6bd9f1f8475.html#abd49cf04560237522a0ee6bd9f1f8475",tooltip=" "];
 }

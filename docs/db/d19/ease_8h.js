@@ -35,6 +35,6 @@ var ease_8h =
     [ "fl::easeOutQuad8", "d4/d36/namespacefl_a9d3789fec9b8b0c20905ac23a41569ef.html#a9d3789fec9b8b0c20905ac23a41569ef", null ],
     [ "fl::easeOutSine16", "d4/d36/namespacefl_a407f6f9f63c9a625b24286167f916b80.html#a407f6f9f63c9a625b24286167f916b80", null ],
     [ "fl::easeOutSine8", "d4/d36/namespacefl_abab11f221ebf64df027ce9156e4e9562.html#abab11f221ebf64df027ce9156e4e9562", null ],
-    [ "fl::gamma_2_8", "d4/d36/namespacefl_aa12ff729500796fbd28fc43aad562817.html#aa12ff729500796fbd28fc43aad562817", null ],
+    [ "fl::gamma_2_8", "d4/d36/namespacefl_a1ac8184a6a3c417bdd3c7ce3adfcbbc0.html#a1ac8184a6a3c417bdd3c7ce3adfcbbc0", null ],
     [ "fl::GAMMA_2_8_LUT", "d4/d36/namespacefl_a73b3a40b704fb2caa925f06e439542df.html#a73b3a40b704fb2caa925f06e439542df", null ]
 ];

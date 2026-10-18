@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -109,12 +109,12 @@ $(function(){initNavTree('df/d96/s16x16x4_8h_source.html','../../'); initResizab
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="../../d8/de1/simd_8h.html">fl/math/simd.h</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/d64/s16x16_8h.html">fl/math/fixed_point/s16x16.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="../../d2/d4b/sin32__simd_8h.html">fl/math/sin32_simd.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../db/d01/noexcept_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">    9</a></span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/d54/compiler__control_8h.html">fl/stl/compiler_control.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/d54/compiler__control_8h.html">fl/stl/compiler_control.h</a>&quot;</span></div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../da/d3c/namespacefl_1_1fl.html">   10</a></span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/ddf/align_8h.html">fl/stl/align.h</a>&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Pulled in at file scope, not through simd_ops.h below: that include sits</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// inside `namespace fl`, so reaching s0x32x4.h through it nests the whole</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../da/d3c/namespacefl_1_1fl_a0cd3d1e39ca05f59d6d4805d41244c31.html#a0cd3d1e39ca05f59d6d4805d41244c31">   13</a></span><span class="comment">// header -- and everything it includes -- one namespace too deep.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../db/d01/noexcept_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">   13</a></span><span class="comment">// header -- and everything it includes -- one namespace too deep.</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/dcf/s0x32x4_8h.html">fl/math/fixed_point/s0x32x4.h</a>&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
@@ -298,7 +298,7 @@ $(function(){initNavTree('df/d96/s16x16x4_8h_source.html','../../'); initResizab
 <div class="ttc" id="anamespacefl_a13766ae9e150185981f5096f90a439d7_html_a13766ae9e150185981f5096f90a439d7"><div class="ttname"><a href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">fl::value</a></div><div class="ttdeci">constexpr int type_rank&lt; T &gt;::value</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d37/static__constexpr__defs_8cpp_8hpp_source.html#l00082">static_constexpr_defs.cpp.hpp:82</a></div></div>
 <div class="ttc" id="anamespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99_html_a8fa65f6529fc3eb6a174cb304a4bfc99"><div class="ttname"><a href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">fl::result</a></div><div class="ttdeci">expected&lt; T, E &gt; result</div><div class="ttdoc">Alias for expected (Rust-style naming)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d93/result_8h_source.html#l00031">result.h:31</a></div></div>
 <div class="ttc" id="anamespacefl_a92f648bf72198076845339c6859d3e19_html_a92f648bf72198076845339c6859d3e19"><div class="ttname"><a href="../../d4/d36/namespacefl_a92f648bf72198076845339c6859d3e19.html#a92f648bf72198076845339c6859d3e19">fl::sincos32_simd</a></div><div class="ttdeci">FASTLED_FORCE_INLINE SinCos32_simd sincos32_simd(simd::simd_u32x4 angles) FL_NO_EXCEPT</div><div class="ttdoc">Process 4 angles simultaneously, returning vectorized sin/cos values SIMD-optimized: vectorized angle...</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d4b/sin32__simd_8h_source.html#l00032">sin32_simd.h:32</a></div></div>
-<div class="ttc" id="anamespacefl_abbddb15aa2e7c8eb469d1dd56d6d2140_html_abbddb15aa2e7c8eb469d1dd56d6d2140"><div class="ttname"><a href="../../d4/d36/namespacefl_abbddb15aa2e7c8eb469d1dd56d6d2140.html#abbddb15aa2e7c8eb469d1dd56d6d2140">fl::t</a></div><div class="ttdeci">t</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00027">transposition.cpp.hpp:27</a></div></div>
+<div class="ttc" id="anamespacefl_abbddb15aa2e7c8eb469d1dd56d6d2140_html_abbddb15aa2e7c8eb469d1dd56d6d2140"><div class="ttname"><a href="../../d4/d36/namespacefl_abbddb15aa2e7c8eb469d1dd56d6d2140.html#abbddb15aa2e7c8eb469d1dd56d6d2140">fl::t</a></div><div class="ttdeci">t</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00028">transposition.cpp.hpp:28</a></div></div>
 <div class="ttc" id="anamespacefl_html"><div class="ttname"><a href="../../d4/d36/namespacefl.html">fl</a></div><div class="ttdoc">Base definition for an LED controller.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d4b/crgb_8hpp_source.html#l00179">crgb.hpp:179</a></div></div>
 <div class="ttc" id="as0x32x4_8h_html"><div class="ttname"><a href="../../d1/dcf/s0x32x4_8h.html">s0x32x4.h</a></div><div class="ttdoc">SIMD 4-wide s0x32 fixed-point vector type.</div></div>
 <div class="ttc" id="as16x16_8h_html"><div class="ttname"><a href="../../d7/d64/s16x16_8h.html">s16x16.h</a></div></div>
@@ -333,7 +333,7 @@ $(function(){initNavTree('df/d96/s16x16x4_8h_source.html','../../'); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><a class="el" href="../../dir_94896ea2d28e1d34f24a1dbbb9436aa8.html">math</a></li><li class="navelem"><a class="el" href="../../dir_f2ccef9f6c31b883ce82e6f26140ecd0.html">fixed_point</a></li><li class="navelem"><a class="el" href="../../df/d96/s16x16x4_8h.html">s16x16x4.h</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:01 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:14 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -107,13 +107,14 @@ $(function(){initNavTree('d0/d4c/malloc_8h.html','../../'); initResizable(true);
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../df/dd8/stdint_8h_source.html">fl/stl/stdint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d54/compiler__control_8h_source.html">fl/stl/compiler_control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d01/noexcept_8h_source.html">fl/stl/noexcept.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for malloc.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d89/malloc_8h__incl.svg" width="272" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d89/malloc_8h__incl.svg" width="520" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -130,17 +131,31 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></td></tr>
 <tr class="memdesc:d4/d36/namespacefl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base definition for an LED controller. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbc/namespacefl_1_1libc__impl.html">fl::libc_impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a52ef0528082dc77bc55e051dbcd59e6e" id="r_a52ef0528082dc77bc55e051dbcd59e6e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_a52ef0528082dc77bc55e051dbcd59e6e.html#a52ef0528082dc77bc55e051dbcd59e6e">fl::calloc</a> (<a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a> nmemb, <a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a> size)</td></tr>
-<tr class="separator:a52ef0528082dc77bc55e051dbcd59e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d74e9eb1fcd03c2d38cf1c23fb33b82" id="r_a8d74e9eb1fcd03c2d38cf1c23fb33b82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_a8d74e9eb1fcd03c2d38cf1c23fb33b82.html#a8d74e9eb1fcd03c2d38cf1c23fb33b82">fl::free</a> (void *ptr)</td></tr>
-<tr class="separator:a8d74e9eb1fcd03c2d38cf1c23fb33b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a800f05fe5ce25fa8f4c2b55c45ba300f" id="r_a800f05fe5ce25fa8f4c2b55c45ba300f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_a800f05fe5ce25fa8f4c2b55c45ba300f.html#a800f05fe5ce25fa8f4c2b55c45ba300f">fl::malloc</a> (<a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a> size)</td></tr>
-<tr class="separator:a800f05fe5ce25fa8f4c2b55c45ba300f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae1ec340fbf142bdbd24d22307f15303" id="r_aae1ec340fbf142bdbd24d22307f15303"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_aae1ec340fbf142bdbd24d22307f15303.html#aae1ec340fbf142bdbd24d22307f15303">fl::realloc</a> (void *ptr, <a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a> new_size)</td></tr>
-<tr class="separator:aae1ec340fbf142bdbd24d22307f15303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4667e702c00884d7cedaa2ebf2a5373e" id="r_a4667e702c00884d7cedaa2ebf2a5373e"><td class="memTemplParams" colspan="2">template&lt;typename FlLibcTag = void&gt; </td></tr>
+<tr class="memitem:a4667e702c00884d7cedaa2ebf2a5373e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d54/compiler__control_8h_a2f767b53d92c9d761d9f8d28a35d80c7.html#a2f767b53d92c9d761d9f8d28a35d80c7">FASTLED_FORCE_INLINE</a> void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_a4667e702c00884d7cedaa2ebf2a5373e.html#a4667e702c00884d7cedaa2ebf2a5373e">fl::calloc</a> (<a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a> nmemb, <a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a> size) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="separator:a4667e702c00884d7cedaa2ebf2a5373e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1040b9392600eeab5410a72efcd074c" id="r_aa1040b9392600eeab5410a72efcd074c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbc/namespacefl_1_1libc__impl_aa1040b9392600eeab5410a72efcd074c.html#aa1040b9392600eeab5410a72efcd074c">fl::libc_impl::calloc</a> (<a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a> nmemb, <a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a> size) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="separator:aa1040b9392600eeab5410a72efcd074c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c1d27c1c4e3d5b9e1666ab97bb9ca6" id="r_a29c1d27c1c4e3d5b9e1666ab97bb9ca6"><td class="memTemplParams" colspan="2">template&lt;typename FlLibcTag = void&gt; </td></tr>
+<tr class="memitem:a29c1d27c1c4e3d5b9e1666ab97bb9ca6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d54/compiler__control_8h_a2f767b53d92c9d761d9f8d28a35d80c7.html#a2f767b53d92c9d761d9f8d28a35d80c7">FASTLED_FORCE_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_a29c1d27c1c4e3d5b9e1666ab97bb9ca6.html#a29c1d27c1c4e3d5b9e1666ab97bb9ca6">fl::free</a> (void *ptr) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="separator:a29c1d27c1c4e3d5b9e1666ab97bb9ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229cc85f0af504eee6042aaf04e0da04" id="r_a229cc85f0af504eee6042aaf04e0da04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbc/namespacefl_1_1libc__impl_a229cc85f0af504eee6042aaf04e0da04.html#a229cc85f0af504eee6042aaf04e0da04">fl::libc_impl::free</a> (void *ptr) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="separator:a229cc85f0af504eee6042aaf04e0da04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ba4571e9ab129b2da33c9af06eaf1a" id="r_ad1ba4571e9ab129b2da33c9af06eaf1a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbc/namespacefl_1_1libc__impl_ad1ba4571e9ab129b2da33c9af06eaf1a.html#ad1ba4571e9ab129b2da33c9af06eaf1a">fl::libc_impl::malloc</a> (<a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a> size) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="separator:ad1ba4571e9ab129b2da33c9af06eaf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b0497aee91c68712ecaedbf503a39d" id="r_a54b0497aee91c68712ecaedbf503a39d"><td class="memTemplParams" colspan="2">template&lt;typename FlLibcTag = void&gt; </td></tr>
+<tr class="memitem:a54b0497aee91c68712ecaedbf503a39d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d54/compiler__control_8h_a2f767b53d92c9d761d9f8d28a35d80c7.html#a2f767b53d92c9d761d9f8d28a35d80c7">FASTLED_FORCE_INLINE</a> void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_a54b0497aee91c68712ecaedbf503a39d.html#a54b0497aee91c68712ecaedbf503a39d">fl::malloc</a> (<a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a> size) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="separator:a54b0497aee91c68712ecaedbf503a39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9277911463870a42325d57eb5429120a" id="r_a9277911463870a42325d57eb5429120a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbc/namespacefl_1_1libc__impl_a9277911463870a42325d57eb5429120a.html#a9277911463870a42325d57eb5429120a">fl::libc_impl::realloc</a> (void *ptr, <a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a> new_size) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="separator:a9277911463870a42325d57eb5429120a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d5da23c9e66d89227ed3d3b1ea299f" id="r_ad4d5da23c9e66d89227ed3d3b1ea299f"><td class="memTemplParams" colspan="2">template&lt;typename FlLibcTag = void&gt; </td></tr>
+<tr class="memitem:ad4d5da23c9e66d89227ed3d3b1ea299f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d54/compiler__control_8h_a2f767b53d92c9d761d9f8d28a35d80c7.html#a2f767b53d92c9d761d9f8d28a35d80c7">FASTLED_FORCE_INLINE</a> void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_ad4d5da23c9e66d89227ed3d3b1ea299f.html#ad4d5da23c9e66d89227ed3d3b1ea299f">fl::realloc</a> (void *ptr, <a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a> new_size) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="separator:ad4d5da23c9e66d89227ed3d3b1ea299f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -149,7 +164,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><a class="el" href="../../dir_0dd6897a8ae40540acd9d694849e950e.html">stl</a></li><li class="navelem"><a class="el" href="../../d0/d4c/malloc_8h.html">malloc.h</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:05 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:20 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

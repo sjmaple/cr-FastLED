@@ -8,7 +8,7 @@ digraph "fl::ChannelManager::getDriverCount"
   rankdir="RL";
   Node1 [id="Node000001",label="fl::ChannelManager\l::getDriverCount",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Get count of registered drivers (including unnamed ones)"];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="CFastLED::add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_a391a5eaa2e94590e1bc2adf1ac0f9456.html#a391a5eaa2e94590e1bc2adf1ac0f9456",tooltip="Add LED channel with runtime configuration (from ChannelConfig)"];
+  Node2 [id="Node000002",label="CFastLED::add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_af9e6d0a30eead9a6e0fbc35a69e53051.html#af9e6d0a30eead9a6e0fbc35a69e53051",tooltip="Add LED channel with runtime configuration (from ChannelConfig)"];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="CFastLED::getDriverCount",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_aa790ed751ca9d0af237a41c2fdccf52b.html#aa790ed751ca9d0af237a41c2fdccf52b",tooltip="Get count of registered channel drivers."];
+  Node3 [id="Node000003",label="CFastLED::getDriverCount",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_af14285e19e4a1d7561b8245c3480c46c.html#af14285e19e4a1d7561b8245c3480c46c",tooltip="Get count of registered channel drivers."];
 }

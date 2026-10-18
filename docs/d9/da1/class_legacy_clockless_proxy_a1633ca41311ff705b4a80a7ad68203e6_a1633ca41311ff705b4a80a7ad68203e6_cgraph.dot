@@ -12,5 +12,6 @@ digraph "LegacyClocklessProxy::LegacyClocklessProxy"
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="LegacyClocklessProxy\l::createTyped",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/da1/class_legacy_clockless_proxy_a2ab6b1d4e9e6f23ab4dedb7464ede335.html#a2ab6b1d4e9e6f23ab4dedb7464ede335",tooltip=" "];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="fl::make_unique",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a257ae39a291866e014a2eeb4abe2a29c.html#a257ae39a291866e014a2eeb4abe2a29c",tooltip=" "];
+  Node4 [id="Node000004",label="fl::adl_barrier::make\l_unique",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a8768abad5eacc7deb68986f916fbfb3f.html#a8768abad5eacc7deb68986f916fbfb3f",tooltip=" "];
+  Node4 -> Node4 [id="edge4_Node000004_Node000004",color="steelblue1",style="solid",tooltip=" "];
 }

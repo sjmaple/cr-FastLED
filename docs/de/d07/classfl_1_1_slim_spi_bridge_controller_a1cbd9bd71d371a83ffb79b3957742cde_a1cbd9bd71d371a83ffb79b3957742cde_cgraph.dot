@@ -10,7 +10,10 @@ digraph "fl::SlimSpiBridgeController::SlimSpiBridgeController"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="fl::ChannelData::create",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/df4/classfl_1_1_channel_data_a6b9f458d31f0bcd8f7448a9c801d7297.html#a6b9f458d31f0bcd8f7448a9c801d7297",tooltip="Create channel transmission data (modern variant-based API)"];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::make_shared",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af",tooltip=" "];
-  Node2 -> Node4 [id="edge3_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="fl::move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a0c8a67e528dcd96ee58216754a07a733.html#a0c8a67e528dcd96ee58216754a07a733",tooltip=" "];
+  Node3 [id="Node000003",label="fl::adl_barrier::make\l_shared",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::adl_barrier::forward",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_ac53ccff21210ad77549fafb987263051.html#ac53ccff21210ad77549fafb987263051",tooltip=" "];
+  Node3 -> Node3 [id="edge4_Node000003_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node5 [id="edge5_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::adl_barrier::move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc.html#a12b4192c17e37b3e4322cec1a2debdcc",tooltip=" "];
 }

@@ -15,7 +15,7 @@ digraph "fl::channels::rx::decodeWs2812Edges"
   Node4 [id="Node000004",label="fl::expected::success",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d93/classfl_1_1expected_aace779907e6f9b82b8480260eed069cf.html#aace779907e6f9b82b8480260eed069cf",tooltip="Create successful result."];
   Node4 -> Node3 [id="edge4_Node000004_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node4 -> Node5 [id="edge5_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="fl::move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a0c8a67e528dcd96ee58216754a07a733.html#a0c8a67e528dcd96ee58216754a07a733",tooltip=" "];
+  Node5 [id="Node000005",label="fl::adl_barrier::move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc.html#a12b4192c17e37b3e4322cec1a2debdcc",tooltip=" "];
   Node4 -> Node6 [id="edge6_Node000004_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="fl::expected::value",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d93/classfl_1_1expected_ae5be98db18dfac3b70a118f4fbc3c79c.html#ae5be98db18dfac3b70a118f4fbc3c79c",tooltip="Get value (only valid if ok() == true)"];
   Node6 -> Node7 [id="edge7_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];

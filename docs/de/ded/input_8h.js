@@ -27,5 +27,5 @@ var input_8h =
     [ "fl::audio::TeensyI2S::getPinCLK", "d5/d5b/namespacefl_1_1audio_1_1_teensy_i2_s_ac51a17187c429877df04e554dedd7980.html#ac51a17187c429877df04e554dedd7980", null ],
     [ "fl::audio::TeensyI2S::getPinSD", "d5/d5b/namespacefl_1_1audio_1_1_teensy_i2_s_a7a47bb78863bd21923daed63ef05d8d5.html#a7a47bb78863bd21923daed63ef05d8d5", null ],
     [ "fl::audio::TeensyI2S::getPinWS", "d5/d5b/namespacefl_1_1audio_1_1_teensy_i2_s_a0a940fa4fc70782117a3c718df55869b.html#a0a940fa4fc70782117a3c718df55869b", null ],
-    [ "fl::audio::platform_create_audio_input", "db/dbf/namespacefl_1_1audio_a584ff0ffe4e7ce2fb4a5bffda5eb32b5.html#a584ff0ffe4e7ce2fb4a5bffda5eb32b5", null ]
+    [ "fl::audio::platform_create_audio_input", "db/dbf/namespacefl_1_1audio_ab0cc5f603e5934c80a76915ffcbbc65f.html#ab0cc5f603e5934c80a76915ffcbbc65f", null ]
 ];

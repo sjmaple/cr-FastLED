@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -120,33 +120,49 @@ $(function(){initNavTree('d8/da0/classfl_1_1_c_l_e_d_controller_af0c5f56a02ad4e9
 <dd>
 Safe to call multiple times - won't add if already in list </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00034">34</a> of file <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html">cled_controller.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                               {</div>
-<div class="line"><span class="lineno">   35</span>    <span class="comment">// Don&#39;t add if already in list</span></div>
-<div class="line"><span class="lineno">   36</span><span class="preprocessor">    #if SKETCH_HAS_LARGE_MEMORY </span><span class="comment">// Mostly for AVR, the isInList() check adds memory overhead on these tight platforms.</span></div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a346ffe73124af2abf1ccf82a96daee72.html#a346ffe73124af2abf1ccf82a96daee72">isInList</a>()) {</div>
-<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   39</span>    }</div>
-<div class="line"><span class="lineno">   40</span><span class="preprocessor">    #endif</span></div>
-<div class="line"><span class="lineno">   41</span> </div>
-<div class="line"><span class="lineno">   42</span>    <span class="comment">// Add to linked list</span></div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ac712128c2b52959fa7960ffd8f2cfe64.html#ac712128c2b52959fa7960ffd8f2cfe64">mPHead</a>==<span class="keyword">nullptr</span>) { <a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ac712128c2b52959fa7960ffd8f2cfe64.html#ac712128c2b52959fa7960ffd8f2cfe64">mPHead</a> = <span class="keyword">this</span>; }</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a245cd8530e7db58ad80fe3bb5482abd2.html#a245cd8530e7db58ad80fe3bb5482abd2">mPTail</a> != <span class="keyword">nullptr</span>) { <a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a245cd8530e7db58ad80fe3bb5482abd2.html#a245cd8530e7db58ad80fe3bb5482abd2">mPTail</a>-&gt;mPNext = <span class="keyword">this</span>; }</div>
-<div class="line"><span class="lineno">   45</span>    <a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a245cd8530e7db58ad80fe3bb5482abd2.html#a245cd8530e7db58ad80fe3bb5482abd2">mPTail</a> = <span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   46</span>}</div>
-<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_a245cd8530e7db58ad80fe3bb5482abd2_html_a245cd8530e7db58ad80fe3bb5482abd2"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a245cd8530e7db58ad80fe3bb5482abd2.html#a245cd8530e7db58ad80fe3bb5482abd2">fl::CLEDController::mPTail</a></div><div class="ttdeci">static CLEDController * mPTail</div><div class="ttdoc">pointer to the last LED controller in the linked list</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00054">cled_controller.h:54</a></div></div>
-<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_a346ffe73124af2abf1ccf82a96daee72_html_a346ffe73124af2abf1ccf82a96daee72"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a346ffe73124af2abf1ccf82a96daee72.html#a346ffe73124af2abf1ccf82a96daee72">fl::CLEDController::isInList</a></div><div class="ttdeci">bool isInList() const FL_NO_EXCEPT</div><div class="ttdoc">Check if this controller is in the linked list.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00048">cled_controller.cpp.hpp:48</a></div></div>
-<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_ac712128c2b52959fa7960ffd8f2cfe64_html_ac712128c2b52959fa7960ffd8f2cfe64"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ac712128c2b52959fa7960ffd8f2cfe64.html#ac712128c2b52959fa7960ffd8f2cfe64">fl::CLEDController::mPHead</a></div><div class="ttdeci">static CLEDController * mPHead</div><div class="ttdoc">pointer to the first LED controller in the linked list</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00053">cled_controller.h:53</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html">cled_controller.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>                                            {</div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment">// Don&#39;t add if already in list</span></div>
+<div class="line"><span class="lineno">   38</span><span class="preprocessor">    #if SKETCH_HAS_LARGE_MEMORY </span><span class="comment">// Mostly for AVR, the isInList() check adds memory overhead on these tight platforms.</span></div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a346ffe73124af2abf1ccf82a96daee72.html#a346ffe73124af2abf1ccf82a96daee72">isInList</a>()) {</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
+<div class="line"><span class="lineno">   42</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <span class="comment">// Append by walking from the head: registration is rare and lists are</span></div>
+<div class="line"><span class="lineno">   45</span>    <span class="comment">// short, so no tail pointer is stored (#4788).</span></div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ac712128c2b52959fa7960ffd8f2cfe64.html#ac712128c2b52959fa7960ffd8f2cfe64">mPHead</a> == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ac712128c2b52959fa7960ffd8f2cfe64.html#ac712128c2b52959fa7960ffd8f2cfe64">mPHead</a> = <span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+<div class="line"><span class="lineno">   50</span>    <span class="comment">// The walk also catches a repeat registration, which would otherwise</span></div>
+<div class="line"><span class="lineno">   51</span>    <span class="comment">// create a cycle (AVR skips the isInList() check above).</span></div>
+<div class="line"><span class="lineno">   52</span>    <a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ae0828dffacb43dca565ddf8145153ed0.html#ae0828dffacb43dca565ddf8145153ed0">CLEDController</a>* last = <a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ac712128c2b52959fa7960ffd8f2cfe64.html#ac712128c2b52959fa7960ffd8f2cfe64">mPHead</a>;</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">if</span> (last == <span class="keyword">this</span>) {</div>
+<div class="line"><span class="lineno">   55</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   56</span>        }</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">if</span> (last-&gt;<a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ac3f3b925d4cab63df76d6fe1e3781c8a.html#ac3f3b925d4cab63df76d6fe1e3781c8a">mPNext</a> == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">   58</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   59</span>        }</div>
+<div class="line"><span class="lineno">   60</span>        last = last-&gt;<a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ac3f3b925d4cab63df76d6fe1e3781c8a.html#ac3f3b925d4cab63df76d6fe1e3781c8a">mPNext</a>;</div>
+<div class="line"><span class="lineno">   61</span>    }</div>
+<div class="line"><span class="lineno">   62</span>    last-&gt;<a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ac3f3b925d4cab63df76d6fe1e3781c8a.html#ac3f3b925d4cab63df76d6fe1e3781c8a">mPNext</a> = <span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   63</span>}</div>
+<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_a346ffe73124af2abf1ccf82a96daee72_html_a346ffe73124af2abf1ccf82a96daee72"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a346ffe73124af2abf1ccf82a96daee72.html#a346ffe73124af2abf1ccf82a96daee72">fl::CLEDController::isInList</a></div><div class="ttdeci">bool isInList() const FL_NO_EXCEPT</div><div class="ttdoc">Check if this controller is in the linked list.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00065">cled_controller.cpp.hpp:65</a></div></div>
+<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_ac3f3b925d4cab63df76d6fe1e3781c8a_html_ac3f3b925d4cab63df76d6fe1e3781c8a"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ac3f3b925d4cab63df76d6fe1e3781c8a.html#ac3f3b925d4cab63df76d6fe1e3781c8a">fl::CLEDController::mPNext</a></div><div class="ttdeci">CLEDController * mPNext</div><div class="ttdoc">pointer to the next LED controller in the linked list</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00051">cled_controller.h:51</a></div></div>
+<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_ac712128c2b52959fa7960ffd8f2cfe64_html_ac712128c2b52959fa7960ffd8f2cfe64"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ac712128c2b52959fa7960ffd8f2cfe64.html#ac712128c2b52959fa7960ffd8f2cfe64">fl::CLEDController::mPHead</a></div><div class="ttdeci">static CLEDController * mPHead</div><div class="ttdoc">pointer to the first LED controller in the linked list</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00073">cled_controller.h:73</a></div></div>
+<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_ae0828dffacb43dca565ddf8145153ed0_html_ae0828dffacb43dca565ddf8145153ed0"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ae0828dffacb43dca565ddf8145153ed0.html#ae0828dffacb43dca565ddf8145153ed0">fl::CLEDController::CLEDController</a></div><div class="ttdeci">CLEDController(RegistrationMode mode) FL_NO_EXCEPT</div><div class="ttdoc">Protected constructor with registration mode.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00029">cled_controller.cpp.hpp:29</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00048">isInList()</a>, <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00053">mPHead</a>, and <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00054">mPTail</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00029">CLEDController()</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00065">isInList()</a>, <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00073">mPHead</a>, and <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00051">mPNext</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00024">CLEDController()</a>, <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00028">CLEDController()</a>, and <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html#l01074">fl::Channel::addToDrawList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00024">CLEDController()</a>, <a class="el" href="../../df/dcc/cled__controller_8cpp_8hpp_source.html#l00029">CLEDController()</a>, and <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html#l01105">fl::Channel::addToDrawList()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/da0/classfl_1_1_c_l_e_d_controller_af0c5f56a02ad4e919df8181d3b267390_af0c5f56a02ad4e919df8181d3b267390_cgraph.svg" width="515" height="80"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/da0/classfl_1_1_c_l_e_d_controller_af0c5f56a02ad4e919df8181d3b267390_af0c5f56a02ad4e919df8181d3b267390_cgraph.svg" width="515" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -165,7 +181,7 @@ Safe to call multiple times - won't add if already in list </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d8/da0/classfl_1_1_c_l_e_d_controller.html">CLEDController</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

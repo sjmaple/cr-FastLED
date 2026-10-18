@@ -1,0 +1,20 @@
+digraph "fl::detail::UpscalePaletteInterpolated"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="fl::detail::UpscalePalette\lInterpolated",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::UpscalePalette",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a8a2c58b43804b1652792e4e734ac6b5f.html#a8a2c58b43804b1652792e4e734ac6b5f",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::UpscalePalette",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a6d9f1df3881bc282a896afd7c1f90910.html#a6d9f1df3881bc282a896afd7c1f90910",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::UpscalePalette",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_aabff25e7ac6f76a9fd7aede1c3525a7e.html#aabff25e7ac6f76a9fd7aede1c3525a7e",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="FL_DISABLE_WARNING",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d1c/fl_2gfx_2colorutils_8h_a4ab605f27e67edf3cf9bd320c55042de.html#a4ab605f27e67edf3cf9bd320c55042de",tooltip=" "];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::UpscalePalette",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a1b0778570ccd8091ae1db9e37a16811b.html#a1b0778570ccd8091ae1db9e37a16811b",tooltip=" "];
+}

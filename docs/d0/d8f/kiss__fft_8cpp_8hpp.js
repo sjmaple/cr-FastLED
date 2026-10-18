@@ -8,9 +8,9 @@ var kiss__fft_8cpp_8hpp =
     [ "kf_bfly_generic", "d0/d8f/kiss__fft_8cpp_8hpp_a18725e13c12f3ea045a4e75f89da831e.html#a18725e13c12f3ea045a4e75f89da831e", null ],
     [ "kf_factor", "d0/d8f/kiss__fft_8cpp_8hpp_a7b2f43a2cea7081bd64acc66206375a3.html#a7b2f43a2cea7081bd64acc66206375a3", null ],
     [ "kf_work", "d0/d8f/kiss__fft_8cpp_8hpp_add38aa289512d91ac61454851df3e0b0.html#add38aa289512d91ac61454851df3e0b0", null ],
-    [ "kiss_fft", "d0/d8f/kiss__fft_8cpp_8hpp_ad8ea71deb221985cb4fcb3e36980b643.html#ad8ea71deb221985cb4fcb3e36980b643", null ],
-    [ "kiss_fft_alloc", "d0/d8f/kiss__fft_8cpp_8hpp_a8f5b51da803d054f3ec5163c132a4555.html#a8f5b51da803d054f3ec5163c132a4555", null ],
-    [ "kiss_fft_cleanup", "d0/d8f/kiss__fft_8cpp_8hpp_a2022b80bab5ae2a622ead3fd85b802dd.html#a2022b80bab5ae2a622ead3fd85b802dd", null ],
-    [ "kiss_fft_next_fast_size", "d0/d8f/kiss__fft_8cpp_8hpp_a671cfe8516171b5c7a05430aa340d2ad.html#a671cfe8516171b5c7a05430aa340d2ad", null ],
-    [ "kiss_fft_stride", "d0/d8f/kiss__fft_8cpp_8hpp_af5e7a52d5ef414a6032f66868ec69e20.html#af5e7a52d5ef414a6032f66868ec69e20", null ]
+    [ "kiss_fft", "d0/d8f/kiss__fft_8cpp_8hpp_ab36e2bb33b74c1a7eabe3271d0916030.html#ab36e2bb33b74c1a7eabe3271d0916030", null ],
+    [ "kiss_fft_alloc", "d0/d8f/kiss__fft_8cpp_8hpp_ab5ad1560b58375ec071da45401911358.html#ab5ad1560b58375ec071da45401911358", null ],
+    [ "kiss_fft_cleanup", "d0/d8f/kiss__fft_8cpp_8hpp_aab7972365fc8f30a13eed91fa29172ba.html#aab7972365fc8f30a13eed91fa29172ba", null ],
+    [ "kiss_fft_next_fast_size", "d0/d8f/kiss__fft_8cpp_8hpp_a26b8ac31a43a356943061318831508e9.html#a26b8ac31a43a356943061318831508e9", null ],
+    [ "kiss_fft_stride", "d0/d8f/kiss__fft_8cpp_8hpp_aec345dab68815f4c5c2904978626d877.html#aec345dab68815f4c5c2904978626d877", null ]
 ];

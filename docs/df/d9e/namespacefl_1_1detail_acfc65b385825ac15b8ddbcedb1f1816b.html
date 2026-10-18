@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -126,29 +126,29 @@ template&lt;typename Iterator, typename Compare&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dd9/algorithm_8h_source.html#l00398">398</a> of file <a class="el" href="../../df/dd9/algorithm_8h_source.html">algorithm.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  398</span>                                                                         {</div>
-<div class="line"><span class="lineno">  399</span>    <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_a8ef14c517060dcf0bed03739c56d789d.html#a8ef14c517060dcf0bed03739c56d789d">heapify</a>(first, last, comp);</div>
-<div class="line"><span class="lineno">  400</span>    </div>
-<div class="line"><span class="lineno">  401</span>    Iterator <a class="code hl_function" href="../../d4/d36/namespacefl_aa45736aab5ddedf688b0c3efaedbf0f7.html#aa45736aab5ddedf688b0c3efaedbf0f7">end</a> = last - 1;</div>
-<div class="line"><span class="lineno">  402</span>    <span class="keywordflow">while</span> (<a class="code hl_function" href="../../d4/d36/namespacefl_aa45736aab5ddedf688b0c3efaedbf0f7.html#aa45736aab5ddedf688b0c3efaedbf0f7">end</a> &gt; first) {</div>
-<div class="line"><span class="lineno">  403</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_a08f2a13f88bdefe6fb9ca7f73e99f5ef.html#a08f2a13f88bdefe6fb9ca7f73e99f5ef">swap</a>(*<a class="code hl_function" href="../../d4/d36/namespacefl_aa45736aab5ddedf688b0c3efaedbf0f7.html#aa45736aab5ddedf688b0c3efaedbf0f7">end</a>, *first);</div>
-<div class="line"><span class="lineno">  404</span>        <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_abfd3bba181b696a4293f3d53625d2d4d.html#abfd3bba181b696a4293f3d53625d2d4d">sift_down</a>(first, first, <a class="code hl_function" href="../../d4/d36/namespacefl_aa45736aab5ddedf688b0c3efaedbf0f7.html#aa45736aab5ddedf688b0c3efaedbf0f7">end</a> - 1, comp);</div>
-<div class="line"><span class="lineno">  405</span>        --<a class="code hl_function" href="../../d4/d36/namespacefl_aa45736aab5ddedf688b0c3efaedbf0f7.html#aa45736aab5ddedf688b0c3efaedbf0f7">end</a>;</div>
-<div class="line"><span class="lineno">  406</span>    }</div>
-<div class="line"><span class="lineno">  407</span>}</div>
-<div class="ttc" id="anamespacefl_1_1detail_a8ef14c517060dcf0bed03739c56d789d_html_a8ef14c517060dcf0bed03739c56d789d"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_a8ef14c517060dcf0bed03739c56d789d.html#a8ef14c517060dcf0bed03739c56d789d">fl::detail::heapify</a></div><div class="ttdeci">void heapify(Iterator first, Iterator last, Compare comp) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/algorithm_8h_source.html#l00385">algorithm.h:385</a></div></div>
-<div class="ttc" id="anamespacefl_1_1detail_abfd3bba181b696a4293f3d53625d2d4d_html_abfd3bba181b696a4293f3d53625d2d4d"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_abfd3bba181b696a4293f3d53625d2d4d.html#abfd3bba181b696a4293f3d53625d2d4d">fl::detail::sift_down</a></div><div class="ttdeci">void sift_down(Iterator first, Iterator start, Iterator end, Compare comp) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/algorithm_8h_source.html#l00360">algorithm.h:360</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../df/dd9/algorithm_8h_source.html#l00403">403</a> of file <a class="el" href="../../df/dd9/algorithm_8h_source.html">algorithm.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  403</span>                                                                         {</div>
+<div class="line"><span class="lineno">  404</span>    <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_a8ef14c517060dcf0bed03739c56d789d.html#a8ef14c517060dcf0bed03739c56d789d">heapify</a>(first, last, comp);</div>
+<div class="line"><span class="lineno">  405</span>    </div>
+<div class="line"><span class="lineno">  406</span>    Iterator <a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779.html#a0fc0bdd1e96cab039bda736400fdd779">end</a> = last - 1;</div>
+<div class="line"><span class="lineno">  407</span>    <span class="keywordflow">while</span> (<a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779.html#a0fc0bdd1e96cab039bda736400fdd779">end</a> &gt; first) {</div>
+<div class="line"><span class="lineno">  408</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_a08f2a13f88bdefe6fb9ca7f73e99f5ef.html#a08f2a13f88bdefe6fb9ca7f73e99f5ef">swap</a>(*<a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779.html#a0fc0bdd1e96cab039bda736400fdd779">end</a>, *first);</div>
+<div class="line"><span class="lineno">  409</span>        <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_abfd3bba181b696a4293f3d53625d2d4d.html#abfd3bba181b696a4293f3d53625d2d4d">sift_down</a>(first, first, <a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779.html#a0fc0bdd1e96cab039bda736400fdd779">end</a> - 1, comp);</div>
+<div class="line"><span class="lineno">  410</span>        --<a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779.html#a0fc0bdd1e96cab039bda736400fdd779">end</a>;</div>
+<div class="line"><span class="lineno">  411</span>    }</div>
+<div class="line"><span class="lineno">  412</span>}</div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779_html_a0fc0bdd1e96cab039bda736400fdd779"><div class="ttname"><a href="../../df/d34/namespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779.html#a0fc0bdd1e96cab039bda736400fdd779">fl::adl_barrier::end</a></div><div class="ttdeci">constexpr T * end(T(&amp;array)[N]) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db6/range__access_8h_source.html#l00018">range_access.h:18</a></div></div>
+<div class="ttc" id="anamespacefl_1_1detail_a8ef14c517060dcf0bed03739c56d789d_html_a8ef14c517060dcf0bed03739c56d789d"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_a8ef14c517060dcf0bed03739c56d789d.html#a8ef14c517060dcf0bed03739c56d789d">fl::detail::heapify</a></div><div class="ttdeci">void heapify(Iterator first, Iterator last, Compare comp) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/algorithm_8h_source.html#l00390">algorithm.h:390</a></div></div>
+<div class="ttc" id="anamespacefl_1_1detail_abfd3bba181b696a4293f3d53625d2d4d_html_abfd3bba181b696a4293f3d53625d2d4d"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_abfd3bba181b696a4293f3d53625d2d4d.html#abfd3bba181b696a4293f3d53625d2d4d">fl::detail::sift_down</a></div><div class="ttdeci">void sift_down(Iterator first, Iterator start, Iterator end, Compare comp) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/algorithm_8h_source.html#l00365">algorithm.h:365</a></div></div>
 <div class="ttc" id="anamespacefl_a08f2a13f88bdefe6fb9ca7f73e99f5ef_html_a08f2a13f88bdefe6fb9ca7f73e99f5ef"><div class="ttname"><a href="../../d4/d36/namespacefl_a08f2a13f88bdefe6fb9ca7f73e99f5ef.html#a08f2a13f88bdefe6fb9ca7f73e99f5ef">fl::swap</a></div><div class="ttdeci">void swap(array&lt; T, N &gt; &amp;lhs, array&lt; T, N &gt; &amp;rhs) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d63/array_8h_source.html#l00209">array.h:209</a></div></div>
-<div class="ttc" id="anamespacefl_aa45736aab5ddedf688b0c3efaedbf0f7_html_aa45736aab5ddedf688b0c3efaedbf0f7"><div class="ttname"><a href="../../d4/d36/namespacefl_aa45736aab5ddedf688b0c3efaedbf0f7.html#aa45736aab5ddedf688b0c3efaedbf0f7">fl::end</a></div><div class="ttdeci">constexpr T * end(T(&amp;array)[N]) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db6/range__access_8h_source.html#l00016">range_access.h:16</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/db6/range__access_8h_source.html#l00016">fl::end()</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../df/dd9/algorithm_8h_source.html#l00385">heapify()</a>, <a class="el" href="../../df/dd9/algorithm_8h_source.html#l00360">sift_down()</a>, and <a class="el" href="../../db/d63/array_8h_source.html#l00209">fl::swap()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/db6/range__access_8h_source.html#l00018">fl::adl_barrier::end()</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../df/dd9/algorithm_8h_source.html#l00390">heapify()</a>, <a class="el" href="../../df/dd9/algorithm_8h_source.html#l00365">sift_down()</a>, and <a class="el" href="../../db/d63/array_8h_source.html#l00209">fl::swap()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d9e/namespacefl_1_1detail_acfc65b385825ac15b8ddbcedb1f1816b_acfc65b385825ac15b8ddbcedb1f1816b_cgraph.svg" width="650" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d9e/namespacefl_1_1detail_acfc65b385825ac15b8ddbcedb1f1816b_acfc65b385825ac15b8ddbcedb1f1816b_cgraph.svg" width="100%" height="384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -160,7 +160,7 @@ template&lt;typename Iterator, typename Compare&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../df/d9e/namespacefl_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

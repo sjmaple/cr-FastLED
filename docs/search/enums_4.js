@@ -4,7 +4,7 @@ var searchData=
   ['eblockchipsets_1',['EBlockChipsets',['../d6/d64/fastled_8h_adcf22542128a12d8c3c304777422c7cc.html#adcf22542128a12d8c3c304777422c7cc',1,'FastLED.h']]],
   ['emittertopology_2',['EmitterTopology',['../da/db3/namespacefl_1_1colorimetric__response_a938b4d5711e5681bb1b77e6d9c26f6da.html#a938b4d5711e5681bb1b77e6d9c26f6da',1,'fl::colorimetric_response']]],
   ['eorder_3',['EOrder',['../d4/d36/namespacefl_ab289ace8bd149d39b87ebd778e9abe23.html#ab289ace8bd149d39b87ebd778e9abe23',1,'fl']]],
-  ['eorderw_4',['EOrderW',['../d4/d36/namespacefl_aedae725b3dd3e43aec65818e5c32c534.html#aedae725b3dd3e43aec65818e5c32c534',1,'fl']]],
+  ['eorderw_4',['EOrderW',['../d4/d36/namespacefl_ae22a1e60f6e8a42d8f718c9776a1e6e0.html#ae22a1e60f6e8a42d8f718c9776a1e6e0',1,'fl']]],
   ['eorderww_5',['EOrderWW',['../d4/d36/namespacefl_a58e6be0272b37868f7f5517d3ba8776d.html#a58e6be0272b37868f7f5517d3ba8776d',1,'fl']]],
   ['equalizationcurve_6',['EqualizationCurve',['../db/dbf/namespacefl_1_1audio_afb2611adb4bc2c05bbd93eef903ede04.html#afb2611adb4bc2c05bbd93eef903ede04',1,'fl::audio']]],
   ['errc_7',['errc',['../da/dba/namespacefl_1_1asio_a71ea0ec019fe8379abb69a2b643ed5da.html#a71ea0ec019fe8379abb69a2b643ed5da',1,'fl::asio']]],

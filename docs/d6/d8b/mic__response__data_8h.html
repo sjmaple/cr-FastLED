@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -117,12 +117,13 @@ $(function(){initNavTree('d6/d8b/mic__response__data_8h.html','../../'); initRes
 <code>#include &quot;<a class="el" href="../../d4/d54/compiler__control_8h_source.html">fl/stl/compiler_control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/db1/math_8h_source.html">fl/math/math.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/dab/fastled__progmem_8h_source.html">fastled_progmem.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d01/noexcept_8h_source.html">fl/stl/noexcept.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for mic_response_data.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d93/mic__response__data_8h__incl.svg" width="100%" height="558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d93/mic__response__data_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -149,24 +150,24 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af91427a06670b3079df66588c73cd4b7" id="r_af91427a06670b3079df66588c73cd4b7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/namespacefl_1_1audio_af91427a06670b3079df66588c73cd4b7.html#af91427a06670b3079df66588c73cd4b7">fl::audio::computePinkNoiseGain</a> (float freq_hz, float f_ref)</td></tr>
-<tr class="memdesc:af91427a06670b3079df66588c73cd4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute pink noise compensation gain for a single frequency.  <br /></td></tr>
-<tr class="separator:af91427a06670b3079df66588c73cd4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb758259be0e1ff6bf938c9eae4b6118" id="r_abb758259be0e1ff6bf938c9eae4b6118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/namespacefl_1_1audio_abb758259be0e1ff6bf938c9eae4b6118.html#abb758259be0e1ff6bf938c9eae4b6118">fl::audio::computePinkNoiseGains</a> (const float *binCenters, int numBins, float *out)</td></tr>
-<tr class="memdesc:abb758259be0e1ff6bf938c9eae4b6118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute pink noise compensation gains for all bins.  <br /></td></tr>
-<tr class="separator:abb758259be0e1ff6bf938c9eae4b6118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b42dfdb22be4944a9a6d62c87a376c" id="r_a51b42dfdb22be4944a9a6d62c87a376c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/namespacefl_1_1audio_a51b42dfdb22be4944a9a6d62c87a376c.html#a51b42dfdb22be4944a9a6d62c87a376c">fl::audio::downsampleMicResponse</a> (const <a class="el" href="../../db/dbf/namespacefl_1_1audio.html#dc/df8/structfl_1_1audio_1_1_mic_response_curve">MicResponseCurve</a> &amp;curve, const float *binCenters, int numBins, float *out)</td></tr>
-<tr class="memdesc:a51b42dfdb22be4944a9a6d62c87a376c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downsample a high-resolution mic response curve to N output bins.  <br /></td></tr>
-<tr class="separator:a51b42dfdb22be4944a9a6d62c87a376c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a610a49f05f8bf305145207b418c9292d" id="r_a610a49f05f8bf305145207b418c9292d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/namespacefl_1_1audio_a610a49f05f8bf305145207b418c9292d.html#a610a49f05f8bf305145207b418c9292d">fl::audio::fl_progmem_read_float</a> (const float *addr)</td></tr>
-<tr class="memdesc:a610a49f05f8bf305145207b418c9292d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a float from PROGMEM.  <br /></td></tr>
-<tr class="separator:a610a49f05f8bf305145207b418c9292d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12d3939a6e866914ca5473e1710ae635" id="r_a12d3939a6e866914ca5473e1710ae635"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dbf/namespacefl_1_1audio.html#dc/df8/structfl_1_1audio_1_1_mic_response_curve">MicResponseCurve</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/namespacefl_1_1audio_a12d3939a6e866914ca5473e1710ae635.html#a12d3939a6e866914ca5473e1710ae635">fl::audio::getMicResponseCurve</a> (<a class="el" href="../../db/dbf/namespacefl_1_1audio_a5897660d585e758a3b9ec6dbbca1b538.html#a5897660d585e758a3b9ec6dbbca1b538">MicProfile</a> profile)</td></tr>
-<tr class="memdesc:a12d3939a6e866914ca5473e1710ae635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high-resolution response curve for a given mic profile.  <br /></td></tr>
-<tr class="separator:a12d3939a6e866914ca5473e1710ae635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9abb1865a937d59bfb84c9b8358dfc4f" id="r_a9abb1865a937d59bfb84c9b8358dfc4f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/namespacefl_1_1audio_a9abb1865a937d59bfb84c9b8358dfc4f.html#a9abb1865a937d59bfb84c9b8358dfc4f">fl::audio::interpolateMicResponse</a> (const <a class="el" href="../../db/dbf/namespacefl_1_1audio.html#dc/df8/structfl_1_1audio_1_1_mic_response_curve">MicResponseCurve</a> &amp;curve, float freq_hz)</td></tr>
-<tr class="memdesc:a9abb1865a937d59bfb84c9b8358dfc4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate mic response at an arbitrary frequency (Hz).  <br /></td></tr>
-<tr class="separator:a9abb1865a937d59bfb84c9b8358dfc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251306ee523250d7dd98cbbf4364ea4d" id="r_a251306ee523250d7dd98cbbf4364ea4d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/namespacefl_1_1audio_a251306ee523250d7dd98cbbf4364ea4d.html#a251306ee523250d7dd98cbbf4364ea4d">fl::audio::computePinkNoiseGain</a> (float freq_hz, float f_ref) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a251306ee523250d7dd98cbbf4364ea4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute pink noise compensation gain for a single frequency.  <br /></td></tr>
+<tr class="separator:a251306ee523250d7dd98cbbf4364ea4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a365245fd0c464f5e40b96c57391c41b9" id="r_a365245fd0c464f5e40b96c57391c41b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/namespacefl_1_1audio_a365245fd0c464f5e40b96c57391c41b9.html#a365245fd0c464f5e40b96c57391c41b9">fl::audio::computePinkNoiseGains</a> (const float *binCenters, int numBins, float *out) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a365245fd0c464f5e40b96c57391c41b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute pink noise compensation gains for all bins.  <br /></td></tr>
+<tr class="separator:a365245fd0c464f5e40b96c57391c41b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0901c5519783ea6394f2890f6ceb1217" id="r_a0901c5519783ea6394f2890f6ceb1217"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/namespacefl_1_1audio_a0901c5519783ea6394f2890f6ceb1217.html#a0901c5519783ea6394f2890f6ceb1217">fl::audio::downsampleMicResponse</a> (const <a class="el" href="../../db/dbf/namespacefl_1_1audio.html#dc/df8/structfl_1_1audio_1_1_mic_response_curve">MicResponseCurve</a> &amp;curve, const float *binCenters, int numBins, float *out) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a0901c5519783ea6394f2890f6ceb1217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downsample a high-resolution mic response curve to N output bins.  <br /></td></tr>
+<tr class="separator:a0901c5519783ea6394f2890f6ceb1217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60fe844c56f5a4712b9003f9f7e159e1" id="r_a60fe844c56f5a4712b9003f9f7e159e1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/namespacefl_1_1audio_a60fe844c56f5a4712b9003f9f7e159e1.html#a60fe844c56f5a4712b9003f9f7e159e1">fl::audio::fl_progmem_read_float</a> (const float *addr) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a60fe844c56f5a4712b9003f9f7e159e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a float from PROGMEM.  <br /></td></tr>
+<tr class="separator:a60fe844c56f5a4712b9003f9f7e159e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218d8969fa663f84737d5c8a73a5cafd" id="r_a218d8969fa663f84737d5c8a73a5cafd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dbf/namespacefl_1_1audio.html#dc/df8/structfl_1_1audio_1_1_mic_response_curve">MicResponseCurve</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/namespacefl_1_1audio_a218d8969fa663f84737d5c8a73a5cafd.html#a218d8969fa663f84737d5c8a73a5cafd">fl::audio::getMicResponseCurve</a> (<a class="el" href="../../db/dbf/namespacefl_1_1audio_a5897660d585e758a3b9ec6dbbca1b538.html#a5897660d585e758a3b9ec6dbbca1b538">MicProfile</a> profile) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a218d8969fa663f84737d5c8a73a5cafd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high-resolution response curve for a given mic profile.  <br /></td></tr>
+<tr class="separator:a218d8969fa663f84737d5c8a73a5cafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3867efaa17c64cd4fe26c122dfc23f85" id="r_a3867efaa17c64cd4fe26c122dfc23f85"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/namespacefl_1_1audio_a3867efaa17c64cd4fe26c122dfc23f85.html#a3867efaa17c64cd4fe26c122dfc23f85">fl::audio::interpolateMicResponse</a> (const <a class="el" href="../../db/dbf/namespacefl_1_1audio.html#dc/df8/structfl_1_1audio_1_1_mic_response_curve">MicResponseCurve</a> &amp;curve, float freq_hz) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a3867efaa17c64cd4fe26c122dfc23f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate mic response at an arbitrary frequency (Hz).  <br /></td></tr>
+<tr class="separator:a3867efaa17c64cd4fe26c122dfc23f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -228,7 +229,7 @@ Pointer to gain array (PROGMEM) </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><a class="el" href="../../dir_80b55e5ea7143e3a561e896c6c19b58f.html">audio</a></li><li class="navelem"><a class="el" href="../../d6/d8b/mic__response__data_8h.html">mic_response_data.h</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:03 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:18 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

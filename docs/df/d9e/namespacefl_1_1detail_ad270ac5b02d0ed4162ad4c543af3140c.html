@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -123,48 +123,48 @@ $(function(){initNavTree('df/d9e/namespacefl_1_1detail_ad270ac5b02d0ed4162ad4c54
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00124">124</a> of file <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html">math.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  124</span>                                                {</div>
-<div class="line"><span class="lineno">  125</span>    <a class="code hl_union" href="../../df/d9e/namespacefl_1_1detail.html#d5/d7d/unionfl_1_1detail_1_1_float_bits">FloatBits</a> xb;</div>
-<div class="line"><span class="lineno">  126</span>    xb.<a class="code hl_variable" href="../../df/d9e/namespacefl_1_1detail.html#a86dd5a704198f7dc6b659ef80e3fb800">f</a> = <a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a>;</div>
-<div class="line"><span class="lineno">  127</span>    <span class="keyword">const</span> u32 ax = xb.<a class="code hl_variable" href="../../df/d9e/namespacefl_1_1detail.html#a901849eb05a8836908657c10281f43d5">u</a> &amp; 0x7fffffffu;</div>
-<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">if</span> (ax &gt;= 0x42b17218u) {           <span class="comment">// |x| &gt;= 88.7228, or NaN</span></div>
-<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">if</span> (ax &gt; 0x7f800000u) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a>;  <span class="comment">// NaN</span></div>
-<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">if</span> ((xb.<a class="code hl_variable" href="../../df/d9e/namespacefl_1_1detail.html#a901849eb05a8836908657c10281f43d5">u</a> &gt;&gt; 31) == 0u) {        <span class="comment">// overflow -&gt; +inf</span></div>
-<div class="line"><span class="lineno">  131</span>            <a class="code hl_union" href="../../df/d9e/namespacefl_1_1detail.html#d5/d7d/unionfl_1_1detail_1_1_float_bits">FloatBits</a> inf;</div>
-<div class="line"><span class="lineno">  132</span>            inf.<a class="code hl_variable" href="../../df/d9e/namespacefl_1_1detail.html#a901849eb05a8836908657c10281f43d5">u</a> = 0x7f800000u;</div>
-<div class="line"><span class="lineno">  133</span>            <span class="keywordflow">return</span> inf.<a class="code hl_variable" href="../../df/d9e/namespacefl_1_1detail.html#a86dd5a704198f7dc6b659ef80e3fb800">f</a>;</div>
-<div class="line"><span class="lineno">  134</span>        }</div>
-<div class="line"><span class="lineno">  135</span>        <span class="keywordflow">if</span> (ax &gt;= 0x42cff1b5u) <span class="keywordflow">return</span> 0.0f;  <span class="comment">// x &lt;= -103.972: underflow</span></div>
-<div class="line"><span class="lineno">  136</span>    }</div>
-<div class="line"><span class="lineno">  137</span>    <span class="comment">// k = round(x / ln2) via the 1.5 * 2^23 magic constant: adding it puts</span></div>
-<div class="line"><span class="lineno">  138</span>    <span class="comment">// the integer in the low mantissa bits, so no float&lt;-&gt;int conversions.</span></div>
-<div class="line"><span class="lineno">  139</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> kMagic = 12582912.0f;</div>
-<div class="line"><span class="lineno">  140</span>    FloatBits <a class="code hl_variable" href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a>;</div>
-<div class="line"><span class="lineno">  141</span>    <a class="code hl_variable" href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a>.f = <a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * 1.44269504088896341f + kMagic;</div>
-<div class="line"><span class="lineno">  142</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> k = <a class="code hl_variable" href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a>.i - 0x4b400000;</div>
-<div class="line"><span class="lineno">  143</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> kf = <a class="code hl_variable" href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a>.f - kMagic;</div>
-<div class="line"><span class="lineno">  144</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> r = (<a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> - kf * 6.9314575195e-01f) - kf * 1.4286067653e-06f;</div>
-<div class="line"><span class="lineno">  145</span>    <span class="comment">// e^r = 1 + r + r^2 * P(r), P minimax on |r| &lt;= ln2/2: worst case 1 ulp.</span></div>
-<div class="line"><span class="lineno">  146</span>    <span class="keywordtype">float</span> p = 1.393364297e-03f;</div>
-<div class="line"><span class="lineno">  147</span>    p = p * r + 8.363175565e-03f;</div>
-<div class="line"><span class="lineno">  148</span>    p = p * r + 4.166646498e-02f;</div>
-<div class="line"><span class="lineno">  149</span>    p = p * r + 1.666657700e-01f;</div>
-<div class="line"><span class="lineno">  150</span>    p = p * r + 5.000000013e-01f;</div>
-<div class="line"><span class="lineno">  151</span>    p = (p * r * r) + r + 1.0f;</div>
-<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_aa1672619d6e1829381f468c7fe1e6d6f.html#aa1672619d6e1829381f468c7fe1e6d6f">scale_pow2_</a>(p, k);</div>
-<div class="line"><span class="lineno">  153</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00125">125</a> of file <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html">math.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  125</span>                                                {</div>
+<div class="line"><span class="lineno">  126</span>    <a class="code hl_union" href="../../df/d9e/namespacefl_1_1detail.html#d5/d7d/unionfl_1_1detail_1_1_float_bits">FloatBits</a> xb;</div>
+<div class="line"><span class="lineno">  127</span>    xb.<a class="code hl_variable" href="../../df/d9e/namespacefl_1_1detail.html#a86dd5a704198f7dc6b659ef80e3fb800">f</a> = <a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a>;</div>
+<div class="line"><span class="lineno">  128</span>    <span class="keyword">const</span> u32 ax = xb.<a class="code hl_variable" href="../../df/d9e/namespacefl_1_1detail.html#a901849eb05a8836908657c10281f43d5">u</a> &amp; 0x7fffffffu;</div>
+<div class="line"><span class="lineno">  129</span>    <span class="keywordflow">if</span> (ax &gt;= 0x42b17218u) {           <span class="comment">// |x| &gt;= 88.7228, or NaN</span></div>
+<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">if</span> (ax &gt; 0x7f800000u) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">x</a>;  <span class="comment">// NaN</span></div>
+<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">if</span> ((xb.<a class="code hl_variable" href="../../df/d9e/namespacefl_1_1detail.html#a901849eb05a8836908657c10281f43d5">u</a> &gt;&gt; 31) == 0u) {        <span class="comment">// overflow -&gt; +inf</span></div>
+<div class="line"><span class="lineno">  132</span>            <a class="code hl_union" href="../../df/d9e/namespacefl_1_1detail.html#d5/d7d/unionfl_1_1detail_1_1_float_bits">FloatBits</a> inf;</div>
+<div class="line"><span class="lineno">  133</span>            inf.<a class="code hl_variable" href="../../df/d9e/namespacefl_1_1detail.html#a901849eb05a8836908657c10281f43d5">u</a> = 0x7f800000u;</div>
+<div class="line"><span class="lineno">  134</span>            <span class="keywordflow">return</span> inf.<a class="code hl_variable" href="../../df/d9e/namespacefl_1_1detail.html#a86dd5a704198f7dc6b659ef80e3fb800">f</a>;</div>
+<div class="line"><span class="lineno">  135</span>        }</div>
+<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">if</span> (ax &gt;= 0x42cff1b5u) <span class="keywordflow">return</span> 0.0f;  <span class="comment">// x &lt;= -103.972: underflow</span></div>
+<div class="line"><span class="lineno">  137</span>    }</div>
+<div class="line"><span class="lineno">  138</span>    <span class="comment">// k = round(x / ln2) via the 1.5 * 2^23 magic constant: adding it puts</span></div>
+<div class="line"><span class="lineno">  139</span>    <span class="comment">// the integer in the low mantissa bits, so no float&lt;-&gt;int conversions.</span></div>
+<div class="line"><span class="lineno">  140</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> kMagic = 12582912.0f;</div>
+<div class="line"><span class="lineno">  141</span>    FloatBits <a class="code hl_variable" href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a>;</div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_variable" href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a>.f = <a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * 1.44269504088896341f + kMagic;</div>
+<div class="line"><span class="lineno">  143</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> k = <a class="code hl_variable" href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a>.i - 0x4b400000;</div>
+<div class="line"><span class="lineno">  144</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> kf = <a class="code hl_variable" href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a>.f - kMagic;</div>
+<div class="line"><span class="lineno">  145</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> r = (<a class="code hl_variable" href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> - kf * 6.9314575195e-01f) - kf * 1.4286067653e-06f;</div>
+<div class="line"><span class="lineno">  146</span>    <span class="comment">// e^r = 1 + r + r^2 * P(r), P minimax on |r| &lt;= ln2/2: worst case 1 ulp.</span></div>
+<div class="line"><span class="lineno">  147</span>    <span class="keywordtype">float</span> p = 1.393364297e-03f;</div>
+<div class="line"><span class="lineno">  148</span>    p = p * r + 8.363175565e-03f;</div>
+<div class="line"><span class="lineno">  149</span>    p = p * r + 4.166646498e-02f;</div>
+<div class="line"><span class="lineno">  150</span>    p = p * r + 1.666657700e-01f;</div>
+<div class="line"><span class="lineno">  151</span>    p = p * r + 5.000000013e-01f;</div>
+<div class="line"><span class="lineno">  152</span>    p = (p * r * r) + r + 1.0f;</div>
+<div class="line"><span class="lineno">  153</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_aa1672619d6e1829381f468c7fe1e6d6f.html#aa1672619d6e1829381f468c7fe1e6d6f">scale_pow2_</a>(p, k);</div>
+<div class="line"><span class="lineno">  154</span>}</div>
 <div class="ttc" id="a_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="../../db/d49/_audio_2simple_2simple_8h_a6150e0515f7202e2fb518f7206ed97dc.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> <a href="../../db/d49/_audio_2simple_2simple_8h_source.html#l00092">simple.h:92</a></div></div>
 <div class="ttc" id="aexamples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe_html_ae96c939a2a46590dc79c7d9ca8331dfe"><div class="ttname"><a href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a></div><div class="ttdeci">static uint32_t t</div><div class="ttdef"><b>Definition</b> <a href="../../dc/db7/examples_2_luminova_2luminova_8h_source.html#l00055">Luminova.h:55</a></div></div>
-<div class="ttc" id="anamespacefl_1_1detail_aa1672619d6e1829381f468c7fe1e6d6f_html_aa1672619d6e1829381f468c7fe1e6d6f"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_aa1672619d6e1829381f468c7fe1e6d6f.html#aa1672619d6e1829381f468c7fe1e6d6f">fl::detail::scale_pow2_</a></div><div class="ttdeci">float scale_pow2_(float p, int k) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d02/math_8cpp_8hpp_source.html#l00106">math.cpp.hpp:106</a></div></div>
-<div class="ttc" id="anamespacefl_1_1detail_html_a86dd5a704198f7dc6b659ef80e3fb800"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail.html#a86dd5a704198f7dc6b659ef80e3fb800">fl::detail::FloatBits::f</a></div><div class="ttdeci">float f</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d02/math_8cpp_8hpp_source.html#l00099">math.cpp.hpp:99</a></div></div>
-<div class="ttc" id="anamespacefl_1_1detail_html_a901849eb05a8836908657c10281f43d5"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail.html#a901849eb05a8836908657c10281f43d5">fl::detail::FloatBits::u</a></div><div class="ttdeci">u32 u</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d02/math_8cpp_8hpp_source.html#l00099">math.cpp.hpp:99</a></div></div>
-<div class="ttc" id="anamespacefl_1_1detail_html_d5/d7d/unionfl_1_1detail_1_1_float_bits"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail.html#d5/d7d/unionfl_1_1detail_1_1_float_bits">fl::detail::FloatBits</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d02/math_8cpp_8hpp_source.html#l00099">math.cpp.hpp:99</a></div></div>
-<div class="ttc" id="anamespacefl_a01deac84db27d10f737f8a92973bea86_html_a01deac84db27d10f737f8a92973bea86"><div class="ttname"><a href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">fl::x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00024">transposition.cpp.hpp:24</a></div></div>
+<div class="ttc" id="anamespacefl_1_1detail_aa1672619d6e1829381f468c7fe1e6d6f_html_aa1672619d6e1829381f468c7fe1e6d6f"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_aa1672619d6e1829381f468c7fe1e6d6f.html#aa1672619d6e1829381f468c7fe1e6d6f">fl::detail::scale_pow2_</a></div><div class="ttdeci">float scale_pow2_(float p, int k) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d02/math_8cpp_8hpp_source.html#l00107">math.cpp.hpp:107</a></div></div>
+<div class="ttc" id="anamespacefl_1_1detail_html_a86dd5a704198f7dc6b659ef80e3fb800"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail.html#a86dd5a704198f7dc6b659ef80e3fb800">fl::detail::FloatBits::f</a></div><div class="ttdeci">float f</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d02/math_8cpp_8hpp_source.html#l00100">math.cpp.hpp:100</a></div></div>
+<div class="ttc" id="anamespacefl_1_1detail_html_a901849eb05a8836908657c10281f43d5"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail.html#a901849eb05a8836908657c10281f43d5">fl::detail::FloatBits::u</a></div><div class="ttdeci">u32 u</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d02/math_8cpp_8hpp_source.html#l00100">math.cpp.hpp:100</a></div></div>
+<div class="ttc" id="anamespacefl_1_1detail_html_d5/d7d/unionfl_1_1detail_1_1_float_bits"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail.html#d5/d7d/unionfl_1_1detail_1_1_float_bits">fl::detail::FloatBits</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d02/math_8cpp_8hpp_source.html#l00100">math.cpp.hpp:100</a></div></div>
+<div class="ttc" id="anamespacefl_a01deac84db27d10f737f8a92973bea86_html_a01deac84db27d10f737f8a92973bea86"><div class="ttname"><a href="../../d4/d36/namespacefl_a01deac84db27d10f737f8a92973bea86.html#a01deac84db27d10f737f8a92973bea86">fl::x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00025">transposition.cpp.hpp:25</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00099">fl::detail::FloatBits::f</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00106">scale_pow2_()</a>, <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00027">fl::t</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00099">fl::detail::FloatBits::u</a>, and <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00024">fl::x</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00100">fl::detail::FloatBits::f</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00107">scale_pow2_()</a>, <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00028">fl::t</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00100">fl::detail::FloatBits::u</a>, and <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00025">fl::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00201">fl::exp_impl_double()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00200">fl::exp_impl_float()</a>, and <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00155">exp_reduced_()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00202">fl::exp_impl_double()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00201">fl::exp_impl_float()</a>, and <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00156">exp_reduced_()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -189,7 +189,7 @@ $(function(){initNavTree('df/d9e/namespacefl_1_1detail_ad270ac5b02d0ed4162ad4c54
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../df/d9e/namespacefl_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -1,17 +1,17 @@
 var structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics =
 [
-    [ "getAutocorrelationIrregularity", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a2977d3607642fa81c4e311e16f81342c.html#a2977d3607642fa81c4e311e16f81342c", null ],
-    [ "getBroadNumBins", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_aca9053f75b2cb22f69a57730c79862a3.html#aca9053f75b2cb22f69a57730c79862a3", null ],
-    [ "getEnvelopeJitter", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_aed75223cd8a2d3c4867d533b3a26a10c.html#aed75223cd8a2d3c4867d533b3a26a10c", null ],
-    [ "getFormantRatio", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_aa1629f2fb43e6599a27edefb0cddcbfe.html#aa1629f2fb43e6599a27edefb0cddcbfe", null ],
-    [ "getHarmonicDensity", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a26b1c7b2940fa065cb377ee93939ccf0.html#a26b1c7b2940fa065cb377ee93939ccf0", null ],
-    [ "getNumBins", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_ab091593f51882d0f4161752e96ef96b9.html#ab091593f51882d0f4161752e96ef96b9", null ],
-    [ "getRawConfidence", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a813da343f697c2e282b669dda1d71747.html#a813da343f697c2e282b669dda1d71747", null ],
-    [ "getSpectralCentroid", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a2ec56fb2a0b98835cce656c76bc6d7c0.html#a2ec56fb2a0b98835cce656c76bc6d7c0", null ],
-    [ "getSpectralFlatness", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a257b13c3247f4768a15a5b8104db844d.html#a257b13c3247f4768a15a5b8104db844d", null ],
-    [ "getSpectralFlux", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a48738bc06bfe197f674bbb0f5aa69a64.html#a48738bc06bfe197f674bbb0f5aa69a64", null ],
-    [ "getSpectralRolloff", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_aca953f41accb53ea2687321182e7cb1c.html#aca953f41accb53ea2687321182e7cb1c", null ],
-    [ "getSpectralVariance", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a1dddf60009c47f265747ea67947effe6.html#a1dddf60009c47f265747ea67947effe6", null ],
-    [ "getVocalPresenceRatio", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_aec1b2086a36264079ea178d5d690a755.html#aec1b2086a36264079ea178d5d690a755", null ],
-    [ "getZeroCrossingCV", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_afb99be58a9cd8bde57fa47b2637e02fa.html#afb99be58a9cd8bde57fa47b2637e02fa", null ]
+    [ "getAutocorrelationIrregularity", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a4ec7f75c0a0f7e0b7fd2e9322b872b08.html#a4ec7f75c0a0f7e0b7fd2e9322b872b08", null ],
+    [ "getBroadNumBins", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_af239482f26708f07e3a32ac23ef09527.html#af239482f26708f07e3a32ac23ef09527", null ],
+    [ "getEnvelopeJitter", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a25ea6765fa1753922cf38fa90a7ca4f3.html#a25ea6765fa1753922cf38fa90a7ca4f3", null ],
+    [ "getFormantRatio", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a26325d90a21e10f9453edb252eef9a36.html#a26325d90a21e10f9453edb252eef9a36", null ],
+    [ "getHarmonicDensity", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a8192bc6a93a70193f03483db1d144219.html#a8192bc6a93a70193f03483db1d144219", null ],
+    [ "getNumBins", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_aab693c04f98f9443936b9a66d0c646df.html#aab693c04f98f9443936b9a66d0c646df", null ],
+    [ "getRawConfidence", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_ad4fae680477480780eee4c01685216a9.html#ad4fae680477480780eee4c01685216a9", null ],
+    [ "getSpectralCentroid", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a0ebc81f6d9be3c700c7c1253232e5c5d.html#a0ebc81f6d9be3c700c7c1253232e5c5d", null ],
+    [ "getSpectralFlatness", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a1ba232a9200f777270681ff6a16be1ce.html#a1ba232a9200f777270681ff6a16be1ce", null ],
+    [ "getSpectralFlux", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a6b88108ed7b640f3de4127a46fb4ed76.html#a6b88108ed7b640f3de4127a46fb4ed76", null ],
+    [ "getSpectralRolloff", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a82d9585daa475034ff56ffe4a4a6ea1a.html#a82d9585daa475034ff56ffe4a4a6ea1a", null ],
+    [ "getSpectralVariance", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a021d0294a0ffbe5588e8cac52e7a44ce.html#a021d0294a0ffbe5588e8cac52e7a44ce", null ],
+    [ "getVocalPresenceRatio", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_a3c2b805dc39d49b92eb870ada8fba2e7.html#a3c2b805dc39d49b92eb870ada8fba2e7", null ],
+    [ "getZeroCrossingCV", "d7/df2/structfl_1_1audio_1_1detector_1_1_vocal_detector_diagnostics_aedd70ee1f574fef6dc6294e6bb4aab43.html#aedd70ee1f574fef6dc6294e6bb4aab43", null ]
 ];

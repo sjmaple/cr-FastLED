@@ -53,7 +53,7 @@ digraph "fl::ScopedWatchdog::ScopedWatchdog"
   Node20 -> Node21 [id="edge26_Node000020_Node000021",color="steelblue1",style="solid",tooltip=" "];
   Node21 [id="Node000021",label="fl::delay",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a19da680141593b475c4d1d3c1c0a8409.html#a19da680141593b475c4d1d3c1c0a8409",tooltip="Public delay wrapper that keeps bare Arduino delay() preferred after using fl::delay; while still all..."];
   Node21 -> Node21 [id="edge27_Node000021_Node000021",color="steelblue1",style="solid",tooltip=" "];
-  Node6 -> Node44 [id="edge28_Node000006_Node000044",color="steelblue1",style="solid",tooltip=" "];
-  Node44 [id="Node000044",label="fl::platforms::scopedWatchdog\lPrintLine",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d52/namespacefl_1_1platforms_a42093bf9a001d1b707836870382ff2c1.html#a42093bf9a001d1b707836870382ff2c1",tooltip=" "];
-  Node1 -> Node44 [id="edge29_Node000001_Node000044",color="steelblue1",style="solid",tooltip=" "];
+  Node6 -> Node43 [id="edge28_Node000006_Node000043",color="steelblue1",style="solid",tooltip=" "];
+  Node43 [id="Node000043",label="fl::platforms::scopedWatchdog\lPrintLine",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d52/namespacefl_1_1platforms_a42093bf9a001d1b707836870382ff2c1.html#a42093bf9a001d1b707836870382ff2c1",tooltip=" "];
+  Node1 -> Node43 [id="edge29_Node000001_Node000043",color="steelblue1",style="solid",tooltip=" "];
 }

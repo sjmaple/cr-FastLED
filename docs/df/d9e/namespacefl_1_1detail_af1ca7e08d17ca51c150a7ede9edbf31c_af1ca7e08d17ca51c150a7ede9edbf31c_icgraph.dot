@@ -1,0 +1,58 @@
+digraph "fl::detail::spreadA"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="fl::detail::spreadA",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Pulses 7,6,5,4 of v (byte j = bit (7-j)). Depends only on the high nibble."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::detail::spread\l_transpose16_symbol",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a36c868739104fef619f3ca21b6371428.html#a36c868739104fef619f3ca21b6371428",tooltip="Transpose one symbol of 16 lanes (16 input bytes) into 16 output bytes: 8 pulses × 2 bytes,..."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::detail::wave3_transpose_16",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_af60deb9998d29f24a69577743e9d7138.html#af60deb9998d29f24a69577743e9d7138",tooltip="Transpose 16 lanes of Wave3Byte data via the spread-LUT path (#2533)."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::wave3Transpose_16",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a334be12173bf44cd87ed77e46cac2eb9.html#a334be12173bf44cd87ed77e46cac2eb9",tooltip=" "];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::detail::wave8_transpose_16",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a78e359dd2cb7c2a0f069ea1aec2127e2.html#a78e359dd2cb7c2a0f069ea1aec2127e2",tooltip=" "];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::wave8Transpose_16",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_aa09e36efcaaf9f44ee439d88b0ba1479.html#aa09e36efcaaf9f44ee439d88b0ba1479",tooltip=" "];
+  Node5 -> Node7 [id="edge6_Node000005_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl::wave8Transpose_16",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a4546373770e21ef38ab4e092aa392456.html#a4546373770e21ef38ab4e092aa392456",tooltip=" "];
+  Node2 -> Node8 [id="edge7_Node000002_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="fl::detail::wave8_transpose\l_16_bf1",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a2246793f026761f46f74b20ec3c2ecf5.html#a2246793f026761f46f74b20ec3c2ecf5",tooltip=" "];
+  Node8 -> Node9 [id="edge8_Node000008_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="fl::wave8Transpose\l_16_bf1",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a45bcca32d718fd6967e85dbb397fd2d6.html#a45bcca32d718fd6967e85dbb397fd2d6",tooltip="BF1: chipset-aware direct encode for 16-lane Wave8 (#2548 deep-dive)."];
+  Node2 -> Node10 [id="edge9_Node000002_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="fl::detail::wave8_transpose\l_16x2_pipe2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a3e2f81102679a4106e51e9fc98689fe9.html#a3e2f81102679a4106e51e9fc98689fe9",tooltip=" "];
+  Node10 -> Node11 [id="edge10_Node000010_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="fl::wave8Transpose\l_16x2_pipe2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ab950bbd537bc9964822f7ce7aa75f2a4.html#ab950bbd537bc9964822f7ce7aa75f2a4",tooltip="Pipe2: transpose 16-lane × 2-byte-positions (#2548)."];
+  Node2 -> Node12 [id="edge11_Node000002_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="fl::detail::wave8_transpose\l_16x4_bf1_pipe4",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a841fcbbd4ddde3afa4d59afc8313c5b7.html#a841fcbbd4ddde3afa4d59afc8313c5b7",tooltip=" "];
+  Node12 -> Node13 [id="edge12_Node000012_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="fl::wave8Transpose\l_16x4_bf1_pipe4",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a766b3187d9a39d7689822bd1b429ea8c.html#a766b3187d9a39d7689822bd1b429ea8c",tooltip="BF1 + pipe4: 4-position-pipelined direct encode (#2548 deep-dive)."];
+  Node2 -> Node14 [id="edge13_Node000002_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="fl::detail::wave8_transpose\l_16x4_pipe4",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a57dba27509eb14138b146602310552cd.html#a57dba27509eb14138b146602310552cd",tooltip=" "];
+  Node14 -> Node15 [id="edge14_Node000014_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="fl::wave8Transpose\l_16x4_pipe4",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a0d9913f42c2c320dd0b665be20cb14d2.html#a0d9913f42c2c320dd0b665be20cb14d2",tooltip="Pipe4: transpose 16-lane × 4-byte-positions (#2548)."];
+  Node1 -> Node16 [id="edge15_Node000001_Node000016",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="fl::detail::spread\l_transpose8_symbol",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a6fbc05f9621b650b59d713d886ae05ca.html#a6fbc05f9621b650b59d713d886ae05ca",tooltip="Transpose one symbol of 8 lanes (8 input bytes) into 8 output bytes: 8 pulses × 1 byte (bit L = lane ..."];
+  Node16 -> Node17 [id="edge16_Node000016_Node000017",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node17 [id="Node000017",label="fl::detail::wave3_transpose_8",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_ac947073ef56b660e06edb6a04b8f9d51.html#ac947073ef56b660e06edb6a04b8f9d51",tooltip="Transpose 8 lanes of Wave3Byte data via the spread-LUT path (#2533)."];
+  Node17 -> Node18 [id="edge17_Node000017_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="fl::wave3Transpose_8",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a4f89afb09b434f4c39d91187aeaf1d00.html#a4f89afb09b434f4c39d91187aeaf1d00",tooltip=" "];
+  Node16 -> Node19 [id="edge18_Node000016_Node000019",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node19 [id="Node000019",label="fl::detail::wave8_transpose_8",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a756967b8dca3cdde3223444819a7bed0.html#a756967b8dca3cdde3223444819a7bed0",tooltip=" "];
+  Node19 -> Node20 [id="edge19_Node000019_Node000020",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node20 [id="Node000020",label="fl::wave8Transpose_8",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a4b278c181d87ee58a03606d12c506ab5.html#a4b278c181d87ee58a03606d12c506ab5",tooltip=" "];
+  Node19 -> Node21 [id="edge20_Node000019_Node000021",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node21 [id="Node000021",label="fl::wave8Transpose_8",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a95d1a6d64878eb3fabd3e81348af6f20.html#a95d1a6d64878eb3fabd3e81348af6f20",tooltip=" "];
+  Node16 -> Node22 [id="edge21_Node000016_Node000022",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node22 [id="Node000022",label="fl::detail::wave8_transpose\l_8_bf1",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a8e8d7e6c2826be5e6cb9ac7de5eaf9c4.html#a8e8d7e6c2826be5e6cb9ac7de5eaf9c4",tooltip=" "];
+  Node22 -> Node23 [id="edge22_Node000022_Node000023",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node23 [id="Node000023",label="fl::wave8Transpose\l_8_bf1",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a2f0bf559fc8cdd3c4c3276ae857b6b82.html#a2f0bf559fc8cdd3c4c3276ae857b6b82",tooltip="BF1 for 8-lane Wave8 (#2548 deep-dive followup)."];
+  Node1 -> Node24 [id="edge23_Node000001_Node000024",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node24 [id="Node000024",label="fl::detail::wave8_transpose\l_4_bf1",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a8c8ad126a88d2a88b8b3524ee264374e.html#a8c8ad126a88d2a88b8b3524ee264374e",tooltip=" "];
+  Node24 -> Node25 [id="edge24_Node000024_Node000025",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node25 [id="Node000025",label="fl::wave8Transpose\l_4_bf1",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_abab81c0caf1883f4efd74da01e4a60f3.html#abab81c0caf1883f4efd74da01e4a60f3",tooltip="BF1 for 4-lane Wave8 (#2548 deep-dive followup)."];
+}

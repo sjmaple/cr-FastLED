@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -125,32 +125,32 @@ template&lt;typename F&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00295">295</a> of file <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html">math.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  295</span>                                            {</div>
-<div class="line"><span class="lineno">  296</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> &lt;= F(0)) <span class="keywordflow">return</span> F(-1e30);  <span class="comment">// -inf surrogate</span></div>
-<div class="line"><span class="lineno">  297</span>    <span class="keywordtype">int</span> e = 0;</div>
-<div class="line"><span class="lineno">  298</span>    <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> &gt;= F(2)) { <a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> *= F(0.5); ++e; }</div>
-<div class="line"><span class="lineno">  299</span>    <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> &lt; F(1))  { <a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> *= F(2);   --e; }</div>
-<div class="line"><span class="lineno">  300</span>    <span class="comment">// value ∈ [1, 2); evaluate log(value) via Taylor around 1: let u = value - 1.</span></div>
-<div class="line"><span class="lineno">  301</span>    <span class="comment">// log(1+u) = u - u²/2 + u³/3 - u⁴/4 + ...</span></div>
-<div class="line"><span class="lineno">  302</span>    <span class="comment">// Use enough terms for ~5-decimal accuracy on [0, 1].</span></div>
-<div class="line"><span class="lineno">  303</span>    <span class="keyword">const</span> F u  = <a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> - F(1);</div>
-<div class="line"><span class="lineno">  304</span>    <span class="keyword">const</span> F u2 = u * u;</div>
-<div class="line"><span class="lineno">  305</span>    <span class="keyword">const</span> F u3 = u2 * u;</div>
-<div class="line"><span class="lineno">  306</span>    <span class="keyword">const</span> F u4 = u2 * u2;</div>
-<div class="line"><span class="lineno">  307</span>    <span class="keyword">const</span> F u5 = u4 * u;</div>
-<div class="line"><span class="lineno">  308</span>    <span class="keyword">const</span> F u6 = u4 * u2;</div>
-<div class="line"><span class="lineno">  309</span>    <span class="keyword">const</span> F u7 = u6 * u;</div>
-<div class="line"><span class="lineno">  310</span>    F log_m = u - u2 * F(0.5) + u3 * F(1.0 / 3.0) - u4 * F(0.25)</div>
-<div class="line"><span class="lineno">  311</span>              + u5 * F(0.2) - u6 * F(1.0 / 6.0) + u7 * F(1.0 / 7.0);</div>
-<div class="line"><span class="lineno">  312</span>    <span class="keyword">const</span> F kLn2 = F(0.69314718055994530942);</div>
-<div class="line"><span class="lineno">  313</span>    <span class="keywordflow">return</span> log_m + F(e) * kLn2;</div>
-<div class="line"><span class="lineno">  314</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00296">296</a> of file <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html">math.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  296</span>                                            {</div>
+<div class="line"><span class="lineno">  297</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> &lt;= F(0)) <span class="keywordflow">return</span> F(-1e30);  <span class="comment">// -inf surrogate</span></div>
+<div class="line"><span class="lineno">  298</span>    <span class="keywordtype">int</span> e = 0;</div>
+<div class="line"><span class="lineno">  299</span>    <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> &gt;= F(2)) { <a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> *= F(0.5); ++e; }</div>
+<div class="line"><span class="lineno">  300</span>    <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> &lt; F(1))  { <a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> *= F(2);   --e; }</div>
+<div class="line"><span class="lineno">  301</span>    <span class="comment">// value ∈ [1, 2); evaluate log(value) via Taylor around 1: let u = value - 1.</span></div>
+<div class="line"><span class="lineno">  302</span>    <span class="comment">// log(1+u) = u - u²/2 + u³/3 - u⁴/4 + ...</span></div>
+<div class="line"><span class="lineno">  303</span>    <span class="comment">// Use enough terms for ~5-decimal accuracy on [0, 1].</span></div>
+<div class="line"><span class="lineno">  304</span>    <span class="keyword">const</span> F u  = <a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> - F(1);</div>
+<div class="line"><span class="lineno">  305</span>    <span class="keyword">const</span> F u2 = u * u;</div>
+<div class="line"><span class="lineno">  306</span>    <span class="keyword">const</span> F u3 = u2 * u;</div>
+<div class="line"><span class="lineno">  307</span>    <span class="keyword">const</span> F u4 = u2 * u2;</div>
+<div class="line"><span class="lineno">  308</span>    <span class="keyword">const</span> F u5 = u4 * u;</div>
+<div class="line"><span class="lineno">  309</span>    <span class="keyword">const</span> F u6 = u4 * u2;</div>
+<div class="line"><span class="lineno">  310</span>    <span class="keyword">const</span> F u7 = u6 * u;</div>
+<div class="line"><span class="lineno">  311</span>    F log_m = u - u2 * F(0.5) + u3 * F(1.0 / 3.0) - u4 * F(0.25)</div>
+<div class="line"><span class="lineno">  312</span>              + u5 * F(0.2) - u6 * F(1.0 / 6.0) + u7 * F(1.0 / 7.0);</div>
+<div class="line"><span class="lineno">  313</span>    <span class="keyword">const</span> F kLn2 = F(0.69314718055994530942);</div>
+<div class="line"><span class="lineno">  314</span>    <span class="keywordflow">return</span> log_m + F(e) * kLn2;</div>
+<div class="line"><span class="lineno">  315</span>}</div>
 <div class="ttc" id="anamespacefl_a13766ae9e150185981f5096f90a439d7_html_a13766ae9e150185981f5096f90a439d7"><div class="ttname"><a href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">fl::value</a></div><div class="ttdeci">constexpr int type_rank&lt; T &gt;::value</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d37/static__constexpr__defs_8cpp_8hpp_source.html#l00082">static_constexpr_defs.cpp.hpp:82</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../dd/d37/static__constexpr__defs_8cpp_8hpp_source.html#l00082">fl::type_rank&lt; T &gt;::value</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../dd/d37/static__constexpr__defs_8cpp_8hpp_source.html#l00082">fl::type_rank&lt; T &gt;::value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00394">fl::log10_impl_double()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00385">fl::log10_impl_float()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00377">fl::log_impl_double()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00369">fl::log_impl_float()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00419">fl::pow_impl_double()</a>, and <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00403">fl::pow_impl_float()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00395">fl::log10_impl_double()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00386">fl::log10_impl_float()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00378">fl::log_impl_double()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00370">fl::log_impl_float()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00420">fl::pow_impl_double()</a>, and <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00404">fl::pow_impl_float()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -168,7 +168,7 @@ template&lt;typename F&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../df/d9e/namespacefl_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -10,7 +10,7 @@ digraph "fl::detail::AlphaTrimmedMeanImpl::update"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="fl::detail::div_by\l_count",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a8e82cda41cebeaef6871a4a84478c9cd.html#a8e82cda41cebeaef6871a4a84478c9cd",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::lower_bound",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a22df60d2c2a8006731e4647aefa985ad.html#a22df60d2c2a8006731e4647aefa985ad",tooltip=" "];
+  Node3 [id="Node000003",label="fl::adl_barrier::lower\l_bound",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a21c6468f1be38d1e6d733cd87be582a5.html#a21c6468f1be38d1e6d733cd87be582a5",tooltip=" "];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="fl::detail::lower_bound_impl",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a76f7efb5353c780971a10e52f93b3523.html#a76f7efb5353c780971a10e52f93b3523",tooltip=" "];
   Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];

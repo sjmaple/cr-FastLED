@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -125,26 +125,26 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00286">286</a> of file <a class="el" href="../../df/d6a/shared__ptr_8h_source.html">shared_ptr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  286</span>                              {</div>
-<div class="line"><span class="lineno">  287</span>        <span class="comment">//FL_WARN(&quot;shared_ptr::reset() called: mPtr=&quot; &lt;&lt; mPtr </span></div>
-<div class="line"><span class="lineno">  288</span>        <span class="comment">//          &lt;&lt; &quot;, mControlBlock=&quot; &lt;&lt; mControlBlock);</span></div>
-<div class="line"><span class="lineno">  289</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>) {</div>
-<div class="line"><span class="lineno">  290</span>            <span class="comment">//FL_WARN(&quot;control_block exists, calling remove_shared_ref()&quot;);</span></div>
-<div class="line"><span class="lineno">  291</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>-&gt;remove_shared_ref()) {</div>
-<div class="line"><span class="lineno">  292</span>                <span class="comment">//FL_WARN(&quot;mControlBlock-&gt;remove_shared_ref() returned true, destroying object&quot;);</span></div>
-<div class="line"><span class="lineno">  293</span>                <a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>-&gt;destroy_object();</div>
-<div class="line"><span class="lineno">  294</span>                <span class="keywordflow">if</span> (--<a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>-&gt;weak_count == 0) {</div>
-<div class="line"><span class="lineno">  295</span>                    <span class="comment">//FL_WARN(&quot;weak_count reached 0, destroying control block&quot;);</span></div>
-<div class="line"><span class="lineno">  296</span>                    <a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>-&gt;destroy_control_block();</div>
-<div class="line"><span class="lineno">  297</span>                }</div>
-<div class="line"><span class="lineno">  298</span>            }</div>
-<div class="line"><span class="lineno">  299</span>        }</div>
-<div class="line"><span class="lineno">  300</span>        <a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a92385bb56992085d087ac58515716a8f.html#a92385bb56992085d087ac58515716a8f">mPtr</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  301</span>        <a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  302</span>    }</div>
-<div class="ttc" id="aclassfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603_html_a06482c24a03a0c99936fb0f629ecc603"><div class="ttname"><a href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">fl::shared_ptr::mControlBlock</a></div><div class="ttdeci">detail::ControlBlockBase * mControlBlock</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00158">shared_ptr.h:158</a></div></div>
-<div class="ttc" id="aclassfl_1_1shared__ptr_a92385bb56992085d087ac58515716a8f_html_a92385bb56992085d087ac58515716a8f"><div class="ttname"><a href="../../d1/d74/classfl_1_1shared__ptr_a92385bb56992085d087ac58515716a8f.html#a92385bb56992085d087ac58515716a8f">fl::shared_ptr::mPtr</a></div><div class="ttdeci">T * mPtr</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00157">shared_ptr.h:157</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00294">294</a> of file <a class="el" href="../../df/d6a/shared__ptr_8h_source.html">shared_ptr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  294</span>                              {</div>
+<div class="line"><span class="lineno">  295</span>        <span class="comment">//FL_WARN(&quot;shared_ptr::reset() called: mPtr=&quot; &lt;&lt; mPtr </span></div>
+<div class="line"><span class="lineno">  296</span>        <span class="comment">//          &lt;&lt; &quot;, mControlBlock=&quot; &lt;&lt; mControlBlock);</span></div>
+<div class="line"><span class="lineno">  297</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>) {</div>
+<div class="line"><span class="lineno">  298</span>            <span class="comment">//FL_WARN(&quot;control_block exists, calling remove_shared_ref()&quot;);</span></div>
+<div class="line"><span class="lineno">  299</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>-&gt;remove_shared_ref()) {</div>
+<div class="line"><span class="lineno">  300</span>                <span class="comment">//FL_WARN(&quot;mControlBlock-&gt;remove_shared_ref() returned true, destroying object&quot;);</span></div>
+<div class="line"><span class="lineno">  301</span>                <a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>-&gt;destroy_object();</div>
+<div class="line"><span class="lineno">  302</span>                <span class="keywordflow">if</span> (--<a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>-&gt;weak_count == 0) {</div>
+<div class="line"><span class="lineno">  303</span>                    <span class="comment">//FL_WARN(&quot;weak_count reached 0, destroying control block&quot;);</span></div>
+<div class="line"><span class="lineno">  304</span>                    <a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>-&gt;destroy_control_block();</div>
+<div class="line"><span class="lineno">  305</span>                }</div>
+<div class="line"><span class="lineno">  306</span>            }</div>
+<div class="line"><span class="lineno">  307</span>        }</div>
+<div class="line"><span class="lineno">  308</span>        <a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a92385bb56992085d087ac58515716a8f.html#a92385bb56992085d087ac58515716a8f">mPtr</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  309</span>        <a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  310</span>    }</div>
+<div class="ttc" id="aclassfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603_html_a06482c24a03a0c99936fb0f629ecc603"><div class="ttname"><a href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">fl::shared_ptr::mControlBlock</a></div><div class="ttdeci">detail::ControlBlockBase * mControlBlock</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00166">shared_ptr.h:166</a></div></div>
+<div class="ttc" id="aclassfl_1_1shared__ptr_a92385bb56992085d087ac58515716a8f_html_a92385bb56992085d087ac58515716a8f"><div class="ttname"><a href="../../d1/d74/classfl_1_1shared__ptr_a92385bb56992085d087ac58515716a8f.html#a92385bb56992085d087ac58515716a8f">fl::shared_ptr::mPtr</a></div><div class="ttdeci">T * mPtr</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00165">shared_ptr.h:165</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -155,7 +155,7 @@ template&lt;typename T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d1/d74/classfl_1_1shared__ptr.html">shared_ptr</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:32 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

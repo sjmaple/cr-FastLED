@@ -1,0 +1,21 @@
+digraph "fl::anonymous_namespace{chasing_spirals::cpp::hpp}::simd4_processChannel"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fl::anonymous_namespace\l\{chasing_spirals::cpp\l::hpp\}::simd4_processChannel",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::perlin_s16x16_simd\l::pnoise2d_raw_simd4_vec",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/dec/structfl_1_1perlin__s16x16__simd_a1a1cb96429008812891e22f3111ecdf6.html#a1a1cb96429008812891e22f3111ecdf6",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::perlin_s16x16::fade",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d7d/structfl_1_1perlin__s16x16_a3bb6a9efaab821967e5acab7291fefc9.html#a3bb6a9efaab821967e5acab7291fefc9",tooltip=" "];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::perlin_s16x16::grad",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d7d/structfl_1_1perlin__s16x16_a8bd6da3e446da316edc4861bea1e35de.html#a8bd6da3e446da316edc4861bea1e35de",tooltip=" "];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::perlin_s16x16::lerp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d7d/structfl_1_1perlin__s16x16_ac116280bda7cea5464ac5ed018b85865.html#ac116280bda7cea5464ac5ed018b85865",tooltip=" "];
+  Node1 -> Node1 [id="edge5_Node000001_Node000001",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node6 [id="edge6_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::sincos32_simd",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a92f648bf72198076845339c6859d3e19.html#a92f648bf72198076845339c6859d3e19",tooltip="Process 4 angles simultaneously, returning vectorized sin/cos values SIMD-optimized: vectorized angle..."];
+}

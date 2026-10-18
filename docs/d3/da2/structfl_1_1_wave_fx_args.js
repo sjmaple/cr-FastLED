@@ -1,7 +1,7 @@
 var structfl_1_1_wave_fx_args =
 [
     [ "WaveFxArgs", "d3/da2/structfl_1_1_wave_fx_args_a833fa3cb60f9dcecf09b95bef0545e94.html#a833fa3cb60f9dcecf09b95bef0545e94", null ],
-    [ "WaveFxArgs", "d3/da2/structfl_1_1_wave_fx_args_a39829f6aa0673f7734cf5b7b667e8e79.html#a39829f6aa0673f7734cf5b7b667e8e79", null ],
+    [ "WaveFxArgs", "d3/da2/structfl_1_1_wave_fx_args_a6c5c0e88cbc8a76a60ab78268dc784b7.html#a6c5c0e88cbc8a76a60ab78268dc784b7", null ],
     [ "WaveFxArgs", "d3/da2/structfl_1_1_wave_fx_args_a5563114407e7f54e09b98be8da22e1b8.html#a5563114407e7f54e09b98be8da22e1b8", null ],
     [ "operator=", "d3/da2/structfl_1_1_wave_fx_args_a2d58e989e2df6326b0ef75d53340d90a.html#a2d58e989e2df6326b0ef75d53340d90a", null ],
     [ "auto_updates", "d3/da2/structfl_1_1_wave_fx_args_a31d87fcefb3cc18bc7024d421a39f79f.html#a31d87fcefb3cc18bc7024d421a39f79f", null ],

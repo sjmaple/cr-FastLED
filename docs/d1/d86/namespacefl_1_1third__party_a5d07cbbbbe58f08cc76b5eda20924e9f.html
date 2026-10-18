@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -129,9 +129,9 @@ $(function(){initNavTree('d1/d86/namespacefl_1_1third__party_a5d07cbbbbe58f08cc7
 <div class="fragment"><div class="line"><span class="lineno"> 1774</span>{</div>
 <div class="line"><span class="lineno"> 1775</span>    <span class="keywordflow">if</span> (gif-&gt;<a class="code hl_variable" href="../../d1/d86/namespacefl_1_1third__party.html#ad25b850611b2aefe924634b0a23a30fc">data_complete</a> == <span class="keyword">false</span>) {</div>
 <div class="line"><span class="lineno"> 1776</span>        fl::u32 start = gif-&gt;<a class="code hl_variable" href="../../d1/d86/namespacefl_1_1third__party.html#ab9e8cc16c71133e7e4eccdadc94aa063">info</a>.<a class="code hl_variable" href="../../d1/d86/namespacefl_1_1third__party.html#a56ffc634a1ca8ac8442097f866c86f17">frame_count</a>;</div>
-<div class="line"><span class="lineno"> 1777</span>        fl::u32 <a class="code hl_function" href="../../d4/d36/namespacefl_aa45736aab5ddedf688b0c3efaedbf0f7.html#aa45736aab5ddedf688b0c3efaedbf0f7">end</a> = gif-&gt;<a class="code hl_variable" href="../../d1/d86/namespacefl_1_1third__party.html#ac08311e02e468d6508fd24f3c5b5d569">frame_count_partial</a>;</div>
+<div class="line"><span class="lineno"> 1777</span>        fl::u32 <a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779.html#a0fc0bdd1e96cab039bda736400fdd779">end</a> = gif-&gt;<a class="code hl_variable" href="../../d1/d86/namespacefl_1_1third__party.html#ac08311e02e468d6508fd24f3c5b5d569">frame_count_partial</a>;</div>
 <div class="line"><span class="lineno"> 1778</span> </div>
-<div class="line"><span class="lineno"> 1779</span>        <span class="keywordflow">for</span> (fl::u32 f = start; f &lt; <a class="code hl_function" href="../../d4/d36/namespacefl_aa45736aab5ddedf688b0c3efaedbf0f7.html#aa45736aab5ddedf688b0c3efaedbf0f7">end</a>; f++) {</div>
+<div class="line"><span class="lineno"> 1779</span>        <span class="keywordflow">for</span> (fl::u32 f = start; f &lt; <a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779.html#a0fc0bdd1e96cab039bda736400fdd779">end</a>; f++) {</div>
 <div class="line"><span class="lineno"> 1780</span>            <a class="code hl_struct" href="../../d1/d86/namespacefl_1_1third__party.html#da/dc9/structfl_1_1third__party_1_1nsgif__frame">nsgif_frame</a> *frame = &amp;gif-&gt;<a class="code hl_variable" href="../../d1/d86/namespacefl_1_1third__party.html#a36b9f9da70ac14bccbad9dd34c841989">frames</a>[f];</div>
 <div class="line"><span class="lineno"> 1781</span> </div>
 <div class="line"><span class="lineno"> 1782</span>            <span class="keywordflow">if</span> (frame-&gt;<a class="code hl_variable" href="../../d1/d86/namespacefl_1_1third__party.html#a85b208e2cf76452edc32c4180c4dfed3">lzw_data_length</a> &gt; 0) {</div>
@@ -148,6 +148,7 @@ $(function(){initNavTree('d1/d86/namespacefl_1_1third__party_a5d07cbbbbe58f08cc7
 <div class="line"><span class="lineno"> 1793</span> </div>
 <div class="line"><span class="lineno"> 1794</span>    gif-&gt;<a class="code hl_variable" href="../../d1/d86/namespacefl_1_1third__party.html#ad25b850611b2aefe924634b0a23a30fc">data_complete</a> = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno"> 1795</span>}</div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779_html_a0fc0bdd1e96cab039bda736400fdd779"><div class="ttname"><a href="../../df/d34/namespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779.html#a0fc0bdd1e96cab039bda736400fdd779">fl::adl_barrier::end</a></div><div class="ttdeci">constexpr T * end(T(&amp;array)[N]) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db6/range__access_8h_source.html#l00018">range_access.h:18</a></div></div>
 <div class="ttc" id="anamespacefl_1_1third__party_html_a243dba69a51b79b4b9ace2ef33200e4c"><div class="ttname"><a href="../../d1/d86/namespacefl_1_1third__party.html#a243dba69a51b79b4b9ace2ef33200e4c">fl::third_party::nsgif_frame_info::transparency</a></div><div class="ttdeci">bool transparency</div><div class="ttdoc">whether the frame may have transparency</div><div class="ttdef"><b>Definition</b> <a href="../../df/de3/nsgif_8hpp_source.html#l00426">nsgif.hpp:426</a></div></div>
 <div class="ttc" id="anamespacefl_1_1third__party_html_a36b9f9da70ac14bccbad9dd34c841989"><div class="ttname"><a href="../../d1/d86/namespacefl_1_1third__party.html#a36b9f9da70ac14bccbad9dd34c841989">fl::third_party::nsgif::frames</a></div><div class="ttdeci">nsgif_frame * frames</div><div class="ttdoc">decoded frames</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d63/third__party_2libnsgif_2src_2gif_8cpp_8hpp_source.html#l00079">gif.cpp.hpp:79</a></div></div>
 <div class="ttc" id="anamespacefl_1_1third__party_html_a4912ed603e4e036477f96b47f3ab279b"><div class="ttname"><a href="../../d1/d86/namespacefl_1_1third__party.html#a4912ed603e4e036477f96b47f3ab279b">fl::third_party::nsgif_frame_info::display</a></div><div class="ttdeci">bool display</div><div class="ttdoc">whether the frame should be displayed/animated</div><div class="ttdef"><b>Definition</b> <a href="../../df/de3/nsgif_8hpp_source.html#l00424">nsgif.hpp:424</a></div></div>
@@ -158,9 +159,8 @@ $(function(){initNavTree('d1/d86/namespacefl_1_1third__party_a5d07cbbbbe58f08cc7
 <div class="ttc" id="anamespacefl_1_1third__party_html_ad21262e908d7571c456f2cf55bde716d"><div class="ttname"><a href="../../d1/d86/namespacefl_1_1third__party.html#ad21262e908d7571c456f2cf55bde716d">fl::third_party::nsgif_frame::info</a></div><div class="ttdeci">struct nsgif_frame_info info</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d63/third__party_2libnsgif_2src_2gif_8cpp_8hpp_source.html#l00038">gif.cpp.hpp:38</a></div></div>
 <div class="ttc" id="anamespacefl_1_1third__party_html_ad25b850611b2aefe924634b0a23a30fc"><div class="ttname"><a href="../../d1/d86/namespacefl_1_1third__party.html#ad25b850611b2aefe924634b0a23a30fc">fl::third_party::nsgif::data_complete</a></div><div class="ttdeci">bool data_complete</div><div class="ttdoc">Whether all the GIF data has been supplied, or if there may be more to come.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d63/third__party_2libnsgif_2src_2gif_8cpp_8hpp_source.html#l00106">gif.cpp.hpp:106</a></div></div>
 <div class="ttc" id="anamespacefl_1_1third__party_html_da/dc9/structfl_1_1third__party_1_1nsgif__frame"><div class="ttname"><a href="../../d1/d86/namespacefl_1_1third__party.html#da/dc9/structfl_1_1third__party_1_1nsgif__frame">fl::third_party::nsgif_frame</a></div><div class="ttdoc">GIF frame data.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d63/third__party_2libnsgif_2src_2gif_8cpp_8hpp_source.html#l00037">gif.cpp.hpp:37</a></div></div>
-<div class="ttc" id="anamespacefl_aa45736aab5ddedf688b0c3efaedbf0f7_html_aa45736aab5ddedf688b0c3efaedbf0f7"><div class="ttname"><a href="../../d4/d36/namespacefl_aa45736aab5ddedf688b0c3efaedbf0f7.html#aa45736aab5ddedf688b0c3efaedbf0f7">fl::end</a></div><div class="ttdeci">constexpr T * end(T(&amp;array)[N]) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db6/range__access_8h_source.html#l00016">range_access.h:16</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/de3/nsgif_8hpp_source.html#l00424">fl::third_party::nsgif_frame_info::display</a>, <a class="el" href="../../d5/db6/range__access_8h_source.html#l00016">fl::end()</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../dc/d63/third__party_2libnsgif_2src_2gif_8cpp_8hpp_source.html#l00038">fl::third_party::nsgif_frame::info</a>, <a class="el" href="../../dc/d63/third__party_2libnsgif_2src_2gif_8cpp_8hpp_source.html#l00050">fl::third_party::nsgif_frame::lzw_data_length</a>, and <a class="el" href="../../df/de3/nsgif_8hpp_source.html#l00426">fl::third_party::nsgif_frame_info::transparency</a>.</p>
+<p class="reference">References <a class="el" href="../../df/de3/nsgif_8hpp_source.html#l00424">fl::third_party::nsgif_frame_info::display</a>, <a class="el" href="../../d5/db6/range__access_8h_source.html#l00018">fl::adl_barrier::end()</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../dc/d63/third__party_2libnsgif_2src_2gif_8cpp_8hpp_source.html#l00038">fl::third_party::nsgif_frame::info</a>, <a class="el" href="../../dc/d63/third__party_2libnsgif_2src_2gif_8cpp_8hpp_source.html#l00050">fl::third_party::nsgif_frame::lzw_data_length</a>, and <a class="el" href="../../df/de3/nsgif_8hpp_source.html#l00426">fl::third_party::nsgif_frame_info::transparency</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/d62/libnsgif_2software__decoder_8cpp_8hpp_source.html#l00235">fl::third_party::SoftwareGifDecoder::loadMoreData()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -168,7 +168,7 @@ $(function(){initNavTree('d1/d86/namespacefl_1_1third__party_a5d07cbbbbe58f08cc7
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d86/namespacefl_1_1third__party_a5d07cbbbbe58f08cc76b5eda20924e9f_a5d07cbbbbe58f08cc76b5eda20924e9f_cgraph.svg" width="270" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d86/namespacefl_1_1third__party_a5d07cbbbbe58f08cc76b5eda20924e9f_a5d07cbbbbe58f08cc76b5eda20924e9f_cgraph.svg" width="347" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -187,7 +187,7 @@ $(function(){initNavTree('d1/d86/namespacefl_1_1third__party_a5d07cbbbbe58f08cc7
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d1/d86/namespacefl_1_1third__party.html">third_party</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:12 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:36 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

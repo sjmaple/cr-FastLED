@@ -9,6 +9,7 @@ var classfl_1_1_pixel_iterator =
     [ "loadAndScaleRGB16", "d0/d09/classfl_1_1_pixel_iterator_a65edf3ee981db4bd3e380a418163147d.html#a65edf3ee981db4bd3e380a418163147d", null ],
     [ "loadAndScaleRGBW", "d0/d09/classfl_1_1_pixel_iterator_ad6500d6de8454456417419ed1291d3c0.html#ad6500d6de8454456417419ed1291d3c0", null ],
     [ "loadAndScaleRGBWW", "d0/d09/classfl_1_1_pixel_iterator_a467adc13de5f0f856ad2df6ba0540baa.html#a467adc13de5f0f856ad2df6ba0540baa", null ],
+    [ "refreshWireOrder", "d0/d09/classfl_1_1_pixel_iterator_ae2a6bf5ab8d3614a659acbbf76c233d4.html#ae2a6bf5ab8d3614a659acbbf76c233d4", null ],
     [ "set_rgbw", "d0/d09/classfl_1_1_pixel_iterator_ac679263a815fac68bab8712aea787d19.html#ac679263a815fac68bab8712aea787d19", null ],
     [ "set_rgbww", "d0/d09/classfl_1_1_pixel_iterator_a9d98ec1b881d8e0ef81da2c31b3eac80.html#a9d98ec1b881d8e0ef81da2c31b3eac80", null ],
     [ "setColorOrder", "d0/d09/classfl_1_1_pixel_iterator_a9e0cc647b712b18abbbb39d70939ab71.html#a9e0cc647b712b18abbbb39d70939ab71", null ],
@@ -36,10 +37,15 @@ var classfl_1_1_pixel_iterator =
     [ "mLoadAndScaleRGBWUnordered", "d0/d09/classfl_1_1_pixel_iterator_a310f0f48bd1d9a55418b8d9bd48e1779.html#a310f0f48bd1d9a55418b8d9bd48e1779", null ],
     [ "mLoadAndScaleRGBWW", "d0/d09/classfl_1_1_pixel_iterator_a95eb043005d044fa350c90053534f986.html#a95eb043005d044fa350c90053534f986", null ],
     [ "mLoadAndScaleRGBWWUnordered", "d0/d09/classfl_1_1_pixel_iterator_a128c760af5a66e43a5492be107a6d937.html#a128c760af5a66e43a5492be107a6d937", null ],
+    [ "mLoadRawPremixed", "d0/d09/classfl_1_1_pixel_iterator_a40ce8feba0e3b2d846762e5f48c386ca.html#a40ce8feba0e3b2d846762e5f48c386ca", null ],
     [ "mOrder", "d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0", null ],
     [ "mPixelController", "d0/d09/classfl_1_1_pixel_iterator_ad591b938f0130476aaca2b2f1cd0217c.html#ad591b938f0130476aaca2b2f1cd0217c", null ],
     [ "mRgbw", "d0/d09/classfl_1_1_pixel_iterator_ac7b78bd0657c8f522b1ae47ccfa6e06f.html#ac7b78bd0657c8f522b1ae47ccfa6e06f", null ],
+    [ "mRgbwConvert", "d0/d09/classfl_1_1_pixel_iterator_a2bd62b20cfddd4b583e70c62c16bf891.html#a2bd62b20cfddd4b583e70c62c16bf891", null ],
     [ "mRgbww", "d0/d09/classfl_1_1_pixel_iterator_a50e8f0935a79add43fa53e63c95354c3.html#a50e8f0935a79add43fa53e63c95354c3", null ],
+    [ "mRgbwwConvert", "d0/d09/classfl_1_1_pixel_iterator_a8e7e34159898887d8c68e7f7343ce05f.html#a8e7e34159898887d8c68e7f7343ce05f", null ],
     [ "mSize", "d0/d09/classfl_1_1_pixel_iterator_a9ebf8fce829767f16d98d0973a81e1d9.html#a9ebf8fce829767f16d98d0973a81e1d9", null ],
-    [ "mStepDithering", "d0/d09/classfl_1_1_pixel_iterator_a61efed79d69580b3d3b44531b8215fea.html#a61efed79d69580b3d3b44531b8215fea", null ]
+    [ "mSourceOrder", "d0/d09/classfl_1_1_pixel_iterator_a35aae7e5a31100abcf89783e51ca7e6c.html#a35aae7e5a31100abcf89783e51ca7e6c", null ],
+    [ "mStepDithering", "d0/d09/classfl_1_1_pixel_iterator_a61efed79d69580b3d3b44531b8215fea.html#a61efed79d69580b3d3b44531b8215fea", null ],
+    [ "mWireOrder", "d0/d09/classfl_1_1_pixel_iterator_a1b859c42451b7b6d8ea20b806903b9e5.html#a1b859c42451b7b6d8ea20b806903b9e5", null ]
 ];

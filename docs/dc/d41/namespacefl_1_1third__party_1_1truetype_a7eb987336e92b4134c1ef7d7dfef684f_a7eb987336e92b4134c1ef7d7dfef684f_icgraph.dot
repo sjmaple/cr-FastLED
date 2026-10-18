@@ -51,7 +51,7 @@ digraph "fl::third_party::truetype::ttSHORT"
   Node28 -> Node31 [id="edge23_Node000028_Node000031",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node31 [id="Node000031",label="fl::third_party::truetype\l::stbtt_GetCodepointBox",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d41/namespacefl_1_1third__party_1_1truetype_a4ae901fa69dd59cd649e6e3153648b91.html#a4ae901fa69dd59cd649e6e3153648b91",tooltip=" "];
   Node31 -> Node32 [id="edge24_Node000031_Node000032",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node32 [id="Node000032",label="fl::FontImpl::getGlyphMetrics",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d98/classfl_1_1_font_impl_aa270cb7e5e7c0a171d3130fcdac4608a.html#aa270cb7e5e7c0a171d3130fcdac4608a",tooltip=" "];
+  Node32 [id="Node000032",label="fl::FontImpl::getGlyphMetrics",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d98/classfl_1_1_font_impl_afe10ae06ed64422293bd0fa247706fa1.html#afe10ae06ed64422293bd0fa247706fa1",tooltip=" "];
   Node28 -> Node33 [id="edge25_Node000028_Node000033",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node33 [id="Node000033",label="fl::third_party::truetype\l::stbtt_GetCodepointHMetrics",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d41/namespacefl_1_1third__party_1_1truetype_a29b94b9b4d5533d417e137b87600e732.html#a29b94b9b4d5533d417e137b87600e732",tooltip=" "];
   Node33 -> Node32 [id="edge26_Node000033_Node000032",dir="back",color="steelblue1",style="solid",tooltip=" "];
@@ -70,7 +70,7 @@ digraph "fl::third_party::truetype::ttSHORT"
   Node1 -> Node36 [id="edge36_Node000001_Node000036",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node36 [id="Node000036",label="fl::third_party::truetype\l::stbtt_GetFontBoundingBox",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d41/namespacefl_1_1third__party_1_1truetype_adc16b9736f849891776241a56404d774.html#adc16b9736f849891776241a56404d774",tooltip=" "];
   Node36 -> Node37 [id="edge37_Node000036_Node000037",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node37 [id="Node000037",label="fl::FontImpl::getMetrics",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d98/classfl_1_1_font_impl_ad6d42f1f3ec24cc54da2c6e097252233.html#ad6d42f1f3ec24cc54da2c6e097252233",tooltip=" "];
+  Node37 [id="Node000037",label="fl::FontImpl::getMetrics",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d98/classfl_1_1_font_impl_a40cff091974d35aa8253c6b6c3957b91.html#a40cff091974d35aa8253c6b6c3957b91",tooltip=" "];
   Node1 -> Node38 [id="edge38_Node000001_Node000038",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node38 [id="Node000038",label="fl::third_party::truetype\l::stbtt_GetFontVMetrics",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d41/namespacefl_1_1third__party_1_1truetype_a4acac940779b6743e0d00507c06b3dcb.html#a4acac940779b6743e0d00507c06b3dcb",tooltip=" "];
   Node38 -> Node37 [id="edge39_Node000038_Node000037",dir="back",color="steelblue1",style="solid",tooltip=" "];
@@ -104,7 +104,7 @@ digraph "fl::third_party::truetype::ttSHORT"
   Node1 -> Node47 [id="edge59_Node000001_Node000047",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node47 [id="Node000047",label="fl::third_party::truetype\l::stbtt_ScaleForPixelHeight",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d41/namespacefl_1_1third__party_1_1truetype_a053274943fa27e0103095a97aa947dea.html#a053274943fa27e0103095a97aa947dea",tooltip=" "];
   Node47 -> Node48 [id="edge60_Node000047_Node000048",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node48 [id="Node000048",label="fl::FontImpl::getScaleFor\lPixelHeight",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d98/classfl_1_1_font_impl_a9290f43ac508dde27d9a14d60228d9d1.html#a9290f43ac508dde27d9a14d60228d9d1",tooltip=" "];
+  Node48 [id="Node000048",label="fl::FontImpl::getScaleFor\lPixelHeight",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d98/classfl_1_1_font_impl_a456b34ba861d252cceb53ca718db0367.html#a456b34ba861d252cceb53ca718db0367",tooltip=" "];
   Node47 -> Node21 [id="edge61_Node000047_Node000021",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node47 -> Node39 [id="edge62_Node000047_Node000039",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node47 -> Node35 [id="edge63_Node000047_Node000035",dir="back",color="steelblue1",style="solid",tooltip=" "];

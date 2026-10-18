@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 580;
+var viewWidth = 653;
 var viewHeight = 193;
 var sectionId = 'dynsection-0';
 </script>
@@ -159,8 +159,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="../../d4/d36/namespacefl_a87df9ab1ee1a3467dbd81c7e6af51eb2.html#a87df9ab1ee1a3467dbd81c7e6af51eb2" target="_top" xlink:title="Map 8&#45;bit brightness to 5&#45;bit (0&#45;31)">
-<polygon fill="white" stroke="#666666" points="470,-74 346,-74 346,-55 470,-55 470,-74"/>
-<text text-anchor="middle" x="408" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">fl::mapBrightness8to5</text>
+<polygon fill="white" stroke="#666666" points="477,-74 353,-74 353,-55 477,-55 477,-74"/>
+<text text-anchor="middle" x="415" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">fl::mapBrightness8to5</text>
 </a>
 </g>
 </g>
@@ -168,8 +168,8 @@ var sectionId = 'dynsection-0';
 <g id="edge5_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
 <g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M280.62,-64.5C298.11,-64.5 317.42,-64.5 335.57,-64.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="335.8,-68 345.8,-64.5 335.8,-61 335.8,-68"/>
+<path fill="none" stroke="#63b8ff" d="M280.74,-64.5C300.35,-64.5 322.33,-64.5 342.7,-64.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="342.87,-68 352.87,-64.5 342.87,-61 342.87,-68"/>
 </a>
 </g>
 </g>
@@ -185,9 +185,9 @@ var sectionId = 'dynsection-0';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="../../d4/d36/namespacefl_a53d5062c3cacc67b60ff5bc033333817.html#a53d5062c3cacc67b60ff5bc033333817" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="448,-19 368,-19 368,0 448,0 448,-19"/>
-<text text-anchor="middle" x="408" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">fl::make_pair</text>
+<g id="a_Node000008"><a xlink:href="../../df/d34/namespacefl_1_1adl__barrier_a2d13dba5fb6db91888eed78860f78f98.html#a2d13dba5fb6db91888eed78860f78f98" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="484,-19 346,-19 346,0 484,0 484,-19"/>
+<text text-anchor="middle" x="415" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">fl::adl_barrier::make_pair</text>
 </a>
 </g>
 </g>
@@ -195,17 +195,17 @@ var sectionId = 'dynsection-0';
 <g id="edge7_Node000007_Node000008" class="edge">
 <title>Node7&#45;&gt;Node8</title>
 <g id="a_edge7_Node000007_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M301.5,-9.5C320.53,-9.5 340.26,-9.5 357.45,-9.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="357.79,-13 367.79,-9.5 357.79,-6 357.79,-13"/>
+<path fill="none" stroke="#63b8ff" d="M301.73,-9.5C312.96,-9.5 324.48,-9.5 335.67,-9.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="335.83,-13 345.83,-9.5 335.83,-6 335.83,-13"/>
 </a>
 </g>
 </g>
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="../../d4/d36/namespacefl_a94488336a5db985fbda1bbd317bffc6a.html#a94488336a5db985fbda1bbd317bffc6a" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="572,-19 506,-19 506,0 572,0 572,-19"/>
-<text text-anchor="middle" x="539" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">fl::forward</text>
+<g id="a_Node000009"><a xlink:href="../../df/d34/namespacefl_1_1adl__barrier_ac53ccff21210ad77549fafb987263051.html#ac53ccff21210ad77549fafb987263051" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="645,-19 520,-19 520,0 645,0 645,-19"/>
+<text text-anchor="middle" x="582.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">fl::adl_barrier::forward</text>
 </a>
 </g>
 </g>
@@ -213,8 +213,8 @@ var sectionId = 'dynsection-0';
 <g id="edge8_Node000008_Node000009" class="edge">
 <title>Node8&#45;&gt;Node9</title>
 <g id="a_edge8_Node000008_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M448.05,-9.5C463,-9.5 480.11,-9.5 495.37,-9.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="495.59,-13 505.59,-9.5 495.59,-6 495.59,-13"/>
+<path fill="none" stroke="#63b8ff" d="M484.27,-9.5C492.63,-9.5 501.19,-9.5 509.59,-9.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="509.75,-13 519.75,-9.5 509.75,-6 509.75,-13"/>
 </a>
 </g>
 </g>

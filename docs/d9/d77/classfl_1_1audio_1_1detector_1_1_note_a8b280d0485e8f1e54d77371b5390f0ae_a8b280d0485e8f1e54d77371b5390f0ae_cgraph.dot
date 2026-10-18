@@ -1,0 +1,44 @@
+digraph "fl::audio::detector::Note::update"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fl::audio::detector\l::Note::update",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::audio::detector\l::Note::Note",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d77/classfl_1_1audio_1_1detector_1_1_note_a2fa16d57ef6a410dacd7a3aeaade3cdd.html#a2fa16d57ef6a410dacd7a3aeaade3cdd",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::adl_barrier::make\l_shared",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::adl_barrier::forward",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_ac53ccff21210ad77549fafb987263051.html#ac53ccff21210ad77549fafb987263051",tooltip=" "];
+  Node3 -> Node3 [id="edge4_Node000003_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge5_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::audio::detector\l::Note::calculatePitchBend",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d77/classfl_1_1audio_1_1detector_1_1_note_a5cc272460f450181d3df1a36c6213895.html#a5cc272460f450181d3df1a36c6213895",tooltip=" "];
+  Node5 -> Node6 [id="edge6_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::clamp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a391721290a9307391d39a0a897d9b9f4.html#a391721290a9307391d39a0a897d9b9f4",tooltip=" "];
+  Node5 -> Node7 [id="edge7_Node000005_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl::logf",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a009a6061a9324e18ae194e4c16749297.html#a009a6061a9324e18ae194e4c16749297",tooltip=" "];
+  Node7 -> Node8 [id="edge8_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="fl::log_impl_float",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_ab6b5dbc08494f2a1c20e046a948e30d8.html#ab6b5dbc08494f2a1c20e046a948e30d8",tooltip=" "];
+  Node5 -> Node10 [id="edge9_Node000005_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="fl::audio::detector\l::Note::midiNoteToFrequency",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d77/classfl_1_1audio_1_1detector_1_1_note_a75d910fe6cd3a6a1b3aa3d0830ebd13d.html#a75d910fe6cd3a6a1b3aa3d0830ebd13d",tooltip=" "];
+  Node10 -> Node11 [id="edge10_Node000010_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="fl::powf",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_ac85312ba3e9bfd6fe9a92841f52cbe06.html#ac85312ba3e9bfd6fe9a92841f52cbe06",tooltip=" "];
+  Node1 -> Node16 [id="edge11_Node000001_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="fl::audio::detector\l::Note::calculateVelocity",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d77/classfl_1_1audio_1_1detector_1_1_note_aaa9f66faa752d1f8b2ca12100caac213.html#aaa9f66faa752d1f8b2ca12100caac213",tooltip=" "];
+  Node16 -> Node6 [id="edge12_Node000016_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node17 [id="edge13_Node000001_Node000017",color="steelblue1",style="solid",tooltip=" "];
+  Node17 [id="Node000017",label="fl::audio::detector\l::Note::frequencyToMidiNote",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d77/classfl_1_1audio_1_1detector_1_1_note_a7d0fab221cf0a300c8bb919ffe56d382.html#a7d0fab221cf0a300c8bb919ffe56d382",tooltip=" "];
+  Node17 -> Node7 [id="edge14_Node000017_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node18 [id="edge15_Node000001_Node000018",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="fl::audio::detector\l::Note::shouldTriggerNoteChange",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d77/classfl_1_1audio_1_1detector_1_1_note_a410d95db0d475add53a6dfedaf4af52f.html#a410d95db0d475add53a6dfedaf4af52f",tooltip=" "];
+  Node18 -> Node19 [id="edge16_Node000018_Node000019",color="steelblue1",style="solid",tooltip=" "];
+  Node19 [id="Node000019",label="fl::abs",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_aea39aa3747a937b0dbefabdf22cf2bbc.html#aea39aa3747a937b0dbefabdf22cf2bbc",tooltip=" "];
+  Node1 -> Node20 [id="edge17_Node000001_Node000020",color="steelblue1",style="solid",tooltip=" "];
+  Node20 [id="Node000020",label="fl::audio::detector\l::Note::shouldTriggerNoteOff",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d77/classfl_1_1audio_1_1detector_1_1_note_ad8c8634b2cfc7a2d7a9d02367797b1bb.html#ad8c8634b2cfc7a2d7a9d02367797b1bb",tooltip=" "];
+  Node1 -> Node21 [id="edge18_Node000001_Node000021",color="steelblue1",style="solid",tooltip=" "];
+  Node21 [id="Node000021",label="fl::audio::detector\l::Note::shouldTriggerNoteOn",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d77/classfl_1_1audio_1_1detector_1_1_note_aa9edb5c5a097abccb9618c9aa5000f7e.html#aa9edb5c5a097abccb9618c9aa5000f7e",tooltip=" "];
+  Node1 -> Node1 [id="edge19_Node000001_Node000001",color="steelblue1",style="solid",tooltip=" "];
+}

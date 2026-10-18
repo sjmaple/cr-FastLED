@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -138,7 +138,7 @@ Use nullptr or empty string to disable all drivers (returns false) </dd></dl>
 </ul>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00276">276</a> of file <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html">manager.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  276</span>                                                              {</div>
+<div class="fragment"><div class="line"><span class="lineno">  276</span>                                                                           {</div>
 <div class="line"><span class="lineno">  277</span>    <span class="comment">// Handle null or empty name: disable everything.</span></div>
 <div class="line"><span class="lineno">  278</span>    <span class="keywordflow">if</span> (!name || !name[0]) {</div>
 <div class="line"><span class="lineno">  279</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a>(<span class="stringliteral">&quot;ChannelManager::setExclusiveDriverByName() - Null or empty driver name provided&quot;</span>);</div>
@@ -165,11 +165,11 @@ Use nullptr or empty string to disable all drivers (returns false) </dd></dl>
 <div class="line"><span class="lineno">  300</span>    }</div>
 <div class="line"><span class="lineno">  301</span>    <span class="keywordflow">return</span> found;</div>
 <div class="line"><span class="lineno">  302</span>}</div>
-<div class="ttc" id="aclassfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4_html_adc5f4506b80dc60555293e39438918c4"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">fl::ChannelManager::mDrivers</a></div><div class="ttdeci">fl::vector&lt; EngineEntry &gt; mDrivers</div><div class="ttdoc">Shared drivers sorted by priority descending (higher values first)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/manager_8h_source.html#l00321">manager.h:321</a></div></div>
-<div class="ttc" id="aclassfl_1_1_channel_manager_adc9e2a56bdb16a915e8bc1fd9198ec89_html_adc9e2a56bdb16a915e8bc1fd9198ec89"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_adc9e2a56bdb16a915e8bc1fd9198ec89.html#adc9e2a56bdb16a915e8bc1fd9198ec89">fl::ChannelManager::mExclusiveDriver</a></div><div class="ttdeci">fl::string mExclusiveDriver</div><div class="ttdoc">Exclusive driver name (empty if no exclusive mode)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/manager_8h_source.html#l00330">manager.h:330</a></div></div>
-<div class="ttc" id="alog_8h_aa90e3b2c36c6225140f46a86c6ac19e2_html_aa90e3b2c36c6225140f46a86c6ac19e2"><div class="ttname"><a href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a></div><div class="ttdeci">#define FL_ERROR(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00372">log.h:372</a></div></div>
+<div class="ttc" id="aclassfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4_html_adc5f4506b80dc60555293e39438918c4"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">fl::ChannelManager::mDrivers</a></div><div class="ttdeci">fl::vector&lt; EngineEntry &gt; mDrivers</div><div class="ttdoc">Shared drivers sorted by priority descending (higher values first)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/manager_8h_source.html#l00327">manager.h:327</a></div></div>
+<div class="ttc" id="aclassfl_1_1_channel_manager_adc9e2a56bdb16a915e8bc1fd9198ec89_html_adc9e2a56bdb16a915e8bc1fd9198ec89"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_adc9e2a56bdb16a915e8bc1fd9198ec89.html#adc9e2a56bdb16a915e8bc1fd9198ec89">fl::ChannelManager::mExclusiveDriver</a></div><div class="ttdeci">fl::string mExclusiveDriver</div><div class="ttdoc">Exclusive driver name (empty if no exclusive mode)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/manager_8h_source.html#l00336">manager.h:336</a></div></div>
+<div class="ttc" id="alog_8h_aa90e3b2c36c6225140f46a86c6ac19e2_html_aa90e3b2c36c6225140f46a86c6ac19e2"><div class="ttname"><a href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a></div><div class="ttdeci">#define FL_ERROR(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00373">log.h:373</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/d7f/log_8h_source.html#l00372">FL_ERROR</a>, <a class="el" href="../../db/d45/manager_8h_source.html#l00321">mDrivers</a>, and <a class="el" href="../../db/d45/manager_8h_source.html#l00330">mExclusiveDriver</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d7f/log_8h_source.html#l00373">FL_ERROR</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d45/manager_8h_source.html#l00327">mDrivers</a>, and <a class="el" href="../../db/d45/manager_8h_source.html#l00336">mExclusiveDriver</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00272">setExclusiveDriver()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -189,7 +189,7 @@ Use nullptr or empty string to disable all drivers (returns false) </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d2/d6b/classfl_1_1_channel_manager.html">ChannelManager</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

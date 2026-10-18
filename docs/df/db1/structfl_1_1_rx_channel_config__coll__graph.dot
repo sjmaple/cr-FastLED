@@ -19,4 +19,7 @@ digraph "fl::RxChannelConfig"
   Node6 [id="Node000006",label="fl::Optional\< u32 \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$dd/dd8/classfl_1_1_optional.html",tooltip=" "];
   Node7 -> Node6 [id="edge7_Node000006_Node000007",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< u32 \>",fontcolor="grey" ];
   Node7 [id="Node000007",label="fl::Optional\< T \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$dd/dd8/classfl_1_1_optional.html",tooltip=" "];
+  Node8 -> Node1 [id="edge8_Node000001_Node000008",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" stream_timing",fontcolor="grey" ];
+  Node8 [id="Node000008",label="fl::Optional\< fl::Chipset\lTiming4Phase \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$dd/dd8/classfl_1_1_optional.html",tooltip=" "];
+  Node7 -> Node8 [id="edge9_Node000008_Node000007",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< fl::ChipsetTiming4Phase \>",fontcolor="grey" ];
 }

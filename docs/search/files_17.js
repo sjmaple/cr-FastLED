@@ -44,6 +44,8 @@ var searchData=
   ['ws2801_5fencoder_5fimpl_2eh_41',['ws2801_encoder_impl.h',['../d8/d18/ws2801__encoder__impl_8h.html',1,'']]],
   ['ws2803_2eh_42',['ws2803.h',['../de/d74/ws2803_8h.html',1,'']]],
   ['ws2812_2eh_43',['ws2812.h',['../da/d1e/ws2812_8h.html',1,'']]],
-  ['ws2816_2eh_44',['ws2816.h',['../de/d27/ws2816_8h.html',1,'']]],
-  ['ws2816_2eino_45',['WS2816.ino',['../d6/d92/_w_s2816_8ino.html',1,'']]]
+  ['ws2812_5fstream_5fdecoder_2ecpp_2ehpp_44',['ws2812_stream_decoder.cpp.hpp',['../db/d06/ws2812__stream__decoder_8cpp_8hpp.html',1,'']]],
+  ['ws2812_5fstream_5fdecoder_2eh_45',['ws2812_stream_decoder.h',['../dd/d0c/ws2812__stream__decoder_8h.html',1,'']]],
+  ['ws2816_2eh_46',['ws2816.h',['../de/d27/ws2816_8h.html',1,'']]],
+  ['ws2816_2eino_47',['WS2816.ino',['../d6/d92/_w_s2816_8ino.html',1,'']]]
 ];

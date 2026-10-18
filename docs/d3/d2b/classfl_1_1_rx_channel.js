@@ -23,7 +23,7 @@ var classfl_1_1_rx_channel =
     [ "operator=", "d3/d2b/classfl_1_1_rx_channel_a1b092b84450764fd984fe36ab19eb7e0.html#a1b092b84450764fd984fe36ab19eb7e0", null ],
     [ "setConfig", "d3/d2b/classfl_1_1_rx_channel_aa40e3f90bf6da79b07ed8e6c9b723188.html#aa40e3f90bf6da79b07ed8e6c9b723188", null ],
     [ "wait", "d3/d2b/classfl_1_1_rx_channel_ad87d843263e75624a1a0913935352d7c.html#ad87d843263e75624a1a0913935352d7c", null ],
-    [ "fl::make_shared", "d3/d2b/classfl_1_1_rx_channel_a78ea2c5dff0ccc827b588262275077d9.html#a78ea2c5dff0ccc827b588262275077d9", null ],
+    [ "fl::adl_barrier::make_shared", "d3/d2b/classfl_1_1_rx_channel_ac7c8cef8edfc3d56305de5b1a9f8e70b.html#ac7c8cef8edfc3d56305de5b1a9f8e70b", null ],
     [ "mConfig", "d3/d2b/classfl_1_1_rx_channel_a577b4e69ba2f7c6d00b0ea6ba81b86ba.html#a577b4e69ba2f7c6d00b0ea6ba81b86ba", null ],
     [ "mDevice", "d3/d2b/classfl_1_1_rx_channel_a05e11eaeac99adfbd1165852ed978b93.html#a05e11eaeac99adfbd1165852ed978b93", null ],
     [ "mId", "d3/d2b/classfl_1_1_rx_channel_a284e2c8d078c57e2d8c71c3f2740137a.html#a284e2c8d078c57e2d8c71c3f2740137a", null ],

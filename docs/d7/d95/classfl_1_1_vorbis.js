@@ -1,7 +1,7 @@
 var classfl_1_1_vorbis =
 [
-    [ "createDecoder", "d7/d95/classfl_1_1_vorbis_abf4283371397a7dfbb2ce0550f0bb492.html#abf4283371397a7dfbb2ce0550f0bb492", null ],
-    [ "decodeAll", "d7/d95/classfl_1_1_vorbis_abe8fab497abf3a0cd44136b55daae864.html#abe8fab497abf3a0cd44136b55daae864", null ],
-    [ "isSupported", "d7/d95/classfl_1_1_vorbis_a8c97f9bda6f071e189f4ae46b68eeae8.html#a8c97f9bda6f071e189f4ae46b68eeae8", null ],
-    [ "parseVorbisInfo", "d7/d95/classfl_1_1_vorbis_a503e7dc297e7136f8f52b5fc2856a6ba.html#a503e7dc297e7136f8f52b5fc2856a6ba", null ]
+    [ "createDecoder", "d7/d95/classfl_1_1_vorbis_a49e96b4d74068743598e077ea36ef6ab.html#a49e96b4d74068743598e077ea36ef6ab", null ],
+    [ "decodeAll", "d7/d95/classfl_1_1_vorbis_a42bc11f8b4a1f6f9710b3128d69adc16.html#a42bc11f8b4a1f6f9710b3128d69adc16", null ],
+    [ "isSupported", "d7/d95/classfl_1_1_vorbis_aaceaa1e6cdede34fdd8ec060f8e479f0.html#aaceaa1e6cdede34fdd8ec060f8e479f0", null ],
+    [ "parseVorbisInfo", "d7/d95/classfl_1_1_vorbis_a760bffcc5c6add1b891cbf4622f058da.html#a760bffcc5c6add1b891cbf4622f058da", null ]
 ];

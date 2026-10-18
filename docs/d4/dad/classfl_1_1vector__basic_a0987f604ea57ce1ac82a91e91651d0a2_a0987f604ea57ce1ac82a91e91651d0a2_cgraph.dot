@@ -32,5 +32,8 @@ digraph "fl::vector_basic::move_assign"
   Node10 -> Node7 [id="edge14_Node000010_Node000007",color="steelblue1",style="solid",tooltip=" "];
   Node10 -> Node11 [id="edge15_Node000010_Node000011",color="steelblue1",style="solid",tooltip=" "];
   Node11 [id="Node000011",label="fl::vector_basic::trivial_copy",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/dad/classfl_1_1vector__basic_a2a90e682670f8fbcc40201fcbe03d999.html#a2a90e682670f8fbcc40201fcbe03d999",tooltip=" "];
-  Node8 -> Node11 [id="edge16_Node000008_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node10 -> Node14 [id="edge16_Node000010_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="fl::vector_basic::uninitialized\l_move_n_impl",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dad/classfl_1_1vector__basic_a92d9250650133807a2b5049c3f69e08b.html#a92d9250650133807a2b5049c3f69e08b",tooltip=" "];
+  Node8 -> Node11 [id="edge17_Node000008_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node8 -> Node14 [id="edge18_Node000008_Node000014",color="steelblue1",style="solid",tooltip=" "];
 }

@@ -12,11 +12,11 @@ digraph "fl::SlimSpiBridgeController&lt; CHIPSET, RGB_ORDER, B, B_WHICH &gt;"
   Node3 [id="Node000003",label="CLEDController",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d8/da0/classfl_1_1_c_l_e_d_controller.html",tooltip=" "];
   Node4 -> Node3 [id="edge3_Node000003_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mLeds",fontcolor="grey" ];
   Node4 [id="Node000004",label="fl::span\< fl::CRGB \>",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/d08/classfl_1_1span.html",tooltip=" "];
-  Node7 -> Node3 [id="edge4_Node000003_Node000007",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mPHead\nmPNext\nmPTail",fontcolor="grey" ];
+  Node7 -> Node3 [id="edge4_Node000003_Node000007",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mPHead\nmPNext",fontcolor="grey" ];
   Node7 [id="Node000007",label="fl::CLEDController",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d8/da0/classfl_1_1_c_l_e_d_controller.html",tooltip=" "];
   Node4 -> Node7 [id="edge5_Node000007_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mLeds",fontcolor="grey" ];
-  Node7 -> Node7 [id="edge6_Node000007_Node000007",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mPHead\nmPNext\nmPTail",fontcolor="grey" ];
-  Node8 -> Node7 [id="edge7_Node000007_Node000008",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mSettings",fontcolor="grey" ];
-  Node8 [id="Node000008",label="fl::ChannelOptions",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d87/structfl_1_1_channel_options.html",tooltip="Optional channel configuration parameters All fields have sensible defaults and can be overridden as ..."];
-  Node8 -> Node3 [id="edge8_Node000003_Node000008",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mSettings",fontcolor="grey" ];
+  Node7 -> Node7 [id="edge6_Node000007_Node000007",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mPHead\nmPNext",fontcolor="grey" ];
+  Node8 -> Node7 [id="edge7_Node000007_Node000008",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mLegacySettings",fontcolor="grey" ];
+  Node8 [id="Node000008",label="fl::LegacySettings",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d1/dc1/structfl_1_1_legacy_settings.html",tooltip=" "];
+  Node8 -> Node3 [id="edge8_Node000003_Node000008",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mLegacySettings",fontcolor="grey" ];
 }

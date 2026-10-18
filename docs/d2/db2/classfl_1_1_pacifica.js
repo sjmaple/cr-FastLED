@@ -1,11 +1,11 @@
 var classfl_1_1_pacifica =
 [
-    [ "Pacifica", "d2/db2/classfl_1_1_pacifica_a7b370deecffc6719cade35d4ee9617f3.html#a7b370deecffc6719cade35d4ee9617f3", null ],
-    [ "draw", "d2/db2/classfl_1_1_pacifica_a264d0c1db5db60028b6fab87af13d700.html#a264d0c1db5db60028b6fab87af13d700", null ],
-    [ "fxName", "d2/db2/classfl_1_1_pacifica_aec7bc0d8db0fe8766ef376df1815df69.html#aec7bc0d8db0fe8766ef376df1815df69", null ],
-    [ "pacifica_add_whitecaps", "d2/db2/classfl_1_1_pacifica_af306b5850186d2aae2bdad30b7236307.html#af306b5850186d2aae2bdad30b7236307", null ],
-    [ "pacifica_deepen_colors", "d2/db2/classfl_1_1_pacifica_a3905259cb664c2552667387ac3c3b804.html#a3905259cb664c2552667387ac3c3b804", null ],
-    [ "pacifica_one_layer", "d2/db2/classfl_1_1_pacifica_abacdfced6a88f08263b5b3b646c87db9.html#abacdfced6a88f08263b5b3b646c87db9", null ],
+    [ "Pacifica", "d2/db2/classfl_1_1_pacifica_a8c01bcef068588f1b8f5115c3260fcab.html#a8c01bcef068588f1b8f5115c3260fcab", null ],
+    [ "draw", "d2/db2/classfl_1_1_pacifica_a002d114b982aede947b02f314324bb85.html#a002d114b982aede947b02f314324bb85", null ],
+    [ "fxName", "d2/db2/classfl_1_1_pacifica_a6d1d85ad1d7e2a588100ce8743dd5246.html#a6d1d85ad1d7e2a588100ce8743dd5246", null ],
+    [ "pacifica_add_whitecaps", "d2/db2/classfl_1_1_pacifica_af2217519acec42bb8653fdf2b8396a5f.html#af2217519acec42bb8653fdf2b8396a5f", null ],
+    [ "pacifica_deepen_colors", "d2/db2/classfl_1_1_pacifica_a10f5dccf18880a19784d54fc7848488f.html#a10f5dccf18880a19784d54fc7848488f", null ],
+    [ "pacifica_one_layer", "d2/db2/classfl_1_1_pacifica_a016cc3f9407483d746a4c47104198bb1.html#a016cc3f9407483d746a4c47104198bb1", null ],
     [ "pacifica_palette_1", "d2/db2/classfl_1_1_pacifica_a3ab516f80fbad75dbb54df4c15f3de18.html#a3ab516f80fbad75dbb54df4c15f3de18", null ],
     [ "pacifica_palette_2", "d2/db2/classfl_1_1_pacifica_ab19c9798227d32cbc618bd2afbcf1b00.html#ab19c9798227d32cbc618bd2afbcf1b00", null ],
     [ "pacifica_palette_3", "d2/db2/classfl_1_1_pacifica_a68a450c0dd8338fe8abe30089242fb1f.html#a68a450c0dd8338fe8abe30089242fb1f", null ],

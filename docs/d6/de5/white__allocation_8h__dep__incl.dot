@@ -16,9 +16,9 @@ digraph "fl/gfx/white_allocation.h"
   Node7 [id="Node000007",label="fl/gfx/pipeline.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d7a/pipeline_8h.html",tooltip=" "];
   Node7 -> Node8 [id="edge5_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node8 [id="Node000008",label="fl/channels/channel.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d7b/channel_8h.html",tooltip="ESP32-P4 Parallel IO (PARLIO) LED channel."];
-  Node7 -> Node20 [id="edge6_Node000007_Node000020",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node20 [id="Node000020",label="fl/channels/color_managed\l_source.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$db/d8c/color__managed__source_8h.html",tooltip=" "];
-  Node20 -> Node23 [id="edge7_Node000020_Node000023",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 -> Node21 [id="edge6_Node000007_Node000021",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node21 [id="Node000021",label="fl/channels/color_managed\l_source.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$db/d8c/color__managed__source_8h.html",tooltip=" "];
+  Node21 -> Node23 [id="edge7_Node000021_Node000023",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node23 [id="Node000023",label="fl/channels/pipeline\l_binding.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d7/dcc/pipeline__binding_8h.html",tooltip=" "];
   Node7 -> Node23 [id="edge8_Node000007_Node000023",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node7 -> Node25 [id="edge9_Node000007_Node000025",dir="back",color="steelblue1",style="solid",tooltip=" "];

@@ -18,9 +18,9 @@ digraph "fl/math/math8.h"
   Node6 [id="Node000006",label="pixel_controller.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d4d/pixel__controller_8h.html",tooltip="Low level pixel data writing class."];
   Node6 -> Node7 [id="edge6_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node7 [id="Node000007",label="cpixel_ledcontroller.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d9/d57/cpixel__ledcontroller_8h.html",tooltip="defines the templated version of the CLEDController class"];
-  Node7 -> Node71 [id="edge7_Node000007_Node000071",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node71 [id="Node000071",label="fl/chipsets/ucs7604.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/d00/ucs7604_8h.html",tooltip="UCS7604 LED chipset controller implementation for FastLED."];
-  Node71 -> Node66 [id="edge8_Node000071_Node000066",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 -> Node72 [id="edge7_Node000007_Node000072",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node72 [id="Node000072",label="fl/chipsets/ucs7604.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/d00/ucs7604_8h.html",tooltip="UCS7604 LED chipset controller implementation for FastLED."];
+  Node72 -> Node66 [id="edge8_Node000072_Node000066",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node66 [id="Node000066",label="fl/channels/channel.cpp.hpp",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d3/de6/channel_8cpp_8hpp.html",tooltip=" "];
   Node7 -> Node15 [id="edge9_Node000007_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node15 [id="Node000015",label="fl/system/fastled.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/d69/fl_2system_2fastled_8h.html",tooltip="Internal FastLED header for implementation files."];
@@ -33,8 +33,8 @@ digraph "fl/math/math8.h"
   Node15 -> Node46 [id="edge14_Node000015_Node000046",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node46 [id="Node000046",label="fl/math/ease.cpp.hpp",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d60/ease_8cpp_8hpp.html",tooltip=" "];
   Node6 -> Node66 [id="edge15_Node000006_Node000066",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 -> Node75 [id="edge16_Node000006_Node000075",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node75 [id="Node000075",label="fl/channels/cled_controller.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d6/d9d/fl_2channels_2cled__controller_8h.html",tooltip="base definitions used by led controllers for writing out led data"];
+  Node6 -> Node76 [id="edge16_Node000006_Node000076",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node76 [id="Node000076",label="fl/channels/cled_controller.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d6/d9d/fl_2channels_2cled__controller_8h.html",tooltip="base definitions used by led controllers for writing out led data"];
   Node6 -> Node78 [id="edge17_Node000006_Node000078",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node78 [id="Node000078",label="fl/channels/color_managed\l_source.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$db/d8c/color__managed__source_8h.html",tooltip=" "];
   Node78 -> Node80 [id="edge18_Node000078_Node000080",dir="back",color="steelblue1",style="solid",tooltip=" "];
@@ -45,7 +45,7 @@ digraph "fl/math/math8.h"
   Node60 -> Node3 [id="edge21_Node000060_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node60 -> Node4 [id="edge22_Node000060_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node6 -> Node80 [id="edge23_Node000006_Node000080",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 -> Node71 [id="edge24_Node000006_Node000071",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 -> Node72 [id="edge24_Node000006_Node000072",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node6 -> Node81 [id="edge25_Node000006_Node000081",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node81 [id="Node000081",label="fl/fx/2d/animartrix.hpp",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d3/dc3/animartrix_8hpp.html",tooltip=" "];
   Node6 -> Node89 [id="edge26_Node000006_Node000089",dir="back",color="steelblue1",style="solid",tooltip=" "];

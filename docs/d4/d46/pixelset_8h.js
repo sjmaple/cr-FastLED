@@ -12,5 +12,5 @@ var pixelset_8h =
     [ "FUNCTION_NAPPLY_GAMMA_RGB", "d4/d46/pixelset_8h_abea273ddd1d78f24d507b740a176b9fc.html#abea273ddd1d78f24d507b740a176b9fc", null ],
     [ "FUNCTION_NBLEND", "d4/d46/pixelset_8h_a2444a216aff12310f5d8c36442d81250.html#a2444a216aff12310f5d8c36442d81250", null ],
     [ "CRGBSet", "d4/d46/pixelset_8h_af5de5d996b3399837264a10ba96df667.html#af5de5d996b3399837264a10ba96df667", null ],
-    [ "operator+", "de/d64/group___pixel_set_ga07378b5cb6c73b8e56e8e3d445422af8.html#ga07378b5cb6c73b8e56e8e3d445422af8", null ]
+    [ "operator+", "de/d64/group___pixel_set_ga2173b0206af000ca67a5d04eab3f2813.html#ga2173b0206af000ca67a5d04eab3f2813", null ]
 ];

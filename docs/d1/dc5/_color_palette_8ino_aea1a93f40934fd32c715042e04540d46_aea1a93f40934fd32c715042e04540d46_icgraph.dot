@@ -11,4 +11,10 @@ digraph "SetupPurpleAndGreenPalette"
   Node2 [id="Node000002",label="ChangePalettePeriodically",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/dc5/_color_palette_8ino_a50c2e0f8c7120112ab44db6f47400021.html#a50c2e0f8c7120112ab44db6f47400021",tooltip=" "];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="loop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/dc5/_color_palette_8ino_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::NoisePalette::setPalette\lPreset",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d41/classfl_1_1_noise_palette_a2775ee821129ad94489925d759ec7917.html#a2775ee821129ad94489925d759ec7917",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::NoisePalette::NoisePalette",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d41/classfl_1_1_noise_palette_ac17d44909a390d187b62a54791f2ff68.html#ac17d44909a390d187b62a54791f2ff68",tooltip=" "];
+  Node4 -> Node6 [id="edge5_Node000004_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::NoisePalette::change\lToRandomPalette",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d41/classfl_1_1_noise_palette_acdb31b74b109cd4d9c43b273eda1f546.html#acdb31b74b109cd4d9c43b273eda1f546",tooltip=" "];
 }

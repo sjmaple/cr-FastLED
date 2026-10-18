@@ -11,7 +11,5 @@ digraph "fl::time"
   Node2 [id="Node000002",label="fl::millis64",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a822570130e003c9bdf7307e2a29bc9ab.html#a822570130e003c9bdf7307e2a29bc9ab",tooltip="64-bit millisecond timer - returns milliseconds since system startup without wraparound"];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="fl::millis",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a3c0ba5842bfd029c404a38c8df2315f3.html#a3c0ba5842bfd029c404a38c8df2315f3",tooltip="Universal millisecond timer - returns milliseconds since system startup."];
-  Node3 -> Node3 [id="edge3_Node000003_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node2 -> Node2 [id="edge4_Node000002_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node1 -> Node1 [id="edge5_Node000001_Node000001",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node1 [id="edge3_Node000001_Node000001",color="steelblue1",style="solid",tooltip=" "];
 }

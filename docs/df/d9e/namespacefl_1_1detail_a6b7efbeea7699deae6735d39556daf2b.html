@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -128,21 +128,31 @@ template&lt;<a class="el" href="../../d4/d36/namespacefl_a7e1e94407fbd018269794d
 <p>Helper used by <code>enableDrivers&lt;<a class="el" href="../../d4/d36/namespacefl_a7e1e94407fbd018269794d74ab7fb4c1.html#a7e1e94407fbd018269794d74ab7fb4c1" title="Portable public bus selector.">Bus</a>...&gt;()</code> to expand the parameter pack. </p>
 <p>Each call ODR-uses <code><a class="el" href="../../d4/d36/namespacefl.html#d8/d0d/structfl_1_1_bus_traits" title="Primary template — intentionally undefined.">BusTraits</a>&lt;B&gt;::registerWithManager()</code>, which lazily constructs the driver singleton AND registers it with <code><a class="el" href="../../d2/d6b/classfl_1_1_channel_manager.html" title="Unified channel manager with priority-based driver selection.">ChannelManager</a></code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dd5/bus__traits_8h_source.html#l00055">55</a> of file <a class="el" href="../../d5/dd5/bus__traits_8h_source.html">bus_traits.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>                                           {</div>
-<div class="line"><span class="lineno">   56</span>    <a class="code hl_struct" href="../../d4/d36/namespacefl.html#d8/d0d/structfl_1_1_bus_traits">BusTraits&lt;B, Which&gt;::registerWithManager</a>();</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   58</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/dd5/bus__traits_8h_source.html#l00084">84</a> of file <a class="el" href="../../d5/dd5/bus__traits_8h_source.html">bus_traits.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>                                           {</div>
+<div class="line"><span class="lineno">   85</span>    <span class="comment">// Explicitly enabling a bus makes it eligible for clockless channels too.</span></div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_a9f56a736505d79fc774a092232ebe4d0.html#a9f56a736505d79fc774a092232ebe4d0">enable_clockless&lt;BusTraits&lt;B, Which&gt;</a>&gt;();</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_struct" href="../../d4/d36/namespacefl.html#d8/d0d/structfl_1_1_bus_traits">BusTraits&lt;B, Which&gt;::registerWithManager</a>();</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   89</span>}</div>
+<div class="ttc" id="anamespacefl_1_1detail_a9f56a736505d79fc774a092232ebe4d0_html_a9f56a736505d79fc774a092232ebe4d0"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_a9f56a736505d79fc774a092232ebe4d0.html#a9f56a736505d79fc774a092232ebe4d0">fl::detail::enable_clockless</a></div><div class="ttdeci">void enable_clockless() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d5/dd5/bus__traits_8h_source.html#l00064">bus_traits.h:64</a></div></div>
 <div class="ttc" id="anamespacefl_html_d8/d0d/structfl_1_1_bus_traits"><div class="ttname"><a href="../../d4/d36/namespacefl.html#d8/d0d/structfl_1_1_bus_traits">fl::BusTraits</a></div><div class="ttdoc">Primary template — intentionally undefined.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/dd5/bus__traits_8h_source.html#l00031">bus_traits.h:31</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/dd5/bus__traits_8h_source.html#l00064">enable_clockless()</a>, and <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/dd5/bus__traits_8h_source.html#l00088">fl::enableDriver()</a>, and <a class="el" href="../../d5/dd5/bus__traits_8h_source.html#l00081">fl::enableDrivers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/dd5/bus__traits_8h_source.html#l00119">fl::enableDriver()</a>, and <a class="el" href="../../d5/dd5/bus__traits_8h_source.html#l00112">fl::enableDrivers()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d9e/namespacefl_1_1detail_a6b7efbeea7699deae6735d39556daf2b_a6b7efbeea7699deae6735d39556daf2b_cgraph.svg" width="555" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d9e/namespacefl_1_1detail_a6b7efbeea7699deae6735d39556daf2b_a6b7efbeea7699deae6735d39556daf2b_icgraph.svg" width="383" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -155,7 +165,7 @@ template&lt;<a class="el" href="../../d4/d36/namespacefl_a7e1e94407fbd018269794d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../df/d9e/namespacefl_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

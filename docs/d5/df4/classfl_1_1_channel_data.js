@@ -25,7 +25,7 @@ var classfl_1_1_channel_data =
     [ "setPaddingGenerator", "d5/df4/classfl_1_1_channel_data_aaceb211d5b3f299ee696e5ddbe72d6ec.html#aaceb211d5b3f299ee696e5ddbe72d6ec", null ],
     [ "setPixelFormat", "d5/df4/classfl_1_1_channel_data_a54fee3b821ab9b3ce20d30081384e145.html#a54fee3b821ab9b3ce20d30081384e145", null ],
     [ "writeWithPadding", "d5/df4/classfl_1_1_channel_data_a87bf0e03ddb3893498d3d9342fa62089.html#a87bf0e03ddb3893498d3d9342fa62089", null ],
-    [ "fl::make_shared", "d5/df4/classfl_1_1_channel_data_a78ea2c5dff0ccc827b588262275077d9.html#a78ea2c5dff0ccc827b588262275077d9", null ],
+    [ "fl::adl_barrier::make_shared", "d5/df4/classfl_1_1_channel_data_ac7c8cef8edfc3d56305de5b1a9f8e70b.html#ac7c8cef8edfc3d56305de5b1a9f8e70b", null ],
     [ "mChipset", "d5/df4/classfl_1_1_channel_data_a8fdeeb05ba209f295262d349264f75af.html#a8fdeeb05ba209f295262d349264f75af", null ],
     [ "mEncodedData", "d5/df4/classfl_1_1_channel_data_ae89fb931c338f84d50869928c38f7536.html#ae89fb931c338f84d50869928c38f7536", null ],
     [ "mExtraZeroBits", "d5/df4/classfl_1_1_channel_data_abbd186ebc2ecc8bcccd1ff559959e71a.html#abbd186ebc2ecc8bcccd1ff559959e71a", null ],

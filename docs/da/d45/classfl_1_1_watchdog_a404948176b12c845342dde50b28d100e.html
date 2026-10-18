@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -120,16 +120,16 @@ $(function(){initNavTree('da/d45/classfl_1_1_watchdog_a404948176b12c845342dde50b
 <p>Setting a non-zero threshold makes the <em>device</em> break that loop: after N consecutive watchdog resets, <code><a class="el" href="../../da/d45/classfl_1_1_watchdog_ae940dcd937074819227de3eb205aea73.html#ae940dcd937074819227de3eb205aea73" title="Reboot into the bootloader if this looks like a boot loop.">escapeToBootloaderIfLooping()</a></code> reboots into the bootloader, where the board re-enumerates as a flashable target and the host can push working firmware without a human.</p>
 <p>Opt-in by design &ndash; the default of 0 disables it. Call the check early in <code><a class="el" href="../../d5/d17/_analog_output_8ino_a4fc01d736fe50cf5b977f755b675f11d.html#a4fc01d736fe50cf5b977f755b675f11d">setup()</a></code>, before any code that might wedge: </p><div class="fragment"><div class="line"><a class="code hl_variable" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_a8e94985674086ea368e1d51cbc0f82a9.html#a8e94985674086ea368e1d51cbc0f82a9">FastLED</a>.watchdog().setBootloaderEscapeThreshold(3);</div>
 <div class="line"><a class="code hl_variable" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_a8e94985674086ea368e1d51cbc0f82a9.html#a8e94985674086ea368e1d51cbc0f82a9">FastLED</a>.watchdog().escapeToBootloaderIfLooping();</div>
-<div class="ttc" id="a_fast_l_e_d_8cpp_8hpp_a8e94985674086ea368e1d51cbc0f82a9_html_a8e94985674086ea368e1d51cbc0f82a9"><div class="ttname"><a href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_a8e94985674086ea368e1d51cbc0f82a9.html#a8e94985674086ea368e1d51cbc0f82a9">FastLED</a></div><div class="ttdeci">FL_DISABLE_WARNING_PUSH FL_DISABLE_WARNING_GLOBAL_CONSTRUCTORS CFastLED FastLED</div><div class="ttdoc">Global LED strip management instance.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_source.html#l00090">FastLED.cpp.hpp:90</a></div></div>
+<div class="ttc" id="a_fast_l_e_d_8cpp_8hpp_a8e94985674086ea368e1d51cbc0f82a9_html_a8e94985674086ea368e1d51cbc0f82a9"><div class="ttname"><a href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_a8e94985674086ea368e1d51cbc0f82a9.html#a8e94985674086ea368e1d51cbc0f82a9">FastLED</a></div><div class="ttdeci">FL_DISABLE_WARNING_PUSH FL_DISABLE_WARNING_GLOBAL_CONSTRUCTORS CFastLED FastLED</div><div class="ttdoc">Global LED strip management instance.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_source.html#l00093">FastLED.cpp.hpp:93</a></div></div>
 </div><!-- fragment --><p> Requires <code>FL_WATCHDOG_HAS_BOOTLOADER_REBOOT</code>; elsewhere the escape is a no-op that returns false and leaves the crash counter intact. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dc4/watchdog_8cpp_8hpp_source.html#l00104">104</a> of file <a class="el" href="../../d4/dc4/watchdog_8cpp_8hpp_source.html">watchdog.cpp.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  104</span>                                                             {</div>
 <div class="line"><span class="lineno">  105</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../da/d45/classfl_1_1_watchdog_ab2dd2c95c5239e5f1422de1e7fcdffbd.html#ab2dd2c95c5239e5f1422de1e7fcdffbd">mBootloaderEscapeThreshold</a>;</div>
 <div class="line"><span class="lineno">  106</span>}</div>
-<div class="ttc" id="aclassfl_1_1_watchdog_ab2dd2c95c5239e5f1422de1e7fcdffbd_html_ab2dd2c95c5239e5f1422de1e7fcdffbd"><div class="ttname"><a href="../../da/d45/classfl_1_1_watchdog_ab2dd2c95c5239e5f1422de1e7fcdffbd.html#ab2dd2c95c5239e5f1422de1e7fcdffbd">fl::Watchdog::mBootloaderEscapeThreshold</a></div><div class="ttdeci">fl::u16 mBootloaderEscapeThreshold</div><div class="ttdef"><b>Definition</b> <a href="../../d9/da3/watchdog_8h_source.html#l00223">watchdog.h:223</a></div></div>
+<div class="ttc" id="aclassfl_1_1_watchdog_ab2dd2c95c5239e5f1422de1e7fcdffbd_html_ab2dd2c95c5239e5f1422de1e7fcdffbd"><div class="ttname"><a href="../../da/d45/classfl_1_1_watchdog_ab2dd2c95c5239e5f1422de1e7fcdffbd.html#ab2dd2c95c5239e5f1422de1e7fcdffbd">fl::Watchdog::mBootloaderEscapeThreshold</a></div><div class="ttdeci">fl::u16 mBootloaderEscapeThreshold</div><div class="ttdef"><b>Definition</b> <a href="../../d9/da3/watchdog_8h_source.html#l00236">watchdog.h:236</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../d9/da3/watchdog_8h_source.html#l00223">mBootloaderEscapeThreshold</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../d9/da3/watchdog_8h_source.html#l00236">mBootloaderEscapeThreshold</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/d45/classfl_1_1_watchdog_a52c7e7907740b1fd50f57d8586bd5a75.html#a52c7e7907740b1fd50f57d8586bd5a75">setSafeModeThreshold()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -149,7 +149,7 @@ $(function(){initNavTree('da/d45/classfl_1_1_watchdog_a404948176b12c845342dde50b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../da/d45/classfl_1_1_watchdog.html">Watchdog</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:33 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

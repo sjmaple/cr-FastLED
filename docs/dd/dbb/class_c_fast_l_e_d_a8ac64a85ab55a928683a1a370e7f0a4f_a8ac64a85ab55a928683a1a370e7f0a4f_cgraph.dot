@@ -1,0 +1,41 @@
+digraph "CFastLED::add"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="CFastLED::add",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Add an audio input and return an auto-pumped Processor."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::audio::AudioManager::add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d9d/classfl_1_1audio_1_1_audio_manager_a50a318328d3ab7153dd90b4f7c63c5c0.html#a50a318328d3ab7153dd90b4f7c63c5c0",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::audio::IInput::\lcreate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d4d/classfl_1_1audio_1_1_i_input_a925d8b08b3e91a560d3529a9f589f22a.html#a925d8b08b3e91a560d3529a9f589f22a",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::audio::platform\l_create_audio_input",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/dbf/namespacefl_1_1audio_ab0cc5f603e5934c80a76915ffcbbc65f.html#ab0cc5f603e5934c80a76915ffcbbc65f",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::adl_barrier::make\l_shared",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c",tooltip=" "];
+  Node5 -> Node5 [id="edge5_Node000005_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node7 [id="edge6_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl::audio::Processor\l::createWithAutoInput",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d6b/classfl_1_1audio_1_1_processor_ac25ffea2d1abf227cecff4e4a7448a5a.html#ac25ffea2d1abf227cecff4e4a7448a5a",tooltip=" "];
+  Node7 -> Node7 [id="edge7_Node000007_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 -> Node8 [id="edge8_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="fl::task::every_ms",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$db/d5c/namespacefl_1_1task_ad990b0044cf3097520e9afa9aa6b27f5.html#ad990b0044cf3097520e9afa9aa6b27f5",tooltip="Creates a task that runs at a fixed millisecond interval."];
+  Node8 -> Node5 [id="edge9_Node000008_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node7 -> Node10 [id="edge10_Node000007_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="fl::weak_ptr::lock",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d1/dd6/classfl_1_1weak__ptr_a4778142e95d49053ea59a79c47137b06.html#a4778142e95d49053ea59a79c47137b06",tooltip=" "];
+  Node7 -> Node5 [id="edge11_Node000007_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node7 -> Node14 [id="edge12_Node000007_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="fl::sample",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a1e7b3f485388c3ebd7e338c17289b7d1.html#a1e7b3f485388c3ebd7e338c17289b7d1",tooltip="Sample a pixel from a 2D CRGB grid at floating-point coordinates."];
+  Node7 -> Node21 [id="edge13_Node000007_Node000021",color="steelblue1",style="solid",tooltip=" "];
+  Node21 [id="Node000021",label="fl::task::Handle::then",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$de/daf/classfl_1_1task_1_1_handle_a0d96031ff5c53ece780698c5f39d9d2b.html#a0d96031ff5c53ece780698c5f39d9d2b",tooltip="Sets the callback invoked when the task runs successfully."];
+  Node21 -> Node24 [id="edge14_Node000021_Node000024",color="steelblue1",style="solid",tooltip=" "];
+  Node24 [id="Node000024",label="fl::adl_barrier::move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc.html#a12b4192c17e37b3e4322cec1a2debdcc",tooltip=" "];
+  Node2 -> Node5 [id="edge15_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node24 [id="edge16_Node000002_Node000024",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node30 [id="edge17_Node000002_Node000030",color="steelblue1",style="solid",tooltip=" "];
+  Node30 [id="Node000030",label="fl::audio::AudioManager\l::processor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d9d/classfl_1_1audio_1_1_audio_manager_ac686e7c75174487ac84385ccfdec455b.html#ac686e7c75174487ac84385ccfdec455b",tooltip=" "];
+  Node30 -> Node31 [id="edge18_Node000030_Node000031",color="steelblue1",style="solid",tooltip=" "];
+  Node31 [id="Node000031",label="fl::audio::AudioManager\l::instance",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d9d/classfl_1_1audio_1_1_audio_manager_a3c540fd2680373c71adf61f0c67f7b53.html#a3c540fd2680373c71adf61f0c67f7b53",tooltip=" "];
+  Node1 -> Node31 [id="edge19_Node000001_Node000031",color="steelblue1",style="solid",tooltip=" "];
+}

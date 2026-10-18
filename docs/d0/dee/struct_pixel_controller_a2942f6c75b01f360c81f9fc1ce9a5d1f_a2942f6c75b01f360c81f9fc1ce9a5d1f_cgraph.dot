@@ -1,0 +1,50 @@
+digraph "PixelController::loadAndScaleRGBW"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="PixelController::loadAnd\lScaleRGBW",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="PixelController::loadAnd\lScale0",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_ac781d584232fa20252e834c6443b01df.html#ac781d584232fa20252e834c6443b01df",tooltip="non-template alias of loadAndScale<0>()"];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="PixelController::loadAnd\lScale",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_a28eb1755a900be9b4a008a8f8672f51e.html#a28eb1755a900be9b4a008a8f8672f51e",tooltip="Complete pipeline: load â†’ dither â†’ scale (THE MAGIC HAPPENS HERE!) Order is critical: pixel + dit..."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="PixelController::PixelController",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/dee/struct_pixel_controller_a15c94e0bc05c85f6e4a790abea8f0050.html#a15c94e0bc05c85f6e4a790abea8f0050",tooltip="Copy constructor."];
+  Node4 -> Node4 [id="edge4_Node000004_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="PixelController::loadAnd\lScale1",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_a4cdddff28824a4128241865201b079f3.html#a4cdddff28824a4128241865201b079f3",tooltip="non-template alias of loadAndScale<1>()"];
+  Node6 -> Node3 [id="edge6_Node000006_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node7 [id="edge7_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="PixelController::loadAnd\lScale2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_abfe5d7e4f55da80cc41d6b6bf75c1d7b.html#abfe5d7e4f55da80cc41d6b6bf75c1d7b",tooltip="non-template alias of loadAndScale<2>()"];
+  Node7 -> Node3 [id="edge8_Node000007_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node8 [id="edge9_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="PixelController::loadAnd\lScaleRGBWUnordered",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_a225af4f3c371082ba7956a682c04f885.html#a225af4f3c371082ba7956a682c04f885",tooltip="loadAndScaleRGBW before its wire reorder: RGB in source order plus W."];
+  Node8 -> Node9 [id="edge10_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="PixelController::loadAnd\lScaleChannel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_a51a13a6ff889168738e41eb793daf5c8.html#a51a13a6ff889168738e41eb793daf5c8",tooltip="One source channel, loaded, dithered and scaled – loadAndScale<SLOT> with RO(SLOT) replaced by a runt..."];
+  Node9 -> Node10 [id="edge11_Node000009_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="fl::BinaryDither::apply",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d6c/structfl_1_1_binary_dither_a855eeda5bd1b617b06acd895eeba5b03.html#a855eeda5bd1b617b06acd895eeba5b03",tooltip="Add the offset to a source byte, before scaling. Black is never lifted."];
+  Node8 -> Node11 [id="edge12_Node000008_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="fl::rgb_2_rgbw",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a5d7f88cea77f862d6c24639b5a0cd916.html#a5d7f88cea77f862d6c24639b5a0cd916",tooltip="Converts RGB to RGBW using one of the functions."];
+  Node11 -> Node12 [id="edge13_Node000011_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="fl::rgb_2_rgbw_colorimetric",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a25c2dc6d7ea89abcd4c49a3f47db92a8.html#a25c2dc6d7ea89abcd4c49a3f47db92a8",tooltip=" "];
+  Node12 -> Node13 [id="edge14_Node000012_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="fl::rgb_2_rgbw_exact",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a6aa3f7f2e78c62689adead6bf6345fc2.html#a6aa3f7f2e78c62689adead6bf6345fc2",tooltip="Converts RGB to RGBW using a color transfer method from saturated color channels to white."];
+  Node11 -> Node14 [id="edge15_Node000011_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="fl::rgb_2_rgbw_colorimetric\l_boosted",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ac181c9536b6f0d1d772a4bd18f48a543.html#ac181c9536b6f0d1d772a4bd18f48a543",tooltip=" "];
+  Node14 -> Node13 [id="edge16_Node000014_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node11 -> Node13 [id="edge17_Node000011_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node11 -> Node15 [id="edge18_Node000011_Node000015",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="fl::rgb_2_rgbw_max\l_brightness",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_aa1613ee1e95b25e5378d780742d73719.html#aa1613ee1e95b25e5378d780742d73719",tooltip="The minimum brigthness of the RGB channels is used to set the W channel."];
+  Node11 -> Node16 [id="edge19_Node000011_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="fl::rgb_2_rgbw_null\l_white_pixel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a127a41ddb75b964f9c4fd9b495116195.html#a127a41ddb75b964f9c4fd9b495116195",tooltip="Converts RGB to RGBW with the W channel set to black, always."];
+  Node11 -> Node17 [id="edge20_Node000011_Node000017",color="steelblue1",style="solid",tooltip=" "];
+  Node17 [id="Node000017",label="fl::rgb_2_rgbw_user\l_function",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a026d160d22f564528df70c6bfca44db5.html#a026d160d22f564528df70c6bfca44db5",tooltip=" "];
+  Node17 -> Node13 [id="edge21_Node000017_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node11 -> Node20 [id="edge22_Node000011_Node000020",color="steelblue1",style="solid",tooltip=" "];
+  Node20 [id="Node000020",label="fl::rgb_2_rgbw_white\l_boosted",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_af35efd61260f0d8d2bf7da89f49ac821.html#af35efd61260f0d8d2bf7da89f49ac821",tooltip="Converts RGB to RGBW with a boosted white channel."];
+  Node1 -> Node21 [id="edge23_Node000001_Node000021",color="steelblue1",style="solid",tooltip=" "];
+  Node21 [id="Node000021",label="fl::rgbw_partial_reorder",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a4ab7970bd150284b7202696df8e33f45.html#a4ab7970bd150284b7202696df8e33f45",tooltip=" "];
+}

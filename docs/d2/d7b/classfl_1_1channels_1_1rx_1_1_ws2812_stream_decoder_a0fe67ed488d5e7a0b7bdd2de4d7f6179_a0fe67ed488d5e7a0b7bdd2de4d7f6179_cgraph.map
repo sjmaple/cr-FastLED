@@ -1,0 +1,13 @@
+<map id="fl::channels::rx::Ws2812StreamDecoder::finish" name="fl::channels::rx::Ws2812StreamDecoder::finish">
+<area shape="rect" id="Node000001" title="Re&#45;classify the recorded bits with the decode&#45;time timing and write the partial final byte." alt="" coords="5,101,183,141"/>
+<area shape="rect" id="Node000002" href="$dc/d85/namespacefl_1_1channels_1_1rx_ad26bb47dfa9011bf5c2892ccd195fb2c.html#ad26bb47dfa9011bf5c2892ccd195fb2c" title="#3416 adaptive midpoint: (min + max) / 2 of the observed HIGH widths once there are enough samples sp..." alt="" coords="231,5,412,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,99,230,55,248,48,250,53,232,60,136,104"/>
+<area shape="rect" id="Node000004" href="$dc/d85/namespacefl_1_1channels_1_1rx_a883c519348a2e69df1502c2f674f9196.html#a883c519348a2e69df1502c2f674f9196" title="Bit from a HIGH whose LOW was a gap/reset or was not captured: range check against the T0H / T1H wind..." alt="" coords="231,69,412,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,106,217,101,218,107,183,112"/>
+<area shape="rect" id="Node000005" href="$dc/d85/namespacefl_1_1channels_1_1rx_ad0ca579764974dbfac47ac120654c4ff.html#ad0ca579764974dbfac47ac120654c4ff" title="Bit from a HIGH followed by a normal LOW: HIGH&#45;only midpoint split." alt="" coords="231,133,412,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="183,131,218,136,217,141,182,136"/>
+<area shape="rect" id="Node000006" href="$d4/d36/namespacefl_a88d4bfdee14966115c88ac9f9e99fca8.html#a88d4bfdee14966115c88ac9f9e99fca8" title=" " alt="" coords="287,198,356,223"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="135,139,232,183,274,197,273,202,230,188,133,144"/>
+<area shape="rect" id="Node000003" href="$dc/d85/namespacefl_1_1channels_1_1rx_aaab226b2c8b5f33410855b340465f674.html#aaab226b2c8b5f33410855b340465f674" title="Static threshold between a 0 and a 1 HIGH: midpoint of T0H max / T1H min." alt="" coords="460,5,641,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,23,446,23,446,28,412,28"/>
+</map>

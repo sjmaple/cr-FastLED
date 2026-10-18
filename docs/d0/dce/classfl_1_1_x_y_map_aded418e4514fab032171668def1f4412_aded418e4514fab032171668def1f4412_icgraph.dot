@@ -10,5 +10,5 @@ digraph "fl::XYMap::constructWithLookUpTable"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="fl::XYMap::fromXMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dce/classfl_1_1_x_y_map_af21deefaaca981ddb23af128e8149fc4.html#af21deefaaca981ddb23af128e8149fc4",tooltip="Create an XYMap from an XMap (treats 1D as 2D with height=1)"];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::Channel::setScreenMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_acfb78f07c618a1248db6c4fbbed5e408.html#acfb78f07c618a1248db6c4fbbed5e408",tooltip="Set screen map for 1D strip remapping from XMap."];
+  Node3 [id="Node000003",label="fl::Channel::setScreenMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_a2cc7c8cbeff38ff386530691ad3fddfa.html#a2cc7c8cbeff38ff386530691ad3fddfa",tooltip="Set screen map for 1D strip remapping from XMap."];
 }

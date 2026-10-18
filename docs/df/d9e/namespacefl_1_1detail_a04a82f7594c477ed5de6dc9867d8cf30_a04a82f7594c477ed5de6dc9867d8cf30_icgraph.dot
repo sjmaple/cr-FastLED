@@ -1,0 +1,58 @@
+digraph "fl::detail::printLoggerDisabledError"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="fl::detail::printLoggerDisabled\lError",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Print error message for disabled logger (non-template helper) Called from checkLoggerEnabled template..."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::detail::checkLoggerEnabled",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a459f07a7662ef6824a45c65030eea973.html#a459f07a7662ef6824a45c65030eea973",tooltip="Check if logger is enabled and print error once if not."];
+  Node2 -> Node2 [id="edge2_Node000002_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node3 [id="edge3_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::get_async_logger\l_by_index",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ab9e85de8ff537df22a9f8ca73384c8c7.html#ab9e85de8ff537df22a9f8ca73384c8c7",tooltip="Template-based logger accessor with auto-registration and enablement check."];
+  Node3 -> Node3 [id="edge4_Node000003_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node4 [id="edge5_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::get_audio_async\l_logger_isr",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a56259107e9183dbcaebfe7924a374852.html#a56259107e9183dbcaebfe7924a374852",tooltip=" "];
+  Node4 -> Node4 [id="edge6_Node000004_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node5 [id="edge7_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::get_audio_async\l_logger_main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a67245768556b67a8a0a98d2c3ac6b3d3.html#a67245768556b67a8a0a98d2c3ac6b3d3",tooltip=" "];
+  Node5 -> Node5 [id="edge8_Node000005_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node6 [id="edge9_Node000003_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::get_flexio_async\l_logger_isr",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a89fab7270ba9635b75f37d5537add78f.html#a89fab7270ba9635b75f37d5537add78f",tooltip=" "];
+  Node6 -> Node6 [id="edge10_Node000006_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node7 [id="edge11_Node000003_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl::get_flexio_async\l_logger_main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a2b2a34511a2741aad7203d61684ba1e9.html#a2b2a34511a2741aad7203d61684ba1e9",tooltip=" "];
+  Node7 -> Node7 [id="edge12_Node000007_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node8 [id="edge13_Node000003_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="fl::get_interrupt_async\l_logger_isr",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_aaef465302043a7f16f0df7162602d599.html#aaef465302043a7f16f0df7162602d599",tooltip=" "];
+  Node8 -> Node8 [id="edge14_Node000008_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node9 [id="edge15_Node000003_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="fl::get_interrupt_async\l_logger_main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_aa6752dec660c358ff6d715839b2ac535.html#aa6752dec660c358ff6d715839b2ac535",tooltip=" "];
+  Node9 -> Node9 [id="edge16_Node000009_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node10 [id="edge17_Node000003_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="fl::get_objectfled\l_async_logger_isr",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a51010e72a70dd9ae006fb5aab15856fe.html#a51010e72a70dd9ae006fb5aab15856fe",tooltip=" "];
+  Node10 -> Node10 [id="edge18_Node000010_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node11 [id="edge19_Node000003_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="fl::get_objectfled\l_async_logger_main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_aad36d900e1dcb61689a0db2efd3a8cf5.html#aad36d900e1dcb61689a0db2efd3a8cf5",tooltip=" "];
+  Node11 -> Node11 [id="edge20_Node000011_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node12 [id="edge21_Node000003_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="fl::get_parlio_async\l_logger_isr",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a8bcad1bcb0f2bdef5ec8cecd72959905.html#a8bcad1bcb0f2bdef5ec8cecd72959905",tooltip=" "];
+  Node12 -> Node12 [id="edge22_Node000012_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node13 [id="edge23_Node000003_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="fl::get_parlio_async\l_logger_main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a14484223a72878e1d4a82284f07f25fd.html#a14484223a72878e1d4a82284f07f25fd",tooltip=" "];
+  Node13 -> Node13 [id="edge24_Node000013_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node14 [id="edge25_Node000003_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="fl::get_rmt_async_logger_isr",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a94c8e12123e8526de8ee48d2f6dc6303.html#a94c8e12123e8526de8ee48d2f6dc6303",tooltip=" "];
+  Node14 -> Node14 [id="edge26_Node000014_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node15 [id="edge27_Node000003_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="fl::get_rmt_async_logger_main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a78f3fce9f621e69b99e850cfebcc6395.html#a78f3fce9f621e69b99e850cfebcc6395",tooltip=" "];
+  Node15 -> Node15 [id="edge28_Node000015_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node16 [id="edge29_Node000003_Node000016",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="fl::get_spi_async_logger_isr",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ab5235fe1b564d2c6aad09a5578d13b09.html#ab5235fe1b564d2c6aad09a5578d13b09",tooltip=" "];
+  Node16 -> Node16 [id="edge30_Node000016_Node000016",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node17 [id="edge31_Node000003_Node000017",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node17 [id="Node000017",label="fl::get_spi_async_logger_main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a6f58fcd30c5bc9168202070b9f8f648d.html#a6f58fcd30c5bc9168202070b9f8f648d",tooltip=" "];
+  Node17 -> Node17 [id="edge32_Node000017_Node000017",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

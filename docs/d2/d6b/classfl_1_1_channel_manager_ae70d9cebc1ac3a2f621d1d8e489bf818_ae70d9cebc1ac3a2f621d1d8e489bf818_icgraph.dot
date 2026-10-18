@@ -10,5 +10,7 @@ digraph "fl::ChannelManager::isDriverEnabled"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="fl::SlimBridgeShowPolicy\l\< false \>::enabled",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/df1/structfl_1_1_slim_bridge_show_policy_3_01false_01_4_a9178c8e408b77596b79376012a1d6eda.html#a9178c8e408b77596b79376012a1d6eda",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="CFastLED::isDriverEnabled",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_a237827730dbf5eef5d2b036e8e796489.html#a237827730dbf5eef5d2b036e8e796489",tooltip="Check if a driver is enabled by name."];
+  Node3 [id="Node000003",label="CFastLED::isDriverEnabled",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_af06d8c2a5654f5078d532efe1f33ffc6.html#af06d8c2a5654f5078d532efe1f33ffc6",tooltip="Check if a driver is enabled by name."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::ChannelManager\l::isDriverEnabled",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d6b/classfl_1_1_channel_manager_a393ccb80579cfd061421b7d096deb147.html#a393ccb80579cfd061421b7d096deb147",tooltip="Enabled state of a driver instance, matched by pointer."];
 }

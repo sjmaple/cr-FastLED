@@ -10,14 +10,14 @@ digraph "fl::third_party::vorbis::stb_vorbis_open_filename"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="fl::third_party::vorbis\l::error",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d59/namespacefl_1_1third__party_1_1vorbis_a092e00ffafc59a6445bc25b536f58d4e.html#a092e00ffafc59a6445bc25b536f58d4e",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::fopen",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a8265ea50bbf5d95d7dc20f8bdbb9d9e8.html#a8265ea50bbf5d95d7dc20f8bdbb9d9e8",tooltip="Open a file."];
+  Node3 [id="Node000003",label="fl::fopen",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a791c44ed681bc30fc93eb6c01645f67f.html#a791c44ed681bc30fc93eb6c01645f67f",tooltip="Open a file."];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="fl::third_party::vorbis\l::stb_vorbis_open_file",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d59/namespacefl_1_1third__party_1_1vorbis_adf90d9af5d92a1e500007ccb2646c4bf.html#adf90d9af5d92a1e500007ccb2646c4bf",tooltip=" "];
   Node4 -> Node2 [id="edge4_Node000004_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node4 -> Node5 [id="edge5_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="fl::fseek",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a07cb8122a735dede4fda2e93053cc435.html#a07cb8122a735dede4fda2e93053cc435",tooltip="Set file position."];
+  Node5 [id="Node000005",label="fl::fseek",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a546bf8b311f807af9a81e95d57131455.html#a546bf8b311f807af9a81e95d57131455",tooltip="Set file position."];
   Node4 -> Node6 [id="edge6_Node000004_Node000006",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="fl::ftell",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_abdcc1d7d8e00727d7495db6d6116cf7d.html#abdcc1d7d8e00727d7495db6d6116cf7d",tooltip="Get current file position."];
+  Node6 [id="Node000006",label="fl::ftell",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a5864dae6c28c216c0f1106431f76172e.html#a5864dae6c28c216c0f1106431f76172e",tooltip="Get current file position."];
   Node4 -> Node7 [id="edge7_Node000004_Node000007",color="steelblue1",style="solid",tooltip=" "];
   Node7 [id="Node000007",label="fl::third_party::vorbis\l::stb_vorbis_open_file\l_section",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d59/namespacefl_1_1third__party_1_1vorbis_a7f4b0e4e9211077bba5d5c9ed1431260.html#a7f4b0e4e9211077bba5d5c9ed1431260",tooltip=" "];
   Node7 -> Node2 [id="edge8_Node000007_Node000002",color="steelblue1",style="solid",tooltip=" "];
@@ -27,12 +27,12 @@ digraph "fl::third_party::vorbis::stb_vorbis_open_filename"
   Node7 -> Node9 [id="edge11_Node000007_Node000009",color="steelblue1",style="solid",tooltip=" "];
   Node9 [id="Node000009",label="fl::third_party::vorbis\l::start_decoder",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d59/namespacefl_1_1third__party_1_1vorbis_a7d8979585d46acb349aa988deba85a8e.html#a7d8979585d46acb349aa988deba85a8e",tooltip=" "];
   Node9 -> Node2 [id="edge12_Node000009_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node7 -> Node70 [id="edge13_Node000007_Node000070",color="steelblue1",style="solid",tooltip=" "];
-  Node70 [id="Node000070",label="fl::third_party::vorbis\l::vorbis_alloc",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d59/namespacefl_1_1third__party_1_1vorbis_a5f774f6b393879bd03d2cc264513749b.html#a5f774f6b393879bd03d2cc264513749b",tooltip=" "];
-  Node7 -> Node71 [id="edge14_Node000007_Node000071",color="steelblue1",style="solid",tooltip=" "];
-  Node71 [id="Node000071",label="fl::third_party::vorbis\l::vorbis_deinit",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d59/namespacefl_1_1third__party_1_1vorbis_acddfc63731c8728d826da8747521aeaa.html#acddfc63731c8728d826da8747521aeaa",tooltip=" "];
-  Node7 -> Node74 [id="edge15_Node000007_Node000074",color="steelblue1",style="solid",tooltip=" "];
-  Node74 [id="Node000074",label="fl::third_party::vorbis\l::vorbis_init",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d59/namespacefl_1_1third__party_1_1vorbis_a2a7bcd6ae9935dd5c80676ff23469c77.html#a2a7bcd6ae9935dd5c80676ff23469c77",tooltip=" "];
-  Node7 -> Node75 [id="edge16_Node000007_Node000075",color="steelblue1",style="solid",tooltip=" "];
-  Node75 [id="Node000075",label="fl::third_party::vorbis\l::vorbis_pump_first_frame",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d59/namespacefl_1_1third__party_1_1vorbis_a8fbe0d7e9f951b5a980796d9579a23be.html#a8fbe0d7e9f951b5a980796d9579a23be",tooltip=" "];
+  Node7 -> Node74 [id="edge13_Node000007_Node000074",color="steelblue1",style="solid",tooltip=" "];
+  Node74 [id="Node000074",label="fl::third_party::vorbis\l::vorbis_alloc",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d59/namespacefl_1_1third__party_1_1vorbis_a5f774f6b393879bd03d2cc264513749b.html#a5f774f6b393879bd03d2cc264513749b",tooltip=" "];
+  Node7 -> Node75 [id="edge14_Node000007_Node000075",color="steelblue1",style="solid",tooltip=" "];
+  Node75 [id="Node000075",label="fl::third_party::vorbis\l::vorbis_deinit",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d59/namespacefl_1_1third__party_1_1vorbis_acddfc63731c8728d826da8747521aeaa.html#acddfc63731c8728d826da8747521aeaa",tooltip=" "];
+  Node7 -> Node78 [id="edge15_Node000007_Node000078",color="steelblue1",style="solid",tooltip=" "];
+  Node78 [id="Node000078",label="fl::third_party::vorbis\l::vorbis_init",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d59/namespacefl_1_1third__party_1_1vorbis_a2a7bcd6ae9935dd5c80676ff23469c77.html#a2a7bcd6ae9935dd5c80676ff23469c77",tooltip=" "];
+  Node7 -> Node79 [id="edge16_Node000007_Node000079",color="steelblue1",style="solid",tooltip=" "];
+  Node79 [id="Node000079",label="fl::third_party::vorbis\l::vorbis_pump_first_frame",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d59/namespacefl_1_1third__party_1_1vorbis_a8fbe0d7e9f951b5a980796d9579a23be.html#a8fbe0d7e9f951b5a980796d9579a23be",tooltip=" "];
 }

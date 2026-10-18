@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -116,27 +116,27 @@ $(function(){initNavTree('d2/db2/classfl_1_1string_a43ecc7bdbffacb7e0a2b3e047d86
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d61/stl_2string_8cpp_8hpp_source.html#l00377">377</a> of file <a class="el" href="../../d3/d61/stl_2string_8cpp_8hpp_source.html">string.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  377</span>                       {</div>
+<div class="fragment"><div class="line"><span class="lineno">  377</span>                                    {</div>
 <div class="line"><span class="lineno">  378</span>    <span class="comment">// Skip interning if using inline storage (SSO) - already efficient, no heap allocation</span></div>
 <div class="line"><span class="lineno">  379</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_aa0b7792704593e48b18d7ce909f4e7fa.html#aa0b7792704593e48b18d7ce909f4e7fa">isInline</a>()) {</div>
 <div class="line"><span class="lineno">  380</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  381</span>    }</div>
 <div class="line"><span class="lineno">  382</span> </div>
 <div class="line"><span class="lineno">  383</span>    <span class="comment">// Intern via global interner - replaces this string with deduplicated version</span></div>
-<div class="line"><span class="lineno">  384</span>    *<span class="keyword">this</span> = <a class="code hl_function" href="../../d4/d36/namespacefl_a26e3166a54288a78c47c7d9364239de5.html#a26e3166a54288a78c47c7d9364239de5">global_interner</a>().<a class="code hl_function" href="../../d1/de7/classfl_1_1_string_interner_acb9a905c207ff32fc661a39fc92f413c.html#acb9a905c207ff32fc661a39fc92f413c">intern</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  384</span>    *<span class="keyword">this</span> = <a class="code hl_function" href="../../d4/d36/namespacefl_a4dc245c2f8a1a3f48a6a999597a20529.html#a4dc245c2f8a1a3f48a6a999597a20529">global_interner</a>().<a class="code hl_function" href="../../d1/de7/classfl_1_1_string_interner_a79bedd1393934bd4ddfaebe8c066af0f.html#a79bedd1393934bd4ddfaebe8c066af0f">intern</a>(*<span class="keyword">this</span>);</div>
 <div class="line"><span class="lineno">  385</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  386</span>}</div>
-<div class="ttc" id="aclassfl_1_1_string_interner_acb9a905c207ff32fc661a39fc92f413c_html_acb9a905c207ff32fc661a39fc92f413c"><div class="ttname"><a href="../../d1/de7/classfl_1_1_string_interner_acb9a905c207ff32fc661a39fc92f413c.html#acb9a905c207ff32fc661a39fc92f413c">fl::StringInterner::intern</a></div><div class="ttdeci">fl::string intern(const string_view &amp;sv)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d04/string__interner_8cpp_8hpp_source.html#l00029">string_interner.cpp.hpp:29</a></div></div>
+<div class="ttc" id="aclassfl_1_1_string_interner_a79bedd1393934bd4ddfaebe8c066af0f_html_a79bedd1393934bd4ddfaebe8c066af0f"><div class="ttname"><a href="../../d1/de7/classfl_1_1_string_interner_a79bedd1393934bd4ddfaebe8c066af0f.html#a79bedd1393934bd4ddfaebe8c066af0f">fl::StringInterner::intern</a></div><div class="ttdeci">fl::string intern(const string_view &amp;sv) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d04/string__interner_8cpp_8hpp_source.html#l00029">string_interner.cpp.hpp:29</a></div></div>
 <div class="ttc" id="aclassfl_1_1basic__string_aa0b7792704593e48b18d7ce909f4e7fa_html_aa0b7792704593e48b18d7ce909f4e7fa"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_aa0b7792704593e48b18d7ce909f4e7fa.html#aa0b7792704593e48b18d7ce909f4e7fa">fl::basic_string::isInline</a></div><div class="ttdeci">bool isInline() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00502">basic_string.h:502</a></div></div>
-<div class="ttc" id="anamespacefl_a26e3166a54288a78c47c7d9364239de5_html_a26e3166a54288a78c47c7d9364239de5"><div class="ttname"><a href="../../d4/d36/namespacefl_a26e3166a54288a78c47c7d9364239de5.html#a26e3166a54288a78c47c7d9364239de5">fl::global_interner</a></div><div class="ttdeci">StringInterner &amp; global_interner()</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d04/string__interner_8cpp_8hpp_source.html#l00108">string_interner.cpp.hpp:108</a></div></div>
+<div class="ttc" id="anamespacefl_a4dc245c2f8a1a3f48a6a999597a20529_html_a4dc245c2f8a1a3f48a6a999597a20529"><div class="ttname"><a href="../../d4/d36/namespacefl_a4dc245c2f8a1a3f48a6a999597a20529.html#a4dc245c2f8a1a3f48a6a999597a20529">fl::global_interner</a></div><div class="ttdeci">StringInterner &amp; global_interner() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d04/string__interner_8cpp_8hpp_source.html#l00108">string_interner.cpp.hpp:108</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/d04/string__interner_8cpp_8hpp_source.html#l00108">fl::global_interner()</a>, <a class="el" href="../../d8/d04/string__interner_8cpp_8hpp_source.html#l00029">fl::StringInterner::intern()</a>, and <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00502">fl::basic_string::isInline()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d8/d04/string__interner_8cpp_8hpp_source.html#l00108">fl::global_interner()</a>, <a class="el" href="../../d8/d04/string__interner_8cpp_8hpp_source.html#l00029">fl::StringInterner::intern()</a>, and <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00502">fl::basic_string::isInline()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/db2/classfl_1_1string_a43ecc7bdbffacb7e0a2b3e047d8649cd_a43ecc7bdbffacb7e0a2b3e047d8649cd_cgraph.svg" width="100%" height="475"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/db2/classfl_1_1string_a43ecc7bdbffacb7e0a2b3e047d8649cd_a43ecc7bdbffacb7e0a2b3e047d8649cd_cgraph.svg" width="100%" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -148,7 +148,7 @@ $(function(){initNavTree('d2/db2/classfl_1_1string_a43ecc7bdbffacb7e0a2b3e047d86
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d2/db2/classfl_1_1string.html">string</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:32 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

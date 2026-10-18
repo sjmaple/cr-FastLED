@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -110,36 +110,39 @@ $(function(){initNavTree('da/d4d/rotating__blob_8h_source.html','../../'); initR
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/d41/fp__state_8h.html">fl/fx/2d/animartrix_detail/fp_state.h</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../d5/dd1/viz__base_8h.html">fl/fx/2d/animartrix_detail/viz/viz_base.h</a>&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d36/namespacefl.html">fl</a> {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d4/d81/classfl_1_1_rotating___blob.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d4/d81/classfl_1_1_rotating___blob.html">Rotating_Blob</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d1/d69/classfl_1_1_i_animartrix2_viz.html">IAnimartrix2Viz</a> {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d4/d81/classfl_1_1_rotating___blob_aeec337456b92e7426853b65c18a8dbca.html#aeec337456b92e7426853b65c18a8dbca">draw</a>(<a class="code hl_struct" href="../../dc/d58/structfl_1_1_context.html">Context</a> &amp;ctx) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/d01/noexcept_8h.html">fl/stl/noexcept.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d36/namespacefl.html">fl</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d4/d81/classfl_1_1_rotating___blob.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d4/d81/classfl_1_1_rotating___blob.html">Rotating_Blob</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d1/d69/classfl_1_1_i_animartrix2_viz.html">IAnimartrix2Viz</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d4/d81/classfl_1_1_rotating___blob_acc7420835a9f8f63ab22e32c41e276fd.html#acc7420835a9f8f63ab22e32c41e276fd">draw</a>(<a class="code hl_struct" href="../../dc/d58/structfl_1_1_context.html">Context</a> &amp;ctx) <a class="code hl_variable" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
 </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Fixed-point Q31 scalar implementation of Rotating_Blob.</span></div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../df/dd4/classfl_1_1_rotating___blob___f_p.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/dd4/classfl_1_1_rotating___blob___f_p.html">Rotating_Blob_FP</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d1/d69/classfl_1_1_i_animartrix2_viz.html">IAnimartrix2Viz</a> {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/dd4/classfl_1_1_rotating___blob___f_p_a840de713a8b2852ad3f713182293393f.html#a840de713a8b2852ad3f713182293393f">draw</a>(<a class="code hl_struct" href="../../dc/d58/structfl_1_1_context.html">Context</a> &amp;ctx) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../df/dd4/classfl_1_1_rotating___blob___f_p_a400b03d16e71b56a40430e72735a95ff.html#a400b03d16e71b56a40430e72735a95ff">   22</a></span>    FPVizState <a class="code hl_variable" href="../../df/dd4/classfl_1_1_rotating___blob___f_p_a400b03d16e71b56a40430e72735a95ff.html#a400b03d16e71b56a40430e72735a95ff">mState</a>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Fixed-point Q31 scalar implementation of Rotating_Blob.</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../df/dd4/classfl_1_1_rotating___blob___f_p.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/dd4/classfl_1_1_rotating___blob___f_p.html">Rotating_Blob_FP</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d1/d69/classfl_1_1_i_animartrix2_viz.html">IAnimartrix2Viz</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/dd4/classfl_1_1_rotating___blob___f_p_a0ddf1ecc28ebeca9a9b9e64a71442848.html#a0ddf1ecc28ebeca9a9b9e64a71442848">draw</a>(<a class="code hl_struct" href="../../dc/d58/structfl_1_1_context.html">Context</a> &amp;ctx) <a class="code hl_variable" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../df/dd4/classfl_1_1_rotating___blob___f_p_a400b03d16e71b56a40430e72735a95ff.html#a400b03d16e71b56a40430e72735a95ff">   23</a></span>    FPVizState <a class="code hl_variable" href="../../df/dd4/classfl_1_1_rotating___blob___f_p_a400b03d16e71b56a40430e72735a95ff.html#a400b03d16e71b56a40430e72735a95ff">mState</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
 </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}  <span class="comment">// namespace fl</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}  <span class="comment">// namespace fl</span></div>
 <div class="ttc" id="aclassfl_1_1_i_animartrix2_viz_html"><div class="ttname"><a href="../../d1/d69/classfl_1_1_i_animartrix2_viz.html">fl::IAnimartrix2Viz</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/dd1/viz__base_8h_source.html#l00017">viz_base.h:17</a></div></div>
-<div class="ttc" id="aclassfl_1_1_rotating___blob___f_p_a400b03d16e71b56a40430e72735a95ff_html_a400b03d16e71b56a40430e72735a95ff"><div class="ttname"><a href="../../df/dd4/classfl_1_1_rotating___blob___f_p_a400b03d16e71b56a40430e72735a95ff.html#a400b03d16e71b56a40430e72735a95ff">fl::Rotating_Blob_FP::mState</a></div><div class="ttdeci">FPVizState mState</div><div class="ttdef"><b>Definition</b> <a href="#l00022">rotating_blob.h:22</a></div></div>
-<div class="ttc" id="aclassfl_1_1_rotating___blob___f_p_a840de713a8b2852ad3f713182293393f_html_a840de713a8b2852ad3f713182293393f"><div class="ttname"><a href="../../df/dd4/classfl_1_1_rotating___blob___f_p_a840de713a8b2852ad3f713182293393f.html#a840de713a8b2852ad3f713182293393f">fl::Rotating_Blob_FP::draw</a></div><div class="ttdeci">void draw(Context &amp;ctx) override</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d36/rotating__blob_8cpp_8hpp_source.html#l00074">rotating_blob.cpp.hpp:74</a></div></div>
-<div class="ttc" id="aclassfl_1_1_rotating___blob___f_p_html"><div class="ttname"><a href="../../df/dd4/classfl_1_1_rotating___blob___f_p.html">fl::Rotating_Blob_FP</a></div><div class="ttdef"><b>Definition</b> <a href="#l00018">rotating_blob.h:18</a></div></div>
-<div class="ttc" id="aclassfl_1_1_rotating___blob_aeec337456b92e7426853b65c18a8dbca_html_aeec337456b92e7426853b65c18a8dbca"><div class="ttname"><a href="../../d4/d81/classfl_1_1_rotating___blob_aeec337456b92e7426853b65c18a8dbca.html#aeec337456b92e7426853b65c18a8dbca">fl::Rotating_Blob::draw</a></div><div class="ttdeci">void draw(Context &amp;ctx) override</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d36/rotating__blob_8cpp_8hpp_source.html#l00011">rotating_blob.cpp.hpp:11</a></div></div>
-<div class="ttc" id="aclassfl_1_1_rotating___blob_html"><div class="ttname"><a href="../../d4/d81/classfl_1_1_rotating___blob.html">fl::Rotating_Blob</a></div><div class="ttdef"><b>Definition</b> <a href="#l00011">rotating_blob.h:11</a></div></div>
+<div class="ttc" id="aclassfl_1_1_rotating___blob___f_p_a0ddf1ecc28ebeca9a9b9e64a71442848_html_a0ddf1ecc28ebeca9a9b9e64a71442848"><div class="ttname"><a href="../../df/dd4/classfl_1_1_rotating___blob___f_p_a0ddf1ecc28ebeca9a9b9e64a71442848.html#a0ddf1ecc28ebeca9a9b9e64a71442848">fl::Rotating_Blob_FP::draw</a></div><div class="ttdeci">void draw(Context &amp;ctx) FL_NO_EXCEPT override</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d36/rotating__blob_8cpp_8hpp_source.html#l00075">rotating_blob.cpp.hpp:75</a></div></div>
+<div class="ttc" id="aclassfl_1_1_rotating___blob___f_p_a400b03d16e71b56a40430e72735a95ff_html_a400b03d16e71b56a40430e72735a95ff"><div class="ttname"><a href="../../df/dd4/classfl_1_1_rotating___blob___f_p_a400b03d16e71b56a40430e72735a95ff.html#a400b03d16e71b56a40430e72735a95ff">fl::Rotating_Blob_FP::mState</a></div><div class="ttdeci">FPVizState mState</div><div class="ttdef"><b>Definition</b> <a href="#l00023">rotating_blob.h:23</a></div></div>
+<div class="ttc" id="aclassfl_1_1_rotating___blob___f_p_html"><div class="ttname"><a href="../../df/dd4/classfl_1_1_rotating___blob___f_p.html">fl::Rotating_Blob_FP</a></div><div class="ttdef"><b>Definition</b> <a href="#l00019">rotating_blob.h:19</a></div></div>
+<div class="ttc" id="aclassfl_1_1_rotating___blob_acc7420835a9f8f63ab22e32c41e276fd_html_acc7420835a9f8f63ab22e32c41e276fd"><div class="ttname"><a href="../../d4/d81/classfl_1_1_rotating___blob_acc7420835a9f8f63ab22e32c41e276fd.html#acc7420835a9f8f63ab22e32c41e276fd">fl::Rotating_Blob::draw</a></div><div class="ttdeci">void draw(Context &amp;ctx) FL_NO_EXCEPT override</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d36/rotating__blob_8cpp_8hpp_source.html#l00012">rotating_blob.cpp.hpp:12</a></div></div>
+<div class="ttc" id="aclassfl_1_1_rotating___blob_html"><div class="ttname"><a href="../../d4/d81/classfl_1_1_rotating___blob.html">fl::Rotating_Blob</a></div><div class="ttdef"><b>Definition</b> <a href="#l00012">rotating_blob.h:12</a></div></div>
 <div class="ttc" id="afp__state_8h_html"><div class="ttname"><a href="../../df/d41/fp__state_8h.html">fp_state.h</a></div></div>
+<div class="ttc" id="anamespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5_html_a0f2fe8e60b0edbe21ace28f787ba7cb5"><div class="ttname"><a href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">fl::FL_NO_EXCEPT</a></div><div class="ttdeci">u8 u8 fract8 blur_amount FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d4/df5/blur_8h_source.html#l00186">blur.h:186</a></div></div>
 <div class="ttc" id="anamespacefl_html"><div class="ttname"><a href="../../d4/d36/namespacefl.html">fl</a></div><div class="ttdoc">Base definition for an LED controller.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d4b/crgb_8hpp_source.html#l00179">crgb.hpp:179</a></div></div>
+<div class="ttc" id="anoexcept_8h_html"><div class="ttname"><a href="../../db/d01/noexcept_8h.html">noexcept.h</a></div></div>
 <div class="ttc" id="astructfl_1_1_context_html"><div class="ttname"><a href="../../dc/d58/structfl_1_1_context.html">fl::Context</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d1e/context_8h_source.html#l00024">context.h:24</a></div></div>
 <div class="ttc" id="aviz__base_8h_html"><div class="ttname"><a href="../../d5/dd1/viz__base_8h.html">viz_base.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -149,7 +152,7 @@ $(function(){initNavTree('da/d4d/rotating__blob_8h_source.html','../../'); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><a class="el" href="../../dir_d90d106199f3fa0759eaa8cec7e30de8.html">fx</a></li><li class="navelem"><a class="el" href="../../dir_ef4cc1a41c4d257473780bb85842dcc6.html">2d</a></li><li class="navelem"><a class="el" href="../../dir_c73f294a4e725b7f056175b06a115b93.html">animartrix_detail</a></li><li class="navelem"><a class="el" href="../../dir_3fd14babb80fd437f8313247e9a3f8f4.html">viz</a></li><li class="navelem"><a class="el" href="../../da/d4d/rotating__blob_8h.html">rotating_blob.h</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:00 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:14 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

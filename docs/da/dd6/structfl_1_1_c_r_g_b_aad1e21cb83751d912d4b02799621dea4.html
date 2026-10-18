@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -123,23 +123,23 @@ $(function(){initNavTree('da/dd6/structfl_1_1_c_r_g_b_aad1e21cb83751d912d4b02799
 <dl class="section note"><dt>Note</dt><dd>Equivalent to the free function <code>blend(*this, other, amountOf2)</code>. There is deliberately no <code>CHSV::lerp8</code> — interpolating hue requires choosing which way around the color wheel to travel, so the <a class="el" href="../../dd/dc7/group___h_s_v2_r_g_b_ga259e6d3ae92ca32d2390e7d8eaa1c7ae.html#ga259e6d3ae92ca32d2390e7d8eaa1c7ae">CHSV</a> equivalent is <code>blend(const <a class="el" href="../../dd/dc7/group___h_s_v2_r_g_b_ga259e6d3ae92ca32d2390e7d8eaa1c7ae.html#ga259e6d3ae92ca32d2390e7d8eaa1c7ae">CHSV</a>&amp;, const <a class="el" href="../../dd/dc7/group___h_s_v2_r_g_b_ga259e6d3ae92ca32d2390e7d8eaa1c7ae.html#ga259e6d3ae92ca32d2390e7d8eaa1c7ae">CHSV</a>&amp;, <a class="el" href="../../d4/d36/namespacefl_a4f8ec02ccee51aa3af6db05861cdd4e5.html#a4f8ec02ccee51aa3af6db05861cdd4e5" title="Fixed-Point Fractional Types.">fract8</a>, <a class="el" href="../../d4/d36/namespacefl_a0a0558a9d844a5f0ed4c50bfb3fde849.html#a0a0558a9d844a5f0ed4c50bfb3fde849" title="Hue direction for calculating fill gradients.">TGradientDirectionCode</a>)</code>, which takes that direction as a parameter. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../da/dd6/structfl_1_1_c_r_g_b_a783501cccdd1c0597ce7e2ba56401f6b.html#a783501cccdd1c0597ce7e2ba56401f6b">blend(const CRGB&amp;, const CRGB&amp;, fract8)</a> </dd>
 <dd>
-<a class="el" href="../../d4/d36/namespacefl_a10d9c25a1a106557eacc6c75225e8a07.html#a10d9c25a1a106557eacc6c75225e8a07">blend(const CHSV&amp;, const CHSV&amp;, fract8, TGradientDirectionCode)</a>    </dd></dl>
+<a class="el" href="../../d4/d36/namespacefl_abb7f0d70a69d1fd8df8fc138aa1ab212.html#abb7f0d70a69d1fd8df8fc138aa1ab212">blend(const CHSV&amp;, const CHSV&amp;, fract8, TGradientDirectionCode)</a>    </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d4b/crgb_8hpp_source.html#l00167">167</a> of file <a class="el" href="../../d0/d4b/crgb_8hpp_source.html">crgb.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  168</span>{</div>
 <div class="line"><span class="lineno">  169</span>    <a class="code hl_function" href="../../da/dd6/structfl_1_1_c_r_g_b_a910ee467a963ad6805026ad83873e52b.html#a910ee467a963ad6805026ad83873e52b">CRGB</a> ret;</div>
 <div class="line"><span class="lineno">  170</span> </div>
-<div class="line"><span class="lineno">  171</span>    ret.r = <a class="code hl_function" href="../../d6/d19/group___linear_interpolation_gaba04aa097b82ba046d538e7390ad99f9.html#gaba04aa097b82ba046d538e7390ad99f9">lerp16by16</a>(r&lt;&lt;8,other.r&lt;&lt;8,frac)&gt;&gt;8;</div>
-<div class="line"><span class="lineno">  172</span>    ret.g = <a class="code hl_function" href="../../d6/d19/group___linear_interpolation_gaba04aa097b82ba046d538e7390ad99f9.html#gaba04aa097b82ba046d538e7390ad99f9">lerp16by16</a>(<a class="code hl_variable" href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">g</a>&lt;&lt;8,other.g&lt;&lt;8,frac)&gt;&gt;8;</div>
-<div class="line"><span class="lineno">  173</span>    ret.b = <a class="code hl_function" href="../../d6/d19/group___linear_interpolation_gaba04aa097b82ba046d538e7390ad99f9.html#gaba04aa097b82ba046d538e7390ad99f9">lerp16by16</a>(b&lt;&lt;8,other.b&lt;&lt;8,frac)&gt;&gt;8;</div>
+<div class="line"><span class="lineno">  171</span>    ret.r = <a class="code hl_function" href="../../d6/d19/group___linear_interpolation_ga3440fd656cfe58db902437b951b56201.html#ga3440fd656cfe58db902437b951b56201">lerp16by16</a>(r&lt;&lt;8,other.r&lt;&lt;8,frac)&gt;&gt;8;</div>
+<div class="line"><span class="lineno">  172</span>    ret.g = <a class="code hl_function" href="../../d6/d19/group___linear_interpolation_ga3440fd656cfe58db902437b951b56201.html#ga3440fd656cfe58db902437b951b56201">lerp16by16</a>(<a class="code hl_variable" href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">g</a>&lt;&lt;8,other.g&lt;&lt;8,frac)&gt;&gt;8;</div>
+<div class="line"><span class="lineno">  173</span>    ret.b = <a class="code hl_function" href="../../d6/d19/group___linear_interpolation_ga3440fd656cfe58db902437b951b56201.html#ga3440fd656cfe58db902437b951b56201">lerp16by16</a>(b&lt;&lt;8,other.b&lt;&lt;8,frac)&gt;&gt;8;</div>
 <div class="line"><span class="lineno">  174</span> </div>
 <div class="line"><span class="lineno">  175</span>    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><span class="lineno">  176</span>}</div>
-<div class="ttc" id="agroup___linear_interpolation_gaba04aa097b82ba046d538e7390ad99f9_html_gaba04aa097b82ba046d538e7390ad99f9"><div class="ttname"><a href="../../d6/d19/group___linear_interpolation_gaba04aa097b82ba046d538e7390ad99f9.html#gaba04aa097b82ba046d538e7390ad99f9">lerp16by16</a></div><div class="ttdeci">LIB8STATIC fl::u16 lerp16by16(fl::u16 a, fl::u16 b, fract16 frac)</div><div class="ttdoc">Linear interpolation between two unsigned 16-bit values, with 16-bit fraction.</div><div class="ttdef"><b>Definition</b> <a href="../../df/da5/lib8tion_8h_source.html#l00380">lib8tion.h:380</a></div></div>
-<div class="ttc" id="anamespacefl_abb8ff746cce2b11a90718afba1cfec1b_html_abb8ff746cce2b11a90718afba1cfec1b"><div class="ttname"><a href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">fl::g</a></div><div class="ttdeci">InputGamut g</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00124">rgbw.h:124</a></div></div>
+<div class="ttc" id="agroup___linear_interpolation_ga3440fd656cfe58db902437b951b56201_html_ga3440fd656cfe58db902437b951b56201"><div class="ttname"><a href="../../d6/d19/group___linear_interpolation_ga3440fd656cfe58db902437b951b56201.html#ga3440fd656cfe58db902437b951b56201">lerp16by16</a></div><div class="ttdeci">LIB8STATIC fl::u16 lerp16by16(fl::u16 a, fl::u16 b, fract16 frac) FL_NO_EXCEPT</div><div class="ttdoc">Linear interpolation between two unsigned 16-bit values, with 16-bit fraction.</div><div class="ttdef"><b>Definition</b> <a href="../../df/da5/lib8tion_8h_source.html#l00381">lib8tion.h:381</a></div></div>
+<div class="ttc" id="anamespacefl_abb8ff746cce2b11a90718afba1cfec1b_html_abb8ff746cce2b11a90718afba1cfec1b"><div class="ttname"><a href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">fl::g</a></div><div class="ttdeci">InputGamut g</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00125">rgbw.h:125</a></div></div>
 <div class="ttc" id="astructfl_1_1_c_r_g_b_a910ee467a963ad6805026ad83873e52b_html_a910ee467a963ad6805026ad83873e52b"><div class="ttname"><a href="../../da/dd6/structfl_1_1_c_r_g_b_a910ee467a963ad6805026ad83873e52b.html#a910ee467a963ad6805026ad83873e52b">fl::CRGB::CRGB</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB() FL_NO_EXCEPT</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dcc/fl_2gfx_2crgb_8h_source.html#l00111">crgb.h:111</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/dcc/fl_2gfx_2crgb_8h_source.html#l00111">CRGB()</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00819">FASTLED_FORCE_INLINE</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00124">fl::g</a>, and <a class="el" href="../../df/da5/lib8tion_8h_source.html#l00380">lerp16by16()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dcc/fl_2gfx_2crgb_8h_source.html#l00111">CRGB()</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00819">FASTLED_FORCE_INLINE</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00125">fl::g</a>, and <a class="el" href="../../df/da5/lib8tion_8h_source.html#l00381">lerp16by16()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -157,7 +157,7 @@ $(function(){initNavTree('da/dd6/structfl_1_1_c_r_g_b_aad1e21cb83751d912d4b02799
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../da/dd6/structfl_1_1_c_r_g_b.html">CRGB</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

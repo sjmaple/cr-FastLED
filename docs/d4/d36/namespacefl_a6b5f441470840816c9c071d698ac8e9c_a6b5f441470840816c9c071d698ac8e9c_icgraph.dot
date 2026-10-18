@@ -8,5 +8,5 @@ digraph "fl::buildWave8ByteExpansionLUT"
   rankdir="RL";
   Node1 [id="Node000001",label="fl::buildWave8ByteExpansionLUT",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Out-param overload: fill an existing 2 KB LUT in place."];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::buildWave8ByteExpansionLUT",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a89a2a81a6051fc6b79c9dc4554c23be0.html#a89a2a81a6051fc6b79c9dc4554c23be0",tooltip="Build a byte-indexed expansion LUT (#2526) from the nibble LUT."];
+  Node2 [id="Node000002",label="fl::buildWave8ByteExpansionLUT",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a579f473f8acd6e3d75ff3642f8fb6f03.html#a579f473f8acd6e3d75ff3642f8fb6f03",tooltip="Build a byte-indexed expansion LUT (#2526) from the nibble LUT."];
 }

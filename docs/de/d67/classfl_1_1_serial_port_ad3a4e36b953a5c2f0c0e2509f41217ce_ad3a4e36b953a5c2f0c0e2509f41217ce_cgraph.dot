@@ -1,0 +1,33 @@
+digraph "fl::SerialPort::printf"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fl::SerialPort::printf",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Print formatted string to serial output (printf-style)"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::format",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a51d1a2465c939bcdfa5e221adeda9951.html#a51d1a2465c939bcdfa5e221adeda9951",tooltip="Format with no arguments."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::format_detail::\lformat_impl",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/d2a/namespacefl_1_1format__detail_a59744e76829c5a1293fa57ef6218f3f6.html#a59744e76829c5a1293fa57ef6218f3f6",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::format_detail::\lapply_width_align",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$da/d2a/namespacefl_1_1format__detail_a1eae279691de148aaf1977a5d4d0af27.html#a1eae279691de148aaf1977a5d4d0af27",tooltip=" "];
+  Node3 -> Node6 [id="edge4_Node000003_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::format_detail::\lparse_format_spec",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/d2a/namespacefl_1_1format__detail_afb99f10ae3242ccfdc00b83513dbf478.html#afb99f10ae3242ccfdc00b83513dbf478",tooltip=" "];
+  Node1 -> Node7 [id="edge5_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl::SerialPort::print",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d67/classfl_1_1_serial_port_a1d149619de472cea04de1418876d7942.html#a1d149619de472cea04de1418876d7942",tooltip="Print string to serial output."];
+  Node7 -> Node8 [id="edge6_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="fl::print",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a137568a66ee46dd29136aa1b9386c8f1.html#a137568a66ee46dd29136aa1b9386c8f1",tooltip=" "];
+  Node7 -> Node9 [id="edge7_Node000007_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="fl::strlen",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_af83a3c1e7fc5233afe1b56f3f3c8abdd.html#af83a3c1e7fc5233afe1b56f3f3c8abdd",tooltip=" "];
+  Node9 -> Node10 [id="edge8_Node000009_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="fl::libc_impl::strlen",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/dbc/namespacefl_1_1libc__impl_a802548ff1156473e88fae7ce20275a2c.html#a802548ff1156473e88fae7ce20275a2c",tooltip=" "];
+  Node1 -> Node1 [id="edge9_Node000001_Node000001",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node11 [id="edge10_Node000001_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="fl::snprintf",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a17646782eea1132270233120225036ac.html#a17646782eea1132270233120225036ac",tooltip=" "];
+  Node11 -> Node2 [id="edge11_Node000011_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node11 -> Node12 [id="edge12_Node000011_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="fl::printf_detail::\lparse_format_spec",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/de0/namespacefl_1_1printf__detail_a815b73d378ad98c5db7890a7836da1b1.html#a815b73d378ad98c5db7890a7836da1b1",tooltip=" "];
+  Node12 -> Node2 [id="edge13_Node000012_Node000002",color="steelblue1",style="solid",tooltip=" "];
+}

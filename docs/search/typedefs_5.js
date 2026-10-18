@@ -13,7 +13,7 @@ var searchData=
   ['fixedset_10',['FixedSet',['../d4/d36/namespacefl_a409e6d3051f62db0ee58fbbbffab9155.html#a409e6d3051f62db0ee58fbbbffab9155',1,'fl']]],
   ['fl_5fmap_11',['fl_map',['../d4/d36/namespacefl_af90ac4f91a09e12b0c93e02af2d49cce.html#af90ac4f91a09e12b0c93e02af2d49cce',1,'fl']]],
   ['fl_5frandom_12',['fl_random',['../d4/d36/namespacefl_aa62cdbc71f7f5541701dcdae6de8f68f.html#aa62cdbc71f7f5541701dcdae6de8f68f',1,'fl']]],
-  ['flat_5fmap_5fless_5fthunk_5ft_13',['flat_map_less_thunk_t',['../df/d9e/namespacefl_1_1detail_a6c3b2b3f7c6acb99a742066db7e5e4f9.html#a6c3b2b3f7c6acb99a742066db7e5e4f9',1,'fl::detail']]],
+  ['flat_5fmap_5fless_5fthunk_5ft_13',['flat_map_less_thunk_t',['../df/d9e/namespacefl_1_1detail_a1a6b40e5497f1e0901899f55993c9acd.html#a1a6b40e5497f1e0901899f55993c9acd',1,'fl::detail']]],
   ['fontptr_14',['FontPtr',['../d4/d36/namespacefl_a05841984e50e1724d3b0732b4d3f0df0.html#a05841984e50e1724d3b0732b4d3f0df0',1,'fl']]],
   ['fp_15',['FP',['../de/d09/namespacefl_1_1anonymous__namespace_02chasing__spirals_8cpp_8hpp_03_a35b7c16dbb81fa10e70a00947b42d887.html#a35b7c16dbb81fa10e70a00947b42d887',1,'fl::anonymous_namespace{chasing_spirals.cpp.hpp}']]],
   ['fp_16',['fp',['../da/dd6/structfl_1_1_c_r_g_b_a2dd77ea8a1afe7b2921b0bdc41fd7225.html#a2dd77ea8a1afe7b2921b0bdc41fd7225',1,'fl::CRGB::fp'],['../dd/df5/structfl_1_1_c_r_g_b16_a471ac0cae838ba0455f406bfe63a7ae0.html#a471ac0cae838ba0455f406bfe63a7ae0',1,'fl::CRGB16::fp']]],

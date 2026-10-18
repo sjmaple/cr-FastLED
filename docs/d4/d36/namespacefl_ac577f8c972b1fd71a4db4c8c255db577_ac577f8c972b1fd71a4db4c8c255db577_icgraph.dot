@@ -16,5 +16,7 @@ digraph "fl::roundf"
   Node1 -> Node4 [id="edge5_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="plotSoftDot",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/db7/examples_2_luminova_2luminova_8h_a40f3cc59a4c51aba63f21eff4110f624.html#a40f3cc59a4c51aba63f21eff4110f624",tooltip=" "];
   Node4 -> Node5 [id="edge6_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="loop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/db7/examples_2_luminova_2luminova_8h_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f",tooltip=" "];
+  Node5 [id="Node000005",label="fl::Luminova::draw",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/df2/classfl_1_1_luminova_a41e7ac0b4dfa23a932ea0f8f9934b3e4.html#a41e7ac0b4dfa23a932ea0f8f9934b3e4",tooltip=" "];
+  Node4 -> Node6 [id="edge7_Node000004_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="loop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/db7/examples_2_luminova_2luminova_8h_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f",tooltip=" "];
 }

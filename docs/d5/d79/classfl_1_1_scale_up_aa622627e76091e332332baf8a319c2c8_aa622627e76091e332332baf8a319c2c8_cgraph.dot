@@ -1,0 +1,30 @@
+digraph "fl::ScaleUp::expand"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fl::ScaleUp::expand",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Expand a low-resolution buffer to high-resolution using bilinear interpolation."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::upscale",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a173024f15a9a1cf7fc985624a203fd09.html#a173024f15a9a1cf7fc985624a203fd09",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::upscaleArbitrary",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a7ab3322b3a1bd14c300cb8bf7e940565.html#a7ab3322b3a1bd14c300cb8bf7e940565",tooltip="Performs bilinear interpolation for upscaling an image."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::bilinearInterpolate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a245453febc75aeed8b0767869f5ba913.html#a245453febc75aeed8b0767869f5ba913",tooltip=" "];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::upscalePowerOf2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_aef4aafeabde494181078a59372cb9f77.html#aef4aafeabde494181078a59372cb9f77",tooltip="Performs bilinear interpolation for upscaling an image."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::bilinearInterpolatePowerOf2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a5bee9ad978cb710088b80a498f91f2d9.html#a5bee9ad978cb710088b80a498f91f2d9",tooltip=" "];
+  Node2 -> Node7 [id="edge6_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl::upscaleRectangular",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a532b3d2682a1ca0b49cdaee2de8916c7.html#a532b3d2682a1ca0b49cdaee2de8916c7",tooltip="Optimized upscale for rectangular/line-by-line XY maps."];
+  Node7 -> Node4 [id="edge7_Node000007_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node8 [id="edge8_Node000002_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="fl::upscaleRectangularPowerOf2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a44b09c26ee0e2f7ad8740d70b596dd60.html#a44b09c26ee0e2f7ad8740d70b596dd60",tooltip="Optimized upscale for rectangular/line-by-line XY maps (power-of-2 version)."];
+  Node8 -> Node6 [id="edge9_Node000008_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node3 [id="edge10_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node9 [id="edge11_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="fl::upscaleFloat",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a68702962bff5169a234cc995506001c6.html#a68702962bff5169a234cc995506001c6",tooltip=" "];
+  Node1 -> Node5 [id="edge12_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+}

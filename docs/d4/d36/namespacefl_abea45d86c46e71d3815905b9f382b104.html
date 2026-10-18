@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -117,21 +117,23 @@ $(function(){initNavTree('d4/d36/namespacefl_abea45d86c46e71d3815905b9f382b104.h
 
 <p>8-bit cubic ease-out function Takes an input value 0-255 and returns an eased value 0-255 More pronounced deceleration than quadratic </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html#l00129">129</a> of file <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html">ease.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  129</span>                       {</div>
-<div class="line"><span class="lineno">  130</span>    <span class="comment">// ease-out cubic: 1 - (1-t)³</span></div>
-<div class="line"><span class="lineno">  131</span>    <span class="comment">// For 8-bit: y = MAX - (MAX-i)³ / MAX²</span></div>
-<div class="line"><span class="lineno">  132</span>    <span class="keyword">constexpr</span> u16 MAX = 0xFF;</div>
-<div class="line"><span class="lineno">  133</span>    <span class="keyword">constexpr</span> u32 DENOM = (u32)MAX * MAX;</div>
-<div class="line"><span class="lineno">  134</span>    <span class="keyword">constexpr</span> u32 ROUND = DENOM &gt;&gt; 1;</div>
-<div class="line"><span class="lineno">  135</span> </div>
-<div class="line"><span class="lineno">  136</span>    u32 d = MAX - i;      <span class="comment">// (MAX - i)</span></div>
-<div class="line"><span class="lineno">  137</span>    u32 cube = d * d * d; <span class="comment">// (MAX-i)³</span></div>
-<div class="line"><span class="lineno">  138</span>    u32 num = cube + ROUND;</div>
-<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a>(MAX - (num / DENOM));</div>
-<div class="line"><span class="lineno">  140</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html#l00130">130</a> of file <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html">ease.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  130</span>                                    {</div>
+<div class="line"><span class="lineno">  131</span>    <span class="comment">// ease-out cubic: 1 - (1-t)³</span></div>
+<div class="line"><span class="lineno">  132</span>    <span class="comment">// For 8-bit: y = MAX - (MAX-i)³ / MAX²</span></div>
+<div class="line"><span class="lineno">  133</span>    <span class="keyword">constexpr</span> u16 MAX = 0xFF;</div>
+<div class="line"><span class="lineno">  134</span>    <span class="keyword">constexpr</span> u32 DENOM = (u32)MAX * MAX;</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keyword">constexpr</span> u32 ROUND = DENOM &gt;&gt; 1;</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>    u32 d = MAX - i;      <span class="comment">// (MAX - i)</span></div>
+<div class="line"><span class="lineno">  138</span>    u32 cube = d * d * d; <span class="comment">// (MAX-i)³</span></div>
+<div class="line"><span class="lineno">  139</span>    u32 num = cube + ROUND;</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a>(MAX - (num / DENOM));</div>
+<div class="line"><span class="lineno">  141</span>}</div>
 <div class="ttc" id="anamespacefl_a058ceeac48f181da463c2ba07401292c_html_a058ceeac48f181da463c2ba07401292c"><div class="ttname"><a href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00131">stdint.h:131</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">FL_NO_EXCEPT</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../db/d19/ease_8h_source.html#l00224">ease8()</a>, and <a class="el" href="../../db/d19/ease_8h_source.html#l00208">ease8()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -150,7 +152,7 @@ $(function(){initNavTree('d4/d36/namespacefl_abea45d86c46e71d3815905b9f382b104.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:07 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:28 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

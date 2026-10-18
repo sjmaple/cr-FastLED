@@ -24,7 +24,5 @@ digraph "fl::task::Handle::_set_last_run_time"
   Node8 [id="Node000008",label="fl::millis64",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a822570130e003c9bdf7307e2a29bc9ab.html#a822570130e003c9bdf7307e2a29bc9ab",tooltip="64-bit millisecond timer - returns milliseconds since system startup without wraparound"];
   Node8 -> Node9 [id="edge9_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
   Node9 [id="Node000009",label="fl::millis",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a3c0ba5842bfd029c404a38c8df2315f3.html#a3c0ba5842bfd029c404a38c8df2315f3",tooltip="Universal millisecond timer - returns milliseconds since system startup."];
-  Node9 -> Node9 [id="edge10_Node000009_Node000009",color="steelblue1",style="solid",tooltip=" "];
-  Node8 -> Node8 [id="edge11_Node000008_Node000008",color="steelblue1",style="solid",tooltip=" "];
-  Node7 -> Node7 [id="edge12_Node000007_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 -> Node7 [id="edge10_Node000007_Node000007",color="steelblue1",style="solid",tooltip=" "];
 }

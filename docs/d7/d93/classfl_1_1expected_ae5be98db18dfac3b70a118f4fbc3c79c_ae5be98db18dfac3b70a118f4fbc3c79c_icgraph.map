@@ -1,15 +1,17 @@
 <map id="fl::expected::value" name="fl::expected::value">
-<area shape="rect" id="Node000001" title="Get value (only valid if ok() == true)" alt="" coords="672,77,815,102"/>
-<area shape="rect" id="Node000002" href="$d7/d93/classfl_1_1expected_aace779907e6f9b82b8480260eed069cf.html#aace779907e6f9b82b8480260eed069cf" title="Create successful result." alt="" coords="467,77,624,102"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="658,92,624,92,624,87,658,87"/>
-<area shape="rect" id="Node000003" href="$dc/d85/namespacefl_1_1channels_1_1rx_a004ab6fd7003dca87a90e1b235f8c11a.html#a004ab6fd7003dca87a90e1b235f8c11a" title="Decode a WS2812 edge&#45;pair stream into bytes." alt="" coords="237,5,409,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="486,75,393,48,394,43,488,70"/>
-<area shape="rect" id="Node000004" href="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_a97018959f2c77546fa12f2a0adb2f540.html#a97018959f2c77546fa12f2a0adb2f540" title="Flush all lanes (transpose and transmit)" alt="" coords="236,69,411,109"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="452,92,411,92,411,87,452,87"/>
-<area shape="rect" id="Node000008" href="$d9/d0a/classfl_1_1spi_1_1_device_a2242937ce5772a2fe9ba38632c000cc0.html#a2242937ce5772a2fe9ba38632c000cc0" title="Begin asynchronous write operation (returns immediately)" alt="" coords="228,134,419,159"/>
-<area shape="poly" id="edge6_Node000002_Node000008" title=" " alt="" coords="483,108,374,137,373,131,481,103"/>
-<area shape="rect" id="Node000005" href="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_a552f915191464193c98a7a385a6eb05b.html#a552f915191464193c98a7a385a6eb05b" title=" " alt="" coords="5,37,180,77"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="222,78,180,72,181,67,223,73"/>
-<area shape="rect" id="Node000006" href="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_a547b2f30f70e16dbb22762f3f2370254.html#a547b2f30f70e16dbb22762f3f2370254" title="Internal implementation &#45; write all lanes atomically." alt="" coords="5,101,180,141"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="223,106,181,112,180,107,222,101"/>
+<area shape="rect" id="Node000001" title="Get value (only valid if ok() == true)" alt="" coords="672,141,815,166"/>
+<area shape="rect" id="Node000002" href="$d7/d93/classfl_1_1expected_aace779907e6f9b82b8480260eed069cf.html#aace779907e6f9b82b8480260eed069cf" title="Create successful result." alt="" coords="467,141,624,166"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="658,156,624,156,624,151,658,151"/>
+<area shape="rect" id="Node000003" href="$d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_afd4eef198b81cad912da7e982039ab63.html#afd4eef198b81cad912da7e982039ab63" title="Copy the decoded frame into out with the batch decoder&#39;s result rules (overflow, &gt;10% error rate,..." alt="" coords="235,5,412,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="519,134,473,96,417,60,391,48,394,43,420,55,477,92,522,129"/>
+<area shape="rect" id="Node000004" href="$dc/d85/namespacefl_1_1channels_1_1rx_a0a08c211ef0e6a9e8655bae93c4aae8d.html#a0a08c211ef0e6a9e8655bae93c4aae8d" title="Batch decoder over an edge list (HIGH, LOW, HIGH, ... with a LOW left out after a gap)." alt="" coords="237,69,409,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="486,139,393,112,394,107,488,134"/>
+<area shape="rect" id="Node000005" href="$dc/d85/namespacefl_1_1channels_1_1rx_a004ab6fd7003dca87a90e1b235f8c11a.html#a004ab6fd7003dca87a90e1b235f8c11a" title="Decode a WS2812 edge&#45;pair stream into bytes." alt="" coords="237,133,409,173"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="453,156,409,156,409,151,453,151"/>
+<area shape="rect" id="Node000006" href="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_a7f6ed3316fa7cd53fc05aba464759d31.html#a7f6ed3316fa7cd53fc05aba464759d31" title="Flush all lanes (transpose and transmit)" alt="" coords="236,197,411,237"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="488,173,394,200,393,195,486,167"/>
+<area shape="rect" id="Node000008" href="$d9/d0a/classfl_1_1spi_1_1_device_aad0c5d92a0dbe9f419e26c55fb5cd7f7.html#aad0c5d92a0dbe9f419e26c55fb5cd7f7" title="Begin asynchronous write operation (returns immediately)" alt="" coords="228,262,419,287"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="523,177,477,215,420,252,387,264,385,259,417,247,474,211,519,173"/>
+<area shape="rect" id="Node000007" href="$d7/d70/classfl_1_1spi_1_1_multi_lane_device_a552f915191464193c98a7a385a6eb05b.html#a552f915191464193c98a7a385a6eb05b" title=" " alt="" coords="5,197,180,237"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="222,220,180,220,180,215,222,215"/>
 </map>

@@ -367,8 +367,8 @@ var type__traits_8h =
     [ "fl::true_type", "d4/d36/namespacefl_aec5b506b1eebcaf642acbdbef139775a.html#aec5b506b1eebcaf642acbdbef139775a", null ],
     [ "fl::underlying_type_t", "d4/d36/namespacefl_a106835cf7613b4f4607b80415b1917f6.html#a106835cf7613b4f4607b80415b1917f6", null ],
     [ "fl::declval", "d4/d36/namespacefl_a2f0d122e587feba8da364fdc8099af81.html#a2f0d122e587feba8da364fdc8099af81", null ],
-    [ "fl::forward", "d4/d36/namespacefl_affa3033eb62ea25473e06467610d2178.html#affa3033eb62ea25473e06467610d2178", null ],
-    [ "fl::forward", "d4/d36/namespacefl_a94488336a5db985fbda1bbd317bffc6a.html#a94488336a5db985fbda1bbd317bffc6a", null ],
-    [ "fl::swap", "d4/d36/namespacefl_a53b8f0c4ecdf92bb5393aca4df53bac1.html#a53b8f0c4ecdf92bb5393aca4df53bac1", null ],
+    [ "fl::adl_barrier::forward", "df/d34/namespacefl_1_1adl__barrier_ae7db20349b40e9d55653f1c459dc5796.html#ae7db20349b40e9d55653f1c459dc5796", null ],
+    [ "fl::adl_barrier::forward", "df/d34/namespacefl_1_1adl__barrier_ac53ccff21210ad77549fafb987263051.html#ac53ccff21210ad77549fafb987263051", null ],
+    [ "fl::swap", "d4/d36/namespacefl_ad2b835f040c90ed07358617679293399.html#ad2b835f040c90ed07358617679293399", null ],
     [ "fl::swap_by_copy", "d4/d36/namespacefl_a19e9628dd804bc3b71fe63d59cbe89b4.html#a19e9628dd804bc3b71fe63d59cbe89b4", null ]
 ];

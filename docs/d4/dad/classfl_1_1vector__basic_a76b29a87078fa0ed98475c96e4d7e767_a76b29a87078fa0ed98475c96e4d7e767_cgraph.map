@@ -1,41 +1,44 @@
 <map id="fl::vector_basic::operator=" name="fl::vector_basic::operator=">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,199,200,225"/>
-<area shape="rect" id="Node000002" href="$d4/dad/classfl_1_1vector__basic_aa3b5f18f20eaa89f869849b2f4207759.html#aa3b5f18f20eaa89f869849b2f4207759" title="Heap&#45;only vector (no inline buffer)." alt="" coords="734,136,903,176"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,197,181,171,247,148,362,123,454,114,547,117,664,127,721,134,720,139,664,132,546,122,454,119,363,128,249,153,183,176,129,202"/>
-<area shape="rect" id="Node000004" href="$d4/dad/classfl_1_1vector__basic_a6f2b59a0929ec3375914400ea43b53dd.html#a6f2b59a0929ec3375914400ea43b53dd" title="Copy all elements from another vector_basic." alt="" coords="464,329,661,354"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="150,222,504,322,503,327,148,227"/>
-<area shape="rect" id="Node000013" href="$d4/dad/classfl_1_1vector__basic_a0987f604ea57ce1ac82a91e91651d0a2.html#a0987f604ea57ce1ac82a91e91651d0a2" title="Move&#45;assign from another vector_basic (clears this first)." alt="" coords="248,163,413,203"/>
-<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="200,197,234,192,235,198,201,202"/>
-<area shape="rect" id="Node000015" href="$d4/dad/classfl_1_1vector__basic_ad65288bc00ca942dbb1c9dde2b40f782.html#ad65288bc00ca942dbb1c9dde2b40f782" title="Move&#45;steal contents from another vector_basic." alt="" coords="461,227,664,253"/>
-<area shape="poly" id="edge25_Node000001_Node000015" title=" " alt="" coords="201,215,448,230,447,236,200,221"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="773,136,771,126,778,117,794,111,819,109,847,112,862,119,860,124,845,117,819,115,795,117,781,121,776,127,779,135"/>
-<area shape="rect" id="Node000003" href="$d4/dad/classfl_1_1vector__basic_a3bdba8a50d37b2fd71bbec2b753fba3e.html#a3bdba8a50d37b2fd71bbec2b753fba3e" title=" " alt="" coords="986,143,1141,169"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="904,153,972,153,972,159,904,159"/>
-<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="580,326,777,182,780,186,583,331"/>
-<area shape="rect" id="Node000005" href="$d4/dad/classfl_1_1vector__basic_ab7f6ed3b28983ba9ad5fc98710922dd2.html#ab7f6ed3b28983ba9ad5fc98710922dd2" title=" " alt="" coords="721,301,917,326"/>
-<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="661,328,707,323,708,328,662,333"/>
-<area shape="rect" id="Node000006" href="$d4/dad/classfl_1_1vector__basic_a3a8ac3fa78ac2345911f4367694f186a.html#a3a8ac3fa78ac2345911f4367694f186a" title="Pointer to element at index (byte arithmetic)." alt="" coords="715,350,922,375"/>
-<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="662,347,702,350,702,356,661,352"/>
-<area shape="rect" id="Node000007" href="$d4/dad/classfl_1_1vector__basic_abd10076a74728ff9707ebee25b92ca90.html#abd10076a74728ff9707ebee25b92ca90" title=" " alt="" coords="712,251,925,277"/>
-<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="595,326,711,285,742,277,743,282,713,291,597,331"/>
-<area shape="rect" id="Node000011" href="$d4/dad/classfl_1_1vector__basic_a2a90e682670f8fbcc40201fcbe03d999.html#a2a90e682670f8fbcc40201fcbe03d999" title=" " alt="" coords="1201,251,1405,277"/>
-<area shape="poly" id="edge14_Node000004_Node000011" title=" " alt="" coords="596,352,650,370,712,385,772,394,819,396,865,394,925,385,1021,364,1114,336,1260,280,1262,285,1116,341,1022,370,926,391,866,399,819,402,771,399,712,391,648,376,594,357"/>
-<area shape="rect" id="Node000008" href="$d4/dad/classfl_1_1vector__basic_a67795afe6afd360b8f3bffb772fde73b.html#a67795afe6afd360b8f3bffb772fde73b" title="Grow to new_capacity. Moves existing elements." alt="" coords="973,251,1153,277"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="925,261,960,261,960,267,925,267"/>
-<area shape="rect" id="Node000009" href="$d4/dad/classfl_1_1vector__basic_a5c38462334e8be852c00a70dfc4bd31a.html#a5c38462334e8be852c00a70dfc4bd31a" title="Is data currently in the inline buffer?" alt="" coords="1216,62,1391,87"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="1079,249,1273,94,1276,99,1082,253"/>
-<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="1153,261,1188,261,1188,267,1153,267"/>
-<area shape="rect" id="Node000010" href="$d4/dad/classfl_1_1vector__basic_a3d528d0097291ad564918d2a37ebf1ec.html#a3d528d0097291ad564918d2a37ebf1ec" title="Compute inline buffer pointer from offset." alt="" coords="1453,29,1617,69"/>
-<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="1390,63,1439,57,1440,62,1391,68"/>
-<area shape="poly" id="edge12_Node000010_Node000010" title=" " alt="" coords="1492,30,1489,20,1496,10,1512,5,1535,3,1562,6,1577,13,1575,18,1561,11,1535,8,1513,10,1500,15,1495,21,1497,28"/>
-<area shape="poly" id="edge16_Node000013_Node000002" title=" " alt="" coords="399,160,461,148,528,142,597,141,720,145,720,150,597,146,529,148,462,153,400,165"/>
-<area shape="poly" id="edge17_Node000013_Node000005" title=" " alt="" coords="359,201,405,233,462,262,524,280,587,293,707,307,707,313,587,299,522,285,460,266,402,238,356,205"/>
-<area shape="poly" id="edge20_Node000013_Node000009" title=" " alt="" coords="371,160,414,142,461,127,561,104,664,88,768,76,870,69,1056,64,1202,67,1202,72,1056,69,870,74,768,82,665,93,562,110,462,132,416,147,373,165"/>
-<area shape="poly" id="edge19_Node000013_Node000010" title=" " alt="" coords="353,160,400,124,460,90,556,52,634,32,714,23,817,21,1065,21,1265,27,1440,39,1439,44,1265,33,1065,27,817,27,715,28,635,37,558,57,462,94,403,128,356,164"/>
-<area shape="rect" id="Node000014" href="$d4/dad/classfl_1_1vector__basic_a0f97d38518e3f1448ac5d1b09dd51f31.html#a0f97d38518e3f1448ac5d1b09dd51f31" title="Does this vector have an inline buffer at all?" alt="" coords="469,163,656,203"/>
-<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="414,180,456,180,456,185,414,185"/>
-<area shape="poly" id="edge21_Node000013_Node000015" title=" " alt="" coords="413,200,498,221,497,227,412,205"/>
-<area shape="poly" id="edge22_Node000015_Node000002" title=" " alt="" coords="620,225,663,212,711,192,748,178,750,183,713,197,665,217,621,230"/>
-<area shape="poly" id="edge23_Node000015_Node000007" title=" " alt="" coords="664,247,699,250,698,255,664,252"/>
-<area shape="poly" id="edge24_Node000015_Node000011" title=" " alt="" coords="664,232,889,227,1021,229,1154,236,1228,246,1228,251,1153,241,1021,234,889,232,664,237"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,129,200,154"/>
+<area shape="rect" id="Node000002" href="$d4/dad/classfl_1_1vector__basic_aa3b5f18f20eaa89f869849b2f4207759.html#aa3b5f18f20eaa89f869849b2f4207759" title="Heap&#45;only vector (no inline buffer)." alt="" coords="734,104,903,144"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,136,720,124,720,129,200,142"/>
+<area shape="rect" id="Node000004" href="$d4/dad/classfl_1_1vector__basic_a6f2b59a0929ec3375914400ea43b53dd.html#a6f2b59a0929ec3375914400ea43b53dd" title="Copy all elements from another vector_basic." alt="" coords="464,205,661,230"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="181,151,472,200,471,205,180,157"/>
+<area shape="rect" id="Node000015" href="$d4/dad/classfl_1_1vector__basic_a0987f604ea57ce1ac82a91e91651d0a2.html#a0987f604ea57ce1ac82a91e91651d0a2" title="Move&#45;assign from another vector_basic (clears this first)." alt="" coords="248,255,413,295"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="127,152,285,245,282,250,124,156"/>
+<area shape="rect" id="Node000017" href="$d4/dad/classfl_1_1vector__basic_ad65288bc00ca942dbb1c9dde2b40f782.html#ad65288bc00ca942dbb1c9dde2b40f782" title="Move&#45;steal contents from another vector_basic." alt="" coords="461,53,664,78"/>
+<area shape="poly" id="edge27_Node000001_Node000017" title=" " alt="" coords="138,126,189,109,247,95,350,78,448,69,448,74,350,84,249,100,191,115,140,131"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="773,104,771,94,778,85,794,79,819,77,847,80,862,87,860,92,845,85,819,83,795,84,781,89,776,95,779,103"/>
+<area shape="rect" id="Node000003" href="$d4/dad/classfl_1_1vector__basic_a3bdba8a50d37b2fd71bbec2b753fba3e.html#a3bdba8a50d37b2fd71bbec2b753fba3e" title=" " alt="" coords="986,111,1141,137"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="904,121,972,121,972,127,904,127"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="610,202,663,183,687,169,711,155,732,146,734,151,713,160,689,174,665,188,612,207"/>
+<area shape="rect" id="Node000005" href="$d4/dad/classfl_1_1vector__basic_ab7f6ed3b28983ba9ad5fc98710922dd2.html#ab7f6ed3b28983ba9ad5fc98710922dd2" title=" " alt="" coords="721,319,917,345"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="640,228,666,240,682,257,690,274,698,291,714,306,723,311,721,316,710,310,694,294,686,277,678,260,662,245,637,232"/>
+<area shape="rect" id="Node000006" href="$d4/dad/classfl_1_1vector__basic_a3a8ac3fa78ac2345911f4367694f186a.html#a3a8ac3fa78ac2345911f4367694f186a" title="Pointer to element at index (byte arithmetic)." alt="" coords="715,270,922,295"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="615,227,665,240,756,264,755,269,663,245,614,233"/>
+<area shape="rect" id="Node000007" href="$d4/dad/classfl_1_1vector__basic_abd10076a74728ff9707ebee25b92ca90.html#abd10076a74728ff9707ebee25b92ca90" title=" " alt="" coords="712,169,925,194"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="653,202,714,193,715,198,654,207"/>
+<area shape="rect" id="Node000011" href="$d4/dad/classfl_1_1vector__basic_a2a90e682670f8fbcc40201fcbe03d999.html#a2a90e682670f8fbcc40201fcbe03d999" title=" " alt="" coords="1203,169,1407,194"/>
+<area shape="poly" id="edge15_Node000004_Node000011" title=" " alt="" coords="662,217,887,217,1020,213,1153,204,1227,194,1228,199,1154,209,1020,218,887,223,662,223"/>
+<area shape="rect" id="Node000008" href="$d4/dad/classfl_1_1vector__basic_a67795afe6afd360b8f3bffb772fde73b.html#a67795afe6afd360b8f3bffb772fde73b" title="Grow to new_capacity. Moves existing elements." alt="" coords="973,169,1153,194"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="925,179,960,179,960,184,925,184"/>
+<area shape="rect" id="Node000009" href="$d4/dad/classfl_1_1vector__basic_a5c38462334e8be852c00a70dfc4bd31a.html#a5c38462334e8be852c00a70dfc4bd31a" title="Is data currently in the inline buffer?" alt="" coords="1218,370,1393,395"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="1082,192,1280,359,1277,363,1078,196"/>
+<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="1153,179,1190,179,1190,184,1153,184"/>
+<area shape="rect" id="Node000014" href="$d4/dad/classfl_1_1vector__basic_a92d9250650133807a2b5049c3f69e08b.html#a92d9250650133807a2b5049c3f69e08b" title=" " alt="" coords="1201,39,1409,79"/>
+<area shape="poly" id="edge14_Node000008_Node000014" title=" " alt="" coords="1104,166,1152,147,1210,116,1261,84,1264,89,1213,120,1154,152,1106,171"/>
+<area shape="rect" id="Node000010" href="$d4/dad/classfl_1_1vector__basic_a3d528d0097291ad564918d2a37ebf1ec.html#a3d528d0097291ad564918d2a37ebf1ec" title="Compute inline buffer pointer from offset." alt="" coords="1457,388,1621,428"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="1393,389,1444,395,1444,400,1393,395"/>
+<area shape="poly" id="edge12_Node000010_Node000010" title=" " alt="" coords="1496,388,1493,378,1500,369,1516,363,1539,361,1566,364,1581,371,1579,376,1565,369,1539,367,1517,368,1504,373,1499,379,1501,387"/>
+<area shape="poly" id="edge17_Node000015_Node000002" title=" " alt="" coords="356,252,403,220,460,191,526,168,595,151,720,130,721,136,596,157,528,174,462,196,406,225,359,257"/>
+<area shape="poly" id="edge18_Node000015_Node000005" title=" " alt="" coords="404,292,462,304,589,319,707,326,707,332,588,324,461,309,403,297"/>
+<area shape="poly" id="edge21_Node000015_Node000009" title=" " alt="" coords="370,292,413,312,462,329,562,352,666,368,769,380,871,387,1058,391,1204,386,1204,392,1058,396,871,392,769,385,665,374,561,357,461,334,411,317,368,297"/>
+<area shape="poly" id="edge20_Node000015_Node000010" title=" " alt="" coords="353,293,400,335,430,356,462,373,557,409,635,426,715,431,817,431,1065,431,1268,425,1443,413,1444,419,1268,430,1065,436,817,436,715,436,634,431,556,414,460,378,427,361,397,339,349,297"/>
+<area shape="rect" id="Node000016" href="$d4/dad/classfl_1_1vector__basic_a0f97d38518e3f1448ac5d1b09dd51f31.html#a0f97d38518e3f1448ac5d1b09dd51f31" title="Does this vector have an inline buffer at all?" alt="" coords="469,255,656,295"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="414,272,456,272,456,277,414,277"/>
+<area shape="poly" id="edge22_Node000015_Node000017" title=" " alt="" coords="350,252,460,146,532,85,536,89,463,150,354,256"/>
+<area shape="poly" id="edge23_Node000017_Node000002" title=" " alt="" coords="620,75,721,99,720,104,618,81"/>
+<area shape="poly" id="edge24_Node000017_Node000007" title=" " alt="" coords="582,76,639,114,713,153,739,162,737,167,711,158,636,119,579,80"/>
+<area shape="poly" id="edge25_Node000017_Node000011" title=" " alt="" coords="664,53,768,48,892,51,1025,65,1091,78,1154,96,1221,126,1276,158,1273,163,1219,130,1152,101,1089,83,1024,70,892,56,768,54,665,58"/>
+<area shape="poly" id="edge26_Node000017_Node000014" title=" " alt="" coords="599,50,651,34,712,21,835,7,932,3,1030,8,1154,21,1220,33,1219,38,1153,27,1029,13,932,8,836,12,712,27,653,39,600,55"/>
 </map>

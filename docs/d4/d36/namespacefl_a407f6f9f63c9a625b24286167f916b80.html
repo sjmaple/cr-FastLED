@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -117,32 +117,32 @@ $(function(){initNavTree('d4/d36/namespacefl_a407f6f9f63c9a625b24286167f916b80.h
 
 <p>16-bit sine ease-out function Takes an input value 0-65535 and returns an eased value 0-65535 </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html#l00305">305</a> of file <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html">ease.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  305</span>                         {</div>
-<div class="line"><span class="lineno">  306</span>    <span class="comment">// ease-out sine: sin(t * π/2)</span></div>
-<div class="line"><span class="lineno">  307</span>    <span class="comment">// Handle boundary conditions explicitly</span></div>
-<div class="line"><span class="lineno">  308</span>    <span class="keywordflow">if</span> (i == 0)</div>
-<div class="line"><span class="lineno">  309</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  310</span>    <span class="keywordflow">if</span> (i == 65535)</div>
-<div class="line"><span class="lineno">  311</span>        <span class="keywordflow">return</span> 65535;</div>
-<div class="line"><span class="lineno">  312</span> </div>
-<div class="line"><span class="lineno">  313</span>    <span class="comment">// For 16-bit: use sin32 for efficiency and accuracy</span></div>
-<div class="line"><span class="lineno">  314</span>    <span class="comment">// Map i from [0,65535] to [0,4194304] in sin32 space (zero to quarter wave)</span></div>
-<div class="line"><span class="lineno">  315</span>    <span class="comment">// Formula: sin(t * π/2) where t goes from 0 to 1</span></div>
-<div class="line"><span class="lineno">  316</span>    <span class="comment">// sin32 quarter cycle is 16777216/4 = 4194304</span></div>
-<div class="line"><span class="lineno">  317</span>    u32 angle = ((fl::u64)i * 4194304ULL) / 65535ULL;</div>
-<div class="line"><span class="lineno">  318</span>    i32 sin_result = <a class="code hl_function" href="../../d4/d36/namespacefl_a01a1bfd1f04c51e03c650527c00a1a78.html#a01a1bfd1f04c51e03c650527c00a1a78">fl::sin32</a>(angle);</div>
-<div class="line"><span class="lineno">  319</span>    </div>
-<div class="line"><span class="lineno">  320</span>    <span class="comment">// Convert sin32 output range [-2147418112, 2147418112] to [0, 65535]</span></div>
-<div class="line"><span class="lineno">  321</span>    <span class="comment">// sin32 output is in range -32767*65536 to +32767*65536</span></div>
-<div class="line"><span class="lineno">  322</span>    <span class="comment">// For ease-out sine, we only use positive portion [0, 2147418112] -&gt; [0, 65535]</span></div>
-<div class="line"><span class="lineno">  323</span>    <span class="keywordflow">return</span> (u16)((fl::u64)sin_result * 65535ULL / 2147418112ULL);</div>
-<div class="line"><span class="lineno">  324</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html#l00306">306</a> of file <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html">ease.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  306</span>                                      {</div>
+<div class="line"><span class="lineno">  307</span>    <span class="comment">// ease-out sine: sin(t * π/2)</span></div>
+<div class="line"><span class="lineno">  308</span>    <span class="comment">// Handle boundary conditions explicitly</span></div>
+<div class="line"><span class="lineno">  309</span>    <span class="keywordflow">if</span> (i == 0)</div>
+<div class="line"><span class="lineno">  310</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  311</span>    <span class="keywordflow">if</span> (i == 65535)</div>
+<div class="line"><span class="lineno">  312</span>        <span class="keywordflow">return</span> 65535;</div>
+<div class="line"><span class="lineno">  313</span> </div>
+<div class="line"><span class="lineno">  314</span>    <span class="comment">// For 16-bit: use sin32 for efficiency and accuracy</span></div>
+<div class="line"><span class="lineno">  315</span>    <span class="comment">// Map i from [0,65535] to [0,4194304] in sin32 space (zero to quarter wave)</span></div>
+<div class="line"><span class="lineno">  316</span>    <span class="comment">// Formula: sin(t * π/2) where t goes from 0 to 1</span></div>
+<div class="line"><span class="lineno">  317</span>    <span class="comment">// sin32 quarter cycle is 16777216/4 = 4194304</span></div>
+<div class="line"><span class="lineno">  318</span>    u32 angle = ((fl::u64)i * 4194304ULL) / 65535ULL;</div>
+<div class="line"><span class="lineno">  319</span>    i32 sin_result = <a class="code hl_function" href="../../d4/d36/namespacefl_a01a1bfd1f04c51e03c650527c00a1a78.html#a01a1bfd1f04c51e03c650527c00a1a78">fl::sin32</a>(angle);</div>
+<div class="line"><span class="lineno">  320</span>    </div>
+<div class="line"><span class="lineno">  321</span>    <span class="comment">// Convert sin32 output range [-2147418112, 2147418112] to [0, 65535]</span></div>
+<div class="line"><span class="lineno">  322</span>    <span class="comment">// sin32 output is in range -32767*65536 to +32767*65536</span></div>
+<div class="line"><span class="lineno">  323</span>    <span class="comment">// For ease-out sine, we only use positive portion [0, 2147418112] -&gt; [0, 65535]</span></div>
+<div class="line"><span class="lineno">  324</span>    <span class="keywordflow">return</span> (u16)((fl::u64)sin_result * 65535ULL / 2147418112ULL);</div>
+<div class="line"><span class="lineno">  325</span>}</div>
 <div class="ttc" id="anamespacefl_a01a1bfd1f04c51e03c650527c00a1a78_html_a01a1bfd1f04c51e03c650527c00a1a78"><div class="ttname"><a href="../../d4/d36/namespacefl_a01a1bfd1f04c51e03c650527c00a1a78.html#a01a1bfd1f04c51e03c650527c00a1a78">fl::sin32</a></div><div class="ttdeci">FASTLED_FORCE_INLINE i32 sin32(u32 angle) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d84/sin32_8h_source.html#l00057">sin32.h:57</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d84/sin32_8h_source.html#l00057">sin32()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">FL_NO_EXCEPT</a>, and <a class="el" href="../../d3/d84/sin32_8h_source.html#l00057">sin32()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d19/ease_8h_source.html#l00148">ease16()</a>, <a class="el" href="../../db/d19/ease_8h_source.html#l00132">ease16()</a>, and <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html#l00170">easeOutSine8()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d19/ease_8h_source.html#l00148">ease16()</a>, <a class="el" href="../../db/d19/ease_8h_source.html#l00132">ease16()</a>, and <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html#l00171">easeOutSine8()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -167,7 +167,7 @@ $(function(){initNavTree('d4/d36/namespacefl_a407f6f9f63c9a625b24286167f916b80.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:07 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:28 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

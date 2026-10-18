@@ -14,6 +14,8 @@ var namespaceobjectfled =
       [ "STRAPPING_PIN", "d4/dc4/namespaceobjectfled_a4574a1f31e16026e6881bf2c7706fe2e.html#a4574a1f31e16026e6881bf2c7706fe2ea605258d2fd5453bf7b2569393036c3ae", null ],
       [ "LED_PIN", "d4/dc4/namespaceobjectfled_a4574a1f31e16026e6881bf2c7706fe2e.html#a4574a1f31e16026e6881bf2c7706fe2eacffc51c66d7d88cd86f121ec1760ddbb", null ]
     ] ],
+    [ "bitdataWordsFor", "d4/dc4/namespaceobjectfled_aa063e907c7e432fcfdcb2db9c7604b5d.html#aa063e907c7e432fcfdcb2db9c7604b5d", null ],
+    [ "grownBitdataWords", "d4/dc4/namespaceobjectfled_af65d272ecfb5176395ee47f32aa79799.html#af65d272ecfb5176395ee47f32aa79799", null ],
     [ "is_valid_teensy4_pin", "d4/dc4/namespaceobjectfled_af58006b0e570f0f4eaaa7cbe83326e29.html#af58006b0e570f0f4eaaa7cbe83326e29", null ],
     [ "validate_teensy4_pin", "d4/dc4/namespaceobjectfled_a4de63123d020d200a03f3e89fa74aa05.html#a4de63123d020d200a03f3e89fa74aa05", null ]
 ];

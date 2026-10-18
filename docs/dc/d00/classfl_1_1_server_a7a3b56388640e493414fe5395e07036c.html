@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -116,19 +116,19 @@ $(function(){initNavTree('dc/d00/classfl_1_1_server_a7a3b56388640e493414fe5395e0
 </div><div class="memdoc">
 
 <p>Default constructor. </p>
-<p>Creates <a class="el" href="../../dc/d00/classfl_1_1_server.html" title="JSON-RPC server with callback-based I/O.">Server</a> with no-op callbacks. Use setRequestSource/setResponseSink to configure I/O, or call <a class="el" href="../../dc/d00/classfl_1_1_server_a55520babbe0af01fc78ddbc8a62c3632.html#a55520babbe0af01fc78ddbc8a62c3632" title="Set request handler.">setRequestHandler()</a> manually. </p>
+<p>Creates <a class="el" href="../../dc/d00/classfl_1_1_server.html" title="JSON-RPC server with callback-based I/O.">Server</a> with no-op callbacks. Use setRequestSource/setResponseSink to configure I/O, or call <a class="el" href="../../dc/d00/classfl_1_1_server_a522ff1edfeb507e60fa38e996f4dbe1c.html#a522ff1edfeb507e60fa38e996f4dbe1c" title="Set request handler.">setRequestHandler()</a> manually. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d73/remote_2rpc_2server_8cpp_8hpp_source.html#l00010">10</a> of file <a class="el" href="../../da/d73/remote_2rpc_2server_8cpp_8hpp_source.html">server.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>    : <a class="code hl_variable" href="../../dc/d00/classfl_1_1_server_a9a54ebfb0c00b5754d1574f5c61a7eac.html#a9a54ebfb0c00b5754d1574f5c61a7eac">mRequestSource</a>([]() { <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d4/d36/namespacefl_aa51c7c6f506ca9d9f3db40422b352b11.html#aa51c7c6f506ca9d9f3db40422b352b11">fl::nullopt</a>; })</div>
-<div class="line"><span class="lineno">   12</span>    , <a class="code hl_variable" href="../../dc/d00/classfl_1_1_server_af8bf9e37972cdf62f09595e7ca66e800.html#af8bf9e37972cdf62f09595e7ca66e800">mResponseSink</a>([](<span class="keyword">const</span> fl::json&amp;) {})</div>
-<div class="line"><span class="lineno">   13</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d73/remote_2rpc_2server_8cpp_8hpp_source.html#l00011">11</a> of file <a class="el" href="../../da/d73/remote_2rpc_2server_8cpp_8hpp_source.html">server.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>    : <a class="code hl_variable" href="../../dc/d00/classfl_1_1_server_a9a54ebfb0c00b5754d1574f5c61a7eac.html#a9a54ebfb0c00b5754d1574f5c61a7eac">mRequestSource</a>([]() { <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d4/d36/namespacefl_aa51c7c6f506ca9d9f3db40422b352b11.html#aa51c7c6f506ca9d9f3db40422b352b11">fl::nullopt</a>; })</div>
+<div class="line"><span class="lineno">   13</span>    , <a class="code hl_variable" href="../../dc/d00/classfl_1_1_server_af8bf9e37972cdf62f09595e7ca66e800.html#af8bf9e37972cdf62f09595e7ca66e800">mResponseSink</a>([](<span class="keyword">const</span> fl::json&amp;) {})</div>
+<div class="line"><span class="lineno">   14</span>{}</div>
 <div class="ttc" id="aclassfl_1_1_server_a9a54ebfb0c00b5754d1574f5c61a7eac_html_a9a54ebfb0c00b5754d1574f5c61a7eac"><div class="ttname"><a href="../../dc/d00/classfl_1_1_server_a9a54ebfb0c00b5754d1574f5c61a7eac.html#a9a54ebfb0c00b5754d1574f5c61a7eac">fl::Server::mRequestSource</a></div><div class="ttdeci">RequestSource mRequestSource</div><div class="ttdef"><b>Definition</b> <a href="../../da/dad/remote_2rpc_2server_8h_source.html#l00098">server.h:98</a></div></div>
 <div class="ttc" id="aclassfl_1_1_server_af8bf9e37972cdf62f09595e7ca66e800_html_af8bf9e37972cdf62f09595e7ca66e800"><div class="ttname"><a href="../../dc/d00/classfl_1_1_server_af8bf9e37972cdf62f09595e7ca66e800.html#af8bf9e37972cdf62f09595e7ca66e800">fl::Server::mResponseSink</a></div><div class="ttdeci">ResponseSink mResponseSink</div><div class="ttdef"><b>Definition</b> <a href="../../da/dad/remote_2rpc_2server_8h_source.html#l00099">server.h:99</a></div></div>
 <div class="ttc" id="anamespacefl_aa51c7c6f506ca9d9f3db40422b352b11_html_aa51c7c6f506ca9d9f3db40422b352b11"><div class="ttname"><a href="../../d4/d36/namespacefl_aa51c7c6f506ca9d9f3db40422b352b11.html#aa51c7c6f506ca9d9f3db40422b352b11">fl::nullopt</a></div><div class="ttdeci">constexpr nullopt_t nullopt</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d62/optional_8h_source.html#l00013">optional.h:13</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/dad/remote_2rpc_2server_8h_source.html#l00098">mRequestSource</a>, and <a class="el" href="../../dc/d62/optional_8h_source.html#l00013">fl::nullopt</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../da/dad/remote_2rpc_2server_8h_source.html#l00098">mRequestSource</a>, and <a class="el" href="../../dc/d62/optional_8h_source.html#l00013">fl::nullopt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d04/remote_8cpp_8hpp_source.html#l00314">fl::Remote::Remote()</a>, <a class="el" href="../../dc/d00/classfl_1_1_server_a84b9a09e9e43aa19f1eeb170813d757c.html#a84b9a09e9e43aa19f1eeb170813d757c">Server()</a>, <a class="el" href="../../dc/d00/classfl_1_1_server_af87a671067483ea6b778ec1756e0ce00.html#af87a671067483ea6b778ec1756e0ce00">Server()</a>, <a class="el" href="../../dc/d00/classfl_1_1_server_a8c72e6c60e55d37fbdc598d1a221b7b8.html#a8c72e6c60e55d37fbdc598d1a221b7b8">~Server()</a>, <a class="el" href="../../dc/d00/classfl_1_1_server_a2f7c3d624a4333967371ebb989f15314.html#a2f7c3d624a4333967371ebb989f15314">operator=()</a>, and <a class="el" href="../../dc/d00/classfl_1_1_server_a4c07bac803c0e25c85c5b29209b8be52.html#a4c07bac803c0e25c85c5b29209b8be52">operator=()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d04/remote_8cpp_8hpp_source.html#l00315">fl::Remote::Remote()</a>, <a class="el" href="../../dc/d00/classfl_1_1_server_a84b9a09e9e43aa19f1eeb170813d757c.html#a84b9a09e9e43aa19f1eeb170813d757c">Server()</a>, <a class="el" href="../../dc/d00/classfl_1_1_server_af87a671067483ea6b778ec1756e0ce00.html#af87a671067483ea6b778ec1756e0ce00">Server()</a>, <a class="el" href="../../dc/d00/classfl_1_1_server_a8c72e6c60e55d37fbdc598d1a221b7b8.html#a8c72e6c60e55d37fbdc598d1a221b7b8">~Server()</a>, <a class="el" href="../../dc/d00/classfl_1_1_server_a2f7c3d624a4333967371ebb989f15314.html#a2f7c3d624a4333967371ebb989f15314">operator=()</a>, and <a class="el" href="../../dc/d00/classfl_1_1_server_a4c07bac803c0e25c85c5b29209b8be52.html#a4c07bac803c0e25c85c5b29209b8be52">operator=()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -146,7 +146,7 @@ $(function(){initNavTree('dc/d00/classfl_1_1_server_a7a3b56388640e493414fe5395e0
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../dc/d00/classfl_1_1_server.html">Server</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:32 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

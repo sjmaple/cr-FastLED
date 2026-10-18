@@ -8,10 +8,10 @@ digraph "fl::audio::PerceptualWeighting::~PerceptualWeighting"
   rankdir="LR";
   Node1 [id="Node000001",label="fl::audio::PerceptualWeighting\l::~PerceptualWeighting",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::audio::PerceptualWeighting\l::applyAWeighting",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/classfl_1_1audio_1_1_perceptual_weighting_ad2cb5e3f315cbf3f0fdd46f7855e681e.html#ad2cb5e3f315cbf3f0fdd46f7855e681e",tooltip=" "];
+  Node2 [id="Node000002",label="fl::audio::PerceptualWeighting\l::applyAWeighting",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/classfl_1_1audio_1_1_perceptual_weighting_a38d4524214485305f4dd27497fe6eeb4.html#a38d4524214485305f4dd27497fe6eeb4",tooltip=" "];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="fl::audio::PerceptualWeighting\l::PerceptualWeighting",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/classfl_1_1audio_1_1_perceptual_weighting_ad559d27df246e1149080c70e360d0b49.html#ad559d27df246e1149080c70e360d0b49",tooltip=" "];
   Node2 -> Node2 [id="edge3_Node000002_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node4 [id="edge4_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="fl::audio::PerceptualWeighting\l::applyLoudnessCompensation",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/classfl_1_1audio_1_1_perceptual_weighting_a6956ecad8136b83216ec19a14f6a33cf.html#a6956ecad8136b83216ec19a14f6a33cf",tooltip=" "];
+  Node4 [id="Node000004",label="fl::audio::PerceptualWeighting\l::applyLoudnessCompensation",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/classfl_1_1audio_1_1_perceptual_weighting_ad8f5cb6a9fe1b9b15b8b5aa6b3f38bdb.html#ad8f5cb6a9fe1b9b15b8b5aa6b3f38bdb",tooltip=" "];
 }

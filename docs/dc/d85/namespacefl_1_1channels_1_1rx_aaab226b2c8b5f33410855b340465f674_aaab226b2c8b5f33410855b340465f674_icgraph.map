@@ -1,0 +1,16 @@
+<map id="fl::channels::rx::flexPwmStaticMidpointNs" name="fl::channels::rx::flexPwmStaticMidpointNs">
+<area shape="rect" id="Node000001" title="Static threshold between a 0 and a 1 HIGH: midpoint of T0H max / T1H min." alt="" coords="924,69,1105,109"/>
+<area shape="rect" id="Node000002" href="$dc/d85/namespacefl_1_1channels_1_1rx_ad26bb47dfa9011bf5c2892ccd195fb2c.html#ad26bb47dfa9011bf5c2892ccd195fb2c" title="#3416 adaptive midpoint: (min + max) / 2 of the observed HIGH widths once there are enough samples sp..." alt="" coords="695,69,876,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="910,92,876,92,876,87,910,87"/>
+<area shape="rect" id="Node000003" href="$d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_a3dbee50eef8e8e5d6b56527462981fd6.html#a3dbee50eef8e8e5d6b56527462981fd6" title=" " alt="" coords="459,5,647,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="698,68,625,48,627,43,699,63"/>
+<area shape="rect" id="Node000008" href="$dc/d85/namespacefl_1_1channels_1_1rx_a0a08c211ef0e6a9e8655bae93c4aae8d.html#a0a08c211ef0e6a9e8655bae93c4aae8d" title="Batch decoder over an edge list (HIGH, LOW, HIGH, ... with a LOW left out after a gap)." alt="" coords="467,69,639,109"/>
+<area shape="poly" id="edge6_Node000002_Node000008" title=" " alt="" coords="681,92,639,92,639,87,681,87"/>
+<area shape="rect" id="Node000009" href="$d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_a0fe67ed488d5e7a0b7bdd2de4d7f6179.html#a0fe67ed488d5e7a0b7bdd2de4d7f6179" title="Re&#45;classify the recorded bits with the decode&#45;time timing and write the partial final byte." alt="" coords="464,133,641,173"/>
+<area shape="poly" id="edge7_Node000002_Node000009" title=" " alt="" coords="699,116,627,136,625,131,698,110"/>
+<area shape="rect" id="Node000004" href="$d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_a3137ecf4767807c1cd37c8af54eb3b36.html#a3137ecf4767807c1cd37c8af54eb3b36" title="End of capture: decode the final pair (HIGH only; its LOW is the reset) and fix the calibration." alt="" coords="5,7,183,47"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="445,26,411,25,231,25,183,26,183,21,231,20,411,20,445,20"/>
+<area shape="rect" id="Node000005" href="$d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_a540a856275bd046226c057637de5acc7.html#a540a856275bd046226c057637de5acc7" title=" " alt="" coords="231,35,411,75"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="445,42,411,46,410,41,444,36"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="217,45,182,40,183,35,217,39"/>
+</map>

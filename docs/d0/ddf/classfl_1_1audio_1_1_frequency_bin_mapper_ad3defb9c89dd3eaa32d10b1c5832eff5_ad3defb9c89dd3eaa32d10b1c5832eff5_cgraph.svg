@@ -68,7 +68,7 @@ var sectionId = 'dynsection-0';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ae604f983be2f383b2b0196f83396b8ab.html#ae604f983be2f383b2b0196f83396b8ab" target="_top" xlink:title="Configure the frequency bin mapper This calculates bin boundaries and FFT&#45;to&#45;frequency bin mappings.">
+<g id="a_Node000002"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a1bba29562fd1b4aac76e6845777f253e.html#a1bba29562fd1b4aac76e6845777f253e" target="_top" xlink:title="Configure the frequency bin mapper This calculates bin boundaries and FFT&#45;to&#45;frequency bin mappings.">
 <polygon fill="white" stroke="#666666" points="364,-222 200,-222 200,-192 364,-192 364,-222"/>
 <text text-anchor="start" x="208" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
 <text text-anchor="middle" x="282" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00">::configure</text>
@@ -87,10 +87,10 @@ var sectionId = 'dynsection-0';
 <!-- Node19 -->
 <g id="Node000019" class="node">
 <title>Node19</title>
-<g id="a_Node000019"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a850a902c60d976eca8eaf255e8c0482c.html#a850a902c60d976eca8eaf255e8c0482c" target="_top" xlink:title="Get bass energy (average of bins 0&#45;1 in 16&#45;bin mode)">
-<polygon fill="white" stroke="#666666" points="364,-126 200,-126 200,-96 364,-96 364,-126"/>
-<text text-anchor="start" x="208" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
-<text text-anchor="middle" x="282" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">::getBassEnergy</text>
+<g id="a_Node000019"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a3b33fca6dc42d6e2908d430eaf4df0ee.html#a3b33fca6dc42d6e2908d430eaf4df0ee" target="_top" xlink:title="Get bass energy (average of bins 0&#45;1 in 16&#45;bin mode)">
+<polygon fill="white" stroke="#666666" points="364,-174 200,-174 200,-144 364,-144 364,-174"/>
+<text text-anchor="start" x="208" y="-162" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
+<text text-anchor="middle" x="282" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00">::getBassEnergy</text>
 </a>
 </g>
 </g>
@@ -98,6 +98,25 @@ var sectionId = 'dynsection-0';
 <g id="edge11_Node000001_Node000019" class="edge">
 <title>Node1&#45;&gt;Node19</title>
 <g id="a_edge11_Node000001_Node000019"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M145.11,-126.06C165.47,-130.99 188.26,-136.52 209.28,-141.61"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="208.57,-145.04 219.12,-144 210.22,-138.24 208.57,-145.04"/>
+</a>
+</g>
+</g>
+<!-- Node20 -->
+<g id="Node000020" class="node">
+<title>Node20</title>
+<g id="a_Node000020"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ab957342b9fb50b7c8ccbff48ff142d78.html#ab957342b9fb50b7c8ccbff48ff142d78" target="_top" xlink:title="Get mid energy (average of bins 6&#45;7 in 16&#45;bin mode)">
+<polygon fill="white" stroke="#666666" points="364,-126 200,-126 200,-96 364,-96 364,-126"/>
+<text text-anchor="start" x="208" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
+<text text-anchor="middle" x="282" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">::getMidEnergy</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node20 -->
+<g id="edge12_Node000001_Node000020" class="edge">
+<title>Node1&#45;&gt;Node20</title>
+<g id="a_edge12_Node000001_Node000020"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M164.11,-111C172.46,-111 180.99,-111 189.44,-111"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="189.7,-114.5 199.7,-111 189.7,-107.5 189.7,-114.5"/>
 </a>
@@ -106,10 +125,10 @@ var sectionId = 'dynsection-0';
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
-<g id="a_Node000021"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a98cbe96a5bfeb5f8b2a54f4754c9d962.html#a98cbe96a5bfeb5f8b2a54f4754c9d962" target="_top" xlink:title="Get mid energy (average of bins 6&#45;7 in 16&#45;bin mode)">
+<g id="a_Node000021"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a9e6ca71affed34e6187fdf8ee0f4ca63.html#a9e6ca71affed34e6187fdf8ee0f4ca63" target="_top" xlink:title="Get treble energy (average of bins 14&#45;15 in 16&#45;bin mode)">
 <polygon fill="white" stroke="#666666" points="364,-78 200,-78 200,-48 364,-48 364,-78"/>
 <text text-anchor="start" x="208" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
-<text text-anchor="middle" x="282" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::getMidEnergy</text>
+<text text-anchor="middle" x="282" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::getTrebleEnergy</text>
 </a>
 </g>
 </g>
@@ -125,38 +144,19 @@ var sectionId = 'dynsection-0';
 <!-- Node22 -->
 <g id="Node000022" class="node">
 <title>Node22</title>
-<g id="a_Node000022"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ac4578937ce025a3c491864fd539be2b3.html#ac4578937ce025a3c491864fd539be2b3" target="_top" xlink:title="Get treble energy (average of bins 14&#45;15 in 16&#45;bin mode)">
+<g id="a_Node000022"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ad312dda664fc376e1fda256a133b09af.html#ad312dda664fc376e1fda256a133b09af" target="_top" xlink:title="Map FFT bins to frequency channels.">
 <polygon fill="white" stroke="#666666" points="364,-30 200,-30 200,0 364,0 364,-30"/>
 <text text-anchor="start" x="208" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
-<text text-anchor="middle" x="282" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::getTrebleEnergy</text>
+<text text-anchor="middle" x="282" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::mapBins</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node22 -->
-<g id="edge15_Node000001_Node000022" class="edge">
+<g id="edge14_Node000001_Node000022" class="edge">
 <title>Node1&#45;&gt;Node22</title>
-<g id="a_edge15_Node000001_Node000022"><a xlink:title=" ">
+<g id="a_edge14_Node000001_Node000022"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M103.63,-95.96C126.31,-80.01 164.28,-54.94 200,-39 204.37,-37.05 208.95,-35.2 213.6,-33.47"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="214.97,-36.7 223.23,-30.07 212.64,-30.1 214.97,-36.7"/>
-</a>
-</g>
-</g>
-<!-- Node23 -->
-<g id="Node000023" class="node">
-<title>Node23</title>
-<g id="a_Node000023"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a9a095e84f5f12904f0ab85217e474976.html#a9a095e84f5f12904f0ab85217e474976" target="_top" xlink:title="Map FFT bins to frequency channels.">
-<polygon fill="white" stroke="#666666" points="364,-174 200,-174 200,-144 364,-144 364,-174"/>
-<text text-anchor="start" x="208" y="-162" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
-<text text-anchor="middle" x="282" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00">::mapBins</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node23 -->
-<g id="edge17_Node000001_Node000023" class="edge">
-<title>Node1&#45;&gt;Node23</title>
-<g id="a_edge17_Node000001_Node000023"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M145.11,-126.06C165.47,-130.99 188.26,-136.52 209.28,-141.61"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="208.57,-145.04 219.12,-144 210.22,-138.24 208.57,-145.04"/>
 </a>
 </g>
 </g>
@@ -191,7 +191,7 @@ var sectionId = 'dynsection-0';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_aca828d77220fdaf9492335d21480cb2a.html#aca828d77220fdaf9492335d21480cb2a" target="_top" xlink:title="Calculate frequency bin boundaries (linear or logarithmic spacing)">
+<g id="a_Node000004"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ac1fcdca548c554421460f421bf3ea410.html#ac1fcdca548c554421460f421bf3ea410" target="_top" xlink:title="Calculate frequency bin boundaries (linear or logarithmic spacing)">
 <polygon fill="white" stroke="#666666" points="564,-270 400,-270 400,-240 564,-240 564,-270"/>
 <text text-anchor="start" x="408" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
 <text text-anchor="middle" x="482" y="-247" font-family="Helvetica,sans-Serif" font-size="10.00">::calculateBinBoundaries</text>
@@ -210,7 +210,7 @@ var sectionId = 'dynsection-0';
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a457278fcf5b0d96f9d8af8df6446e70f.html#a457278fcf5b0d96f9d8af8df6446e70f" target="_top" xlink:title="Calculate FFT bin to frequency bin mappings Pre&#45;calculates which FFT bins contribute to each frequenc...">
+<g id="a_Node000015"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ac94e16e4ff99eaa738e93f00f6e0557e.html#ac94e16e4ff99eaa738e93f00f6e0557e" target="_top" xlink:title="Calculate FFT bin to frequency bin mappings Pre&#45;calculates which FFT bins contribute to each frequenc...">
 <polygon fill="white" stroke="#666666" points="564,-222 400,-222 400,-192 564,-192 564,-222"/>
 <text text-anchor="start" x="408" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
 <text text-anchor="middle" x="482" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00">::calculateBinMappings</text>
@@ -238,7 +238,7 @@ var sectionId = 'dynsection-0';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ac00a1cd7e5df9094c6248051584e5329.html#ac00a1cd7e5df9094c6248051584e5329" target="_top" xlink:title="Calculate linearly&#45;spaced frequency boundaries.">
+<g id="a_Node000005"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a98c31aa2499c5db8af319ec8a0b0e1b5.html#a98c31aa2499c5db8af319ec8a0b0e1b5" target="_top" xlink:title="Calculate linearly&#45;spaced frequency boundaries.">
 <polygon fill="#fff0f0" stroke="red" points="764,-316 600,-316 600,-286 764,-286 764,-316"/>
 <text text-anchor="start" x="608" y="-304" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
 <text text-anchor="middle" x="682" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00">::calculateLinearFrequencies</text>
@@ -257,7 +257,7 @@ var sectionId = 'dynsection-0';
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ac3108303376ac5f6f48c3c1e2da001d4.html#ac3108303376ac5f6f48c3c1e2da001d4" target="_top" xlink:title="Calculate logarithmically&#45;spaced frequency boundaries.">
+<g id="a_Node000007"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a4bafb13caa3c45445f34112e26bddd56.html#a4bafb13caa3c45445f34112e26bddd56" target="_top" xlink:title="Calculate logarithmically&#45;spaced frequency boundaries.">
 <polygon fill="#fff0f0" stroke="red" points="764,-268 600,-268 600,-238 764,-238 764,-268"/>
 <text text-anchor="start" x="608" y="-256" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
 <text text-anchor="middle" x="682" y="-245" font-family="Helvetica,sans-Serif" font-size="10.00">::calculateLogFrequencies</text>
@@ -294,7 +294,7 @@ var sectionId = 'dynsection-0';
 <!-- Node18 -->
 <g id="Node000018" class="node">
 <title>Node18</title>
-<g id="a_Node000018"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a602e993725b485f2648906f8658f4f36.html#a602e993725b485f2648906f8658f4f36" target="_top" xlink:title="Convert frequency (Hz) to FFT bin index.">
+<g id="a_Node000018"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a78d705e0aed2b5991c64f0bfa79080ed.html#a78d705e0aed2b5991c64f0bfa79080ed" target="_top" xlink:title="Convert frequency (Hz) to FFT bin index.">
 <polygon fill="white" stroke="#666666" points="764,-180 600,-180 600,-150 764,-150 764,-180"/>
 <text text-anchor="start" x="608" y="-168" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
 <text text-anchor="middle" x="682" y="-157" font-family="Helvetica,sans-Serif" font-size="10.00">::frequencyToFFTBin</text>
@@ -310,57 +310,12 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node20 -->
-<g id="Node000020" class="node">
-<title>Node20</title>
-<g id="a_Node000020"><a xlink:href="../../d0/d08/classfl_1_1span_aaf3daca1c2c8f93b2ac7b319989b22fa.html#aaf3daca1c2c8f93b2ac7b319989b22fa" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="520.5,-96.5 443.5,-96.5 443.5,-77.5 520.5,-77.5 520.5,-96.5"/>
-<text text-anchor="middle" x="482" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">fl::span::size</text>
-</a>
-</g>
-</g>
-<!-- Node19&#45;&gt;Node20 -->
-<g id="edge12_Node000019_Node000020" class="edge">
-<title>Node19&#45;&gt;Node20</title>
-<g id="a_edge12_Node000019_Node000020"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M364.11,-101.17C387.59,-98.32 412.45,-95.31 433.19,-92.8"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="433.81,-96.25 443.32,-91.57 432.97,-89.3 433.81,-96.25"/>
-</a>
-</g>
-</g>
-<!-- Node21&#45;&gt;Node20 -->
-<g id="edge14_Node000021_Node000020" class="edge">
-<title>Node21&#45;&gt;Node20</title>
-<g id="a_edge14_Node000021_Node000020"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M364.11,-72.83C387.59,-75.68 412.45,-78.69 433.19,-81.2"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="432.97,-84.7 443.32,-82.43 433.81,-77.75 432.97,-84.7"/>
-</a>
-</g>
-</g>
-<!-- Node22&#45;&gt;Node20 -->
-<g id="edge16_Node000022_Node000020" class="edge">
-<title>Node22&#45;&gt;Node20</title>
-<g id="a_edge16_Node000022_Node000020"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M336.84,-30.12C345.95,-32.92 355.28,-35.93 364,-39 393.72,-49.47 426.88,-63.28 450.29,-73.4"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="449.12,-76.71 459.69,-77.49 451.92,-70.29 449.12,-76.71"/>
-</a>
-</g>
-</g>
-<!-- Node23&#45;&gt;Node3 -->
-<g id="edge18_Node000023_Node000003" class="edge">
-<title>Node23&#45;&gt;Node3</title>
-<g id="a_edge18_Node000023_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M364.11,-159C372.46,-159 380.99,-159 389.44,-159"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="389.7,-162.5 399.7,-159 389.7,-155.5 389.7,-162.5"/>
-</a>
-</g>
-</g>
-<!-- Node23&#45;&gt;Node20 -->
-<g id="edge19_Node000023_Node000020" class="edge">
-<title>Node23&#45;&gt;Node20</title>
-<g id="a_edge19_Node000023_Node000020"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M336.84,-143.88C345.95,-141.08 355.28,-138.07 364,-135 393.72,-124.53 426.88,-110.72 450.29,-100.6"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="451.92,-103.71 459.69,-96.51 449.12,-97.29 451.92,-103.71"/>
+<!-- Node22&#45;&gt;Node3 -->
+<g id="edge15_Node000022_Node000003" class="edge">
+<title>Node22&#45;&gt;Node3</title>
+<g id="a_edge15_Node000022_Node000003"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M345.86,-30.09C352.18,-32.64 358.35,-35.59 364,-39 406.03,-64.37 443.49,-108.43 464.14,-135.52"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="461.44,-137.76 470.24,-143.67 467.05,-133.57 461.44,-137.76"/>
 </a>
 </g>
 </g>

@@ -32,7 +32,7 @@ digraph "fl::PixelIteratorAny"
   Node14 [id="Node000014",label="fl::shared_ptr\< T \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d1/d74/classfl_1_1shared__ptr.html",tooltip=" "];
   Node11 -> Node14 [id="edge13_Node000014_Node000011",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mControlBlock",fontcolor="grey" ];
   Node15 -> Node1 [id="edge14_Node000001_Node000015",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mRgbww",fontcolor="grey" ];
-  Node15 [id="Node000015",label="fl::Rgbww",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d4/df9/structfl_1_1_rgbww.html",tooltip="Per-strip RGBWW configuration."];
+  Node15 [id="Node000015",label="fl::Rgbww",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d4/df9/structfl_1_1_rgbww.html",tooltip=" "];
   Node16 -> Node15 [id="edge15_Node000015_Node000016",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" profile",fontcolor="grey" ];
   Node16 [id="Node000016",label="fl::colorimetric_detail\l::RgbcctProfile",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d7/df0/namespacefl_1_1colorimetric__detail.html#d1/d65/structfl_1_1colorimetric__detail_1_1_rgbcct_profile",tooltip=" "];
   Node10 -> Node16 [id="edge16_Node000016_Node000010",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" cool_path\nwarm_path",fontcolor="grey" ];

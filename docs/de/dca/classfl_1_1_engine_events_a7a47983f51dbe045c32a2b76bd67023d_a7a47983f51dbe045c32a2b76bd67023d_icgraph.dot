@@ -8,13 +8,13 @@ digraph "fl::EngineEvents::onCanvasUiSet"
   rankdir="RL";
   Node1 [id="Node000001",label="fl::EngineEvents::onCanvas\lUiSet",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::Channel::setScreenMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_a0dccce627f46ca1d42624d0f82889385.html#a0dccce627f46ca1d42624d0f82889385",tooltip="Set screen map for JS canvas visualization."];
+  Node2 [id="Node000002",label="fl::Channel::setScreenMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_afa0b23e17724fd3731f72568f9bab0fb.html#afa0b23e17724fd3731f72568f9bab0fb",tooltip="Set screen map for JS canvas visualization."];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::Channel::setScreenMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_ac3c700e8433fc9775f3f8a716161e3b1.html#ac3c700e8433fc9775f3f8a716161e3b1",tooltip="Set screen map for JS canvas visualization from XYMap."];
+  Node3 [id="Node000003",label="fl::Channel::setScreenMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_a8e51715ad11dd76133a4d450a1efc0f9.html#a8e51715ad11dd76133a4d450a1efc0f9",tooltip="Set screen map for JS canvas visualization from XYMap."];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="fl::Channel::setScreenMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_acfb78f07c618a1248db6c4fbbed5e408.html#acfb78f07c618a1248db6c4fbbed5e408",tooltip="Set screen map for 1D strip remapping from XMap."];
+  Node4 [id="Node000004",label="fl::Channel::setScreenMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_a2cc7c8cbeff38ff386530691ad3fddfa.html#a2cc7c8cbeff38ff386530691ad3fddfa",tooltip="Set screen map for 1D strip remapping from XMap."];
   Node3 -> Node5 [id="edge4_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="fl::Channel::setScreenMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_a6a2bf9a4ab0f0ee7df060a3d0cba96b3.html#a6a2bf9a4ab0f0ee7df060a3d0cba96b3",tooltip="Set screen map for JS canvas visualization from dimensions."];
+  Node5 [id="Node000005",label="fl::Channel::setScreenMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_ac6cf735da4c186a4ba106948de610ae6.html#ac6cf735da4c186a4ba106948de610ae6",tooltip="Set screen map for JS canvas visualization from dimensions."];
   Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="fl::CLEDController\l::setScreenMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/da0/classfl_1_1_c_l_e_d_controller_af8af99aa73ae16c19bd68146843355a0.html#af8af99aa73ae16c19bd68146843355a0",tooltip=" "];
   Node1 -> Node7 [id="edge6_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];

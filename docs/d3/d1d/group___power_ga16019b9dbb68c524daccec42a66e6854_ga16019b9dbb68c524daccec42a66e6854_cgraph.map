@@ -1,0 +1,24 @@
+<map id="calculate_max_brightness_for_power_vmA" name="calculate_max_brightness_for_power_vmA">
+<area shape="rect" id="Node000001" title="Determines the highest brightness level you can use and still stay under the specified power budget f..." alt="" coords="5,175,197,215"/>
+<area shape="rect" id="Node000002" href="$d3/d1d/group___power_ga275c8b5b79fc979d7a014d1eb019afb4.html#ga275c8b5b79fc979d7a014d1eb019afb4" title="Determines the highest brightness level you can use and still stay under the specified power budget f..." alt="" coords="245,175,437,215"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,192,232,192,232,198,197,198"/>
+<area shape="rect" id="Node000003" href="$d1/d2a/power__mgt_8cpp_8hpp_aef46c64d09d08f251357005ab93492fb.html#aef46c64d09d08f251357005ab93492fb" title=" " alt="" coords="485,85,675,110"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="391,172,534,113,536,118,393,177"/>
+<area shape="rect" id="Node000008" href="$d3/d1d/group___power_ga16d74a195554eafa8fa4f34e45c6251d.html#ga16d74a195554eafa8fa4f34e45c6251d" title="Determines how many milliwatts the current LED data would draw at max brightness (255)" alt="" coords="507,175,653,215"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="438,192,493,192,493,198,438,198"/>
+<area shape="rect" id="Node000010" href="$d1/d2a/power__mgt_8cpp_8hpp_ae2245147a795b67228a288a7f5f5bafb.html#ae2245147a795b67228a288a7f5f5bafb" title=" " alt="" coords="513,240,647,265"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="426,213,514,234,513,239,425,218"/>
+<area shape="rect" id="Node000004" href="$d1/d2a/power__mgt_8cpp_8hpp_a881fdbf812bd88a44dfcda9ae14312fd.html#a881fdbf812bd88a44dfcda9ae14312fd" title=" " alt="" coords="973,85,1115,110"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="598,83,651,49,686,33,722,21,779,8,824,3,870,7,926,21,953,31,978,44,1019,74,1016,78,975,49,950,36,925,26,869,12,824,8,779,13,723,26,688,38,654,54,600,87"/>
+<area shape="rect" id="Node000005" href="$d3/d1d/group___power_ga3202c54ac45d9164e61193067027596c.html#ga3202c54ac45d9164e61193067027596c" title="min(255, floor(255 * num / den)) for den &gt; 0, computed in 32&#45;bit arithmetic." alt="" coords="749,36,899,61"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="643,82,746,61,747,67,644,88"/>
+<area shape="rect" id="Node000006" href="$d3/d1d/group___power_ga15d5095d36ceee00d096e63623eacdf6.html#ga15d5095d36ceee00d096e63623eacdf6" title="Applies the configured power&#45;scaling response to a total power value." alt="" coords="723,85,925,110"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="675,95,709,95,709,100,675,100"/>
+<area shape="rect" id="Node000007" href="$d1/d2a/power__mgt_8cpp_8hpp_afd49d3490996e2a098da2cbe3cdb4ab6.html#afd49d3490996e2a098da2cbe3cdb4ab6" title=" " alt="" coords="745,134,903,160"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="644,108,747,129,746,134,643,113"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="926,95,960,95,960,100,926,100"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="653,197,713,198,782,195,854,186,924,169,974,145,1015,117,1018,121,977,150,926,174,855,191,782,200,713,203,653,203"/>
+<area shape="rect" id="Node000009" href="$d1/d2a/power__mgt_8cpp_8hpp_a3dd4773c5555fac4b128f19243f307a7.html#a3dd4773c5555fac4b128f19243f307a7" title="Global RGB power model (initialized to WS2812 @ 5V defaults, linear response)" alt="" coords="769,237,879,262"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="654,209,756,232,755,237,653,214"/>
+<area shape="poly" id="edge12_Node000010_Node000009" title=" " alt="" coords="647,249,755,248,755,253,647,254"/>
+</map>

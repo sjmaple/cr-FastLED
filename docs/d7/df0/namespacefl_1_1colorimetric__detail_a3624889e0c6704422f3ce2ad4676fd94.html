@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -126,7 +126,7 @@ $(function(){initNavTree('d7/df0/namespacefl_1_1colorimetric__detail_a3624889e0c
 <p class="definition">Definition at line <a class="el" href="../../d4/dab/rgbw__colorimetric_8h_source.html#l00112">112</a> of file <a class="el" href="../../d4/dab/rgbw__colorimetric_8h_source.html">rgbw_colorimetric.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  112</span>                                                                      {</div>
 <div class="line"><span class="lineno">  113</span>    <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kPrimaryEps = 1e-6f;</div>
-<div class="line"><span class="lineno">  114</span>    <span class="keyword">auto</span> close = [](<span class="keyword">const</span> <span class="keywordtype">float</span> a[2], <span class="keyword">const</span> <span class="keywordtype">float</span> b[2]) <a class="code hl_variable" href="../../d4/d36/namespacefl_aa317f89ca911371e798d08a93770402f.html#aa317f89ca911371e798d08a93770402f">FL_NO_EXCEPT</a> {</div>
+<div class="line"><span class="lineno">  114</span>    <span class="keyword">auto</span> close = [](<span class="keyword">const</span> <span class="keywordtype">float</span> a[2], <span class="keyword">const</span> <span class="keywordtype">float</span> b[2]) <a class="code hl_variable" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a> {</div>
 <div class="line"><span class="lineno">  115</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> dx = a[0] - b[0];</div>
 <div class="line"><span class="lineno">  116</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> dy = a[1] - b[1];</div>
 <div class="line"><span class="lineno">  117</span>        <span class="keywordflow">return</span> (dx * dx + dy * dy) &lt; kPrimaryEps;</div>
@@ -135,15 +135,15 @@ $(function(){initNavTree('d7/df0/namespacefl_1_1colorimetric__detail_a3624889e0c
 <div class="line"><span class="lineno">  120</span>        &amp;&amp; close(p.<a class="code hl_variable" href="../../d4/d36/namespacefl.html#a97424eba3953d33e71aa711a1f7a3791">input_xy_g</a>, p.<a class="code hl_variable" href="../../d4/d36/namespacefl.html#a89188692810b0d767e1cc548bd6fd5fd">xy_g</a>)</div>
 <div class="line"><span class="lineno">  121</span>        &amp;&amp; close(p.<a class="code hl_variable" href="../../d4/d36/namespacefl.html#a324cdd7a2b1bab7a74419a5f8230f4cc">input_xy_b</a>, p.<a class="code hl_variable" href="../../d4/d36/namespacefl.html#a94dd7b9433e88a3cb5fb68eba4f22725">xy_b</a>);</div>
 <div class="line"><span class="lineno">  122</span>}</div>
-<div class="ttc" id="anamespacefl_aa317f89ca911371e798d08a93770402f_html_aa317f89ca911371e798d08a93770402f"><div class="ttname"><a href="../../d4/d36/namespacefl_aa317f89ca911371e798d08a93770402f.html#aa317f89ca911371e798d08a93770402f">fl::FL_NO_EXCEPT</a></div><div class="ttdeci">InputGamut g FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">rgbw.h:121</a></div></div>
-<div class="ttc" id="anamespacefl_html_a324cdd7a2b1bab7a74419a5f8230f4cc"><div class="ttname"><a href="../../d4/d36/namespacefl.html#a324cdd7a2b1bab7a74419a5f8230f4cc">fl::DiodeProfile::input_xy_b</a></div><div class="ttdeci">float input_xy_b[2]</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00070">rgbw.h:70</a></div></div>
-<div class="ttc" id="anamespacefl_html_a89188692810b0d767e1cc548bd6fd5fd"><div class="ttname"><a href="../../d4/d36/namespacefl.html#a89188692810b0d767e1cc548bd6fd5fd">fl::DiodeProfile::xy_g</a></div><div class="ttdeci">float xy_g[2]</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00058">rgbw.h:58</a></div></div>
-<div class="ttc" id="anamespacefl_html_a8ad5738f29ce579b233d0ae9db3af39c"><div class="ttname"><a href="../../d4/d36/namespacefl.html#a8ad5738f29ce579b233d0ae9db3af39c">fl::DiodeProfile::input_xy_r</a></div><div class="ttdeci">float input_xy_r[2]</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00068">rgbw.h:68</a></div></div>
-<div class="ttc" id="anamespacefl_html_a94dd7b9433e88a3cb5fb68eba4f22725"><div class="ttname"><a href="../../d4/d36/namespacefl.html#a94dd7b9433e88a3cb5fb68eba4f22725">fl::DiodeProfile::xy_b</a></div><div class="ttdeci">float xy_b[2]</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00059">rgbw.h:59</a></div></div>
-<div class="ttc" id="anamespacefl_html_a97424eba3953d33e71aa711a1f7a3791"><div class="ttname"><a href="../../d4/d36/namespacefl.html#a97424eba3953d33e71aa711a1f7a3791">fl::DiodeProfile::input_xy_g</a></div><div class="ttdeci">float input_xy_g[2]</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00069">rgbw.h:69</a></div></div>
-<div class="ttc" id="anamespacefl_html_ad0b637db44bffccd128bbb83f8f6ca13"><div class="ttname"><a href="../../d4/d36/namespacefl.html#ad0b637db44bffccd128bbb83f8f6ca13">fl::DiodeProfile::xy_r</a></div><div class="ttdeci">float xy_r[2]</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00057">rgbw.h:57</a></div></div>
+<div class="ttc" id="anamespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5_html_a0f2fe8e60b0edbe21ace28f787ba7cb5"><div class="ttname"><a href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">fl::FL_NO_EXCEPT</a></div><div class="ttdeci">u8 u8 fract8 blur_amount FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d4/df5/blur_8h_source.html#l00186">blur.h:186</a></div></div>
+<div class="ttc" id="anamespacefl_html_a324cdd7a2b1bab7a74419a5f8230f4cc"><div class="ttname"><a href="../../d4/d36/namespacefl.html#a324cdd7a2b1bab7a74419a5f8230f4cc">fl::DiodeProfile::input_xy_b</a></div><div class="ttdeci">float input_xy_b[2]</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00071">rgbw.h:71</a></div></div>
+<div class="ttc" id="anamespacefl_html_a89188692810b0d767e1cc548bd6fd5fd"><div class="ttname"><a href="../../d4/d36/namespacefl.html#a89188692810b0d767e1cc548bd6fd5fd">fl::DiodeProfile::xy_g</a></div><div class="ttdeci">float xy_g[2]</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00059">rgbw.h:59</a></div></div>
+<div class="ttc" id="anamespacefl_html_a8ad5738f29ce579b233d0ae9db3af39c"><div class="ttname"><a href="../../d4/d36/namespacefl.html#a8ad5738f29ce579b233d0ae9db3af39c">fl::DiodeProfile::input_xy_r</a></div><div class="ttdeci">float input_xy_r[2]</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00069">rgbw.h:69</a></div></div>
+<div class="ttc" id="anamespacefl_html_a94dd7b9433e88a3cb5fb68eba4f22725"><div class="ttname"><a href="../../d4/d36/namespacefl.html#a94dd7b9433e88a3cb5fb68eba4f22725">fl::DiodeProfile::xy_b</a></div><div class="ttdeci">float xy_b[2]</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00060">rgbw.h:60</a></div></div>
+<div class="ttc" id="anamespacefl_html_a97424eba3953d33e71aa711a1f7a3791"><div class="ttname"><a href="../../d4/d36/namespacefl.html#a97424eba3953d33e71aa711a1f7a3791">fl::DiodeProfile::input_xy_g</a></div><div class="ttdeci">float input_xy_g[2]</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00070">rgbw.h:70</a></div></div>
+<div class="ttc" id="anamespacefl_html_ad0b637db44bffccd128bbb83f8f6ca13"><div class="ttname"><a href="../../d4/d36/namespacefl.html#ad0b637db44bffccd128bbb83f8f6ca13">fl::DiodeProfile::xy_r</a></div><div class="ttdeci">float xy_r[2]</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00058">rgbw.h:58</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>.</p>
 
 </div>
 </div>
@@ -154,7 +154,7 @@ $(function(){initNavTree('d7/df0/namespacefl_1_1colorimetric__detail_a3624889e0c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d7/df0/namespacefl_1_1colorimetric__detail.html">colorimetric_detail</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -131,42 +131,42 @@ template&lt;typename Iterator, typename Compare&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dd9/algorithm_8h_source.html#l00360">360</a> of file <a class="el" href="../../df/dd9/algorithm_8h_source.html">algorithm.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  360</span>                                                                                        {</div>
-<div class="line"><span class="lineno">  361</span>    Iterator root = start;</div>
-<div class="line"><span class="lineno">  362</span>    </div>
-<div class="line"><span class="lineno">  363</span>    <span class="keywordflow">while</span> (root - first &lt;= (<a class="code hl_function" href="../../d4/d36/namespacefl_aa45736aab5ddedf688b0c3efaedbf0f7.html#aa45736aab5ddedf688b0c3efaedbf0f7">end</a> - first - 2) / 2) {</div>
-<div class="line"><span class="lineno">  364</span>        Iterator child = first + 2 * (root - first) + 1;</div>
-<div class="line"><span class="lineno">  365</span>        Iterator swap_iter = root;</div>
-<div class="line"><span class="lineno">  366</span>        </div>
-<div class="line"><span class="lineno">  367</span>        <span class="keywordflow">if</span> (comp(*swap_iter, *child)) {</div>
-<div class="line"><span class="lineno">  368</span>            swap_iter = child;</div>
-<div class="line"><span class="lineno">  369</span>        }</div>
-<div class="line"><span class="lineno">  370</span>        </div>
-<div class="line"><span class="lineno">  371</span>        <span class="keywordflow">if</span> (child + 1 &lt;= <a class="code hl_function" href="../../d4/d36/namespacefl_aa45736aab5ddedf688b0c3efaedbf0f7.html#aa45736aab5ddedf688b0c3efaedbf0f7">end</a> &amp;&amp; comp(*swap_iter, *(child + 1))) {</div>
-<div class="line"><span class="lineno">  372</span>            swap_iter = child + 1;</div>
-<div class="line"><span class="lineno">  373</span>        }</div>
-<div class="line"><span class="lineno">  374</span>        </div>
-<div class="line"><span class="lineno">  375</span>        <span class="keywordflow">if</span> (swap_iter == root) {</div>
-<div class="line"><span class="lineno">  376</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  377</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  378</span>            <a class="code hl_function" href="../../d4/d36/namespacefl_a08f2a13f88bdefe6fb9ca7f73e99f5ef.html#a08f2a13f88bdefe6fb9ca7f73e99f5ef">swap</a>(*root, *swap_iter);</div>
-<div class="line"><span class="lineno">  379</span>            root = swap_iter;</div>
-<div class="line"><span class="lineno">  380</span>        }</div>
-<div class="line"><span class="lineno">  381</span>    }</div>
-<div class="line"><span class="lineno">  382</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/dd9/algorithm_8h_source.html#l00365">365</a> of file <a class="el" href="../../df/dd9/algorithm_8h_source.html">algorithm.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  365</span>                                                                                        {</div>
+<div class="line"><span class="lineno">  366</span>    Iterator root = start;</div>
+<div class="line"><span class="lineno">  367</span>    </div>
+<div class="line"><span class="lineno">  368</span>    <span class="keywordflow">while</span> (root - first &lt;= (<a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779.html#a0fc0bdd1e96cab039bda736400fdd779">end</a> - first - 2) / 2) {</div>
+<div class="line"><span class="lineno">  369</span>        Iterator child = first + 2 * (root - first) + 1;</div>
+<div class="line"><span class="lineno">  370</span>        Iterator swap_iter = root;</div>
+<div class="line"><span class="lineno">  371</span>        </div>
+<div class="line"><span class="lineno">  372</span>        <span class="keywordflow">if</span> (comp(*swap_iter, *child)) {</div>
+<div class="line"><span class="lineno">  373</span>            swap_iter = child;</div>
+<div class="line"><span class="lineno">  374</span>        }</div>
+<div class="line"><span class="lineno">  375</span>        </div>
+<div class="line"><span class="lineno">  376</span>        <span class="keywordflow">if</span> (child + 1 &lt;= <a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779.html#a0fc0bdd1e96cab039bda736400fdd779">end</a> &amp;&amp; comp(*swap_iter, *(child + 1))) {</div>
+<div class="line"><span class="lineno">  377</span>            swap_iter = child + 1;</div>
+<div class="line"><span class="lineno">  378</span>        }</div>
+<div class="line"><span class="lineno">  379</span>        </div>
+<div class="line"><span class="lineno">  380</span>        <span class="keywordflow">if</span> (swap_iter == root) {</div>
+<div class="line"><span class="lineno">  381</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  382</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  383</span>            <a class="code hl_function" href="../../d4/d36/namespacefl_a08f2a13f88bdefe6fb9ca7f73e99f5ef.html#a08f2a13f88bdefe6fb9ca7f73e99f5ef">swap</a>(*root, *swap_iter);</div>
+<div class="line"><span class="lineno">  384</span>            root = swap_iter;</div>
+<div class="line"><span class="lineno">  385</span>        }</div>
+<div class="line"><span class="lineno">  386</span>    }</div>
+<div class="line"><span class="lineno">  387</span>}</div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779_html_a0fc0bdd1e96cab039bda736400fdd779"><div class="ttname"><a href="../../df/d34/namespacefl_1_1adl__barrier_a0fc0bdd1e96cab039bda736400fdd779.html#a0fc0bdd1e96cab039bda736400fdd779">fl::adl_barrier::end</a></div><div class="ttdeci">constexpr T * end(T(&amp;array)[N]) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db6/range__access_8h_source.html#l00018">range_access.h:18</a></div></div>
 <div class="ttc" id="anamespacefl_a08f2a13f88bdefe6fb9ca7f73e99f5ef_html_a08f2a13f88bdefe6fb9ca7f73e99f5ef"><div class="ttname"><a href="../../d4/d36/namespacefl_a08f2a13f88bdefe6fb9ca7f73e99f5ef.html#a08f2a13f88bdefe6fb9ca7f73e99f5ef">fl::swap</a></div><div class="ttdeci">void swap(array&lt; T, N &gt; &amp;lhs, array&lt; T, N &gt; &amp;rhs) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d63/array_8h_source.html#l00209">array.h:209</a></div></div>
-<div class="ttc" id="anamespacefl_aa45736aab5ddedf688b0c3efaedbf0f7_html_aa45736aab5ddedf688b0c3efaedbf0f7"><div class="ttname"><a href="../../d4/d36/namespacefl_aa45736aab5ddedf688b0c3efaedbf0f7.html#aa45736aab5ddedf688b0c3efaedbf0f7">fl::end</a></div><div class="ttdeci">constexpr T * end(T(&amp;array)[N]) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db6/range__access_8h_source.html#l00016">range_access.h:16</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/db6/range__access_8h_source.html#l00016">fl::end()</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../db/d63/array_8h_source.html#l00209">fl::swap()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/db6/range__access_8h_source.html#l00018">fl::adl_barrier::end()</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../db/d63/array_8h_source.html#l00209">fl::swap()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/dd9/algorithm_8h_source.html#l00398">heap_sort()</a>, and <a class="el" href="../../df/dd9/algorithm_8h_source.html#l00385">heapify()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/dd9/algorithm_8h_source.html#l00403">heap_sort()</a>, and <a class="el" href="../../df/dd9/algorithm_8h_source.html#l00390">heapify()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d9e/namespacefl_1_1detail_abfd3bba181b696a4293f3d53625d2d4d_abfd3bba181b696a4293f3d53625d2d4d_cgraph.svg" width="276" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d9e/namespacefl_1_1detail_abfd3bba181b696a4293f3d53625d2d4d_abfd3bba181b696a4293f3d53625d2d4d_cgraph.svg" width="344" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -185,7 +185,7 @@ template&lt;typename Iterator, typename Compare&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../df/d9e/namespacefl_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -125,22 +125,22 @@ template&lt;typename F&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00548">548</a> of file <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html">math.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  548</span>                                      {</div>
-<div class="line"><span class="lineno">  549</span>    <span class="keyword">const</span> F kPiHalf = F(1.57079632679489661923);</div>
-<div class="line"><span class="lineno">  550</span>    <span class="comment">// Reduce to |u| &lt;= 1 via the reciprocal identity.</span></div>
-<div class="line"><span class="lineno">  551</span>    <span class="keywordflow">if</span> (u &gt; F(1)) {</div>
-<div class="line"><span class="lineno">  552</span>        <span class="keywordflow">return</span> kPiHalf - <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_a183d9d1e13b74ad2acebc355243283ff.html#a183d9d1e13b74ad2acebc355243283ff">atan_poly_unit_</a>(F(1) / u);</div>
-<div class="line"><span class="lineno">  553</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (u &lt; F(-1)) {</div>
-<div class="line"><span class="lineno">  554</span>        <span class="keywordflow">return</span> -kPiHalf - <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_a183d9d1e13b74ad2acebc355243283ff.html#a183d9d1e13b74ad2acebc355243283ff">atan_poly_unit_</a>(F(1) / u);</div>
-<div class="line"><span class="lineno">  555</span>    }</div>
-<div class="line"><span class="lineno">  556</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_a183d9d1e13b74ad2acebc355243283ff.html#a183d9d1e13b74ad2acebc355243283ff">atan_poly_unit_</a>(u);</div>
-<div class="line"><span class="lineno">  557</span>}</div>
-<div class="ttc" id="anamespacefl_1_1detail_a183d9d1e13b74ad2acebc355243283ff_html_a183d9d1e13b74ad2acebc355243283ff"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_a183d9d1e13b74ad2acebc355243283ff.html#a183d9d1e13b74ad2acebc355243283ff">fl::detail::atan_poly_unit_</a></div><div class="ttdeci">F atan_poly_unit_(F u) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d02/math_8cpp_8hpp_source.html#l00535">math.cpp.hpp:535</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00549">549</a> of file <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html">math.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  549</span>                                      {</div>
+<div class="line"><span class="lineno">  550</span>    <span class="keyword">const</span> F kPiHalf = F(1.57079632679489661923);</div>
+<div class="line"><span class="lineno">  551</span>    <span class="comment">// Reduce to |u| &lt;= 1 via the reciprocal identity.</span></div>
+<div class="line"><span class="lineno">  552</span>    <span class="keywordflow">if</span> (u &gt; F(1)) {</div>
+<div class="line"><span class="lineno">  553</span>        <span class="keywordflow">return</span> kPiHalf - <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_a183d9d1e13b74ad2acebc355243283ff.html#a183d9d1e13b74ad2acebc355243283ff">atan_poly_unit_</a>(F(1) / u);</div>
+<div class="line"><span class="lineno">  554</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (u &lt; F(-1)) {</div>
+<div class="line"><span class="lineno">  555</span>        <span class="keywordflow">return</span> -kPiHalf - <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_a183d9d1e13b74ad2acebc355243283ff.html#a183d9d1e13b74ad2acebc355243283ff">atan_poly_unit_</a>(F(1) / u);</div>
+<div class="line"><span class="lineno">  556</span>    }</div>
+<div class="line"><span class="lineno">  557</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_a183d9d1e13b74ad2acebc355243283ff.html#a183d9d1e13b74ad2acebc355243283ff">atan_poly_unit_</a>(u);</div>
+<div class="line"><span class="lineno">  558</span>}</div>
+<div class="ttc" id="anamespacefl_1_1detail_a183d9d1e13b74ad2acebc355243283ff_html_a183d9d1e13b74ad2acebc355243283ff"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_a183d9d1e13b74ad2acebc355243283ff.html#a183d9d1e13b74ad2acebc355243283ff">fl::detail::atan_poly_unit_</a></div><div class="ttdeci">F atan_poly_unit_(F u) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d02/math_8cpp_8hpp_source.html#l00536">math.cpp.hpp:536</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00535">atan_poly_unit_()</a>, and <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00536">atan_poly_unit_()</a>, and <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00638">fl::asin_impl_double()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00625">fl::asin_impl_float()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00560">atan2_full_()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00617">fl::atan_impl_double()</a>, and <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00609">fl::atan_impl_float()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00639">fl::asin_impl_double()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00626">fl::asin_impl_float()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00561">atan2_full_()</a>, <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00618">fl::atan_impl_double()</a>, and <a class="el" href="../../d8/d02/math_8cpp_8hpp_source.html#l00610">fl::atan_impl_float()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -165,7 +165,7 @@ template&lt;typename F&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../df/d9e/namespacefl_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

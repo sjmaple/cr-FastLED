@@ -1,0 +1,37 @@
+<map id="calculate_unscaled_power_mW" name="calculate_unscaled_power_mW">
+<area shape="rect" id="Node000001" title="Same, for a strip driven through the RGBW conversion." alt="" coords="5,102,152,142"/>
+<area shape="rect" id="Node000002" href="$d3/d1d/group___power_ga16d74a195554eafa8fa4f34e45c6251d.html#ga16d74a195554eafa8fa4f34e45c6251d" title="Determines how many milliwatts the current LED data would draw at max brightness (255)" alt="" coords="205,45,351,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,99,194,86,195,91,150,105"/>
+<area shape="rect" id="Node000003" href="$d1/d2a/power__mgt_8cpp_8hpp_a3dd4773c5555fac4b128f19243f307a7.html#a3dd4773c5555fac4b128f19243f307a7" title="Global RGB power model (initialized to WS2812 @ 5V defaults, linear response)" alt="" coords="448,5,559,31"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="98,100,141,62,169,44,199,30,260,14,322,7,382,5,434,8,434,13,382,11,323,12,261,20,201,35,172,49,144,67,101,104"/>
+<area shape="rect" id="Node000004" href="$d1/d2a/power__mgt_8cpp_8hpp_a881fdbf812bd88a44dfcda9ae14312fd.html#a881fdbf812bd88a44dfcda9ae14312fd" title=" " alt="" coords="433,67,574,92"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="152,113,356,94,419,87,420,92,356,99,152,119"/>
+<area shape="rect" id="Node000005" href="$d1/d2a/power__mgt_8cpp_8hpp_af6bb76aef3cb5c05e9c3ad5541dc68ba.html#af6bb76aef3cb5c05e9c3ad5541dc68ba" title=" " alt="" coords="200,160,356,185"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="153,138,215,154,213,159,151,143"/>
+<area shape="rect" id="Node000008" href="$d4/d36/namespacefl_a5d7f88cea77f862d6c24639b5a0cd916.html#a5d7f88cea77f862d6c24639b5a0cd916" title="Converts RGB to RGBW using one of the functions." alt="" coords="221,359,335,384"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="98,141,260,346,256,349,94,144"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="351,47,434,30,435,35,352,52"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="352,67,419,71,419,77,351,72"/>
+<area shape="rect" id="Node000006" href="$d9/d5b/classfl_1_1_singleton_ad5cb1b704e17768f75802673abb0ff75.html#ad5cb1b704e17768f75802673abb0ff75" title=" " alt="" coords="651,207,813,232"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="356,167,473,169,603,181,682,200,680,205,602,186,473,174,356,173"/>
+<area shape="rect" id="Node000007" href="$d4/d36/namespacefl_a1e67c0c24ebcd98fcf8554753d1639a6.html#a1e67c0c24ebcd98fcf8554753d1639a6" title=" " alt="" coords="861,207,1000,232"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="814,217,847,217,847,222,814,222"/>
+<area shape="rect" id="Node000009" href="$d4/d36/namespacefl_a25c2dc6d7ea89abcd4c49a3f47db92a8.html#a25c2dc6d7ea89abcd4c49a3f47db92a8" title=" " alt="" coords="404,388,603,413"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="335,376,392,384,392,389,335,381"/>
+<area shape="rect" id="Node000010" href="$d4/d36/namespacefl_a6aa3f7f2e78c62689adead6bf6345fc2.html#a6aa3f7f2e78c62689adead6bf6345fc2" title="Converts RGB to RGBW using a color transfer method from saturated color channels to white." alt="" coords="654,413,810,439"/>
+<area shape="poly" id="edge14_Node000008_Node000010" title=" " alt="" coords="303,382,349,404,405,422,465,431,527,435,641,433,641,438,527,440,465,436,403,427,347,409,300,386"/>
+<area shape="rect" id="Node000011" href="$d4/d36/namespacefl_ac181c9536b6f0d1d772a4bd18f48a543.html#ac181c9536b6f0d1d772a4bd18f48a543" title=" " alt="" coords="404,489,603,529"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="294,382,342,423,405,468,432,481,429,486,403,472,338,427,291,386"/>
+<area shape="rect" id="Node000012" href="$d4/d36/namespacefl_aa1613ee1e95b25e5378d780742d73719.html#aa1613ee1e95b25e5378d780742d73719" title="The minimum brigthness of the RGB channels is used to set the W channel." alt="" coords="429,553,578,593"/>
+<area shape="poly" id="edge15_Node000008_Node000012" title=" " alt="" coords="288,383,304,414,330,456,364,500,406,539,418,546,415,551,402,543,360,504,325,459,299,417,283,385"/>
+<area shape="rect" id="Node000013" href="$d4/d36/namespacefl_a127a41ddb75b964f9c4fd9b495116195.html#a127a41ddb75b964f9c4fd9b495116195" title="Converts RGB to RGBW with the W channel set to black, always." alt="" coords="431,195,575,235"/>
+<area shape="poly" id="edge16_Node000008_Node000013" title=" " alt="" coords="287,357,333,303,366,272,403,245,418,237,420,242,405,250,369,276,337,307,291,360"/>
+<area shape="rect" id="Node000014" href="$d4/d36/namespacefl_a026d160d22f564528df70c6bfca44db5.html#a026d160d22f564528df70c6bfca44db5" title=" " alt="" coords="429,259,577,299"/>
+<area shape="poly" id="edge17_Node000008_Node000014" title=" " alt="" coords="302,356,403,309,423,301,424,306,405,314,304,361"/>
+<area shape="rect" id="Node000015" href="$d4/d36/namespacefl_af35efd61260f0d8d2bf7da89f49ac821.html#af35efd61260f0d8d2bf7da89f49ac821" title="Converts RGB to RGBW with a boosted white channel." alt="" coords="425,323,581,363"/>
+<area shape="poly" id="edge20_Node000008_Node000015" title=" " alt="" coords="335,362,412,352,412,357,335,367"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="603,409,641,413,640,419,603,414"/>
+<area shape="poly" id="edge13_Node000011_Node000010" title=" " alt="" coords="558,486,682,441,684,446,560,491"/>
+<area shape="poly" id="edge18_Node000014_Node000006" title=" " alt="" coords="577,257,669,233,670,238,578,263"/>
+<area shape="poly" id="edge19_Node000014_Node000010" title=" " alt="" coords="578,297,604,309,636,330,666,355,713,401,709,405,662,359,633,335,601,314,576,302"/>
+</map>

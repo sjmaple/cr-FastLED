@@ -24,12 +24,12 @@ digraph "fl::ColorProfileBinding"
   Node17 -> Node2 [id="edge8_Node000002_Node000017",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< const fl::ColorProfile\lStorage \>",fontcolor="grey" ];
   Node17 [id="Node000017",label="fl::shared_ptr\< T \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d1/d74/classfl_1_1shared__ptr.html",tooltip=" "];
   Node14 -> Node17 [id="edge9_Node000017_Node000014",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mControlBlock",fontcolor="grey" ];
-  Node18 -> Node1 [id="edge10_Node000001_Node000018",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mSource",fontcolor="grey" ];
+  Node4 -> Node1 [id="edge10_Node000001_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mStaticProfile",fontcolor="grey" ];
+  Node18 -> Node1 [id="edge11_Node000001_Node000018",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mSource",fontcolor="grey" ];
   Node18 [id="Node000018",label="fl::SourceProfile",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$da/d81/structfl_1_1_source_profile.html",tooltip="A source declaration, not a container or an output-device selection."];
-  Node19 -> Node18 [id="edge11_Node000018_Node000019",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" primaries",fontcolor="grey" ];
+  Node19 -> Node18 [id="edge12_Node000018_Node000019",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" primaries",fontcolor="grey" ];
   Node19 [id="Node000019",label="fl::RgbPrimaries",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d4/d33/structfl_1_1_rgb_primaries.html",tooltip=" "];
-  Node20 -> Node19 [id="edge12_Node000019_Node000020",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" blue\ngreen\nred\nwhite",fontcolor="grey" ];
+  Node20 -> Node19 [id="edge13_Node000019_Node000020",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" blue\ngreen\nred\nwhite",fontcolor="grey" ];
   Node20 [id="Node000020",label="fl::Chromaticity",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d2/d9c/structfl_1_1_chromaticity.html",tooltip="CIE 1931 xy chromaticity, independent of encoded storage and chipset."];
-  Node20 -> Node1 [id="edge13_Node000001_Node000020",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mTargetWhite",fontcolor="grey" ];
-  Node4 -> Node1 [id="edge14_Node000001_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mStaticProfile",fontcolor="grey" ];
+  Node20 -> Node1 [id="edge14_Node000001_Node000020",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mTargetWhite",fontcolor="grey" ];
 }

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -128,22 +128,22 @@ $(function(){initNavTree('d2/d6b/classfl_1_1_channel_manager_a00529005793bae5555
 
 <p>Reimplemented from <a class="el" href="../../db/da2/classfl_1_1_engine_events_1_1_listener_a64cffa0a94c052aa7d41974d7fa4b614.html#a64cffa0a94c052aa7d41974d7fa4b614">fl::EngineEvents::Listener</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00583">583</a> of file <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html">manager.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  583</span>                                {</div>
-<div class="line"><span class="lineno">  584</span>    <span class="comment">// Call show() on all drivers to trigger transmission</span></div>
-<div class="line"><span class="lineno">  585</span>    <span class="comment">// Channels have enqueued data directly to drivers during showPixels()</span></div>
-<div class="line"><span class="lineno">  586</span>    <span class="comment">// Now we trigger transmission by calling show() on each driver</span></div>
-<div class="line"><span class="lineno">  587</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; entry : <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">mDrivers</a>) {</div>
-<div class="line"><span class="lineno">  588</span>        <span class="keywordflow">if</span> (entry.enabled) {</div>
-<div class="line"><span class="lineno">  589</span>            entry.driver-&gt;show();</div>
-<div class="line"><span class="lineno">  590</span>        }</div>
-<div class="line"><span class="lineno">  591</span>    }</div>
-<div class="line"><span class="lineno">  592</span>    <a class="code hl_function" href="../../d2/d6b/classfl_1_1_channel_manager_a10a6b64316d63740f381ea73eb322d3a.html#a10a6b64316d63740f381ea73eb322d3a">waitForReadyOrDraining</a>();</div>
-<div class="line"><span class="lineno">  593</span>}</div>
-<div class="ttc" id="aclassfl_1_1_channel_manager_a10a6b64316d63740f381ea73eb322d3a_html_a10a6b64316d63740f381ea73eb322d3a"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_a10a6b64316d63740f381ea73eb322d3a.html#a10a6b64316d63740f381ea73eb322d3a">fl::ChannelManager::waitForReadyOrDraining</a></div><div class="ttdeci">bool waitForReadyOrDraining(u32 timeoutMs=1000) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00563">manager.cpp.hpp:563</a></div></div>
-<div class="ttc" id="aclassfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4_html_adc5f4506b80dc60555293e39438918c4"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">fl::ChannelManager::mDrivers</a></div><div class="ttdeci">fl::vector&lt; EngineEntry &gt; mDrivers</div><div class="ttdoc">Shared drivers sorted by priority descending (higher values first)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/manager_8h_source.html#l00321">manager.h:321</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00593">593</a> of file <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html">manager.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  593</span>                                             {</div>
+<div class="line"><span class="lineno">  594</span>    <span class="comment">// Call show() on all drivers to trigger transmission</span></div>
+<div class="line"><span class="lineno">  595</span>    <span class="comment">// Channels have enqueued data directly to drivers during showPixels()</span></div>
+<div class="line"><span class="lineno">  596</span>    <span class="comment">// Now we trigger transmission by calling show() on each driver</span></div>
+<div class="line"><span class="lineno">  597</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; entry : <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">mDrivers</a>) {</div>
+<div class="line"><span class="lineno">  598</span>        <span class="keywordflow">if</span> (entry.enabled) {</div>
+<div class="line"><span class="lineno">  599</span>            entry.driver-&gt;show();</div>
+<div class="line"><span class="lineno">  600</span>        }</div>
+<div class="line"><span class="lineno">  601</span>    }</div>
+<div class="line"><span class="lineno">  602</span>    <a class="code hl_function" href="../../d2/d6b/classfl_1_1_channel_manager_a10a6b64316d63740f381ea73eb322d3a.html#a10a6b64316d63740f381ea73eb322d3a">waitForReadyOrDraining</a>();</div>
+<div class="line"><span class="lineno">  603</span>}</div>
+<div class="ttc" id="aclassfl_1_1_channel_manager_a10a6b64316d63740f381ea73eb322d3a_html_a10a6b64316d63740f381ea73eb322d3a"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_a10a6b64316d63740f381ea73eb322d3a.html#a10a6b64316d63740f381ea73eb322d3a">fl::ChannelManager::waitForReadyOrDraining</a></div><div class="ttdeci">bool waitForReadyOrDraining(u32 timeoutMs=1000) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00573">manager.cpp.hpp:573</a></div></div>
+<div class="ttc" id="aclassfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4_html_adc5f4506b80dc60555293e39438918c4"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">fl::ChannelManager::mDrivers</a></div><div class="ttdeci">fl::vector&lt; EngineEntry &gt; mDrivers</div><div class="ttdoc">Shared drivers sorted by priority descending (higher values first)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/manager_8h_source.html#l00327">manager.h:327</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../db/d45/manager_8h_source.html#l00321">mDrivers</a>, and <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00563">waitForReadyOrDraining()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d45/manager_8h_source.html#l00327">mDrivers</a>, and <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00573">waitForReadyOrDraining()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -161,7 +161,7 @@ $(function(){initNavTree('d2/d6b/classfl_1_1_channel_manager_a00529005793bae5555
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d2/d6b/classfl_1_1_channel_manager.html">ChannelManager</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -105,130 +105,130 @@ $(function(){initNavTree('db/d24/base64_8cpp_8hpp_source.html','../../'); initRe
 <div class="contents">
 <a href="../../db/d24/base64_8cpp_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="../../d2/d6f/base64_8h.html">fl/remote/rpc/base64.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/d8d/cstring_8h.html">fl/stl/cstring.h</a>&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d36/namespacefl.html">fl</a> {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03.html">    6</a></span><span class="keyword">namespace </span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a8fdff95e662ff039beb9ed70ff6fe6f5.html#a8fdff95e662ff039beb9ed70ff6fe6f5">    8</a></span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a8fdff95e662ff039beb9ed70ff6fe6f5.html#a8fdff95e662ff039beb9ed70ff6fe6f5">kBase64Chars</a>[] =</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="stringliteral">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&quot;</span>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a2d3e2af13d4027fec97839b9461cb287.html#a2d3e2af13d4027fec97839b9461cb287">   11</a></span><span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a2d3e2af13d4027fec97839b9461cb287.html#a2d3e2af13d4027fec97839b9461cb287">base64_char_index</a>(<span class="keywordtype">char</span> c) {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">if</span> (c &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;Z&#39;</span>) <span class="keywordflow">return</span> c - <span class="charliteral">&#39;A&#39;</span>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">if</span> (c &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;z&#39;</span>) <span class="keywordflow">return</span> c - <span class="charliteral">&#39;a&#39;</span> + 26;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">if</span> (c &gt;= <span class="charliteral">&#39;0&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;9&#39;</span>) <span class="keywordflow">return</span> c - <span class="charliteral">&#39;0&#39;</span> + 52;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">if</span> (c == <span class="charliteral">&#39;+&#39;</span>) <span class="keywordflow">return</span> 62;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">if</span> (c == <span class="charliteral">&#39;/&#39;</span>) <span class="keywordflow">return</span> 63;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/d01/noexcept_8h.html">fl/stl/noexcept.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d36/namespacefl.html">fl</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03.html">    7</a></span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a8fdff95e662ff039beb9ed70ff6fe6f5.html#a8fdff95e662ff039beb9ed70ff6fe6f5">    9</a></span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a8fdff95e662ff039beb9ed70ff6fe6f5.html#a8fdff95e662ff039beb9ed70ff6fe6f5">kBase64Chars</a>[] =</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="stringliteral">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&quot;</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a73c63d72ec4957cadf6606a2bf00509e.html#a73c63d72ec4957cadf6606a2bf00509e">   12</a></span><span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a73c63d72ec4957cadf6606a2bf00509e.html#a73c63d72ec4957cadf6606a2bf00509e">base64_char_index</a>(<span class="keywordtype">char</span> c) <a class="code hl_variable" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">if</span> (c &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;Z&#39;</span>) <span class="keywordflow">return</span> c - <span class="charliteral">&#39;A&#39;</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">if</span> (c &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;z&#39;</span>) <span class="keywordflow">return</span> c - <span class="charliteral">&#39;a&#39;</span> + 26;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">if</span> (c &gt;= <span class="charliteral">&#39;0&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;9&#39;</span>) <span class="keywordflow">return</span> c - <span class="charliteral">&#39;0&#39;</span> + 52;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">if</span> (c == <span class="charliteral">&#39;+&#39;</span>) <span class="keywordflow">return</span> 62;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> (c == <span class="charliteral">&#39;/&#39;</span>) <span class="keywordflow">return</span> 63;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
 </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <span class="comment">// namespace</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>} <span class="comment">// namespace</span></div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../d4/d36/namespacefl_ad3e42d4adbe2315c61901d31c232be28.html#ad3e42d4adbe2315c61901d31c232be28">   22</a></span><a class="code hl_class" href="../../d2/db2/classfl_1_1string.html">fl::string</a> <a class="code hl_function" href="../../d4/d36/namespacefl_ad3e42d4adbe2315c61901d31c232be28.html#ad3e42d4adbe2315c61901d31c232be28">base64_encode</a>(<a class="code hl_class" href="../../d0/d08/classfl_1_1span.html">fl::span&lt;const fl::u8&gt;</a> data) {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_class" href="../../d2/db2/classfl_1_1string.html">fl::string</a> out;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">if</span> (data.<a class="code hl_function" href="../../d0/d08/classfl_1_1span_a28135041ca9036a3efb34c1d0afe115b.html#a28135041ca9036a3efb34c1d0afe115b">empty</a>()) <span class="keywordflow">return</span> out;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    fl::size encoded_len = 4 * ((data.<a class="code hl_function" href="../../d0/d08/classfl_1_1span_aaf3daca1c2c8f93b2ac7b319989b22fa.html#aaf3daca1c2c8f93b2ac7b319989b22fa">size</a>() + 2) / 3);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    out.<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_a8925f81272fae0e7187ae92919787096.html#a8925f81272fae0e7187ae92919787096">reserve</a>(encoded_len);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    fl::size i = 0;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    fl::size len = data.<a class="code hl_function" href="../../d0/d08/classfl_1_1span_aaf3daca1c2c8f93b2ac7b319989b22fa.html#aaf3daca1c2c8f93b2ac7b319989b22fa">size</a>();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">while</span> (i + 2 &lt; len) {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        fl::u32 triple = (fl::u32(data[i]) &lt;&lt; 16) |</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                         (fl::u32(data[i + 1]) &lt;&lt; 8) |</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                          fl::u32(data[i + 2]);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        out += kBase64Chars[(triple &gt;&gt; 18) &amp; 0x3F];</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        out += kBase64Chars[(triple &gt;&gt; 12) &amp; 0x3F];</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        out += kBase64Chars[(triple &gt;&gt; 6) &amp; 0x3F];</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        out += kBase64Chars[triple &amp; 0x3F];</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        i += 3;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// Handle remaining bytes</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (i &lt; len) {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        fl::u32 triple = fl::u32(data[i]) &lt;&lt; 16;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">if</span> (i + 1 &lt; len) {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            triple |= fl::u32(data[i + 1]) &lt;&lt; 8;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        out += kBase64Chars[(triple &gt;&gt; 18) &amp; 0x3F];</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        out += kBase64Chars[(triple &gt;&gt; 12) &amp; 0x3F];</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">if</span> (i + 1 &lt; len) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            out += kBase64Chars[(triple &gt;&gt; 6) &amp; 0x3F];</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            out += <span class="charliteral">&#39;=&#39;</span>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        out += <span class="charliteral">&#39;=&#39;</span>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d4/d36/namespacefl_aa10401ae9c82397d4425b23a7c63bafc.html#aa10401ae9c82397d4425b23a7c63bafc">   23</a></span><a class="code hl_class" href="../../d2/db2/classfl_1_1string.html">fl::string</a> <a class="code hl_function" href="../../d4/d36/namespacefl_aa10401ae9c82397d4425b23a7c63bafc.html#aa10401ae9c82397d4425b23a7c63bafc">base64_encode</a>(<a class="code hl_class" href="../../d0/d08/classfl_1_1span.html">fl::span&lt;const fl::u8&gt;</a> data) <a class="code hl_variable" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="../../d2/db2/classfl_1_1string.html">fl::string</a> out;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">if</span> (data.empty()) <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    fl::size encoded_len = 4 * ((data.size() + 2) / 3);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    out.<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_a8925f81272fae0e7187ae92919787096.html#a8925f81272fae0e7187ae92919787096">reserve</a>(encoded_len);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    fl::size i = 0;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    fl::size len = data.size();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">while</span> (i + 2 &lt; len) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        fl::u32 triple = (fl::u32(data[i]) &lt;&lt; 16) |</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                         (fl::u32(data[i + 1]) &lt;&lt; 8) |</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                          fl::u32(data[i + 2]);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        out += kBase64Chars[(triple &gt;&gt; 18) &amp; 0x3F];</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        out += kBase64Chars[(triple &gt;&gt; 12) &amp; 0x3F];</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        out += kBase64Chars[(triple &gt;&gt; 6) &amp; 0x3F];</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        out += kBase64Chars[triple &amp; 0x3F];</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        i += 3;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// Handle remaining bytes</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">if</span> (i &lt; len) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        fl::u32 triple = fl::u32(data[i]) &lt;&lt; 16;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">if</span> (i + 1 &lt; len) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            triple |= fl::u32(data[i + 1]) &lt;&lt; 8;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        out += kBase64Chars[(triple &gt;&gt; 18) &amp; 0x3F];</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        out += kBase64Chars[(triple &gt;&gt; 12) &amp; 0x3F];</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">if</span> (i + 1 &lt; len) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            out += kBase64Chars[(triple &gt;&gt; 6) &amp; 0x3F];</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            out += <span class="charliteral">&#39;=&#39;</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        out += <span class="charliteral">&#39;=&#39;</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d4/d36/namespacefl_a7c2e1eeb8291dde4a54103a753da3483.html#a7c2e1eeb8291dde4a54103a753da3483">   62</a></span><a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::u8&gt;</a> <a class="code hl_function" href="../../d4/d36/namespacefl_a7c2e1eeb8291dde4a54103a753da3483.html#a7c2e1eeb8291dde4a54103a753da3483">base64_decode</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d2/db2/classfl_1_1string.html">fl::string</a>&amp; encoded) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::u8&gt;</a> out;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">if</span> (encoded.<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">empty</a>()) <span class="keywordflow">return</span> out;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    fl::size len = encoded.<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_af8fe033f0ec1bd3567ffcc20ddb4e7fa.html#af8fe033f0ec1bd3567ffcc20ddb4e7fa">size</a>();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// Validate length is multiple of 4</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">if</span> (len % 4 != 0) <span class="keywordflow">return</span> out;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    fl::size out_len = (len / 4) * 3;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">if</span> (len &gt;= 1 &amp;&amp; encoded[len - 1] == <span class="charliteral">&#39;=&#39;</span>) out_len--;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">if</span> (len &gt;= 2 &amp;&amp; encoded[len - 2] == <span class="charliteral">&#39;=&#39;</span>) out_len--;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    out.<a class="code hl_function" href="../../d2/d24/classfl_1_1vector_a106fe3779897c81ef234f25952ed29d7.html#a106fe3779897c81ef234f25952ed29d7">reserve</a>(out_len);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">for</span> (fl::size i = 0; i &lt; len; i += 4) {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordtype">int</span> a = base64_char_index(encoded[i]);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">int</span> b = base64_char_index(encoded[i + 1]);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">int</span> c = (encoded[i + 2] == <span class="charliteral">&#39;=&#39;</span>) ? 0 : base64_char_index(encoded[i + 2]);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">int</span> d = (encoded[i + 3] == <span class="charliteral">&#39;=&#39;</span>) ? 0 : base64_char_index(encoded[i + 3]);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">if</span> (a &lt; 0 || b &lt; 0 || c &lt; 0 || d &lt; 0) {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::u8&gt;</a>(); <span class="comment">// invalid character</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        fl::u32 triple = (fl::u32(a) &lt;&lt; 18) | (fl::u32(b) &lt;&lt; 12) |</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                          (fl::u32(c) &lt;&lt; 6) | fl::u32(d);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        out.<a class="code hl_function" href="../../d2/d24/classfl_1_1vector_a82c3455c1a345460f95a0180c93b3fb0.html#a82c3455c1a345460f95a0180c93b3fb0">push_back</a>((triple &gt;&gt; 16) &amp; 0xFF);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">if</span> (encoded[i + 2] != <span class="charliteral">&#39;=&#39;</span>) {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            out.<a class="code hl_function" href="../../d2/d24/classfl_1_1vector_a82c3455c1a345460f95a0180c93b3fb0.html#a82c3455c1a345460f95a0180c93b3fb0">push_back</a>((triple &gt;&gt; 8) &amp; 0xFF);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">if</span> (encoded[i + 3] != <span class="charliteral">&#39;=&#39;</span>) {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            out.<a class="code hl_function" href="../../d2/d24/classfl_1_1vector_a82c3455c1a345460f95a0180c93b3fb0.html#a82c3455c1a345460f95a0180c93b3fb0">push_back</a>(triple &amp; 0xFF);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d4/d36/namespacefl_a21a0026787f4c41c1cc63f0152ccf2bd.html#a21a0026787f4c41c1cc63f0152ccf2bd">   63</a></span><a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::u8&gt;</a> <a class="code hl_function" href="../../d4/d36/namespacefl_a21a0026787f4c41c1cc63f0152ccf2bd.html#a21a0026787f4c41c1cc63f0152ccf2bd">base64_decode</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d2/db2/classfl_1_1string.html">fl::string</a>&amp; encoded) <a class="code hl_variable" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a> {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::u8&gt;</a> out;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">if</span> (encoded.empty()) <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    fl::size len = encoded.<a class="code hl_function" href="../../d4/dad/classfl_1_1vector__basic_a3bdba8a50d37b2fd71bbec2b753fba3e.html#a3bdba8a50d37b2fd71bbec2b753fba3e">size</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// Validate length is multiple of 4</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">if</span> (len % 4 != 0) <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    fl::size out_len = (len / 4) * 3;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">if</span> (len &gt;= 1 &amp;&amp; encoded[len - 1] == <span class="charliteral">&#39;=&#39;</span>) out_len--;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">if</span> (len &gt;= 2 &amp;&amp; encoded[len - 2] == <span class="charliteral">&#39;=&#39;</span>) out_len--;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    out.<a class="code hl_function" href="../../d2/d24/classfl_1_1vector_a106fe3779897c81ef234f25952ed29d7.html#a106fe3779897c81ef234f25952ed29d7">reserve</a>(out_len);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">for</span> (fl::size i = 0; i &lt; len; i += 4) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">int</span> a = base64_char_index(encoded[i]);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">int</span> b = base64_char_index(encoded[i + 1]);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">int</span> c = (encoded[i + 2] == <span class="charliteral">&#39;=&#39;</span>) ? 0 : base64_char_index(encoded[i + 2]);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordtype">int</span> d = (encoded[i + 3] == <span class="charliteral">&#39;=&#39;</span>) ? 0 : base64_char_index(encoded[i + 3]);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">if</span> (a &lt; 0 || b &lt; 0 || c &lt; 0 || d &lt; 0) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../d2/d24/classfl_1_1vector.html">fl::vector&lt;fl::u8&gt;</a>(); <span class="comment">// invalid character</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        fl::u32 triple = (fl::u32(a) &lt;&lt; 18) | (fl::u32(b) &lt;&lt; 12) |</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                          (fl::u32(c) &lt;&lt; 6) | fl::u32(d);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        out.<a class="code hl_function" href="../../d2/d24/classfl_1_1vector_a82c3455c1a345460f95a0180c93b3fb0.html#a82c3455c1a345460f95a0180c93b3fb0">push_back</a>((triple &gt;&gt; 16) &amp; 0xFF);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">if</span> (encoded[i + 2] != <span class="charliteral">&#39;=&#39;</span>) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            out.<a class="code hl_function" href="../../d2/d24/classfl_1_1vector_a82c3455c1a345460f95a0180c93b3fb0.html#a82c3455c1a345460f95a0180c93b3fb0">push_back</a>((triple &gt;&gt; 8) &amp; 0xFF);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">if</span> (encoded[i + 3] != <span class="charliteral">&#39;=&#39;</span>) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            out.<a class="code hl_function" href="../../d2/d24/classfl_1_1vector_a82c3455c1a345460f95a0180c93b3fb0.html#a82c3455c1a345460f95a0180c93b3fb0">push_back</a>(triple &amp; 0xFF);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
 </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>} <span class="comment">// namespace fl</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>} <span class="comment">// namespace fl</span></div>
 <div class="ttc" id="abase64_8h_html"><div class="ttname"><a href="../../d2/d6f/base64_8h.html">base64.h</a></div></div>
 <div class="ttc" id="aclassfl_1_1basic__string_a8925f81272fae0e7187ae92919787096_html_a8925f81272fae0e7187ae92919787096"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_a8925f81272fae0e7187ae92919787096.html#a8925f81272fae0e7187ae92919787096">fl::basic_string::reserve</a></div><div class="ttdeci">void reserve(fl::size newCapacity) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00499">basic_string.cpp.hpp:499</a></div></div>
-<div class="ttc" id="aclassfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb_html_ac3effe716fde4667b05a52d78d74bbfb"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">fl::basic_string::empty</a></div><div class="ttdeci">bool empty() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00155">basic_string.h:155</a></div></div>
-<div class="ttc" id="aclassfl_1_1basic__string_af8fe033f0ec1bd3567ffcc20ddb4e7fa_html_af8fe033f0ec1bd3567ffcc20ddb4e7fa"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_af8fe033f0ec1bd3567ffcc20ddb4e7fa.html#af8fe033f0ec1bd3567ffcc20ddb4e7fa">fl::basic_string::size</a></div><div class="ttdeci">fl::size size() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00153">basic_string.h:153</a></div></div>
-<div class="ttc" id="aclassfl_1_1span_a28135041ca9036a3efb34c1d0afe115b_html_a28135041ca9036a3efb34c1d0afe115b"><div class="ttname"><a href="../../d0/d08/classfl_1_1span_a28135041ca9036a3efb34c1d0afe115b.html#a28135041ca9036a3efb34c1d0afe115b">fl::span::empty</a></div><div class="ttdeci">constexpr bool empty() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7a/span_8h_source.html#l00535">span.h:535</a></div></div>
-<div class="ttc" id="aclassfl_1_1span_aaf3daca1c2c8f93b2ac7b319989b22fa_html_aaf3daca1c2c8f93b2ac7b319989b22fa"><div class="ttname"><a href="../../d0/d08/classfl_1_1span_aaf3daca1c2c8f93b2ac7b319989b22fa.html#aaf3daca1c2c8f93b2ac7b319989b22fa">fl::span::size</a></div><div class="ttdeci">constexpr fl::size size() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7a/span_8h_source.html#l00483">span.h:483</a></div></div>
 <div class="ttc" id="aclassfl_1_1span_html"><div class="ttname"><a href="../../d0/d08/classfl_1_1span.html">fl::span</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7a/span_8h_source.html#l00410">span.h:410</a></div></div>
 <div class="ttc" id="aclassfl_1_1string_html"><div class="ttname"><a href="../../d2/db2/classfl_1_1string.html">fl::string</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d66/string_8h_source.html#l00202">string.h:202</a></div></div>
+<div class="ttc" id="aclassfl_1_1vector__basic_a3bdba8a50d37b2fd71bbec2b753fba3e_html_a3bdba8a50d37b2fd71bbec2b753fba3e"><div class="ttname"><a href="../../d4/dad/classfl_1_1vector__basic_a3bdba8a50d37b2fd71bbec2b753fba3e.html#a3bdba8a50d37b2fd71bbec2b753fba3e">fl::vector_basic::size</a></div><div class="ttdeci">fl::size size() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d47/basic__vector_8h_source.html#l00039">basic_vector.h:39</a></div></div>
 <div class="ttc" id="aclassfl_1_1vector_a106fe3779897c81ef234f25952ed29d7_html_a106fe3779897c81ef234f25952ed29d7"><div class="ttname"><a href="../../d2/d24/classfl_1_1vector_a106fe3779897c81ef234f25952ed29d7.html#a106fe3779897c81ef234f25952ed29d7">fl::vector::reserve</a></div><div class="ttdeci">void reserve(fl::size n) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d68/vector_8h_source.html#l00591">vector.h:591</a></div></div>
 <div class="ttc" id="aclassfl_1_1vector_a82c3455c1a345460f95a0180c93b3fb0_html_a82c3455c1a345460f95a0180c93b3fb0"><div class="ttname"><a href="../../d2/d24/classfl_1_1vector_a82c3455c1a345460f95a0180c93b3fb0.html#a82c3455c1a345460f95a0180c93b3fb0">fl::vector::push_back</a></div><div class="ttdeci">void push_back(const T &amp;value) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d68/vector_8h_source.html#l00624">vector.h:624</a></div></div>
 <div class="ttc" id="aclassfl_1_1vector_html"><div class="ttname"><a href="../../d2/d24/classfl_1_1vector.html">fl::vector</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d68/vector_8h_source.html#l00449">vector.h:449</a></div></div>
 <div class="ttc" id="acstring_8h_html"><div class="ttname"><a href="../../dd/d8d/cstring_8h.html">cstring.h</a></div></div>
-<div class="ttc" id="anamespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a2d3e2af13d4027fec97839b9461cb287_html_a2d3e2af13d4027fec97839b9461cb287"><div class="ttname"><a href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a2d3e2af13d4027fec97839b9461cb287.html#a2d3e2af13d4027fec97839b9461cb287">fl::anonymous_namespace{base64.cpp.hpp}::base64_char_index</a></div><div class="ttdeci">static int base64_char_index(char c)</div><div class="ttdef"><b>Definition</b> <a href="#l00011">base64.cpp.hpp:11</a></div></div>
-<div class="ttc" id="anamespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a8fdff95e662ff039beb9ed70ff6fe6f5_html_a8fdff95e662ff039beb9ed70ff6fe6f5"><div class="ttname"><a href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a8fdff95e662ff039beb9ed70ff6fe6f5.html#a8fdff95e662ff039beb9ed70ff6fe6f5">fl::anonymous_namespace{base64.cpp.hpp}::kBase64Chars</a></div><div class="ttdeci">static const char kBase64Chars[]</div><div class="ttdef"><b>Definition</b> <a href="#l00008">base64.cpp.hpp:8</a></div></div>
-<div class="ttc" id="anamespacefl_a7c2e1eeb8291dde4a54103a753da3483_html_a7c2e1eeb8291dde4a54103a753da3483"><div class="ttname"><a href="../../d4/d36/namespacefl_a7c2e1eeb8291dde4a54103a753da3483.html#a7c2e1eeb8291dde4a54103a753da3483">fl::base64_decode</a></div><div class="ttdeci">fl::vector&lt; fl::u8 &gt; base64_decode(const fl::string &amp;encoded)</div><div class="ttdef"><b>Definition</b> <a href="#l00062">base64.cpp.hpp:62</a></div></div>
-<div class="ttc" id="anamespacefl_ad3e42d4adbe2315c61901d31c232be28_html_ad3e42d4adbe2315c61901d31c232be28"><div class="ttname"><a href="../../d4/d36/namespacefl_ad3e42d4adbe2315c61901d31c232be28.html#ad3e42d4adbe2315c61901d31c232be28">fl::base64_encode</a></div><div class="ttdeci">fl::string base64_encode(fl::span&lt; const fl::u8 &gt; data)</div><div class="ttdef"><b>Definition</b> <a href="#l00022">base64.cpp.hpp:22</a></div></div>
+<div class="ttc" id="anamespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a73c63d72ec4957cadf6606a2bf00509e_html_a73c63d72ec4957cadf6606a2bf00509e"><div class="ttname"><a href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a73c63d72ec4957cadf6606a2bf00509e.html#a73c63d72ec4957cadf6606a2bf00509e">fl::anonymous_namespace{base64.cpp.hpp}::base64_char_index</a></div><div class="ttdeci">static int base64_char_index(char c) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="#l00012">base64.cpp.hpp:12</a></div></div>
+<div class="ttc" id="anamespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a8fdff95e662ff039beb9ed70ff6fe6f5_html_a8fdff95e662ff039beb9ed70ff6fe6f5"><div class="ttname"><a href="../../d1/d84/namespacefl_1_1anonymous__namespace_02base64_8cpp_8hpp_03_a8fdff95e662ff039beb9ed70ff6fe6f5.html#a8fdff95e662ff039beb9ed70ff6fe6f5">fl::anonymous_namespace{base64.cpp.hpp}::kBase64Chars</a></div><div class="ttdeci">static const char kBase64Chars[]</div><div class="ttdef"><b>Definition</b> <a href="#l00009">base64.cpp.hpp:9</a></div></div>
+<div class="ttc" id="anamespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5_html_a0f2fe8e60b0edbe21ace28f787ba7cb5"><div class="ttname"><a href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">fl::FL_NO_EXCEPT</a></div><div class="ttdeci">u8 u8 fract8 blur_amount FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d4/df5/blur_8h_source.html#l00186">blur.h:186</a></div></div>
+<div class="ttc" id="anamespacefl_a21a0026787f4c41c1cc63f0152ccf2bd_html_a21a0026787f4c41c1cc63f0152ccf2bd"><div class="ttname"><a href="../../d4/d36/namespacefl_a21a0026787f4c41c1cc63f0152ccf2bd.html#a21a0026787f4c41c1cc63f0152ccf2bd">fl::base64_decode</a></div><div class="ttdeci">fl::vector&lt; fl::u8 &gt; base64_decode(const fl::string &amp;encoded) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="#l00063">base64.cpp.hpp:63</a></div></div>
+<div class="ttc" id="anamespacefl_aa10401ae9c82397d4425b23a7c63bafc_html_aa10401ae9c82397d4425b23a7c63bafc"><div class="ttname"><a href="../../d4/d36/namespacefl_aa10401ae9c82397d4425b23a7c63bafc.html#aa10401ae9c82397d4425b23a7c63bafc">fl::base64_encode</a></div><div class="ttdeci">fl::string base64_encode(fl::span&lt; const fl::u8 &gt; data) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="#l00023">base64.cpp.hpp:23</a></div></div>
 <div class="ttc" id="anamespacefl_html"><div class="ttname"><a href="../../d4/d36/namespacefl.html">fl</a></div><div class="ttdoc">Base definition for an LED controller.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d4b/crgb_8hpp_source.html#l00179">crgb.hpp:179</a></div></div>
+<div class="ttc" id="anoexcept_8h_html"><div class="ttname"><a href="../../db/d01/noexcept_8h.html">noexcept.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -236,7 +236,7 @@ $(function(){initNavTree('db/d24/base64_8cpp_8hpp_source.html','../../'); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><a class="el" href="../../dir_d08a73fbb994b1f7f5700d569dcb8c8c.html">remote</a></li><li class="navelem"><a class="el" href="../../dir_8b0c596c1b5c17a99a96cc65980c174b.html">rpc</a></li><li class="navelem"><a class="el" href="../../db/d24/base64_8cpp_8hpp.html">base64.cpp.hpp</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:01 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:15 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -1,0 +1,43 @@
+<map id="PixelController::loadAndScaleRGBW" name="PixelController::loadAndScaleRGBW">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,133,184,173"/>
+<area shape="rect" id="Node000002" href="$d0/dee/struct_pixel_controller_ac781d584232fa20252e834c6443b01df.html#ac781d584232fa20252e834c6443b01df" title="non&#45;template alias of loadAndScale&lt;0&gt;()" alt="" coords="232,5,411,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,131,169,93,231,55,244,48,247,53,233,60,172,98,122,135"/>
+<area shape="rect" id="Node000006" href="$d0/dee/struct_pixel_controller_a4cdddff28824a4128241865201b079f3.html#a4cdddff28824a4128241865201b079f3" title="non&#45;template alias of loadAndScale&lt;1&gt;()" alt="" coords="232,69,411,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="166,131,236,111,237,116,167,136"/>
+<area shape="rect" id="Node000007" href="$d0/dee/struct_pixel_controller_abfe5d7e4f55da80cc41d6b6bf75c1d7b.html#abfe5d7e4f55da80cc41d6b6bf75c1d7b" title="non&#45;template alias of loadAndScale&lt;2&gt;()" alt="" coords="232,133,411,173"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="185,151,218,151,218,156,185,156"/>
+<area shape="rect" id="Node000008" href="$d0/dee/struct_pixel_controller_a225af4f3c371082ba7956a682c04f885.html#a225af4f3c371082ba7956a682c04f885" title="loadAndScaleRGBW before its wire reorder: RGB in source order plus W." alt="" coords="232,197,411,237"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="167,171,237,191,236,196,166,176"/>
+<area shape="rect" id="Node000021" href="$d4/d36/namespacefl_a4ab7970bd150284b7202696df8e33f45.html#a4ab7970bd150284b7202696df8e33f45" title=" " alt="" coords="235,262,408,287"/>
+<area shape="poly" id="edge23_Node000001_Node000021" title=" " alt="" coords="121,172,171,210,233,247,253,255,251,260,231,252,168,214,118,176"/>
+<area shape="rect" id="Node000003" href="$d0/dee/struct_pixel_controller_a28eb1755a900be9b4a008a8f8672f51e.html#a28eb1755a900be9b4a008a8f8672f51e" title="Complete pipeline: load â†’ dither â†’ scale (THE MAGIC HAPPENS HERE!) Order is critical: pixel + dit..." alt="" coords="459,69,637,109"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="394,43,464,63,463,68,392,48"/>
+<area shape="rect" id="Node000004" href="$d0/dee/struct_pixel_controller_a15c94e0bc05c85f6e4a790abea8f0050.html#a15c94e0bc05c85f6e4a790abea8f0050" title="Copy constructor." alt="" coords="685,77,905,102"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="638,87,672,87,672,92,638,92"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="757,78,749,68,753,58,769,52,795,50,828,54,841,63,838,68,826,59,795,55,770,57,757,62,754,68,761,75"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="411,87,445,87,445,92,411,92"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="392,131,463,111,464,116,394,136"/>
+<area shape="rect" id="Node000009" href="$d0/dee/struct_pixel_controller_a51a13a6ff889168738e41eb793daf5c8.html#a51a13a6ff889168738e41eb793daf5c8" title="One source channel, loaded, dithered and scaled – loadAndScale&lt;SLOT&gt; with RO(SLOT) replaced by a runt..." alt="" coords="459,165,637,205"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="411,202,445,197,446,202,412,207"/>
+<area shape="rect" id="Node000011" href="$d4/d36/namespacefl_a5d7f88cea77f862d6c24639b5a0cd916.html#a5d7f88cea77f862d6c24639b5a0cd916" title="Converts RGB to RGBW using one of the functions." alt="" coords="491,338,605,363"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="386,235,412,247,474,287,524,327,520,331,471,291,409,252,384,240"/>
+<area shape="rect" id="Node000010" href="$dd/d6c/structfl_1_1_binary_dither_a855eeda5bd1b617b06acd895eeba5b03.html#a855eeda5bd1b617b06acd895eeba5b03" title="Add the offset to a source byte, before scaling. Black is never lifted." alt="" coords="713,149,877,174"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="637,174,699,168,700,173,638,179"/>
+<area shape="rect" id="Node000012" href="$d4/d36/namespacefl_a25c2dc6d7ea89abcd4c49a3f47db92a8.html#a25c2dc6d7ea89abcd4c49a3f47db92a8" title=" " alt="" coords="696,198,895,223"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="560,336,612,290,646,263,684,240,721,225,723,230,687,245,649,268,615,294,564,340"/>
+<area shape="rect" id="Node000013" href="$d4/d36/namespacefl_a6aa3f7f2e78c62689adead6bf6345fc2.html#a6aa3f7f2e78c62689adead6bf6345fc2" title="Converts RGB to RGBW using a color transfer method from saturated color channels to white." alt="" coords="953,278,1109,303"/>
+<area shape="poly" id="edge17_Node000011_Node000013" title=" " alt="" coords="568,336,619,308,651,294,685,284,751,274,818,270,940,276,940,281,818,276,751,279,686,289,653,299,621,313,570,340"/>
+<area shape="rect" id="Node000014" href="$d4/d36/namespacefl_ac181c9536b6f0d1d772a4bd18f48a543.html#ac181c9536b6f0d1d772a4bd18f48a543" title=" " alt="" coords="696,299,895,339"/>
+<area shape="poly" id="edge15_Node000011_Node000014" title=" " alt="" coords="605,341,682,331,683,336,605,346"/>
+<area shape="rect" id="Node000015" href="$d4/d36/namespacefl_aa1613ee1e95b25e5378d780742d73719.html#aa1613ee1e95b25e5378d780742d73719" title="The minimum brigthness of the RGB channels is used to set the W channel." alt="" coords="721,363,870,403"/>
+<area shape="poly" id="edge18_Node000011_Node000015" title=" " alt="" coords="605,355,708,369,707,374,605,361"/>
+<area shape="rect" id="Node000016" href="$d4/d36/namespacefl_a127a41ddb75b964f9c4fd9b495116195.html#a127a41ddb75b964f9c4fd9b495116195" title="Converts RGB to RGBW with the W channel set to black, always." alt="" coords="723,427,867,467"/>
+<area shape="poly" id="edge19_Node000011_Node000016" title=" " alt="" coords="575,361,625,386,686,412,711,421,709,426,684,417,623,391,572,366"/>
+<area shape="rect" id="Node000017" href="$d4/d36/namespacefl_a026d160d22f564528df70c6bfca44db5.html#a026d160d22f564528df70c6bfca44db5" title=" " alt="" coords="721,491,869,531"/>
+<area shape="poly" id="edge20_Node000011_Node000017" title=" " alt="" coords="561,362,612,417,647,449,687,476,710,487,707,492,684,481,644,453,608,421,558,365"/>
+<area shape="rect" id="Node000020" href="$d4/d36/namespacefl_af35efd61260f0d8d2bf7da89f49ac821.html#af35efd61260f0d8d2bf7da89f49ac821" title="Converts RGB to RGBW with a boosted white channel." alt="" coords="717,555,873,595"/>
+<area shape="poly" id="edge22_Node000011_Node000020" title=" " alt="" coords="557,363,574,398,602,446,640,497,662,520,687,540,706,552,703,556,684,545,659,524,636,501,598,449,570,401,552,365"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="844,221,906,240,987,270,986,275,904,245,842,226"/>
+<area shape="poly" id="edge16_Node000014_Node000013" title=" " alt="" coords="895,304,939,299,940,304,895,310"/>
+<area shape="poly" id="edge21_Node000017_Node000013" title=" " alt="" coords="868,495,904,476,943,439,976,395,1001,351,1018,315,1022,317,1005,354,980,398,947,443,907,481,871,499"/>
+</map>

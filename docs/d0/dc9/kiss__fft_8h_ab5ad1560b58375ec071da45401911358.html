@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ $(function(){initNavTree('d0/dc9/kiss__fft_8h_ab5ad1560b58375ec071da45401911358.
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d8f/kiss__fft_8cpp_8hpp_source.html#l00363">363</a> of file <a class="el" href="../../d0/d8f/kiss__fft_8cpp_8hpp_source.html">kiss_fft.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  364</span>{</div>
+<div class="fragment"><div class="line"><span class="lineno">  364</span>{ <span class="comment">// ok no noexcept: preserve vendor C declaration (#4773)</span></div>
 <div class="line"><span class="lineno">  365</span>    <a class="code hl_typedef" href="../../d0/dc9/kiss__fft_8h_ab8c364e12d4cbde47dca54eb4bc3ce79.html#ab8c364e12d4cbde47dca54eb4bc3ce79">kiss_fft_cfg</a> st=<a class="code hl_define" href="../../d0/d8f/kiss__fft_8cpp_8hpp_a070d2ce7b6bb7e5c05602aa8c308d0c4.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><span class="lineno">  366</span>    <span class="keywordtype">size_t</span> memneeded = <span class="keyword">sizeof</span>(<span class="keyword">struct </span><a class="code hl_struct" href="../../d3/d74/__kiss__fft__guts_8h.html#dc/d4c/structkiss__fft__state">kiss_fft_state</a>)</div>
 <div class="line"><span class="lineno">  367</span>        + sizeof(<a class="code hl_struct" href="../../d0/dc9/kiss__fft_8h.html#d4/d47/structkiss__fft__cpx">kiss_fft_cpx</a>)*(<a class="code hl_variable" href="../../d3/d74/__kiss__fft__guts_8h.html#aa7446bded329a40e13aef0826e349791">nfft</a>-1); <span class="comment">/* twiddle factors*/</span></div>
@@ -171,7 +171,7 @@ $(function(){initNavTree('d0/dc9/kiss__fft_8h_ab5ad1560b58375ec071da45401911358.
 <div class="ttc" id="akiss__fft_8h_afa6ff82ec4dd7d6fc9d38937c856f270_html_afa6ff82ec4dd7d6fc9d38937c856f270"><div class="ttname"><a href="../../d0/dc9/kiss__fft_8h_afa6ff82ec4dd7d6fc9d38937c856f270.html#afa6ff82ec4dd7d6fc9d38937c856f270">KISS_FFT_MALLOC</a></div><div class="ttdeci">#define KISS_FFT_MALLOC(nbytes)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dc9/kiss__fft_8h_source.html#l00060">kiss_fft.h:60</a></div></div>
 <div class="ttc" id="akiss__fft_8h_html_d4/d47/structkiss__fft__cpx"><div class="ttname"><a href="../../d0/dc9/kiss__fft_8h.html#d4/d47/structkiss__fft__cpx">kiss_fft_cpx</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/dc9/kiss__fft_8h_source.html#l00084">kiss_fft.h:84</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d74/__kiss__fft__guts_8h_source.html#l00028">kiss_fft_state::factors</a>, <a class="el" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a>, <a class="el" href="../../d3/d74/__kiss__fft__guts_8h_source.html#l00027">kiss_fft_state::inverse</a>, <a class="el" href="../../d3/d74/__kiss__fft__guts_8h_source.html#l00143">kf_cexp</a>, <a class="el" href="../../d0/d8f/kiss__fft_8cpp_8hpp_source.html#l00316">kf_factor()</a>, <a class="el" href="../../d0/dc9/kiss__fft_8h_source.html#l00060">KISS_FFT_MALLOC</a>, <a class="el" href="../../d3/d74/__kiss__fft__guts_8h_source.html#l00026">kiss_fft_state::nfft</a>, <a class="el" href="../../d0/d8f/kiss__fft_8cpp_8hpp_source.html#l00017">NULL</a>, and <a class="el" href="../../d3/d74/__kiss__fft__guts_8h_source.html#l00029">kiss_fft_state::twiddles</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d74/__kiss__fft__guts_8h_source.html#l00028">kiss_fft_state::factors</a>, <a class="el" href="../../d3/d74/__kiss__fft__guts_8h_source.html#l00027">kiss_fft_state::inverse</a>, <a class="el" href="../../d3/d74/__kiss__fft__guts_8h_source.html#l00143">kf_cexp</a>, <a class="el" href="../../d0/d8f/kiss__fft_8cpp_8hpp_source.html#l00316">kf_factor()</a>, <a class="el" href="../../d0/dc9/kiss__fft_8h_source.html#l00060">KISS_FFT_MALLOC</a>, <a class="el" href="../../d3/d74/__kiss__fft__guts_8h_source.html#l00026">kiss_fft_state::nfft</a>, <a class="el" href="../../d0/d8f/kiss__fft_8cpp_8hpp_source.html#l00017">NULL</a>, and <a class="el" href="../../d3/d74/__kiss__fft__guts_8h_source.html#l00029">kiss_fft_state::twiddles</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/dad/kiss__fftr_8cpp_8hpp_source.html#l00035">kiss_fftr_alloc()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -198,7 +198,7 @@ $(function(){initNavTree('d0/dc9/kiss__fft_8h_ab5ad1560b58375ec071da45401911358.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_c30bdf76ce759a4eae8387be42921388.html">third_party</a></li><li class="navelem"><a class="el" href="../../dir_c23718cd009cf675cffaf984d81a2fb9.html">cq_kernel</a></li><li class="navelem"><a class="el" href="../../d0/dc9/kiss__fft_8h.html">kiss_fft.h</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:05 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:21 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -8,6 +8,7 @@ var structfl_1_1_pixel_controller_vtable =
     [ "loadAndScaleRGBWUnordered", "d3/d9a/structfl_1_1_pixel_controller_vtable_a9908294b806eeaafcb551c7f10fe4df4.html#a9908294b806eeaafcb551c7f10fe4df4", null ],
     [ "loadAndScaleRGBWW", "d3/d9a/structfl_1_1_pixel_controller_vtable_a1236e5b8e67f1907c0a6093ad572a993.html#a1236e5b8e67f1907c0a6093ad572a993", null ],
     [ "loadAndScaleRGBWWUnordered", "d3/d9a/structfl_1_1_pixel_controller_vtable_af154ba529585d36cfa0f9e3eae34a22f.html#af154ba529585d36cfa0f9e3eae34a22f", null ],
+    [ "loadRawPremixed", "d3/d9a/structfl_1_1_pixel_controller_vtable_a7eea6f9399960c62f1d9a1c7d8257681.html#a7eea6f9399960c62f1d9a1c7d8257681", null ],
     [ "size", "d3/d9a/structfl_1_1_pixel_controller_vtable_a065fcc5fecdb92babad3f2cb1ea82bda.html#a065fcc5fecdb92babad3f2cb1ea82bda", null ],
     [ "stepDithering", "d3/d9a/structfl_1_1_pixel_controller_vtable_aa50cf6ce5dc38926230636515cccea70.html#aa50cf6ce5dc38926230636515cccea70", null ]
 ];

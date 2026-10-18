@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -132,26 +132,26 @@ $(function(){initNavTree('d0/d09/classfl_1_1_pixel_iterator_a595227c01a4f21f3bcf
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00299">299</a> of file <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html">pixel_iterator.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  299</span>                                                                       {</div>
-<div class="line"><span class="lineno">  300</span>      <span class="comment">// The source&#39;s own order first (identity for PixelController&lt;RGB&gt;),</span></div>
-<div class="line"><span class="lineno">  301</span>      <span class="comment">// then this iterator&#39;s. `loadAndScale&lt;SLOT&gt;` is per source channel --</span></div>
-<div class="line"><span class="lineno">  302</span>      <span class="comment">// data, dither table and scale all indexed by the same channel -- so</span></div>
-<div class="line"><span class="lineno">  303</span>      <span class="comment">// reordering after the fact is the same bytes.</span></div>
-<div class="line"><span class="lineno">  304</span>      <a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a> c[3];</div>
-<div class="line"><span class="lineno">  305</span>      <a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_a977b536b8f645e32ead51816facb68a2.html#a977b536b8f645e32ead51816facb68a2">mLoadAndScaleRGB</a>(<a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_ad591b938f0130476aaca2b2f1cd0217c.html#ad591b938f0130476aaca2b2f1cd0217c">mPixelController</a>, &amp;c[0], &amp;c[1], &amp;c[2]);</div>
-<div class="line"><span class="lineno">  306</span>      *r_out = c[<a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0">mOrder</a>[0]];</div>
-<div class="line"><span class="lineno">  307</span>      *g_out = c[<a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0">mOrder</a>[1]];</div>
-<div class="line"><span class="lineno">  308</span>      *b_out = c[<a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0">mOrder</a>[2]];</div>
-<div class="line"><span class="lineno">  309</span>    }</div>
-<div class="ttc" id="aclassfl_1_1_pixel_iterator_a977b536b8f645e32ead51816facb68a2_html_a977b536b8f645e32ead51816facb68a2"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_a977b536b8f645e32ead51816facb68a2.html#a977b536b8f645e32ead51816facb68a2">fl::PixelIterator::mLoadAndScaleRGB</a></div><div class="ttdeci">loadAndScaleRGBFunction mLoadAndScaleRGB</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00705">pixel_iterator.h:705</a></div></div>
-<div class="ttc" id="aclassfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0_html_acbe8ad088440178a4c7c2ac4b31ee7e0"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0">fl::PixelIterator::mOrder</a></div><div class="ttdeci">u8 mOrder[3]</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00713">pixel_iterator.h:713</a></div></div>
-<div class="ttc" id="aclassfl_1_1_pixel_iterator_ad591b938f0130476aaca2b2f1cd0217c_html_ad591b938f0130476aaca2b2f1cd0217c"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_ad591b938f0130476aaca2b2f1cd0217c.html#ad591b938f0130476aaca2b2f1cd0217c">fl::PixelIterator::mPixelController</a></div><div class="ttdeci">void * mPixelController</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00700">pixel_iterator.h:700</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00405">405</a> of file <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html">pixel_iterator.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  405</span>                                                                       {</div>
+<div class="line"><span class="lineno">  406</span>      <span class="comment">// The source&#39;s own order first (identity for PixelController&lt;RGB&gt;),</span></div>
+<div class="line"><span class="lineno">  407</span>      <span class="comment">// then this iterator&#39;s. `loadAndScale&lt;SLOT&gt;` is per source channel --</span></div>
+<div class="line"><span class="lineno">  408</span>      <span class="comment">// data, dither table and scale all indexed by the same channel -- so</span></div>
+<div class="line"><span class="lineno">  409</span>      <span class="comment">// reordering after the fact is the same bytes.</span></div>
+<div class="line"><span class="lineno">  410</span>      <a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a> c[3];</div>
+<div class="line"><span class="lineno">  411</span>      <a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_a977b536b8f645e32ead51816facb68a2.html#a977b536b8f645e32ead51816facb68a2">mLoadAndScaleRGB</a>(<a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_ad591b938f0130476aaca2b2f1cd0217c.html#ad591b938f0130476aaca2b2f1cd0217c">mPixelController</a>, &amp;c[0], &amp;c[1], &amp;c[2]);</div>
+<div class="line"><span class="lineno">  412</span>      *r_out = c[<a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0">mOrder</a>[0]];</div>
+<div class="line"><span class="lineno">  413</span>      *g_out = c[<a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0">mOrder</a>[1]];</div>
+<div class="line"><span class="lineno">  414</span>      *b_out = c[<a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0">mOrder</a>[2]];</div>
+<div class="line"><span class="lineno">  415</span>    }</div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_a977b536b8f645e32ead51816facb68a2_html_a977b536b8f645e32ead51816facb68a2"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_a977b536b8f645e32ead51816facb68a2.html#a977b536b8f645e32ead51816facb68a2">fl::PixelIterator::mLoadAndScaleRGB</a></div><div class="ttdeci">loadAndScaleRGBFunction mLoadAndScaleRGB</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00821">pixel_iterator.h:821</a></div></div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0_html_acbe8ad088440178a4c7c2ac4b31ee7e0"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0">fl::PixelIterator::mOrder</a></div><div class="ttdeci">u8 mOrder[3]</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00834">pixel_iterator.h:834</a></div></div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_ad591b938f0130476aaca2b2f1cd0217c_html_ad591b938f0130476aaca2b2f1cd0217c"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_ad591b938f0130476aaca2b2f1cd0217c.html#ad591b938f0130476aaca2b2f1cd0217c">fl::PixelIterator::mPixelController</a></div><div class="ttdeci">void * mPixelController</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00816">pixel_iterator.h:816</a></div></div>
 <div class="ttc" id="anamespacefl_a058ceeac48f181da463c2ba07401292c_html_a058ceeac48f181da463c2ba07401292c"><div class="ttname"><a href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00131">stdint.h:131</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00705">mLoadAndScaleRGB</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00713">mOrder</a>, and <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00700">mPixelController</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00821">mLoadAndScaleRGB</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00834">mOrder</a>, and <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00816">mPixelController</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00316">loadAndScaleRGB16()</a>, and <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00624">writeHD108()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00422">loadAndScaleRGB16()</a>, and <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00740">writeHD108()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -169,7 +169,7 @@ $(function(){initNavTree('d0/d09/classfl_1_1_pixel_iterator_a595227c01a4f21f3bcf
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d0/d09/classfl_1_1_pixel_iterator.html">PixelIterator</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:09 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:31 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

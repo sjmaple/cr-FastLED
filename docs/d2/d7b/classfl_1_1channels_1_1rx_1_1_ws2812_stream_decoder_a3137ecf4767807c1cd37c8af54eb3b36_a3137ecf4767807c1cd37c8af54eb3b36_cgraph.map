@@ -1,0 +1,27 @@
+<map id="fl::channels::rx::Ws2812StreamDecoder::flush" name="fl::channels::rx::Ws2812StreamDecoder::flush">
+<area shape="rect" id="Node000001" title="End of capture: decode the final pair (HIGH only; its LOW is the reset) and fix the calibration." alt="" coords="5,65,183,105"/>
+<area shape="rect" id="Node000002" href="$d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_a3dbee50eef8e8e5d6b56527462981fd6.html#a3dbee50eef8e8e5d6b56527462981fd6" title=" " alt="" coords="472,85,660,125"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,63,174,38,230,19,284,7,328,3,371,6,425,19,454,29,483,43,531,74,528,79,480,48,452,34,423,24,370,12,328,8,285,13,231,24,176,43,128,68"/>
+<area shape="rect" id="Node000010" href="$d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_a6437debdf40f172687180ff8bbc1b20b.html#a6437debdf40f172687180ff8bbc1b20b" title=" " alt="" coords="231,33,424,73"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="183,70,217,66,217,71,184,76"/>
+<area shape="rect" id="Node000011" href="$dc/d85/namespacefl_1_1channels_1_1rx_abeecb43710b1ef7b28fb7d1a7f5fc9b6.html#abeecb43710b1ef7b28fb7d1a7f5fc9b6" title="Convert a 16&#45;bit capture&#45;counter delta to ns." alt="" coords="237,97,418,137"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="184,95,224,100,223,106,183,100"/>
+<area shape="rect" id="Node000012" href="$d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_a540a856275bd046226c057637de5acc7.html#a540a856275bd046226c057637de5acc7" title=" " alt="" coords="237,161,417,201"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="136,103,232,147,251,154,249,159,230,152,133,108"/>
+<area shape="rect" id="Node000003" href="$d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_a110ced8503f76256ef41431897377061.html#a110ced8503f76256ef41431897377061" title=" " alt="" coords="709,161,889,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="629,123,724,154,723,159,628,128"/>
+<area shape="rect" id="Node000008" href="$dc/d85/namespacefl_1_1channels_1_1rx_ad26bb47dfa9011bf5c2892ccd195fb2c.html#ad26bb47dfa9011bf5c2892ccd195fb2c" title="#3416 adaptive midpoint: (min + max) / 2 of the observed HIGH widths once there are enough samples sp..." alt="" coords="708,65,889,105"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="660,94,694,91,695,97,660,100"/>
+<area shape="rect" id="Node000004" href="$d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_ae83c884cd3b35075c4bd451663a8671a.html#ae83c884cd3b35075c4bd451663a8671a" title=" " alt="" coords="937,97,1135,137"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="873,159,948,138,949,143,874,164"/>
+<area shape="rect" id="Node000005" href="$dc/d85/namespacefl_1_1channels_1_1rx_a883c519348a2e69df1502c2f674f9196.html#a883c519348a2e69df1502c2f674f9196" title="Bit from a HIGH whose LOW was a gap/reset or was not captured: range check against the T0H / T1H wind..." alt="" coords="945,161,1127,201"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="889,179,931,179,931,184,889,184"/>
+<area shape="rect" id="Node000006" href="$dc/d85/namespacefl_1_1channels_1_1rx_ad0ca579764974dbfac47ac120654c4ff.html#ad0ca579764974dbfac47ac120654c4ff" title="Bit from a HIGH followed by a normal LOW: HIGH&#45;only midpoint split." alt="" coords="945,225,1127,265"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="874,199,949,219,948,224,873,204"/>
+<area shape="rect" id="Node000007" href="$d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_a7b943909cdfa22ae2926213f538d582c.html#a7b943909cdfa22ae2926213f538d582c" title=" " alt="" coords="947,289,1125,329"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="826,199,876,237,939,275,953,282,951,286,936,280,873,241,822,203"/>
+<area shape="rect" id="Node000009" href="$dc/d85/namespacefl_1_1channels_1_1rx_aaab226b2c8b5f33410855b340465f674.html#aaab226b2c8b5f33410855b340465f674" title="Static threshold between a 0 and a 1 HIGH: midpoint of T0H max / T1H min." alt="" coords="945,33,1127,73"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="889,70,931,65,932,70,890,76"/>
+<area shape="poly" id="edge12_Node000012_Node000002" title=" " alt="" coords="390,159,489,127,490,132,392,164"/>
+<area shape="poly" id="edge13_Node000012_Node000003" title=" " alt="" coords="417,179,695,179,695,184,417,184"/>
+</map>

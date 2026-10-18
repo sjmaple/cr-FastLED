@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -123,37 +123,27 @@ $(function(){initNavTree('d8/da0/classfl_1_1_c_l_e_d_controller_a95ede2f37480900
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00090">90</a> of file <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html">cled_controller.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   90</span>                                                                                 {</div>
-<div class="line"><span class="lineno">   91</span>        <a class="code hl_define" href="../../d4/d54/compiler__control_8h_a3600073df3d019f0b6288e9d59b3e883.html#a3600073df3d019f0b6288e9d59b3e883">FL_UNUSED</a>(operation);  <span class="comment">// only consumed by FL_WARN, a no-op on small platforms</span></div>
-<div class="line"><span class="lineno">   92</span>        <span class="keyword">const</span> <span class="keywordtype">char</span>* chipset = <a class="code hl_function" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a749a14da275dfd7a2b91ec3e8b82fef7.html#a749a14da275dfd7a2b91ec3e8b82fef7">fixedWhiteChannelChipset</a>();</div>
-<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">if</span> (chipset == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">   94</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   95</span>        }</div>
-<div class="line"><span class="lineno">   96</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a>(<span class="stringliteral">&quot;%s has fixed R,G,B,W output; %s is unsupported and was &quot;</span></div>
-<div class="line"><span class="lineno">   97</span>                  <span class="stringliteral">&quot;ignored&quot;</span>,</div>
-<div class="line"><span class="lineno">   98</span>                  chipset, operation);</div>
-<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  100</span>    }</div>
-<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_a749a14da275dfd7a2b91ec3e8b82fef7_html_a749a14da275dfd7a2b91ec3e8b82fef7"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a749a14da275dfd7a2b91ec3e8b82fef7.html#a749a14da275dfd7a2b91ec3e8b82fef7">fl::CLEDController::fixedWhiteChannelChipset</a></div><div class="ttdeci">virtual const char * fixedWhiteChannelChipset() const FL_NO_EXCEPT</div><div class="ttdoc">Return the name of a chipset whose wire format owns its white-channel policy.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00086">cled_controller.h:86</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00105">105</a> of file <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html">cled_controller.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>                                                                                 {</div>
+<div class="line"><span class="lineno">  106</span>        <a class="code hl_define" href="../../d4/d54/compiler__control_8h_a3600073df3d019f0b6288e9d59b3e883.html#a3600073df3d019f0b6288e9d59b3e883">FL_UNUSED</a>(operation);  <span class="comment">// only consumed by FL_WARN, a no-op on small platforms</span></div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a9311f4be72f0e4a7bf204533e852fe6b.html#a9311f4be72f0e4a7bf204533e852fe6b">mFixedWhiteChannel</a>) {</div>
+<div class="line"><span class="lineno">  108</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  109</span>        }</div>
+<div class="line"><span class="lineno">  110</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a>(<span class="stringliteral">&quot;Chipset has fixed R,G,B,W output; &quot;</span> &lt;&lt; operation &lt;&lt; <span class="stringliteral">&quot; is unsupported and was ignored&quot;</span>);</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
+<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_a9311f4be72f0e4a7bf204533e852fe6b_html_a9311f4be72f0e4a7bf204533e852fe6b"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a9311f4be72f0e4a7bf204533e852fe6b.html#a9311f4be72f0e4a7bf204533e852fe6b">fl::CLEDController::mFixedWhiteChannel</a></div><div class="ttdeci">bool mFixedWhiteChannel</div><div class="ttdoc">chipset wire format owns the white policy</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00056">cled_controller.h:56</a></div></div>
 <div class="ttc" id="acompiler__control_8h_a3600073df3d019f0b6288e9d59b3e883_html_a3600073df3d019f0b6288e9d59b3e883"><div class="ttname"><a href="../../d4/d54/compiler__control_8h_a3600073df3d019f0b6288e9d59b3e883.html#a3600073df3d019f0b6288e9d59b3e883">FL_UNUSED</a></div><div class="ttdeci">#define FL_UNUSED(x)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d54/compiler__control_8h_source.html#l00905">compiler_control.h:905</a></div></div>
-<div class="ttc" id="alog_8h_a4804912fba6eed63e1afd84b8768aced_html_a4804912fba6eed63e1afd84b8768aced"><div class="ttname"><a href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a></div><div class="ttdeci">#define FL_WARN(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00440">log.h:440</a></div></div>
+<div class="ttc" id="alog_8h_a4804912fba6eed63e1afd84b8768aced_html_a4804912fba6eed63e1afd84b8768aced"><div class="ttname"><a href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a></div><div class="ttdeci">#define FL_WARN(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00437">log.h:437</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00086">fixedWhiteChannelChipset()</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00905">FL_UNUSED</a>, and <a class="el" href="../../d7/d7f/log_8h_source.html#l00440">FL_WARN</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00905">FL_UNUSED</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00437">FL_WARN</a>, and <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00056">mFixedWhiteChannel</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00163">clearWhiteChannel()</a>, <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00131">setRgbw()</a>, and <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00149">setRgbww()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00191">clearWhiteChannel()</a>, <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00152">setRgbw()</a>, and <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00175">setRgbww()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/da0/classfl_1_1_c_l_e_d_controller_a95ede2f374809004d76c246f747d056b_a95ede2f374809004d76c246f747d056b_cgraph.svg" width="502" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d8/da0/classfl_1_1_c_l_e_d_controller_a95ede2f374809004d76c246f747d056b_a95ede2f374809004d76c246f747d056b_icgraph.svg" width="100%" height="453"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -166,7 +156,7 @@ $(function(){initNavTree('d8/da0/classfl_1_1_c_l_e_d_controller_a95ede2f37480900
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d8/da0/classfl_1_1_c_l_e_d_controller.html">CLEDController</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

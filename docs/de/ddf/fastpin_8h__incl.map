@@ -1,34 +1,35 @@
 <map id="fastpin.h" name="fastpin.h">
-<area shape="rect" id="Node000001" title="Backward compatibility header &#45; use fl/fastpin.h directly." alt="" coords="439,5,517,31"/>
-<area shape="rect" id="Node000002" href="$d2/d16/fl_2system_2fastpin_8h.html" title=" " alt="" coords="407,79,549,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="481,31,481,65,475,65,475,31"/>
-<area shape="rect" id="Node000003" href="$d4/d54/compiler__control_8h.html" title=" " alt="" coords="5,225,180,251"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="407,96,352,100,290,110,227,128,167,154,133,183,108,215,104,212,129,179,165,150,225,123,289,105,351,95,406,90"/>
-<area shape="rect" id="Node000008" href="$d3/d7e/int_8h.html" title=" " alt="" coords="437,152,519,177"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="481,104,481,138,475,138,475,104"/>
-<area shape="rect" id="Node000011" href="$d9/d3e/led__sysdefs_8h.html" title="Determines which platform system definitions to include." alt="" coords="544,152,655,177"/>
-<area shape="poly" id="edge9_Node000002_Node000011" title=" " alt="" coords="499,102,569,143,567,147,496,106"/>
-<area shape="rect" id="Node000014" href="$d3/da0/fastpin__base_8h.html" title=" " alt="" coords="178,152,359,177"/>
-<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="445,107,317,150,315,145,444,101"/>
-<area shape="rect" id="Node000016" title=" " alt="" coords="679,152,826,177"/>
-<area shape="poly" id="edge18_Node000002_Node000016" title=" " alt="" coords="523,101,696,146,694,151,521,107"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="7,372,181,397"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="89,252,76,284,72,304,73,324,85,359,80,361,67,324,67,303,70,283,84,250"/>
-<area shape="rect" id="Node000005" href="$d1/ddf/align_8h.html" title="Alignment macros and utilities for FastLED." alt="" coords="82,299,181,324"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="101,250,121,285,116,288,97,252"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="128,326,109,361,104,359,123,323"/>
-<area shape="rect" id="Node000007" href="$db/d01/noexcept_8h.html" title=" " alt="" coords="205,372,332,397"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="155,322,235,363,233,368,152,326"/>
-<area shape="rect" id="Node000009" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="480,225,583,251"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="489,176,517,213,512,216,485,179"/>
-<area shape="poly" id="edge12_Node000011_Node000009" title=" " alt="" coords="590,180,554,217,550,213,586,176"/>
-<area shape="rect" id="Node000012" href="$d5/d11/fastled__config_8h.html" title="Contains definitions that can be used to configure FastLED at compile time." alt="" coords="806,225,931,251"/>
-<area shape="poly" id="edge10_Node000011_Node000012" title=" " alt="" coords="643,175,813,219,811,224,642,180"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="607,225,781,251"/>
-<area shape="poly" id="edge11_Node000011_Node000013" title=" " alt="" coords="616,175,669,215,666,219,613,179"/>
-<area shape="poly" id="edge15_Node000014_Node000003" title=" " alt="" coords="241,180,135,222,133,218,239,175"/>
-<area shape="poly" id="edge14_Node000014_Node000004" title=" " alt="" coords="268,179,244,245,223,287,195,326,166,350,136,368,133,364,163,346,191,322,218,284,239,243,263,177"/>
-<area shape="poly" id="edge16_Node000014_Node000007" title=" " alt="" coords="271,178,271,358,266,358,266,178"/>
-<area shape="rect" id="Node000015" href="$d0/d1b/static__assert_8h.html" title="Portable compile&#45;time assertion wrapper." alt="" coords="306,225,455,251"/>
-<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="288,175,352,215,349,220,285,180"/>
+<area shape="rect" id="Node000001" title="Backward compatibility header &#45; use fl/fastpin.h directly." alt="" coords="527,5,605,31"/>
+<area shape="rect" id="Node000002" href="$d2/d16/fl_2system_2fastpin_8h.html" title=" " alt="" coords="495,79,637,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="569,31,569,65,563,65,563,31"/>
+<area shape="rect" id="Node000003" href="$d4/d54/compiler__control_8h.html" title=" " alt="" coords="481,225,656,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="569,104,571,212,566,212,564,105"/>
+<area shape="rect" id="Node000008" href="$d3/d7e/int_8h.html" title=" " alt="" coords="70,152,153,177"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="495,106,167,157,166,152,494,101"/>
+<area shape="rect" id="Node000011" href="$d9/d3e/led__sysdefs_8h.html" title="Determines which platform system definitions to include." alt="" coords="285,152,396,177"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="531,107,391,150,389,145,529,101"/>
+<area shape="rect" id="Node000014" href="$d3/da0/fastpin__base_8h.html" title=" " alt="" coords="603,152,785,177"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="588,102,662,143,660,147,585,106"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="809,152,955,177"/>
+<area shape="poly" id="edge19_Node000002_Node000016" title=" " alt="" coords="617,101,818,146,817,152,616,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="556,445,731,471"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="564,252,549,285,546,304,549,323,563,356,582,386,623,433,619,437,578,389,558,358,543,325,541,304,544,283,559,250"/>
+<area shape="rect" id="Node000005" href="$d1/ddf/align_8h.html" title="Alignment macros and utilities for FastLED." alt="" coords="558,299,657,324"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="577,250,597,285,592,288,573,252"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="611,324,614,357,622,397,635,432,630,434,617,398,609,358,605,325"/>
+<area shape="rect" id="Node000007" href="$db/d01/noexcept_8h.html" title=" " alt="" coords="631,372,757,397"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="623,322,671,361,668,365,620,326"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="688,399,662,436,657,433,683,396"/>
+<area shape="rect" id="Node000009" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="5,225,108,251"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="104,179,76,216,72,213,100,176"/>
+<area shape="poly" id="edge13_Node000011_Node000009" title=" " alt="" coords="296,180,116,225,115,219,294,175"/>
+<area shape="rect" id="Node000012" href="$d5/d11/fastled__config_8h.html" title="Contains definitions that can be used to configure FastLED at compile time." alt="" coords="331,225,457,251"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="352,176,379,213,375,216,347,179"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="132,225,307,251"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="323,180,252,221,249,216,320,175"/>
+<area shape="poly" id="edge16_Node000014_Node000003" title=" " alt="" coords="675,180,602,221,600,216,673,175"/>
+<area shape="poly" id="edge15_Node000014_Node000004" title=" " alt="" coords="762,175,841,195,874,208,895,224,899,237,895,252,873,301,848,336,815,366,772,400,732,424,692,443,689,438,729,420,768,395,812,362,844,333,868,299,890,250,894,237,890,227,871,213,840,200,761,180"/>
+<area shape="poly" id="edge17_Node000014_Node000007" title=" " alt="" coords="697,178,697,358,691,358,691,178"/>
+<area shape="rect" id="Node000015" href="$d0/d1b/static__assert_8h.html" title="Portable compile&#45;time assertion wrapper." alt="" coords="731,225,881,251"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="713,175,777,215,774,220,711,180"/>
 </map>

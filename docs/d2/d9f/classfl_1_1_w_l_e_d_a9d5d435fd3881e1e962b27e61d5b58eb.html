@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -116,26 +116,26 @@ $(function(){initNavTree('d2/d9f/classfl_1_1_w_l_e_d_a9d5d435fd3881e1e962b27e61d
 </div><div class="memdoc">
 
 <p>Construct <a class="el" href="../../d2/d9f/classfl_1_1_w_l_e_d.html" title="WLED-specific Remote RPC extension.">WLED</a> with default stub I/O callbacks. </p>
-<p>Uses <a class="el" href="../../d2/d9f/classfl_1_1_w_l_e_d_a4dcff107faf5effe5ec160c3b81de81a.html#a4dcff107faf5effe5ec160c3b81de81a" title="Stub request source callback.">stubRequestSource()</a> and <a class="el" href="../../d2/d9f/classfl_1_1_w_l_e_d_a4d88e74124000cca9fdbc6bd00ea1c1b.html#a4d88e74124000cca9fdbc6bd00ea1c1b" title="Stub response sink callback.">stubResponseSink()</a> which log FL_ERROR and serve as placeholders for real I/O implementation.</p>
+<p>Uses <a class="el" href="../../d2/d9f/classfl_1_1_w_l_e_d_a5fa3d531ff6294e594b02778984935c9.html#a5fa3d531ff6294e594b02778984935c9" title="Stub request source callback.">stubRequestSource()</a> and <a class="el" href="../../d2/d9f/classfl_1_1_w_l_e_d_afe56353a00fcb81795c5168b9ed01f2f.html#afe56353a00fcb81795c5168b9ed01f2f" title="Stub response sink callback.">stubResponseSink()</a> which log FL_ERROR and serve as placeholders for real I/O implementation.</p>
 <p>Example: <a class="el" href="../../d2/d9f/classfl_1_1_w_l_e_d.html" title="WLED-specific Remote RPC extension.">fl::WLED</a> wled; </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/da5/wled_8cpp_8hpp_source.html#l00010">10</a> of file <a class="el" href="../../d3/da5/wled_8cpp_8hpp_source.html">wled.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>    : <a class="code hl_function" href="../../dc/ddb/classfl_1_1_remote_a08b899cb7da0b773b422213aa7f91933.html#a08b899cb7da0b773b422213aa7f91933">Remote</a>(</div>
-<div class="line"><span class="lineno">   12</span>        [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> <a class="code hl_function" href="../../d2/d9f/classfl_1_1_w_l_e_d_a4dcff107faf5effe5ec160c3b81de81a.html#a4dcff107faf5effe5ec160c3b81de81a">stubRequestSource</a>(); },</div>
-<div class="line"><span class="lineno">   13</span>        [<span class="keyword">this</span>](<span class="keyword">const</span> fl::json&amp; <a class="code hl_variable" href="../../d8/d94/namespacetest__quick_a00071f2b3e01fb8d2b4e70970ed2d6ce.html#a00071f2b3e01fb8d2b4e70970ed2d6ce">response</a>) { <a class="code hl_function" href="../../d2/d9f/classfl_1_1_w_l_e_d_a4d88e74124000cca9fdbc6bd00ea1c1b.html#a4d88e74124000cca9fdbc6bd00ea1c1b">stubResponseSink</a>(response); }</div>
-<div class="line"><span class="lineno">   14</span>    ) {}</div>
-<div class="ttc" id="aclassfl_1_1_remote_a08b899cb7da0b773b422213aa7f91933_html_a08b899cb7da0b773b422213aa7f91933"><div class="ttname"><a href="../../dc/ddb/classfl_1_1_remote_a08b899cb7da0b773b422213aa7f91933.html#a08b899cb7da0b773b422213aa7f91933">fl::Remote::Remote</a></div><div class="ttdeci">Remote(RequestSource source, ResponseSink sink) FL_NO_EXCEPT</div><div class="ttdoc">Construct with I/O callbacks.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d04/remote_8cpp_8hpp_source.html#l00310">remote.cpp.hpp:310</a></div></div>
-<div class="ttc" id="aclassfl_1_1_w_l_e_d_a4d88e74124000cca9fdbc6bd00ea1c1b_html_a4d88e74124000cca9fdbc6bd00ea1c1b"><div class="ttname"><a href="../../d2/d9f/classfl_1_1_w_l_e_d_a4d88e74124000cca9fdbc6bd00ea1c1b.html#a4d88e74124000cca9fdbc6bd00ea1c1b">fl::WLED::stubResponseSink</a></div><div class="ttdeci">void stubResponseSink(const fl::json &amp;response)</div><div class="ttdoc">Stub response sink callback.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/da5/wled_8cpp_8hpp_source.html#l00021">wled.cpp.hpp:21</a></div></div>
-<div class="ttc" id="aclassfl_1_1_w_l_e_d_a4dcff107faf5effe5ec160c3b81de81a_html_a4dcff107faf5effe5ec160c3b81de81a"><div class="ttname"><a href="../../d2/d9f/classfl_1_1_w_l_e_d_a4dcff107faf5effe5ec160c3b81de81a.html#a4dcff107faf5effe5ec160c3b81de81a">fl::WLED::stubRequestSource</a></div><div class="ttdeci">fl::optional&lt; fl::json &gt; stubRequestSource()</div><div class="ttdoc">Stub request source callback.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/da5/wled_8cpp_8hpp_source.html#l00016">wled.cpp.hpp:16</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/da5/wled_8cpp_8hpp_source.html#l00011">11</a> of file <a class="el" href="../../d3/da5/wled_8cpp_8hpp_source.html">wled.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>    : <a class="code hl_function" href="../../dc/ddb/classfl_1_1_remote_a08b899cb7da0b773b422213aa7f91933.html#a08b899cb7da0b773b422213aa7f91933">Remote</a>(</div>
+<div class="line"><span class="lineno">   13</span>        [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> <a class="code hl_function" href="../../d2/d9f/classfl_1_1_w_l_e_d_a5fa3d531ff6294e594b02778984935c9.html#a5fa3d531ff6294e594b02778984935c9">stubRequestSource</a>(); },</div>
+<div class="line"><span class="lineno">   14</span>        [<span class="keyword">this</span>](<span class="keyword">const</span> fl::json&amp; <a class="code hl_variable" href="../../d8/d94/namespacetest__quick_a00071f2b3e01fb8d2b4e70970ed2d6ce.html#a00071f2b3e01fb8d2b4e70970ed2d6ce">response</a>) { <a class="code hl_function" href="../../d2/d9f/classfl_1_1_w_l_e_d_afe56353a00fcb81795c5168b9ed01f2f.html#afe56353a00fcb81795c5168b9ed01f2f">stubResponseSink</a>(response); }</div>
+<div class="line"><span class="lineno">   15</span>    ) {}</div>
+<div class="ttc" id="aclassfl_1_1_remote_a08b899cb7da0b773b422213aa7f91933_html_a08b899cb7da0b773b422213aa7f91933"><div class="ttname"><a href="../../dc/ddb/classfl_1_1_remote_a08b899cb7da0b773b422213aa7f91933.html#a08b899cb7da0b773b422213aa7f91933">fl::Remote::Remote</a></div><div class="ttdeci">Remote(RequestSource source, ResponseSink sink) FL_NO_EXCEPT</div><div class="ttdoc">Construct with I/O callbacks.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d04/remote_8cpp_8hpp_source.html#l00311">remote.cpp.hpp:311</a></div></div>
+<div class="ttc" id="aclassfl_1_1_w_l_e_d_a5fa3d531ff6294e594b02778984935c9_html_a5fa3d531ff6294e594b02778984935c9"><div class="ttname"><a href="../../d2/d9f/classfl_1_1_w_l_e_d_a5fa3d531ff6294e594b02778984935c9.html#a5fa3d531ff6294e594b02778984935c9">fl::WLED::stubRequestSource</a></div><div class="ttdeci">fl::optional&lt; fl::json &gt; stubRequestSource() FL_NO_EXCEPT</div><div class="ttdoc">Stub request source callback.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/da5/wled_8cpp_8hpp_source.html#l00017">wled.cpp.hpp:17</a></div></div>
+<div class="ttc" id="aclassfl_1_1_w_l_e_d_afe56353a00fcb81795c5168b9ed01f2f_html_afe56353a00fcb81795c5168b9ed01f2f"><div class="ttname"><a href="../../d2/d9f/classfl_1_1_w_l_e_d_afe56353a00fcb81795c5168b9ed01f2f.html#afe56353a00fcb81795c5168b9ed01f2f">fl::WLED::stubResponseSink</a></div><div class="ttdeci">void stubResponseSink(const fl::json &amp;response) FL_NO_EXCEPT</div><div class="ttdoc">Stub response sink callback.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/da5/wled_8cpp_8hpp_source.html#l00022">wled.cpp.hpp:22</a></div></div>
 <div class="ttc" id="anamespacetest__quick_a00071f2b3e01fb8d2b4e70970ed2d6ce_html_a00071f2b3e01fb8d2b4e70970ed2d6ce"><div class="ttname"><a href="../../d8/d94/namespacetest__quick_a00071f2b3e01fb8d2b4e70970ed2d6ce.html#a00071f2b3e01fb8d2b4e70970ed2d6ce">test_quick.response</a></div><div class="ttdeci">response</div><div class="ttdef"><b>Definition</b> <a href="../../d8/def/test__quick_8py_source.html#l00036">test_quick.py:36</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../db/d04/remote_8cpp_8hpp_source.html#l00310">fl::Remote::Remote()</a>, and <a class="el" href="../../d3/da5/wled_8cpp_8hpp_source.html#l00016">stubRequestSource()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d04/remote_8cpp_8hpp_source.html#l00311">fl::Remote::Remote()</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../d3/da5/wled_8cpp_8hpp_source.html#l00017">stubRequestSource()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d9f/classfl_1_1_w_l_e_d_a9d5d435fd3881e1e962b27e61d5b58eb_a9d5d435fd3881e1e962b27e61d5b58eb_cgraph.svg" width="514" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d9f/classfl_1_1_w_l_e_d_a9d5d435fd3881e1e962b27e61d5b58eb_a9d5d435fd3881e1e962b27e61d5b58eb_cgraph.svg" width="592" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -147,7 +147,7 @@ $(function(){initNavTree('d2/d9f/classfl_1_1_w_l_e_d_a9d5d435fd3881e1e962b27e61d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d2/d9f/classfl_1_1_w_l_e_d.html">WLED</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:33 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -126,17 +126,26 @@ $(function(){initNavTree('d0/d09/classfl_1_1_pixel_iterator_a9e0cc647b712b18abbb
 <p>Wire colour order, applied here rather than by instantiating a <code><a class="el" href="../../d0/dee/struct_pixel_controller.html" title="Pixel controller class.">PixelController</a></code> per order. </p>
 <p>Identity by default, so a templated driver wrapping its own <code><a class="el" href="../../d0/dee/struct_pixel_controller.html" title="Pixel controller class.">PixelController</a>&lt;ORDER&gt;</code> is unaffected: the bytes it gets are the ones that controller already ordered (FastLED#4402). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00266">266</a> of file <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html">pixel_iterator.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  266</span>                                                  {</div>
-<div class="line"><span class="lineno">  267</span>      <span class="comment">// Same bit layout as RGB_BYTE(order, i) in pixel_controller.h.</span></div>
-<div class="line"><span class="lineno">  268</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; ++i) {</div>
-<div class="line"><span class="lineno">  269</span>        <a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0">mOrder</a>[i] = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a><span class="keyword">&gt;</span>((<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(order) &gt;&gt; (3 * (2 - i))) &amp; 0x3);</div>
-<div class="line"><span class="lineno">  270</span>      }</div>
-<div class="line"><span class="lineno">  271</span>    }</div>
-<div class="ttc" id="aclassfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0_html_acbe8ad088440178a4c7c2ac4b31ee7e0"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0">fl::PixelIterator::mOrder</a></div><div class="ttdeci">u8 mOrder[3]</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00713">pixel_iterator.h:713</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00316">316</a> of file <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html">pixel_iterator.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  316</span>                                                  {</div>
+<div class="line"><span class="lineno">  317</span>      <span class="comment">// Same bit layout as RGB_BYTE(order, i) in pixel_controller.h.</span></div>
+<div class="line"><span class="lineno">  318</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; ++i) {</div>
+<div class="line"><span class="lineno">  319</span>        <a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0">mOrder</a>[i] = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a><span class="keyword">&gt;</span>((<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(order) &gt;&gt; (3 * (2 - i))) &amp; 0x3);</div>
+<div class="line"><span class="lineno">  320</span>      }</div>
+<div class="line"><span class="lineno">  321</span>      <a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_ae2a6bf5ab8d3614a659acbbf76c233d4.html#ae2a6bf5ab8d3614a659acbbf76c233d4">refreshWireOrder</a>();</div>
+<div class="line"><span class="lineno">  322</span>    }</div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0_html_acbe8ad088440178a4c7c2ac4b31ee7e0"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_acbe8ad088440178a4c7c2ac4b31ee7e0.html#acbe8ad088440178a4c7c2ac4b31ee7e0">fl::PixelIterator::mOrder</a></div><div class="ttdeci">u8 mOrder[3]</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00834">pixel_iterator.h:834</a></div></div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_ae2a6bf5ab8d3614a659acbbf76c233d4_html_ae2a6bf5ab8d3614a659acbbf76c233d4"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_ae2a6bf5ab8d3614a659acbbf76c233d4.html#ae2a6bf5ab8d3614a659acbbf76c233d4">fl::PixelIterator::refreshWireOrder</a></div><div class="ttdeci">void refreshWireOrder() FL_NO_EXCEPT</div><div class="ttdoc">Recompute the cached source channel of each wire RGB byte: this iterator&#39;s order on top of the source...</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00328">pixel_iterator.h:328</a></div></div>
 <div class="ttc" id="anamespacefl_a058ceeac48f181da463c2ba07401292c_html_a058ceeac48f181da463c2ba07401292c"><div class="ttname"><a href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00131">stdint.h:131</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00713">mOrder</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00834">mOrder</a>, and <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00328">refreshWireOrder()</a>.</p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d09/classfl_1_1_pixel_iterator_a9e0cc647b712b18abbbb39d70939ab71_a9e0cc647b712b18abbbb39d70939ab71_cgraph.svg" width="319" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -147,7 +156,7 @@ $(function(){initNavTree('d0/d09/classfl_1_1_pixel_iterator_a9e0cc647b712b18abbb
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d0/d09/classfl_1_1_pixel_iterator.html">PixelIterator</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:09 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:31 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

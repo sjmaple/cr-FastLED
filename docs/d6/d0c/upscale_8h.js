@@ -1,11 +1,11 @@
 var upscale_8h =
 [
-    [ "fl::upscale", "d4/d36/namespacefl_aec4161e7f789764b94b67f9365a277f4.html#aec4161e7f789764b94b67f9365a277f4", null ],
-    [ "fl::upscaleArbitrary", "d4/d36/namespacefl_a49ec31bbd180eb03839d5a3fb1ebd25b.html#a49ec31bbd180eb03839d5a3fb1ebd25b", null ],
-    [ "fl::upscaleArbitraryFloat", "d4/d36/namespacefl_a441d36e2b37240da089c38130ed902a3.html#a441d36e2b37240da089c38130ed902a3", null ],
-    [ "fl::upscaleFloat", "d4/d36/namespacefl_a63a6b34b1eb2735a9a3366854afaebfd.html#a63a6b34b1eb2735a9a3366854afaebfd", null ],
-    [ "fl::upscaleFloat", "d4/d36/namespacefl_acf48ea2f9534598b4b5737ce98310ea0.html#acf48ea2f9534598b4b5737ce98310ea0", null ],
-    [ "fl::upscalePowerOf2", "d4/d36/namespacefl_afaddf1c4a2474243bdc613c1d6e37f37.html#afaddf1c4a2474243bdc613c1d6e37f37", null ],
-    [ "fl::upscaleRectangular", "d4/d36/namespacefl_a079778d9a1c3897463a1b8171ff69da2.html#a079778d9a1c3897463a1b8171ff69da2", null ],
-    [ "fl::upscaleRectangularPowerOf2", "d4/d36/namespacefl_a1e3cf3732e34b0b72f422b99394a9120.html#a1e3cf3732e34b0b72f422b99394a9120", null ]
+    [ "fl::upscale", "d4/d36/namespacefl_a173024f15a9a1cf7fc985624a203fd09.html#a173024f15a9a1cf7fc985624a203fd09", null ],
+    [ "fl::upscaleArbitrary", "d4/d36/namespacefl_a7ab3322b3a1bd14c300cb8bf7e940565.html#a7ab3322b3a1bd14c300cb8bf7e940565", null ],
+    [ "fl::upscaleArbitraryFloat", "d4/d36/namespacefl_a24592f524345f0600e9fa132bb041551.html#a24592f524345f0600e9fa132bb041551", null ],
+    [ "fl::upscaleFloat", "d4/d36/namespacefl_a84f7e343e07dda1f323652d2adb41520.html#a84f7e343e07dda1f323652d2adb41520", null ],
+    [ "fl::upscaleFloat", "d4/d36/namespacefl_a68702962bff5169a234cc995506001c6.html#a68702962bff5169a234cc995506001c6", null ],
+    [ "fl::upscalePowerOf2", "d4/d36/namespacefl_aef4aafeabde494181078a59372cb9f77.html#aef4aafeabde494181078a59372cb9f77", null ],
+    [ "fl::upscaleRectangular", "d4/d36/namespacefl_a532b3d2682a1ca0b49cdaee2de8916c7.html#a532b3d2682a1ca0b49cdaee2de8916c7", null ],
+    [ "fl::upscaleRectangularPowerOf2", "d4/d36/namespacefl_a44b09c26ee0e2f7ad8740d70b596dd60.html#a44b09c26ee0e2f7ad8740d70b596dd60", null ]
 ];

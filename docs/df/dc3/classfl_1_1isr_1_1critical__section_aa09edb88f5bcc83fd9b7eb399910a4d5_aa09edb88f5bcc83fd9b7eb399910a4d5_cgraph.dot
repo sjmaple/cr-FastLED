@@ -10,5 +10,5 @@ digraph "fl::isr::critical_section::critical_section"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="fl::isr::critical_section\l::critical_section",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/dc3/classfl_1_1isr_1_1critical__section_a6b8d17f454b7cf1adcf7c9e9918b2b9d.html#a6b8d17f454b7cf1adcf7c9e9918b2b9d",tooltip=" "];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::interrupt_disable",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a12c34b2567c79d9770de3058d85cadfa.html#a12c34b2567c79d9770de3058d85cadfa",tooltip="Disable global interrupts (platform-specific)."];
+  Node3 [id="Node000003",label="fl::interrupt_disable",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a50dbb632c474b1d7eefcb3412524eaf1.html#a50dbb632c474b1d7eefcb3412524eaf1",tooltip="Disable global interrupts (platform-specific)."];
 }

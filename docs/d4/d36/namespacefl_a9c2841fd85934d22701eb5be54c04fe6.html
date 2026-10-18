@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -134,8 +134,8 @@ template&lt;typename T, fl::size N&gt; </div>
 <div class="line"><span class="lineno">   41</span>        kBlockSize = (kTotalBytesAligned + sizeof(MemoryType) - 1) / sizeof(MemoryType),</div>
 <div class="line"><span class="lineno">   42</span>    };</div>
 <div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span>    InlinedMemoryBlock() <a class="code hl_variable" href="../../d4/d36/namespacefl_aa317f89ca911371e798d08a93770402f.html#aa317f89ca911371e798d08a93770402f">FL_NO_EXCEPT</a> {</div>
-<div class="line"><span class="lineno">   45</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_a9416b2c34c489ae11032cb58c2d3c58c.html#a9416b2c34c489ae11032cb58c2d3c58c">fl::memset</a>(mMemoryBlock, 0, <span class="keyword">sizeof</span>(mMemoryBlock));</div>
+<div class="line"><span class="lineno">   44</span>    InlinedMemoryBlock() <a class="code hl_variable" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a> {</div>
+<div class="line"><span class="lineno">   45</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_a65c49e81b0a971a6a41de06a7328b571.html#a65c49e81b0a971a6a41de06a7328b571">fl::memset</a>(mMemoryBlock, 0, <span class="keyword">sizeof</span>(mMemoryBlock));</div>
 <div class="line"><span class="lineno">   46</span><span class="preprocessor">#ifdef FASTLED_TESTING</span></div>
 <div class="line"><span class="lineno">   47</span>        __data = memory();</div>
 <div class="line"><span class="lineno">   48</span><span class="preprocessor">#endif</span></div>
@@ -150,18 +150,18 @@ template&lt;typename T, fl::size N&gt; </div>
 <div class="line"><span class="lineno">   57</span>    MemoryType mMemoryBlock[kBlockSize];</div>
 <div class="line"><span class="lineno">   58</span> </div>
 <div class="line"><span class="lineno">   59</span>    T *memory() <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a> {</div>
-<div class="line"><span class="lineno">   60</span>        MemoryType *<a class="code hl_function" href="../../d4/d36/namespacefl_afc9e2798b56cb92f701e0b51d67c12c3.html#afc9e2798b56cb92f701e0b51d67c12c3">begin</a> = &amp;mMemoryBlock[0];</div>
+<div class="line"><span class="lineno">   60</span>        MemoryType *<a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a9f116576a5683bd56d59a6f95fd87c47.html#a9f116576a5683bd56d59a6f95fd87c47">begin</a> = &amp;mMemoryBlock[0];</div>
 <div class="line"><span class="lineno">   61</span>        fl::uptr shift_up =</div>
-<div class="line"><span class="lineno">   62</span>            <a class="code hl_function" href="../../d4/d36/namespacefl_aa87e47dbd130b02304c473d3f7500b0d.html#aa87e47dbd130b02304c473d3f7500b0d">fl::ptr_to_int</a>(<a class="code hl_function" href="../../d4/d36/namespacefl_afc9e2798b56cb92f701e0b51d67c12c3.html#afc9e2798b56cb92f701e0b51d67c12c3">begin</a>) &amp; (<span class="keyword">sizeof</span>(MemoryType) - 1);</div>
-<div class="line"><span class="lineno">   63</span>        MemoryType *raw = <a class="code hl_function" href="../../d4/d36/namespacefl_afc9e2798b56cb92f701e0b51d67c12c3.html#afc9e2798b56cb92f701e0b51d67c12c3">begin</a> + shift_up;</div>
+<div class="line"><span class="lineno">   62</span>            <a class="code hl_function" href="../../d4/d36/namespacefl_aa87e47dbd130b02304c473d3f7500b0d.html#aa87e47dbd130b02304c473d3f7500b0d">fl::ptr_to_int</a>(<a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a9f116576a5683bd56d59a6f95fd87c47.html#a9f116576a5683bd56d59a6f95fd87c47">begin</a>) &amp; (<span class="keyword">sizeof</span>(MemoryType) - 1);</div>
+<div class="line"><span class="lineno">   63</span>        MemoryType *raw = <a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a9f116576a5683bd56d59a6f95fd87c47.html#a9f116576a5683bd56d59a6f95fd87c47">begin</a> + shift_up;</div>
 <div class="line"><span class="lineno">   64</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/d36/namespacefl_aab9d4e461519c66fc958efc9e9ba2efa.html#aab9d4e461519c66fc958efc9e9ba2efa">fl::bit_cast&lt;T *&gt;</a>(raw);</div>
 <div class="line"><span class="lineno">   65</span>    }</div>
 <div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>    <span class="keyword">const</span> T *memory() const <a class="code hl_variable" href="../../d4/d36/namespacefl_aa317f89ca911371e798d08a93770402f.html#aa317f89ca911371e798d08a93770402f">FL_NO_EXCEPT</a> {</div>
-<div class="line"><span class="lineno">   68</span>        <span class="keyword">const</span> MemoryType *<a class="code hl_function" href="../../d4/d36/namespacefl_afc9e2798b56cb92f701e0b51d67c12c3.html#afc9e2798b56cb92f701e0b51d67c12c3">begin</a> = &amp;mMemoryBlock[0];</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keyword">const</span> T *memory() const <a class="code hl_variable" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a> {</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keyword">const</span> MemoryType *<a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a9f116576a5683bd56d59a6f95fd87c47.html#a9f116576a5683bd56d59a6f95fd87c47">begin</a> = &amp;mMemoryBlock[0];</div>
 <div class="line"><span class="lineno">   69</span>        <span class="keyword">const</span> fl::uptr shift_up =</div>
-<div class="line"><span class="lineno">   70</span>            <a class="code hl_function" href="../../d4/d36/namespacefl_aa87e47dbd130b02304c473d3f7500b0d.html#aa87e47dbd130b02304c473d3f7500b0d">fl::ptr_to_int</a>(<a class="code hl_function" href="../../d4/d36/namespacefl_afc9e2798b56cb92f701e0b51d67c12c3.html#afc9e2798b56cb92f701e0b51d67c12c3">begin</a>) &amp; (<span class="keyword">sizeof</span>(MemoryType) - 1);</div>
-<div class="line"><span class="lineno">   71</span>        <span class="keyword">const</span> MemoryType *raw = <a class="code hl_function" href="../../d4/d36/namespacefl_afc9e2798b56cb92f701e0b51d67c12c3.html#afc9e2798b56cb92f701e0b51d67c12c3">begin</a> + shift_up;</div>
+<div class="line"><span class="lineno">   70</span>            <a class="code hl_function" href="../../d4/d36/namespacefl_aa87e47dbd130b02304c473d3f7500b0d.html#aa87e47dbd130b02304c473d3f7500b0d">fl::ptr_to_int</a>(<a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a9f116576a5683bd56d59a6f95fd87c47.html#a9f116576a5683bd56d59a6f95fd87c47">begin</a>) &amp; (<span class="keyword">sizeof</span>(MemoryType) - 1);</div>
+<div class="line"><span class="lineno">   71</span>        <span class="keyword">const</span> MemoryType *raw = <a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a9f116576a5683bd56d59a6f95fd87c47.html#a9f116576a5683bd56d59a6f95fd87c47">begin</a> + shift_up;</div>
 <div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/d36/namespacefl_aab9d4e461519c66fc958efc9e9ba2efa.html#aab9d4e461519c66fc958efc9e9ba2efa">fl::bit_cast&lt;const T *&gt;</a>(raw);</div>
 <div class="line"><span class="lineno">   73</span>    }</div>
 <div class="line"><span class="lineno">   74</span> </div>
@@ -169,21 +169,21 @@ template&lt;typename T, fl::size N&gt; </div>
 <div class="line"><span class="lineno">   76</span>    T *__data = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">   78</span>};</div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a9f116576a5683bd56d59a6f95fd87c47_html_a9f116576a5683bd56d59a6f95fd87c47"><div class="ttname"><a href="../../df/d34/namespacefl_1_1adl__barrier_a9f116576a5683bd56d59a6f95fd87c47.html#a9f116576a5683bd56d59a6f95fd87c47">fl::adl_barrier::begin</a></div><div class="ttdeci">constexpr T * begin(T(&amp;array)[N]) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db6/range__access_8h_source.html#l00012">range_access.h:12</a></div></div>
 <div class="ttc" id="anamespacefl_1_1fl_a7407649b5a427649b00726387448608e_html_a7407649b5a427649b00726387448608e"><div class="ttname"><a href="../../da/d3c/namespacefl_1_1fl_a7407649b5a427649b00726387448608e.html#a7407649b5a427649b00726387448608e">fl::fl::max_align_t</a></div><div class="ttdeci">max_align_selector&lt;(sizeof(longdouble)&gt;sizeof(double))&gt;::type max_align_t</div><div class="ttdef"><b>Definition</b> <a href="../../df/d96/s16x16x4_8h_source.html#l00056">s16x16x4.h:56</a></div></div>
-<div class="ttc" id="anamespacefl_a9416b2c34c489ae11032cb58c2d3c58c_html_a9416b2c34c489ae11032cb58c2d3c58c"><div class="ttname"><a href="../../d4/d36/namespacefl_a9416b2c34c489ae11032cb58c2d3c58c.html#a9416b2c34c489ae11032cb58c2d3c58c">fl::memset</a></div><div class="ttdeci">void * memset(void *s, int c, size_t n) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/da3/cstring_8cpp_8hpp_source.html#l00143">cstring.cpp.hpp:143</a></div></div>
-<div class="ttc" id="anamespacefl_aa317f89ca911371e798d08a93770402f_html_aa317f89ca911371e798d08a93770402f"><div class="ttname"><a href="../../d4/d36/namespacefl_aa317f89ca911371e798d08a93770402f.html#aa317f89ca911371e798d08a93770402f">fl::FL_NO_EXCEPT</a></div><div class="ttdeci">InputGamut g FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">rgbw.h:121</a></div></div>
+<div class="ttc" id="anamespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5_html_a0f2fe8e60b0edbe21ace28f787ba7cb5"><div class="ttname"><a href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">fl::FL_NO_EXCEPT</a></div><div class="ttdeci">u8 u8 fract8 blur_amount FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d4/df5/blur_8h_source.html#l00186">blur.h:186</a></div></div>
+<div class="ttc" id="anamespacefl_a65c49e81b0a971a6a41de06a7328b571_html_a65c49e81b0a971a6a41de06a7328b571"><div class="ttname"><a href="../../d4/d36/namespacefl_a65c49e81b0a971a6a41de06a7328b571.html#a65c49e81b0a971a6a41de06a7328b571">fl::memset</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void * memset(void *s, int c, size_t n) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d8d/cstring_8h_source.html#l00148">cstring.h:148</a></div></div>
 <div class="ttc" id="anamespacefl_aa87e47dbd130b02304c473d3f7500b0d_html_aa87e47dbd130b02304c473d3f7500b0d"><div class="ttname"><a href="../../d4/d36/namespacefl_aa87e47dbd130b02304c473d3f7500b0d.html#aa87e47dbd130b02304c473d3f7500b0d">fl::ptr_to_int</a></div><div class="ttdeci">uptr ptr_to_int(T *ptr) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d72/bit__cast_8h_source.html#l00071">bit_cast.h:71</a></div></div>
 <div class="ttc" id="anamespacefl_aab9d4e461519c66fc958efc9e9ba2efa_html_aab9d4e461519c66fc958efc9e9ba2efa"><div class="ttname"><a href="../../d4/d36/namespacefl_aab9d4e461519c66fc958efc9e9ba2efa.html#aab9d4e461519c66fc958efc9e9ba2efa">fl::bit_cast</a></div><div class="ttdeci">To bit_cast(const From &amp;from) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d72/bit__cast_8h_source.html#l00048">bit_cast.h:48</a></div></div>
-<div class="ttc" id="anamespacefl_afc9e2798b56cb92f701e0b51d67c12c3_html_afc9e2798b56cb92f701e0b51d67c12c3"><div class="ttname"><a href="../../d4/d36/namespacefl_afc9e2798b56cb92f701e0b51d67c12c3.html#afc9e2798b56cb92f701e0b51d67c12c3">fl::begin</a></div><div class="ttdeci">constexpr T * begin(T(&amp;array)[N]) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db6/range__access_8h_source.html#l00010">range_access.h:10</a></div></div>
 <div class="ttc" id="as16x16x4_8h_abae81a69398c715960350e0a571b754a_html_abae81a69398c715960350e0a571b754a"><div class="ttname"><a href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></div><div class="ttdeci">#define FL_NO_EXCEPT</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/db6/range__access_8h_source.html#l00010">begin()</a>, <a class="el" href="../../df/d72/bit__cast_8h_source.html#l00048">bit_cast()</a>, <a class="el" href="../../da/db7/wave3_8h_source.html#l00031">FL_ALIGNAS()</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">FL_NO_EXCEPT</a>, <a class="el" href="../../df/da3/cstring_8cpp_8hpp_source.html#l00143">memset()</a>, and <a class="el" href="../../df/d72/bit__cast_8h_source.html#l00071">ptr_to_int()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/db6/range__access_8h_source.html#l00012">fl::adl_barrier::begin()</a>, <a class="el" href="../../df/d72/bit__cast_8h_source.html#l00048">bit_cast()</a>, <a class="el" href="../../da/db7/wave3_8h_source.html#l00032">FL_ALIGNAS()</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">FL_NO_EXCEPT</a>, <a class="el" href="../../dd/d8d/cstring_8h_source.html#l00148">memset()</a>, and <a class="el" href="../../df/d72/bit__cast_8h_source.html#l00071">ptr_to_int()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d36/namespacefl_a9c2841fd85934d22701eb5be54c04fe6_a9c2841fd85934d22701eb5be54c04fe6_cgraph.svg" width="574" height="236"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/d36/namespacefl_a9c2841fd85934d22701eb5be54c04fe6_a9c2841fd85934d22701eb5be54c04fe6_cgraph.svg" width="100%" height="477"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -195,7 +195,7 @@ template&lt;typename T, fl::size N&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:07 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:28 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

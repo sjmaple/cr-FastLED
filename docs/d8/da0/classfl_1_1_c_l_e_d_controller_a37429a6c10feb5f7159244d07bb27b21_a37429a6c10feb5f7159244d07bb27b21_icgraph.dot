@@ -12,8 +12,8 @@ digraph "fl::CLEDController::applyRgbw"
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="fl::CLEDController\l::setRgbw",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/da0/classfl_1_1_c_l_e_d_controller_a364042729b1cf127821d255d67f0f91c.html#a364042729b1cf127821d255d67f0f91c",tooltip=" "];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="RGBWEmulatedController\l::RGBWEmulatedController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d28/group___chipsets_gad119f2555688176da39dc9f8e18479c0.html#gad119f2555688176da39dc9f8e18479c0",tooltip="Constructor with optional RGBW configuration."];
+  Node4 [id="Node000004",label="RGBWEmulatedController\l::RGBWEmulatedController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d28/group___chipsets_ga97658e9e649de018721c764471a1f28b.html#ga97658e9e649de018721c764471a1f28b",tooltip="Constructor with optional RGBW configuration."];
   Node3 -> Node5 [id="edge4_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="fl::UCS7604ControllerT\l\< DATA_PIN, RGB_ORDER,\l fl::UCS7604Mode::UCS7604\l_MODE_8BIT_800KHZ, fl::TIMING\l_UCS7604_800KHZ, CLOCKLESS_CONTROLLER \>::init",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d78/classfl_1_1_u_c_s7604_controller_t_a5b824ab62c030a131878f46d505dfbc6.html#a5b824ab62c030a131878f46d505dfbc6",tooltip=" "];
+  Node5 [id="Node000005",label="fl::UCS7604ControllerT\l\< DATA_PIN, RGB_ORDER,\l fl::UCS7604Mode::UCS7604\l_MODE_8BIT_800KHZ, fl::TIMING\l_UCS7604_800KHZ, CLOCKLESS_CONTROLLER \>::init",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d78/classfl_1_1_u_c_s7604_controller_t_add5d5c951f716317e0181b06af9d9cbc.html#add5d5c951f716317e0181b06af9d9cbc",tooltip=" "];
   Node3 -> Node3 [id="edge5_Node000003_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

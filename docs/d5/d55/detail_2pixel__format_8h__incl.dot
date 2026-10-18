@@ -12,7 +12,8 @@ digraph "fl/fled/detail/pixel_format.h"
   Node3 [id="Node000003",label="fl/codec/pixel.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dcd/pixel_8h.html",tooltip=" "];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="fl/stl/int.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d3/d7e/int_8h.html",tooltip=" "];
-  Node2 -> Node4 [id="edge4_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node2 -> Node7 [id="edge5_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="fl/stl/noexcept.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d01/noexcept_8h.html",tooltip=" "];
+  Node3 -> Node7 [id="edge4_Node000003_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl/stl/noexcept.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$db/d01/noexcept_8h.html",tooltip=" "];
+  Node2 -> Node4 [id="edge5_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node7 [id="edge6_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
 }

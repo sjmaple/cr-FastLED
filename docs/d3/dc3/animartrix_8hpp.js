@@ -69,10 +69,10 @@ var animartrix_8hpp =
       [ "fl::AnimartrixAnim::NUM_ANIMATIONS", "d4/d36/namespacefl_a4717e431b6c23ec1a1afb5161dc1aa69.html#a4717e431b6c23ec1a1afb5161dc1aa69a7f6bda7fc2e7bb47999cf29dcd28221d", null ]
     ] ],
     [ "fl::FASTLED_SHARED_PTR", "d4/d36/namespacefl_a752a24ca4c4ba594951812166bfac654.html#a752a24ca4c4ba594951812166bfac654", null ],
-    [ "fl::getAnimartrixCount", "d4/d36/namespacefl_a7d68e658207028f00d4d0a9ec040bf8c.html#a7d68e658207028f00d4d0a9ec040bf8c", null ],
-    [ "fl::getAnimartrixInfo", "d4/d36/namespacefl_a237b7dc0213d359c7b1f08294bda0326.html#a237b7dc0213d359c7b1f08294bda0326", null ],
-    [ "fl::getAnimartrixName", "d4/d36/namespacefl_a00ade097fdc81c8144ac4478410aa5dd.html#a00ade097fdc81c8144ac4478410aa5dd", null ],
-    [ "fl::makeViz", "d4/d36/namespacefl_a8852925ab707f6b2ace947ae31c75780.html#a8852925ab707f6b2ace947ae31c75780", null ],
-    [ "fl::xyMapCallbackAdapter", "d4/d36/namespacefl_a3b8034ee109c995ec1bd23b08ab7da79.html#a3b8034ee109c995ec1bd23b08ab7da79", null ],
+    [ "fl::getAnimartrixCount", "d4/d36/namespacefl_a4aab186f7cf4da2cad8974e9c78ebd81.html#a4aab186f7cf4da2cad8974e9c78ebd81", null ],
+    [ "fl::getAnimartrixInfo", "d4/d36/namespacefl_a9d0a0aa8d2a04c5c9d273fe0f0aea251.html#a9d0a0aa8d2a04c5c9d273fe0f0aea251", null ],
+    [ "fl::getAnimartrixName", "d4/d36/namespacefl_a38ed4ddef7568323f78e0e771875b3ef.html#a38ed4ddef7568323f78e0e771875b3ef", null ],
+    [ "fl::makeViz", "d4/d36/namespacefl_adbf35ed994003238be69effc71e53314.html#adbf35ed994003238be69effc71e53314", null ],
+    [ "fl::xyMapCallbackAdapter", "d4/d36/namespacefl_a7be57c18755336d530579a4bb5ae5855.html#a7be57c18755336d530579a4bb5ae5855", null ],
     [ "fl::ANIMATION_TABLE", "d4/d36/namespacefl_a0eac59d90e652e950c086b8173a902d1.html#a0eac59d90e652e950c086b8173a902d1", null ]
 ];

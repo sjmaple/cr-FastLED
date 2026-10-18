@@ -28,8 +28,8 @@ var blur_8h =
     [ "fl::gfx::blurRows", "d5/d3d/group___color_blurs_ga39d83e1f41912597eedff845d08a4b9f.html#ga39d83e1f41912597eedff845d08a4b9f", null ],
     [ "fl::gfx::blurRows", "d5/d3d/group___color_blurs_gab3ef7996f6f49fd59e218b349120463d.html#gab3ef7996f6f49fd59e218b349120463d", null ],
     [ "fl::gfx::blurRows", "d5/d3d/group___color_blurs_gafe47df0af91421b253a945970c99f646.html#gafe47df0af91421b253a945970c99f646", null ],
-    [ "fl::FASTLED_DEPRECATED", "d4/d36/namespacefl_a0d69c9b99164430a83162d56e805e882.html#a0d69c9b99164430a83162d56e805e882", null ],
-    [ "fl::blur_amount", "d4/d36/namespacefl_a76916539c2ca5972eb4b86dffbaa3842.html#a76916539c2ca5972eb4b86dffbaa3842", null ],
+    [ "fl::FASTLED_DEPRECATED", "d4/d36/namespacefl_ae1f409f9b8433f804d10f65418f8a0c8.html#ae1f409f9b8433f804d10f65418f8a0c8", null ],
+    [ "fl::FL_NO_EXCEPT", "d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5", null ],
     [ "fl::height", "d4/d36/namespacefl_a2cda7f93ddbdf70cb1b9f8ab2430ffc1.html#a2cda7f93ddbdf70cb1b9f8ab2430ffc1", null ],
     [ "fl::gfx::instead", "d5/d3d/group___color_blurs_ga603b5b579bfbcea1708ae3fee1b3bb53.html#ga603b5b579bfbcea1708ae3fee1b3bb53", null ],
     [ "fl::width", "d4/d36/namespacefl_a82c4062f46dbbd85ea8b41690bda4729.html#a82c4062f46dbbd85ea8b41690bda4729", null ]

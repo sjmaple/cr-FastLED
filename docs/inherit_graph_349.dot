@@ -6,5 +6,7 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="fl::detail::DeviceInfoResolver\l\< Bus::BIT_BANG, Which \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/da0/structfl_1_1detail_1_1_device_info_resolver_3_01_bus_1_1_b_i_t___b_a_n_g_00_01_which_01_4.html",tooltip=" "];
+  Node0 [id="Node000000",label="fl::detail::ControlBlockBase",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dc0/structfl_1_1detail_1_1_control_block_base.html",tooltip=" "];
+  Node0 -> Node1 [id="edge149_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="fl::detail::ControlBlock\l\< T, Deleter \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/da2/structfl_1_1detail_1_1_control_block.html",tooltip=" "];
 }

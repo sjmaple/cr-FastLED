@@ -1,119 +1,120 @@
 <map id="fl/chipsets/clockless_encoder.h" name="fl/chipsets/clockless_encoder.h">
-<area shape="rect" id="Node000001" title="Encoding pipeline selector for clockless LED chipsets." alt="" coords="2250,5,2402,45"/>
-<area shape="rect" id="Node000002" href="$d1/d09/fl_2channels_2config_8h.html" title=" " alt="" coords="1181,284,1327,309"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2239,51,1300,286,1299,281,2238,46"/>
-<area shape="rect" id="Node000040" href="$d8/dc5/chipset__timing__config_8h.html" title="Runtime chipset timing configuration for clockless LED drivers." alt="" coords="2783,174,2922,214"/>
-<area shape="poly" id="edge54_Node000001_Node000040" title=" " alt="" coords="2399,47,2794,171,2792,176,2398,52"/>
-<area shape="rect" id="Node000044" href="$d0/d3f/led__timing_8h.html" title="Centralized LED chipset timing definitions with nanosecond precision." alt="" coords="2239,93,2413,119"/>
-<area shape="poly" id="edge61_Node000001_Node000044" title=" " alt="" coords="2329,59,2329,93,2323,93,2323,59"/>
-<area shape="rect" id="Node000003" href="$db/d9c/_color_profile_8ino.html" title=" " alt="" coords="265,475,489,529"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1210,316,1169,327,1092,339,1027,345,914,345,802,349,738,358,663,375,596,396,530,423,423,477,421,472,528,418,594,391,661,369,737,352,802,344,914,340,1027,339,1092,334,1168,321,1208,311"/>
-<area shape="rect" id="Node000004" href="$db/dad/_r_g_b_w_w_8ino.html" title=" " alt="" coords="513,475,715,529"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1209,316,1169,327,1103,336,1045,338,945,333,898,331,849,336,796,349,735,374,703,396,674,422,632,476,628,473,670,419,700,391,733,370,794,344,848,331,898,326,945,327,1045,333,1102,331,1168,321,1208,311"/>
-<area shape="rect" id="Node000005" href="$db/dda/_sailboat_8ino.html" title="Audio&#45;reactive sailboat lighting with perlin noise, ambient particles, and beat meteors for EDM music..." alt="" coords="1878,372,2081,427"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1341,306,1816,369,1878,379,1878,384,1815,375,1341,311"/>
-<area shape="rect" id="Node000006" href="$d7/de5/_fast_l_e_d_8cpp_8hpp.html" title=" " alt="" coords="763,753,891,779"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="1211,316,1169,327,1074,337,955,341,678,341,536,342,402,346,285,356,192,375,135,391,90,406,71,417,54,431,37,451,20,476,11,497,8,516,10,534,17,551,42,583,78,615,129,652,174,673,222,687,284,703,416,730,548,747,669,757,763,761,763,766,668,762,548,753,415,735,283,708,220,692,172,678,126,657,75,619,39,587,13,553,5,535,3,516,6,495,16,473,33,447,50,428,68,413,88,401,134,385,191,369,284,351,402,341,536,336,678,336,955,336,1074,332,1168,321,1210,311"/>
-<area shape="rect" id="Node000009" href="$d6/d64/fastled_8h.html" title="central include file for FastLED, defines the CFastLED class/object" alt="" coords="646,673,731,698"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="1208,316,1169,327,1096,339,1038,342,981,349,950,359,914,374,843,414,795,455,756,507,718,578,700,630,693,673,687,672,695,629,713,576,752,504,791,451,840,410,911,370,948,354,980,344,1037,337,1096,333,1168,321,1206,311"/>
-<area shape="rect" id="Node000010" href="$d6/d93/spi__channel__adapter_8cpp_8hpp.html" title=" " alt="" coords="1252,577,1467,617"/>
-<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="1266,320,1296,373,1316,400,1341,425,1358,435,1375,440,1408,444,1439,449,1454,458,1468,473,1476,488,1478,502,1468,531,1443,560,1412,580,1409,575,1440,555,1464,528,1473,501,1471,490,1464,476,1451,462,1437,454,1407,449,1374,446,1356,440,1338,429,1312,404,1291,376,1262,323"/>
-<area shape="rect" id="Node000015" href="$d3/de6/channel_8cpp_8hpp.html" title=" " alt="" coords="1491,585,1694,610"/>
-<area shape="poly" id="edge13_Node000002_Node000015" title=" " alt="" coords="1279,317,1336,370,1359,399,1385,425,1413,440,1437,448,1462,456,1490,473,1522,500,1550,531,1588,583,1583,586,1545,535,1518,504,1487,477,1460,461,1435,453,1410,445,1382,429,1355,403,1332,374,1276,321"/>
-<area shape="rect" id="Node000016" href="$d5/d7b/channel_8h.html" title="ESP32&#45;P4 Parallel IO (PARLIO) LED channel." alt="" coords="297,387,456,412"/>
-<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="1210,316,1169,327,1071,343,987,351,843,357,699,359,615,364,516,375,430,389,429,384,515,369,614,359,699,354,843,351,986,346,1070,337,1168,321,1209,311"/>
-<area shape="rect" id="Node000017" href="$d4/de5/channel__typed_8h.html" title="Phase 3b templated channel facade – Channel&lt;Bus, Chipset&gt; with compile&#45;time bus/chipset enforcement." alt="" coords="43,482,190,522"/>
-<area shape="poly" id="edge25_Node000002_Node000017" title=" " alt="" coords="1211,316,1169,327,1083,336,975,339,723,338,594,339,474,343,368,354,324,363,286,374,239,397,197,427,135,484,132,480,194,423,237,393,284,370,322,358,367,349,473,338,594,333,723,333,975,334,1082,330,1168,321,1210,311"/>
-<area shape="rect" id="Node000018" href="$d5/d9b/slim__spi__bridge__controller_8h.html" title="Shared &quot;slim bridge&quot; legacy addLeds&lt;ESPIChipsets ...&gt;() controller for the SPI channel API – driver&#45;a..." alt="" coords="727,577,877,617"/>
-<area shape="poly" id="edge51_Node000002_Node000018" title=" " alt="" coords="1209,317,989,399,884,444,848,463,829,476,815,501,807,528,803,577,798,577,802,527,810,498,825,473,845,458,882,439,987,394,1207,312"/>
-<area shape="rect" id="Node000019" href="$da/d53/config_8cpp_8hpp.html" title=" " alt="" coords="1612,387,1803,412"/>
-<area shape="poly" id="edge26_Node000002_Node000019" title=" " alt="" coords="1320,310,1593,369,1658,384,1657,389,1592,375,1319,315"/>
-<area shape="rect" id="Node000020" href="$d2/dbd/data_8h.html" title="Channel transmission data &#45; lightweight DTO for driver transmission." alt="" coords="1132,387,1269,412"/>
-<area shape="poly" id="edge28_Node000002_Node000020" title=" " alt="" coords="1244,323,1209,388,1204,385,1239,320"/>
-<area shape="rect" id="Node000033" href="$df/d99/slim__bridge__controller_8h.html" title="Shared &quot;slim bridge&quot; legacy addLeds&lt;&gt;() controller for channel drivers." alt="" coords="1004,577,1176,617"/>
-<area shape="poly" id="edge50_Node000002_Node000033" title=" " alt="" coords="1203,317,1159,339,1139,355,1123,374,1109,399,1099,426,1088,484,1087,537,1090,577,1085,577,1082,537,1083,483,1094,425,1104,397,1118,370,1135,351,1156,335,1200,312"/>
-<area shape="rect" id="Node000034" href="$d7/dcc/pipeline__binding_8h.html" title=" " alt="" coords="1871,482,2019,522"/>
-<area shape="poly" id="edge42_Node000002_Node000034" title=" " alt="" coords="1342,304,1445,326,1499,345,1550,370,1567,384,1577,398,1586,412,1602,424,1640,437,1710,453,1871,485,1870,490,1709,458,1639,442,1599,429,1582,415,1572,401,1563,387,1547,374,1497,350,1443,332,1341,310"/>
-<area shape="rect" id="Node000037" href="$df/d4d/fled_8cpp_8hpp.html" title=" " alt="" coords="1395,387,1537,412"/>
-<area shape="poly" id="edge52_Node000002_Node000037" title=" " alt="" coords="1292,313,1443,384,1441,389,1290,318"/>
-<area shape="rect" id="Node000007" href="$d7/dd5/__build_8cpp_8hpp.html" title=" " alt="" coords="927,827,1043,852"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="866,782,960,824,958,829,864,787"/>
-<area shape="rect" id="Node000008" href="$dd/de2/src_8cpp.html" title="Unity build: flat includes from src/ root directory." alt="" coords="781,827,897,852"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="834,792,840,826,835,827,829,793"/>
-<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="722,702,808,751,805,755,720,707"/>
-<area shape="rect" id="Node000011" href="$d8/d85/fl_2channels_2adapters_2__build_8cpp_8hpp.html" title=" " alt="" coords="1775,665,1928,705"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1480,617,1775,668,1774,673,1480,622"/>
-<area shape="rect" id="Node000012" href="$d1/d97/fl_2channels_2__build_8cpp_8hpp.html" title=" " alt="" coords="1972,753,2163,779"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="1917,708,2036,751,2035,756,1915,713"/>
-<area shape="poly" id="edge14_Node000015_Node000012" title=" " alt="" coords="1708,604,1823,624,1884,640,1942,663,1968,681,1992,703,2053,751,2050,755,1988,707,1965,685,1939,668,1882,645,1822,629,1707,609"/>
-<area shape="poly" id="edge16_Node000016_Node000003" title=" " alt="" coords="379,426,379,474,374,474,374,426"/>
-<area shape="poly" id="edge17_Node000016_Node000004" title=" " alt="" coords="418,415,553,472,551,477,416,420"/>
-<area shape="poly" id="edge18_Node000016_Node000006" title=" " alt="" coords="284,404,187,412,138,420,94,432,58,448,34,469,27,482,25,495,27,511,34,528,51,552,77,574,111,596,151,616,248,652,358,682,473,708,585,728,764,755,763,760,584,734,472,713,357,687,246,657,149,620,108,600,74,579,47,555,29,531,22,512,19,495,22,480,30,466,55,444,92,427,137,415,186,406,283,399"/>
-<area shape="poly" id="edge19_Node000016_Node000009" title=" " alt="" coords="327,419,287,442,269,457,255,476,246,503,248,515,255,528,294,571,341,606,394,632,450,652,506,665,559,674,646,681,646,686,559,679,505,670,449,657,392,637,339,610,290,575,251,531,243,516,240,502,250,473,265,454,284,438,325,415"/>
-<area shape="poly" id="edge20_Node000016_Node000015" title=" " alt="" coords="470,403,740,426,905,446,1069,472,1127,485,1171,498,1272,527,1533,582,1532,587,1271,532,1170,503,1126,490,1068,477,904,451,739,431,469,409"/>
-<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="335,420,167,484,165,479,333,415"/>
-<area shape="poly" id="edge22_Node000017_Node000009" title=" " alt="" coords="135,533,166,577,186,598,210,615,245,629,294,642,417,661,545,673,646,679,646,685,544,678,416,666,293,647,244,635,207,620,183,602,162,580,131,536"/>
-<area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="204,518,253,527,513,562,727,586,726,591,513,567,252,532,203,524"/>
-<area shape="poly" id="edge24_Node000018_Node000009" title=" " alt="" coords="767,628,706,674,703,670,764,624"/>
-<area shape="poly" id="edge27_Node000019_Node000012" title=" " alt="" coords="1790,412,1939,441,2000,457,2033,473,2057,507,2073,546,2081,587,2085,628,2081,703,2073,753,2067,752,2076,702,2079,628,2076,588,2067,547,2052,510,2030,477,1999,462,1938,446,1789,417"/>
-<area shape="poly" id="edge31_Node000020_Node000015" title=" " alt="" coords="1267,413,1379,441,1431,457,1467,472,1505,499,1539,530,1586,583,1582,586,1536,533,1502,503,1465,477,1429,462,1378,446,1266,418"/>
-<area shape="poly" id="edge41_Node000020_Node000018" title=" " alt="" coords="1119,405,1062,412,1000,425,938,446,881,477,856,500,837,527,811,578,806,576,832,524,852,496,878,473,936,441,999,419,1061,407,1118,400"/>
-<area shape="rect" id="Node000021" href="$d4/d8e/spi__channel__adapter_8h.html" title="Adapter that wraps HW SPI controllers for ChannelManager." alt="" coords="1283,482,1454,522"/>
-<area shape="poly" id="edge29_Node000020_Node000021" title=" " alt="" coords="1233,417,1338,480,1336,484,1230,421"/>
-<area shape="rect" id="Node000022" href="$d9/dda/data_8cpp_8hpp.html" title=" " alt="" coords="1296,673,1476,698"/>
-<area shape="poly" id="edge32_Node000020_Node000022" title=" " alt="" coords="1201,426,1200,466,1204,516,1217,569,1228,593,1243,616,1262,635,1285,650,1334,670,1332,675,1282,655,1258,639,1239,619,1224,596,1212,570,1199,517,1195,466,1196,426"/>
-<area shape="rect" id="Node000023" href="$db/d45/manager_8h.html" title="Unified manager for channel drivers with priority&#45;based fallback." alt="" coords="891,489,1057,515"/>
-<area shape="poly" id="edge34_Node000020_Node000023" title=" " alt="" coords="1163,420,1001,492,999,487,1161,415"/>
-<area shape="poly" id="edge40_Node000020_Node000033" title=" " alt="" coords="1190,425,1103,578,1098,576,1185,423"/>
-<area shape="poly" id="edge30_Node000021_Node000010" title=" " alt="" coords="1368,536,1364,578,1359,577,1363,535"/>
-<area shape="poly" id="edge33_Node000022_Node000012" title=" " alt="" coords="1490,696,1972,751,1972,756,1489,701"/>
-<area shape="poly" id="edge35_Node000023_Node000006" title=" " alt="" coords="968,528,952,571,930,619,880,698,839,755,834,751,876,695,925,616,947,569,963,527"/>
-<area shape="poly" id="edge36_Node000023_Node000009" title=" " alt="" coords="965,528,936,574,915,599,892,619,852,643,810,660,732,680,731,675,808,655,850,638,888,615,911,595,931,571,960,525"/>
-<area shape="poly" id="edge37_Node000023_Node000015" title=" " alt="" coords="1068,514,1480,575,1525,582,1525,587,1479,580,1067,519"/>
-<area shape="poly" id="edge39_Node000023_Node000018" title=" " alt="" coords="942,523,838,579,836,575,940,519"/>
-<area shape="poly" id="edge38_Node000023_Node000033" title=" " alt="" coords="1001,521,1068,575,1065,579,997,525"/>
-<area shape="poly" id="edge43_Node000034_Node000006" title=" " alt="" coords="1896,530,1707,620,1601,670,1553,690,1489,708,1402,726,1327,737,1199,743,1070,744,994,748,905,756,892,758,891,752,904,751,993,743,1069,739,1199,738,1327,731,1401,721,1488,703,1551,685,1599,666,1705,615,1894,526"/>
-<area shape="poly" id="edge44_Node000034_Node000015" title=" " alt="" coords="1866,528,1852,532,1639,587,1637,582,1851,527,1864,523"/>
-<area shape="rect" id="Node000035" href="$d6/d09/pipeline__binding_8cpp_8hpp.html" title=" " alt="" coords="1872,577,2020,617"/>
-<area shape="poly" id="edge45_Node000034_Node000035" title=" " alt="" coords="1948,536,1948,577,1943,577,1942,536"/>
-<area shape="rect" id="Node000036" href="$d1/d2a/power__mgt_8cpp_8hpp.html" title=" " alt="" coords="916,753,1067,779"/>
-<area shape="poly" id="edge47_Node000034_Node000036" title=" " alt="" coords="1914,533,1792,639,1706,708,1652,724,1580,737,1403,754,1218,763,1067,767,1067,761,1218,758,1403,749,1579,731,1651,719,1703,703,1788,635,1911,529"/>
-<area shape="poly" id="edge46_Node000035_Node000012" title=" " alt="" coords="1970,627,2061,752,2057,755,1966,630"/>
-<area shape="poly" id="edge48_Node000036_Node000007" title=" " alt="" coords="992,793,988,827,983,826,986,792"/>
-<area shape="poly" id="edge49_Node000036_Node000008" title=" " alt="" coords="956,787,865,829,863,824,954,782"/>
-<area shape="rect" id="Node000038" href="$d9/d9a/fl_2fled_2__build_8cpp_8hpp.html" title="Unity build header for fl/fled/ directory." alt="" coords="1631,489,1787,515"/>
-<area shape="poly" id="edge53_Node000037_Node000038" title=" " alt="" coords="1507,415,1682,487,1680,492,1505,420"/>
-<area shape="poly" id="edge57_Node000040_Node000002" title=" " alt="" coords="2770,216,2721,224,2484,241,2076,261,1328,295,1327,290,2076,256,2483,235,2720,219,2769,211"/>
-<area shape="poly" id="edge56_Node000040_Node000005" title=" " alt="" coords="2815,224,2754,271,2740,287,2731,301,2720,314,2702,326,2651,345,2584,359,2416,381,2235,393,2081,399,2081,394,2235,388,2415,375,2583,354,2650,339,2699,322,2716,310,2726,298,2736,284,2751,267,2812,220"/>
-<area shape="rect" id="Node000041" href="$db/dcf/_auto_research_parlio_stream_8h.html" title="PARLIO ISR&#45;streaming functional validation (#2548 deep&#45;dive follow&#45;up)." alt="" coords="2449,269,2688,324"/>
-<area shape="poly" id="edge55_Node000040_Node000041" title=" " alt="" coords="2787,221,2644,272,2642,267,2785,216"/>
-<area shape="rect" id="Node000042" href="$d0/da6/uart__wave__encoder_8h.html" title="Platform&#45;neutral UART wave4/wave5 encoder API." alt="" coords="2764,277,2928,317"/>
-<area shape="poly" id="edge58_Node000040_Node000042" title=" " alt="" coords="2853,228,2850,277,2845,276,2848,227"/>
-<area shape="rect" id="Node000043" href="$d5/d04/uart__wave__encoder_8cpp_8hpp.html" title="Implementation of the platform&#45;neutral UART waveN encoder." alt="" coords="2641,577,2805,617"/>
-<area shape="poly" id="edge59_Node000042_Node000043" title=" " alt="" coords="2836,330,2734,578,2729,576,2831,328"/>
-<area shape="poly" id="edge60_Node000043_Node000012" title=" " alt="" coords="2682,626,2600,669,2551,690,2501,708,2413,730,2323,746,2163,763,2163,757,2322,740,2412,725,2500,703,2549,685,2598,664,2679,622"/>
-<area shape="poly" id="edge73_Node000044_Node000040" title=" " alt="" coords="2427,114,2586,133,2765,164,2794,171,2793,177,2764,169,2586,138,2426,119"/>
-<area shape="poly" id="edge63_Node000044_Node000041" title=" " alt="" coords="2427,105,2512,110,2599,120,2675,137,2703,150,2723,165,2732,179,2734,193,2731,208,2723,223,2697,251,2664,272,2661,267,2693,247,2718,220,2726,206,2729,193,2727,181,2719,168,2700,154,2673,142,2598,125,2511,115,2427,111"/>
-<area shape="rect" id="Node000045" href="$d1/de7/_auto_research_parlio_encode_8h.html" title="Full PARLIO encode bench for ESP32&#45;P4 (post&#45;byte&#45;LUT, #2526 landed)." alt="" coords="2207,167,2445,221"/>
-<area shape="poly" id="edge62_Node000044_Node000045" title=" " alt="" coords="2329,132,2329,167,2323,167,2323,132"/>
-<area shape="rect" id="Node000046" href="$d3/d03/_auto_research_wave8_expand_8h.html" title="Wave8 expansion micro&#45;benchmark for #2526." alt="" coords="2469,167,2708,221"/>
-<area shape="poly" id="edge64_Node000044_Node000046" title=" " alt="" coords="2375,121,2509,164,2508,169,2374,126"/>
-<area shape="rect" id="Node000047" href="$db/d66/chipsets_8h.html" title="Contains the bulk of the definitions for the various LED chipsets supported." alt="" coords="1069,284,1157,309"/>
-<area shape="poly" id="edge65_Node000044_Node000047" title=" " alt="" coords="2226,121,1820,169,1635,190,1491,204,1348,226,1266,245,1170,272,1135,286,1133,281,1168,267,1264,239,1347,220,1490,198,1634,185,1819,164,2225,115"/>
-<area shape="rect" id="Node000048" href="$de/d4c/rx_8cpp_8hpp.html" title="Implementation of RxDevice factory." alt="" coords="2105,673,2269,698"/>
-<area shape="poly" id="edge67_Node000044_Node000048" title=" " alt="" coords="2244,125,2202,142,2165,169,2141,198,2127,225,2122,256,2121,295,2121,503,2128,554,2144,602,2164,642,2182,671,2177,674,2160,645,2139,604,2122,555,2115,504,2115,295,2116,255,2122,224,2136,195,2162,165,2199,137,2242,120"/>
-<area shape="rect" id="Node000049" href="$db/d7a/wave3_8cpp_8hpp.html" title="Wave3 waveform generation and transposition implementation." alt="" coords="2294,673,2489,698"/>
-<area shape="poly" id="edge69_Node000044_Node000049" title=" " alt="" coords="2262,126,2227,143,2197,168,2178,199,2171,227,2171,295,2171,503,2177,536,2191,565,2212,590,2239,613,2299,648,2354,670,2352,675,2296,652,2235,617,2208,594,2186,568,2171,537,2166,504,2166,295,2166,226,2173,197,2193,165,2224,138,2260,121"/>
-<area shape="rect" id="Node000050" href="$d8/d81/wave8_8cpp_8hpp.html" title=" " alt="" coords="2791,673,2986,698"/>
-<area shape="poly" id="edge71_Node000044_Node000050" title=" " alt="" coords="2427,108,2569,115,2728,126,2862,143,2909,153,2936,165,2960,193,2969,223,2969,295,2969,504,2961,556,2942,605,2919,646,2900,674,2895,671,2915,643,2937,602,2956,554,2963,503,2963,295,2964,224,2955,196,2932,169,2907,158,2861,148,2727,132,2569,121,2426,114"/>
-<area shape="rect" id="Node000051" href="$d0/d00/ucs7604_8h.html" title="UCS7604 LED chipset controller implementation for FastLED." alt="" coords="1831,181,1989,207"/>
-<area shape="poly" id="edge74_Node000044_Node000051" title=" " alt="" coords="2258,124,1966,184,1965,179,2257,119"/>
-<area shape="poly" id="edge66_Node000047_Node000009" title=" " alt="" coords="1055,302,868,307,618,319,370,341,268,356,192,375,139,392,98,408,64,433,34,476,24,501,26,524,35,543,52,561,101,590,160,615,202,627,258,638,395,657,646,679,646,684,395,662,257,643,201,632,158,620,99,595,49,565,31,546,20,525,19,501,29,473,60,429,95,403,137,386,191,369,267,351,369,336,617,314,868,302,1055,296"/>
-<area shape="poly" id="edge68_Node000048_Node000012" title=" " alt="" coords="2159,708,2087,755,2084,751,2156,704"/>
-<area shape="poly" id="edge70_Node000049_Node000012" title=" " alt="" coords="2332,704,2115,756,2114,751,2330,699"/>
-<area shape="poly" id="edge72_Node000050_Node000012" title=" " alt="" coords="2778,700,2163,758,2163,753,2778,695"/>
-<area shape="poly" id="edge76_Node000051_Node000015" title=" " alt="" coords="1897,220,1870,270,1857,309,1852,345,1850,408,1848,438,1841,469,1826,499,1801,531,1776,548,1737,563,1648,587,1647,582,1735,558,1773,543,1798,527,1822,496,1836,467,1842,438,1844,408,1846,344,1852,308,1865,268,1892,217"/>
-<area shape="poly" id="edge75_Node000051_Node000047" title=" " alt="" coords="1817,210,1694,224,1546,233,1429,234,1314,242,1247,253,1169,272,1134,286,1132,281,1168,267,1246,248,1313,237,1429,229,1545,228,1694,219,1817,204"/>
-<area shape="rect" id="Node000052" href="$db/d67/ucs7604_8cpp_8hpp.html" title=" " alt="" coords="1879,284,2080,309"/>
-<area shape="poly" id="edge77_Node000051_Node000052" title=" " alt="" coords="1928,217,1974,282,1969,286,1924,220"/>
+<area shape="rect" id="Node000001" title="Encoding pipeline selector for clockless LED chipsets." alt="" coords="953,5,1105,45"/>
+<area shape="rect" id="Node000002" href="$d1/d09/fl_2channels_2config_8h.html" title=" " alt="" coords="1710,284,1857,309"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1095,47,1752,281,1750,286,1093,52"/>
+<area shape="rect" id="Node000040" href="$d8/dc5/chipset__timing__config_8h.html" title="Runtime chipset timing configuration for clockless LED drivers." alt="" coords="959,174,1098,214"/>
+<area shape="poly" id="edge55_Node000001_Node000040" title=" " alt="" coords="1031,59,1031,174,1026,174,1026,59"/>
+<area shape="rect" id="Node000044" href="$d0/d3f/led__timing_8h.html" title="Centralized LED chipset timing definitions with nanosecond precision." alt="" coords="599,93,773,119"/>
+<area shape="poly" id="edge62_Node000001_Node000044" title=" " alt="" coords="940,50,736,96,735,91,939,44"/>
+<area shape="rect" id="Node000003" href="$db/d9c/_color_profile_8ino.html" title=" " alt="" coords="2902,475,3126,529"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1828,311,1869,321,1997,339,2106,345,2203,343,2293,338,2384,334,2481,335,2589,345,2716,369,2787,391,2856,418,2969,472,2966,477,2854,422,2785,396,2715,375,2588,350,2480,340,2384,339,2294,343,2203,348,2106,350,1996,344,1868,327,1827,316"/>
+<area shape="rect" id="Node000004" href="$db/dad/_r_g_b_w_w_8ino.html" title=" " alt="" coords="2675,475,2878,529"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1828,311,1869,321,1947,329,2045,331,2273,328,2390,328,2499,333,2594,346,2634,356,2667,370,2699,391,2727,418,2765,473,2761,476,2722,422,2696,395,2665,374,2632,361,2593,351,2499,338,2390,333,2273,333,2045,336,1946,335,1868,327,1827,316"/>
+<area shape="rect" id="Node000005" href="$db/dda/_sailboat_8ino.html" title="Audio&#45;reactive sailboat lighting with perlin noise, ambient particles, and beat meteors for EDM music..." alt="" coords="1066,372,1269,427"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1697,312,1509,338,1288,375,1269,378,1268,373,1287,369,1508,333,1696,307"/>
+<area shape="rect" id="Node000006" href="$d7/de5/_fast_l_e_d_8cpp_8hpp.html" title=" " alt="" coords="2155,753,2283,779"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="1827,311,1869,321,2011,341,2132,349,2239,349,2339,345,2439,341,2546,341,2667,349,2809,369,2871,376,2934,378,2994,379,3048,382,3095,391,3116,400,3133,412,3147,428,3157,447,3164,471,3166,501,3166,599,3158,617,3136,633,3101,648,3056,662,2941,688,2803,710,2511,744,2284,763,2283,758,2510,738,2803,704,2940,682,3055,657,3099,643,3133,628,3154,613,3161,598,3161,501,3159,472,3152,449,3143,431,3129,416,3113,405,3094,397,3048,387,2993,384,2934,384,2871,382,2808,375,2667,354,2546,346,2439,346,2339,350,2239,354,2131,354,2010,346,1868,327,1826,316"/>
+<area shape="rect" id="Node000009" href="$d6/d64/fastled_8h.html" title="central include file for FastLED, defines the CFastLED class/object" alt="" coords="2323,673,2409,698"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="1830,311,1869,321,1923,330,1970,332,2053,329,2092,329,2132,334,2177,347,2226,370,2266,399,2297,437,2321,481,2340,527,2361,613,2368,672,2363,673,2355,614,2334,528,2317,483,2293,440,2262,403,2223,374,2175,352,2131,340,2091,335,2053,335,1970,338,1923,335,1868,327,1828,316"/>
+<area shape="rect" id="Node000010" href="$d6/d93/spi__channel__adapter_8cpp_8hpp.html" title=" " alt="" coords="925,577,1140,617"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="1697,308,1495,333,1399,352,1361,363,1333,374,1317,387,1308,401,1299,415,1282,429,1248,443,1217,448,1159,444,1132,442,1105,445,1079,455,1053,476,1039,500,1032,527,1032,577,1027,577,1027,526,1034,498,1049,473,1077,451,1104,440,1131,437,1159,439,1217,443,1247,438,1279,424,1295,412,1304,398,1313,383,1330,370,1359,358,1398,347,1494,328,1696,303"/>
+<area shape="rect" id="Node000015" href="$d3/de6/channel_8cpp_8hpp.html" title=" " alt="" coords="1227,585,1430,610"/>
+<area shape="poly" id="edge13_Node000002_Node000015" title=" " alt="" coords="1744,317,1687,343,1626,374,1604,389,1588,404,1571,417,1547,429,1513,437,1468,441,1363,442,1311,444,1263,449,1225,459,1199,477,1191,489,1189,501,1192,514,1199,528,1215,547,1234,562,1279,582,1277,587,1232,566,1211,551,1194,531,1187,516,1183,501,1186,487,1195,473,1222,454,1262,444,1310,438,1363,437,1468,435,1512,432,1545,424,1568,412,1585,399,1601,385,1623,370,1685,338,1741,312"/>
+<area shape="rect" id="Node000016" href="$d5/d7b/channel_8h.html" title="ESP32&#45;P4 Parallel IO (PARLIO) LED channel." alt="" coords="2495,387,2653,412"/>
+<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="1829,311,1869,321,1958,336,2034,344,2165,349,2296,352,2372,358,2462,369,2532,384,2531,389,2462,375,2372,363,2295,357,2165,354,2034,349,1958,341,1868,327,1827,316"/>
+<area shape="rect" id="Node000017" href="$d4/de5/channel__typed_8h.html" title="Phase 3b templated channel facade – Channel&lt;Bus, Chipset&gt; with compile&#45;time bus/chipset enforcement." alt="" coords="2403,482,2550,522"/>
+<area shape="poly" id="edge27_Node000002_Node000017" title=" " alt="" coords="1829,311,1869,321,1919,327,1983,330,2132,332,2207,335,2278,341,2339,352,2386,370,2416,394,2441,424,2472,481,2467,483,2437,427,2413,398,2383,374,2338,357,2277,346,2207,340,2132,337,1983,335,1919,333,1868,327,1828,316"/>
+<area shape="rect" id="Node000018" href="$d5/d9b/slim__spi__bridge__controller_8h.html" title="Shared &quot;slim bridge&quot; legacy addLeds&lt;ESPIChipsets ...&gt;() controller for the SPI channel API – driver&#45;a..." alt="" coords="2177,577,2328,617"/>
+<area shape="poly" id="edge52_Node000002_Node000018" title=" " alt="" coords="1831,311,1869,321,1950,334,2015,337,2079,344,2115,354,2156,370,2202,389,2237,407,2266,433,2291,474,2297,502,2293,530,2282,557,2269,579,2264,576,2277,554,2287,529,2292,502,2286,476,2262,436,2234,412,2199,394,2154,374,2113,359,2078,350,2015,342,1950,339,1868,327,1829,316"/>
+<area shape="rect" id="Node000020" href="$da/d53/config_8cpp_8hpp.html" title=" " alt="" coords="1344,387,1535,412"/>
+<area shape="poly" id="edge28_Node000002_Node000020" title=" " alt="" coords="1731,316,1479,389,1478,384,1730,311"/>
+<area shape="rect" id="Node000021" href="$d2/dbd/data_8h.html" title="Channel transmission data &#45; lightweight DTO for driver transmission." alt="" coords="1661,387,1799,412"/>
+<area shape="poly" id="edge30_Node000002_Node000021" title=" " alt="" coords="1773,323,1738,388,1734,385,1768,320"/>
+<area shape="rect" id="Node000034" href="$df/d99/slim__bridge__controller_8h.html" title="Shared &quot;slim bridge&quot; legacy addLeds&lt;&gt;() controller for channel drivers." alt="" coords="1845,577,2017,617"/>
+<area shape="poly" id="edge51_Node000002_Node000034" title=" " alt="" coords="1795,321,1871,528,1890,553,1911,575,1907,579,1886,557,1866,531,1790,323"/>
+<area shape="rect" id="Node000035" href="$d7/dcc/pipeline__binding_8h.html" title=" " alt="" coords="1556,482,1704,522"/>
+<area shape="poly" id="edge44_Node000002_Node000035" title=" " alt="" coords="1731,317,1687,339,1667,355,1651,373,1638,400,1631,430,1630,482,1625,482,1626,429,1633,399,1646,371,1664,351,1684,335,1728,312"/>
+<area shape="rect" id="Node000037" href="$df/d4d/fled_8cpp_8hpp.html" title=" " alt="" coords="2002,387,2143,412"/>
+<area shape="poly" id="edge53_Node000002_Node000037" title=" " alt="" coords="1830,311,2041,384,2039,389,1829,316"/>
+<area shape="rect" id="Node000007" href="$d7/dd5/__build_8cpp_8hpp.html" title=" " alt="" coords="2009,827,2125,852"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="2184,787,2093,829,2091,824,2182,782"/>
+<area shape="rect" id="Node000008" href="$dd/de2/src_8cpp.html" title="Unity build: flat includes from src/ root directory." alt="" coords="2155,827,2271,852"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="2220,793,2216,827,2211,826,2214,792"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="2334,707,2242,755,2240,751,2331,702"/>
+<area shape="rect" id="Node000011" href="$d8/d85/fl_2channels_2adapters_2__build_8cpp_8hpp.html" title=" " alt="" coords="987,665,1140,705"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1047,630,1059,664,1054,666,1042,631"/>
+<area shape="rect" id="Node000012" href="$d1/d97/fl_2channels_2__build_8cpp_8hpp.html" title=" " alt="" coords="968,753,1159,779"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="1066,719,1066,753,1061,753,1061,719"/>
+<area shape="poly" id="edge14_Node000015_Node000012" title=" " alt="" coords="1309,621,1260,663,1198,708,1145,735,1096,756,1094,751,1143,730,1195,703,1256,659,1305,617"/>
+<area shape="poly" id="edge16_Node000016_Node000003" title=" " alt="" coords="2638,412,2902,473,2901,478,2637,418"/>
+<area shape="poly" id="edge17_Node000016_Node000004" title=" " alt="" coords="2611,416,2725,472,2723,477,2608,421"/>
+<area shape="poly" id="edge18_Node000016_Node000006" title=" " alt="" coords="2585,425,2596,474,2596,502,2591,530,2579,559,2565,579,2527,619,2479,669,2455,688,2422,708,2351,737,2283,756,2281,751,2349,732,2419,703,2452,684,2475,665,2523,615,2561,576,2575,556,2586,529,2591,502,2590,474,2580,426"/>
+<area shape="poly" id="edge19_Node000016_Node000009" title=" " alt="" coords="2580,426,2580,476,2575,504,2564,531,2547,557,2527,581,2480,622,2432,654,2392,675,2390,670,2429,649,2477,618,2523,577,2543,554,2560,528,2570,503,2574,475,2575,426"/>
+<area shape="poly" id="edge20_Node000016_Node000015" title=" " alt="" coords="2481,409,1927,447,1544,477,1457,524,1349,587,1346,582,1454,519,1543,472,1927,442,2481,404"/>
+<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="2555,424,2497,484,2493,480,2551,420"/>
+<area shape="rect" id="Node000019" href="$d6/d09/pipeline__binding_8cpp_8hpp.html" title=" " alt="" coords="1673,577,1821,617"/>
+<area shape="poly" id="edge25_Node000016_Node000019" title=" " alt="" coords="2481,410,2128,439,1962,458,1904,467,1870,477,1835,499,1805,526,1762,579,1758,576,1801,522,1832,495,1868,472,1903,462,1962,452,2127,433,2480,404"/>
+<area shape="poly" id="edge22_Node000017_Node000009" title=" " alt="" coords="2460,535,2375,674,2371,671,2456,533"/>
+<area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="2420,530,2299,580,2297,575,2418,525"/>
+<area shape="poly" id="edge24_Node000018_Node000009" title=" " alt="" coords="2290,624,2352,670,2349,674,2287,628"/>
+<area shape="poly" id="edge26_Node000019_Node000012" title=" " alt="" coords="1708,627,1629,669,1583,691,1535,708,1436,732,1336,749,1241,759,1159,765,1159,759,1240,754,1335,744,1435,727,1533,703,1581,686,1627,665,1705,622"/>
+<area shape="poly" id="edge29_Node000020_Node000012" title=" " alt="" coords="1376,418,1257,448,1207,464,1182,477,1165,505,1158,532,1159,559,1164,586,1169,614,1172,643,1168,674,1154,707,1141,723,1125,736,1093,756,1090,751,1122,732,1137,719,1149,704,1163,673,1167,643,1164,615,1158,587,1153,559,1153,531,1160,502,1179,473,1205,459,1255,443,1375,412"/>
+<area shape="poly" id="edge33_Node000021_Node000015" title=" " alt="" coords="1660,417,1541,445,1487,461,1450,477,1401,523,1341,586,1338,583,1397,520,1447,472,1486,456,1540,440,1658,412"/>
+<area shape="poly" id="edge43_Node000021_Node000018" title=" " alt="" coords="1813,403,1870,411,1933,424,1998,444,2059,472,2076,486,2086,499,2096,513,2110,527,2155,554,2201,575,2199,580,2153,559,2107,531,2091,517,2082,502,2072,489,2057,477,1996,449,1932,429,1869,416,1812,408"/>
+<area shape="rect" id="Node000022" href="$d4/d8e/spi__channel__adapter_8h.html" title="Adapter that wraps HW SPI controllers for ChannelManager." alt="" coords="1209,482,1379,522"/>
+<area shape="poly" id="edge31_Node000021_Node000022" title=" " alt="" coords="1664,418,1399,477,1368,485,1367,479,1397,472,1663,412"/>
+<area shape="rect" id="Node000023" href="$d9/dda/data_8cpp_8hpp.html" title=" " alt="" coords="1343,673,1523,698"/>
+<area shape="poly" id="edge34_Node000021_Node000023" title=" " alt="" coords="1661,418,1601,441,1572,457,1545,477,1523,500,1503,526,1471,583,1450,636,1438,673,1433,671,1445,634,1467,581,1498,524,1519,497,1542,473,1569,452,1599,436,1659,413"/>
+<area shape="rect" id="Node000024" href="$db/d45/manager_8h.html" title="Unified manager for channel drivers with priority&#45;based fallback." alt="" coords="1881,489,2046,515"/>
+<area shape="poly" id="edge36_Node000021_Node000024" title=" " alt="" coords="1770,415,1938,487,1936,492,1768,420"/>
+<area shape="poly" id="edge42_Node000021_Node000034" title=" " alt="" coords="1735,425,1747,476,1759,504,1776,527,1812,556,1854,575,1852,580,1809,560,1772,531,1754,506,1742,478,1730,426"/>
+<area shape="poly" id="edge32_Node000022_Node000010" title=" " alt="" coords="1229,529,1086,580,1085,575,1228,524"/>
+<area shape="poly" id="edge35_Node000023_Node000012" title=" " alt="" coords="1366,703,1118,756,1117,751,1365,698"/>
+<area shape="poly" id="edge37_Node000024_Node000006" title=" " alt="" coords="1986,523,2210,751,2206,755,1982,526"/>
+<area shape="poly" id="edge38_Node000024_Node000009" title=" " alt="" coords="1996,519,2166,615,2250,647,2325,670,2323,675,2248,652,2164,620,1994,524"/>
+<area shape="poly" id="edge39_Node000024_Node000015" title=" " alt="" coords="1873,519,1407,587,1406,582,1872,514"/>
+<area shape="poly" id="edge41_Node000024_Node000018" title=" " alt="" coords="2012,516,2195,575,2194,580,2011,521"/>
+<area shape="poly" id="edge40_Node000024_Node000034" title=" " alt="" coords="1958,528,1940,578,1935,576,1952,527"/>
+<area shape="poly" id="edge45_Node000035_Node000006" title=" " alt="" coords="1633,535,1641,577,1649,598,1662,615,1688,630,1736,647,1876,686,2164,751,2163,756,1875,691,1735,652,1686,635,1659,619,1645,600,1636,579,1628,536"/>
+<area shape="poly" id="edge46_Node000035_Node000015" title=" " alt="" coords="1557,529,1367,587,1365,582,1555,524"/>
+<area shape="poly" id="edge47_Node000035_Node000019" title=" " alt="" coords="1666,528,1725,575,1722,579,1663,533"/>
+<area shape="rect" id="Node000036" href="$d1/d2a/power__mgt_8cpp_8hpp.html" title=" " alt="" coords="1980,753,2131,779"/>
+<area shape="poly" id="edge48_Node000035_Node000036" title=" " alt="" coords="1618,536,1605,574,1597,619,1599,664,1606,685,1619,703,1642,721,1678,735,1723,745,1774,753,1882,761,1980,763,1980,769,1882,767,1773,758,1722,750,1676,740,1640,725,1615,707,1602,687,1594,665,1591,619,1600,572,1613,534"/>
+<area shape="poly" id="edge49_Node000036_Node000007" title=" " alt="" coords="2062,792,2068,826,2063,827,2057,793"/>
+<area shape="poly" id="edge50_Node000036_Node000008" title=" " alt="" coords="2094,782,2188,824,2186,829,2092,787"/>
+<area shape="rect" id="Node000038" href="$d9/d9a/fl_2fled_2__build_8cpp_8hpp.html" title="Unity build header for fl/fled/ directory." alt="" coords="2121,489,2277,515"/>
+<area shape="poly" id="edge54_Node000037_Node000038" title=" " alt="" coords="2099,418,2187,487,2183,491,2096,423"/>
+<area shape="poly" id="edge58_Node000040_Node000002" title=" " alt="" coords="1112,204,1710,283,1710,288,1111,209"/>
+<area shape="poly" id="edge57_Node000040_Node000005" title=" " alt="" coords="1074,220,1100,241,1124,268,1139,294,1151,321,1165,371,1160,373,1146,323,1135,296,1120,271,1097,245,1070,224"/>
+<area shape="rect" id="Node000041" href="$db/dcf/_auto_research_parlio_stream_8h.html" title="PARLIO ISR&#45;streaming functional validation (#2548 deep&#45;dive follow&#45;up)." alt="" coords="684,269,923,324"/>
+<area shape="poly" id="edge56_Node000040_Node000041" title=" " alt="" coords="975,222,863,272,861,267,973,217"/>
+<area shape="rect" id="Node000042" href="$d0/da6/uart__wave__encoder_8h.html" title="Platform&#45;neutral UART wave4/wave5 encoder API." alt="" coords="947,277,1111,317"/>
+<area shape="poly" id="edge59_Node000040_Node000042" title=" " alt="" coords="1031,228,1031,277,1026,277,1026,228"/>
+<area shape="rect" id="Node000043" href="$d5/d04/uart__wave__encoder_8cpp_8hpp.html" title="Implementation of the platform&#45;neutral UART waveN encoder." alt="" coords="737,577,901,617"/>
+<area shape="poly" id="edge60_Node000042_Node000043" title=" " alt="" coords="1010,330,835,579,830,576,1005,327"/>
+<area shape="poly" id="edge61_Node000043_Node000012" title=" " alt="" coords="863,622,925,663,976,703,1047,751,1044,755,972,707,922,667,860,627"/>
+<area shape="poly" id="edge74_Node000044_Node000040" title=" " alt="" coords="746,119,959,173,958,178,744,125"/>
+<area shape="poly" id="edge64_Node000044_Node000041" title=" " alt="" coords="703,129,789,268,785,270,698,132"/>
+<area shape="rect" id="Node000045" href="$d1/de7/_auto_research_parlio_encode_8h.html" title="Full PARLIO encode bench for ESP32&#45;P4 (post&#45;byte&#45;LUT, #2526 landed)." alt="" coords="5,167,244,221"/>
+<area shape="poly" id="edge63_Node000044_Node000045" title=" " alt="" coords="586,122,430,143,256,169,245,171,244,166,255,164,430,137,585,117"/>
+<area shape="rect" id="Node000046" href="$d3/d03/_auto_research_wave8_expand_8h.html" title="Wave8 expansion micro&#45;benchmark for #2526." alt="" coords="268,167,507,221"/>
+<area shape="poly" id="edge65_Node000044_Node000046" title=" " alt="" coords="633,125,479,169,478,164,632,120"/>
+<area shape="rect" id="Node000047" href="$db/d66/chipsets_8h.html" title="Contains the bulk of the definitions for the various LED chipsets supported." alt="" coords="1881,284,1969,309"/>
+<area shape="poly" id="edge66_Node000044_Node000047" title=" " alt="" coords="787,108,1072,125,1246,142,1420,164,1548,184,1648,202,1746,227,1870,267,1904,281,1902,286,1868,272,1744,232,1647,207,1547,189,1419,169,1245,147,1072,131,786,114"/>
+<area shape="rect" id="Node000048" href="$de/d4c/rx_8cpp_8hpp.html" title="Implementation of RxDevice factory." alt="" coords="309,673,473,698"/>
+<area shape="poly" id="edge68_Node000044_Node000048" title=" " alt="" coords="651,128,624,146,600,168,575,200,559,227,550,256,547,295,547,504,543,534,532,562,516,588,496,611,452,649,413,675,411,670,449,645,492,607,512,584,527,559,538,532,542,503,542,295,545,255,554,225,571,197,596,165,621,141,648,123"/>
+<area shape="rect" id="Node000049" href="$db/d7a/wave3_8cpp_8hpp.html" title="Wave3 waveform generation and transposition implementation." alt="" coords="498,673,693,698"/>
+<area shape="poly" id="edge70_Node000044_Node000049" title=" " alt="" coords="662,129,645,147,630,168,613,201,603,229,599,258,598,295,598,503,598,673,593,673,593,503,593,295,594,257,598,228,608,199,625,165,641,144,659,126"/>
+<area shape="rect" id="Node000050" href="$d8/d81/wave8_8cpp_8hpp.html" title=" " alt="" coords="717,673,911,698"/>
+<area shape="poly" id="edge72_Node000044_Node000050" title=" " alt="" coords="680,132,660,205,652,250,649,295,649,503,653,533,664,560,682,586,703,608,750,645,792,670,789,675,747,650,699,612,677,589,660,563,648,534,643,504,643,295,647,249,655,204,675,131"/>
+<area shape="rect" id="Node000051" href="$d0/d00/ucs7604_8h.html" title="UCS7604 LED chipset controller implementation for FastLED." alt="" coords="1249,181,1408,207"/>
+<area shape="poly" id="edge75_Node000044_Node000051" title=" " alt="" coords="786,118,1250,179,1249,185,785,123"/>
+<area shape="poly" id="edge67_Node000047_Node000009" title=" " alt="" coords="1982,296,2128,300,2333,311,2570,333,2691,349,2809,369,2863,377,2911,380,2996,385,3034,393,3071,408,3106,434,3140,473,3149,488,3152,502,3149,517,3140,531,3118,552,3087,571,3006,603,2906,629,2794,649,2680,664,2572,674,2409,685,2409,680,2572,669,2680,658,2793,643,2905,624,3004,598,3085,566,3114,548,3136,528,3144,515,3147,502,3144,490,3136,476,3102,438,3068,413,3033,398,2995,391,2911,386,2862,382,2808,375,2690,354,2569,338,2333,316,2128,305,1982,301"/>
+<area shape="poly" id="edge69_Node000048_Node000012" title=" " alt="" coords="459,698,486,703,748,735,968,755,968,760,747,740,486,708,458,703"/>
+<area shape="poly" id="edge71_Node000049_Node000012" title=" " alt="" coords="676,698,705,703,994,751,993,756,704,708,675,703"/>
+<area shape="poly" id="edge73_Node000050_Node000012" title=" " alt="" coords="864,700,1028,751,1026,756,862,705"/>
+<area shape="poly" id="edge77_Node000051_Node000015" title=" " alt="" coords="1356,214,1380,238,1402,266,1412,296,1410,312,1401,326,1381,345,1361,357,1339,364,1317,367,1272,362,1226,351,1181,339,1137,334,1116,337,1095,344,1075,356,1056,374,1044,391,1039,408,1040,424,1045,440,1070,471,1108,501,1155,527,1205,550,1293,582,1291,587,1203,555,1153,532,1106,505,1066,475,1041,443,1034,425,1034,407,1040,389,1052,370,1072,351,1093,339,1114,332,1137,329,1182,334,1227,345,1273,357,1317,362,1338,359,1358,352,1378,340,1397,322,1405,310,1406,297,1397,269,1376,241,1353,218"/>
+<area shape="poly" id="edge76_Node000051_Node000047" title=" " alt="" coords="1422,202,1664,231,1783,248,1869,267,1905,281,1903,286,1868,272,1782,254,1664,236,1422,207"/>
+<area shape="rect" id="Node000052" href="$db/d67/ucs7604_8cpp_8hpp.html" title=" " alt="" coords="1187,284,1388,309"/>
+<area shape="poly" id="edge78_Node000051_Node000052" title=" " alt="" coords="1321,220,1294,285,1290,283,1316,218"/>
 </map>

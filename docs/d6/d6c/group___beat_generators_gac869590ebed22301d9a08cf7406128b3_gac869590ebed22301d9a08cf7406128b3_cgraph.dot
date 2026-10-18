@@ -13,5 +13,4 @@ digraph "fl::beatsin16"
   Node3 [id="Node000003",label="fl::beat88",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/d6c/group___beat_generators_ga6675df99171a44d0d463eba91be86a2f.html#ga6675df99171a44d0d463eba91be86a2f",tooltip="Generates a 16-bit \"sawtooth\" wave at a given BPM, with BPM specified in Q8.8 fixed-point format."];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="fl::millis",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a3c0ba5842bfd029c404a38c8df2315f3.html#a3c0ba5842bfd029c404a38c8df2315f3",tooltip="Universal millisecond timer - returns milliseconds since system startup."];
-  Node4 -> Node4 [id="edge4_Node000004_Node000004",color="steelblue1",style="solid",tooltip=" "];
 }

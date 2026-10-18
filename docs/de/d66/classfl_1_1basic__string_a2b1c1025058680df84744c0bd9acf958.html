@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(function(){initNavTree('de/d66/classfl_1_1basic__string_a2b1c1025058680df84744
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00043">43</a> of file <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html">basic_string.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>                                  {</div>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>                                               {</div>
 <div class="line"><span class="lineno">   44</span>    <span class="comment">// Inline mode — already mutable</span></div>
 <div class="line"><span class="lineno">   45</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../de/d66/classfl_1_1basic__string_aa4b96230d35407cdaac045c72aba42f7.html#aa4b96230d35407cdaac045c72aba42f7">mStorage</a>.empty()) {</div>
 <div class="line"><span class="lineno">   46</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_a8f1ed124471f133d9efee78fe4bb69b3.html#a8f1ed124471f133d9efee78fe4bb69b3">inlineBufferPtr</a>();</div>
@@ -124,22 +124,22 @@ $(function(){initNavTree('de/d66/classfl_1_1basic__string_a2b1c1025058680df84744
 <div class="line"><span class="lineno">   48</span>    <span class="keyword">struct </span>Visitor {</div>
 <div class="line"><span class="lineno">   49</span>        basic_string* self;</div>
 <div class="line"><span class="lineno">   50</span>        <span class="keywordtype">char</span>* <a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a>;</div>
-<div class="line"><span class="lineno">   51</span>        <span class="keywordtype">void</span> accept(NotNullStringHolderPtr&amp; heap) {</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordtype">void</span> accept(NotNullStringHolderPtr&amp; heap) <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a> {</div>
 <div class="line"><span class="lineno">   52</span>            <span class="keywordflow">if</span> (heap.get().use_count() &gt; 1) {</div>
 <div class="line"><span class="lineno">   53</span>                <span class="comment">// COW: detach from shared data before returning mutable pointer</span></div>
 <div class="line"><span class="lineno">   54</span>                self-&gt;mStorage = <a class="code hl_typedef" href="../../d4/d36/namespacefl_a2233e1360d6e45faf846d710c36fcb37.html#a2233e1360d6e45faf846d710c36fcb37">NotNullStringHolderPtr</a>(</div>
-<div class="line"><span class="lineno">   55</span>                    <a class="code hl_function" href="../../d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared&lt;StringHolder&gt;</a>(heap-&gt;data(), self-&gt;mLength));</div>
+<div class="line"><span class="lineno">   55</span>                    <a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::make_shared&lt;StringHolder&gt;</a>(heap-&gt;data(), self-&gt;mLength));</div>
 <div class="line"><span class="lineno">   56</span>                <a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a> = self-&gt;heapData()-&gt;data();</div>
 <div class="line"><span class="lineno">   57</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   58</span>                <a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a> = heap-&gt;data();</div>
 <div class="line"><span class="lineno">   59</span>            }</div>
 <div class="line"><span class="lineno">   60</span>        }</div>
-<div class="line"><span class="lineno">   61</span>        <span class="keywordtype">void</span> accept(ConstLiteral&amp;) {</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordtype">void</span> accept(ConstLiteral&amp;) <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a> {</div>
 <div class="line"><span class="lineno">   62</span>            self-&gt;materialize();</div>
 <div class="line"><span class="lineno">   63</span>            <a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a> = self-&gt;hasHeapData() ? self-&gt;heapData()-&gt;data()</div>
 <div class="line"><span class="lineno">   64</span>                                         : self-&gt;inlineBufferPtr();</div>
 <div class="line"><span class="lineno">   65</span>        }</div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordtype">void</span> accept(ConstView&amp;) {</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordtype">void</span> accept(ConstView&amp;) <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a> {</div>
 <div class="line"><span class="lineno">   67</span>            self-&gt;materialize();</div>
 <div class="line"><span class="lineno">   68</span>            <a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a> = self-&gt;hasHeapData() ? self-&gt;heapData()-&gt;data()</div>
 <div class="line"><span class="lineno">   69</span>                                         : self-&gt;inlineBufferPtr();</div>
@@ -151,11 +151,12 @@ $(function(){initNavTree('de/d66/classfl_1_1basic__string_a2b1c1025058680df84744
 <div class="line"><span class="lineno">   75</span>}</div>
 <div class="ttc" id="aclassfl_1_1basic__string_a8f1ed124471f133d9efee78fe4bb69b3_html_a8f1ed124471f133d9efee78fe4bb69b3"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_a8f1ed124471f133d9efee78fe4bb69b3.html#a8f1ed124471f133d9efee78fe4bb69b3">fl::basic_string::inlineBufferPtr</a></div><div class="ttdeci">char * inlineBufferPtr() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00495">basic_string.h:495</a></div></div>
 <div class="ttc" id="aclassfl_1_1basic__string_aa4b96230d35407cdaac045c72aba42f7_html_aa4b96230d35407cdaac045c72aba42f7"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_aa4b96230d35407cdaac045c72aba42f7.html#aa4b96230d35407cdaac045c72aba42f7">fl::basic_string::mStorage</a></div><div class="ttdeci">fl::variant&lt; NotNullStringHolderPtr, ConstLiteral, ConstView &gt; mStorage</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00491">basic_string.h:491</a></div></div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c_html_a9fb4ec44d15efca3aed1890e7b57410c"><div class="ttname"><a href="../../df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::adl_barrier::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args &amp;&amp;... args) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00423">shared_ptr.h:423</a></div></div>
 <div class="ttc" id="anamespacefl_a2233e1360d6e45faf846d710c36fcb37_html_a2233e1360d6e45faf846d710c36fcb37"><div class="ttname"><a href="../../d4/d36/namespacefl_a2233e1360d6e45faf846d710c36fcb37.html#a2233e1360d6e45faf846d710c36fcb37">fl::NotNullStringHolderPtr</a></div><div class="ttdeci">fl::not_null&lt; StringHolderPtr &gt; NotNullStringHolderPtr</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00035">basic_string.h:35</a></div></div>
-<div class="ttc" id="anamespacefl_a87ae8a24cc8b709a64f39370e71846af_html_a87ae8a24cc8b709a64f39370e71846af"><div class="ttname"><a href="../../d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args &amp;&amp;... args) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00414">shared_ptr.h:414</a></div></div>
 <div class="ttc" id="anamespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99_html_a8fa65f6529fc3eb6a174cb304a4bfc99"><div class="ttname"><a href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">fl::result</a></div><div class="ttdeci">expected&lt; T, E &gt; result</div><div class="ttdoc">Alias for expected (Rust-style naming)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d93/result_8h_source.html#l00031">result.h:31</a></div></div>
+<div class="ttc" id="as16x16x4_8h_abae81a69398c715960350e0a571b754a_html_abae81a69398c715960350e0a571b754a"><div class="ttname"><a href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></div><div class="ttdeci">#define FL_NO_EXCEPT</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00455">basic_string()</a>, <a class="el" href="../../db/d69/not__null_8h_source.html#l00223">fl::not_null&lt; T &gt;::get()</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00503">hasHeapData()</a>, <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00201">heapData()</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00495">inlineBufferPtr()</a>, <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00414">fl::make_shared()</a>, <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00164">materialize()</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00490">mLength</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00491">mStorage</a>, and <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00342">fl::shared_ptr&lt; T &gt;::use_count()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00455">basic_string()</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d69/not__null_8h_source.html#l00223">fl::not_null&lt; T &gt;::get()</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00503">hasHeapData()</a>, <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00201">heapData()</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00495">inlineBufferPtr()</a>, <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00423">fl::adl_barrier::make_shared()</a>, <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00164">materialize()</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00490">mLength</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00491">mStorage</a>, and <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00350">fl::shared_ptr&lt; T &gt;::use_count()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00104">at()</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00171">begin()</a>, <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00514">clear()</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00172">end()</a>, <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00921">erase()</a>, <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00095">operator[]()</a>, <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l00770">pop_back()</a>, and <a class="el" href="../../d1/d86/basic__string_8cpp_8hpp_source.html#l01461">resize()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -182,7 +183,7 @@ $(function(){initNavTree('de/d66/classfl_1_1basic__string_a2b1c1025058680df84744
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../de/d66/classfl_1_1basic__string.html">basic_string</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

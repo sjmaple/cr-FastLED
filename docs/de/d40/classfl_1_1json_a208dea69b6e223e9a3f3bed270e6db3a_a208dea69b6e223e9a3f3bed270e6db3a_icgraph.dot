@@ -25,10 +25,8 @@ digraph "fl::json::as_int"
   Node63 [id="Node000063",label="fl::json::as_int",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d40/classfl_1_1json_a0b238ad48e73845be8b3ad9c9bb2cb00.html#a0b238ad48e73845be8b3ad9c9bb2cb00",tooltip=" "];
   Node1 -> Node64 [id="edge10_Node000001_Node000064",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node64 [id="Node000064",label="handleResponse",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/db9/_rpc_client_8ino_a29b249486c88691d6e8a1003e5c2b08e.html#a29b249486c88691d6e8a1003e5c2b08e",tooltip=" "];
-  Node64 -> Node28 [id="edge11_Node000064_Node000028",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node28 [id="Node000028",label="loop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/db9/_rpc_client_8ino_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f",tooltip=" "];
-  Node1 -> Node37 [id="edge12_Node000001_Node000037",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node37 [id="Node000037",label="fl::Remote::processRpc",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$dc/ddb/classfl_1_1_remote_afc1aa2b0cff697bf294813e9ddc9e9d5.html#afc1aa2b0cff697bf294813e9ddc9e9d5",tooltip="Process JSON-RPC request (with optional \"timestamp\" field for scheduling) Returns JSON-RPC response: ..."];
-  Node1 -> Node53 [id="edge13_Node000001_Node000053",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node64 -> Node65 [id="edge11_Node000064_Node000065",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node65 [id="Node000065",label="loop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/db9/_rpc_client_8ino_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f",tooltip=" "];
+  Node1 -> Node53 [id="edge12_Node000001_Node000053",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node53 [id="Node000053",label="setup",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d08/_rpc_bidirectional_8ino_a4fc01d736fe50cf5b977f755b675f11d.html#a4fc01d736fe50cf5b977f755b675f11d",tooltip=" "];
 }

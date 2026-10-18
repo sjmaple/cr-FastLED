@@ -8,15 +8,15 @@ digraph "fl::detail::wave8_expand_byte"
   rankdir="RL";
   Node1 [id="Node000001",label="fl::detail::wave8_expand_byte",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::wave8Transpose_16",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a6d3dde4b59c470212560afa6b6d7a712.html#a6d3dde4b59c470212560afa6b6d7a712",tooltip=" "];
+  Node2 [id="Node000002",label="fl::wave8Transpose_16",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a4546373770e21ef38ab4e092aa392456.html#a4546373770e21ef38ab4e092aa392456",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::wave8Transpose\l_16x2_pipe2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a29b071bb16abe20602cffbbbada53cf0.html#a29b071bb16abe20602cffbbbada53cf0",tooltip="Pipe2: transpose 16-lane × 2-byte-positions (#2548)."];
+  Node3 [id="Node000003",label="fl::wave8Transpose\l_16x2_pipe2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ab950bbd537bc9964822f7ce7aa75f2a4.html#ab950bbd537bc9964822f7ce7aa75f2a4",tooltip="Pipe2: transpose 16-lane × 2-byte-positions (#2548)."];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="fl::wave8Transpose\l_16x4_pipe4",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a8ab9ceed35077aee8198f828008bf565.html#a8ab9ceed35077aee8198f828008bf565",tooltip="Pipe4: transpose 16-lane × 4-byte-positions (#2548)."];
+  Node4 [id="Node000004",label="fl::wave8Transpose\l_16x4_pipe4",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a0d9913f42c2c320dd0b665be20cb14d2.html#a0d9913f42c2c320dd0b665be20cb14d2",tooltip="Pipe4: transpose 16-lane × 4-byte-positions (#2548)."];
   Node1 -> Node5 [id="edge4_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="fl::wave8Transpose_2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a98dc6dd4e28207cc08d2a24de7621200.html#a98dc6dd4e28207cc08d2a24de7621200",tooltip=" "];
+  Node5 [id="Node000005",label="fl::wave8Transpose_2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ac60ea43c4646fa7fbe44bc0013d7da1f.html#ac60ea43c4646fa7fbe44bc0013d7da1f",tooltip=" "];
   Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="fl::wave8Transpose_4",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a21638214c74e2b2d82569337e20be4fa.html#a21638214c74e2b2d82569337e20be4fa",tooltip=" "];
+  Node6 [id="Node000006",label="fl::wave8Transpose_4",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_af7e8ea7eb3c135541e42f40e9c164eae.html#af7e8ea7eb3c135541e42f40e9c164eae",tooltip=" "];
   Node1 -> Node7 [id="edge6_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="fl::wave8Transpose_8",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ae2acb08c338d6c448ad65af439834073.html#ae2acb08c338d6c448ad65af439834073",tooltip=" "];
+  Node7 [id="Node000007",label="fl::wave8Transpose_8",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a95d1a6d64878eb3fabd3e81348af6f20.html#a95d1a6d64878eb3fabd3e81348af6f20",tooltip=" "];
 }

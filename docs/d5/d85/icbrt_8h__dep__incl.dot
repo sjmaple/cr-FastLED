@@ -131,9 +131,9 @@ digraph "fl/math/fixed_point/icbrt.h"
   Node143 [id="Node000143",label="fl/gfx/primitives.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$de/d34/primitives_8h.html",tooltip=" "];
   Node6 -> Node146 [id="edge78_Node000006_Node000146",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node146 [id="Node000146",label="fl/math/fixed_point.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$de/d62/fixed__point_8h.html",tooltip=" "];
-  Node6 -> Node330 [id="edge79_Node000006_Node000330",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node330 [id="Node000330",label="fl/math/fixed_point\l/s16x16x4.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d96/s16x16x4_8h.html",tooltip="SIMD 4-wide s16x16 fixed-point vector type."];
-  Node330 -> Node8 [id="edge80_Node000330_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 -> Node332 [id="edge81_Node000006_Node000332",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node332 [id="Node000332",label="fl/math/noise/perlin\l_s16x16.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$db/d65/math_2noise_2perlin__s16x16_8h.html",tooltip=" "];
+  Node6 -> Node331 [id="edge79_Node000006_Node000331",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node331 [id="Node000331",label="fl/math/fixed_point\l/s16x16x4.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d96/s16x16x4_8h.html",tooltip="SIMD 4-wide s16x16 fixed-point vector type."];
+  Node331 -> Node8 [id="edge80_Node000331_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 -> Node333 [id="edge81_Node000006_Node000333",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node333 [id="Node000333",label="fl/math/noise/perlin\l_s16x16.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$db/d65/math_2noise_2perlin__s16x16_8h.html",tooltip=" "];
 }

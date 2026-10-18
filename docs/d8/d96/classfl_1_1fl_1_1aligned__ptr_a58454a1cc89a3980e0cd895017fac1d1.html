@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -159,7 +159,7 @@ template&lt;typename T, <a class="el" href="../../da/d3c/namespacefl_1_1fl_ad959
 <div class="line"><span class="lineno">  216</span> </div>
 <div class="line"><span class="lineno">  217</span>    <span class="comment">// ---- SIMD arithmetic (s16x16x4 OP s16x16x4 → s16x16x4) -----------------</span></div>
 <div class="line"><span class="lineno">  218</span> </div>
-<div class="line"><span class="lineno">  219</span>    <a class="code hl_class" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">FASTLED_FORCE_INLINE</a> <a class="code hl_class" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">s16x16x4</a> <a class="code hl_function" href="../../de/d64/group___pixel_set_ga07378b5cb6c73b8e56e8e3d445422af8.html#ga07378b5cb6c73b8e56e8e3d445422af8">operator+</a>(<a class="code hl_class" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">s16x16x4</a> <a class="code hl_class" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">b</a>)<span class="keyword"> const </span>{</div>
+<div class="line"><span class="lineno">  219</span>    <a class="code hl_class" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">FASTLED_FORCE_INLINE</a> <a class="code hl_class" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">s16x16x4</a> <a class="code hl_function" href="../../de/d64/group___pixel_set_ga2173b0206af000ca67a5d04eab3f2813.html#ga2173b0206af000ca67a5d04eab3f2813">operator+</a>(<a class="code hl_class" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">s16x16x4</a> <a class="code hl_class" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">b</a>)<span class="keyword"> const </span>{</div>
 <div class="line"><span class="lineno">  220</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">from_raw</a>(<a class="code hl_class" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">simd::add_i32_4</a>(<a class="code hl_class" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">raw</a>, <a class="code hl_class" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">b</a>.raw));</div>
 <div class="line"><span class="lineno">  221</span>    }</div>
 <div class="line"><span class="lineno">  222</span> </div>
@@ -256,7 +256,7 @@ template&lt;typename T, <a class="el" href="../../da/d3c/namespacefl_1_1fl_ad959
 <div class="ttc" id="afastled_8h_a07c69292ef50aa1083046faff1c52ead_html_a07c69292ef50aa1083046faff1c52ead"><div class="ttname"><a href="../../d6/d64/fastled_8h_a07c69292ef50aa1083046faff1c52ead.html#a07c69292ef50aa1083046faff1c52ead">max</a></div><div class="ttdeci">constexpr common_type_t&lt; T, U &gt; max(T a, U b) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/db1/math_8h_source.html#l00075">math.h:75</a></div></div>
 <div class="ttc" id="afastled_8h_a2fdabb91a1f100dec8da21e4306aba05_html_a2fdabb91a1f100dec8da21e4306aba05"><div class="ttname"><a href="../../d6/d64/fastled_8h_a2fdabb91a1f100dec8da21e4306aba05.html#a2fdabb91a1f100dec8da21e4306aba05">min</a></div><div class="ttdeci">FL_DISABLE_WARNING_PUSH U constexpr common_type_t&lt; T, U &gt; min(T a, U b) FL_NO_EXCEPT</div><div class="ttdoc">Memory functions are available in fl:: namespace via fl/stl/cstring.h Using declarations cannot work ...</div><div class="ttdef"><b>Definition</b> <a href="../../df/db1/math_8h_source.html#l00071">math.h:71</a></div></div>
 <div class="ttc" id="afastled_8h_aea39aa3747a937b0dbefabdf22cf2bbc_html_aea39aa3747a937b0dbefabdf22cf2bbc"><div class="ttname"><a href="../../d6/d64/fastled_8h_aea39aa3747a937b0dbefabdf22cf2bbc.html#aea39aa3747a937b0dbefabdf22cf2bbc">abs</a></div><div class="ttdeci">constexpr enable_if&lt; is_fixed_point&lt; T &gt;::value, T &gt;::type abs(T x) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../de/d62/fixed__point_8h_source.html#l00525">fixed_point.h:525</a></div></div>
-<div class="ttc" id="agroup___pixel_set_ga07378b5cb6c73b8e56e8e3d445422af8_html_ga07378b5cb6c73b8e56e8e3d445422af8"><div class="ttname"><a href="../../de/d64/group___pixel_set_ga07378b5cb6c73b8e56e8e3d445422af8.html#ga07378b5cb6c73b8e56e8e3d445422af8">operator+</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB * operator+(const CRGBSet &amp;pixels, int offset)</div><div class="ttdoc">Retrieve a pointer to a CRGB array, using a CRGBSet and an LED offset.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d46/pixelset_8h_source.html#l00493">pixelset.h:493</a></div></div>
+<div class="ttc" id="agroup___pixel_set_ga2173b0206af000ca67a5d04eab3f2813_html_ga2173b0206af000ca67a5d04eab3f2813"><div class="ttname"><a href="../../de/d64/group___pixel_set_ga2173b0206af000ca67a5d04eab3f2813.html#ga2173b0206af000ca67a5d04eab3f2813">operator+</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB * operator+(const CRGBSet &amp;pixels, int offset) FL_NO_EXCEPT</div><div class="ttdoc">Retrieve a pointer to a CRGB array, using a CRGBSet and an LED offset.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d46/pixelset_8h_source.html#l00494">pixelset.h:494</a></div></div>
 <div class="ttc" id="asimd__ops_8h_html"><div class="ttname"><a href="../../d1/d66/simd__ops_8h.html">simd_ops.h</a></div><div class="ttdoc">Cross-type SIMD fixed-point operations (implemented after all types are defined)</div></div>
 </div><!-- fragment -->
 </div>
@@ -268,7 +268,7 @@ template&lt;typename T, <a class="el" href="../../da/d3c/namespacefl_1_1fl_ad959
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../da/d3c/namespacefl_1_1fl.html">fl</a></li><li class="navelem"><a class="el" href="../../d8/d96/classfl_1_1fl_1_1aligned__ptr.html">aligned_ptr</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:12 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

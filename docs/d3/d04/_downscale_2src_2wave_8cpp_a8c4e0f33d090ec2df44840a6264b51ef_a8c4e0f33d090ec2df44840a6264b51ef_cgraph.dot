@@ -17,9 +17,12 @@ digraph "NewWaveSimulation2D"
   Node1 -> Node5 [id="edge5_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
   Node5 [id="Node000005",label="CreateArgsLower",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d04/_downscale_2src_2wave_8cpp_ae3b5502aa80974b4fb6e5e5e81cb7262.html#ae3b5502aa80974b4fb6e5e5e81cb7262",tooltip=" "];
   Node5 -> Node6 [id="edge6_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="fl::make_shared",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af",tooltip=" "];
-  Node1 -> Node7 [id="edge7_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="CreateArgsUpper",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d04/_downscale_2src_2wave_8cpp_ac991949221c43e084285f61b59144cfc.html#ac991949221c43e084285f61b59144cfc",tooltip=" "];
-  Node7 -> Node6 [id="edge8_Node000007_Node000006",color="steelblue1",style="solid",tooltip=" "];
-  Node1 -> Node6 [id="edge9_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::adl_barrier::make\l_shared",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c",tooltip=" "];
+  Node6 -> Node7 [id="edge7_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl::adl_barrier::forward",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_ac53ccff21210ad77549fafb987263051.html#ac53ccff21210ad77549fafb987263051",tooltip=" "];
+  Node6 -> Node6 [id="edge8_Node000006_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node8 [id="edge9_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="CreateArgsUpper",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d04/_downscale_2src_2wave_8cpp_ac991949221c43e084285f61b59144cfc.html#ac991949221c43e084285f61b59144cfc",tooltip=" "];
+  Node8 -> Node6 [id="edge10_Node000008_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node6 [id="edge11_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
 }

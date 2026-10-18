@@ -15,14 +15,14 @@ var render__value__fp_8h =
       [ "scale_z_raw", "d4/d36/namespacefl.html#a1416f8c63ef64fb21f4cff63aad7a1cf", null ],
       [ "z_raw", "d4/d36/namespacefl.html#a3802d4a5fe25dbab033ff889ed003ed2", null ]
     ] ],
-    [ "fl::add_fp", "d4/d36/namespacefl_af030b010004a02d0831baca0bc24efa8.html#af030b010004a02d0831baca0bc24efa8", null ],
-    [ "fl::colorburn_fp", "d4/d36/namespacefl_a39881931c85208ad0005b7785b906b04.html#a39881931c85208ad0005b7785b906b04", null ],
-    [ "fl::colordodge_fp", "d4/d36/namespacefl_a8a39c5fcc6825ac5153dcd186991e037.html#a8a39c5fcc6825ac5153dcd186991e037", null ],
-    [ "fl::multiply_fp", "d4/d36/namespacefl_a3b8918125de15a99ccdc7555a75cd0ce.html#a3b8918125de15a99ccdc7555a75cd0ce", null ],
-    [ "fl::radiansToA24_fp", "d4/d36/namespacefl_a3554157e5c580a5b363e1a723d39e024.html#a3554157e5c580a5b363e1a723d39e024", null ],
-    [ "fl::render_value_fp", "d4/d36/namespacefl_a6291b8d2d09d5f814b0a4314a2d6ed71.html#a6291b8d2d09d5f814b0a4314a2d6ed71", null ],
-    [ "fl::render_value_fp_from_float", "d4/d36/namespacefl_a9b47c6dc4674f84aec1a4acfaa5732f9.html#a9b47c6dc4674f84aec1a4acfaa5732f9", null ],
-    [ "fl::rgb_sanity_check_fp", "d4/d36/namespacefl_a4dd00725809a250754df30504e7357e5.html#a4dd00725809a250754df30504e7357e5", null ],
-    [ "fl::screen_fp", "d4/d36/namespacefl_a2dc941be4d98f1175989f8b60d4b6808.html#a2dc941be4d98f1175989f8b60d4b6808", null ],
-    [ "fl::subtract_fp", "d4/d36/namespacefl_a7d19713e9139c1947070298298468af3.html#a7d19713e9139c1947070298298468af3", null ]
+    [ "fl::add_fp", "d4/d36/namespacefl_a75f4195b64dfe773d01eb8e37fa5e397.html#a75f4195b64dfe773d01eb8e37fa5e397", null ],
+    [ "fl::colorburn_fp", "d4/d36/namespacefl_a821240ae5d46ef1400f7a510c169b201.html#a821240ae5d46ef1400f7a510c169b201", null ],
+    [ "fl::colordodge_fp", "d4/d36/namespacefl_a32eebf8ef3cd521d2ab627a1e56feffd.html#a32eebf8ef3cd521d2ab627a1e56feffd", null ],
+    [ "fl::multiply_fp", "d4/d36/namespacefl_ace98a944d6df27fe29af7a4d687fd6cb.html#ace98a944d6df27fe29af7a4d687fd6cb", null ],
+    [ "fl::radiansToA24_fp", "d4/d36/namespacefl_a785afe5aaa95857b67d45af31b8acf89.html#a785afe5aaa95857b67d45af31b8acf89", null ],
+    [ "fl::render_value_fp", "d4/d36/namespacefl_a05f371496ee8e4dd79b347836b311969.html#a05f371496ee8e4dd79b347836b311969", null ],
+    [ "fl::render_value_fp_from_float", "d4/d36/namespacefl_a100ac2685d530f5753ee8452f21d3c78.html#a100ac2685d530f5753ee8452f21d3c78", null ],
+    [ "fl::rgb_sanity_check_fp", "d4/d36/namespacefl_a4457789582c01c69b37371efc2091f40.html#a4457789582c01c69b37371efc2091f40", null ],
+    [ "fl::screen_fp", "d4/d36/namespacefl_a56b5caf1ddaf13c88d4693f536594cf0.html#a56b5caf1ddaf13c88d4693f536594cf0", null ],
+    [ "fl::subtract_fp", "d4/d36/namespacefl_ab91e45f8ae4b9bb77f3b59f2d79db589.html#ab91e45f8ae4b9bb77f3b59f2d79db589", null ]
 ];

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -138,7 +138,7 @@ $(function(){initNavTree('da/dde/classfl_1_1audio_1_1_signal_conditioner_af15856
 <dl class="section return"><dt>Returns</dt><dd>Count of valid samples </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dab/signal__conditioner_8cpp_8hpp_source.html#l00088">88</a> of file <a class="el" href="../../d7/dab/signal__conditioner_8cpp_8hpp_source.html">signal_conditioner.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>                                                                                 {</div>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>                                                                                              {</div>
 <div class="line"><span class="lineno">   89</span>    <span class="keyword">const</span> size count = pcm.size();</div>
 <div class="line"><span class="lineno">   90</span>    validMask.clear();</div>
 <div class="line"><span class="lineno">   91</span>    validMask.reserve(count);</div>
@@ -147,8 +147,8 @@ $(function(){initNavTree('da/dde/classfl_1_1audio_1_1_signal_conditioner_af15856
 <div class="line"><span class="lineno">   94</span>    <span class="keyword">const</span> i16 threshold = <a class="code hl_variable" href="../../da/dde/classfl_1_1audio_1_1_signal_conditioner_ae843d64d52e937b453b864a50bd25414.html#ae843d64d52e937b453b864a50bd25414">mConfig</a>.spikeThreshold;</div>
 <div class="line"><span class="lineno">   95</span> </div>
 <div class="line"><span class="lineno">   96</span>    <span class="keywordflow">for</span> (size i = 0; i &lt; count; ++i) {</div>
-<div class="line"><span class="lineno">   97</span>        <span class="keyword">const</span> i16 <a class="code hl_function" href="../../d4/d36/namespacefl_a7028271728479d2b9330f545c776ca5b.html#a7028271728479d2b9330f545c776ca5b">sample</a> = pcm[i];</div>
-<div class="line"><span class="lineno">   98</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> isValid = (<a class="code hl_function" href="../../d4/d36/namespacefl_a7028271728479d2b9330f545c776ca5b.html#a7028271728479d2b9330f545c776ca5b">sample</a> &gt; -threshold) &amp;&amp; (<a class="code hl_function" href="../../d4/d36/namespacefl_a7028271728479d2b9330f545c776ca5b.html#a7028271728479d2b9330f545c776ca5b">sample</a> &lt; threshold);</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keyword">const</span> i16 <a class="code hl_function" href="../../d4/d36/namespacefl_a1e7b3f485388c3ebd7e338c17289b7d1.html#a1e7b3f485388c3ebd7e338c17289b7d1">sample</a> = pcm[i];</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> isValid = (<a class="code hl_function" href="../../d4/d36/namespacefl_a1e7b3f485388c3ebd7e338c17289b7d1.html#a1e7b3f485388c3ebd7e338c17289b7d1">sample</a> &gt; -threshold) &amp;&amp; (<a class="code hl_function" href="../../d4/d36/namespacefl_a1e7b3f485388c3ebd7e338c17289b7d1.html#a1e7b3f485388c3ebd7e338c17289b7d1">sample</a> &lt; threshold);</div>
 <div class="line"><span class="lineno">   99</span>        validMask.push_back(isValid);</div>
 <div class="line"><span class="lineno">  100</span>        <span class="keywordflow">if</span> (isValid) {</div>
 <div class="line"><span class="lineno">  101</span>            validCount++;</div>
@@ -163,9 +163,9 @@ $(function(){initNavTree('da/dde/classfl_1_1audio_1_1_signal_conditioner_af15856
 <div class="line"><span class="lineno">  110</span>}</div>
 <div class="ttc" id="aclassfl_1_1audio_1_1_signal_conditioner_a058fa4bdabdf0a45b52835527810c995_html_a058fa4bdabdf0a45b52835527810c995"><div class="ttname"><a href="../../da/dde/classfl_1_1audio_1_1_signal_conditioner_a058fa4bdabdf0a45b52835527810c995.html#a058fa4bdabdf0a45b52835527810c995">fl::audio::SignalConditioner::mStats</a></div><div class="ttdeci">Stats mStats</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d0a/signal__conditioner_8h_source.html#l00106">signal_conditioner.h:106</a></div></div>
 <div class="ttc" id="aclassfl_1_1audio_1_1_signal_conditioner_ae843d64d52e937b453b864a50bd25414_html_ae843d64d52e937b453b864a50bd25414"><div class="ttname"><a href="../../da/dde/classfl_1_1audio_1_1_signal_conditioner_ae843d64d52e937b453b864a50bd25414.html#ae843d64d52e937b453b864a50bd25414">fl::audio::SignalConditioner::mConfig</a></div><div class="ttdeci">SignalConditionerConfig mConfig</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d0a/signal__conditioner_8h_source.html#l00105">signal_conditioner.h:105</a></div></div>
-<div class="ttc" id="anamespacefl_a7028271728479d2b9330f545c776ca5b_html_a7028271728479d2b9330f545c776ca5b"><div class="ttname"><a href="../../d4/d36/namespacefl_a7028271728479d2b9330f545c776ca5b.html#a7028271728479d2b9330f545c776ca5b">fl::sample</a></div><div class="ttdeci">CRGB sample(const CRGB *grid, const XYMap &amp;xyMap, float x, float y, SampleMode mode)</div><div class="ttdoc">Sample a pixel from a 2D CRGB grid at floating-point coordinates.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d77/sample_8cpp_8hpp_source.html#l00009">sample.cpp.hpp:9</a></div></div>
+<div class="ttc" id="anamespacefl_a1e7b3f485388c3ebd7e338c17289b7d1_html_a1e7b3f485388c3ebd7e338c17289b7d1"><div class="ttname"><a href="../../d4/d36/namespacefl_a1e7b3f485388c3ebd7e338c17289b7d1.html#a1e7b3f485388c3ebd7e338c17289b7d1">fl::sample</a></div><div class="ttdeci">CRGB sample(const CRGB *grid, const XYMap &amp;xyMap, float x, float y, SampleMode mode) FL_NO_EXCEPT</div><div class="ttdoc">Sample a pixel from a 2D CRGB grid at floating-point coordinates.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d77/sample_8cpp_8hpp_source.html#l00010">sample.cpp.hpp:10</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/d68/vector_8h_source.html#l00634">fl::vector&lt; T &gt;::clear()</a>, <a class="el" href="../../dc/d0a/signal__conditioner_8h_source.html#l00105">mConfig</a>, <a class="el" href="../../dc/d0a/signal__conditioner_8h_source.html#l00106">mStats</a>, <a class="el" href="../../d6/d68/vector_8h_source.html#l00624">fl::vector&lt; T &gt;::push_back()</a>, <a class="el" href="../../d6/d68/vector_8h_source.html#l00591">fl::vector&lt; T &gt;::reserve()</a>, <a class="el" href="../../d5/d77/sample_8cpp_8hpp_source.html#l00009">fl::sample()</a>, and <a class="el" href="../../d4/d7a/span_8h_source.html#l00483">fl::span&lt; T, Extent &gt;::size()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../dc/d0a/signal__conditioner_8h_source.html#l00105">mConfig</a>, <a class="el" href="../../dc/d0a/signal__conditioner_8h_source.html#l00106">mStats</a>, and <a class="el" href="../../d5/d77/sample_8cpp_8hpp_source.html#l00010">fl::sample()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dab/signal__conditioner_8cpp_8hpp_source.html#l00033">processSample()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -173,7 +173,7 @@ $(function(){initNavTree('da/dde/classfl_1_1audio_1_1_signal_conditioner_af15856
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../da/dde/classfl_1_1audio_1_1_signal_conditioner_af158561b35f56da9bd924e98cd012daf_af158561b35f56da9bd924e98cd012daf_cgraph.svg" width="100%" height="475"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../da/dde/classfl_1_1audio_1_1_signal_conditioner_af158561b35f56da9bd924e98cd012daf_af158561b35f56da9bd924e98cd012daf_cgraph.svg" width="100%" height="401"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -192,7 +192,7 @@ $(function(){initNavTree('da/dde/classfl_1_1audio_1_1_signal_conditioner_af15856
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../db/dbf/namespacefl_1_1audio.html">audio</a></li><li class="navelem"><a class="el" href="../../da/dde/classfl_1_1audio_1_1_signal_conditioner.html">SignalConditioner</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

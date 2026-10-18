@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -126,7 +126,7 @@ $(function(){initNavTree('de/d40/classfl_1_1json_a5202204322f00f16f6fe7a9143d610
 <p class="definition">Definition at line <a class="el" href="../../d4/d05/json_8h_source.html#l00752">752</a> of file <a class="el" href="../../d4/d05/json_8h_source.html">json.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  754</span>                                                      {</div>
 <div class="line"><span class="lineno">  755</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../de/d40/classfl_1_1json_a1bfb79bae31388e08faaa5bc08e4c873.html#a1bfb79bae31388e08faaa5bc08e4c873">mValue</a> || !<a class="code hl_variable" href="../../de/d40/classfl_1_1json_a1bfb79bae31388e08faaa5bc08e4c873.html#a1bfb79bae31388e08faaa5bc08e4c873">mValue</a>-&gt;is_object()) {</div>
-<div class="line"><span class="lineno">  756</span>            <a class="code hl_variable" href="../../de/d40/classfl_1_1json_a1bfb79bae31388e08faaa5bc08e4c873.html#a1bfb79bae31388e08faaa5bc08e4c873">mValue</a> = <a class="code hl_function" href="../../d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared&lt;json_value&gt;</a>(<a class="code hl_typedef" href="../../d4/d36/namespacefl_aadf657e119756d0b8beb564974902176.html#aadf657e119756d0b8beb564974902176">json_object</a>{});</div>
+<div class="line"><span class="lineno">  756</span>            <a class="code hl_variable" href="../../de/d40/classfl_1_1json_a1bfb79bae31388e08faaa5bc08e4c873.html#a1bfb79bae31388e08faaa5bc08e4c873">mValue</a> = <a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::make_shared&lt;json_value&gt;</a>(<a class="code hl_typedef" href="../../d4/d36/namespacefl_aadf657e119756d0b8beb564974902176.html#aadf657e119756d0b8beb564974902176">json_object</a>{});</div>
 <div class="line"><span class="lineno">  757</span>        }</div>
 <div class="line"><span class="lineno">  758</span>        <span class="comment">// FastLED#3588: make_shared may degrade to empty under OOM.</span></div>
 <div class="line"><span class="lineno">  759</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../de/d40/classfl_1_1json_a1bfb79bae31388e08faaa5bc08e4c873.html#a1bfb79bae31388e08faaa5bc08e4c873">mValue</a>) { <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/d40/classfl_1_1json_a53d3876e579581337439bdede3c7dad6.html#a53d3876e579581337439bdede3c7dad6">json</a>(<span class="keyword">nullptr</span>); }</div>
@@ -135,7 +135,7 @@ $(function(){initNavTree('de/d40/classfl_1_1json_a5202204322f00f16f6fe7a9143d610
 <div class="line"><span class="lineno">  762</span>        <span class="keywordflow">if</span> (objPtr) {</div>
 <div class="line"><span class="lineno">  763</span>            <span class="comment">// If key doesn&#39;t exist, create a new json_value and insert it</span></div>
 <div class="line"><span class="lineno">  764</span>            <span class="keywordflow">if</span> (objPtr-&gt;find(key) == objPtr-&gt;end()) {</div>
-<div class="line"><span class="lineno">  765</span>                (*objPtr)[key] = <a class="code hl_function" href="../../d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared&lt;json_value&gt;</a>(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  765</span>                (*objPtr)[key] = <a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::make_shared&lt;json_value&gt;</a>(<span class="keyword">nullptr</span>);</div>
 <div class="line"><span class="lineno">  766</span>            }</div>
 <div class="line"><span class="lineno">  767</span>            <span class="comment">// Return a new json object that wraps the shared_ptr to the json_value</span></div>
 <div class="line"><span class="lineno">  768</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/d40/classfl_1_1json_a53d3876e579581337439bdede3c7dad6.html#a53d3876e579581337439bdede3c7dad6">json</a>((*objPtr)[key]);</div>
@@ -144,7 +144,7 @@ $(function(){initNavTree('de/d40/classfl_1_1json_a5202204322f00f16f6fe7a9143d610
 <div class="line"><span class="lineno">  771</span>        <span class="comment">//return *reinterpret_cast&lt;json*&gt;(&amp;get_null_value());</span></div>
 <div class="ttc" id="aclassfl_1_1json_a1bfb79bae31388e08faaa5bc08e4c873_html_a1bfb79bae31388e08faaa5bc08e4c873"><div class="ttname"><a href="../../de/d40/classfl_1_1json_a1bfb79bae31388e08faaa5bc08e4c873.html#a1bfb79bae31388e08faaa5bc08e4c873">fl::json::mValue</a></div><div class="ttdeci">fl::shared_ptr&lt; json_value &gt; mValue</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d05/json_8h_source.html#l00263">json.h:263</a></div></div>
 <div class="ttc" id="aclassfl_1_1json_a53d3876e579581337439bdede3c7dad6_html_a53d3876e579581337439bdede3c7dad6"><div class="ttname"><a href="../../de/d40/classfl_1_1json_a53d3876e579581337439bdede3c7dad6.html#a53d3876e579581337439bdede3c7dad6">fl::json::json</a></div><div class="ttdeci">json() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d05/json_8h_source.html#l00267">json.h:267</a></div></div>
-<div class="ttc" id="anamespacefl_a87ae8a24cc8b709a64f39370e71846af_html_a87ae8a24cc8b709a64f39370e71846af"><div class="ttname"><a href="../../d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args &amp;&amp;... args) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00414">shared_ptr.h:414</a></div></div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c_html_a9fb4ec44d15efca3aed1890e7b57410c"><div class="ttname"><a href="../../df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::adl_barrier::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args &amp;&amp;... args) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00423">shared_ptr.h:423</a></div></div>
 <div class="ttc" id="anamespacefl_aadf657e119756d0b8beb564974902176_html_aadf657e119756d0b8beb564974902176"><div class="ttname"><a href="../../d4/d36/namespacefl_aadf657e119756d0b8beb564974902176.html#aadf657e119756d0b8beb564974902176">fl::json_object</a></div><div class="ttdeci">fl::flat_map&lt; fl::string, fl::shared_ptr&lt; json_value &gt;, fl::StringFastLess &gt; json_object</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d5e/fl_2stl_2json_2types_8h_source.html#l00055">types.h:55</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -156,7 +156,7 @@ $(function(){initNavTree('de/d40/classfl_1_1json_a5202204322f00f16f6fe7a9143d610
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../de/d40/classfl_1_1json.html">json</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:09 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:30 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

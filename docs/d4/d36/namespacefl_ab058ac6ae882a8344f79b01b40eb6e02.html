@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -115,30 +115,30 @@ $(function(){initNavTree('d4/d36/namespacefl_ab058ac6ae882a8344f79b01b40eb6e02.h
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d7a/cstdio_8cpp_8hpp_source.html#l00094">94</a> of file <a class="el" href="../../dd/d7a/cstdio_8cpp_8hpp_source.html">cstdio.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>                              {</div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span> (!str) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   96</span>    <span class="comment">// Check global log level - if NONE, suppress all output</span></div>
-<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a01aa26777eb536d74633cd92ef0f4a60.html#a01aa26777eb536d74633cd92ef0f4a60">gLogLevel</a> == <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a><span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="../../d4/d36/namespacefl_a78af44803b24729c16a4e492e2cfe8a1.html#a78af44803b24729c16a4e492e2cfe8a1a773692370a687f1ddaa65573019b1b58">LogLevel::FL_LOG_LEVEL_NONE</a>)) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span><span class="preprocessor">#ifdef FASTLED_TESTING</span></div>
-<div class="line"><span class="lineno">  100</span>    <span class="comment">// Check for injected handler first</span></div>
-<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">if</span> (get_println_handler()) {</div>
-<div class="line"><span class="lineno">  102</span>        get_println_handler()(str);</div>
-<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  104</span>    }</div>
-<div class="line"><span class="lineno">  105</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  106</span> </div>
-<div class="line"><span class="lineno">  107</span>    <span class="comment">// Delegate to platform implementation</span></div>
-<div class="line"><span class="lineno">  108</span>    platforms::println(str);</div>
-<div class="line"><span class="lineno">  109</span>}</div>
-<div class="ttc" id="anamespacefl_a01aa26777eb536d74633cd92ef0f4a60_html_a01aa26777eb536d74633cd92ef0f4a60"><div class="ttname"><a href="../../d4/d36/namespacefl_a01aa26777eb536d74633cd92ef0f4a60.html#a01aa26777eb536d74633cd92ef0f4a60">fl::gLogLevel</a></div><div class="ttdeci">static u8 gLogLevel</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d7a/cstdio_8cpp_8hpp_source.html#l00026">cstdio.cpp.hpp:26</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dd/d7a/cstdio_8cpp_8hpp_source.html#l00095">95</a> of file <a class="el" href="../../dd/d7a/cstdio_8cpp_8hpp_source.html">cstdio.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>                                           {</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">if</span> (!str) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   97</span>    <span class="comment">// Check global log level - if NONE, suppress all output</span></div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d36/namespacefl_a01aa26777eb536d74633cd92ef0f4a60.html#a01aa26777eb536d74633cd92ef0f4a60">gLogLevel</a> == <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a><span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="../../d4/d36/namespacefl_a78af44803b24729c16a4e492e2cfe8a1.html#a78af44803b24729c16a4e492e2cfe8a1a773692370a687f1ddaa65573019b1b58">LogLevel::FL_LOG_LEVEL_NONE</a>)) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span><span class="preprocessor">#ifdef FASTLED_TESTING</span></div>
+<div class="line"><span class="lineno">  101</span>    <span class="comment">// Check for injected handler first</span></div>
+<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">if</span> (get_println_handler()) {</div>
+<div class="line"><span class="lineno">  103</span>        get_println_handler()(str);</div>
+<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+<div class="line"><span class="lineno">  106</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>    <span class="comment">// Delegate to platform implementation</span></div>
+<div class="line"><span class="lineno">  109</span>    platforms::println(str);</div>
+<div class="line"><span class="lineno">  110</span>}</div>
+<div class="ttc" id="anamespacefl_a01aa26777eb536d74633cd92ef0f4a60_html_a01aa26777eb536d74633cd92ef0f4a60"><div class="ttname"><a href="../../d4/d36/namespacefl_a01aa26777eb536d74633cd92ef0f4a60.html#a01aa26777eb536d74633cd92ef0f4a60">fl::gLogLevel</a></div><div class="ttdeci">static u8 gLogLevel</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d7a/cstdio_8cpp_8hpp_source.html#l00027">cstdio.cpp.hpp:27</a></div></div>
 <div class="ttc" id="anamespacefl_a058ceeac48f181da463c2ba07401292c_html_a058ceeac48f181da463c2ba07401292c"><div class="ttname"><a href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00131">stdint.h:131</a></div></div>
-<div class="ttc" id="anamespacefl_a78af44803b24729c16a4e492e2cfe8a1_html_a78af44803b24729c16a4e492e2cfe8a1a773692370a687f1ddaa65573019b1b58"><div class="ttname"><a href="../../d4/d36/namespacefl_a78af44803b24729c16a4e492e2cfe8a1.html#a78af44803b24729c16a4e492e2cfe8a1a773692370a687f1ddaa65573019b1b58">fl::LogLevel::FL_LOG_LEVEL_NONE</a></div><div class="ttdeci">@ FL_LOG_LEVEL_NONE</div><div class="ttdoc">No logging (completely silent)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db1/cstdio_8h_source.html#l00024">cstdio.h:24</a></div></div>
+<div class="ttc" id="anamespacefl_a78af44803b24729c16a4e492e2cfe8a1_html_a78af44803b24729c16a4e492e2cfe8a1a773692370a687f1ddaa65573019b1b58"><div class="ttname"><a href="../../d4/d36/namespacefl_a78af44803b24729c16a4e492e2cfe8a1.html#a78af44803b24729c16a4e492e2cfe8a1a773692370a687f1ddaa65573019b1b58">fl::LogLevel::FL_LOG_LEVEL_NONE</a></div><div class="ttdeci">@ FL_LOG_LEVEL_NONE</div><div class="ttdoc">No logging (completely silent)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db1/cstdio_8h_source.html#l00038">cstdio.h:38</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/db1/cstdio_8h_source.html#l00024">FL_LOG_LEVEL_NONE</a>, and <a class="el" href="../../dd/d7a/cstdio_8cpp_8hpp_source.html#l00026">gLogLevel</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/db1/cstdio_8h_source.html#l00038">FL_LOG_LEVEL_NONE</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">FL_NO_EXCEPT</a>, and <a class="el" href="../../dd/d7a/cstdio_8cpp_8hpp_source.html#l00027">gLogLevel</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/de0/async__logger_8cpp_8hpp_source.html#l00069">fl::AsyncLogger::flush()</a>, <a class="el" href="../../d2/de0/async__logger_8cpp_8hpp_source.html#l00122">fl::AsyncLogger::flushN()</a>, <a class="el" href="../../d8/dab/log_8cpp_8hpp_source.html#l00068">fl::detail::log_emit()</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00278">fl::detail::print_emit_auto()</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00286">fl::detail::print_emit_auto()</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00282">fl::detail::print_emit_auto()</a>, <a class="el" href="../../d6/d5f/system_2serial_8cpp_8hpp_source.html#l00094">fl::SerialPort::println()</a>, <a class="el" href="../../d6/d5f/system_2serial_8cpp_8hpp_source.html#l00085">fl::SerialPort::println()</a>, and <a class="el" href="../../db/d51/remote_2transport_2serial_8h_source.html#l00092">fl::SerialWriter::println()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/de0/async__logger_8cpp_8hpp_source.html#l00069">fl::AsyncLogger::flush()</a>, <a class="el" href="../../d2/de0/async__logger_8cpp_8hpp_source.html#l00122">fl::AsyncLogger::flushN()</a>, <a class="el" href="../../d8/dab/log_8cpp_8hpp_source.html#l00068">fl::detail::log_emit()</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00264">fl::detail::print_emit_auto()</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00272">fl::detail::print_emit_auto()</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00268">fl::detail::print_emit_auto()</a>, <a class="el" href="../../d6/d5f/system_2serial_8cpp_8hpp_source.html#l00091">fl::SerialPort::println()</a>, <a class="el" href="../../d6/d5f/system_2serial_8cpp_8hpp_source.html#l00082">fl::SerialPort::println()</a>, <a class="el" href="../../d6/d5f/system_2serial_8cpp_8hpp_source.html#l00096">fl::SerialPort::println()</a>, <a class="el" href="../../d6/d5f/system_2serial_8cpp_8hpp_source.html#l00102">fl::SerialPort::println()</a>, <a class="el" href="../../d6/d5f/system_2serial_8cpp_8hpp_source.html#l00114">fl::SerialPort::println()</a>, and <a class="el" href="../../db/d51/remote_2transport_2serial_8h_source.html#l00093">fl::SerialWriter::println()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -156,7 +156,7 @@ $(function(){initNavTree('d4/d36/namespacefl_ab058ac6ae882a8344f79b01b40eb6e02.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:28 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

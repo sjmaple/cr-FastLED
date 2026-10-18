@@ -10,6 +10,10 @@ digraph "fl::CLEDController::removeFromDrawList"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="fl::CLEDController\l::~CLEDController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/da0/classfl_1_1_c_l_e_d_controller_a9c8b7c8b0298fdfb9c3fcf017543a8f8.html#a9c8b7c8b0298fdfb9c3fcf017543a8f8",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::Channel::removeFromDrawList",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_a0ba6c6bbdbae21db23f1310b9af6def9.html#a0ba6c6bbdbae21db23f1310b9af6def9",tooltip="Remove this channel from the global controller draw list."];
-  Node1 -> Node1 [id="edge3_Node000001_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::Channel::removeFromDrawList",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_a6af735d7d472cad55d003661ed8d6d0c.html#a6af735d7d472cad55d003661ed8d6d0c",tooltip="Remove this channel from the global controller draw list."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="CFastLED::remove",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_a552073caa67c0d3bda06dbdbeaab1982.html#a552073caa67c0d3bda06dbdbeaab1982",tooltip="Remove a channel from the LED controller list."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="CFastLED::clear",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_a4bb8854cd32cf764f91e07d58ded43ff.html#a4bb8854cd32cf764f91e07d58ded43ff",tooltip="Clear/reset FastLED state based on the provided flags."];
+  Node1 -> Node1 [id="edge5_Node000001_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

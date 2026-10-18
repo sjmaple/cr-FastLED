@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ae604f983be2f383b2b0196f83396b8ab.html#ae604f983be2f383b2b0196f83396b8ab" target="_top" xlink:title="Configure the frequency bin mapper This calculates bin boundaries and FFT&#45;to&#45;frequency bin mappings.">
+<g id="a_Node000002"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a1bba29562fd1b4aac76e6845777f253e.html#a1bba29562fd1b4aac76e6845777f253e" target="_top" xlink:title="Configure the frequency bin mapper This calculates bin boundaries and FFT&#45;to&#45;frequency bin mappings.">
 <polygon fill="white" stroke="#666666" points="364,-95 200,-95 200,-65 364,-65 364,-95"/>
 <text text-anchor="start" x="208" y="-83" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
 <text text-anchor="middle" x="282" y="-72" font-family="Helvetica,sans-Serif" font-size="10.00">::configure</text>
@@ -58,7 +58,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_aca828d77220fdaf9492335d21480cb2a.html#aca828d77220fdaf9492335d21480cb2a" target="_top" xlink:title="Calculate frequency bin boundaries (linear or logarithmic spacing)">
+<g id="a_Node000003"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ac1fcdca548c554421460f421bf3ea410.html#ac1fcdca548c554421460f421bf3ea410" target="_top" xlink:title="Calculate frequency bin boundaries (linear or logarithmic spacing)">
 <polygon fill="white" stroke="#666666" points="564,-119 400,-119 400,-89 564,-89 564,-119"/>
 <text text-anchor="start" x="408" y="-107" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
 <text text-anchor="middle" x="482" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00">::calculateBinBoundaries</text>
@@ -77,7 +77,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a457278fcf5b0d96f9d8af8df6446e70f.html#a457278fcf5b0d96f9d8af8df6446e70f" target="_top" xlink:title="Calculate FFT bin to frequency bin mappings Pre&#45;calculates which FFT bins contribute to each frequenc...">
+<g id="a_Node000014"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ac94e16e4ff99eaa738e93f00f6e0557e.html#ac94e16e4ff99eaa738e93f00f6e0557e" target="_top" xlink:title="Calculate FFT bin to frequency bin mappings Pre&#45;calculates which FFT bins contribute to each frequenc...">
 <polygon fill="white" stroke="#666666" points="564,-71 400,-71 400,-41 564,-41 564,-71"/>
 <text text-anchor="start" x="408" y="-59" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
 <text text-anchor="middle" x="482" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">::calculateBinMappings</text>
@@ -96,7 +96,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ac00a1cd7e5df9094c6248051584e5329.html#ac00a1cd7e5df9094c6248051584e5329" target="_top" xlink:title="Calculate linearly&#45;spaced frequency boundaries.">
+<g id="a_Node000004"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a98c31aa2499c5db8af319ec8a0b0e1b5.html#a98c31aa2499c5db8af319ec8a0b0e1b5" target="_top" xlink:title="Calculate linearly&#45;spaced frequency boundaries.">
 <polygon fill="#fff0f0" stroke="red" points="764,-166 600,-166 600,-136 764,-136 764,-166"/>
 <text text-anchor="start" x="608" y="-154" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
 <text text-anchor="middle" x="682" y="-143" font-family="Helvetica,sans-Serif" font-size="10.00">::calculateLinearFrequencies</text>
@@ -115,7 +115,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_ac3108303376ac5f6f48c3c1e2da001d4.html#ac3108303376ac5f6f48c3c1e2da001d4" target="_top" xlink:title="Calculate logarithmically&#45;spaced frequency boundaries.">
+<g id="a_Node000006"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a4bafb13caa3c45445f34112e26bddd56.html#a4bafb13caa3c45445f34112e26bddd56" target="_top" xlink:title="Calculate logarithmically&#45;spaced frequency boundaries.">
 <polygon fill="#fff0f0" stroke="red" points="764,-118 600,-118 600,-88 764,-88 764,-118"/>
 <text text-anchor="start" x="608" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
 <text text-anchor="middle" x="682" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">::calculateLogFrequencies</text>
@@ -152,7 +152,7 @@
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a602e993725b485f2648906f8658f4f36.html#a602e993725b485f2648906f8658f4f36" target="_top" xlink:title="Convert frequency (Hz) to FFT bin index.">
+<g id="a_Node000017"><a xlink:href="../../d0/ddf/classfl_1_1audio_1_1_frequency_bin_mapper_a78d705e0aed2b5991c64f0bfa79080ed.html#a78d705e0aed2b5991c64f0bfa79080ed" target="_top" xlink:title="Convert frequency (Hz) to FFT bin index.">
 <polygon fill="white" stroke="#666666" points="764,-30 600,-30 600,0 764,0 764,-30"/>
 <text text-anchor="start" x="608" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">fl::audio::FrequencyBinMapper</text>
 <text text-anchor="middle" x="682" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::frequencyToFFTBin</text>

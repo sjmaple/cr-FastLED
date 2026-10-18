@@ -2,14 +2,14 @@ var classfl_1_1_stb_vorbis_decoder =
 [
     [ "StbVorbisDecoder", "da/df9/classfl_1_1_stb_vorbis_decoder_a6e79c9c831a6a47b16905242efd28f6d.html#a6e79c9c831a6a47b16905242efd28f6d", null ],
     [ "~StbVorbisDecoder", "da/df9/classfl_1_1_stb_vorbis_decoder_abffb80f5645bc05b2ccd5576c7aacdde.html#abffb80f5645bc05b2ccd5576c7aacdde", null ],
-    [ "close", "da/df9/classfl_1_1_stb_vorbis_decoder_ac03ab9640c97acc1d0f95f166c0b7862.html#ac03ab9640c97acc1d0f95f166c0b7862", null ],
-    [ "getInfo", "da/df9/classfl_1_1_stb_vorbis_decoder_af16b6a9ca4a9f9fa5b45c84b08bc53c2.html#af16b6a9ca4a9f9fa5b45c84b08bc53c2", null ],
-    [ "getSampleOffset", "da/df9/classfl_1_1_stb_vorbis_decoder_ad6f584765ccd3e784a4db4d3e2ddc4db.html#ad6f584765ccd3e784a4db4d3e2ddc4db", null ],
-    [ "getSamplesFloat", "da/df9/classfl_1_1_stb_vorbis_decoder_a2470287dceaaf6db6296464db0f25b84.html#a2470287dceaaf6db6296464db0f25b84", null ],
-    [ "getSamplesShortInterleaved", "da/df9/classfl_1_1_stb_vorbis_decoder_af7d0564ea6196b5602553ee310b4f24c.html#af7d0564ea6196b5602553ee310b4f24c", null ],
-    [ "getTotalSamples", "da/df9/classfl_1_1_stb_vorbis_decoder_a2b2ea1840e24e29a8bc8dcbbe4d549e5.html#a2b2ea1840e24e29a8bc8dcbbe4d549e5", null ],
-    [ "isOpen", "da/df9/classfl_1_1_stb_vorbis_decoder_a32e5a8245e865335bfba565258cfdf8a.html#a32e5a8245e865335bfba565258cfdf8a", null ],
-    [ "openMemory", "da/df9/classfl_1_1_stb_vorbis_decoder_aadff6ab17fc08f987af26c22fcfb6481.html#aadff6ab17fc08f987af26c22fcfb6481", null ],
-    [ "seek", "da/df9/classfl_1_1_stb_vorbis_decoder_af6c721a67ef1a6a39f30e83f6d221a7f.html#af6c721a67ef1a6a39f30e83f6d221a7f", null ],
+    [ "close", "da/df9/classfl_1_1_stb_vorbis_decoder_a48292cd41b074434788f574ac31061cd.html#a48292cd41b074434788f574ac31061cd", null ],
+    [ "getInfo", "da/df9/classfl_1_1_stb_vorbis_decoder_ace98ec798de8b3be7c59e88dc1502f47.html#ace98ec798de8b3be7c59e88dc1502f47", null ],
+    [ "getSampleOffset", "da/df9/classfl_1_1_stb_vorbis_decoder_ab078b4b8facc70eda23322af38d4e9f9.html#ab078b4b8facc70eda23322af38d4e9f9", null ],
+    [ "getSamplesFloat", "da/df9/classfl_1_1_stb_vorbis_decoder_a39fcb4354c0bf4ef381206343381995a.html#a39fcb4354c0bf4ef381206343381995a", null ],
+    [ "getSamplesShortInterleaved", "da/df9/classfl_1_1_stb_vorbis_decoder_aaa113f0c73cb900d5bb73844a8f39bba.html#aaa113f0c73cb900d5bb73844a8f39bba", null ],
+    [ "getTotalSamples", "da/df9/classfl_1_1_stb_vorbis_decoder_a48b704875a01e946422250978530a083.html#a48b704875a01e946422250978530a083", null ],
+    [ "isOpen", "da/df9/classfl_1_1_stb_vorbis_decoder_ab49b1a5fbdde4328357c18c134118581.html#ab49b1a5fbdde4328357c18c134118581", null ],
+    [ "openMemory", "da/df9/classfl_1_1_stb_vorbis_decoder_acd24beb173f1581254e8e4d5b80fab45.html#acd24beb173f1581254e8e4d5b80fab45", null ],
+    [ "seek", "da/df9/classfl_1_1_stb_vorbis_decoder_aa957339f9a966a05e59c086515837cd4.html#aa957339f9a966a05e59c086515837cd4", null ],
     [ "mVorbis", "da/df9/classfl_1_1_stb_vorbis_decoder_a75f765489dfeef65d2751cc86ddf6137.html#a75f765489dfeef65d2751cc86ddf6137", null ]
 ];

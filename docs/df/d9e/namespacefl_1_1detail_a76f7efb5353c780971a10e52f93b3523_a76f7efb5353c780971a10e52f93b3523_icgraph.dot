@@ -8,9 +8,9 @@ digraph "fl::detail::lower_bound_impl"
   rankdir="RL";
   Node1 [id="Node000001",label="fl::detail::lower_bound_impl",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::lower_bound",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ad687a2ec502021170f58922c97be2091.html#ad687a2ec502021170f58922c97be2091",tooltip=" "];
+  Node2 [id="Node000002",label="fl::adl_barrier::lower\l_bound",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_ab36e51f4b1fbe97793f4471694573da6.html#ab36e51f4b1fbe97793f4471694573da6",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::lower_bound",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a22df60d2c2a8006731e4647aefa985ad.html#a22df60d2c2a8006731e4647aefa985ad",tooltip=" "];
+  Node3 [id="Node000003",label="fl::adl_barrier::lower\l_bound",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a21c6468f1be38d1e6d733cd87be582a5.html#a21c6468f1be38d1e6d733cd87be582a5",tooltip=" "];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="fl::detail::AlphaTrimmed\lMeanImpl::update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d3f/classfl_1_1detail_1_1_alpha_trimmed_mean_impl_ab2afc0f134e47452ac903f06563e069c.html#ab2afc0f134e47452ac903f06563e069c",tooltip=" "];
   Node3 -> Node5 [id="edge4_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
@@ -24,5 +24,5 @@ digraph "fl::detail::lower_bound_impl"
   Node8 [id="Node000008",label="fl::detail::mergesort_impl",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a4100235aeaf7738efe7c305a8743665d.html#a4100235aeaf7738efe7c305a8743665d",tooltip=" "];
   Node8 -> Node8 [id="edge9_Node000008_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node8 -> Node9 [id="edge10_Node000008_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node9 [id="Node000009",label="fl::stable_sort",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_af86ec39a4c2c2d4f5cd931e003acf0b6.html#af86ec39a4c2c2d4f5cd931e003acf0b6",tooltip=" "];
+  Node9 [id="Node000009",label="fl::adl_barrier::stable_sort",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_ab6910acd344009cbfb5c24304128e6e2.html#ab6910acd344009cbfb5c24304128e6e2",tooltip=" "];
 }

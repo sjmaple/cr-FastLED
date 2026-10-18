@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -113,30 +113,61 @@ $(function(){initNavTree('db/da5/_test_8ino_source.html','../../'); initResizabl
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Test configuration</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../db/da5/_test_8ino_a4fc01d736fe50cf5b977f755b675f11d.html#a4fc01d736fe50cf5b977f755b675f11d">   14</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d17/_analog_output_8ino_a4fc01d736fe50cf5b977f755b675f11d.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a>() {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_define" href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.begin(115200);  <span class="comment">// Fast baud for avr8js</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_define" href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.println(<span class="stringliteral">&quot;Test setup starting&quot;</span>);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    delay(100);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Compile-time regression for FastLED#4827: legacy sketches call libc memory</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// functions unqualified on CRGB*. These must stay unambiguous on every board.</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../db/da5/_test_8ino_a7769741585e059bc4319e83a0df67aaf.html#a7769741585e059bc4319e83a0df67aaf">   15</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../db/da5/_test_8ino_a7769741585e059bc4319e83a0df67aaf.html#a7769741585e059bc4319e83a0df67aaf">legacyLibcOnCrgb</a>() {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a> src[4] = {<a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>(1, 2, 3), <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>(4, 5, 6), <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>(7, 8, 9), <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>(10, 11, 12)};</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>* dst = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>*<span class="keyword">&gt;</span>(malloc(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>) * 4));  <span class="comment">// ok bare allocation</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">if</span> (!dst) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    memset(dst, 0, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>) * 4);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    memcpy(dst, src, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>) * 4);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    memmove(dst + 1, dst, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>) * 3);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">if</span> (memcmp(dst, src, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>)) != 0) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_define" href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.println(<span class="stringliteral">&quot;legacy libc copy mismatch&quot;</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    free(dst);  <span class="comment">// ok bare allocation</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../db/da5/_test_8ino_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f">   22</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d17/_analog_output_8ino_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f">loop</a>() {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_define" href="../../df/da2/group__lib8tion_ga90e084b8253af257a0257a23aeef53e1.html#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a>(1000) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_define" href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.println(<span class="stringliteral">&quot;Test loop!&quot;</span>);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    delay(1);  <span class="comment">// Prevent watchdog timeout on ESP32 qemu tests.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../db/da5/_test_8ino_a4fc01d736fe50cf5b977f755b675f11d.html#a4fc01d736fe50cf5b977f755b675f11d">   31</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d17/_analog_output_8ino_a4fc01d736fe50cf5b977f755b675f11d.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a>() {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_define" href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.begin(115200);  <span class="comment">// Fast baud for avr8js</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_define" href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.println(<span class="stringliteral">&quot;Test setup starting&quot;</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="../../db/da5/_test_8ino_a7769741585e059bc4319e83a0df67aaf.html#a7769741585e059bc4319e83a0df67aaf">legacyLibcOnCrgb</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    delay(100);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../db/da5/_test_8ino_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f">   40</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d17/_analog_output_8ino_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f">loop</a>() {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_define" href="../../df/da2/group__lib8tion_ga90e084b8253af257a0257a23aeef53e1.html#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a>(1000) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_define" href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.println(<span class="stringliteral">&quot;Test loop!&quot;</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#if defined(FASTLED_ESP32_IS_QEMU)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// Busy-wait under Espressif QEMU. delay() sleeps in vTaskDelay until a</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// timer-alarm tick wakes the task; on a loaded host the emulator</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// sometimes never delivers that wake-up and loop() stalls for good</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// (FastLED#4845: ~1 s into the run, every local repro on esp32c3). The</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// EVERY_N_MILLIS above still exercises millis().</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    delayMicroseconds(1000);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    delay(1);  <span class="comment">// Yield to the idle task (feeds the task watchdog).</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 </div>
 <div class="ttc" id="a_analog_output_8ino_a4fc01d736fe50cf5b977f755b675f11d_html_a4fc01d736fe50cf5b977f755b675f11d"><div class="ttname"><a href="../../d5/d17/_analog_output_8ino_a4fc01d736fe50cf5b977f755b675f11d.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a></div><div class="ttdeci">void setup()</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d17/_analog_output_8ino_source.html#l00058">AnalogOutput.ino:58</a></div></div>
 <div class="ttc" id="a_analog_output_8ino_afe461d27b9c48d5921c00d521181f12f_html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../d5/d17/_analog_output_8ino_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f">loop</a></div><div class="ttdeci">void loop()</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d17/_analog_output_8ino_source.html#l00047">AnalogOutput.ino:47</a></div></div>
+<div class="ttc" id="a_test_8ino_a7769741585e059bc4319e83a0df67aaf_html_a7769741585e059bc4319e83a0df67aaf"><div class="ttname"><a href="../../db/da5/_test_8ino_a7769741585e059bc4319e83a0df67aaf.html#a7769741585e059bc4319e83a0df67aaf">legacyLibcOnCrgb</a></div><div class="ttdeci">static void legacyLibcOnCrgb()</div><div class="ttdef"><b>Definition</b> <a href="#l00015">Test.ino:15</a></div></div>
 <div class="ttc" id="aarduino_8h_html"><div class="ttname"><a href="../../d2/de0/arduino_8h.html">arduino.h</a></div></div>
-<div class="ttc" id="agroup__lib8tion_ga90e084b8253af257a0257a23aeef53e1_html_ga90e084b8253af257a0257a23aeef53e1"><div class="ttname"><a href="../../df/da2/group__lib8tion_ga90e084b8253af257a0257a23aeef53e1.html#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a></div><div class="ttdeci">#define EVERY_N_MILLIS(N)</div><div class="ttdoc">Checks whether to execute a block of code every N milliseconds.</div><div class="ttdef"><b>Definition</b> <a href="../../df/da5/lib8tion_8h_source.html#l01000">lib8tion.h:1000</a></div></div>
-<div class="ttc" id="asystem_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3_html_ab1a8531ded8c3d5bee8e36aebec7a8f3"><div class="ttname"><a href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a></div><div class="ttdeci">#define Serial</div><div class="ttdef"><b>Definition</b> <a href="../../de/d8b/system_2serial_8h_source.html#l00304">serial.h:304</a></div></div>
+<div class="ttc" id="agroup___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327_html_ga65c1895006b38f8c5114118b6a170327"><div class="ttname"><a href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a></div><div class="ttdeci">fl::CRGB CRGB</div><div class="ttdef"><b>Definition</b> <a href="../../db/dd1/crgb_8h_source.html#l00025">crgb.h:25</a></div></div>
+<div class="ttc" id="agroup__lib8tion_ga90e084b8253af257a0257a23aeef53e1_html_ga90e084b8253af257a0257a23aeef53e1"><div class="ttname"><a href="../../df/da2/group__lib8tion_ga90e084b8253af257a0257a23aeef53e1.html#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a></div><div class="ttdeci">#define EVERY_N_MILLIS(N)</div><div class="ttdoc">Checks whether to execute a block of code every N milliseconds.</div><div class="ttdef"><b>Definition</b> <a href="../../df/da5/lib8tion_8h_source.html#l01001">lib8tion.h:1001</a></div></div>
+<div class="ttc" id="asystem_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3_html_ab1a8531ded8c3d5bee8e36aebec7a8f3"><div class="ttname"><a href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a></div><div class="ttdeci">#define Serial</div><div class="ttdef"><b>Definition</b> <a href="../../de/d8b/system_2serial_8h_source.html#l00309">serial.h:309</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -144,7 +175,7 @@ $(function(){initNavTree('db/da5/_test_8ino_source.html','../../'); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="../../dir_8d8412c7782979317cb99fd46501a7c8.html">Test</a></li><li class="navelem"><a class="el" href="../../db/da5/_test_8ino.html">Test.ino</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:08:59 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:13 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

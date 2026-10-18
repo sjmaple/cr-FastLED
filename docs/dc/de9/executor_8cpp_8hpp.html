@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -117,6 +117,7 @@ $(function(){initNavTree('dc/de9/executor_8cpp_8hpp.html','../../'); initResizab
 <code>#include &quot;<a class="el" href="../../d7/d58/new_8h_source.html">fl/stl/new.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d0d/yield_8h_source.html">fl/system/yield.h</a>&quot;</code><br />
 <code>#include &quot;platforms/coroutine_runtime.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d01/noexcept_8h_source.html">fl/stl/noexcept.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for executor.cpp.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -146,18 +147,21 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6a58101911996ef5e9fbf0d79b3faa81" id="r_a6a58101911996ef5e9fbf0d79b3faa81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/namespacefl_1_1task_a6a58101911996ef5e9fbf0d79b3faa81.html#a6a58101911996ef5e9fbf0d79b3faa81">fl::task::active_tasks</a> ()</td></tr>
-<tr class="memdesc:a6a58101911996ef5e9fbf0d79b3faa81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of active tasks across all systems.  <br /></td></tr>
-<tr class="separator:a6a58101911996ef5e9fbf0d79b3faa81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47ceeb6aa357d65f1b7f1db3e9c2e476" id="r_a47ceeb6aa357d65f1b7f1db3e9c2e476"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4f/namespacefl_1_1task_1_1detail_a47ceeb6aa357d65f1b7f1db3e9c2e476.html#a47ceeb6aa357d65f1b7f1db3e9c2e476">fl::task::detail::await_depth_tls</a> ()</td></tr>
-<tr class="memdesc:a47ceeb6aa357d65f1b7f1db3e9c2e476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reference to thread-local await recursion depth.  <br /></td></tr>
-<tr class="separator:a47ceeb6aa357d65f1b7f1db3e9c2e476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05592fe9c4d006c2fc3e7bc0c3454639" id="r_a05592fe9c4d006c2fc3e7bc0c3454639"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/namespacefl_1_1task_a05592fe9c4d006c2fc3e7bc0c3454639.html#a05592fe9c4d006c2fc3e7bc0c3454639">fl::task::has_tasks</a> ()</td></tr>
-<tr class="memdesc:a05592fe9c4d006c2fc3e7bc0c3454639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if any systems have active tasks.  <br /></td></tr>
-<tr class="separator:a05592fe9c4d006c2fc3e7bc0c3454639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d40b476742263a3fa212e24b722e3ef" id="r_a2d40b476742263a3fa212e24b722e3ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/namespacefl_1_1task_a2d40b476742263a3fa212e24b722e3ef.html#a2d40b476742263a3fa212e24b722e3ef">fl::task::run</a> (fl::u32 microseconds=1000, <a class="el" href="../../db/d5c/namespacefl_1_1task_ae022e56401cfd850126455cff3f1637c.html#ae022e56401cfd850126455cff3f1637c">ExecFlags</a> flags=<a class="el" href="../../db/d5c/namespacefl_1_1task_ae022e56401cfd850126455cff3f1637c.html#ae022e56401cfd850126455cff3f1637ca5fb1f955b45e38e31789286a1790398d">ExecFlags::ALL</a>)</td></tr>
-<tr class="memdesc:a2d40b476742263a3fa212e24b722e3ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run selected task subsystems.  <br /></td></tr>
-<tr class="separator:a2d40b476742263a3fa212e24b722e3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a856dd0fbd58312a6412fb836d3fc665f" id="r_a856dd0fbd58312a6412fb836d3fc665f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367eada17134c9.html#a8a657d5e3d1c15816e367eada17134c9">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/namespacefl_1_1task_a856dd0fbd58312a6412fb836d3fc665f.html#a856dd0fbd58312a6412fb836d3fc665f">fl::task::active_tasks</a> () <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a856dd0fbd58312a6412fb836d3fc665f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of active tasks across all systems.  <br /></td></tr>
+<tr class="separator:a856dd0fbd58312a6412fb836d3fc665f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f6de220afde4caac5c8d6461e7567d" id="r_a11f6de220afde4caac5c8d6461e7567d"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4f/namespacefl_1_1task_1_1detail_a11f6de220afde4caac5c8d6461e7567d.html#a11f6de220afde4caac5c8d6461e7567d">fl::task::detail::await_depth_tls</a> () <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a11f6de220afde4caac5c8d6461e7567d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reference to thread-local await recursion depth.  <br /></td></tr>
+<tr class="separator:a11f6de220afde4caac5c8d6461e7567d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ed81a473954fc0c9f648980fd1dc86" id="r_a89ed81a473954fc0c9f648980fd1dc86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/namespacefl_1_1task_a89ed81a473954fc0c9f648980fd1dc86.html#a89ed81a473954fc0c9f648980fd1dc86">fl::task::has_tasks</a> () <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a89ed81a473954fc0c9f648980fd1dc86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if any systems have active tasks.  <br /></td></tr>
+<tr class="separator:a89ed81a473954fc0c9f648980fd1dc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87731f311576c5c3ee37172107671afd" id="r_a87731f311576c5c3ee37172107671afd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/namespacefl_1_1task_a87731f311576c5c3ee37172107671afd.html#a87731f311576c5c3ee37172107671afd">fl::task::run</a> (fl::u32 microseconds=1000, <a class="el" href="../../db/d5c/namespacefl_1_1task_ae022e56401cfd850126455cff3f1637c.html#ae022e56401cfd850126455cff3f1637c">ExecFlags</a> flags=<a class="el" href="../../db/d5c/namespacefl_1_1task_ae022e56401cfd850126455cff3f1637c.html#ae022e56401cfd850126455cff3f1637ca5fb1f955b45e38e31789286a1790398d">ExecFlags::ALL</a>) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a87731f311576c5c3ee37172107671afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run selected task subsystems.  <br /></td></tr>
+<tr class="separator:a87731f311576c5c3ee37172107671afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671f011a329e7aba52d4c0790273e05c" id="r_a671f011a329e7aba52d4c0790273e05c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/namespacefl_1_1task_a671f011a329e7aba52d4c0790273e05c.html#a671f011a329e7aba52d4c0790273e05c">fl::task::yield_system</a> (fl::u32 microseconds) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a671f011a329e7aba52d4c0790273e05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS-level yield only: same behavior as <code>run(us, ExecFlags::SYSTEM)</code>.  <br /></td></tr>
+<tr class="separator:a671f011a329e7aba52d4c0790273e05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -166,7 +170,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><a class="el" href="../../dir_3c55ea006e4dd4fc925403c373dc7c52.html">task</a></li><li class="navelem"><a class="el" href="../../dc/de9/executor_8cpp_8hpp.html">executor.cpp.hpp</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:05 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:20 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

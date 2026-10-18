@@ -2,6 +2,7 @@ var struct_rgbw =
 [
     [ "Rgbw", "db/d74/struct_rgbw_ae7481158cd4e1f8ab29901a4dd1a570d.html#ae7481158cd4e1f8ab29901a4dd1a570d", null ],
     [ "Rgbw", "db/d74/struct_rgbw_a077febf3c54991cff190f1d386b5364e.html#a077febf3c54991cff190f1d386b5364e", null ],
+    [ "Rgbw", "db/d74/struct_rgbw_a99d8a6689522b89016685add8647e004.html#a99d8a6689522b89016685add8647e004", null ],
     [ "active", "db/d74/struct_rgbw_a8e03de73a589cb57144fae382cdd8bc3.html#a8e03de73a589cb57144fae382cdd8bc3", null ],
     [ "size_as_rgb", "db/d74/struct_rgbw_a0efdce1f55fc970b3fc7a01c63c6135e.html#a0efdce1f55fc970b3fc7a01c63c6135e", null ],
     [ "profile", "db/d74/struct_rgbw_a8e35da8b00be6f234e46de4a9d2b3e24.html#a8e35da8b00be6f234e46de4a9d2b3e24", null ],

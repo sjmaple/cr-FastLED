@@ -8,5 +8,5 @@ digraph "fl::task::exit_current"
   rankdir="LR";
   Node1 [id="Node000001",label="fl::task::exit_current",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Terminates the currently executing coroutine."];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::task::Coroutine\l::exitCurrent",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/dd9/classfl_1_1task_1_1_coroutine_a82f8e287a64c2d53f1ea46b5bbd0f980.html#a82f8e287a64c2d53f1ea46b5bbd0f980",tooltip=" "];
+  Node2 [id="Node000002",label="fl::task::Coroutine\l::exitCurrent",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/dd9/classfl_1_1task_1_1_coroutine_a7437a5295cf5339a7ada1e8eb7897233.html#a7437a5295cf5339a7ada1e8eb7897233",tooltip=" "];
 }

@@ -14,9 +14,9 @@ digraph "fl::floor"
   Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="kf_factor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d8f/kiss__fft_8cpp_8hpp_a7b2f43a2cea7081bd64acc66206375a3.html#a7b2f43a2cea7081bd64acc66206375a3",tooltip=" "];
   Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="kiss_fft_alloc",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d8f/kiss__fft_8cpp_8hpp_a8f5b51da803d054f3ec5163c132a4555.html#a8f5b51da803d054f3ec5163c132a4555",tooltip=" "];
+  Node5 [id="Node000005",label="kiss_fft_alloc",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d8f/kiss__fft_8cpp_8hpp_ab5ad1560b58375ec071da45401911358.html#ab5ad1560b58375ec071da45401911358",tooltip=" "];
   Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="kiss_fftr_alloc",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$da/dad/kiss__fftr_8cpp_8hpp_ad7af26db878f4d6e279e585c98562d0d.html#ad7af26db878f4d6e279e585c98562d0d",tooltip=" "];
+  Node6 [id="Node000006",label="kiss_fftr_alloc",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$da/dad/kiss__fftr_8cpp_8hpp_aead7aaed139f58158b446ea623a8b8cb.html#aead7aaed139f58158b446ea623a8b8cb",tooltip=" "];
   Node1 -> Node12 [id="edge6_Node000001_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node12 [id="Node000012",label="fl::detail::SpectralVariance\lImpl::setFloor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d7e/classfl_1_1detail_1_1_spectral_variance_impl_aeb524fd8c28444fd66714a90e69f6b0e.html#aeb524fd8c28444fd66714a90e69f6b0e",tooltip="Change the floor threshold for active channel detection."];
   Node1 -> Node13 [id="edge7_Node000001_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];

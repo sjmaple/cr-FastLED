@@ -1,7 +1,7 @@
 var structfl_1_1_red_black_tree_1_1_r_b_node =
 [
-    [ "RBNode", "d3/d6c/structfl_1_1_red_black_tree_1_1_r_b_node_a1752dcf6a3b2b9786228d5855ef25175.html#a1752dcf6a3b2b9786228d5855ef25175", null ],
-    [ "RBNode", "d3/d6c/structfl_1_1_red_black_tree_1_1_r_b_node_a3e384efab185b7ef94b8183ec830ed1e.html#a3e384efab185b7ef94b8183ec830ed1e", null ],
+    [ "RBNode", "d3/d6c/structfl_1_1_red_black_tree_1_1_r_b_node_ac319ddfd197e74d29d6fd5abc3cc7a78.html#ac319ddfd197e74d29d6fd5abc3cc7a78", null ],
+    [ "RBNode", "d3/d6c/structfl_1_1_red_black_tree_1_1_r_b_node_aeadb6b44ab26206b9bf0f80e76ab342d.html#aeadb6b44ab26206b9bf0f80e76ab342d", null ],
     [ "color", "d3/d6c/structfl_1_1_red_black_tree_1_1_r_b_node_a0b58ffab1759dc3843d174855deb75a4.html#a0b58ffab1759dc3843d174855deb75a4", null ],
     [ "data", "d3/d6c/structfl_1_1_red_black_tree_1_1_r_b_node_a1bb492e55cdb195d417539c9bf5b209b.html#a1bb492e55cdb195d417539c9bf5b209b", null ],
     [ "left", "d3/d6c/structfl_1_1_red_black_tree_1_1_r_b_node_a1346900ab191eb31cac3336830476c28.html#a1346900ab191eb31cac3336830476c28", null ],

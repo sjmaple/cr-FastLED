@@ -9,7 +9,9 @@ digraph "fl::RgbwwInvalid::value"
   Node1 [id="Node000001",label="fl::RgbwwInvalid::value",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="fl::Rgbww::Rgbww",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/df9/structfl_1_1_rgbww_a0d2908da04ace06a285f187b68b4e169.html#a0d2908da04ace06a285f187b68b4e169",tooltip=" "];
-  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::RgbwwInvalid::RgbwwInvalid",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d33/structfl_1_1_rgbww_invalid_a709ec55411990ffea0558f12f107048e.html#a709ec55411990ffea0558f12f107048e",tooltip=" "];
-  Node3 -> Node2 [id="edge3_Node000003_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::detail::enable\l_rgbww_conversion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a2fb5059d4c10926f7daabcf655beff43.html#a2fb5059d4c10926f7daabcf655beff43",tooltip="Installs the RGBWW pixel conversion (see enable_rgbw_conversion, #4795)."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::RgbwwInvalid::RgbwwInvalid",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d33/structfl_1_1_rgbww_invalid_a709ec55411990ffea0558f12f107048e.html#a709ec55411990ffea0558f12f107048e",tooltip=" "];
+  Node4 -> Node2 [id="edge4_Node000004_Node000002",color="steelblue1",style="solid",tooltip=" "];
 }

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -145,11 +145,11 @@ $(function(){initNavTree('d4/d98/group___color_palettes.html','../../'); initRes
 </div><!-- fragment --><p class="startli">Or you can initiaize your palette with a preset color scheme: </p><div class="fragment"><div class="line">myPalette = <a class="code hl_define" href="../../d3/d4f/group___predefined_palettes_ga74989daf3663c88b35251ae9ddf5d188.html#ga74989daf3663c88b35251ae9ddf5d188">RainbowStripesColors_p</a>;</div>
 <div class="ttc" id="agroup___predefined_palettes_ga74989daf3663c88b35251ae9ddf5d188_html_ga74989daf3663c88b35251ae9ddf5d188"><div class="ttname"><a href="../../d3/d4f/group___predefined_palettes_ga74989daf3663c88b35251ae9ddf5d188.html#ga74989daf3663c88b35251ae9ddf5d188">RainbowStripesColors_p</a></div><div class="ttdeci">#define RainbowStripesColors_p</div><div class="ttdoc">Alias of RainbowStripeColors_p.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/df9/colorpalettes_8cpp_8hpp_source.html#l00133">colorpalettes.cpp.hpp:133</a></div></div>
 </div><!-- fragment --></li>
-<li><p class="startli">Any time you want to set a pixel to a color from your palette, use <code><a class="el" href="../../d1/dfb/colorutils_8h_a3d488dd1e2d27e99307310527e51cad3.html#a3d488dd1e2d27e99307310527e51cad3">ColorFromPalette()</a></code> as shown:</p>
+<li><p class="startli">Any time you want to set a pixel to a color from your palette, use <code><a class="el" href="../../d1/dfb/colorutils_8h_ab854f415d729f391929ca0bab226f1f5.html#ab854f415d729f391929ca0bab226f1f5">ColorFromPalette()</a></code> as shown:</p>
 <div class="fragment"><div class="line"><a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> index = <span class="comment">/* any value 0-255 */</span>;</div>
-<div class="line"><a class="code hl_variable" href="../../d5/d17/_analog_output_8ino_a1039e408783ef35dd94161e35efe8ee9.html#a1039e408783ef35dd94161e35efe8ee9">leds</a>[i] = <a class="code hl_function" href="../../d1/dfb/colorutils_8h_a3d488dd1e2d27e99307310527e51cad3.html#a3d488dd1e2d27e99307310527e51cad3">ColorFromPalette</a>(myPalette, index);</div>
+<div class="line"><a class="code hl_variable" href="../../d5/d17/_analog_output_8ino_a1039e408783ef35dd94161e35efe8ee9.html#a1039e408783ef35dd94161e35efe8ee9">leds</a>[i] = <a class="code hl_function" href="../../d1/dfb/colorutils_8h_ab854f415d729f391929ca0bab226f1f5.html#ab854f415d729f391929ca0bab226f1f5">ColorFromPalette</a>(myPalette, index);</div>
 <div class="ttc" id="a_analog_output_8ino_a1039e408783ef35dd94161e35efe8ee9_html_a1039e408783ef35dd94161e35efe8ee9"><div class="ttname"><a href="../../d5/d17/_analog_output_8ino_a1039e408783ef35dd94161e35efe8ee9.html#a1039e408783ef35dd94161e35efe8ee9">leds</a></div><div class="ttdeci">CRGB leds[1]</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d17/_analog_output_8ino_source.html#l00026">AnalogOutput.ino:26</a></div></div>
-<div class="ttc" id="acolorutils_8h_a3d488dd1e2d27e99307310527e51cad3_html_a3d488dd1e2d27e99307310527e51cad3"><div class="ttname"><a href="../../d1/dfb/colorutils_8h_a3d488dd1e2d27e99307310527e51cad3.html#a3d488dd1e2d27e99307310527e51cad3">ColorFromPalette</a></div><div class="ttdeci">CRGB ColorFromPalette(const CRGBPalette16 &amp;pal, fl::u8 index, fl::u8 brightness, TBlendType blendType)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d4e/colorutils_8cpp_8hpp_source.html#l00476">colorutils.cpp.hpp:476</a></div></div>
+<div class="ttc" id="acolorutils_8h_ab854f415d729f391929ca0bab226f1f5_html_ab854f415d729f391929ca0bab226f1f5"><div class="ttname"><a href="../../d1/dfb/colorutils_8h_ab854f415d729f391929ca0bab226f1f5.html#ab854f415d729f391929ca0bab226f1f5">ColorFromPalette</a></div><div class="ttdeci">CRGB ColorFromPalette(const CRGBPalette16 &amp;pal, fl::u8 index, fl::u8 brightness, TBlendType blendType) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d4e/colorutils_8cpp_8hpp_source.html#l00477">colorutils.cpp.hpp:477</a></div></div>
 <div class="ttc" id="anamespacefl_a058ceeac48f181da463c2ba07401292c_html_a058ceeac48f181da463c2ba07401292c"><div class="ttname"><a href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00131">stdint.h:131</a></div></div>
 </div><!-- fragment --><p class="startli">Even though your palette has only 16 explicily defined entries, you can use an "index" from 0-255. The 16 explicit palette entries will be spread evenly across the 0-255 range, and the intermedate values will be RGB-interpolated between adjacent explicit entries.</p>
 <p class="startli">It's easier to use than it sounds.</p>
@@ -177,7 +177,7 @@ Topics</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:06 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:21 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

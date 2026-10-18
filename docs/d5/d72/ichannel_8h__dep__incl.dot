@@ -31,4 +31,7 @@ digraph "fl/channels/ichannel.h"
   Node13 -> Node14 [id="edge13_Node000013_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node14 [id="Node000014",label="fl/channels/slim_spi\l_bridge_controller.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d9b/slim__spi__bridge__controller_8h.html",tooltip="Shared \"slim bridge\" legacy addLeds<ESPIChipsets ...>() controller for the SPI channel API – driver-a..."];
   Node14 -> Node8 [id="edge14_Node000014_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node15 [id="edge15_Node000002_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="fl/channels/pipeline\l_binding.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/d09/pipeline__binding_8cpp_8hpp.html",tooltip=" "];
+  Node15 -> Node10 [id="edge16_Node000015_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

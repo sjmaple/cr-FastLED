@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -121,41 +121,41 @@ $(function(){initNavTree('d2/d6b/classfl_1_1_channel_manager_a677e3e6da29b0e3ac8
 <dd>
 Polls all drivers and returns the "worst" state (ERROR &gt; BUSY &gt; READY) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00519">519</a> of file <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html">manager.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  519</span>                                               {</div>
-<div class="line"><span class="lineno">  520</span>    <span class="comment">// Poll all registered drivers and return aggregate state</span></div>
-<div class="line"><span class="lineno">  521</span>    <span class="comment">// Priority order: ERROR &gt; BUSY &gt; DRAINING &gt; READY</span></div>
-<div class="line"><span class="lineno">  522</span>    <span class="keywordtype">bool</span> anyBusy = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  523</span>    <span class="keywordtype">bool</span> anyDraining = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  524</span>    fl::string firstError;</div>
-<div class="line"><span class="lineno">  525</span> </div>
-<div class="line"><span class="lineno">  526</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; entry : <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">mDrivers</a>) {</div>
-<div class="line"><span class="lineno">  527</span>        IChannelDriver::DriverState <a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a> = entry.driver-&gt;poll();</div>
-<div class="line"><span class="lineno">  528</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a>.state == <a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577bad61fa2d085969e4a6cddbbada37dbc79">IChannelDriver::DriverState::BUSY</a>) {</div>
-<div class="line"><span class="lineno">  529</span>            anyBusy = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  530</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a>.state == <a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba82b900257142627eeebf46638e194e23">IChannelDriver::DriverState::DRAINING</a>) {</div>
-<div class="line"><span class="lineno">  531</span>            anyDraining = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  532</span>        }</div>
-<div class="line"><span class="lineno">  533</span>        <span class="comment">// Capture first error encountered</span></div>
-<div class="line"><span class="lineno">  534</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a>.state == <a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba91062bc607449128242dc2c801a4043a">IChannelDriver::DriverState::ERROR</a> &amp;&amp; firstError.<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">empty</a>()) {</div>
-<div class="line"><span class="lineno">  535</span>            firstError = <a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a>.error;</div>
-<div class="line"><span class="lineno">  536</span>        }</div>
-<div class="line"><span class="lineno">  537</span>    }</div>
-<div class="line"><span class="lineno">  538</span> </div>
-<div class="line"><span class="lineno">  539</span>    <span class="comment">// Return error if any driver reported error</span></div>
-<div class="line"><span class="lineno">  540</span>    <span class="keywordflow">if</span> (!firstError.<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">empty</a>()) {</div>
-<div class="line"><span class="lineno">  541</span>        <span class="keywordflow">return</span> IChannelDriver::DriverState(<a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba91062bc607449128242dc2c801a4043a">IChannelDriver::DriverState::ERROR</a>, firstError);</div>
-<div class="line"><span class="lineno">  542</span>    }</div>
-<div class="line"><span class="lineno">  543</span> </div>
-<div class="line"><span class="lineno">  544</span>    <span class="keywordflow">if</span> (anyBusy) {</div>
-<div class="line"><span class="lineno">  545</span>        <span class="keywordflow">return</span> IChannelDriver::DriverState(<a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577bad61fa2d085969e4a6cddbbada37dbc79">IChannelDriver::DriverState::BUSY</a>);</div>
-<div class="line"><span class="lineno">  546</span>    }</div>
-<div class="line"><span class="lineno">  547</span>    <span class="keywordflow">if</span> (anyDraining) {</div>
-<div class="line"><span class="lineno">  548</span>        <span class="keywordflow">return</span> IChannelDriver::DriverState(<a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba82b900257142627eeebf46638e194e23">IChannelDriver::DriverState::DRAINING</a>);</div>
-<div class="line"><span class="lineno">  549</span>    }</div>
-<div class="line"><span class="lineno">  550</span>    <span class="keywordflow">return</span> IChannelDriver::DriverState(<a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba8076a15dd185db82b38286042c379821">IChannelDriver::DriverState::READY</a>);</div>
-<div class="line"><span class="lineno">  551</span>}</div>
-<div class="ttc" id="aclassfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4_html_adc5f4506b80dc60555293e39438918c4"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">fl::ChannelManager::mDrivers</a></div><div class="ttdeci">fl::vector&lt; EngineEntry &gt; mDrivers</div><div class="ttdoc">Shared drivers sorted by priority descending (higher values first)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/manager_8h_source.html#l00321">manager.h:321</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00529">529</a> of file <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html">manager.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  529</span>                                                            {</div>
+<div class="line"><span class="lineno">  530</span>    <span class="comment">// Poll all registered drivers and return aggregate state</span></div>
+<div class="line"><span class="lineno">  531</span>    <span class="comment">// Priority order: ERROR &gt; BUSY &gt; DRAINING &gt; READY</span></div>
+<div class="line"><span class="lineno">  532</span>    <span class="keywordtype">bool</span> anyBusy = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  533</span>    <span class="keywordtype">bool</span> anyDraining = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  534</span>    fl::string firstError;</div>
+<div class="line"><span class="lineno">  535</span> </div>
+<div class="line"><span class="lineno">  536</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; entry : <a class="code hl_variable" href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">mDrivers</a>) {</div>
+<div class="line"><span class="lineno">  537</span>        IChannelDriver::DriverState <a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a> = entry.driver-&gt;poll();</div>
+<div class="line"><span class="lineno">  538</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a>.state == <a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577bad61fa2d085969e4a6cddbbada37dbc79">IChannelDriver::DriverState::BUSY</a>) {</div>
+<div class="line"><span class="lineno">  539</span>            anyBusy = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  540</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a>.state == <a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba82b900257142627eeebf46638e194e23">IChannelDriver::DriverState::DRAINING</a>) {</div>
+<div class="line"><span class="lineno">  541</span>            anyDraining = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  542</span>        }</div>
+<div class="line"><span class="lineno">  543</span>        <span class="comment">// Capture first error encountered</span></div>
+<div class="line"><span class="lineno">  544</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a>.state == <a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba91062bc607449128242dc2c801a4043a">IChannelDriver::DriverState::ERROR</a> &amp;&amp; firstError.<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">empty</a>()) {</div>
+<div class="line"><span class="lineno">  545</span>            firstError = <a class="code hl_typedef" href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">result</a>.error;</div>
+<div class="line"><span class="lineno">  546</span>        }</div>
+<div class="line"><span class="lineno">  547</span>    }</div>
+<div class="line"><span class="lineno">  548</span> </div>
+<div class="line"><span class="lineno">  549</span>    <span class="comment">// Return error if any driver reported error</span></div>
+<div class="line"><span class="lineno">  550</span>    <span class="keywordflow">if</span> (!firstError.<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">empty</a>()) {</div>
+<div class="line"><span class="lineno">  551</span>        <span class="keywordflow">return</span> IChannelDriver::DriverState(<a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba91062bc607449128242dc2c801a4043a">IChannelDriver::DriverState::ERROR</a>, firstError);</div>
+<div class="line"><span class="lineno">  552</span>    }</div>
+<div class="line"><span class="lineno">  553</span> </div>
+<div class="line"><span class="lineno">  554</span>    <span class="keywordflow">if</span> (anyBusy) {</div>
+<div class="line"><span class="lineno">  555</span>        <span class="keywordflow">return</span> IChannelDriver::DriverState(<a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577bad61fa2d085969e4a6cddbbada37dbc79">IChannelDriver::DriverState::BUSY</a>);</div>
+<div class="line"><span class="lineno">  556</span>    }</div>
+<div class="line"><span class="lineno">  557</span>    <span class="keywordflow">if</span> (anyDraining) {</div>
+<div class="line"><span class="lineno">  558</span>        <span class="keywordflow">return</span> IChannelDriver::DriverState(<a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba82b900257142627eeebf46638e194e23">IChannelDriver::DriverState::DRAINING</a>);</div>
+<div class="line"><span class="lineno">  559</span>    }</div>
+<div class="line"><span class="lineno">  560</span>    <span class="keywordflow">return</span> IChannelDriver::DriverState(<a class="code hl_enumvalue" href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba8076a15dd185db82b38286042c379821">IChannelDriver::DriverState::READY</a>);</div>
+<div class="line"><span class="lineno">  561</span>}</div>
+<div class="ttc" id="aclassfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4_html_adc5f4506b80dc60555293e39438918c4"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_adc5f4506b80dc60555293e39438918c4.html#adc5f4506b80dc60555293e39438918c4">fl::ChannelManager::mDrivers</a></div><div class="ttdeci">fl::vector&lt; EngineEntry &gt; mDrivers</div><div class="ttdoc">Shared drivers sorted by priority descending (higher values first)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/manager_8h_source.html#l00327">manager.h:327</a></div></div>
 <div class="ttc" id="aclassfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb_html_ac3effe716fde4667b05a52d78d74bbfb"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">fl::basic_string::empty</a></div><div class="ttdeci">bool empty() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00155">basic_string.h:155</a></div></div>
 <div class="ttc" id="anamespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99_html_a8fa65f6529fc3eb6a174cb304a4bfc99"><div class="ttname"><a href="../../d4/d36/namespacefl_a8fa65f6529fc3eb6a174cb304a4bfc99.html#a8fa65f6529fc3eb6a174cb304a4bfc99">fl::result</a></div><div class="ttdeci">expected&lt; T, E &gt; result</div><div class="ttdoc">Alias for expected (Rust-style naming)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d93/result_8h_source.html#l00031">result.h:31</a></div></div>
 <div class="ttc" id="astructfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b_html_a97f46a6aca470ea25d69bb42e078577ba8076a15dd185db82b38286042c379821"><div class="ttname"><a href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba8076a15dd185db82b38286042c379821">fl::IChannelDriver::DriverState::READY</a></div><div class="ttdeci">@ READY</div><div class="ttdoc">Hardware idle; ready to accept new transmissions.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00170">driver.h:170</a></div></div>
@@ -163,9 +163,9 @@ Polls all drivers and returns the "worst" state (ERROR &gt; BUSY &gt; READY) </d
 <div class="ttc" id="astructfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b_html_a97f46a6aca470ea25d69bb42e078577ba91062bc607449128242dc2c801a4043a"><div class="ttname"><a href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba91062bc607449128242dc2c801a4043a">fl::IChannelDriver::DriverState::ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdoc">Driver encountered an error.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00173">driver.h:173</a></div></div>
 <div class="ttc" id="astructfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b_html_a97f46a6aca470ea25d69bb42e078577bad61fa2d085969e4a6cddbbada37dbc79"><div class="ttname"><a href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577bad61fa2d085969e4a6cddbbada37dbc79">fl::IChannelDriver::DriverState::BUSY</a></div><div class="ttdeci">@ BUSY</div><div class="ttdoc">Active: channels transmitting or queued.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00171">driver.h:171</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00171">fl::IChannelDriver::DriverState::BUSY</a>, <a class="el" href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00172">fl::IChannelDriver::DriverState::DRAINING</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00155">fl::basic_string::empty()</a>, <a class="el" href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00173">fl::IChannelDriver::DriverState::ERROR</a>, <a class="el" href="../../db/d45/manager_8h_source.html#l00321">mDrivers</a>, and <a class="el" href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00170">fl::IChannelDriver::DriverState::READY</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00171">fl::IChannelDriver::DriverState::BUSY</a>, <a class="el" href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00172">fl::IChannelDriver::DriverState::DRAINING</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00155">fl::basic_string::empty()</a>, <a class="el" href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00173">fl::IChannelDriver::DriverState::ERROR</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d45/manager_8h_source.html#l00327">mDrivers</a>, and <a class="el" href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00170">fl::IChannelDriver::DriverState::READY</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00553">waitForReady()</a>, and <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00563">waitForReadyOrDraining()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00563">waitForReady()</a>, and <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00573">waitForReadyOrDraining()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -190,7 +190,7 @@ Polls all drivers and returns the "worst" state (ERROR &gt; BUSY &gt; READY) </d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d2/d6b/classfl_1_1_channel_manager.html">ChannelManager</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

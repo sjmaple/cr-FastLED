@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -108,7 +108,7 @@ $(function(){initNavTree('df/d0d/yield_8h.html','../../'); initResizable(true); 
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Platform-aware cooperative yield for FastLED. </p>
-<p><a class="el" href="../../d4/d36/namespacefl_ac8bfd7357d354c16311ece7e62e08901.html#ac8bfd7357d354c16311ece7e62e08901" title="Yield to the platform scheduler.">fl::yield()</a> gives other tasks/threads a chance to run:</p><ul>
+<p><a class="el" href="../../d4/d36/namespacefl_a9be88207a839180b31c7b207b3598c77.html#a9be88207a839180b31c7b207b3598c77" title="Yield to the platform scheduler.">fl::yield()</a> gives other tasks/threads a chance to run:</p><ul>
 <li>ESP32: calls vTaskDelay(0) to yield to FreeRTOS scheduler</li>
 <li>Multithreaded hosts: calls std::this_thread::yield()</li>
 <li>Single-threaded platforms: no-op</li>
@@ -116,11 +116,19 @@ $(function(){initNavTree('df/d0d/yield_8h.html','../../'); initResizable(true); 
 <p>Safe to call from any thread/task. </p>
 
 <p class="definition">Definition in file <a class="el" href="../../df/d0d/yield_8h_source.html">yield.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="../../db/d01/noexcept_8h_source.html">fl/stl/noexcept.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for yield.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/ddb/yield_8h__incl.svg" width="186" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d64/yield_8h__dep__incl.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
@@ -134,9 +142,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac8bfd7357d354c16311ece7e62e08901" id="r_ac8bfd7357d354c16311ece7e62e08901"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_ac8bfd7357d354c16311ece7e62e08901.html#ac8bfd7357d354c16311ece7e62e08901">fl::yield</a> ()</td></tr>
-<tr class="memdesc:ac8bfd7357d354c16311ece7e62e08901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yield to the platform scheduler.  <br /></td></tr>
-<tr class="separator:ac8bfd7357d354c16311ece7e62e08901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be88207a839180b31c7b207b3598c77" id="r_a9be88207a839180b31c7b207b3598c77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_a9be88207a839180b31c7b207b3598c77.html#a9be88207a839180b31c7b207b3598c77">fl::yield</a> () <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a9be88207a839180b31c7b207b3598c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yield to the platform scheduler.  <br /></td></tr>
+<tr class="separator:a9be88207a839180b31c7b207b3598c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -145,7 +153,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><a class="el" href="../../dir_c27a882fecb444156419346f13162968.html">system</a></li><li class="navelem"><a class="el" href="../../df/d0d/yield_8h.html">yield.h</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:05 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:20 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

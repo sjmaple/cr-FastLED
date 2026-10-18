@@ -1,6 +1,7 @@
 var structfl_1_1_rgbww =
 [
     [ "Rgbww", "d4/df9/structfl_1_1_rgbww_a0d2908da04ace06a285f187b68b4e169.html#a0d2908da04ace06a285f187b68b4e169", null ],
+    [ "Rgbww", "d4/df9/structfl_1_1_rgbww_a25a4a1ef424de0116c0a7e73e438a167.html#a25a4a1ef424de0116c0a7e73e438a167", null ],
     [ "active", "d4/df9/structfl_1_1_rgbww_a31e09c3347d89adb6fb6a72964679799.html#a31e09c3347d89adb6fb6a72964679799", null ],
     [ "cool_cct", "d4/df9/structfl_1_1_rgbww_ad7ccbcf51c583663fd5d3b527e759823.html#ad7ccbcf51c583663fd5d3b527e759823", null ],
     [ "profile", "d4/df9/structfl_1_1_rgbww_a75d309a1fceedbe053e8dbc10e3f12bb.html#a75d309a1fceedbe053e8dbc10e3f12bb", null ],

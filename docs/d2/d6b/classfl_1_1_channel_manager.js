@@ -26,6 +26,7 @@ var classfl_1_1_channel_manager =
     [ "getDriverInfos", "d2/d6b/classfl_1_1_channel_manager_af905f8eba8d7ec070aeba0d5d672a43e.html#af905f8eba8d7ec070aeba0d5d672a43e", null ],
     [ "instance", "d2/d6b/classfl_1_1_channel_manager_a76013c6913045962ce5bb8d227e760b3.html#a76013c6913045962ce5bb8d227e760b3", null ],
     [ "isDriverEnabled", "d2/d6b/classfl_1_1_channel_manager_ae70d9cebc1ac3a2f621d1d8e489bf818.html#ae70d9cebc1ac3a2f621d1d8e489bf818", null ],
+    [ "isDriverEnabled", "d2/d6b/classfl_1_1_channel_manager_a393ccb80579cfd061421b7d096deb147.html#a393ccb80579cfd061421b7d096deb147", null ],
     [ "notifyPollNeeded", "d2/d6b/classfl_1_1_channel_manager_aeecac5c6f4dbc304c9be01384ae5fb82.html#aeecac5c6f4dbc304c9be01384ae5fb82", null ],
     [ "notifyPollNeededThunk", "d2/d6b/classfl_1_1_channel_manager_ae0d96adf1576f8fe62b937685991e3b5.html#ae0d96adf1576f8fe62b937685991e3b5", null ],
     [ "onBeginFrame", "d2/d6b/classfl_1_1_channel_manager_a51df52695220156ed2bf8998e347e5c9.html#a51df52695220156ed2bf8998e347e5c9", null ],

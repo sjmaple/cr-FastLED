@@ -1,40 +1,36 @@
 <map id="fl/channels/cled_controller.h" name="fl/channels/cled_controller.h">
-<area shape="rect" id="Node000001" title="base definitions used by led controllers for writing out led data" alt="" coords="1465,5,1667,31"/>
-<area shape="rect" id="Node000002" href="$db/d6d/cled__controller_8h.html" title="base definitions used by led controllers for writing out led data" alt="" coords="688,86,817,111"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1451,33,818,94,817,88,1451,28"/>
-<area shape="rect" id="Node000058" href="$dc/d5b/power__mgt_8h.html" title="Functions to limit the power used by FastLED." alt="" coords="286,401,393,427"/>
-<area shape="poly" id="edge20_Node000001_Node000058" title=" " alt="" coords="1569,45,1569,178,1569,262,1566,273,1557,285,1526,304,1479,322,1416,337,1257,363,1068,383,868,396,676,406,393,414,393,409,676,401,868,391,1068,377,1257,358,1415,332,1477,317,1524,300,1554,281,1561,271,1563,261,1563,178,1563,45"/>
-<area shape="rect" id="Node000074" href="$d6/d09/pipeline__binding_8cpp_8hpp.html" title=" " alt="" coords="1615,79,1763,119"/>
-<area shape="poly" id="edge18_Node000001_Node000074" title=" " alt="" coords="1597,36,1661,76,1658,81,1594,41"/>
-<area shape="rect" id="Node000003" href="$df/dcc/cled__controller_8cpp_8hpp.html" title=" " alt="" coords="47,401,219,427"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="674,108,532,122,363,148,282,165,211,187,154,212,133,226,117,242,106,261,101,282,103,327,115,369,129,400,124,402,110,371,98,328,96,281,102,259,113,238,130,222,152,208,209,182,281,160,362,142,531,117,674,103"/>
-<area shape="rect" id="Node000006" href="$d9/d57/cpixel__ledcontroller_8h.html" title="defines the templated version of the CLEDController class" alt="" coords="673,167,833,192"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="755,125,755,166,750,166,750,125"/>
-<area shape="rect" id="Node000004" href="$d7/dd5/__build_8cpp_8hpp.html" title=" " alt="" coords="5,475,121,500"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="114,439,76,476,73,473,110,435"/>
-<area shape="rect" id="Node000005" href="$dd/de2/src_8cpp.html" title="Unity build: flat includes from src/ root directory." alt="" coords="145,475,261,500"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="156,435,194,473,190,476,152,439"/>
-<area shape="rect" id="Node000007" href="$d2/dd9/controller_8h.html" title=" " alt="" coords="128,247,223,273"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="659,190,466,209,354,224,243,243,213,250,211,245,241,237,353,218,466,203,659,184"/>
-<area shape="rect" id="Node000014" href="$d0/d69/fl_2system_2fastled_8h.html" title="Internal FastLED header for implementation files." alt="" coords="187,328,329,353"/>
-<area shape="poly" id="edge17_Node000006_Node000014" title=" " alt="" coords="659,183,558,187,448,196,351,214,314,227,288,242,273,261,265,285,260,328,255,327,259,284,268,259,284,238,312,222,350,209,447,191,557,182,659,178"/>
-<area shape="rect" id="Node000062" href="$d5/d7b/channel_8h.html" title="ESP32&#45;P4 Parallel IO (PARLIO) LED channel." alt="" coords="299,247,457,273"/>
-<area shape="poly" id="edge10_Node000006_Node000062" title=" " alt="" coords="685,197,433,250,432,245,684,192"/>
-<area shape="rect" id="Node000068" href="$df/d99/slim__bridge__controller_8h.html" title="Shared &quot;slim bridge&quot; legacy addLeds&lt;&gt;() controller for channel drivers." alt="" coords="481,240,653,280"/>
-<area shape="poly" id="edge11_Node000006_Node000068" title=" " alt="" coords="714,200,613,242,611,237,712,195"/>
-<area shape="rect" id="Node000067" href="$d5/d9b/slim__spi__bridge__controller_8h.html" title="Shared &quot;slim bridge&quot; legacy addLeds&lt;ESPIChipsets ...&gt;() controller for the SPI channel API – driver&#45;a..." alt="" coords="677,240,828,280"/>
-<area shape="poly" id="edge12_Node000006_Node000067" title=" " alt="" coords="755,206,755,240,750,240,750,206"/>
-<area shape="rect" id="Node000069" href="$d8/dc5/analog_8h.html" title="Three&#45;pin PWM controller for non&#45;addressable RGB LEDs and strips." alt="" coords="852,247,1000,273"/>
-<area shape="poly" id="edge13_Node000006_Node000069" title=" " alt="" coords="791,195,902,245,900,250,789,200"/>
-<area shape="rect" id="Node000011" href="$d3/de8/apa102_8h.html" title=" " alt="" coords="1025,247,1177,273"/>
-<area shape="poly" id="edge14_Node000006_Node000011" title=" " alt="" coords="817,192,1051,245,1049,250,816,198"/>
-<area shape="rect" id="Node000013" href="$d8/d61/hd108_8h.html" title=" " alt="" coords="1201,247,1345,273"/>
-<area shape="poly" id="edge15_Node000006_Node000013" title=" " alt="" coords="847,188,1007,209,1189,237,1225,245,1224,250,1188,243,1006,214,846,194"/>
-<area shape="rect" id="Node000070" href="$d0/d00/ucs7604_8h.html" title="UCS7604 LED chipset controller implementation for FastLED." alt="" coords="1369,247,1528,273"/>
-<area shape="poly" id="edge16_Node000006_Node000070" title=" " alt="" coords="847,184,1079,204,1357,237,1398,245,1397,250,1356,243,1079,209,846,190"/>
-<area shape="poly" id="edge7_Node000007_Node000014" title=" " alt="" coords="199,280,248,326,244,330,196,284"/>
-<area shape="poly" id="edge8_Node000014_Node000003" title=" " alt="" coords="227,362,154,403,152,399,225,358"/>
-<area shape="poly" id="edge9_Node000014_Node000058" title=" " alt="" coords="283,360,328,399,324,403,280,364"/>
-<area shape="rect" id="Node000027" href="$d1/d97/fl_2channels_2__build_8cpp_8hpp.html" title=" " alt="" coords="1604,167,1795,192"/>
-<area shape="poly" id="edge19_Node000074_Node000027" title=" " alt="" coords="1696,132,1700,166,1695,167,1690,133"/>
+<area shape="rect" id="Node000001" title="base definitions used by led controllers for writing out led data" alt="" coords="1058,5,1261,31"/>
+<area shape="rect" id="Node000002" href="$db/d6d/cled__controller_8h.html" title="base definitions used by led controllers for writing out led data" alt="" coords="688,79,817,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1081,36,818,81,817,76,1080,30"/>
+<area shape="rect" id="Node000058" href="$dc/d5b/power__mgt_8h.html" title="Functions to limit the power used by FastLED." alt="" coords="286,387,393,412"/>
+<area shape="poly" id="edge18_Node000001_Node000058" title=" " alt="" coords="1251,30,1351,50,1454,78,1499,96,1535,116,1559,138,1566,150,1569,163,1569,247,1566,259,1557,270,1526,290,1479,307,1416,323,1257,348,1068,368,868,382,676,391,393,400,393,394,676,386,868,376,1068,363,1257,343,1415,318,1477,302,1524,285,1554,266,1561,257,1563,246,1563,164,1561,152,1555,141,1532,120,1497,101,1453,83,1350,55,1250,36"/>
+<area shape="rect" id="Node000003" href="$df/dcc/cled__controller_8cpp_8hpp.html" title=" " alt="" coords="47,387,219,412"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="674,100,532,112,363,136,283,152,211,173,154,198,133,212,117,227,106,246,101,267,103,312,115,354,129,385,124,387,110,356,98,313,96,266,101,244,113,224,130,208,152,193,209,168,281,147,362,130,531,107,674,94"/>
+<area shape="rect" id="Node000006" href="$d9/d57/cpixel__ledcontroller_8h.html" title="defines the templated version of the CLEDController class" alt="" coords="673,152,833,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="755,118,755,152,750,152,750,118"/>
+<area shape="rect" id="Node000004" href="$d7/dd5/__build_8cpp_8hpp.html" title=" " alt="" coords="5,460,121,485"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="114,424,76,462,73,458,110,420"/>
+<area shape="rect" id="Node000005" href="$dd/de2/src_8cpp.html" title="Unity build: flat includes from src/ root directory." alt="" coords="145,460,261,485"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="156,420,194,458,190,462,152,424"/>
+<area shape="rect" id="Node000007" href="$d2/dd9/controller_8h.html" title=" " alt="" coords="128,233,223,258"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="659,175,466,194,354,209,243,228,213,235,211,230,241,223,353,204,466,189,659,170"/>
+<area shape="rect" id="Node000014" href="$d0/d69/fl_2system_2fastled_8h.html" title="Internal FastLED header for implementation files." alt="" coords="187,313,329,339"/>
+<area shape="poly" id="edge17_Node000006_Node000014" title=" " alt="" coords="659,169,558,172,449,182,352,199,315,212,289,227,274,247,265,270,260,313,255,313,260,269,269,244,286,223,313,207,351,194,448,177,558,167,659,164"/>
+<area shape="rect" id="Node000062" href="$d5/d7b/channel_8h.html" title="ESP32&#45;P4 Parallel IO (PARLIO) LED channel." alt="" coords="299,233,457,258"/>
+<area shape="poly" id="edge10_Node000006_Node000062" title=" " alt="" coords="685,183,433,235,432,230,684,178"/>
+<area shape="rect" id="Node000069" href="$df/d99/slim__bridge__controller_8h.html" title="Shared &quot;slim bridge&quot; legacy addLeds&lt;&gt;() controller for channel drivers." alt="" coords="481,225,653,265"/>
+<area shape="poly" id="edge11_Node000006_Node000069" title=" " alt="" coords="714,185,613,228,611,223,712,180"/>
+<area shape="rect" id="Node000067" href="$d5/d9b/slim__spi__bridge__controller_8h.html" title="Shared &quot;slim bridge&quot; legacy addLeds&lt;ESPIChipsets ...&gt;() controller for the SPI channel API – driver&#45;a..." alt="" coords="677,225,828,265"/>
+<area shape="poly" id="edge12_Node000006_Node000067" title=" " alt="" coords="755,191,755,225,750,225,750,191"/>
+<area shape="rect" id="Node000070" href="$d8/dc5/analog_8h.html" title="Three&#45;pin PWM controller for non&#45;addressable RGB LEDs and strips." alt="" coords="852,233,1000,258"/>
+<area shape="poly" id="edge13_Node000006_Node000070" title=" " alt="" coords="791,181,902,230,900,235,789,185"/>
+<area shape="rect" id="Node000011" href="$d3/de8/apa102_8h.html" title=" " alt="" coords="1025,233,1177,258"/>
+<area shape="poly" id="edge14_Node000006_Node000011" title=" " alt="" coords="817,178,1051,230,1049,235,816,183"/>
+<area shape="rect" id="Node000013" href="$d8/d61/hd108_8h.html" title=" " alt="" coords="1201,233,1345,258"/>
+<area shape="poly" id="edge15_Node000006_Node000013" title=" " alt="" coords="847,174,1007,194,1189,223,1225,230,1224,235,1188,228,1006,200,846,179"/>
+<area shape="rect" id="Node000071" href="$d0/d00/ucs7604_8h.html" title="UCS7604 LED chipset controller implementation for FastLED." alt="" coords="1369,233,1528,258"/>
+<area shape="poly" id="edge16_Node000006_Node000071" title=" " alt="" coords="847,170,1079,189,1357,223,1398,230,1397,235,1356,228,1079,195,846,175"/>
+<area shape="poly" id="edge7_Node000007_Node000014" title=" " alt="" coords="199,266,248,311,244,315,196,269"/>
+<area shape="poly" id="edge8_Node000014_Node000003" title=" " alt="" coords="227,348,154,389,152,384,225,343"/>
+<area shape="poly" id="edge9_Node000014_Node000058" title=" " alt="" coords="283,346,328,384,324,388,280,350"/>
 </map>

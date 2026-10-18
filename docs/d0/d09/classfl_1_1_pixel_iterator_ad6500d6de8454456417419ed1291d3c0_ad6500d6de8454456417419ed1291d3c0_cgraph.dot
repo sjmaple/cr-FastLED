@@ -8,5 +8,7 @@ digraph "fl::PixelIterator::loadAndScaleRGBW"
   rankdir="LR";
   Node1 [id="Node000001",label="fl::PixelIterator::\lloadAndScaleRGBW",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::rgbw_partial_reorder",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a0cca52aaf53d5949a14512e8102e5bd9.html#a0cca52aaf53d5949a14512e8102e5bd9",tooltip=" "];
+  Node2 [id="Node000002",label="fl::rgb_2_rgbw_null\l_white_pixel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a127a41ddb75b964f9c4fd9b495116195.html#a127a41ddb75b964f9c4fd9b495116195",tooltip="Converts RGB to RGBW with the W channel set to black, always."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::rgbw_partial_reorder",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a4ab7970bd150284b7202696df8e33f45.html#a4ab7970bd150284b7202696df8e33f45",tooltip=" "];
 }

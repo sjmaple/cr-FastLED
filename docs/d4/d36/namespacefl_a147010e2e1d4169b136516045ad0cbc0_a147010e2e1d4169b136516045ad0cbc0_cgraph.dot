@@ -22,7 +22,7 @@ digraph "fl::rgb_2_rgbw"
   Node2 -> Node7 [id="edge8_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
   Node7 [id="Node000007",label="fl::rgb_2_rgbw_null\l_white_pixel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a127a41ddb75b964f9c4fd9b495116195.html#a127a41ddb75b964f9c4fd9b495116195",tooltip="Converts RGB to RGBW with the W channel set to black, always."];
   Node2 -> Node8 [id="edge9_Node000002_Node000008",color="steelblue1",style="solid",tooltip=" "];
-  Node8 [id="Node000008",label="fl::rgb_2_rgbw_user\l_function",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ada2d5e03b4fc0a4720ff3fcbc0769945.html#ada2d5e03b4fc0a4720ff3fcbc0769945",tooltip=" "];
+  Node8 [id="Node000008",label="fl::rgb_2_rgbw_user\l_function",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a026d160d22f564528df70c6bfca44db5.html#a026d160d22f564528df70c6bfca44db5",tooltip=" "];
   Node8 -> Node9 [id="edge10_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
   Node9 [id="Node000009",label="fl::Singleton::instance",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d9/d5b/classfl_1_1_singleton_ad5cb1b704e17768f75802673abb0ff75.html#ad5cb1b704e17768f75802673abb0ff75",tooltip=" "];
   Node8 -> Node4 [id="edge11_Node000008_Node000004",color="steelblue1",style="solid",tooltip=" "];

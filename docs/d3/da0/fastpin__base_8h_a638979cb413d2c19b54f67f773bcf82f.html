@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -192,8 +192,8 @@ $(function(){initNavTree('d3/da0/fastpin__base_8h_a638979cb413d2c19b54f67f773bcf
 <div class="line"><span class="lineno">   83</span>    <span class="keyword">typedef</span> <span class="keyword">volatile</span> RwReg * port_ptr_t;  </div>
 <div class="line"><span class="lineno">   84</span>    <span class="keyword">typedef</span> RwReg port_t;  </div>
 <div class="line"><span class="lineno">   85</span></div>
-<div class="line"><span class="lineno">   87</span>    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> setOutput() { _init(); <a class="code hl_function" href="../../d4/d36/namespacefl_aa7a47cf722a2586453e75f6e70284dad.html#aa7a47cf722a2586453e75f6e70284dad">pinMode</a>(<a class="code hl_define" href="../../df/d06/_pin_mode_8ino_ae1a27401b7fb01ccb9a82dbddbb54eea.html#ae1a27401b7fb01ccb9a82dbddbb54eea">PIN</a>, PinMode::Output); }</div>
-<div class="line"><span class="lineno">   89</span>    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> setInput() { _init(); <a class="code hl_function" href="../../d4/d36/namespacefl_aa7a47cf722a2586453e75f6e70284dad.html#aa7a47cf722a2586453e75f6e70284dad">pinMode</a>(<a class="code hl_define" href="../../df/d06/_pin_mode_8ino_ae1a27401b7fb01ccb9a82dbddbb54eea.html#ae1a27401b7fb01ccb9a82dbddbb54eea">PIN</a>, PinMode::Input); }</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> setOutput() { _init(); <a class="code hl_function" href="../../d4/d36/namespacefl_afd308586a147e06f84e8a83dc55be796.html#afd308586a147e06f84e8a83dc55be796">pinMode</a>(<a class="code hl_define" href="../../df/d06/_pin_mode_8ino_ae1a27401b7fb01ccb9a82dbddbb54eea.html#ae1a27401b7fb01ccb9a82dbddbb54eea">PIN</a>, PinMode::Output); }</div>
+<div class="line"><span class="lineno">   89</span>    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> setInput() { _init(); <a class="code hl_function" href="../../d4/d36/namespacefl_afd308586a147e06f84e8a83dc55be796.html#afd308586a147e06f84e8a83dc55be796">pinMode</a>(<a class="code hl_define" href="../../df/d06/_pin_mode_8ino_ae1a27401b7fb01ccb9a82dbddbb54eea.html#ae1a27401b7fb01ccb9a82dbddbb54eea">PIN</a>, PinMode::Input); }</div>
 <div class="line"><span class="lineno">   90</span></div>
 <div class="line"><span class="lineno">   92</span>    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> hi() __attribute__ ((always_inline)) { *sPort |= sPinMask; }</div>
 <div class="line"><span class="lineno">   94</span>    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> lo() __attribute__ ((always_inline)) { *sPort &amp;= ~sPinMask; }</div>
@@ -310,7 +310,7 @@ $(function(){initNavTree('d3/da0/fastpin__base_8h_a638979cb413d2c19b54f67f773bcf
 <div class="ttc" id="acompiler__control_8h_a9de675fbd4d59f415613d91c159cf5b5_html_a9de675fbd4d59f415613d91c159cf5b5"><div class="ttname"><a href="../../d4/d54/compiler__control_8h_a9de675fbd4d59f415613d91c159cf5b5.html#a9de675fbd4d59f415613d91c159cf5b5">FASTLED_UNUSED</a></div><div class="ttdeci">#define FASTLED_UNUSED(x)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d54/compiler__control_8h_source.html#l00901">compiler_control.h:901</a></div></div>
 <div class="ttc" id="afastpin_8h_a083a0682abe099bbfd4cbd1d4d84ce61_html_a083a0682abe099bbfd4cbd1d4d84ce61"><div class="ttname"><a href="../../db/d65/fastpin_8h_a083a0682abe099bbfd4cbd1d4d84ce61.html#a083a0682abe099bbfd4cbd1d4d84ce61">FastPinBB</a></div><div class="ttdeci">fl::FastPinBB&lt; PIN &gt; FastPinBB</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fastpin_8h_source.html#l00020">fastpin.h:20</a></div></div>
 <div class="ttc" id="afastpin_8h_a31d6a8464287bc411dba5dcedbcd37e0_html_a31d6a8464287bc411dba5dcedbcd37e0"><div class="ttname"><a href="../../db/d65/fastpin_8h_a31d6a8464287bc411dba5dcedbcd37e0.html#a31d6a8464287bc411dba5dcedbcd37e0">FastPin</a></div><div class="ttdeci">fl::FastPin&lt; PIN &gt; FastPin</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fastpin_8h_source.html#l00019">fastpin.h:19</a></div></div>
-<div class="ttc" id="anamespacefl_aa7a47cf722a2586453e75f6e70284dad_html_aa7a47cf722a2586453e75f6e70284dad"><div class="ttname"><a href="../../d4/d36/namespacefl_aa7a47cf722a2586453e75f6e70284dad.html#aa7a47cf722a2586453e75f6e70284dad">fl::pinMode</a></div><div class="ttdeci">void pinMode(int pin, PinMode mode)</div><div class="ttdoc">Set pin mode (input, output, pull-up, pull-down)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d48/pin_8cpp_8hpp_source.html#l00378">pin.cpp.hpp:378</a></div></div>
+<div class="ttc" id="anamespacefl_afd308586a147e06f84e8a83dc55be796_html_afd308586a147e06f84e8a83dc55be796"><div class="ttname"><a href="../../d4/d36/namespacefl_afd308586a147e06f84e8a83dc55be796.html#afd308586a147e06f84e8a83dc55be796">fl::pinMode</a></div><div class="ttdeci">void pinMode(int pin, PinMode mode) FL_NO_EXCEPT</div><div class="ttdoc">Set pin mode (input, output, pull-up, pull-down)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d48/pin_8cpp_8hpp_source.html#l00394">pin.cpp.hpp:394</a></div></div>
 <div class="ttc" id="as16x16x4_8h_abae81a69398c715960350e0a571b754a_html_abae81a69398c715960350e0a571b754a"><div class="ttname"><a href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></div><div class="ttdeci">#define FL_NO_EXCEPT</div></div>
 <div class="ttc" id="astatic__assert_8h_a1e4d1792cf482d5f64f27714ea210d47_html_a1e4d1792cf482d5f64f27714ea210d47"><div class="ttname"><a href="../../d0/d1b/static__assert_8h_a1e4d1792cf482d5f64f27714ea210d47.html#a1e4d1792cf482d5f64f27714ea210d47">FL_STATIC_ASSERT</a></div><div class="ttdeci">#define FL_STATIC_ASSERT(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d1b/static__assert_8h_source.html#l00071">static_assert.h:71</a></div></div>
 </div><!-- fragment -->
@@ -325,7 +325,7 @@ $(function(){initNavTree('d3/da0/fastpin__base_8h_a638979cb413d2c19b54f67f773bcf
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><a class="el" href="../../dir_c27a882fecb444156419346f13162968.html">system</a></li><li class="navelem"><a class="el" href="../../d3/da0/fastpin__base_8h.html">fastpin_base.h</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:05 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:20 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

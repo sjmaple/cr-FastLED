@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -112,7 +112,7 @@ $(function(){initNavTree('da/db7/structfl_1_1_channel_events.html','../../'); in
 <p>Centralized event system - supports multiple listeners per event type. All listeners are shared across all channels. Zero per-channel overhead.</p>
 <p>Usage: </p><div class="fragment"><div class="line"><span class="comment">// Add a listener</span></div>
 <div class="line"><span class="keywordtype">int</span> <span class="keywordtype">id</span> = <a class="code hl_variable" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_a8e94985674086ea368e1d51cbc0f82a9.html#a8e94985674086ea368e1d51cbc0f82a9">FastLED</a>.channelEvents().onChannelCreated.add([](<span class="keyword">const</span> <a class="code hl_class" href="../../d8/dcc/classfl_1_1_i_channel.html">IChannel</a>&amp; ch) {</div>
-<div class="line">    <a class="code hl_define" href="../../d7/d7f/log_8h_a8ccae77aa5fe30a41f19d233cb0de2c1.html#a8ccae77aa5fe30a41f19d233cb0de2c1">FL_DBG</a>(<span class="stringliteral">&quot;Channel created: &quot;</span> &lt;&lt; ch.<a class="code hl_function" href="../../d8/dcc/classfl_1_1_i_channel_a508a681f01ca7710ee20c9c0bc0c201a.html#a508a681f01ca7710ee20c9c0bc0c201a">name</a>());</div>
+<div class="line">    <a class="code hl_define" href="../../d7/d7f/log_8h_a8ccae77aa5fe30a41f19d233cb0de2c1.html#a8ccae77aa5fe30a41f19d233cb0de2c1">FL_DBG</a>(<span class="stringliteral">&quot;Channel created: &quot;</span> &lt;&lt; ch.<a class="code hl_function" href="../../d8/dcc/classfl_1_1_i_channel_af00ca55794002ca6581fd32eb2798a34.html#af00ca55794002ca6581fd32eb2798a34">name</a>());</div>
 <div class="line">});</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Add with priority (higher priority executes first)</span></div>
@@ -122,10 +122,10 @@ $(function(){initNavTree('da/db7/structfl_1_1_channel_events.html','../../'); in
 <div class="line"> </div>
 <div class="line"><span class="comment">// Remove a listener</span></div>
 <div class="line"><a class="code hl_variable" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_a8e94985674086ea368e1d51cbc0f82a9.html#a8e94985674086ea368e1d51cbc0f82a9">FastLED</a>.channelEvents().onChannelCreated.remove(<span class="keywordtype">id</span>);</div>
-<div class="ttc" id="a_fast_l_e_d_8cpp_8hpp_a8e94985674086ea368e1d51cbc0f82a9_html_a8e94985674086ea368e1d51cbc0f82a9"><div class="ttname"><a href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_a8e94985674086ea368e1d51cbc0f82a9.html#a8e94985674086ea368e1d51cbc0f82a9">FastLED</a></div><div class="ttdeci">FL_DISABLE_WARNING_PUSH FL_DISABLE_WARNING_GLOBAL_CONSTRUCTORS CFastLED FastLED</div><div class="ttdoc">Global LED strip management instance.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_source.html#l00090">FastLED.cpp.hpp:90</a></div></div>
-<div class="ttc" id="aclassfl_1_1_i_channel_a508a681f01ca7710ee20c9c0bc0c201a_html_a508a681f01ca7710ee20c9c0bc0c201a"><div class="ttname"><a href="../../d8/dcc/classfl_1_1_i_channel_a508a681f01ca7710ee20c9c0bc0c201a.html#a508a681f01ca7710ee20c9c0bc0c201a">fl::IChannel::name</a></div><div class="ttdeci">virtual const fl::string &amp; name() const =0</div><div class="ttdoc">User-specified or auto-generated name (e.g. &quot;Channel_3&quot;).</div></div>
+<div class="ttc" id="a_fast_l_e_d_8cpp_8hpp_a8e94985674086ea368e1d51cbc0f82a9_html_a8e94985674086ea368e1d51cbc0f82a9"><div class="ttname"><a href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_a8e94985674086ea368e1d51cbc0f82a9.html#a8e94985674086ea368e1d51cbc0f82a9">FastLED</a></div><div class="ttdeci">FL_DISABLE_WARNING_PUSH FL_DISABLE_WARNING_GLOBAL_CONSTRUCTORS CFastLED FastLED</div><div class="ttdoc">Global LED strip management instance.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_source.html#l00093">FastLED.cpp.hpp:93</a></div></div>
+<div class="ttc" id="aclassfl_1_1_i_channel_af00ca55794002ca6581fd32eb2798a34_html_af00ca55794002ca6581fd32eb2798a34"><div class="ttname"><a href="../../d8/dcc/classfl_1_1_i_channel_af00ca55794002ca6581fd32eb2798a34.html#af00ca55794002ca6581fd32eb2798a34">fl::IChannel::name</a></div><div class="ttdeci">virtual const fl::string &amp; name() const FL_NO_EXCEPT=0</div><div class="ttdoc">User-specified or auto-generated name (e.g. &quot;Channel_3&quot;).</div></div>
 <div class="ttc" id="aclassfl_1_1_i_channel_html"><div class="ttname"><a href="../../d8/dcc/classfl_1_1_i_channel.html">fl::IChannel</a></div><div class="ttdoc">Polymorphic identification base for any channel in the system.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dd4/ichannel_8h_source.html#l00023">ichannel.h:23</a></div></div>
-<div class="ttc" id="alog_8h_a8ccae77aa5fe30a41f19d233cb0de2c1_html_a8ccae77aa5fe30a41f19d233cb0de2c1"><div class="ttname"><a href="../../d7/d7f/log_8h_a8ccae77aa5fe30a41f19d233cb0de2c1.html#a8ccae77aa5fe30a41f19d233cb0de2c1">FL_DBG</a></div><div class="ttdeci">#define FL_DBG</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00564">log.h:564</a></div></div>
+<div class="ttc" id="alog_8h_a8ccae77aa5fe30a41f19d233cb0de2c1_html_a8ccae77aa5fe30a41f19d233cb0de2c1"><div class="ttname"><a href="../../d7/d7f/log_8h_a8ccae77aa5fe30a41f19d233cb0de2c1.html#a8ccae77aa5fe30a41f19d233cb0de2c1">FL_DBG</a></div><div class="ttdeci">#define FL_DBG</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00553">log.h:553</a></div></div>
 </div><!-- fragment --><p>Event naming convention:</p><ul>
 <li>Past tense (Created, Added, Configured, Removed, Enqueued): fired after the action</li>
 <li>"Begin" prefix (BeginDestroy, BeginShow): fired before the action</li>
@@ -139,8 +139,8 @@ $(function(){initNavTree('da/db7/structfl_1_1_channel_events.html','../../'); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa02eba6c71d0300625657d33cefceab9" id="r_aa02eba6c71d0300625657d33cefceab9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/db7/structfl_1_1_channel_events.html">ChannelEvents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db7/structfl_1_1_channel_events_aa02eba6c71d0300625657d33cefceab9.html#aa02eba6c71d0300625657d33cefceab9">instance</a> ()</td></tr>
-<tr class="separator:aa02eba6c71d0300625657d33cefceab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236247170dd1280410a535a0777e1abe" id="r_a236247170dd1280410a535a0777e1abe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/db7/structfl_1_1_channel_events.html">ChannelEvents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db7/structfl_1_1_channel_events_a236247170dd1280410a535a0777e1abe.html#a236247170dd1280410a535a0777e1abe">instance</a> () <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="separator:a236247170dd1280410a535a0777e1abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -181,7 +181,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../da/db7/structfl_1_1_channel_events.html">ChannelEvents</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

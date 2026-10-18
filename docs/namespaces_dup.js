@@ -11,8 +11,8 @@ var namespaces_dup =
       [ "LuminanceDecay", "dc/d9f/namespaceanonymous__namespace_02_painter_8cpp_03_afac2eea34857897444e6a1dd09bab603.html#afac2eea34857897444e6a1dd09bab603", null ]
     ] ],
     [ "anonymous_namespace{wave_simulation.cpp.hpp}", "d6/dfd/namespaceanonymous__namespace_02wave__simulation_8cpp_8hpp_03.html", [
-      [ "half_duplex_blend_linear", "d6/dfd/namespaceanonymous__namespace_02wave__simulation_8cpp_8hpp_03_a456a56509f7b64c8771b153fb69d36d2.html#a456a56509f7b64c8771b153fb69d36d2", null ],
-      [ "half_duplex_blend_sqrt_q15", "d6/dfd/namespaceanonymous__namespace_02wave__simulation_8cpp_8hpp_03_a6fdf0d51db80daf47dca1fdea9ac13fd.html#a6fdf0d51db80daf47dca1fdea9ac13fd", null ]
+      [ "half_duplex_blend_linear", "d6/dfd/namespaceanonymous__namespace_02wave__simulation_8cpp_8hpp_03_a59dcc2e422bf836972be14ab552e7865.html#a59dcc2e422bf836972be14ab552e7865", null ],
+      [ "half_duplex_blend_sqrt_q15", "d6/dfd/namespaceanonymous__namespace_02wave__simulation_8cpp_8hpp_03_a1dcd955562187ace13aadb53ff93e98d.html#a1dcd955562187ace13aadb53ff93e98d", null ]
     ] ],
     [ "anonymous_namespace{xypaths.cpp}", "d7/d76/namespaceanonymous__namespace_02xypaths_8cpp_03.html", [
       [ "make_path", "d7/d76/namespaceanonymous__namespace_02xypaths_8cpp_03_a08f9ec245144ed2202fd35be61c5af39.html#a08f9ec245144ed2202fd35be61c5af39", null ]

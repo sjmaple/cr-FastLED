@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -108,10 +108,8 @@ $(function(){initNavTree('d4/df9/structfl_1_1_rgbww.html','../../'); initResizab
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Per-strip RGBWW configuration. </p>
-<p>Parallels <a class="el" href="../../d7/d27/structfl_1_1_rgbw.html">fl::Rgbw</a> but carries the two reference CCTs the layered solver needs (warm-W and cool-W). </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d4/d98/rgbww_8h_source.html#l00060">60</a> of file <a class="el" href="../../d4/d98/rgbww_8h_source.html">rgbww.h</a>.</p>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d4/d98/rgbww_8h_source.html#l00074">74</a> of file <a class="el" href="../../d4/d98/rgbww_8h_source.html">rgbww.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="../../d4/d98/rgbww_8h_source.html">rgbww.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -131,9 +129,12 @@ $(function(){initNavTree('d4/df9/structfl_1_1_rgbww.html','../../'); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0d2908da04ace06a285f187b68b4e169" id="r_a0d2908da04ace06a285f187b68b4e169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df9/structfl_1_1_rgbww_a0d2908da04ace06a285f187b68b4e169.html#a0d2908da04ace06a285f187b68b4e169">Rgbww</a> (fl::u16 warm=<a class="el" href="../../d4/d36/namespacefl_aa1f2c9b02ae2dfa7ef03e9013f8134d0.html#aa1f2c9b02ae2dfa7ef03e9013f8134d0a17fff3b0191ec6d90ae404f7ad1044e8">kRGBWWDefaultWarmCct</a>, fl::u16 cool=<a class="el" href="../../d4/d36/namespacefl_aa1f2c9b02ae2dfa7ef03e9013f8134d0.html#aa1f2c9b02ae2dfa7ef03e9013f8134d0a398e3d5b71e9701ad7d693cf91d32d62">kRGBWWDefaultCoolCct</a>, <a class="el" href="../../d4/d36/namespacefl_ad5c5b1ec01cb08e389332d8af2f3a8c5.html#ad5c5b1ec01cb08e389332d8af2f3a8c5">RGBWW_MODE</a> mode=<a class="el" href="../../d4/d36/namespacefl_ad5c5b1ec01cb08e389332d8af2f3a8c5.html#ad5c5b1ec01cb08e389332d8af2f3a8c5a855651d4bdaa582362e48afc4d6c583b">RGBWW_MODE::kRGBWWColorimetric</a>, <a class="el" href="../../d4/d36/namespacefl_a58e6be0272b37868f7f5517d3ba8776d.html#a58e6be0272b37868f7f5517d3ba8776d">EOrderWW</a> placement=<a class="el" href="../../d4/d36/namespacefl_a58e6be0272b37868f7f5517d3ba8776d.html#a58e6be0272b37868f7f5517d3ba8776dac41e2f82df71ab6a225913fca43c0409">EOrderWW::WWDefault</a>) <a class="el" href="../../d4/d36/namespacefl_aa317f89ca911371e798d08a93770402f.html#aa317f89ca911371e798d08a93770402f">FL_NO_EXCEPT</a></td></tr>
+<tr class="memitem:a25a4a1ef424de0116c0a7e73e438a167" id="r_a25a4a1ef424de0116c0a7e73e438a167"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df9/structfl_1_1_rgbww_a25a4a1ef424de0116c0a7e73e438a167.html#a25a4a1ef424de0116c0a7e73e438a167">Rgbww</a> (<a class="el" href="../../df/d9e/namespacefl_1_1detail.html#df/dd8/structfl_1_1detail_1_1_rgbww_no_encoder">detail::RgbwwNoEncoder</a>) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a25a4a1ef424de0116c0a7e73e438a167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inactive value that does not link the RGBWW encoder (<a class="el" href="../../d3/d33/structfl_1_1_rgbww_invalid.html" title="Sentinel: disables RGBWW (variant should hold fl::Empty instead, but this is kept for symmetry with R...">RgbwwInvalid</a>).  <br /></td></tr>
+<tr class="separator:a25a4a1ef424de0116c0a7e73e438a167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2908da04ace06a285f187b68b4e169" id="r_a0d2908da04ace06a285f187b68b4e169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df9/structfl_1_1_rgbww_a0d2908da04ace06a285f187b68b4e169.html#a0d2908da04ace06a285f187b68b4e169">Rgbww</a> (fl::u16 warm=<a class="el" href="../../d4/d36/namespacefl_aa1f2c9b02ae2dfa7ef03e9013f8134d0.html#aa1f2c9b02ae2dfa7ef03e9013f8134d0a17fff3b0191ec6d90ae404f7ad1044e8">kRGBWWDefaultWarmCct</a>, fl::u16 cool=<a class="el" href="../../d4/d36/namespacefl_aa1f2c9b02ae2dfa7ef03e9013f8134d0.html#aa1f2c9b02ae2dfa7ef03e9013f8134d0a398e3d5b71e9701ad7d693cf91d32d62">kRGBWWDefaultCoolCct</a>, <a class="el" href="../../d4/d36/namespacefl_ad5c5b1ec01cb08e389332d8af2f3a8c5.html#ad5c5b1ec01cb08e389332d8af2f3a8c5">RGBWW_MODE</a> mode=<a class="el" href="../../d4/d36/namespacefl_ad5c5b1ec01cb08e389332d8af2f3a8c5.html#ad5c5b1ec01cb08e389332d8af2f3a8c5a855651d4bdaa582362e48afc4d6c583b">RGBWW_MODE::kRGBWWColorimetric</a>, <a class="el" href="../../d4/d36/namespacefl_a58e6be0272b37868f7f5517d3ba8776d.html#a58e6be0272b37868f7f5517d3ba8776d">EOrderWW</a> placement=<a class="el" href="../../d4/d36/namespacefl_a58e6be0272b37868f7f5517d3ba8776d.html#a58e6be0272b37868f7f5517d3ba8776dac41e2f82df71ab6a225913fca43c0409">EOrderWW::WWDefault</a>) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
 <tr class="separator:a0d2908da04ace06a285f187b68b4e169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31e09c3347d89adb6fb6a72964679799" id="r_a31e09c3347d89adb6fb6a72964679799"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d54/compiler__control_8h_a2f767b53d92c9d761d9f8d28a35d80c7.html#a2f767b53d92c9d761d9f8d28a35d80c7">FASTLED_FORCE_INLINE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df9/structfl_1_1_rgbww_a31e09c3347d89adb6fb6a72964679799.html#a31e09c3347d89adb6fb6a72964679799">active</a> () const <a class="el" href="../../d4/d36/namespacefl_aa317f89ca911371e798d08a93770402f.html#aa317f89ca911371e798d08a93770402f">FL_NO_EXCEPT</a></td></tr>
+<tr class="memitem:a31e09c3347d89adb6fb6a72964679799" id="r_a31e09c3347d89adb6fb6a72964679799"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d54/compiler__control_8h_a2f767b53d92c9d761d9f8d28a35d80c7.html#a2f767b53d92c9d761d9f8d28a35d80c7">FASTLED_FORCE_INLINE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df9/structfl_1_1_rgbww_a31e09c3347d89adb6fb6a72964679799.html#a31e09c3347d89adb6fb6a72964679799">active</a> () const <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
 <tr class="separator:a31e09c3347d89adb6fb6a72964679799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -160,7 +161,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d4/df9/structfl_1_1_rgbww.html">Rgbww</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:09 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:31 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -42,9 +42,6 @@ var hierarchy =
     [ "CEveryNTime", "de/d1d/class_c_every_n_time.html", null ],
     [ "CFastLED", "dd/dbb/class_c_fast_l_e_d.html", null ],
     [ "CFastLED::ClockedChipsetHelper< CHIPSET, DATA_PIN, CLOCK_PIN >", "d3/de5/struct_c_fast_l_e_d_1_1_clocked_chipset_helper.html", null ],
-    [ "Chipset", null, [
-      [ "fl::StaticProfileClocklessController< Profile, Chipset, DataPin, RgbOrder >", "d1/dfd/classfl_1_1_static_profile_clockless_controller.html", null ]
-    ] ],
     [ "CMinWait< WAIT >", "d1/d6d/class_c_min_wait.html", null ],
     [ "Color3i", "de/d12/struct_color3i.html", null ],
     [ "ColorAdjustment", "d4/d7d/struct_color_adjustment.html", null ],
@@ -279,6 +276,8 @@ var hierarchy =
       [ "fl::gfx::detail::needs_division< Coord, typename voider< fl::bool_constant<(Coord::FRAC_BITS< 16)> >::type >", "d0/d03/structfl_1_1gfx_1_1detail_1_1needs__division_3_01_coord_00_01typename_01voider_3_01fl_1_1bool__c1a553c77f5f2fce0cc006d8fcf673a28.html", null ]
     ] ],
     [ "fl::BoolConversionVisitor", "d4/dfe/structfl_1_1_bool_conversion_visitor.html", null ],
+    [ "fl::BootGuardDecision", "d4/d36/namespacefl.html#d6/d90/structfl_1_1_boot_guard_decision", null ],
+    [ "fl::BootGuardRecord", "d4/d36/namespacefl.html#d5/dec/structfl_1_1_boot_guard_record", null ],
     [ "fl::BusInstanceCount< B >", "dc/de4/structfl_1_1_bus_instance_count.html", null ],
     [ "fl::BusTraits< B, Which >", "d4/d36/namespacefl.html#d8/d0d/structfl_1_1_bus_traits", null ],
     [ "fl::ButtonLowLevel", "dd/d6e/classfl_1_1_button_low_level.html", null ],
@@ -302,6 +301,10 @@ var hierarchy =
     [ "fl::ChannelManager::EngineEntry", "d2/d6e/structfl_1_1_channel_manager_1_1_engine_entry.html", null ],
     [ "fl::ChannelOptions", "d5/d87/structfl_1_1_channel_options.html", null ],
     [ "fl::ChannelRequest", "d5/dfc/structfl_1_1_channel_request.html", null ],
+    [ "fl::channels::rx::Ws2812StreamDecoder", "d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder.html", null ],
+    [ "fl::channels::rx::Ws2812StreamDecoder::Exception", "d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder.html#d4/dad/structfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_1_1_exception", null ],
+    [ "fl::channels::rx::Ws2812StreamDecoder::Pending", "d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder.html#db/d72/structfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_1_1_pending", null ],
+    [ "fl::channels::rx::Ws2812StreamDecoder::Stats", "d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder.html#d2/d64/structfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder_1_1_stats", null ],
     [ "fl::ChasingSpiralPixelLUT", "d4/d36/namespacefl.html#df/d9e/structfl_1_1_chasing_spiral_pixel_l_u_t", null ],
     [ "fl::ChipsetClocklessTiming", "d2/d77/structfl_1_1_chipset_clockless_timing.html", null ],
     [ "fl::ChipsetTiming", "d4/d36/namespacefl.html#dc/dc3/structfl_1_1_chipset_timing", null ],
@@ -464,6 +467,8 @@ var hierarchy =
     [ "fl::detail::DeviceInfoResolver< Bus::AUTO, Which >", "d2/d7d/structfl_1_1detail_1_1_device_info_resolver_3_01_bus_1_1_a_u_t_o_00_01_which_01_4.html", null ],
     [ "fl::detail::DeviceInfoResolver< Bus::BIT_BANG, Which >", "d9/da0/structfl_1_1detail_1_1_device_info_resolver_3_01_bus_1_1_b_i_t___b_a_n_g_00_01_which_01_4.html", null ],
     [ "fl::detail::DoubleBits", "df/d9e/namespacefl_1_1detail.html#d1/d7a/unionfl_1_1detail_1_1_double_bits", null ],
+    [ "fl::detail::enable_clockless_for< Chipset, Traits >", "d0/d56/structfl_1_1detail_1_1enable__clockless__for.html", null ],
+    [ "fl::detail::enable_clockless_for< ClocklessChipset, Traits >", "d3/d9d/structfl_1_1detail_1_1enable__clockless__for_3_01_clockless_chipset_00_01_traits_01_4.html", null ],
     [ "fl::detail::ErasedInvoker", "dc/d61/classfl_1_1detail_1_1_erased_invoker.html", [
       [ "fl::detail::ResponseAwareInvoker< R(Args...)>", "d3/d5e/classfl_1_1detail_1_1_response_aware_invoker_3_01_r_07_args_8_8_8_08_4.html", null ],
       [ "fl::detail::ResponseAwareInvoker< void(Args...)>", "db/d87/classfl_1_1detail_1_1_response_aware_invoker_3_01void_07_args_8_8_8_08_4.html", null ],
@@ -531,6 +536,8 @@ var hierarchy =
     [ "fl::detail::resolve_bus< B, Chipset >", "d2/d36/structfl_1_1detail_1_1resolve__bus.html", null ],
     [ "fl::detail::resolve_bus< Bus::AUTO, Chipset >", "d8/de5/structfl_1_1detail_1_1resolve__bus_3_01_bus_1_1_a_u_t_o_00_01_chipset_01_4.html", null ],
     [ "fl::detail::ResponseAwareInvoker< Sig >", "df/d9e/namespacefl_1_1detail.html#d6/dfa/classfl_1_1detail_1_1_response_aware_invoker", null ],
+    [ "fl::detail::RgbwNoEncoder", "df/d9e/namespacefl_1_1detail.html#df/df2/structfl_1_1detail_1_1_rgbw_no_encoder", null ],
+    [ "fl::detail::RgbwwNoEncoder", "df/d9e/namespacefl_1_1detail.html#df/dd8/structfl_1_1detail_1_1_rgbww_no_encoder", null ],
     [ "fl::detail::RmtLoggerInfo", "da/da0/structfl_1_1detail_1_1_rmt_logger_info.html", null ],
     [ "fl::detail::RpcEntry", "df/d9e/namespacefl_1_1detail.html#db/d7e/structfl_1_1detail_1_1_rpc_entry", null ],
     [ "fl::detail::RpcTypeOps", "df/d9e/namespacefl_1_1detail.html#d7/de5/structfl_1_1detail_1_1_rpc_type_ops", null ],
@@ -1192,6 +1199,7 @@ var hierarchy =
     [ "fl::Leds", "d9/d06/classfl_1_1_leds.html", [
       [ "fl::LedsXY< W, H >", "de/d43/classfl_1_1_leds_x_y.html", null ]
     ] ],
+    [ "fl::LegacySettings", "d1/dc1/structfl_1_1_legacy_settings.html", null ],
     [ "fl::less< T >", "d6/d07/structfl_1_1less.html", null ],
     [ "fl::less< void >", "d0/db6/structfl_1_1less_3_01void_01_4.html", null ],
     [ "fl::line_xy< T >", "da/d95/structfl_1_1line__xy.html", null ],
@@ -1370,6 +1378,8 @@ var hierarchy =
     [ "fl::qfx< T, F, I >", "da/dc1/classfl_1_1qfx.html", null ],
     [ "fl::queue< T, Container >", "da/d7f/classfl_1_1queue.html", null ],
     [ "fl::ratio< Num, Denom >", "d6/d46/structfl_1_1ratio.html", null ],
+    [ "fl::RawPremixBinder< T, typename >", "d3/d58/structfl_1_1_raw_premix_binder.html", null ],
+    [ "fl::RawPremixBinder< T, typename detail::OnlyIf<(T::kColorOrder==T::kColorOrder)>::type >", "da/d0a/structfl_1_1_raw_premix_binder_3_01_t_00_01typename_01detail_1_1_only_if_3_07_t_1_1k_color_order8fea78a11dcd4d8e9438a8a8d40fb220.html", null ],
     [ "fl::rect< T >", "d2/d48/structfl_1_1rect.html", null ],
     [ "fl::RectangularDrawBuffer", "de/d10/classfl_1_1_rectangular_draw_buffer.html", null ],
     [ "fl::RedBlackTree< T, Compare, Allocator >", "dd/d28/classfl_1_1_red_black_tree.html", null ],
@@ -1414,7 +1424,7 @@ var hierarchy =
       [ "fl::RgbwWhiteIsOff", "d6/da6/structfl_1_1_rgbw_white_is_off.html", null ]
     ] ],
     [ "fl::RgbwLoadBinder< T, typename >", "d3/d8d/structfl_1_1_rgbw_load_binder.html", null ],
-    [ "fl::RgbwLoadBinder< T, typename detail::OnlyIf<(T::kColorOrder==RGB)>::type >", "dd/de0/structfl_1_1_rgbw_load_binder_3_01_t_00_01typename_01detail_1_1_only_if_3_07_t_1_1k_color_order_0a_0a_r_g_b_08_4_1_1type_01_4.html", null ],
+    [ "fl::RgbwLoadBinder< T, typename detail::OnlyIf<(T::kColorOrder==T::kColorOrder)>::type >", "d1/dbd/structfl_1_1_rgbw_load_binder_3_01_t_00_01typename_01detail_1_1_only_if_3_07_t_1_1k_color_order_114d616d408d2e5e83aa2ae3356ce8bf.html", null ],
     [ "fl::RGBWPixel", "df/df1/structfl_1_1_r_g_b_w_pixel.html", null ],
     [ "fl::Rgbww", "d4/df9/structfl_1_1_rgbww.html", [
       [ "fl::RgbwwDefault", "d6/dd0/structfl_1_1_rgbww_default.html", null ],

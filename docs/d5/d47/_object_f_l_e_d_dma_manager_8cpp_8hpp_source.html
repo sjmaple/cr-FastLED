@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -109,71 +109,105 @@ $(function(){initNavTree('d5/d47/_object_f_l_e_d_dma_manager_8cpp_8hpp_source.ht
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/d07/_object_f_l_e_d_dma_manager_8h.html">ObjectFLEDDmaManager.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/dee/delay_8h.html">fl/system/delay.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d36/namespacefl.html">fl</a> {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Define static members</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>DMAMEM <a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> ObjectFLEDDmaManager::bitdata[BYTES_PER_DMA * 64] __attribute__((used, aligned(32)));</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>DMAMEM <a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> ObjectFLEDDmaManager::bitmask[4] __attribute__((used, aligned(32)));</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// #3416 OF-HIGH-1 / CodeRabbit-flagged: save/restore PRIMASK rather than</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// unconditionally re-enabling interrupts, so we don&#39;t clobber the</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// caller&#39;s IRQ-disabled state if we&#39;re invoked from inside another</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// critical section. Inline asm avoids needing the CMSIS header.</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> fl_save_primask_disable() {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> pm;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    __asm <span class="keyword">volatile</span> (<span class="stringliteral">&quot;mrs %0, primask\n\tcpsid i&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span>(pm) :: <span class="stringliteral">&quot;memory&quot;</span>);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> pm;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> fl_restore_primask(<a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> pm) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    __asm <span class="keyword">volatile</span> (<span class="stringliteral">&quot;msr primask, %0&quot;</span> :: <span class="stringliteral">&quot;r&quot;</span>(pm) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">void</span> ObjectFLEDDmaManager::acquire(<span class="keywordtype">void</span>* owner) {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// Wait for any current transmission to complete</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    waitForCompletion();</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> pm = fl_save_primask_disable();</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    mCurrentOwner = owner;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    fl_restore_primask(pm);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> ObjectFLEDDmaManager::release(<span class="keywordtype">void</span>* owner) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> pm = fl_save_primask_disable();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">if</span> (mCurrentOwner != owner) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        fl_restore_primask(pm);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    mCurrentOwner = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    fl_restore_primask(pm);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keywordtype">void</span> ObjectFLEDDmaManager::waitForCompletion() {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// Spin-wait for DMA completion with periodic delays.</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">while</span> (!dma3.complete()) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_afd724068da70fdbc6a52b047d0d924e9.html#afd724068da70fdbc6a52b047d0d924e9">delayMicroseconds</a>(10);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// #3416 OF-MED-6: dma3.complete() reflects DMA major-loop done but</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// does NOT include the WS2812 reset latch period. If the caller is</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// about to destroy the LED buffer or hand the line off to another</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// peripheral, returning here can corrupt the final frame&#39;s tail</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// bits. The destructor wait path adds its own latch margin (see</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// ObjectFLED::~ObjectFLED) but defensive callers should also gate</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// on busy()==0 which factors in LATCH_DELAY. Documented here so</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// the next reader doesn&#39;t mistake &quot;DMA done&quot; for &quot;frame done&quot;.</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keywordtype">bool</span> ObjectFLEDDmaManager::isBusy() {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> !dma3.complete();</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>} <span class="comment">// namespace fl</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif </span><span class="comment">// FL_IS_TEENSY_4X</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../d8/d6f/_object_f_l_e_d_bitdata_size_8h.html">ObjectFLEDBitdataSize.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="../../d0/d4c/malloc_8h.html">fl/stl/malloc.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;platforms/arm/teensy/teensy4_common/dmamem.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d36/namespacefl.html">fl</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Define static members</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>FL_DMAMEM <a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> ObjectFLEDDmaManager::bitmask[4] __attribute__((aligned(32)));</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// #3416 OF-HIGH-1 / CodeRabbit-flagged: save/restore PRIMASK rather than</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// unconditionally re-enabling interrupts, so we don&#39;t clobber the</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// caller&#39;s IRQ-disabled state if we&#39;re invoked from inside another</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// critical section. Inline asm avoids needing the CMSIS header.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> fl_save_primask_disable() {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> pm;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    __asm <span class="keyword">volatile</span> (<span class="stringliteral">&quot;mrs %0, primask\n\tcpsid i&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span>(pm) :: <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> pm;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> fl_restore_primask(<a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> pm) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    __asm <span class="keyword">volatile</span> (<span class="stringliteral">&quot;msr primask, %0&quot;</span> :: <span class="stringliteral">&quot;r&quot;</span>(pm) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> ObjectFLEDDmaManager::acquire(<span class="keywordtype">void</span>* owner) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// Wait for any current transmission to complete</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    waitForCompletion();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> pm = fl_save_primask_disable();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    mCurrentOwner = owner;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    fl_restore_primask(pm);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">void</span> ObjectFLEDDmaManager::release(<span class="keywordtype">void</span>* owner) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> pm = fl_save_primask_disable();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">if</span> (mCurrentOwner != owner) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        fl_restore_primask(pm);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    mCurrentOwner = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    fl_restore_primask(pm);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">void</span> ObjectFLEDDmaManager::waitForCompletion() {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// Spin-wait for DMA completion with periodic delays.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">while</span> (!dma3.complete()) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_afd724068da70fdbc6a52b047d0d924e9.html#afd724068da70fdbc6a52b047d0d924e9">delayMicroseconds</a>(10);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// #3416 OF-MED-6: dma3.complete() reflects DMA major-loop done but</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// does NOT include the WS2812 reset latch period. If the caller is</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// about to destroy the LED buffer or hand the line off to another</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// peripheral, returning here can corrupt the final frame&#39;s tail</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// bits. The destructor wait path adds its own latch margin (see</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// ObjectFLED::~ObjectFLED) but defensive callers should also gate</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// on busy()==0 which factors in LATCH_DELAY. Documented here so</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// the next reader doesn&#39;t mistake &quot;DMA done&quot; for &quot;frame done&quot;.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keywordtype">bool</span> ObjectFLEDDmaManager::ensureBitdata(<a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> numbytes) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a> words =</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <a class="code hl_function" href="../../d4/dc4/namespaceobjectfled_af65d272ecfb5176395ee47f32aa79799.html#af65d272ecfb5176395ee47f32aa79799">objectfled::grownBitdataWords</a>(bitdataWords, numbytes, BYTES_PER_DMA);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">if</span> (words == bitdataWords &amp;&amp; bitdata != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// Over-allocate and align the start to a 32-byte cache line. The size</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// is a multiple of 128 B, so arm_dcache_flush_delete() never touches a</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// line shared with other heap data.</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// Free the old (too small) buffer first: it can&#39;t serve this frame, and</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// freeing it lets the allocator reuse that space for the larger block.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_function" href="../../d4/d36/namespacefl_a29c1d27c1c4e3d5b9e1666ab97bb9ca6.html#a29c1d27c1c4e3d5b9e1666ab97bb9ca6">fl::free</a>(mBitdataAlloc);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    mBitdataAlloc = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    bitdata = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    bitdataWords = 0;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span>* block = <a class="code hl_function" href="../../d4/d36/namespacefl_a54b0497aee91c68712ecaedbf503a39d.html#a54b0497aee91c68712ecaedbf503a39d">fl::malloc</a>(words * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a>) + 31);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">if</span> (block == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// caller drops the frame</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    mBitdataAlloc = block;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    bitdata = <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_typedef" href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a>*<span class="keyword">&gt;</span>(</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        (<span class="keyword">reinterpret_cast&lt;</span><a class="code hl_typedef" href="../../df/dd8/stdint_8h_a7e69f0cd7bafb913c669b0d6a1aa5b46.html#a7e69f0cd7bafb913c669b0d6a1aa5b46">uintptr_t</a><span class="keyword">&gt;</span>(block) + 31) &amp; ~uintptr_t(31));</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    bitdataWords = words;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keywordtype">bool</span> ObjectFLEDDmaManager::isBusy() {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> !dma3.complete();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>} <span class="comment">// namespace fl</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#endif </span><span class="comment">// FL_IS_TEENSY_4X</span></div>
+<div class="ttc" id="a_object_f_l_e_d_bitdata_size_8h_html"><div class="ttname"><a href="../../d8/d6f/_object_f_l_e_d_bitdata_size_8h.html">ObjectFLEDBitdataSize.h</a></div></div>
 <div class="ttc" id="a_object_f_l_e_d_dma_manager_8h_html"><div class="ttname"><a href="../../da/d07/_object_f_l_e_d_dma_manager_8h.html">ObjectFLEDDmaManager.h</a></div></div>
 <div class="ttc" id="adelay_8h_html"><div class="ttname"><a href="../../dd/dee/delay_8h.html">delay.h</a></div><div class="ttdoc">Delay utilities for FastLED Includes nanosecond-precision delays, cycle counting, and microsecond del...</div></div>
-<div class="ttc" id="anamespacefl_afd724068da70fdbc6a52b047d0d924e9_html_afd724068da70fdbc6a52b047d0d924e9"><div class="ttname"><a href="../../d4/d36/namespacefl_afd724068da70fdbc6a52b047d0d924e9.html#afd724068da70fdbc6a52b047d0d924e9">fl::delayMicroseconds</a></div><div class="ttdeci">void delayMicroseconds(u32 us)</div><div class="ttdoc">Delay for a given number of microseconds.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d03/delay_8cpp_8hpp_source.html#l00206">delay.cpp.hpp:206</a></div></div>
+<div class="ttc" id="amalloc_8h_html"><div class="ttname"><a href="../../d0/d4c/malloc_8h.html">malloc.h</a></div></div>
+<div class="ttc" id="anamespacefl_a29c1d27c1c4e3d5b9e1666ab97bb9ca6_html_a29c1d27c1c4e3d5b9e1666ab97bb9ca6"><div class="ttname"><a href="../../d4/d36/namespacefl_a29c1d27c1c4e3d5b9e1666ab97bb9ca6.html#a29c1d27c1c4e3d5b9e1666ab97bb9ca6">fl::free</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void free(void *ptr) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d4c/malloc_8h_source.html#l00023">malloc.h:23</a></div></div>
+<div class="ttc" id="anamespacefl_a54b0497aee91c68712ecaedbf503a39d_html_a54b0497aee91c68712ecaedbf503a39d"><div class="ttname"><a href="../../d4/d36/namespacefl_a54b0497aee91c68712ecaedbf503a39d.html#a54b0497aee91c68712ecaedbf503a39d">fl::malloc</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void * malloc(size_t size) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d4c/malloc_8h_source.html#l00021">malloc.h:21</a></div></div>
+<div class="ttc" id="anamespacefl_afd724068da70fdbc6a52b047d0d924e9_html_afd724068da70fdbc6a52b047d0d924e9"><div class="ttname"><a href="../../d4/d36/namespacefl_afd724068da70fdbc6a52b047d0d924e9.html#afd724068da70fdbc6a52b047d0d924e9">fl::delayMicroseconds</a></div><div class="ttdeci">void delayMicroseconds(u32 us) FL_NO_EXCEPT</div><div class="ttdoc">Delay for a given number of microseconds.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d03/delay_8cpp_8hpp_source.html#l00206">delay.cpp.hpp:206</a></div></div>
 <div class="ttc" id="anamespacefl_html"><div class="ttname"><a href="../../d4/d36/namespacefl.html">fl</a></div><div class="ttdoc">Base definition for an LED controller.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d4b/crgb_8hpp_source.html#l00179">crgb.hpp:179</a></div></div>
+<div class="ttc" id="anamespaceobjectfled_af65d272ecfb5176395ee47f32aa79799_html_af65d272ecfb5176395ee47f32aa79799"><div class="ttname"><a href="../../d4/dc4/namespaceobjectfled_af65d272ecfb5176395ee47f32aa79799.html#af65d272ecfb5176395ee47f32aa79799">objectfled::grownBitdataWords</a></div><div class="ttdeci">constexpr uint32_t grownBitdataWords(uint32_t currentWords, uint32_t numbytes, uint32_t bytesPerDma)</div><div class="ttdoc">New capacity after seeing a frame of numbytes: grows, never shrinks.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d6f/_object_f_l_e_d_bitdata_size_8h_source.html#l00024">ObjectFLEDBitdataSize.h:24</a></div></div>
+<div class="ttc" id="astdint_8h_a7e69f0cd7bafb913c669b0d6a1aa5b46_html_a7e69f0cd7bafb913c669b0d6a1aa5b46"><div class="ttname"><a href="../../df/dd8/stdint_8h_a7e69f0cd7bafb913c669b0d6a1aa5b46.html#a7e69f0cd7bafb913c669b0d6a1aa5b46">uintptr_t</a></div><div class="ttdeci">fl::uptr uintptr_t</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00223">stdint.h:223</a></div></div>
 <div class="ttc" id="astdint_8h_ae8a835bf6e050b01cc449644a343aa73_html_ae8a835bf6e050b01cc449644a343aa73"><div class="ttname"><a href="../../df/dd8/stdint_8h_ae8a835bf6e050b01cc449644a343aa73.html#ae8a835bf6e050b01cc449644a343aa73">uint32_t</a></div><div class="ttdeci">fl::u32 uint32_t</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00218">stdint.h:218</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -182,7 +216,7 @@ $(function(){initNavTree('d5/d47/_object_f_l_e_d_dma_manager_8cpp_8hpp_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_c30bdf76ce759a4eae8387be42921388.html">third_party</a></li><li class="navelem"><a class="el" href="../../dir_c31c3e3593f8f0c28b47badf4d12d70e.html">object_fled</a></li><li class="navelem"><a class="el" href="../../dir_3fb338c90e52612a3293a7dbe09f30ff.html">src</a></li><li class="navelem"><a class="el" href="../../d5/d47/_object_f_l_e_d_dma_manager_8cpp_8hpp.html">ObjectFLEDDmaManager.cpp.hpp</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:02 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:17 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

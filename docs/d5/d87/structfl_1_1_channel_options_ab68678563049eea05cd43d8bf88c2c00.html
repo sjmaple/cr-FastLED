@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -125,21 +125,25 @@ template&lt;const <a class="el" href="../../d0/d10/structfl_1_1colorimetric__res
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d5b/options_8h_source.html#l00268">268</a> of file <a class="el" href="../../d7/d5b/options_8h_source.html">options.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  268</span>                                                          {</div>
-<div class="line"><span class="lineno">  269</span>        ChannelOptions options;</div>
-<div class="line"><span class="lineno">  270</span><span class="preprocessor">#if FL_COLOR_PROFILE_RUNTIME</span></div>
-<div class="line"><span class="lineno">  271</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_a2321ecc6a20f28d25814f956eded8304.html#a2321ecc6a20f28d25814f956eded8304">installColorPipelineHooks</a>();</div>
-<div class="line"><span class="lineno">  272</span>        options.mColorProfile.mStaticProfile = &amp;Profile;</div>
-<div class="line"><span class="lineno">  273</span>        options.mColorProfile.mRequested = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  274</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  275</span>        <span class="keywordflow">return</span> options;</div>
-<div class="line"><span class="lineno">  276</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d5b/options_8h_source.html#l00275">275</a> of file <a class="el" href="../../d7/d5b/options_8h_source.html">options.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  275</span>                                                          {</div>
+<div class="line"><span class="lineno">  276</span><span class="preprocessor">#ifdef FL_IS_AVR</span></div>
+<div class="line"><span class="lineno">  277</span>        <a class="code hl_define" href="../../d0/d1b/static__assert_8h_a1e4d1792cf482d5f64f27714ea210d47.html#a1e4d1792cf482d5f64f27714ea210d47">FL_STATIC_ASSERT</a>(&amp;Profile == <span class="keyword">nullptr</span>, <span class="stringliteral">&quot;Color profiles require the Channels API on a supported non-AVR platform&quot;</span>);</div>
+<div class="line"><span class="lineno">  278</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  279</span>        ChannelOptions options;</div>
+<div class="line"><span class="lineno">  280</span><span class="preprocessor">#if FL_COLOR_PROFILE_RUNTIME</span></div>
+<div class="line"><span class="lineno">  281</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_a2321ecc6a20f28d25814f956eded8304.html#a2321ecc6a20f28d25814f956eded8304">installColorPipelineHooks</a>();</div>
+<div class="line"><span class="lineno">  282</span>        options.mColorProfile.mStaticProfile = &amp;Profile;</div>
+<div class="line"><span class="lineno">  283</span>        options.mColorProfile.mRequested = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  284</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  285</span>        <span class="keywordflow">return</span> options;</div>
+<div class="line"><span class="lineno">  286</span>    }</div>
 <div class="ttc" id="anamespacefl_a2321ecc6a20f28d25814f956eded8304_html_a2321ecc6a20f28d25814f956eded8304"><div class="ttname"><a href="../../d4/d36/namespacefl_a2321ecc6a20f28d25814f956eded8304.html#a2321ecc6a20f28d25814f956eded8304">fl::installColorPipelineHooks</a></div><div class="ttdeci">void installColorPipelineHooks() FL_NO_EXCEPT</div><div class="ttdoc">Point the hooks at the real implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d09/pipeline__binding_8cpp_8hpp_source.html#l00319">pipeline_binding.cpp.hpp:319</a></div></div>
+<div class="ttc" id="astatic__assert_8h_a1e4d1792cf482d5f64f27714ea210d47_html_a1e4d1792cf482d5f64f27714ea210d47"><div class="ttname"><a href="../../d0/d1b/static__assert_8h_a1e4d1792cf482d5f64f27714ea210d47.html#a1e4d1792cf482d5f64f27714ea210d47">FL_STATIC_ASSERT</a></div><div class="ttdeci">#define FL_STATIC_ASSERT(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d1b/static__assert_8h_source.html#l00071">static_assert.h:71</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d6/d09/pipeline__binding_8cpp_8hpp_source.html#l00319">fl::installColorPipelineHooks()</a>, and <a class="el" href="../../d7/d5b/options_8h_source.html#l00268">withColorProfile()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d0/d1b/static__assert_8h_source.html#l00071">FL_STATIC_ASSERT</a>, <a class="el" href="../../d6/d09/pipeline__binding_8cpp_8hpp_source.html#l00319">fl::installColorPipelineHooks()</a>, and <a class="el" href="../../d7/d5b/options_8h_source.html#l00275">withColorProfile()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d5b/options_8h_source.html#l00268">withColorProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d5b/options_8h_source.html#l00275">withColorProfile()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -164,7 +168,7 @@ template&lt;const <a class="el" href="../../d0/d10/structfl_1_1colorimetric__res
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d5/d87/structfl_1_1_channel_options.html">ChannelOptions</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

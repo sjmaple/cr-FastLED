@@ -14,7 +14,7 @@ var canvas_8h =
     [ "fl::gfx::blurGaussian", "d0/d8b/namespacefl_1_1gfx_a0b9368df543fe5081aa85fcb3d9497ed.html#a0b9368df543fe5081aa85fcb3d9497ed", null ],
     [ "fl::gfx::blurGaussian", "d0/d8b/namespacefl_1_1gfx_a6d0a0dcf735c179c1ba1fe42a15a25e1.html#a6d0a0dcf735c179c1ba1fe42a15a25e1", null ],
     [ "fl::gfx::drawDisc", "d0/d8b/namespacefl_1_1gfx_ae22a45cc68484f639900a88a7980921d.html#ae22a45cc68484f639900a88a7980921d", null ],
-    [ "fl::gfx::drawLine", "d0/d8b/namespacefl_1_1gfx_a0efcb1204c3209937cf4fb131d9f6cf7.html#a0efcb1204c3209937cf4fb131d9f6cf7", null ],
+    [ "fl::gfx::drawLine", "d0/d8b/namespacefl_1_1gfx_a4138f21090cd1997b91c8ee13751bdf2.html#a4138f21090cd1997b91c8ee13751bdf2", null ],
     [ "fl::gfx::drawRing", "d0/d8b/namespacefl_1_1gfx_a75d6dbe05ac9b2bf1f0e6c787e3fe1af.html#a75d6dbe05ac9b2bf1f0e6c787e3fe1af", null ],
     [ "fl::gfx::drawStrokeLine", "d0/d8b/namespacefl_1_1gfx_a2a77f17a63e8849d012891de310a2ec5.html#a2a77f17a63e8849d012891de310a2ec5", null ]
 ];

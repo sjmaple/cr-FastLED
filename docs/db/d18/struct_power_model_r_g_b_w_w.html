@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -111,21 +111,21 @@ $(function(){initNavTree('db/d18/struct_power_model_r_g_b_w_w.html','../../'); i
 <div class="textblock"><p>RGBWW LED power consumption model (RGB + warm white + cool white). </p>
 <p>Managed five-emitter output charges these channels independently. Legacy output retains the historical folded-RGB estimate for compatibility. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d5b/power__mgt_8h_source.html#l00098">98</a> of file <a class="el" href="../../dc/d5b/power__mgt_8h_source.html">power_mgt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d5b/power__mgt_8h_source.html#l00099">99</a> of file <a class="el" href="../../dc/d5b/power__mgt_8h_source.html">power_mgt.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="../../dc/d5b/power__mgt_8h_source.html">power_mgt.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6c894874abc25a8528d939f907804c55" id="r_a6c894874abc25a8528d939f907804c55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/cpp__compat_8h_a72f0657181cca64b44eb186b707eb380.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d18/struct_power_model_r_g_b_w_w_a6c894874abc25a8528d939f907804c55.html#a6c894874abc25a8528d939f907804c55">PowerModelRGBWW</a> ()</td></tr>
-<tr class="memdesc:a6c894874abc25a8528d939f907804c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor - Hypothetical RGBWW @ 5V estimate, linear response.  <br /></td></tr>
-<tr class="separator:a6c894874abc25a8528d939f907804c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae61fcf15e7ab24fdac8cec1cbb077b26" id="r_ae61fcf15e7ab24fdac8cec1cbb077b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/cpp__compat_8h_a72f0657181cca64b44eb186b707eb380.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d18/struct_power_model_r_g_b_w_w_ae61fcf15e7ab24fdac8cec1cbb077b26.html#ae61fcf15e7ab24fdac8cec1cbb077b26">PowerModelRGBWW</a> (<a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> r, <a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> g, <a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> b, <a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> w, <a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> ww, <a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> d, float e=1.0f)</td></tr>
-<tr class="memdesc:ae61fcf15e7ab24fdac8cec1cbb077b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom RGBWW power model.  <br /></td></tr>
-<tr class="separator:ae61fcf15e7ab24fdac8cec1cbb077b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acca23fb0068537288b7c66bb654fcba0" id="r_acca23fb0068537288b7c66bb654fcba0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/cpp__compat_8h_a72f0657181cca64b44eb186b707eb380.html#a72f0657181cca64b44eb186b707eb380">constexpr</a> <a class="el" href="../../dc/d4d/struct_power_model_r_g_b.html">PowerModelRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d18/struct_power_model_r_g_b_w_w_acca23fb0068537288b7c66bb654fcba0.html#acca23fb0068537288b7c66bb654fcba0">toRGB</a> () const</td></tr>
-<tr class="memdesc:acca23fb0068537288b7c66bb654fcba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert to RGB model (folds W/WW power back into RGB so the brightness limiter doesn't under-budget).  <br /></td></tr>
-<tr class="separator:acca23fb0068537288b7c66bb654fcba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d652c31def9c2a45eb5cb7e206d8d6" id="r_a36d652c31def9c2a45eb5cb7e206d8d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/cpp__compat_8h_a72f0657181cca64b44eb186b707eb380.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d18/struct_power_model_r_g_b_w_w_a36d652c31def9c2a45eb5cb7e206d8d6.html#a36d652c31def9c2a45eb5cb7e206d8d6">PowerModelRGBWW</a> () <a class="el" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a36d652c31def9c2a45eb5cb7e206d8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor - Hypothetical RGBWW @ 5V estimate, linear response.  <br /></td></tr>
+<tr class="separator:a36d652c31def9c2a45eb5cb7e206d8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b1e6a8f620d7554fccc5c3cb571e9b" id="r_a73b1e6a8f620d7554fccc5c3cb571e9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/cpp__compat_8h_a72f0657181cca64b44eb186b707eb380.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d18/struct_power_model_r_g_b_w_w_a73b1e6a8f620d7554fccc5c3cb571e9b.html#a73b1e6a8f620d7554fccc5c3cb571e9b">PowerModelRGBWW</a> (<a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> r, <a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> g, <a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> b, <a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> w, <a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> ww, <a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> d, float e=1.0f) <a class="el" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a73b1e6a8f620d7554fccc5c3cb571e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom RGBWW power model.  <br /></td></tr>
+<tr class="separator:a73b1e6a8f620d7554fccc5c3cb571e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc7c21cf68e556a735694ec7b95fa83" id="r_a5cc7c21cf68e556a735694ec7b95fa83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/cpp__compat_8h_a72f0657181cca64b44eb186b707eb380.html#a72f0657181cca64b44eb186b707eb380">constexpr</a> <a class="el" href="../../dc/d4d/struct_power_model_r_g_b.html">PowerModelRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d18/struct_power_model_r_g_b_w_w_a5cc7c21cf68e556a735694ec7b95fa83.html#a5cc7c21cf68e556a735694ec7b95fa83">toRGB</a> () const <a class="el" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a5cc7c21cf68e556a735694ec7b95fa83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert to RGB model (folds W/WW power back into RGB so the brightness limiter doesn't under-budget).  <br /></td></tr>
+<tr class="separator:a5cc7c21cf68e556a735694ec7b95fa83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -161,7 +161,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d18/struct_power_model_r_g_b_w_w.html">PowerModelRGBWW</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:06 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:22 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

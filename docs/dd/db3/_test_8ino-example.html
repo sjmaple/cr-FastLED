@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -113,34 +113,64 @@ $(function(){initNavTree('dd/db3/_test_8ino-example.html','../../'); initResizab
 <div class="line"> </div>
 <div class="line"><span class="comment">// Test configuration</span></div>
 <div class="line"> </div>
+<div class="line"><span class="comment">// Compile-time regression for FastLED#4827: legacy sketches call libc memory</span></div>
+<div class="line"><span class="comment">// functions unqualified on CRGB*. These must stay unambiguous on every board.</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a id="a0" name="a0"></a><a class="code hl_function" href="../../db/da5/_test_8ino_a7769741585e059bc4319e83a0df67aaf.html#a7769741585e059bc4319e83a0df67aaf">legacyLibcOnCrgb</a>() {</div>
+<div class="line">    <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a> src[4] = {<a id="a1" name="a1"></a><a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>(1, 2, 3), <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>(4, 5, 6), <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>(7, 8, 9), <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>(10, 11, 12)};</div>
+<div class="line">    <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>* dst = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>*<span class="keyword">&gt;</span>(malloc(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>) * 4));  <span class="comment">// ok bare allocation</span></div>
+<div class="line">    <span class="keywordflow">if</span> (!dst) {</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    memset(dst, 0, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>) * 4);</div>
+<div class="line">    memcpy(dst, src, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>) * 4);</div>
+<div class="line">    memmove(dst + 1, dst, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>) * 3);</div>
+<div class="line">    <span class="keywordflow">if</span> (memcmp(dst, src, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>)) != 0) {</div>
+<div class="line">        <a class="code hl_define" href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.println(<span class="stringliteral">&quot;legacy libc copy mismatch&quot;</span>);</div>
+<div class="line">    }</div>
+<div class="line">    free(dst);  <span class="comment">// ok bare allocation</span></div>
+<div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> <a id="a0" name="a0"></a><a class="code hl_function" href="../../d5/d17/_analog_output_8ino_a4fc01d736fe50cf5b977f755b675f11d.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a>() {</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> <a id="a2" name="a2"></a><a class="code hl_function" href="../../d5/d17/_analog_output_8ino_a4fc01d736fe50cf5b977f755b675f11d.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a>() {</div>
 <div class="line">    <a class="code hl_define" href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.begin(115200);  <span class="comment">// Fast baud for avr8js</span></div>
 <div class="line">    <a class="code hl_define" href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.println(<span class="stringliteral">&quot;Test setup starting&quot;</span>);</div>
+<div class="line">    <a class="code hl_function" href="../../db/da5/_test_8ino_a7769741585e059bc4319e83a0df67aaf.html#a7769741585e059bc4319e83a0df67aaf">legacyLibcOnCrgb</a>();</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">    delay(100);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> <a id="a1" name="a1"></a><a class="code hl_function" href="../../d5/d17/_analog_output_8ino_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f">loop</a>() {</div>
-<div class="line">    <a id="a2" name="a2"></a><a class="code hl_define" href="../../df/da2/group__lib8tion_ga90e084b8253af257a0257a23aeef53e1.html#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a>(1000) {</div>
+<div class="line"><span class="keywordtype">void</span> <a id="a3" name="a3"></a><a class="code hl_function" href="../../d5/d17/_analog_output_8ino_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f">loop</a>() {</div>
+<div class="line">    <a id="a4" name="a4"></a><a class="code hl_define" href="../../df/da2/group__lib8tion_ga90e084b8253af257a0257a23aeef53e1.html#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a>(1000) {</div>
 <div class="line">        <a class="code hl_define" href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.println(<span class="stringliteral">&quot;Test loop!&quot;</span>);</div>
 <div class="line">    }</div>
-<div class="line">    <a class="code hl_function" href="../../d4/d36/namespacefl_a19da680141593b475c4d1d3c1c0a8409.html#a19da680141593b475c4d1d3c1c0a8409">delay</a>(1);  <span class="comment">// Prevent watchdog timeout on ESP32 qemu tests.</span></div>
+<div class="line"><span class="preprocessor">#if defined(FASTLED_ESP32_IS_QEMU)</span></div>
+<div class="line">    <span class="comment">// Busy-wait under Espressif QEMU. delay() sleeps in vTaskDelay until a</span></div>
+<div class="line">    <span class="comment">// timer-alarm tick wakes the task; on a loaded host the emulator</span></div>
+<div class="line">    <span class="comment">// sometimes never delivers that wake-up and loop() stalls for good</span></div>
+<div class="line">    <span class="comment">// (FastLED#4845: ~1 s into the run, every local repro on esp32c3). The</span></div>
+<div class="line">    <span class="comment">// EVERY_N_MILLIS above still exercises millis().</span></div>
+<div class="line">    <a class="code hl_function" href="../../d4/d36/namespacefl_afd724068da70fdbc6a52b047d0d924e9.html#afd724068da70fdbc6a52b047d0d924e9">delayMicroseconds</a>(1000);</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line">    <a class="code hl_function" href="../../d4/d36/namespacefl_a19da680141593b475c4d1d3c1c0a8409.html#a19da680141593b475c4d1d3c1c0a8409">delay</a>(1);  <span class="comment">// Yield to the idle task (feeds the task watchdog).</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line">}</div>
 <div class="ttc" id="a_analog_output_8ino_a4fc01d736fe50cf5b977f755b675f11d_html_a4fc01d736fe50cf5b977f755b675f11d"><div class="ttname"><a href="../../d5/d17/_analog_output_8ino_a4fc01d736fe50cf5b977f755b675f11d.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a></div><div class="ttdeci">void setup()</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d17/_analog_output_8ino_source.html#l00058">AnalogOutput.ino:58</a></div></div>
 <div class="ttc" id="a_analog_output_8ino_afe461d27b9c48d5921c00d521181f12f_html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../d5/d17/_analog_output_8ino_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f">loop</a></div><div class="ttdeci">void loop()</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d17/_analog_output_8ino_source.html#l00047">AnalogOutput.ino:47</a></div></div>
+<div class="ttc" id="a_test_8ino_a7769741585e059bc4319e83a0df67aaf_html_a7769741585e059bc4319e83a0df67aaf"><div class="ttname"><a href="../../db/da5/_test_8ino_a7769741585e059bc4319e83a0df67aaf.html#a7769741585e059bc4319e83a0df67aaf">legacyLibcOnCrgb</a></div><div class="ttdeci">static void legacyLibcOnCrgb()</div><div class="ttdef"><b>Definition</b> <a href="../../db/da5/_test_8ino_source.html#l00015">Test.ino:15</a></div></div>
 <div class="ttc" id="aarduino_8h_html"><div class="ttname"><a href="../../d2/de0/arduino_8h.html">arduino.h</a></div></div>
-<div class="ttc" id="agroup__lib8tion_ga90e084b8253af257a0257a23aeef53e1_html_ga90e084b8253af257a0257a23aeef53e1"><div class="ttname"><a href="../../df/da2/group__lib8tion_ga90e084b8253af257a0257a23aeef53e1.html#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a></div><div class="ttdeci">#define EVERY_N_MILLIS(N)</div><div class="ttdoc">Checks whether to execute a block of code every N milliseconds.</div><div class="ttdef"><b>Definition</b> <a href="../../df/da5/lib8tion_8h_source.html#l01000">lib8tion.h:1000</a></div></div>
+<div class="ttc" id="agroup___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327_html_ga65c1895006b38f8c5114118b6a170327"><div class="ttname"><a href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a></div><div class="ttdeci">fl::CRGB CRGB</div><div class="ttdef"><b>Definition</b> <a href="../../db/dd1/crgb_8h_source.html#l00025">crgb.h:25</a></div></div>
+<div class="ttc" id="agroup__lib8tion_ga90e084b8253af257a0257a23aeef53e1_html_ga90e084b8253af257a0257a23aeef53e1"><div class="ttname"><a href="../../df/da2/group__lib8tion_ga90e084b8253af257a0257a23aeef53e1.html#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a></div><div class="ttdeci">#define EVERY_N_MILLIS(N)</div><div class="ttdoc">Checks whether to execute a block of code every N milliseconds.</div><div class="ttdef"><b>Definition</b> <a href="../../df/da5/lib8tion_8h_source.html#l01001">lib8tion.h:1001</a></div></div>
 <div class="ttc" id="anamespacefl_a19da680141593b475c4d1d3c1c0a8409_html_a19da680141593b475c4d1d3c1c0a8409"><div class="ttname"><a href="../../d4/d36/namespacefl_a19da680141593b475c4d1d3c1c0a8409.html#a19da680141593b475c4d1d3c1c0a8409">fl::delay</a></div><div class="ttdeci">void delay(u32 ms, bool run_async=true) FL_NO_EXCEPT</div><div class="ttdoc">Public delay wrapper that keeps bare Arduino delay() preferred after using fl::delay; while still all...</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dee/delay_8h_source.html#l00098">delay.h:98</a></div></div>
-<div class="ttc" id="asystem_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3_html_ab1a8531ded8c3d5bee8e36aebec7a8f3"><div class="ttname"><a href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a></div><div class="ttdeci">#define Serial</div><div class="ttdef"><b>Definition</b> <a href="../../de/d8b/system_2serial_8h_source.html#l00304">serial.h:304</a></div></div>
+<div class="ttc" id="anamespacefl_afd724068da70fdbc6a52b047d0d924e9_html_afd724068da70fdbc6a52b047d0d924e9"><div class="ttname"><a href="../../d4/d36/namespacefl_afd724068da70fdbc6a52b047d0d924e9.html#afd724068da70fdbc6a52b047d0d924e9">fl::delayMicroseconds</a></div><div class="ttdeci">void delayMicroseconds(u32 us) FL_NO_EXCEPT</div><div class="ttdoc">Delay for a given number of microseconds.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d03/delay_8cpp_8hpp_source.html#l00206">delay.cpp.hpp:206</a></div></div>
+<div class="ttc" id="asystem_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3_html_ab1a8531ded8c3d5bee8e36aebec7a8f3"><div class="ttname"><a href="../../de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a></div><div class="ttdeci">#define Serial</div><div class="ttdef"><b>Definition</b> <a href="../../de/d8b/system_2serial_8h_source.html#l00309">serial.h:309</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Oct 4 2026 23:08:59 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:12 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

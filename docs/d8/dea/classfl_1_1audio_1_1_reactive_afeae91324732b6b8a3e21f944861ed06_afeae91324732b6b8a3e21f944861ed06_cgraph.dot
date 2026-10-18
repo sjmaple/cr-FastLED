@@ -1,0 +1,30 @@
+digraph "fl::audio::Reactive::processFFT"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fl::audio::Reactive\l::processFFT",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::audio::Reactive\l::mapFFTBinsToFrequencyChannels",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/dea/classfl_1_1audio_1_1_reactive_a0d67ceddfaf1d489297afa87f4692eb8.html#a0d67ceddfaf1d489297afa87f4692eb8",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::span::empty",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d08/classfl_1_1span_a28135041ca9036a3efb34c1d0afe115b.html#a28135041ca9036a3efb34c1d0afe115b",tooltip=" "];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::span::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d08/classfl_1_1span_aaf3daca1c2c8f93b2ac7b319989b22fa.html#aaf3daca1c2c8f93b2ac7b319989b22fa",tooltip=" "];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::sample",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a1e7b3f485388c3ebd7e338c17289b7d1.html#a1e7b3f485388c3ebd7e338c17289b7d1",tooltip="Sample a pixel from a 2D CRGB grid at floating-point coordinates."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::sampleBilinear",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a813a03b65e8e095d7110d7837fa02350.html#a813a03b65e8e095d7110d7837fa02350",tooltip="Bilinear interpolation sample from a 2D CRGB grid."];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl::CRGB::blend",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$da/dd6/structfl_1_1_c_r_g_b_a783501cccdd1c0597ce7e2ba56401f6b.html#a783501cccdd1c0597ce7e2ba56401f6b",tooltip=" "];
+  Node6 -> Node9 [id="edge7_Node000006_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="fl::max",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a07c69292ef50aa1083046faff1c52ead.html#a07c69292ef50aa1083046faff1c52ead",tooltip=" "];
+  Node6 -> Node10 [id="edge8_Node000006_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="fl::min",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a2fdabb91a1f100dec8da21e4306aba05.html#a2fdabb91a1f100dec8da21e4306aba05",tooltip=" "];
+  Node5 -> Node11 [id="edge9_Node000005_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="fl::sampleNearest",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ab266380a7f6e1a852d124c04c744decf.html#ab266380a7f6e1a852d124c04c744decf",tooltip="Nearest-neighbor sample from a 2D CRGB grid."];
+  Node11 -> Node9 [id="edge10_Node000011_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node11 -> Node10 [id="edge11_Node000011_Node000010",color="steelblue1",style="solid",tooltip=" "];
+}

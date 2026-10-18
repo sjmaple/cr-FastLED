@@ -11,5 +11,5 @@ digraph "fl::CLEDController::showLeds"
   Node2 [id="Node000002",label="fl::CLEDController\l::clearLeds",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/da0/classfl_1_1_c_l_e_d_controller_a6c295e80958b0f814f6771902521478b.html#a6c295e80958b0f814f6771902521478b",tooltip="Clear out/zero out the given number of LEDs."];
   Node2 -> Node2 [id="edge2_Node000002_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node3 [id="edge3_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::Channel::showLeds",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_a56c6fceae41ac78584e120f7e01f7aff.html#a56c6fceae41ac78584e120f7e01f7aff",tooltip="Show the LEDs with optional brightness scaling."];
+  Node3 [id="Node000003",label="fl::Channel::showLeds",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_a559f0817b702d2d40cbe4acec873cd08.html#a559f0817b702d2d40cbe4acec873cd08",tooltip="Show the LEDs with optional brightness scaling."];
 }

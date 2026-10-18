@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -127,30 +127,30 @@ $(function(){initNavTree('d3/d2b/classfl_1_1_rx_channel_a8007b1766ec21c7bebb6300
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df5/rx_2channel_8cpp_8hpp_source.html#l00055">55</a> of file <a class="el" href="../../d4/df5/rx_2channel_8cpp_8hpp_source.html">channel.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>                                                                             {</div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">if</span> (!config_name.<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">empty</a>()) {</div>
-<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">return</span> config_name;</div>
-<div class="line"><span class="lineno">   58</span>    }</div>
-<div class="line"><span class="lineno">   59</span>    <span class="comment">// Mirrors Channel::makeName&#39;s release-build gate (#2942/#2943).</span></div>
-<div class="line"><span class="lineno">   60</span>    <span class="comment">// mName is consumed only by FL_WARN/FL_ERROR sites that collapse to</span></div>
-<div class="line"><span class="lineno">   61</span>    <span class="comment">// do-while-0 when FASTLED_LOG_VERBOSITY=0 (NDEBUG default per #2890),</span></div>
-<div class="line"><span class="lineno">   62</span>    <span class="comment">// so the string + fl::to_string&lt;i64&gt; + heap concat run for nothing</span></div>
-<div class="line"><span class="lineno">   63</span>    <span class="comment">// in release. See #2954.</span></div>
-<div class="line"><span class="lineno">   64</span><span class="preprocessor">#if FASTLED_LOG_RUNTIME_ENABLED</span></div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> <span class="stringliteral">&quot;RxChannel_&quot;</span> + <a class="code hl_function" href="../../d4/d36/namespacefl_aada496c402724b142bd81177ee03a067.html#aada496c402724b142bd81177ee03a067">fl::to_string</a>(<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../df/dd8/stdint_8h_a79fef9c4a308200d2ac107f3f05ee849.html#a79fef9c4a308200d2ac107f3f05ee849">i64</a><span class="keyword">&gt;</span>(<span class="keywordtype">id</span>));</div>
-<div class="line"><span class="lineno">   66</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">   67</span>    (void)<span class="keywordtype">id</span>;</div>
-<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">return</span> {};</div>
-<div class="line"><span class="lineno">   69</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">   70</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/df5/rx_2channel_8cpp_8hpp_source.html#l00056">56</a> of file <a class="el" href="../../d4/df5/rx_2channel_8cpp_8hpp_source.html">channel.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>                                                                             {</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (!config_name.<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">empty</a>()) {</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span> config_name;</div>
+<div class="line"><span class="lineno">   59</span>    }</div>
+<div class="line"><span class="lineno">   60</span>    <span class="comment">// Mirrors Channel::makeName&#39;s release-build gate (#2942/#2943).</span></div>
+<div class="line"><span class="lineno">   61</span>    <span class="comment">// mName is consumed only by FL_WARN/FL_ERROR sites that collapse to</span></div>
+<div class="line"><span class="lineno">   62</span>    <span class="comment">// do-while-0 when FASTLED_LOG_VERBOSITY=0 (NDEBUG default per #2890),</span></div>
+<div class="line"><span class="lineno">   63</span>    <span class="comment">// so the string + fl::to_string&lt;i64&gt; + heap concat run for nothing</span></div>
+<div class="line"><span class="lineno">   64</span>    <span class="comment">// in release. See #2954.</span></div>
+<div class="line"><span class="lineno">   65</span><span class="preprocessor">#if FASTLED_LOG_RUNTIME_ENABLED</span></div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">return</span> <span class="stringliteral">&quot;RxChannel_&quot;</span> + <a class="code hl_function" href="../../d4/d36/namespacefl_aada496c402724b142bd81177ee03a067.html#aada496c402724b142bd81177ee03a067">fl::to_string</a>(<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../df/dd8/stdint_8h_a79fef9c4a308200d2ac107f3f05ee849.html#a79fef9c4a308200d2ac107f3f05ee849">i64</a><span class="keyword">&gt;</span>(<span class="keywordtype">id</span>));</div>
+<div class="line"><span class="lineno">   67</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">   68</span>    (void)<span class="keywordtype">id</span>;</div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> {};</div>
+<div class="line"><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">   71</span>}</div>
 <div class="ttc" id="aclassfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb_html_ac3effe716fde4667b05a52d78d74bbfb"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">fl::basic_string::empty</a></div><div class="ttdeci">bool empty() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00155">basic_string.h:155</a></div></div>
 <div class="ttc" id="anamespacefl_aada496c402724b142bd81177ee03a067_html_aada496c402724b142bd81177ee03a067"><div class="ttname"><a href="../../d4/d36/namespacefl_aada496c402724b142bd81177ee03a067.html#aada496c402724b142bd81177ee03a067">fl::to_string</a></div><div class="ttdeci">string to_string(T value) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../da/d66/string_8h_source.html#l00459">string.h:459</a></div></div>
 <div class="ttc" id="astdint_8h_a79fef9c4a308200d2ac107f3f05ee849_html_a79fef9c4a308200d2ac107f3f05ee849"><div class="ttname"><a href="../../df/dd8/stdint_8h_a79fef9c4a308200d2ac107f3f05ee849.html#a79fef9c4a308200d2ac107f3f05ee849">i64</a></div><div class="ttdeci">fl::i64 i64</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00221">stdint.h:221</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../da/d66/string_8h_source.html#l00459">fl::to_string()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../da/d66/string_8h_source.html#l00459">fl::to_string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/df5/rx_2channel_8cpp_8hpp_source.html#l00076">RxChannel()</a>, and <a class="el" href="../../d3/d2b/classfl_1_1_rx_channel_a78ea2c5dff0ccc827b588262275077d9.html#a78ea2c5dff0ccc827b588262275077d9">fl::make_shared</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/df5/rx_2channel_8cpp_8hpp_source.html#l00077">RxChannel()</a>, and <a class="el" href="../../d3/d2b/classfl_1_1_rx_channel_ac7c8cef8edfc3d56305de5b1a9f8e70b.html#ac7c8cef8edfc3d56305de5b1a9f8e70b">fl::adl_barrier::make_shared</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -175,7 +175,7 @@ $(function(){initNavTree('d3/d2b/classfl_1_1_rx_channel_a8007b1766ec21c7bebb6300
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d3/d2b/classfl_1_1_rx_channel.html">RxChannel</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:09 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:31 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

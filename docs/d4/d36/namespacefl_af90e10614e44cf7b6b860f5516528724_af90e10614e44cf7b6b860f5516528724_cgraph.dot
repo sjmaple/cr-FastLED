@@ -17,8 +17,8 @@ digraph "fl::buildTwoWhiteAllocationQ16"
   Node5 [id="Node000005",label="fl::q16FromFloatBits",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ae477fa69441dfe37f8fe3d7f4e2b9445.html#ae477fa69441dfe37f8fe3d7f4e2b9445",tooltip="s16.16 of a float, rounded to nearest, computed from its IEEE-754 bits with integer arithmetic only –..."];
   Node5 -> Node6 [id="edge5_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="fl::bit_cast",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_aab9d4e461519c66fc958efc9e9ba2efa.html#aab9d4e461519c66fc958efc9e9ba2efa",tooltip=" "];
-  Node1 -> Node8 [id="edge6_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
-  Node8 [id="Node000008",label="fl::buildTwoWhiteAllocation\lFromSolveQ16",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a1541be3a72791e258764b56f0a545313.html#a1541be3a72791e258764b56f0a545313",tooltip="Bind two adapted white columns with an RGB solve in the same XYZ domain."];
-  Node8 -> Node9 [id="edge7_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
-  Node9 [id="Node000009",label="fl::solveRgbDrivesQ16",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_af5a0679639e0ad1db7feb7f9705df72f.html#af5a0679639e0ad1db7feb7f9705df72f",tooltip="One pixel: XYZ in s16.16 to three emitter drives in s16.16."];
+  Node1 -> Node9 [id="edge6_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="fl::buildTwoWhiteAllocation\lFromSolveQ16",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a1541be3a72791e258764b56f0a545313.html#a1541be3a72791e258764b56f0a545313",tooltip="Bind two adapted white columns with an RGB solve in the same XYZ domain."];
+  Node9 -> Node10 [id="edge7_Node000009_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="fl::solveRgbDrivesQ16",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_af5a0679639e0ad1db7feb7f9705df72f.html#af5a0679639e0ad1db7feb7f9705df72f",tooltip="One pixel: XYZ in s16.16 to three emitter drives in s16.16."];
 }

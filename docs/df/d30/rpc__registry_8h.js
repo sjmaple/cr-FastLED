@@ -13,5 +13,5 @@ var rpc__registry_8h =
       [ "mTypeTag", "df/d9e/namespacefl_1_1detail.html#ae5cb0da33ec7c0c963444327e80c7010", null ]
     ] ],
     [ "fl::detail::TypedCallableHolder< Sig >", "dd/d87/structfl_1_1detail_1_1_typed_callable_holder.html", "dd/d87/structfl_1_1detail_1_1_typed_callable_holder" ],
-    [ "fl::detail::makeJsonRpcError", "df/d9e/namespacefl_1_1detail_a48bb51330309f1b3d84c577ffa4dd9d6.html#a48bb51330309f1b3d84c577ffa4dd9d6", null ]
+    [ "fl::detail::makeJsonRpcError", "df/d9e/namespacefl_1_1detail_a686ebc5da8ede2c2212a120005cb9053.html#a686ebc5da8ede2c2212a120005cb9053", null ]
 ];

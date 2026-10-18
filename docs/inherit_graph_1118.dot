@@ -6,5 +6,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="fl::StreamingPipelineQ16",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl.html#de/d4b/structfl_1_1_streaming_pipeline_q16",tooltip="Everything the per-pixel path needs, derived once when a profile binds."];
+  Node0 [id="Node000000",label="fl::SpiChannelEngineAdapter\l::ClockPinGroup",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/daf/classfl_1_1_spi_channel_engine_adapter.html#de/d67/structfl_1_1_spi_channel_engine_adapter_1_1_clock_pin_group",tooltip="Group data structure for channels with same clock pin."];
 }

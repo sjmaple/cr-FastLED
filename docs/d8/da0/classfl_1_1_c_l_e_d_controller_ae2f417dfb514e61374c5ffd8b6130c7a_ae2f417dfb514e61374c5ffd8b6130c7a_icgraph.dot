@@ -13,7 +13,10 @@ digraph "fl::CLEDController::showColor"
   Node1 -> Node3 [id="edge3_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="fl::CLEDController\l::showColorInternal",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/da0/classfl_1_1_c_l_e_d_controller_a09de74c31c4363912267bac4b395e5b0.html#a09de74c31c4363912267bac4b395e5b0",tooltip=" "];
   Node3 -> Node4 [id="edge4_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="CFastLED::showColor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_a50e30222e81562a7ef334dbe4fdfa856.html#a50e30222e81562a7ef334dbe4fdfa856",tooltip="Set all leds on all controllers to the given color/scale."];
+  Node4 [id="Node000004",label="CFastLED::showColor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_a95ca26d3b5877b87eda4f9d8877a33c0.html#a95ca26d3b5877b87eda4f9d8877a33c0",tooltip="Set all leds on all controllers to the given color/scale."];
   Node4 -> Node5 [id="edge5_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="CFastLED::clear",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_aeb7bd3e8f2dbced6284a2182191d5fcb.html#aeb7bd3e8f2dbced6284a2182191d5fcb",tooltip="Clear the leds, wiping the local array of data."];
+  Node5 [id="Node000005",label="CFastLED::clear",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_a03374b32846e96197af65fe5ebdc1985.html#a03374b32846e96197af65fe5ebdc1985",tooltip="Clear the leds, wiping the local array of data."];
+  Node4 -> Node6 [id="edge6_Node000004_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="CFastLED::showColor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/dbb/class_c_fast_l_e_d_aa078775ee48e1aa3ee97887b6ce3540f.html#aa078775ee48e1aa3ee97887b6ce3540f",tooltip="Set all leds on all controllers to the given color."];
+  Node6 -> Node6 [id="edge7_Node000006_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

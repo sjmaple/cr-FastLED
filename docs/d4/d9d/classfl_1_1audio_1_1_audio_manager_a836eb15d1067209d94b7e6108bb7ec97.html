@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -115,27 +115,27 @@ $(function(){initNavTree('d4/d9d/classfl_1_1audio_1_1_audio_manager_a836eb15d106
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da6/audio__manager_8cpp_8hpp_source.html#l00047">47</a> of file <a class="el" href="../../dd/da6/audio__manager_8cpp_8hpp_source.html">audio_manager.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>                                                                {</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">if</span> (!input) {</div>
-<div class="line"><span class="lineno">   49</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a>(<span class="stringliteral">&quot;Cannot add null audio input&quot;</span>);</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   51</span>    }</div>
-<div class="line"><span class="lineno">   52</span>    input-&gt;start();</div>
-<div class="line"><span class="lineno">   53</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="../../d8/d94/namespacetest__quick_a13dc1c558463c07f13b4d6ac2ef74a22.html#a13dc1c558463c07f13b4d6ac2ef74a22">proc</a> = <a class="code hl_function" href="../../d3/d6b/classfl_1_1audio_1_1_processor_ac25ffea2d1abf227cecff4e4a7448a5a.html#ac25ffea2d1abf227cecff4e4a7448a5a">Processor::createWithAutoInput</a>(<a class="code hl_function" href="../../d4/d36/namespacefl_a0c8a67e528dcd96ee58216754a07a733.html#a0c8a67e528dcd96ee58216754a07a733">fl::move</a>(input));</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d4/d9d/classfl_1_1audio_1_1_audio_manager_ac686e7c75174487ac84385ccfdec455b.html#ac686e7c75174487ac84385ccfdec455b">processor</a>()) {</div>
-<div class="line"><span class="lineno">   55</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a>(<span class="stringliteral">&quot;Replacing existing audio processor&quot;</span>);</div>
-<div class="line"><span class="lineno">   56</span>    }</div>
-<div class="line"><span class="lineno">   57</span>    <a class="code hl_function" href="../../d4/d9d/classfl_1_1audio_1_1_audio_manager_ac686e7c75174487ac84385ccfdec455b.html#ac686e7c75174487ac84385ccfdec455b">processor</a>() = <a class="code hl_variable" href="../../d8/d94/namespacetest__quick_a13dc1c558463c07f13b4d6ac2ef74a22.html#a13dc1c558463c07f13b4d6ac2ef74a22">proc</a>;</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d8/d94/namespacetest__quick_a13dc1c558463c07f13b4d6ac2ef74a22.html#a13dc1c558463c07f13b4d6ac2ef74a22">proc</a>;</div>
-<div class="line"><span class="lineno">   59</span>}</div>
-<div class="ttc" id="aclassfl_1_1audio_1_1_audio_manager_ac686e7c75174487ac84385ccfdec455b_html_ac686e7c75174487ac84385ccfdec455b"><div class="ttname"><a href="../../d4/d9d/classfl_1_1audio_1_1_audio_manager_ac686e7c75174487ac84385ccfdec455b.html#ac686e7c75174487ac84385ccfdec455b">fl::audio::AudioManager::processor</a></div><div class="ttdeci">shared_ptr&lt; Processor &gt; &amp; processor() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da6/audio__manager_8cpp_8hpp_source.html#l00014">audio_manager.cpp.hpp:14</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dd/da6/audio__manager_8cpp_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../dd/da6/audio__manager_8cpp_8hpp_source.html">audio_manager.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                                                                             {</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span> (!input) {</div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a>(<span class="stringliteral">&quot;Cannot add null audio input&quot;</span>);</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="line"><span class="lineno">   53</span>    input-&gt;start();</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="../../d8/d94/namespacetest__quick_a13dc1c558463c07f13b4d6ac2ef74a22.html#a13dc1c558463c07f13b4d6ac2ef74a22">proc</a> = <a class="code hl_function" href="../../d3/d6b/classfl_1_1audio_1_1_processor_ac25ffea2d1abf227cecff4e4a7448a5a.html#ac25ffea2d1abf227cecff4e4a7448a5a">Processor::createWithAutoInput</a>(<a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc.html#a12b4192c17e37b3e4322cec1a2debdcc">fl::move</a>(input));</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d4/d9d/classfl_1_1audio_1_1_audio_manager_ac686e7c75174487ac84385ccfdec455b.html#ac686e7c75174487ac84385ccfdec455b">processor</a>()) {</div>
+<div class="line"><span class="lineno">   56</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a>(<span class="stringliteral">&quot;Replacing existing audio processor&quot;</span>);</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_function" href="../../d4/d9d/classfl_1_1audio_1_1_audio_manager_ac686e7c75174487ac84385ccfdec455b.html#ac686e7c75174487ac84385ccfdec455b">processor</a>() = <a class="code hl_variable" href="../../d8/d94/namespacetest__quick_a13dc1c558463c07f13b4d6ac2ef74a22.html#a13dc1c558463c07f13b4d6ac2ef74a22">proc</a>;</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d8/d94/namespacetest__quick_a13dc1c558463c07f13b4d6ac2ef74a22.html#a13dc1c558463c07f13b4d6ac2ef74a22">proc</a>;</div>
+<div class="line"><span class="lineno">   60</span>}</div>
+<div class="ttc" id="aclassfl_1_1audio_1_1_audio_manager_ac686e7c75174487ac84385ccfdec455b_html_ac686e7c75174487ac84385ccfdec455b"><div class="ttname"><a href="../../d4/d9d/classfl_1_1audio_1_1_audio_manager_ac686e7c75174487ac84385ccfdec455b.html#ac686e7c75174487ac84385ccfdec455b">fl::audio::AudioManager::processor</a></div><div class="ttdeci">shared_ptr&lt; Processor &gt; &amp; processor() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da6/audio__manager_8cpp_8hpp_source.html#l00015">audio_manager.cpp.hpp:15</a></div></div>
 <div class="ttc" id="aclassfl_1_1audio_1_1_processor_ac25ffea2d1abf227cecff4e4a7448a5a_html_ac25ffea2d1abf227cecff4e4a7448a5a"><div class="ttname"><a href="../../d3/d6b/classfl_1_1audio_1_1_processor_ac25ffea2d1abf227cecff4e4a7448a5a.html#ac25ffea2d1abf227cecff4e4a7448a5a">fl::audio::Processor::createWithAutoInput</a></div><div class="ttdeci">static fl::shared_ptr&lt; Processor &gt; createWithAutoInput(fl::shared_ptr&lt; IInput &gt; input) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d4b/audio__processor_8cpp_8hpp_source.html#l00980">audio_processor.cpp.hpp:980</a></div></div>
-<div class="ttc" id="alog_8h_a4804912fba6eed63e1afd84b8768aced_html_a4804912fba6eed63e1afd84b8768aced"><div class="ttname"><a href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a></div><div class="ttdeci">#define FL_WARN(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00440">log.h:440</a></div></div>
-<div class="ttc" id="anamespacefl_a0c8a67e528dcd96ee58216754a07a733_html_a0c8a67e528dcd96ee58216754a07a733"><div class="ttname"><a href="../../d4/d36/namespacefl_a0c8a67e528dcd96ee58216754a07a733.html#a0c8a67e528dcd96ee58216754a07a733">fl::move</a></div><div class="ttdeci">constexpr remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;t) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d83/move_8h_source.html#l00028">move.h:28</a></div></div>
+<div class="ttc" id="alog_8h_a4804912fba6eed63e1afd84b8768aced_html_a4804912fba6eed63e1afd84b8768aced"><div class="ttname"><a href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a></div><div class="ttdeci">#define FL_WARN(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00437">log.h:437</a></div></div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc_html_a12b4192c17e37b3e4322cec1a2debdcc"><div class="ttname"><a href="../../df/d34/namespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc.html#a12b4192c17e37b3e4322cec1a2debdcc">fl::adl_barrier::move</a></div><div class="ttdeci">constexpr remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;t) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d83/move_8h_source.html#l00030">move.h:30</a></div></div>
 <div class="ttc" id="anamespacetest__quick_a13dc1c558463c07f13b4d6ac2ef74a22_html_a13dc1c558463c07f13b4d6ac2ef74a22"><div class="ttname"><a href="../../d8/d94/namespacetest__quick_a13dc1c558463c07f13b4d6ac2ef74a22.html#a13dc1c558463c07f13b4d6ac2ef74a22">test_quick.proc</a></div><div class="ttdeci">proc</div><div class="ttdef"><b>Definition</b> <a href="../../d8/def/test__quick_8py_source.html#l00021">test_quick.py:21</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../db/d4b/audio__processor_8cpp_8hpp_source.html#l00980">fl::audio::Processor::createWithAutoInput()</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00440">FL_WARN</a>, <a class="el" href="../../d9/d83/move_8h_source.html#l00028">fl::move()</a>, and <a class="el" href="../../dd/da6/audio__manager_8cpp_8hpp_source.html#l00014">processor()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d4b/audio__processor_8cpp_8hpp_source.html#l00980">fl::audio::Processor::createWithAutoInput()</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00437">FL_WARN</a>, <a class="el" href="../../d9/d83/move_8h_source.html#l00030">fl::adl_barrier::move()</a>, and <a class="el" href="../../dd/da6/audio__manager_8cpp_8hpp_source.html#l00015">processor()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -153,7 +153,7 @@ $(function(){initNavTree('d4/d9d/classfl_1_1audio_1_1_audio_manager_a836eb15d106
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../db/dbf/namespacefl_1_1audio.html">audio</a></li><li class="navelem"><a class="el" href="../../d4/d9d/classfl_1_1audio_1_1_audio_manager.html">AudioManager</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

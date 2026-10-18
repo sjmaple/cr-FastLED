@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -305,7 +305,7 @@ template&lt;<a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367e
 <div class="line"><span class="lineno"> 1017</span>            <span class="comment">// Flush buffer when full (16 words = 32 bytes)</span></div>
 <div class="line"><span class="lineno"> 1018</span>            <span class="comment">// This triggers efficient burst writes that align with cache lines</span></div>
 <div class="line"><span class="lineno"> 1019</span>            <span class="keywordflow">if</span> (writeIdx == 32) {</div>
-<div class="line"><span class="lineno"> 1020</span>                <a class="code hl_function" href="../../d4/d36/namespacefl_a35ff6755912c639a5e5bd35fc59e57ff.html#a35ff6755912c639a5e5bd35fc59e57ff">fl::memcpy</a>(&amp;outputBuffer[outputIdx], writeBuffer, 32);</div>
+<div class="line"><span class="lineno"> 1020</span>                <a class="code hl_function" href="../../d4/d36/namespacefl_a7b6c734893ba8183b7e611e507b73984.html#a7b6c734893ba8183b7e611e507b73984">fl::memcpy</a>(&amp;outputBuffer[outputIdx], writeBuffer, 32);</div>
 <div class="line"><span class="lineno"> 1021</span>                outputIdx += 32;</div>
 <div class="line"><span class="lineno"> 1022</span>                writeIdx = 0;</div>
 <div class="line"><span class="lineno"> 1023</span>            }</div>
@@ -319,11 +319,11 @@ template&lt;<a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367e
 <div class="line"><span class="lineno"> 1031</span>}</div>
 <div class="ttc" id="acompiler__control_8h_a2d77fa1b285375be73ef95e9041b8bbb_html_a2d77fa1b285375be73ef95e9041b8bbb"><div class="ttname"><a href="../../d4/d54/compiler__control_8h_a2d77fa1b285375be73ef95e9041b8bbb.html#a2d77fa1b285375be73ef95e9041b8bbb">FL_UNROLL</a></div><div class="ttdeci">#define FL_UNROLL(N)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d54/compiler__control_8h_source.html#l00310">compiler_control.h:310</a></div></div>
 <div class="ttc" id="anamespacefl_a058ceeac48f181da463c2ba07401292c_html_a058ceeac48f181da463c2ba07401292c"><div class="ttname"><a href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00131">stdint.h:131</a></div></div>
-<div class="ttc" id="anamespacefl_a35ff6755912c639a5e5bd35fc59e57ff_html_a35ff6755912c639a5e5bd35fc59e57ff"><div class="ttname"><a href="../../d4/d36/namespacefl_a35ff6755912c639a5e5bd35fc59e57ff.html#a35ff6755912c639a5e5bd35fc59e57ff">fl::memcpy</a></div><div class="ttdeci">void * memcpy(void *dest, const void *src, size_t n) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/da3/cstring_8cpp_8hpp_source.html#l00128">cstring.cpp.hpp:128</a></div></div>
-<div class="ttc" id="anamespacefl_abbddb15aa2e7c8eb469d1dd56d6d2140_html_abbddb15aa2e7c8eb469d1dd56d6d2140"><div class="ttname"><a href="../../d4/d36/namespacefl_abbddb15aa2e7c8eb469d1dd56d6d2140.html#abbddb15aa2e7c8eb469d1dd56d6d2140">fl::t</a></div><div class="ttdeci">t</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00027">transposition.cpp.hpp:27</a></div></div>
+<div class="ttc" id="anamespacefl_a7b6c734893ba8183b7e611e507b73984_html_a7b6c734893ba8183b7e611e507b73984"><div class="ttname"><a href="../../d4/d36/namespacefl_a7b6c734893ba8183b7e611e507b73984.html#a7b6c734893ba8183b7e611e507b73984">fl::memcpy</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void * memcpy(void *dest, const void *src, size_t n) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d8d/cstring_8h_source.html#l00136">cstring.h:136</a></div></div>
+<div class="ttc" id="anamespacefl_abbddb15aa2e7c8eb469d1dd56d6d2140_html_abbddb15aa2e7c8eb469d1dd56d6d2140"><div class="ttname"><a href="../../d4/d36/namespacefl_abbddb15aa2e7c8eb469d1dd56d6d2140.html#abbddb15aa2e7c8eb469d1dd56d6d2140">fl::t</a></div><div class="ttdeci">t</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00028">transposition.cpp.hpp:28</a></div></div>
 <div class="ttc" id="astdint_8h_a46762d78d719ea1edce386124c4aa46b_html_a46762d78d719ea1edce386124c4aa46b"><div class="ttname"><a href="../../df/dd8/stdint_8h_a46762d78d719ea1edce386124c4aa46b.html#a46762d78d719ea1edce386124c4aa46b">u64</a></div><div class="ttdeci">fl::u64 u64</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00220">stdint.h:220</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00819">FASTLED_FORCE_INLINE</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00521">FL_IRAM</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">FL_NO_EXCEPT</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00282">FL_OPTIMIZE_FUNCTION</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00715">FL_RESTRICT_PARAM</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00310">FL_UNROLL</a>, <a class="el" href="../../df/da3/cstring_8cpp_8hpp_source.html#l00128">memcpy()</a>, and <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00027">t</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00819">FASTLED_FORCE_INLINE</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00521">FL_IRAM</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">FL_NO_EXCEPT</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00282">FL_OPTIMIZE_FUNCTION</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00715">FL_RESTRICT_PARAM</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00310">FL_UNROLL</a>, <a class="el" href="../../dd/d8d/cstring_8h_source.html#l00136">memcpy()</a>, and <a class="el" href="../../d7/d91/transposition_8cpp_8hpp_source.html#l00028">t</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d31/transposition_8h_source.html#l01064">transpose_wave8byte_parlio()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -331,7 +331,7 @@ template&lt;<a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367e
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d36/namespacefl_abf4bd6aebc7fee986fd669870b54b25a_abf4bd6aebc7fee986fd669870b54b25a_cgraph.svg" width="335" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d36/namespacefl_abf4bd6aebc7fee986fd669870b54b25a_abf4bd6aebc7fee986fd669870b54b25a_cgraph.svg" width="546" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -350,7 +350,7 @@ template&lt;<a class="el" href="../../d4/d36/namespacefl_a8a657d5e3d1c15816e367e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:28 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -123,40 +123,40 @@ $(function(){initNavTree('d5/d8b/classfl_1_1_channel_a8f76d9f43865f1167c4d48dcb5
 </table>
 </div><div class="memdoc">
 
-<p>Cold helper for <code><a class="el" href="../../d5/d8b/classfl_1_1_channel_a44414e176c7d2ef65fcdd390f6852322.html#a44414e176c7d2ef65fcdd390f6852322">showPixels()</a></code> when mChannelData is still in use by the driver: warns and waits for READY (#4566). </p>
-<dl class="section return"><dt>Returns</dt><dd>false if <code><a class="el" href="../../d5/d8b/classfl_1_1_channel_a44414e176c7d2ef65fcdd390f6852322.html#a44414e176c7d2ef65fcdd390f6852322">showPixels()</a></code> must drop the frame </dd></dl>
+<p>Cold helper for <code><a class="el" href="../../d5/d8b/classfl_1_1_channel_a3d4edf43dc08d5c1eef22dc727ef626d.html#a3d4edf43dc08d5c1eef22dc727ef626d">showPixels()</a></code> when mChannelData is still in use by the driver: warns and waits for READY (#4566). </p>
+<dl class="section return"><dt>Returns</dt><dd>false if <code><a class="el" href="../../d5/d8b/classfl_1_1_channel_a3d4edf43dc08d5c1eef22dc727ef626d.html#a3d4edf43dc08d5c1eef22dc727ef626d">showPixels()</a></code> must drop the frame </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html#l00857">857</a> of file <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html">channel.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  857</span>                                              {</div>
-<div class="line"><span class="lineno">  858</span>    <a class="code hl_define" href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a>(<span class="stringliteral">&quot;Channel &#39;%s&#39;: showPixels() called while mChannelData is in use by driver, attempting to wait&quot;</span>, <a class="code hl_variable" href="../../d5/d8b/classfl_1_1_channel_ae08a39aa307a3e97b81bf91a441a04a9.html#ae08a39aa307a3e97b81bf91a441a04a9">mName</a>);</div>
-<div class="line"><span class="lineno">  859</span>    <span class="keyword">auto</span> driver = <a class="code hl_variable" href="../../d5/d8b/classfl_1_1_channel_ac393d2ab0c15949ab1f51f8e85fbdcd4.html#ac393d2ab0c15949ab1f51f8e85fbdcd4">mDriver</a>.lock();</div>
-<div class="line"><span class="lineno">  860</span>    <span class="keywordflow">if</span> (!driver) {</div>
-<div class="line"><span class="lineno">  861</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a>(<span class="stringliteral">&quot;Channel &#39;%s&#39;: No driver bound yet the mChannelData is in use - cannot transmit&quot;</span>, <a class="code hl_variable" href="../../d5/d8b/classfl_1_1_channel_ae08a39aa307a3e97b81bf91a441a04a9.html#ae08a39aa307a3e97b81bf91a441a04a9">mName</a>);</div>
-<div class="line"><span class="lineno">  862</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  863</span>    }</div>
-<div class="line"><span class="lineno">  864</span>    <span class="comment">// wait until the driver is in a READY state.</span></div>
-<div class="line"><span class="lineno">  865</span>    <span class="keywordtype">bool</span> ok = driver-&gt;waitForReady();</div>
-<div class="line"><span class="lineno">  866</span>    <span class="keywordflow">if</span> (!ok) {</div>
-<div class="line"><span class="lineno">  867</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a>(<span class="stringliteral">&quot;Channel &#39;%s&#39;: Timeout occurred while waiting for driver to become READY&quot;</span>, <a class="code hl_variable" href="../../d5/d8b/classfl_1_1_channel_ae08a39aa307a3e97b81bf91a441a04a9.html#ae08a39aa307a3e97b81bf91a441a04a9">mName</a>);</div>
-<div class="line"><span class="lineno">  868</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  869</span>    }</div>
-<div class="line"><span class="lineno">  870</span>    <a class="code hl_define" href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a>(<span class="stringliteral">&quot;Channel &#39;%s&#39;: Engine became READY after waiting&quot;</span>, <a class="code hl_variable" href="../../d5/d8b/classfl_1_1_channel_ae08a39aa307a3e97b81bf91a441a04a9.html#ae08a39aa307a3e97b81bf91a441a04a9">mName</a>);</div>
-<div class="line"><span class="lineno">  871</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  872</span>}</div>
-<div class="ttc" id="aclassfl_1_1_channel_ac393d2ab0c15949ab1f51f8e85fbdcd4_html_ac393d2ab0c15949ab1f51f8e85fbdcd4"><div class="ttname"><a href="../../d5/d8b/classfl_1_1_channel_ac393d2ab0c15949ab1f51f8e85fbdcd4.html#ac393d2ab0c15949ab1f51f8e85fbdcd4">fl::Channel::mDriver</a></div><div class="ttdeci">fl::weak_ptr&lt; IChannelDriver &gt; mDriver</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d7b/channel_8h_source.html#l00411">channel.h:411</a></div></div>
-<div class="ttc" id="aclassfl_1_1_channel_ae08a39aa307a3e97b81bf91a441a04a9_html_ae08a39aa307a3e97b81bf91a441a04a9"><div class="ttname"><a href="../../d5/d8b/classfl_1_1_channel_ae08a39aa307a3e97b81bf91a441a04a9.html#ae08a39aa307a3e97b81bf91a441a04a9">fl::Channel::mName</a></div><div class="ttdeci">fl::string mName</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d7b/channel_8h_source.html#l00434">channel.h:434</a></div></div>
-<div class="ttc" id="alog_8h_a4804912fba6eed63e1afd84b8768aced_html_a4804912fba6eed63e1afd84b8768aced"><div class="ttname"><a href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a></div><div class="ttdeci">#define FL_WARN(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00440">log.h:440</a></div></div>
-<div class="ttc" id="alog_8h_aa90e3b2c36c6225140f46a86c6ac19e2_html_aa90e3b2c36c6225140f46a86c6ac19e2"><div class="ttname"><a href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a></div><div class="ttdeci">#define FL_ERROR(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00372">log.h:372</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html#l00880">880</a> of file <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html">channel.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  880</span>                                              {</div>
+<div class="line"><span class="lineno">  881</span>    <a class="code hl_define" href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a>(<span class="stringliteral">&quot;Channel &#39;&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d5/d8b/classfl_1_1_channel_ae08a39aa307a3e97b81bf91a441a04a9.html#ae08a39aa307a3e97b81bf91a441a04a9">mName</a> &lt;&lt; <span class="stringliteral">&quot;&#39;: showPixels() called while mChannelData is in use by driver, attempting to wait&quot;</span>);</div>
+<div class="line"><span class="lineno">  882</span>    <span class="keyword">auto</span> driver = <a class="code hl_variable" href="../../d5/d8b/classfl_1_1_channel_ac393d2ab0c15949ab1f51f8e85fbdcd4.html#ac393d2ab0c15949ab1f51f8e85fbdcd4">mDriver</a>.lock();</div>
+<div class="line"><span class="lineno">  883</span>    <span class="keywordflow">if</span> (!driver) {</div>
+<div class="line"><span class="lineno">  884</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a>(<span class="stringliteral">&quot;Channel &#39;&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d5/d8b/classfl_1_1_channel_ae08a39aa307a3e97b81bf91a441a04a9.html#ae08a39aa307a3e97b81bf91a441a04a9">mName</a> &lt;&lt; <span class="stringliteral">&quot;&#39;: No driver bound yet the mChannelData is in use - cannot transmit&quot;</span>);</div>
+<div class="line"><span class="lineno">  885</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  886</span>    }</div>
+<div class="line"><span class="lineno">  887</span>    <span class="comment">// wait until the driver is in a READY state.</span></div>
+<div class="line"><span class="lineno">  888</span>    <span class="keywordtype">bool</span> ok = driver-&gt;waitForReady();</div>
+<div class="line"><span class="lineno">  889</span>    <span class="keywordflow">if</span> (!ok) {</div>
+<div class="line"><span class="lineno">  890</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a>(<span class="stringliteral">&quot;Channel &#39;&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d5/d8b/classfl_1_1_channel_ae08a39aa307a3e97b81bf91a441a04a9.html#ae08a39aa307a3e97b81bf91a441a04a9">mName</a> &lt;&lt; <span class="stringliteral">&quot;&#39;: Timeout occurred while waiting for driver to become READY&quot;</span>);</div>
+<div class="line"><span class="lineno">  891</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  892</span>    }</div>
+<div class="line"><span class="lineno">  893</span>    <a class="code hl_define" href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a>(<span class="stringliteral">&quot;Channel &#39;&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d5/d8b/classfl_1_1_channel_ae08a39aa307a3e97b81bf91a441a04a9.html#ae08a39aa307a3e97b81bf91a441a04a9">mName</a> &lt;&lt; <span class="stringliteral">&quot;&#39;: Engine became READY after waiting&quot;</span>);</div>
+<div class="line"><span class="lineno">  894</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  895</span>}</div>
+<div class="ttc" id="aclassfl_1_1_channel_ac393d2ab0c15949ab1f51f8e85fbdcd4_html_ac393d2ab0c15949ab1f51f8e85fbdcd4"><div class="ttname"><a href="../../d5/d8b/classfl_1_1_channel_ac393d2ab0c15949ab1f51f8e85fbdcd4.html#ac393d2ab0c15949ab1f51f8e85fbdcd4">fl::Channel::mDriver</a></div><div class="ttdeci">fl::weak_ptr&lt; IChannelDriver &gt; mDriver</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d7b/channel_8h_source.html#l00433">channel.h:433</a></div></div>
+<div class="ttc" id="aclassfl_1_1_channel_ae08a39aa307a3e97b81bf91a441a04a9_html_ae08a39aa307a3e97b81bf91a441a04a9"><div class="ttname"><a href="../../d5/d8b/classfl_1_1_channel_ae08a39aa307a3e97b81bf91a441a04a9.html#ae08a39aa307a3e97b81bf91a441a04a9">fl::Channel::mName</a></div><div class="ttdeci">fl::string mName</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d7b/channel_8h_source.html#l00456">channel.h:456</a></div></div>
+<div class="ttc" id="alog_8h_a4804912fba6eed63e1afd84b8768aced_html_a4804912fba6eed63e1afd84b8768aced"><div class="ttname"><a href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a></div><div class="ttdeci">#define FL_WARN(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00437">log.h:437</a></div></div>
+<div class="ttc" id="alog_8h_aa90e3b2c36c6225140f46a86c6ac19e2_html_aa90e3b2c36c6225140f46a86c6ac19e2"><div class="ttname"><a href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a></div><div class="ttdeci">#define FL_ERROR(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00373">log.h:373</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/d7f/log_8h_source.html#l00372">FL_ERROR</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00440">FL_WARN</a>, <a class="el" href="../../d5/d7b/channel_8h_source.html#l00411">mDriver</a>, and <a class="el" href="../../d5/d7b/channel_8h_source.html#l00434">mName</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d7f/log_8h_source.html#l00373">FL_ERROR</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00437">FL_WARN</a>, <a class="el" href="../../d5/d7b/channel_8h_source.html#l00433">mDriver</a>, and <a class="el" href="../../d5/d7b/channel_8h_source.html#l00456">mName</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html#l00877">showPixels()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html#l00900">showPixels()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d8b/classfl_1_1_channel_a8f76d9f43865f1167c4d48dcb5b6e746_a8f76d9f43865f1167c4d48dcb5b6e746_icgraph.svg" width="414" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d8b/classfl_1_1_channel_a8f76d9f43865f1167c4d48dcb5b6e746_a8f76d9f43865f1167c4d48dcb5b6e746_icgraph.svg" width="639" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -168,7 +168,7 @@ $(function(){initNavTree('d5/d8b/classfl_1_1_channel_a8f76d9f43865f1167c4d48dcb5
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d5/d8b/classfl_1_1_channel.html">Channel</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

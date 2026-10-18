@@ -1,0 +1,18 @@
+digraph "fl::aligned_alloc"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fl::aligned_alloc",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::libc_impl::aligned\l_alloc",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/dbc/namespacefl_1_1libc__impl_a9352f8e0f67e0382ec29a6ef8ebafa34.html#a9352f8e0f67e0382ec29a6ef8ebafa34",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::detail::aligned\l_alloc_via_malloc",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a238a4271967d0367a5b405120d5e5532.html#a238a4271967d0367a5b405120d5e5532",tooltip="Portable over-allocate-and-align used by aligned_alloc on bare-metal targets; free only with aligned_..."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::malloc",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a54b0497aee91c68712ecaedbf503a39d.html#a54b0497aee91c68712ecaedbf503a39d",tooltip=" "];
+  Node3 -> Node6 [id="edge4_Node000003_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::reinterpret_cast_",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a71fe85b93f9577aabc60672d42e26fa2.html#a71fe85b93f9577aabc60672d42e26fa2",tooltip=" "];
+}

@@ -8,7 +8,7 @@ digraph "fl::SpiChannelEngineAdapter::selectControllerForClockPin"
   rankdir="RL";
   Node1 [id="Node000001",label="fl::SpiChannelEngineAdapter\l::selectControllerForClockPin",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Select best controller for a given clock pin."];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::SpiChannelEngineAdapter\l::transmitBatch",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/daf/classfl_1_1_spi_channel_engine_adapter_ae820ac9940fb9746f1f3c93709b72561.html#ae820ac9940fb9746f1f3c93709b72561",tooltip="Transmit a batch of channels (all same clock pin)"];
+  Node2 [id="Node000002",label="fl::SpiChannelEngineAdapter\l::transmitBatch",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/daf/classfl_1_1_spi_channel_engine_adapter_a01f940c569f742b26b704d5889e9848c.html#a01f940c569f742b26b704d5889e9848c",tooltip="Transmit a batch of channels (all same clock pin)"];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::SpiChannelEngineAdapter\l::show",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/daf/classfl_1_1_spi_channel_engine_adapter_a7d10891b9d71344c305a92e5be625b28.html#a7d10891b9d71344c305a92e5be625b28",tooltip="Trigger transmission of enqueued data."];
+  Node3 [id="Node000003",label="fl::SpiChannelEngineAdapter\l::show",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/daf/classfl_1_1_spi_channel_engine_adapter_a455fceea8a1803fdeadb54b25891f576.html#a455fceea8a1803fdeadb54b25891f576",tooltip="Trigger transmission of enqueued data."];
 }

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -118,18 +118,18 @@ $(function(){initNavTree('d2/d6b/classfl_1_1_channel_manager_a3b733c7354a68ef093
 <p>Reset bus manager state, clearing all enqueued and transmitting channels. </p>
 <dl class="section note"><dt>Note</dt><dd>Call this between test cases or when reinitializing the LED system </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00595">595</a> of file <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html">manager.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  595</span>                           {</div>
-<div class="line"><span class="lineno">  596</span>    <span class="comment">// Allow all channel drivers to clean up</span></div>
-<div class="line"><span class="lineno">  597</span>    <a class="code hl_function" href="../../d2/d6b/classfl_1_1_channel_manager_af3041b5d8b20269dc1909667d8714de6.html#af3041b5d8b20269dc1909667d8714de6">waitForReady</a>();</div>
-<div class="line"><span class="lineno">  598</span>    <a class="code hl_define" href="../../d7/d7f/log_8h_a8ccae77aa5fe30a41f19d233cb0de2c1.html#a8ccae77aa5fe30a41f19d233cb0de2c1">FL_DBG</a>(<span class="stringliteral">&quot;ChannelManager: reset() - all drivers ready&quot;</span>);</div>
-<div class="line"><span class="lineno">  599</span>}</div>
-<div class="ttc" id="aclassfl_1_1_channel_manager_af3041b5d8b20269dc1909667d8714de6_html_af3041b5d8b20269dc1909667d8714de6"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_af3041b5d8b20269dc1909667d8714de6.html#af3041b5d8b20269dc1909667d8714de6">fl::ChannelManager::waitForReady</a></div><div class="ttdeci">bool waitForReady(u32 timeoutMs=1000) FL_NO_EXCEPT</div><div class="ttdoc">Wait for all drivers to become READY.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00553">manager.cpp.hpp:553</a></div></div>
-<div class="ttc" id="alog_8h_a8ccae77aa5fe30a41f19d233cb0de2c1_html_a8ccae77aa5fe30a41f19d233cb0de2c1"><div class="ttname"><a href="../../d7/d7f/log_8h_a8ccae77aa5fe30a41f19d233cb0de2c1.html#a8ccae77aa5fe30a41f19d233cb0de2c1">FL_DBG</a></div><div class="ttdeci">#define FL_DBG</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00564">log.h:564</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00605">605</a> of file <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html">manager.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  605</span>                                        {</div>
+<div class="line"><span class="lineno">  606</span>    <span class="comment">// Allow all channel drivers to clean up</span></div>
+<div class="line"><span class="lineno">  607</span>    <a class="code hl_function" href="../../d2/d6b/classfl_1_1_channel_manager_af3041b5d8b20269dc1909667d8714de6.html#af3041b5d8b20269dc1909667d8714de6">waitForReady</a>();</div>
+<div class="line"><span class="lineno">  608</span>    <a class="code hl_define" href="../../d7/d7f/log_8h_a8ccae77aa5fe30a41f19d233cb0de2c1.html#a8ccae77aa5fe30a41f19d233cb0de2c1">FL_DBG</a>(<span class="stringliteral">&quot;ChannelManager: reset() - all drivers ready&quot;</span>);</div>
+<div class="line"><span class="lineno">  609</span>}</div>
+<div class="ttc" id="aclassfl_1_1_channel_manager_af3041b5d8b20269dc1909667d8714de6_html_af3041b5d8b20269dc1909667d8714de6"><div class="ttname"><a href="../../d2/d6b/classfl_1_1_channel_manager_af3041b5d8b20269dc1909667d8714de6.html#af3041b5d8b20269dc1909667d8714de6">fl::ChannelManager::waitForReady</a></div><div class="ttdeci">bool waitForReady(u32 timeoutMs=1000) FL_NO_EXCEPT</div><div class="ttdoc">Wait for all drivers to become READY.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00563">manager.cpp.hpp:563</a></div></div>
+<div class="ttc" id="alog_8h_a8ccae77aa5fe30a41f19d233cb0de2c1_html_a8ccae77aa5fe30a41f19d233cb0de2c1"><div class="ttname"><a href="../../d7/d7f/log_8h_a8ccae77aa5fe30a41f19d233cb0de2c1.html#a8ccae77aa5fe30a41f19d233cb0de2c1">FL_DBG</a></div><div class="ttdeci">#define FL_DBG</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00553">log.h:553</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/d7f/log_8h_source.html#l00564">FL_DBG</a>, and <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00553">waitForReady()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d7f/log_8h_source.html#l00553">FL_DBG</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../d2/dd3/manager_8cpp_8hpp_source.html#l00563">waitForReady()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_source.html#l00227">CFastLED::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_source.html#l00238">CFastLED::clear()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -154,7 +154,7 @@ $(function(){initNavTree('d2/d6b/classfl_1_1_channel_manager_a3b733c7354a68ef093
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d2/d6b/classfl_1_1_channel_manager.html">ChannelManager</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

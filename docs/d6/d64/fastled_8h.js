@@ -60,9 +60,9 @@ var fastled_8h =
     [ "degrees", "d6/d64/fastled_8h_ad9cea4c5594018d4704cfb1be33f0bbd.html#ad9cea4c5594018d4704cfb1be33f0bbd", null ],
     [ "max", "d6/d64/fastled_8h_a07c69292ef50aa1083046faff1c52ead.html#a07c69292ef50aa1083046faff1c52ead", null ],
     [ "min", "d6/d64/fastled_8h_a2fdabb91a1f100dec8da21e4306aba05.html#a2fdabb91a1f100dec8da21e4306aba05", null ],
-    [ "operator&", "d6/d64/fastled_8h_ab4e8215eff6e86440de26fec4d259480.html#ab4e8215eff6e86440de26fec4d259480", null ],
-    [ "operator|", "d6/d64/fastled_8h_a664d59edf00ef403547a6da19ba0cb01.html#a664d59edf00ef403547a6da19ba0cb01", null ],
-    [ "operator|=", "d6/d64/fastled_8h_a1663fce3f269dfd635af10335edf8b87.html#a1663fce3f269dfd635af10335edf8b87", null ],
+    [ "operator&", "d6/d64/fastled_8h_a04913d633700b2600aa4e3f22a02cd30.html#a04913d633700b2600aa4e3f22a02cd30", null ],
+    [ "operator|", "d6/d64/fastled_8h_a4f96e6b2ef41b628fc48e2447d898166.html#a4f96e6b2ef41b628fc48e2447d898166", null ],
+    [ "operator|=", "d6/d64/fastled_8h_a3f46cffac6537d4978acf9f9340bb8aa.html#a3f46cffac6537d4978acf9f9340bb8aa", null ],
     [ "radians", "d6/d64/fastled_8h_af7491455e0a43ea1ea5db81f5e0ab737.html#af7491455e0a43ea1ea5db81f5e0ab737", null ],
     [ "FastLED", "d6/d64/fastled_8h_a7077a6a69b1339a4c04f4bb9ecc0ad3f.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f", null ]
 ];

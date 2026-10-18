@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -124,7 +124,7 @@ $(function(){initNavTree('d1/d27/classfl_1_1sstream_ac7f0aed5891540a55b165fce71e
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d53/strstream_8cpp_8hpp_source.html#l00076">76</a> of file <a class="el" href="../../d3/d53/strstream_8cpp_8hpp_source.html">strstream.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>                                       {</div>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                    {</div>
 <div class="line"><span class="lineno">   77</span>    <span class="keywordtype">char</span> buf[64] = {0};</div>
 <div class="line"><span class="lineno">   78</span>    <span class="keywordtype">int</span> len;</div>
 <div class="line"><span class="lineno">   79</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d27/classfl_1_1sstream_a82fbfaedfe08a8d69c9becf739fd636c.html#a82fbfaedfe08a8d69c9becf739fd636c">mBase</a> == 16 || <a class="code hl_variable" href="../../d1/d27/classfl_1_1sstream_a82fbfaedfe08a8d69c9becf739fd636c.html#a82fbfaedfe08a8d69c9becf739fd636c">mBase</a> == 8) {</div>
@@ -134,19 +134,19 @@ $(function(){initNavTree('d1/d27/classfl_1_1sstream_ac7f0aed5891540a55b165fce71e
 <div class="line"><span class="lineno">   83</span>        <span class="comment">// For decimal, handle negative sign manually</span></div>
 <div class="line"><span class="lineno">   84</span>        <span class="keywordflow">if</span> (val &lt; 0) {</div>
 <div class="line"><span class="lineno">   85</span>            <a class="code hl_variable" href="../../d1/d27/classfl_1_1sstream_a14a7df5ebc6fe304dd273def4b86695d.html#a14a7df5ebc6fe304dd273def4b86695d">mStr</a>.append(<span class="stringliteral">&quot;-&quot;</span>, 1);</div>
-<div class="line"><span class="lineno">   86</span>            len = <a class="code hl_function" href="../../d4/d36/namespacefl_aa60cdd7a91156d23e724b99f4719e849.html#aa60cdd7a91156d23e724b99f4719e849">fl::utoa64</a>(<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../df/dd8/stdint_8h_a46762d78d719ea1edce386124c4aa46b.html#a46762d78d719ea1edce386124c4aa46b">u64</a><span class="keyword">&gt;</span>(-val), buf, <a class="code hl_variable" href="../../d1/d27/classfl_1_1sstream_a82fbfaedfe08a8d69c9becf739fd636c.html#a82fbfaedfe08a8d69c9becf739fd636c">mBase</a>);</div>
+<div class="line"><span class="lineno">   86</span>            len = <a class="code hl_function" href="../../d4/d36/namespacefl_aa60cdd7a91156d23e724b99f4719e849.html#aa60cdd7a91156d23e724b99f4719e849">fl::utoa64</a>(<a class="code hl_typedef" href="../../df/dd8/stdint_8h_a46762d78d719ea1edce386124c4aa46b.html#a46762d78d719ea1edce386124c4aa46b">u64</a>(0) - <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../df/dd8/stdint_8h_a46762d78d719ea1edce386124c4aa46b.html#a46762d78d719ea1edce386124c4aa46b">u64</a><span class="keyword">&gt;</span>(val), buf, <a class="code hl_variable" href="../../d1/d27/classfl_1_1sstream_a82fbfaedfe08a8d69c9becf739fd636c.html#a82fbfaedfe08a8d69c9becf739fd636c">mBase</a>);</div>
 <div class="line"><span class="lineno">   87</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   88</span>            len = <a class="code hl_function" href="../../d4/d36/namespacefl_aa60cdd7a91156d23e724b99f4719e849.html#aa60cdd7a91156d23e724b99f4719e849">fl::utoa64</a>(<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../df/dd8/stdint_8h_a46762d78d719ea1edce386124c4aa46b.html#a46762d78d719ea1edce386124c4aa46b">u64</a><span class="keyword">&gt;</span>(val), buf, <a class="code hl_variable" href="../../d1/d27/classfl_1_1sstream_a82fbfaedfe08a8d69c9becf739fd636c.html#a82fbfaedfe08a8d69c9becf739fd636c">mBase</a>);</div>
 <div class="line"><span class="lineno">   89</span>        }</div>
 <div class="line"><span class="lineno">   90</span>    }</div>
 <div class="line"><span class="lineno">   91</span>    <a class="code hl_variable" href="../../d1/d27/classfl_1_1sstream_a14a7df5ebc6fe304dd273def4b86695d.html#a14a7df5ebc6fe304dd273def4b86695d">mStr</a>.append(buf, len);</div>
 <div class="line"><span class="lineno">   92</span>}</div>
-<div class="ttc" id="aclassfl_1_1sstream_a14a7df5ebc6fe304dd273def4b86695d_html_a14a7df5ebc6fe304dd273def4b86695d"><div class="ttname"><a href="../../d1/d27/classfl_1_1sstream_a14a7df5ebc6fe304dd273def4b86695d.html#a14a7df5ebc6fe304dd273def4b86695d">fl::sstream::mStr</a></div><div class="ttdeci">string mStr</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d00/strstream_8h_source.html#l00369">strstream.h:369</a></div></div>
-<div class="ttc" id="aclassfl_1_1sstream_a82fbfaedfe08a8d69c9becf739fd636c_html_a82fbfaedfe08a8d69c9becf739fd636c"><div class="ttname"><a href="../../d1/d27/classfl_1_1sstream_a82fbfaedfe08a8d69c9becf739fd636c.html#a82fbfaedfe08a8d69c9becf739fd636c">fl::sstream::mBase</a></div><div class="ttdeci">int mBase</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d00/strstream_8h_source.html#l00371">strstream.h:371</a></div></div>
-<div class="ttc" id="anamespacefl_aa60cdd7a91156d23e724b99f4719e849_html_aa60cdd7a91156d23e724b99f4719e849"><div class="ttname"><a href="../../d4/d36/namespacefl_aa60cdd7a91156d23e724b99f4719e849.html#aa60cdd7a91156d23e724b99f4719e849">fl::utoa64</a></div><div class="ttdeci">int utoa64(u64 value, char *sp, int radix)</div><div class="ttdoc">Convert unsigned 64-bit integer to string buffer in given radix.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dd9/charconv_8cpp_8hpp_source.html#l00162">charconv.cpp.hpp:162</a></div></div>
+<div class="ttc" id="aclassfl_1_1sstream_a14a7df5ebc6fe304dd273def4b86695d_html_a14a7df5ebc6fe304dd273def4b86695d"><div class="ttname"><a href="../../d1/d27/classfl_1_1sstream_a14a7df5ebc6fe304dd273def4b86695d.html#a14a7df5ebc6fe304dd273def4b86695d">fl::sstream::mStr</a></div><div class="ttdeci">string mStr</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d00/strstream_8h_source.html#l00377">strstream.h:377</a></div></div>
+<div class="ttc" id="aclassfl_1_1sstream_a82fbfaedfe08a8d69c9becf739fd636c_html_a82fbfaedfe08a8d69c9becf739fd636c"><div class="ttname"><a href="../../d1/d27/classfl_1_1sstream_a82fbfaedfe08a8d69c9becf739fd636c.html#a82fbfaedfe08a8d69c9becf739fd636c">fl::sstream::mBase</a></div><div class="ttdeci">int mBase</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d00/strstream_8h_source.html#l00379">strstream.h:379</a></div></div>
+<div class="ttc" id="anamespacefl_aa60cdd7a91156d23e724b99f4719e849_html_aa60cdd7a91156d23e724b99f4719e849"><div class="ttname"><a href="../../d4/d36/namespacefl_aa60cdd7a91156d23e724b99f4719e849.html#aa60cdd7a91156d23e724b99f4719e849">fl::utoa64</a></div><div class="ttdeci">int utoa64(u64 value, char *sp, int radix) FL_NO_EXCEPT</div><div class="ttdoc">Convert unsigned 64-bit integer to string buffer in given radix.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dd9/charconv_8cpp_8hpp_source.html#l00162">charconv.cpp.hpp:162</a></div></div>
 <div class="ttc" id="astdint_8h_a46762d78d719ea1edce386124c4aa46b_html_a46762d78d719ea1edce386124c4aa46b"><div class="ttname"><a href="../../df/dd8/stdint_8h_a46762d78d719ea1edce386124c4aa46b.html#a46762d78d719ea1edce386124c4aa46b">u64</a></div><div class="ttdeci">fl::u64 u64</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00220">stdint.h:220</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/d00/strstream_8h_source.html#l00371">mBase</a>, <a class="el" href="../../d8/d00/strstream_8h_source.html#l00369">mStr</a>, and <a class="el" href="../../de/dd9/charconv_8cpp_8hpp_source.html#l00162">fl::utoa64()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d8/d00/strstream_8h_source.html#l00379">mBase</a>, <a class="el" href="../../d8/d00/strstream_8h_source.html#l00377">mStr</a>, and <a class="el" href="../../de/dd9/charconv_8cpp_8hpp_source.html#l00162">fl::utoa64()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -164,7 +164,7 @@ $(function(){initNavTree('d1/d27/classfl_1_1sstream_ac7f0aed5891540a55b165fce71e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d1/d27/classfl_1_1sstream.html">sstream</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:32 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

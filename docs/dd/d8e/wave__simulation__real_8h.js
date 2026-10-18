@@ -8,6 +8,6 @@ var wave__simulation__real_8h =
       [ "fl::LaplacianStencil::NinePointIsotropic", "d4/d36/namespacefl_acb5bac14369e1132c687c1dad13ed535.html#acb5bac14369e1132c687c1dad13ed535a075480eff8da17f6b70bbe5b5d35ba36", null ]
     ] ],
     [ "fl::wave_detail::compute_damp_decay_q15", "d9/d75/namespacefl_1_1wave__detail_ae78eaf69eae63afbcc23ab3f8b992326.html#ae78eaf69eae63afbcc23ab3f8b992326", null ],
-    [ "fl::wave_detail::fixed_to_float", "d9/d75/namespacefl_1_1wave__detail_abffe814cee732194d9dc3e73b7952adf.html#abffe814cee732194d9dc3e73b7952adf", null ],
-    [ "fl::wave_detail::float_to_fixed", "d9/d75/namespacefl_1_1wave__detail_a56eca07a74cb918e4002c1e7baa40a5d.html#a56eca07a74cb918e4002c1e7baa40a5d", null ]
+    [ "fl::wave_detail::fixed_to_float", "d9/d75/namespacefl_1_1wave__detail_a8e444aa130bd39ab7ee10e95c260e963.html#a8e444aa130bd39ab7ee10e95c260e963", null ],
+    [ "fl::wave_detail::float_to_fixed", "d9/d75/namespacefl_1_1wave__detail_a8fa737cb1dfc161a847ab84f3b2b0d8a.html#a8fa737cb1dfc161a847ab84f3b2b0d8a", null ]
 ];

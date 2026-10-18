@@ -33,7 +33,7 @@ digraph "fl::anonymous_namespace{channel.cpp.hpp}::ReorderingPixelIteratorAny"
   Node16 [id="Node000016",label="fl::shared_ptr\< T \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d1/d74/classfl_1_1shared__ptr.html",tooltip=" "];
   Node13 -> Node16 [id="edge14_Node000016_Node000013",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mControlBlock",fontcolor="grey" ];
   Node17 -> Node4 [id="edge15_Node000004_Node000017",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mRgbww",fontcolor="grey" ];
-  Node17 [id="Node000017",label="fl::Rgbww",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d4/df9/structfl_1_1_rgbww.html",tooltip="Per-strip RGBWW configuration."];
+  Node17 [id="Node000017",label="fl::Rgbww",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d4/df9/structfl_1_1_rgbww.html",tooltip=" "];
   Node18 -> Node17 [id="edge16_Node000017_Node000018",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" profile",fontcolor="grey" ];
   Node18 [id="Node000018",label="fl::colorimetric_detail\l::RgbcctProfile",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d7/df0/namespacefl_1_1colorimetric__detail.html#d1/d65/structfl_1_1colorimetric__detail_1_1_rgbcct_profile",tooltip=" "];
   Node19 -> Node4 [id="edge17_Node000004_Node000019",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mXyMap",fontcolor="grey" ];

@@ -14,10 +14,8 @@ digraph "fl::audio::fft::FFT::setFFTCacheSize"
   Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="fl::FL_ALIGN_AS_T",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a1e67c0c24ebcd98fcf8554753d1639a6.html#a1e67c0c24ebcd98fcf8554753d1639a6",tooltip=" "];
   Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="fl::audio::fft::FFT\l::ImplCache::setMaxSize",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d98/structfl_1_1audio_1_1fft_1_1_f_f_t_1_1_impl_cache_a33003065df54c535b957fccdd525fb61.html#a33003065df54c535b957fccdd525fb61",tooltip=" "];
-  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="fl::audio::fft::FFT\l::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/df2/classfl_1_1audio_1_1fft_1_1_f_f_t_a22b813e818dc19b33be26ed88faac49a.html#a22b813e818dc19b33be26ed88faac49a",tooltip=" "];
-  Node6 -> Node2 [id="edge6_Node000006_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node6 -> Node7 [id="edge7_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="fl::audio::fft::FFT\l::ImplCache::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d98/structfl_1_1audio_1_1fft_1_1_f_f_t_1_1_impl_cache_a6aaa22314e84ddebfb016fa03bb60859.html#a6aaa22314e84ddebfb016fa03bb60859",tooltip=" "];
+  Node5 [id="Node000005",label="fl::audio::fft::FFT\l::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/df2/classfl_1_1audio_1_1fft_1_1_f_f_t_a22b813e818dc19b33be26ed88faac49a.html#a22b813e818dc19b33be26ed88faac49a",tooltip=" "];
+  Node5 -> Node2 [id="edge5_Node000005_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node6 [id="edge6_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::audio::fft::FFT\l::ImplCache::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d98/structfl_1_1audio_1_1fft_1_1_f_f_t_1_1_impl_cache_a9a1c95aee2d15fd02e1687bf2dd1b61b.html#a9a1c95aee2d15fd02e1687bf2dd1b61b",tooltip=" "];
 }

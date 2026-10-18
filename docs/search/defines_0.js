@@ -29,11 +29,14 @@ var searchData=
   ['_5ffl_5ferror_5fs_26',['_FL_ERROR_S',['../d7/d7f/log_8h_ac4deec98d81094ac4791de3c2d142d3f.html#ac4deec98d81094ac4791de3c2d142d3f',1,'log.h']]],
   ['_5ffl_5finfo_5fm_27',['_FL_INFO_M',['../d7/d7f/log_8h_afc783e343887d91b8c2647c4016b71b3.html#afc783e343887d91b8c2647c4016b71b3',1,'log.h']]],
   ['_5ffl_5finfo_5fs_28',['_FL_INFO_S',['../d7/d7f/log_8h_ae136ba89d9991d694ffc93ffabbc7c21.html#ae136ba89d9991d694ffc93ffabbc7c21',1,'log.h']]],
-  ['_5ffl_5fmap_5fclocked_5fchipset_29',['_FL_MAP_CLOCKED_CHIPSET',['../d6/d64/fastled_8h_a0f7ec59f76e5b6e949268f112f93c412.html#a0f7ec59f76e5b6e949268f112f93c412',1,'FastLED.h']]],
-  ['_5ffl_5fprint_5fm_30',['_FL_PRINT_M',['../d7/d7f/log_8h_a925240005ffbc7902bcca0571292646b.html#a925240005ffbc7902bcca0571292646b',1,'log.h']]],
-  ['_5ffl_5fprint_5fs_31',['_FL_PRINT_S',['../d7/d7f/log_8h_a30da661bbcbc05ee5cc2874c07260f9d.html#a30da661bbcbc05ee5cc2874c07260f9d',1,'log.h']]],
-  ['_5ffl_5fva_5fdispatch_32',['_FL_VA_DISPATCH',['../d7/d7f/log_8h_af35a69eb01262757d7e133b66f9af42e.html#af35a69eb01262757d7e133b66f9af42e',1,'log.h']]],
-  ['_5ffl_5fva_5fpick17_33',['_FL_VA_PICK17',['../d7/d7f/log_8h_a78d66694aaf07b0853ce6aa9543abec8.html#a78d66694aaf07b0853ce6aa9543abec8',1,'log.h']]],
-  ['_5ffl_5fwarn_5fm_34',['_FL_WARN_M',['../d7/d7f/log_8h_a13ba7e7d142013bf7bde4dfe0d4d1c28.html#a13ba7e7d142013bf7bde4dfe0d4d1c28',1,'log.h']]],
-  ['_5ffl_5fwarn_5fs_35',['_FL_WARN_S',['../d7/d7f/log_8h_a3df968e4da6c38ff998d7f33623e32c7.html#a3df968e4da6c38ff998d7f33623e32c7',1,'log.h']]]
+  ['_5ffl_5flog_5fcheck_29',['_FL_LOG_CHECK',['../d7/d7f/log_8h_a2b65ada9f7347942a3a89b52a9cd10a8.html#a2b65ada9f7347942a3a89b52a9cd10a8',1,'log.h']]],
+  ['_5ffl_5flog_5fnoop_5fs_30',['_FL_LOG_NOOP_S',['../d7/d7f/log_8h_a795799841d445c0ebce151d31d2797df.html#a795799841d445c0ebce151d31d2797df',1,'log.h']]],
+  ['_5ffl_5flog_5fprintf_5fbanned_31',['_FL_LOG_PRINTF_BANNED',['../d7/d7f/log_8h_afbe21f04e6932397a39a412d80412833.html#afbe21f04e6932397a39a412d80412833',1,'log.h']]],
+  ['_5ffl_5fmap_5fclocked_5fchipset_32',['_FL_MAP_CLOCKED_CHIPSET',['../d6/d64/fastled_8h_a0f7ec59f76e5b6e949268f112f93c412.html#a0f7ec59f76e5b6e949268f112f93c412',1,'FastLED.h']]],
+  ['_5ffl_5fprint_5fm_33',['_FL_PRINT_M',['../d7/d7f/log_8h_a925240005ffbc7902bcca0571292646b.html#a925240005ffbc7902bcca0571292646b',1,'log.h']]],
+  ['_5ffl_5fprint_5fs_34',['_FL_PRINT_S',['../d7/d7f/log_8h_a30da661bbcbc05ee5cc2874c07260f9d.html#a30da661bbcbc05ee5cc2874c07260f9d',1,'log.h']]],
+  ['_5ffl_5fva_5fdispatch_35',['_FL_VA_DISPATCH',['../d7/d7f/log_8h_af35a69eb01262757d7e133b66f9af42e.html#af35a69eb01262757d7e133b66f9af42e',1,'log.h']]],
+  ['_5ffl_5fva_5fpick17_36',['_FL_VA_PICK17',['../d7/d7f/log_8h_a78d66694aaf07b0853ce6aa9543abec8.html#a78d66694aaf07b0853ce6aa9543abec8',1,'log.h']]],
+  ['_5ffl_5fwarn_5fm_37',['_FL_WARN_M',['../d7/d7f/log_8h_a13ba7e7d142013bf7bde4dfe0d4d1c28.html#a13ba7e7d142013bf7bde4dfe0d4d1c28',1,'log.h']]],
+  ['_5ffl_5fwarn_5fs_38',['_FL_WARN_S',['../d7/d7f/log_8h_a3df968e4da6c38ff998d7f33623e32c7.html#a3df968e4da6c38ff998d7f33623e32c7',1,'log.h']]]
 ];

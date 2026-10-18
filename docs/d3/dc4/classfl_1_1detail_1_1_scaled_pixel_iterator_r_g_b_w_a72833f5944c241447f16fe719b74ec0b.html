@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -125,30 +125,30 @@ $(function(){initNavTree('d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g
 
 <p>Advance to next pixel (or mark as end) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00755">755</a> of file <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html">pixel_iterator.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  755</span>                                                          {</div>
-<div class="line"><span class="lineno">  756</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_aee0a909c86e2aaacb4dbf006b9bae8d2.html#aee0a909c86e2aaacb4dbf006b9bae8d2">mPixels</a>) {</div>
-<div class="line"><span class="lineno">  757</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_a86ec540a4bfb4c3bb78825069a3f01c3.html#a86ec540a4bfb4c3bb78825069a3f01c3">mHasValue</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  758</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  759</span>    }</div>
-<div class="line"><span class="lineno">  760</span> </div>
-<div class="line"><span class="lineno">  761</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_aee0a909c86e2aaacb4dbf006b9bae8d2.html#aee0a909c86e2aaacb4dbf006b9bae8d2">mPixels</a>-&gt;has(1)) {</div>
-<div class="line"><span class="lineno">  762</span>        <a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a> b0, b1, b2, b3;</div>
-<div class="line"><span class="lineno">  763</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_aee0a909c86e2aaacb4dbf006b9bae8d2.html#aee0a909c86e2aaacb4dbf006b9bae8d2">mPixels</a>-&gt;loadAndScaleRGBW(&amp;b0, &amp;b1, &amp;b2, &amp;b3);</div>
-<div class="line"><span class="lineno">  764</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_a0090e8cc00351748cfb3bd2e76ed2721.html#a0090e8cc00351748cfb3bd2e76ed2721">mCurrent</a> = array&lt;u8, 4&gt;{{b0, b1, b2, b3}};  <span class="comment">// Wire order bytes</span></div>
-<div class="line"><span class="lineno">  765</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_aee0a909c86e2aaacb4dbf006b9bae8d2.html#aee0a909c86e2aaacb4dbf006b9bae8d2">mPixels</a>-&gt;stepDithering();</div>
-<div class="line"><span class="lineno">  766</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_aee0a909c86e2aaacb4dbf006b9bae8d2.html#aee0a909c86e2aaacb4dbf006b9bae8d2">mPixels</a>-&gt;advanceData();</div>
-<div class="line"><span class="lineno">  767</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_a86ec540a4bfb4c3bb78825069a3f01c3.html#a86ec540a4bfb4c3bb78825069a3f01c3">mHasValue</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  768</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  769</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_a86ec540a4bfb4c3bb78825069a3f01c3.html#a86ec540a4bfb4c3bb78825069a3f01c3">mHasValue</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  770</span>    }</div>
-<div class="line"><span class="lineno">  771</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00876">876</a> of file <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html">pixel_iterator.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  876</span>                                                          {</div>
+<div class="line"><span class="lineno">  877</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_aee0a909c86e2aaacb4dbf006b9bae8d2.html#aee0a909c86e2aaacb4dbf006b9bae8d2">mPixels</a>) {</div>
+<div class="line"><span class="lineno">  878</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_a86ec540a4bfb4c3bb78825069a3f01c3.html#a86ec540a4bfb4c3bb78825069a3f01c3">mHasValue</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  879</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  880</span>    }</div>
+<div class="line"><span class="lineno">  881</span> </div>
+<div class="line"><span class="lineno">  882</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_aee0a909c86e2aaacb4dbf006b9bae8d2.html#aee0a909c86e2aaacb4dbf006b9bae8d2">mPixels</a>-&gt;has(1)) {</div>
+<div class="line"><span class="lineno">  883</span>        <a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a> b0, b1, b2, b3;</div>
+<div class="line"><span class="lineno">  884</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_aee0a909c86e2aaacb4dbf006b9bae8d2.html#aee0a909c86e2aaacb4dbf006b9bae8d2">mPixels</a>-&gt;loadAndScaleRGBW(&amp;b0, &amp;b1, &amp;b2, &amp;b3);</div>
+<div class="line"><span class="lineno">  885</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_a0090e8cc00351748cfb3bd2e76ed2721.html#a0090e8cc00351748cfb3bd2e76ed2721">mCurrent</a> = array&lt;u8, 4&gt;{{b0, b1, b2, b3}};  <span class="comment">// Wire order bytes</span></div>
+<div class="line"><span class="lineno">  886</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_aee0a909c86e2aaacb4dbf006b9bae8d2.html#aee0a909c86e2aaacb4dbf006b9bae8d2">mPixels</a>-&gt;stepDithering();</div>
+<div class="line"><span class="lineno">  887</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_aee0a909c86e2aaacb4dbf006b9bae8d2.html#aee0a909c86e2aaacb4dbf006b9bae8d2">mPixels</a>-&gt;advanceData();</div>
+<div class="line"><span class="lineno">  888</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_a86ec540a4bfb4c3bb78825069a3f01c3.html#a86ec540a4bfb4c3bb78825069a3f01c3">mHasValue</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  889</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  890</span>        <a class="code hl_variable" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_a86ec540a4bfb4c3bb78825069a3f01c3.html#a86ec540a4bfb4c3bb78825069a3f01c3">mHasValue</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  891</span>    }</div>
+<div class="line"><span class="lineno">  892</span>}</div>
 <div class="ttc" id="aclassfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_a0090e8cc00351748cfb3bd2e76ed2721_html_a0090e8cc00351748cfb3bd2e76ed2721"><div class="ttname"><a href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_a0090e8cc00351748cfb3bd2e76ed2721.html#a0090e8cc00351748cfb3bd2e76ed2721">fl::detail::ScaledPixelIteratorRGBW::mCurrent</a></div><div class="ttdeci">array&lt; u8, 4 &gt; mCurrent</div><div class="ttdoc">Current pixel value (cached, wire order)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d2b/pixel__iterator__adapters_8h_source.html#l00186">pixel_iterator_adapters.h:186</a></div></div>
 <div class="ttc" id="aclassfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_a86ec540a4bfb4c3bb78825069a3f01c3_html_a86ec540a4bfb4c3bb78825069a3f01c3"><div class="ttname"><a href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_a86ec540a4bfb4c3bb78825069a3f01c3.html#a86ec540a4bfb4c3bb78825069a3f01c3">fl::detail::ScaledPixelIteratorRGBW::mHasValue</a></div><div class="ttdeci">bool mHasValue</div><div class="ttdoc">true if current pixel is valid</div><div class="ttdef"><b>Definition</b> <a href="../../db/d2b/pixel__iterator__adapters_8h_source.html#l00187">pixel_iterator_adapters.h:187</a></div></div>
 <div class="ttc" id="aclassfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_aee0a909c86e2aaacb4dbf006b9bae8d2_html_aee0a909c86e2aaacb4dbf006b9bae8d2"><div class="ttname"><a href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w_aee0a909c86e2aaacb4dbf006b9bae8d2.html#aee0a909c86e2aaacb4dbf006b9bae8d2">fl::detail::ScaledPixelIteratorRGBW::mPixels</a></div><div class="ttdeci">PixelIterator * mPixels</div><div class="ttdoc">Underlying PixelIterator.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d2b/pixel__iterator__adapters_8h_source.html#l00185">pixel_iterator_adapters.h:185</a></div></div>
 <div class="ttc" id="anamespacefl_a058ceeac48f181da463c2ba07401292c_html_a058ceeac48f181da463c2ba07401292c"><div class="ttname"><a href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00131">stdint.h:131</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d2b/pixel__iterator__adapters_8h_source.html#l00186">mCurrent</a>, <a class="el" href="../../db/d2b/pixel__iterator__adapters_8h_source.html#l00187">mHasValue</a>, and <a class="el" href="../../db/d2b/pixel__iterator__adapters_8h_source.html#l00185">mPixels</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d2b/pixel__iterator__adapters_8h_source.html#l00186">mCurrent</a>, <a class="el" href="../../db/d2b/pixel__iterator__adapters_8h_source.html#l00187">mHasValue</a>, and <a class="el" href="../../db/d2b/pixel__iterator__adapters_8h_source.html#l00185">mPixels</a>.</p>
 
 </div>
 </div>
@@ -159,7 +159,7 @@ $(function(){initNavTree('d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../df/d9e/namespacefl_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="../../d3/dc4/classfl_1_1detail_1_1_scaled_pixel_iterator_r_g_b_w.html">ScaledPixelIteratorRGBW</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

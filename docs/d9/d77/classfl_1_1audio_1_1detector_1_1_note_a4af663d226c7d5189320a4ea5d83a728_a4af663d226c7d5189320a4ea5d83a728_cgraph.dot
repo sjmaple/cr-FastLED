@@ -7,5 +7,10 @@ digraph "fl::audio::detector::Note::midiNoteToFrequency"
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
   Node1 [id="Node000001",label="fl::audio::detector\l::Note::midiNoteToFrequency",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
-  Node1 -> Node1 [id="edge1_Node000001_Node000001",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::audio::detector\l::Note::midiNoteToFrequency",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d77/classfl_1_1audio_1_1detector_1_1_note_a75d910fe6cd3a6a1b3aa3d0830ebd13d.html#a75d910fe6cd3a6a1b3aa3d0830ebd13d",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::powf",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ac85312ba3e9bfd6fe9a92841f52cbe06.html#ac85312ba3e9bfd6fe9a92841f52cbe06",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::pow_impl_float",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a819e43f1b90d47dab7932b2c0f47992e.html#a819e43f1b90d47dab7932b2c0f47992e",tooltip=" "];
 }

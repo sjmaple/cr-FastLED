@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -123,12 +123,27 @@ $(function(){initNavTree('d0/d09/classfl_1_1_pixel_iterator_ac679263a815fac68bab
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00336">336</a> of file <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html">pixel_iterator.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  336</span>{ <a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_ac7b78bd0657c8f522b1ae47ccfa6e06f.html#ac7b78bd0657c8f522b1ae47ccfa6e06f">mRgbw</a> = <a class="code hl_variable" href="../../d1/d3a/_r_g_b_w_emulated_8ino_af6840056f51753c6731a47458751842d.html#af6840056f51753c6731a47458751842d">rgbw</a>; }</div>
-<div class="ttc" id="a_r_g_b_w_emulated_8ino_af6840056f51753c6731a47458751842d_html_af6840056f51753c6731a47458751842d"><div class="ttname"><a href="../../d1/d3a/_r_g_b_w_emulated_8ino_af6840056f51753c6731a47458751842d.html#af6840056f51753c6731a47458751842d">rgbw</a></div><div class="ttdeci">Rgbw rgbw</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d3a/_r_g_b_w_emulated_8ino_source.html#l00023">RGBWEmulated.ino:23</a></div></div>
-<div class="ttc" id="aclassfl_1_1_pixel_iterator_ac7b78bd0657c8f522b1ae47ccfa6e06f_html_ac7b78bd0657c8f522b1ae47ccfa6e06f"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_ac7b78bd0657c8f522b1ae47ccfa6e06f.html#ac7b78bd0657c8f522b1ae47ccfa6e06f">fl::PixelIterator::mRgbw</a></div><div class="ttdeci">Rgbw mRgbw</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00701">pixel_iterator.h:701</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00442">442</a> of file <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html">pixel_iterator.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  442</span>                                                 {</div>
+<div class="line"><span class="lineno">  443</span>      <a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_ac7b78bd0657c8f522b1ae47ccfa6e06f.html#ac7b78bd0657c8f522b1ae47ccfa6e06f">mRgbw</a> = <a class="code hl_variable" href="../../d1/d3a/_r_g_b_w_emulated_8ino_af6840056f51753c6731a47458751842d.html#af6840056f51753c6731a47458751842d">rgbw</a>;</div>
+<div class="line"><span class="lineno">  444</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_a40ce8feba0e3b2d846762e5f48c386ca.html#a40ce8feba0e3b2d846762e5f48c386ca">mLoadRawPremixed</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  445</span>        <a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_a2bd62b20cfddd4b583e70c62c16bf891.html#a2bd62b20cfddd4b583e70c62c16bf891">mRgbwConvert</a> = <a class="code hl_variable" href="../../d0/d09/classfl_1_1_pixel_iterator_ac7b78bd0657c8f522b1ae47ccfa6e06f.html#ac7b78bd0657c8f522b1ae47ccfa6e06f">mRgbw</a>.active() ? <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_ad5686d9486a49137d8c5cf783cf360ff.html#ad5686d9486a49137d8c5cf783cf360ff">detail::rgbw_conversion</a>() : nullptr;</div>
+<div class="line"><span class="lineno">  446</span>      }</div>
+<div class="line"><span class="lineno">  447</span>    }</div>
+<div class="ttc" id="a_r_g_b_w_emulated_8ino_af6840056f51753c6731a47458751842d_html_af6840056f51753c6731a47458751842d"><div class="ttname"><a href="../../d1/d3a/_r_g_b_w_emulated_8ino_af6840056f51753c6731a47458751842d.html#af6840056f51753c6731a47458751842d">rgbw</a></div><div class="ttdeci">Rgbw rgbw</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d3a/_r_g_b_w_emulated_8ino_source.html#l00024">RGBWEmulated.ino:24</a></div></div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_a2bd62b20cfddd4b583e70c62c16bf891_html_a2bd62b20cfddd4b583e70c62c16bf891"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_a2bd62b20cfddd4b583e70c62c16bf891.html#a2bd62b20cfddd4b583e70c62c16bf891">fl::PixelIterator::mRgbwConvert</a></div><div class="ttdeci">detail::RgbwConvertFn mRgbwConvert</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00826">pixel_iterator.h:826</a></div></div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_a40ce8feba0e3b2d846762e5f48c386ca_html_a40ce8feba0e3b2d846762e5f48c386ca"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_a40ce8feba0e3b2d846762e5f48c386ca.html#a40ce8feba0e3b2d846762e5f48c386ca">fl::PixelIterator::mLoadRawPremixed</a></div><div class="ttdeci">loadRawPremixedFunction mLoadRawPremixed</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00824">pixel_iterator.h:824</a></div></div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_ac7b78bd0657c8f522b1ae47ccfa6e06f_html_ac7b78bd0657c8f522b1ae47ccfa6e06f"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_ac7b78bd0657c8f522b1ae47ccfa6e06f.html#ac7b78bd0657c8f522b1ae47ccfa6e06f">fl::PixelIterator::mRgbw</a></div><div class="ttdeci">Rgbw mRgbw</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00817">pixel_iterator.h:817</a></div></div>
+<div class="ttc" id="anamespacefl_1_1detail_ad5686d9486a49137d8c5cf783cf360ff_html_ad5686d9486a49137d8c5cf783cf360ff"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_ad5686d9486a49137d8c5cf783cf360ff.html#ad5686d9486a49137d8c5cf783cf360ff">fl::detail::rgbw_conversion</a></div><div class="ttdeci">RgbwConvertFn rgbw_conversion() FL_NO_EXCEPT</div><div class="ttdoc">Null until enable_rgbw_conversion() has run.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d5d/rgbw_8cpp_8hpp_source.html#l00738">rgbw.cpp.hpp:738</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00701">mRgbw</a>, and <a class="el" href="../../d1/d3a/_r_g_b_w_emulated_8ino_source.html#l00023">rgbw</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00824">mLoadRawPremixed</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00817">mRgbw</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00826">mRgbwConvert</a>, <a class="el" href="../../d1/d3a/_r_g_b_w_emulated_8ino_source.html#l00024">rgbw</a>, and <a class="el" href="../../df/d5d/rgbw_8cpp_8hpp_source.html#l00738">fl::detail::rgbw_conversion()</a>.</p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d09/classfl_1_1_pixel_iterator_ac679263a815fac68bab8712aea787d19_ac679263a815fac68bab8712aea787d19_cgraph.svg" width="378" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -139,7 +154,7 @@ $(function(){initNavTree('d0/d09/classfl_1_1_pixel_iterator_ac679263a815fac68bab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d0/d09/classfl_1_1_pixel_iterator.html">PixelIterator</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:09 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:31 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

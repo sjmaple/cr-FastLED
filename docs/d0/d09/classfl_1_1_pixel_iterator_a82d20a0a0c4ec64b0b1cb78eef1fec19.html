@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -128,42 +128,42 @@ template&lt;typename OutputIterator&gt; </div>
 <p>LPD6803 over a colour-managed channel's 16-bit drives, quantized once to the chip's 5 bits per channel (B3). </p>
 <p>Same framing as <code>encodeLPD6803</code>: four zero bytes, <code>1rrrrrgggggbbbbb</code> per LED in wire order, then <code>n / 32</code> dwords of <code>FF 00 00 00</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00489">489</a> of file <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html">pixel_iterator.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  489</span>                                                                {</div>
-<div class="line"><span class="lineno">  490</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 4; ++i) {</div>
-<div class="line"><span class="lineno">  491</span>            *back_ins++ = 0x00;</div>
-<div class="line"><span class="lineno">  492</span>        }</div>
-<div class="line"><span class="lineno">  493</span>        <a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_a22f838d632f4d21d55a4e3ea5fb03247.html#a22f838d632f4d21d55a4e3ea5fb03247">fl::size</a> num_leds = 0;</div>
-<div class="line"><span class="lineno">  494</span>        <span class="keywordflow">while</span> (<a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_a8f6e7554cee021e8e08de34f887ff16a.html#a8f6e7554cee021e8e08de34f887ff16a">has</a>(1)) {</div>
-<div class="line"><span class="lineno">  495</span>            u16 w[3];</div>
-<div class="line"><span class="lineno">  496</span>            <a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_a65edf3ee981db4bd3e380a418163147d.html#a65edf3ee981db4bd3e380a418163147d">loadAndScaleRGB16</a>(&amp;w[0], &amp;w[1], &amp;w[2]);  <span class="comment">// wire order</span></div>
-<div class="line"><span class="lineno">  497</span>            u16 command = 0x8000;</div>
-<div class="line"><span class="lineno">  498</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 0; c &lt; 3; ++c) {</div>
-<div class="line"><span class="lineno">  499</span>                <span class="keyword">const</span> u32 code = (<span class="keyword">static_cast&lt;</span>u32<span class="keyword">&gt;</span>(w[c]) * 31u + 32767u) / 65535u;</div>
-<div class="line"><span class="lineno">  500</span>                command = <span class="keyword">static_cast&lt;</span>u16<span class="keyword">&gt;</span>(command | (code &lt;&lt; (10 - 5 * c)));</div>
-<div class="line"><span class="lineno">  501</span>            }</div>
-<div class="line"><span class="lineno">  502</span>            *back_ins++ = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a><span class="keyword">&gt;</span>(command &gt;&gt; 8);</div>
-<div class="line"><span class="lineno">  503</span>            *back_ins++ = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a><span class="keyword">&gt;</span>(command &amp; 0xFF);</div>
-<div class="line"><span class="lineno">  504</span>            <a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_ae60759e41b9d52b25c3c711f38bfe494.html#ae60759e41b9d52b25c3c711f38bfe494">stepDithering</a>();</div>
-<div class="line"><span class="lineno">  505</span>            <a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_a20b1f7f8de51f77507da920ebce3bf04.html#a20b1f7f8de51f77507da920ebce3bf04">advanceData</a>();</div>
-<div class="line"><span class="lineno">  506</span>            ++num_leds;</div>
-<div class="line"><span class="lineno">  507</span>        }</div>
-<div class="line"><span class="lineno">  508</span>        <span class="keyword">const</span> <a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_a22f838d632f4d21d55a4e3ea5fb03247.html#a22f838d632f4d21d55a4e3ea5fb03247">fl::size</a> end_dwords = num_leds / 32;</div>
-<div class="line"><span class="lineno">  509</span>        <span class="keywordflow">for</span> (<a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_a22f838d632f4d21d55a4e3ea5fb03247.html#a22f838d632f4d21d55a4e3ea5fb03247">fl::size</a> i = 0; i &lt; end_dwords; ++i) {</div>
-<div class="line"><span class="lineno">  510</span>            *back_ins++ = 0xFF;</div>
-<div class="line"><span class="lineno">  511</span>            *back_ins++ = 0x00;</div>
-<div class="line"><span class="lineno">  512</span>            *back_ins++ = 0x00;</div>
-<div class="line"><span class="lineno">  513</span>            *back_ins++ = 0x00;</div>
-<div class="line"><span class="lineno">  514</span>        }</div>
-<div class="line"><span class="lineno">  515</span>    }</div>
-<div class="ttc" id="aclassfl_1_1_pixel_iterator_a20b1f7f8de51f77507da920ebce3bf04_html_a20b1f7f8de51f77507da920ebce3bf04"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_a20b1f7f8de51f77507da920ebce3bf04.html#a20b1f7f8de51f77507da920ebce3bf04">fl::PixelIterator::advanceData</a></div><div class="ttdeci">void advanceData() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00333">pixel_iterator.h:333</a></div></div>
-<div class="ttc" id="aclassfl_1_1_pixel_iterator_a22f838d632f4d21d55a4e3ea5fb03247_html_a22f838d632f4d21d55a4e3ea5fb03247"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_a22f838d632f4d21d55a4e3ea5fb03247.html#a22f838d632f4d21d55a4e3ea5fb03247">fl::PixelIterator::size</a></div><div class="ttdeci">int size() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00334">pixel_iterator.h:334</a></div></div>
-<div class="ttc" id="aclassfl_1_1_pixel_iterator_a65edf3ee981db4bd3e380a418163147d_html_a65edf3ee981db4bd3e380a418163147d"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_a65edf3ee981db4bd3e380a418163147d.html#a65edf3ee981db4bd3e380a418163147d">fl::PixelIterator::loadAndScaleRGB16</a></div><div class="ttdeci">void loadAndScaleRGB16(u16 *r_out, u16 *g_out, u16 *b_out) FL_NO_EXCEPT</div><div class="ttdoc">One pixel at the source&#39;s own precision, wire-ordered.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00316">pixel_iterator.h:316</a></div></div>
-<div class="ttc" id="aclassfl_1_1_pixel_iterator_a8f6e7554cee021e8e08de34f887ff16a_html_a8f6e7554cee021e8e08de34f887ff16a"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_a8f6e7554cee021e8e08de34f887ff16a.html#a8f6e7554cee021e8e08de34f887ff16a">fl::PixelIterator::has</a></div><div class="ttdeci">bool has(int n) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00261">pixel_iterator.h:261</a></div></div>
-<div class="ttc" id="aclassfl_1_1_pixel_iterator_ae60759e41b9d52b25c3c711f38bfe494_html_ae60759e41b9d52b25c3c711f38bfe494"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_ae60759e41b9d52b25c3c711f38bfe494.html#ae60759e41b9d52b25c3c711f38bfe494">fl::PixelIterator::stepDithering</a></div><div class="ttdeci">void stepDithering() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00332">pixel_iterator.h:332</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00605">605</a> of file <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html">pixel_iterator.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  605</span>                                                                {</div>
+<div class="line"><span class="lineno">  606</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 4; ++i) {</div>
+<div class="line"><span class="lineno">  607</span>            *back_ins++ = 0x00;</div>
+<div class="line"><span class="lineno">  608</span>        }</div>
+<div class="line"><span class="lineno">  609</span>        <a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_a22f838d632f4d21d55a4e3ea5fb03247.html#a22f838d632f4d21d55a4e3ea5fb03247">fl::size</a> num_leds = 0;</div>
+<div class="line"><span class="lineno">  610</span>        <span class="keywordflow">while</span> (<a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_a8f6e7554cee021e8e08de34f887ff16a.html#a8f6e7554cee021e8e08de34f887ff16a">has</a>(1)) {</div>
+<div class="line"><span class="lineno">  611</span>            u16 w[3];</div>
+<div class="line"><span class="lineno">  612</span>            <a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_a65edf3ee981db4bd3e380a418163147d.html#a65edf3ee981db4bd3e380a418163147d">loadAndScaleRGB16</a>(&amp;w[0], &amp;w[1], &amp;w[2]);  <span class="comment">// wire order</span></div>
+<div class="line"><span class="lineno">  613</span>            u16 command = 0x8000;</div>
+<div class="line"><span class="lineno">  614</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 0; c &lt; 3; ++c) {</div>
+<div class="line"><span class="lineno">  615</span>                <span class="keyword">const</span> u32 code = (<span class="keyword">static_cast&lt;</span>u32<span class="keyword">&gt;</span>(w[c]) * 31u + 32767u) / 65535u;</div>
+<div class="line"><span class="lineno">  616</span>                command = <span class="keyword">static_cast&lt;</span>u16<span class="keyword">&gt;</span>(command | (code &lt;&lt; (10 - 5 * c)));</div>
+<div class="line"><span class="lineno">  617</span>            }</div>
+<div class="line"><span class="lineno">  618</span>            *back_ins++ = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a><span class="keyword">&gt;</span>(command &gt;&gt; 8);</div>
+<div class="line"><span class="lineno">  619</span>            *back_ins++ = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a><span class="keyword">&gt;</span>(command &amp; 0xFF);</div>
+<div class="line"><span class="lineno">  620</span>            <a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_ae60759e41b9d52b25c3c711f38bfe494.html#ae60759e41b9d52b25c3c711f38bfe494">stepDithering</a>();</div>
+<div class="line"><span class="lineno">  621</span>            <a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_a20b1f7f8de51f77507da920ebce3bf04.html#a20b1f7f8de51f77507da920ebce3bf04">advanceData</a>();</div>
+<div class="line"><span class="lineno">  622</span>            ++num_leds;</div>
+<div class="line"><span class="lineno">  623</span>        }</div>
+<div class="line"><span class="lineno">  624</span>        <span class="keyword">const</span> <a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_a22f838d632f4d21d55a4e3ea5fb03247.html#a22f838d632f4d21d55a4e3ea5fb03247">fl::size</a> end_dwords = num_leds / 32;</div>
+<div class="line"><span class="lineno">  625</span>        <span class="keywordflow">for</span> (<a class="code hl_function" href="../../d0/d09/classfl_1_1_pixel_iterator_a22f838d632f4d21d55a4e3ea5fb03247.html#a22f838d632f4d21d55a4e3ea5fb03247">fl::size</a> i = 0; i &lt; end_dwords; ++i) {</div>
+<div class="line"><span class="lineno">  626</span>            *back_ins++ = 0xFF;</div>
+<div class="line"><span class="lineno">  627</span>            *back_ins++ = 0x00;</div>
+<div class="line"><span class="lineno">  628</span>            *back_ins++ = 0x00;</div>
+<div class="line"><span class="lineno">  629</span>            *back_ins++ = 0x00;</div>
+<div class="line"><span class="lineno">  630</span>        }</div>
+<div class="line"><span class="lineno">  631</span>    }</div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_a20b1f7f8de51f77507da920ebce3bf04_html_a20b1f7f8de51f77507da920ebce3bf04"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_a20b1f7f8de51f77507da920ebce3bf04.html#a20b1f7f8de51f77507da920ebce3bf04">fl::PixelIterator::advanceData</a></div><div class="ttdeci">void advanceData() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00439">pixel_iterator.h:439</a></div></div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_a22f838d632f4d21d55a4e3ea5fb03247_html_a22f838d632f4d21d55a4e3ea5fb03247"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_a22f838d632f4d21d55a4e3ea5fb03247.html#a22f838d632f4d21d55a4e3ea5fb03247">fl::PixelIterator::size</a></div><div class="ttdeci">int size() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00440">pixel_iterator.h:440</a></div></div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_a65edf3ee981db4bd3e380a418163147d_html_a65edf3ee981db4bd3e380a418163147d"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_a65edf3ee981db4bd3e380a418163147d.html#a65edf3ee981db4bd3e380a418163147d">fl::PixelIterator::loadAndScaleRGB16</a></div><div class="ttdeci">void loadAndScaleRGB16(u16 *r_out, u16 *g_out, u16 *b_out) FL_NO_EXCEPT</div><div class="ttdoc">One pixel at the source&#39;s own precision, wire-ordered.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00422">pixel_iterator.h:422</a></div></div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_a8f6e7554cee021e8e08de34f887ff16a_html_a8f6e7554cee021e8e08de34f887ff16a"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_a8f6e7554cee021e8e08de34f887ff16a.html#a8f6e7554cee021e8e08de34f887ff16a">fl::PixelIterator::has</a></div><div class="ttdeci">bool has(int n) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00311">pixel_iterator.h:311</a></div></div>
+<div class="ttc" id="aclassfl_1_1_pixel_iterator_ae60759e41b9d52b25c3c711f38bfe494_html_ae60759e41b9d52b25c3c711f38bfe494"><div class="ttname"><a href="../../d0/d09/classfl_1_1_pixel_iterator_ae60759e41b9d52b25c3c711f38bfe494.html#ae60759e41b9d52b25c3c711f38bfe494">fl::PixelIterator::stepDithering</a></div><div class="ttdeci">void stepDithering() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00438">pixel_iterator.h:438</a></div></div>
 <div class="ttc" id="anamespacefl_a058ceeac48f181da463c2ba07401292c_html_a058ceeac48f181da463c2ba07401292c"><div class="ttname"><a href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00131">stdint.h:131</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00333">advanceData()</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00261">has()</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00316">loadAndScaleRGB16()</a>, and <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00332">stepDithering()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00439">advanceData()</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00311">has()</a>, <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00422">loadAndScaleRGB16()</a>, and <a class="el" href="../../db/d65/fl_2chipsets_2encoders_2pixel__iterator_8h_source.html#l00438">stepDithering()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -181,7 +181,7 @@ template&lt;typename OutputIterator&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d0/d09/classfl_1_1_pixel_iterator.html">PixelIterator</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:09 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:31 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

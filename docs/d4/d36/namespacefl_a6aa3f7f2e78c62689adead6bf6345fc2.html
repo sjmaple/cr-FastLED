@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -171,30 +171,30 @@ $(function(){initNavTree('d4/d36/namespacefl_a6aa3f7f2e78c62689adead6bf6345fc2.h
 <div class="ttc" id="anamespacefl_ad067e3fb96d08fad4b57bac8281ba222_html_ad067e3fb96d08fad4b57bac8281ba222a01ed2c7620426786f55ef860b1794bb0"><div class="ttname"><a href="../../d4/d36/namespacefl_ad067e3fb96d08fad4b57bac8281ba222.html#ad067e3fb96d08fad4b57bac8281ba222a01ed2c7620426786f55ef860b1794bb0">fl::ChannelPixelFormat::RGBW</a></div><div class="ttdeci">@ RGBW</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dbd/data_8h_source.html#l00028">data.h:28</a></div></div>
 <div class="ttc" id="anamespacefl_ad067e3fb96d08fad4b57bac8281ba222_html_ad067e3fb96d08fad4b57bac8281ba222a889574aebacda6bfd3e534e2b49b8028"><div class="ttname"><a href="../../d4/d36/namespacefl_ad067e3fb96d08fad4b57bac8281ba222.html#ad067e3fb96d08fad4b57bac8281ba222a889574aebacda6bfd3e534e2b49b8028">fl::ChannelPixelFormat::RGB</a></div><div class="ttdeci">@ RGB</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dbd/data_8h_source.html#l00027">data.h:27</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="../../df/d5d/rgbw_8cpp_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../df/d5d/rgbw_8cpp_8hpp_source.html">rgbw.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>                                            {</div>
-<div class="line"><span class="lineno">   87</span>    (void)w_color_temperature;</div>
-<div class="line"><span class="lineno">   88</span>    r = scale8(r, r_scale);</div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_variable" href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">g</a> = scale8(<a class="code hl_variable" href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">g</a>, g_scale);</div>
-<div class="line"><span class="lineno">   90</span>    b = scale8(b, b_scale);</div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a> min_component = rgbw_min3(r, <a class="code hl_variable" href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">g</a>, b);</div>
-<div class="line"><span class="lineno">   92</span>    *out_r = r - min_component;</div>
-<div class="line"><span class="lineno">   93</span>    *out_g = <a class="code hl_variable" href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">g</a> - min_component;</div>
-<div class="line"><span class="lineno">   94</span>    *out_b = b - min_component;</div>
-<div class="line"><span class="lineno">   95</span>    *out_w = min_component;</div>
-<div class="line"><span class="lineno">   96</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d5d/rgbw_8cpp_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../df/d5d/rgbw_8cpp_8hpp_source.html">rgbw.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>                                                         {</div>
+<div class="line"><span class="lineno">   88</span>    (void)w_color_temperature;</div>
+<div class="line"><span class="lineno">   89</span>    r = scale8(r, r_scale);</div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_variable" href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">g</a> = scale8(<a class="code hl_variable" href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">g</a>, g_scale);</div>
+<div class="line"><span class="lineno">   91</span>    b = scale8(b, b_scale);</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a> min_component = rgbw_min3(r, <a class="code hl_variable" href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">g</a>, b);</div>
+<div class="line"><span class="lineno">   93</span>    *out_r = r - min_component;</div>
+<div class="line"><span class="lineno">   94</span>    *out_g = <a class="code hl_variable" href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">g</a> - min_component;</div>
+<div class="line"><span class="lineno">   95</span>    *out_b = b - min_component;</div>
+<div class="line"><span class="lineno">   96</span>    *out_w = min_component;</div>
+<div class="line"><span class="lineno">   97</span>}</div>
 <div class="ttc" id="anamespacefl_a058ceeac48f181da463c2ba07401292c_html_a058ceeac48f181da463c2ba07401292c"><div class="ttname"><a href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00131">stdint.h:131</a></div></div>
-<div class="ttc" id="anamespacefl_abb8ff746cce2b11a90718afba1cfec1b_html_abb8ff746cce2b11a90718afba1cfec1b"><div class="ttname"><a href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">fl::g</a></div><div class="ttdeci">InputGamut g</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00124">rgbw.h:124</a></div></div>
+<div class="ttc" id="anamespacefl_abb8ff746cce2b11a90718afba1cfec1b_html_abb8ff746cce2b11a90718afba1cfec1b"><div class="ttname"><a href="../../d4/d36/namespacefl_abb8ff746cce2b11a90718afba1cfec1b.html#abb8ff746cce2b11a90718afba1cfec1b">fl::g</a></div><div class="ttdeci">InputGamut g</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00125">rgbw.h:125</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00124">g</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">FL_NO_EXCEPT</a>, and <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00125">g</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00380">rgb_2_rgbw()</a>, <a class="el" href="../../df/d5d/rgbw_8cpp_8hpp_source.html#l00637">rgb_2_rgbw_colorimetric()</a>, <a class="el" href="../../df/d5d/rgbw_8cpp_8hpp_source.html#l00648">rgb_2_rgbw_colorimetric_boosted()</a>, and <a class="el" href="../../df/d5d/rgbw_8cpp_8hpp_source.html#l00180">rgb_2_rgbw_user_function()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00406">rgb_2_rgbw()</a>, <a class="el" href="../../df/d5d/rgbw_8cpp_8hpp_source.html#l00638">rgb_2_rgbw_colorimetric()</a>, <a class="el" href="../../df/d5d/rgbw_8cpp_8hpp_source.html#l00649">rgb_2_rgbw_colorimetric_boosted()</a>, and <a class="el" href="../../df/d5d/rgbw_8cpp_8hpp_source.html#l00181">rgb_2_rgbw_user_function()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/d36/namespacefl_a6aa3f7f2e78c62689adead6bf6345fc2_a6aa3f7f2e78c62689adead6bf6345fc2_icgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/d36/namespacefl_a6aa3f7f2e78c62689adead6bf6345fc2_a6aa3f7f2e78c62689adead6bf6345fc2_icgraph.svg" width="100%" height="538"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -206,7 +206,7 @@ $(function(){initNavTree('d4/d36/namespacefl_a6aa3f7f2e78c62689adead6bf6345fc2.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:28 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

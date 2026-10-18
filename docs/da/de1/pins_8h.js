@@ -20,8 +20,8 @@ var pins_8h =
     [ "fl::Pins8", "d4/d36/namespacefl.html#de/d38/structfl_1_1_pins8", [
       [ "pins", "d4/d36/namespacefl.html#aad316e4f60aaf22d4d10d9d364219d68", null ]
     ] ],
-    [ "fl::digitalMultiWrite16", "d4/d36/namespacefl_ab5bc76750f7a0b948186397c6581fbf3.html#ab5bc76750f7a0b948186397c6581fbf3", null ],
-    [ "fl::digitalMultiWrite8", "d4/d36/namespacefl_a0beee42fe65dbc34d13920741a3237ed.html#a0beee42fe65dbc34d13920741a3237ed", null ],
-    [ "fl::pinMap", "d4/d36/namespacefl_acd0a507416e189416846f413ec672a37.html#acd0a507416e189416846f413ec672a37", null ],
-    [ "fl::pinToPort", "d4/d36/namespacefl_a323f088e163b9ada03436721370e853f.html#a323f088e163b9ada03436721370e853f", null ]
+    [ "fl::digitalMultiWrite16", "d4/d36/namespacefl_ac71d7b768f9386731b9f00d9c6faf696.html#ac71d7b768f9386731b9f00d9c6faf696", null ],
+    [ "fl::digitalMultiWrite8", "d4/d36/namespacefl_a6f431e31f0f0e6f74650a2e1cfbaf318.html#a6f431e31f0f0e6f74650a2e1cfbaf318", null ],
+    [ "fl::pinMap", "d4/d36/namespacefl_a525d2a832555b285afd196528ba5d28e.html#a525d2a832555b285afd196528ba5d28e", null ],
+    [ "fl::pinToPort", "d4/d36/namespacefl_a797991ebe8b5acc75c01237a52c2d095.html#a797991ebe8b5acc75c01237a52c2d095", null ]
 ];

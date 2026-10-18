@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -118,40 +118,40 @@ $(function(){initNavTree('d4/d36/namespacefl_ae2605417d63d8414e44241fa82652521.h
 <p>64-bit monotonic microsecond timer. </p>
 <p>Extends the platform's 32-bit microsecond counter using unsigned elapsed deltas, so the returned value never wraps in practical use. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d18/chrono_8cpp_8hpp_source.html#l00126">126</a> of file <a class="el" href="../../db/d18/chrono_8cpp_8hpp_source.html">chrono.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  126</span>                              {</div>
-<div class="line"><span class="lineno">  127</span>    Micros64State&amp; <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a> = get_micros64_state();</div>
-<div class="line"><span class="lineno">  128</span>    fl::unique_lock&lt;fl::mutex&gt; lock(<a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.mutex);</div>
-<div class="line"><span class="lineno">  129</span>    <span class="keyword">const</span> fl::u32 current = <a class="code hl_function" href="../../d4/d36/namespacefl_a4cfbbd90ced1c04107934a3c05d3e679.html#a4cfbbd90ced1c04107934a3c05d3e679">fl::micros</a>();</div>
-<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.initialized) {</div>
-<div class="line"><span class="lineno">  131</span>        <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.accumulated = current;</div>
-<div class="line"><span class="lineno">  132</span>        <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.last_micros = current;</div>
-<div class="line"><span class="lineno">  133</span>        <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.initialized = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.accumulated;</div>
-<div class="line"><span class="lineno">  135</span>    }</div>
-<div class="line"><span class="lineno">  136</span>    <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.accumulated += <span class="keyword">static_cast&lt;</span>fl::u32<span class="keyword">&gt;</span>(current - <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.last_micros);</div>
-<div class="line"><span class="lineno">  137</span>    <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.last_micros = current;</div>
-<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.accumulated;</div>
-<div class="line"><span class="lineno">  139</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../db/d18/chrono_8cpp_8hpp_source.html#l00127">127</a> of file <a class="el" href="../../db/d18/chrono_8cpp_8hpp_source.html">chrono.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  127</span>                              {</div>
+<div class="line"><span class="lineno">  128</span>    Micros64State&amp; <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a> = get_micros64_state();</div>
+<div class="line"><span class="lineno">  129</span>    fl::unique_lock&lt;fl::mutex&gt; lock(<a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.mutex);</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keyword">const</span> fl::u32 current = <a class="code hl_function" href="../../d4/d36/namespacefl_a4cfbbd90ced1c04107934a3c05d3e679.html#a4cfbbd90ced1c04107934a3c05d3e679">fl::micros</a>();</div>
+<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.initialized) {</div>
+<div class="line"><span class="lineno">  132</span>        <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.accumulated = current;</div>
+<div class="line"><span class="lineno">  133</span>        <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.last_micros = current;</div>
+<div class="line"><span class="lineno">  134</span>        <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.initialized = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  135</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.accumulated;</div>
+<div class="line"><span class="lineno">  136</span>    }</div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.accumulated += <span class="keyword">static_cast&lt;</span>fl::u32<span class="keyword">&gt;</span>(current - <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.last_micros);</div>
+<div class="line"><span class="lineno">  138</span>    <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.last_micros = current;</div>
+<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>.accumulated;</div>
+<div class="line"><span class="lineno">  140</span>}</div>
 <div class="ttc" id="a_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90_html_adc6e5733fc3c22f0a7b2914188c49c90"><div class="ttname"><a href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a></div><div class="ttdeci">TestState state</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dce/_client_validation_real_8h_source.html#l00049">ClientValidationReal.h:49</a></div></div>
-<div class="ttc" id="anamespacefl_a4cfbbd90ced1c04107934a3c05d3e679_html_a4cfbbd90ced1c04107934a3c05d3e679"><div class="ttname"><a href="../../d4/d36/namespacefl_a4cfbbd90ced1c04107934a3c05d3e679.html#a4cfbbd90ced1c04107934a3c05d3e679">fl::micros</a></div><div class="ttdeci">fl::u32 micros()</div><div class="ttdoc">Universal microsecond timer - returns microseconds since system startup.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d18/chrono_8cpp_8hpp_source.html#l00091">chrono.cpp.hpp:91</a></div></div>
+<div class="ttc" id="anamespacefl_a4cfbbd90ced1c04107934a3c05d3e679_html_a4cfbbd90ced1c04107934a3c05d3e679"><div class="ttname"><a href="../../d4/d36/namespacefl_a4cfbbd90ced1c04107934a3c05d3e679.html#a4cfbbd90ced1c04107934a3c05d3e679">fl::micros</a></div><div class="ttdeci">fl::u32 micros() FL_NO_EXCEPT</div><div class="ttdoc">Universal microsecond timer - returns microseconds since system startup.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d18/chrono_8cpp_8hpp_source.html#l00092">chrono.cpp.hpp:92</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">FL_NO_EXCEPT</a>, <a class="el" href="../../db/d18/chrono_8cpp_8hpp_source.html#l00091">micros()</a>, <a class="el" href="../../db/d18/chrono_8cpp_8hpp_source.html#l00126">micros64()</a>, and <a class="el" href="../../d9/dce/_client_validation_real_8h_source.html#l00049">state</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">FL_NO_EXCEPT</a>, <a class="el" href="../../db/d18/chrono_8cpp_8hpp_source.html#l00092">micros()</a>, and <a class="el" href="../../d9/dce/_client_validation_real_8h_source.html#l00049">state</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d18/chrono_8cpp_8hpp_source.html#l00126">micros64()</a>, <a class="el" href="../../db/d18/chrono_8cpp_8hpp_source.html#l00141">fl::chrono::steady_clock::now()</a>, and <a class="el" href="../../db/d18/chrono_8cpp_8hpp_source.html#l00145">fl::chrono::system_clock::now()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d18/chrono_8cpp_8hpp_source.html#l00142">fl::chrono::steady_clock::now()</a>, and <a class="el" href="../../db/d18/chrono_8cpp_8hpp_source.html#l00146">fl::chrono::system_clock::now()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d36/namespacefl_ae2605417d63d8414e44241fa82652521_ae2605417d63d8414e44241fa82652521_cgraph.svg" width="240" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d36/namespacefl_ae2605417d63d8414e44241fa82652521_ae2605417d63d8414e44241fa82652521_cgraph.svg" width="240" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d36/namespacefl_ae2605417d63d8414e44241fa82652521_ae2605417d63d8414e44241fa82652521_icgraph.svg" width="296" height="163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d36/namespacefl_ae2605417d63d8414e44241fa82652521_ae2605417d63d8414e44241fa82652521_icgraph.svg" width="296" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -163,7 +163,7 @@ $(function(){initNavTree('d4/d36/namespacefl_ae2605417d63d8414e44241fa82652521.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:28 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -1,23 +1,23 @@
 <map id="WS2801Controller&lt; DATA_PIN, CLOCK_PIN, RGB_ORDER, SPI_SPEED &gt;" name="WS2801Controller&lt; DATA_PIN, CLOCK_PIN, RGB_ORDER, SPI_SPEED &gt;">
-<area shape="rect" id="Node000001" title="WS2801 controller class." alt="" coords="277,524,502,579"/>
-<area shape="rect" id="Node000002" href="$d0/dc9/class_c_pixel_l_e_d_controller.html" title=" " alt="" coords="223,421,374,461"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="325,470,369,522,365,526,321,474"/>
-<area shape="rect" id="Node000003" href="$d8/da0/classfl_1_1_c_l_e_d_controller.html" title=" " alt="" coords="131,229,251,255"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="190,268,190,312,194,335,202,357,215,376,231,393,265,419,262,423,227,397,211,379,198,360,189,337,185,312,185,268"/>
-<area shape="rect" id="Node000011" href="$d0/dc9/class_c_pixel_l_e_d_controller.html" title="Template extension of the CLEDController class." alt="" coords="212,304,385,359"/>
-<area shape="poly" id="edge10_Node000011_Node000003" title=" " alt="" coords="217,261,268,302,265,306,214,266"/>
+<area shape="rect" id="Node000001" title="WS2801 controller class." alt="" coords="277,495,502,549"/>
+<area shape="rect" id="Node000002" href="$d0/dc9/class_c_pixel_l_e_d_controller.html" title=" " alt="" coords="223,392,374,432"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="325,441,369,493,365,496,321,444"/>
+<area shape="rect" id="Node000003" href="$d8/da0/classfl_1_1_c_l_e_d_controller.html" title=" " alt="" coords="131,200,251,225"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="190,239,190,282,194,306,202,328,215,347,231,363,265,390,262,394,227,367,211,350,198,331,189,307,185,283,185,239"/>
+<area shape="rect" id="Node000009" href="$d0/dc9/class_c_pixel_l_e_d_controller.html" title="Template extension of the CLEDController class." alt="" coords="212,275,385,329"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="217,232,268,273,265,277,214,236"/>
 <area shape="rect" id="Node000004" href="$d0/d08/classfl_1_1span.html" title=" " alt="" coords="5,5,157,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="72,44,60,89,59,113,65,136,85,167,112,192,167,227,164,231,109,196,81,170,60,138,54,114,54,88,67,43"/>
-<area shape="rect" id="Node000007" href="$d8/da0/classfl_1_1_c_l_e_d_controller.html" title=" " alt="" coords="123,103,259,128"/>
-<area shape="poly" id="edge5_Node000007_Node000004" title=" " alt="" coords="107,38,179,100,175,104,103,42"/>
-<area shape="poly" id="edge4_Node000003_Node000007" title=" " alt="" coords="193,142,193,229,188,229,188,142"/>
-<area shape="poly" id="edge6_Node000007_Node000007" title=" " alt="" coords="274,105,282,109,285,116,277,124,259,128,258,122,275,119,280,115,278,113,271,110"/>
-<area shape="rect" id="Node000008" href="$d5/d87/structfl_1_1_channel_options.html" title="Optional channel configuration parameters All fields have sensible defaults and can be overridden as ..." alt="" coords="251,5,392,31"/>
-<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="343,40,350,54,366,96,366,116,357,139,332,172,298,199,263,218,230,232,228,227,260,213,295,194,328,169,352,136,360,115,361,97,346,56,338,43"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="296,41,208,105,205,100,293,37"/>
-<area shape="poly" id="edge9_Node000002_Node000011" title=" " alt="" coords="301,373,301,421,296,421,296,373"/>
-<area shape="rect" id="Node000012" href="$d1/d6d/class_c_min_wait.html" title=" " alt="" coords="404,429,551,454"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="461,467,413,526,409,522,457,463"/>
-<area shape="rect" id="Node000013" href="$d1/d6d/class_c_min_wait.html" title="Class to ensure that a minimum amount of time has kicked since the last time run &#45; and delay if not e..." alt="" coords="409,319,556,344"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="484,358,481,428,475,428,479,358"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="71,44,60,82,59,102,65,121,84,147,109,169,161,198,158,202,106,173,80,151,60,124,54,103,55,81,66,42"/>
+<area shape="rect" id="Node000007" href="$d8/da0/classfl_1_1_c_l_e_d_controller.html" title=" " alt="" coords="123,95,259,121"/>
+<area shape="poly" id="edge5_Node000007_Node000004" title=" " alt="" coords="108,37,178,93,175,97,105,42"/>
+<area shape="poly" id="edge4_Node000003_Node000007" title=" " alt="" coords="193,135,193,200,188,200,188,135"/>
+<area shape="poly" id="edge6_Node000007_Node000007" title=" " alt="" coords="274,99,285,108,277,116,259,119,258,114,275,111,280,108,271,104"/>
+<area shape="rect" id="Node000008" href="$d1/dc1/structfl_1_1_legacy_settings.html" title=" " alt="" coords="251,5,389,31"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="360,37,374,53,378,71,375,90,357,124,328,152,295,174,230,202,228,198,292,169,325,148,353,121,370,89,373,71,370,56,356,40"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="286,39,256,57,205,97,202,93,253,52,283,35"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="301,344,301,392,296,392,296,344"/>
+<area shape="rect" id="Node000010" href="$d1/d6d/class_c_min_wait.html" title=" " alt="" coords="404,399,551,425"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="461,437,413,496,409,493,457,434"/>
+<area shape="rect" id="Node000011" href="$d1/d6d/class_c_min_wait.html" title="Class to ensure that a minimum amount of time has kicked since the last time run &#45; and delay if not e..." alt="" coords="409,289,556,315"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="484,329,481,399,475,399,479,328"/>
 </map>

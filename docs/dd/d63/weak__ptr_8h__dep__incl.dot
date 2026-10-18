@@ -40,11 +40,14 @@ digraph "fl/stl/weak_ptr.h"
   Node16 -> Node17 [id="edge18_Node000016_Node000017",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node17 [id="Node000017",label="fl/channels/slim_spi\l_bridge_controller.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d9b/slim__spi__bridge__controller_8h.html",tooltip="Shared \"slim bridge\" legacy addLeds<ESPIChipsets ...>() controller for the SPI channel API – driver-a..."];
   Node17 -> Node12 [id="edge19_Node000017_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node1 -> Node18 [id="edge20_Node000001_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node18 [id="Node000018",label="fl/math/ease.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d60/ease_8cpp_8hpp.html",tooltip=" "];
-  Node18 -> Node19 [id="edge21_Node000018_Node000019",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node19 [id="Node000019",label="fl/math/_build.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d5b/fl_2math_2__build_8cpp_8hpp.html",tooltip="Unity build header for fl/math/ directory."];
-  Node19 -> Node4 [id="edge22_Node000019_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 -> Node18 [id="edge20_Node000006_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="fl/channels/pipeline\l_binding.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/d09/pipeline__binding_8cpp_8hpp.html",tooltip=" "];
+  Node18 -> Node14 [id="edge21_Node000018_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node19 [id="edge22_Node000001_Node000019",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node19 [id="Node000019",label="fl/math/ease.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d60/ease_8cpp_8hpp.html",tooltip=" "];
   Node19 -> Node20 [id="edge23_Node000019_Node000020",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node20 [id="Node000020",label="fl/build/fl.math+.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dc0/fl_8math_09_8cpp.html",tooltip="Unity build: recursive includes from src/fl/math/."];
+  Node20 [id="Node000020",label="fl/math/_build.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d5b/fl_2math_2__build_8cpp_8hpp.html",tooltip="Unity build header for fl/math/ directory."];
+  Node20 -> Node4 [id="edge24_Node000020_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node20 -> Node21 [id="edge25_Node000020_Node000021",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node21 [id="Node000021",label="fl/build/fl.math+.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dc0/fl_8math_09_8cpp.html",tooltip="Unity build: recursive includes from src/fl/math/."];
 }

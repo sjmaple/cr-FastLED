@@ -1,0 +1,13 @@
+digraph "fl::Watchdog::bootGuardCount"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fl::Watchdog::bootGuardCount",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Early-boot loop guard counter (see fl/wdt/boot_guard.h): consecutive boots since the last markBootHea..."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::platforms::watchdogBoot\lGuardRead",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d52/namespacefl_1_1platforms_ad93a02e39a1ae037278af2552a5411c9.html#ad93a02e39a1ae037278af2552a5411c9",tooltip="Boot-guard counter storage, supplied by the platform watchdog impl (or the no-op)."];
+  Node2 -> Node2 [id="edge2_Node000002_Node000002",color="steelblue1",style="solid",tooltip=" "];
+}

@@ -1,0 +1,9 @@
+<map id="fl::pinUnsafeForProbeMask" name="fl::pinUnsafeForProbeMask">
+<area shape="rect" id="Node000001" title="Mask of pins 0..63 that isPinUnsafeToProbe rejects (0 = none)." alt="" coords="5,31,201,56"/>
+<area shape="rect" id="Node000002" href="$d4/d36/namespacefl_ae42d6d316215aea37bdfd2a543eca29f.html#ae42d6d316215aea37bdfd2a543eca29f" title="True when pinProbeSkipReason(pin) is non&#45;null." alt="" coords="249,5,416,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,30,235,26,236,31,202,35"/>
+<area shape="rect" id="Node000004" href="$d4/d36/namespacefl_a49088b2320ed89e702e2635c943d9f44.html#a49088b2320ed89e702e2635c943d9f44" title="Bit for pin in a 64&#45;bit pin mask; 0 when pin is outside [0, 64)." alt="" coords="277,55,388,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="202,51,263,57,263,63,201,56"/>
+<area shape="rect" id="Node000003" href="$d4/d36/namespacefl_abe13d844eb1e48bca0e11a852d679512.html#abe13d844eb1e48bca0e11a852d679512" title="Why a probe must not touch pin at all (no pinMode, read or write), or nullptr when it may." alt="" coords="464,5,635,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,15,451,15,451,21,416,21"/>
+</map>

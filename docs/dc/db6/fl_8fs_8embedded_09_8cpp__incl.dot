@@ -18,6 +18,6 @@ digraph "fl/build/fl.fs.embedded+.cpp"
   Node6 [id="Node000006",label="fl/fs/embedded/embedded\l_fs.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d26/embedded__fs_8cpp_8hpp.html",tooltip="Body of fl::getEmbeddedFs()."];
   Node6 -> Node7 [id="edge6_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
   Node7 [id="Node000007",label="fl/fs/embedded/embedded_fs.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d6/d9a/embedded__fs_8h.html",tooltip="Storage built into the microcontroller itself."];
-  Node6 -> Node98 [id="edge7_Node000006_Node000098",color="steelblue1",style="solid",tooltip=" "];
-  Node98 [id="Node000098",label="platforms/embedded_fs.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node6 -> Node99 [id="edge7_Node000006_Node000099",color="steelblue1",style="solid",tooltip=" "];
+  Node99 [id="Node000099",label="platforms/embedded_fs.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
 }

@@ -1,0 +1,45 @@
+digraph "fl::get_async_logger_by_index"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fl::get_async_logger\l_by_index",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Template-based logger accessor with auto-registration and enablement check."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::detail::checkLoggerEnabled",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a459f07a7662ef6824a45c65030eea973.html#a459f07a7662ef6824a45c65030eea973",tooltip="Check if logger is enabled and print error once if not."];
+  Node2 -> Node2 [id="edge2_Node000002_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node3 [id="edge3_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::detail::printLoggerDisabled\lError",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a04a82f7594c477ed5de6dc9867d8cf30.html#a04a82f7594c477ed5de6dc9867d8cf30",tooltip="Print error message for disabled logger (non-template helper) Called from checkLoggerEnabled template..."];
+  Node1 -> Node1 [id="edge4_Node000001_Node000001",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node4 [id="edge5_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::detail::ActiveLogger\lRegistry::instance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d7b/structfl_1_1detail_1_1_active_logger_registry_a40df9624b0a468b7be13677315a5d654.html#a40df9624b0a468b7be13677315a5d654",tooltip=" "];
+  Node4 -> Node5 [id="edge6_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::SingletonShared\l::instance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d4a/classfl_1_1_singleton_shared_a1ec246efec2c46bc053a64fe7e8170ad.html#a1ec246efec2c46bc053a64fe7e8170ad",tooltip=" "];
+  Node5 -> Node6 [id="edge7_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::SingletonShared\l::instanceInner",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$db/d4a/classfl_1_1_singleton_shared_a03c9eb23cd0cb903d5ae8fd44b1a4984.html#a03c9eb23cd0cb903d5ae8fd44b1a4984",tooltip=" "];
+  Node6 -> Node6 [id="edge8_Node000006_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node8 [id="edge9_Node000005_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="fl::detail::singleton\l_registry_get",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d9e/namespacefl_1_1detail_a697b86798880305ebfa299c3455364ef.html#a697b86798880305ebfa299c3455364ef",tooltip=" "];
+  Node5 -> Node11 [id="edge10_Node000005_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="fl::detail::singleton\l_registry_set",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d9e/namespacefl_1_1detail_ad13a792bb48584cb50cbfec1b292988c.html#ad13a792bb48584cb50cbfec1b292988c",tooltip=" "];
+  Node1 -> Node12 [id="edge11_Node000001_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="fl::detail::AsyncLoggerService\lTask::instance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d06/classfl_1_1detail_1_1_async_logger_service_task_aa3d6958d41d1783e7327153c0ea6020f.html#aa3d6958d41d1783e7327153c0ea6020f",tooltip=" "];
+  Node12 -> Node13 [id="edge12_Node000012_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="fl::detail::AsyncLoggerService\lTask::AsyncLoggerServiceTask",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d06/classfl_1_1detail_1_1_async_logger_service_task_a76e22f26c5676ba890e783435db46aa6.html#a76e22f26c5676ba890e783435db46aa6",tooltip=" "];
+  Node13 -> Node14 [id="edge13_Node000013_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="fl::task::Scheduler\l::add_task",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d2b/classfl_1_1task_1_1_scheduler_a5f2fabbf7e39f5472bdff5535c113781.html#a5f2fabbf7e39f5472bdff5535c113781",tooltip=" "];
+  Node13 -> Node17 [id="edge14_Node000013_Node000017",color="steelblue1",style="solid",tooltip=" "];
+  Node17 [id="Node000017",label="fl::task::every_ms",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$db/d5c/namespacefl_1_1task_ad990b0044cf3097520e9afa9aa6b27f5.html#ad990b0044cf3097520e9afa9aa6b27f5",tooltip="Creates a task that runs at a fixed millisecond interval."];
+  Node13 -> Node21 [id="edge15_Node000013_Node000021",color="steelblue1",style="solid",tooltip=" "];
+  Node21 [id="Node000021",label="fl::task::Scheduler\l::instance",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d2b/classfl_1_1task_1_1_scheduler_a40cdf8c37f1288adfea9d7c1d8bc4bd0.html#a40cdf8c37f1288adfea9d7c1d8bc4bd0",tooltip=" "];
+  Node13 -> Node24 [id="edge16_Node000013_Node000024",color="steelblue1",style="solid",tooltip=" "];
+  Node24 [id="Node000024",label="fl::detail::AsyncLoggerService\lTask::serviceLoggers",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d06/classfl_1_1detail_1_1_async_logger_service_task_a47e61249a0fbcf4307f81c9d6bcdb7f1.html#a47e61249a0fbcf4307f81c9d6bcdb7f1",tooltip="Service all registered loggers (called by task)"];
+  Node24 -> Node4 [id="edge17_Node000024_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node13 -> Node33 [id="edge18_Node000013_Node000033",color="steelblue1",style="solid",tooltip=" "];
+  Node33 [id="Node000033",label="fl::task::Handle::then",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$de/daf/classfl_1_1task_1_1_handle_a0d96031ff5c53ece780698c5f39d9d2b.html#a0d96031ff5c53ece780698c5f39d9d2b",tooltip="Sets the callback invoked when the task runs successfully."];
+  Node33 -> Node14 [id="edge19_Node000033_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node33 -> Node21 [id="edge20_Node000033_Node000021",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge21_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+}

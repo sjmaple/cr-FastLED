@@ -12,10 +12,10 @@ digraph "fl::SlabAllocator::allocateFromSlab"
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="fl::SlabAllocator::\lSlab::~Slab",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d08/structfl_1_1_slab_allocator_1_1_slab_a0011444769cbc3291357f791d815367c.html#a0011444769cbc3291357f791d815367c",tooltip=" "];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="fl::Free",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a01907b76b610d0663ed9b4204cdf68a2.html#a01907b76b610d0663ed9b4204cdf68a2",tooltip=" "];
+  Node4 [id="Node000004",label="fl::Free",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a4343890eed79592c52cdafd696bacd74.html#a4343890eed79592c52cdafd696bacd74",tooltip=" "];
   Node2 -> Node4 [id="edge4_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node2 -> Node5 [id="edge5_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="fl::Malloc",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a95dbc431c0b3451c8ffd336fe2793a47.html#a95dbc431c0b3451c8ffd336fe2793a47",tooltip=" "];
+  Node5 [id="Node000005",label="fl::Malloc",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_aedfb40c3aea1536bdc7d516855aebee3.html#aedfb40c3aea1536bdc7d516855aebee3",tooltip=" "];
   Node1 -> Node6 [id="edge6_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="fl::SlabAllocator::\lfindContiguousBlocks",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/db8/classfl_1_1_slab_allocator_a5737d18958b483f23b7d686fb6420460.html#a5737d18958b483f23b7d686fb6420460",tooltip=" "];
 }

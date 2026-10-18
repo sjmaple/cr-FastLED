@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -133,16 +133,17 @@ template&lt;<a class="el" href="../../d4/d36/namespacefl_a7e1e94407fbd018269794d
 <div class="line"><span class="lineno">   88</span>        <span class="comment">// Register only the compile-time-selected bus specialization and its</span></div>
 <div class="line"><span class="lineno">   89</span>        <span class="comment">// associated driver(s). This retains the required translation unit(s)</span></div>
 <div class="line"><span class="lineno">   90</span>        <span class="comment">// without pulling in enableAllDrivers().</span></div>
-<div class="line"><span class="lineno">   91</span>        <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">BusTraits&lt;kBus, Which&gt;::registerWithManager</a>();</div>
-<div class="line"><span class="lineno">   92</span>        <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">ChannelConfig</a> <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">erased</a> = <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">cfg</a>.toErased();</div>
-<div class="line"><span class="lineno">   93</span>        <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">erased</a>.options.mBus = <a class="code hl_variable" href="../../d3/df0/classfl_1_1_typed_channel_a7685510c206deb6837c032c92b211853.html#a7685510c206deb6837c032c92b211853">kBus</a>;</div>
-<div class="line"><span class="lineno">   94</span>        <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">erased</a>.options.mBusWhich = <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">Which</a>;</div>
-<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">Channel::create</a>(<a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">erased</a>);</div>
-<div class="line"><span class="lineno">   96</span>    }</div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">detail::enable_clockless_for&lt;Chipset, BusTraits&lt;kBus, Which&gt;</a>&gt;<a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">::apply</a>();  <span class="comment">// #4793</span></div>
+<div class="line"><span class="lineno">   92</span>        <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">BusTraits&lt;kBus, Which&gt;::registerWithManager</a>();</div>
+<div class="line"><span class="lineno">   93</span>        <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">ChannelConfig</a> <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">erased</a> = <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">cfg</a>.toErased();</div>
+<div class="line"><span class="lineno">   94</span>        <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">erased</a>.options.mBus = <a class="code hl_variable" href="../../d3/df0/classfl_1_1_typed_channel_a7685510c206deb6837c032c92b211853.html#a7685510c206deb6837c032c92b211853">kBus</a>;</div>
+<div class="line"><span class="lineno">   95</span>        <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">erased</a>.options.mBusWhich = <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">Which</a>;</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">Channel::create</a>(<a class="code hl_class" href="../../d3/df0/classfl_1_1_typed_channel.html">erased</a>);</div>
+<div class="line"><span class="lineno">   97</span>    }</div>
 <div class="ttc" id="aclassfl_1_1_typed_channel_a7685510c206deb6837c032c92b211853_html_a7685510c206deb6837c032c92b211853"><div class="ttname"><a href="../../d3/df0/classfl_1_1_typed_channel_a7685510c206deb6837c032c92b211853.html#a7685510c206deb6837c032c92b211853">fl::TypedChannel::kBus</a></div><div class="ttdeci">static constexpr Bus kBus</div><div class="ttdoc">The bus actually used after resolving Bus::AUTO.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/de5/channel__typed_8h_source.html#l00071">channel_typed.h:71</a></div></div>
 <div class="ttc" id="aclassfl_1_1_typed_channel_html"><div class="ttname"><a href="../../d3/df0/classfl_1_1_typed_channel.html">fl::TypedChannel</a></div><div class="ttdoc">Templated channel facade.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/de5/channel__typed_8h_source.html#l00068">channel_typed.h:68</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d4/de5/channel__typed_8h_source.html#l00071">kBus</a>, <a class="el" href="../../d7/d5b/options_8h_source.html#l00092">fl::ChannelOptions::mBus</a>, <a class="el" href="../../d7/d5b/options_8h_source.html#l00093">fl::ChannelOptions::mBusWhich</a>, and <a class="el" href="../../d1/d09/fl_2channels_2config_8h_source.html#l00277">fl::ChannelConfig::options</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d4/de5/channel__typed_8h_source.html#l00071">kBus</a>, <a class="el" href="../../d7/d5b/options_8h_source.html#l00096">fl::ChannelOptions::mBus</a>, <a class="el" href="../../d7/d5b/options_8h_source.html#l00104">fl::ChannelOptions::mBusWhich</a>, and <a class="el" href="../../d1/d09/fl_2channels_2config_8h_source.html#l00277">fl::ChannelConfig::options</a>.</p>
 
 </div>
 </div>
@@ -153,7 +154,7 @@ template&lt;<a class="el" href="../../d4/d36/namespacefl_a7e1e94407fbd018269794d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d3/df0/classfl_1_1_typed_channel.html">TypedChannel</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:32 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

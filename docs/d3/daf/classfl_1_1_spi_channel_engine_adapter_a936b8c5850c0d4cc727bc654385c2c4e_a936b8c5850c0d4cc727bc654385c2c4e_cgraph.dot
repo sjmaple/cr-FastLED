@@ -8,5 +8,5 @@ digraph "fl::SpiChannelEngineAdapter::selectControllerForClockPin"
   rankdir="LR";
   Node1 [id="Node000001",label="fl::SpiChannelEngineAdapter\l::selectControllerForClockPin",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Select best controller for a given clock pin."];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::SpiChannelEngineAdapter\l::canControllerHandleClockPin",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/daf/classfl_1_1_spi_channel_engine_adapter_af0366a91a6c0c9c0e835c606a726cde8.html#af0366a91a6c0c9c0e835c606a726cde8",tooltip="Check if controller can handle this clock pin."];
+  Node2 [id="Node000002",label="fl::SpiChannelEngineAdapter\l::canControllerHandleClockPin",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/daf/classfl_1_1_spi_channel_engine_adapter_aa3b8ee58211a5d8d266bb513119b6a39.html#aa3b8ee58211a5d8d266bb513119b6a39",tooltip="Check if controller can handle this clock pin."];
 }

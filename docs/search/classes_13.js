@@ -99,7 +99,7 @@ var searchData=
   ['tuple_5fsize_3c_20tuple_3c_20ts_2e_2e_2e_20_3e_20_3e_96',['tuple_size&lt; tuple&lt; Ts... &gt; &gt;',['../d5/d12/structfl_1_1tuple__size_3_01tuple_3_01_ts_8_8_8_01_4_01_4.html',1,'fl']]],
   ['twinklefox_97',['TwinkleFox',['../de/db5/classfl_1_1_twinkle_fox.html',1,'fl']]],
   ['twowhiteallocationq16_98',['TwoWhiteAllocationQ16',['../d4/d36/namespacefl.html#d8/d4d/structfl_1_1_two_white_allocation_q16',1,'fl']]],
-  ['type_99',['type',['../da/d3c/namespacefl_1_1fl.html#da/d3c/namespacefl_1_1fl',1,'fl::fl::type&lt;&gt;'],['../d4/d36/namespacefl.html#d4/d36/namespacefl',1,'fl::type&lt;&gt;']]],
+  ['type_99',['type',['../d4/d36/namespacefl.html#d4/d36/namespacefl',1,'fl::type&lt; 2, u32, u64 &gt;'],['../da/d3c/namespacefl_1_1fl.html#da/d3c/namespacefl_1_1fl',1,'fl::fl::type&lt;&gt;'],['../d4/d36/namespacefl.html#d4/d36/namespacefl',1,'fl::type&lt;&gt;']]],
   ['type_5frank_100',['type_rank',['../d3/dc4/structfl_1_1type__rank.html',1,'fl']]],
   ['type_5frank_3c_20bool_20_3e_101',['type_rank&lt; bool &gt;',['../d5/dbf/structfl_1_1type__rank_3_01bool_01_4.html',1,'fl']]],
   ['type_5frank_3c_20char_20_3e_102',['type_rank&lt; char &gt;',['../db/d43/structfl_1_1type__rank_3_01char_01_4.html',1,'fl']]],

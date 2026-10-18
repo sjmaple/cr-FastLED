@@ -1,6 +1,6 @@
 var classfl_1_1_mp3 =
 [
-    [ "createDecoder", "d6/d66/classfl_1_1_mp3_a93fb9f36543d807869cf24e3f1455465.html#a93fb9f36543d807869cf24e3f1455465", null ],
-    [ "isSupported", "d6/d66/classfl_1_1_mp3_a439370297e05b7af1d5f17aeb436df04.html#a439370297e05b7af1d5f17aeb436df04", null ],
-    [ "parseMp3Info", "d6/d66/classfl_1_1_mp3_a05c327e508e430bc8959024aa100d1ab.html#a05c327e508e430bc8959024aa100d1ab", null ]
+    [ "createDecoder", "d6/d66/classfl_1_1_mp3_a610425ac21034d424ee3e521eea4f1f9.html#a610425ac21034d424ee3e521eea4f1f9", null ],
+    [ "isSupported", "d6/d66/classfl_1_1_mp3_a1c6e550311f4fe106ffef1687d30a454.html#a1c6e550311f4fe106ffef1687d30a454", null ],
+    [ "parseMp3Info", "d6/d66/classfl_1_1_mp3_a3f9b8d7087ca06b7c7f95b0832742c49.html#a3f9b8d7087ca06b7c7f95b0832742c49", null ]
 ];

@@ -22,11 +22,14 @@ var searchData=
   ['rgb_5f2_5frgbw_5ffunction_19',['rgb_2_rgbw_function',['../d4/d36/namespacefl_a8c314e86da46874360e5f1559895c4b8.html#a8c314e86da46874360e5f1559895c4b8',1,'fl']]],
   ['rgb_5f2_5frgbww_5ffunction_20',['rgb_2_rgbww_function',['../d4/d36/namespacefl_ac879f2b17395c0a9f8c13a0f9c4fb950.html#ac879f2b17395c0a9f8c13a0f9c4fb950',1,'fl']]],
   ['rgbcolorimetricprofile_21',['RgbColorimetricProfile',['../da/db3/namespacefl_1_1colorimetric__response_a19ee40926fa491513222dd6ea3f93256.html#a19ee40926fa491513222dd6ea3f93256',1,'fl::colorimetric_response::RgbColorimetricProfile'],['../d7/df0/namespacefl_1_1colorimetric__detail_a19ee40926fa491513222dd6ea3f93256.html#a19ee40926fa491513222dd6ea3f93256',1,'fl::colorimetric_detail::RgbColorimetricProfile']]],
-  ['routehandler_22',['RouteHandler',['../dd/d94/namespacefl_1_1asio_1_1http_a652aaaf92902469bc0cfbfaa3a62ae24.html#a652aaaf92902469bc0cfbfaa3a62ae24',1,'fl::asio::http']]],
-  ['rpcdestroyfn_23',['RpcDestroyFn',['../df/d9e/namespacefl_1_1detail_a9c66c9a22da79d7f6166fa3af160b903.html#a9c66c9a22da79d7f6166fa3af160b903',1,'fl::detail']]],
-  ['rpcfactory_24',['RpcFactory',['../d4/d36/namespacefl_a6a96f0f42e91af3eba4d008027418601.html#a6a96f0f42e91af3eba4d008027418601',1,'fl']]],
-  ['rpcfn_25',['RpcFn',['../d4/d36/namespacefl_a329bf8d3a347e5a77611902783e74f05.html#a329bf8d3a347e5a77611902783e74f05',1,'fl']]],
-  ['rpcresult_26',['RpcResult',['../dc/ddb/classfl_1_1_remote_a8df74919907c00db24e750bf217c095b.html#a8df74919907c00db24e750bf217c095b',1,'fl::Remote']]],
-  ['rpctrampolinefn_27',['RpcTrampolineFn',['../df/d9e/namespacefl_1_1detail_a55c1c9eada4576a0aa4ef560b0d48cde.html#a55c1c9eada4576a0aa4ef560b0d48cde',1,'fl::detail']]],
-  ['rxdevicefactory_28',['RxDeviceFactory',['../df/d9e/_auto_research_remote_8h_ad83f108b0b5c56404ea5a6bdcb330a60.html#ad83f108b0b5c56404ea5a6bdcb330a60',1,'AutoResearchRemote.h']]]
+  ['rgbw_5fpower_5ffn_22',['rgbw_power_fn',['../d1/d2a/power__mgt_8cpp_8hpp_a9d1ff3d12071f0d9c546ccc68dd27120.html#a9d1ff3d12071f0d9c546ccc68dd27120',1,'power_mgt.cpp.hpp']]],
+  ['rgbwconvertfn_23',['RgbwConvertFn',['../df/d9e/namespacefl_1_1detail_a0bc0be843ccc24f38b6278995a82d841.html#a0bc0be843ccc24f38b6278995a82d841',1,'fl::detail']]],
+  ['rgbwwconvertfn_24',['RgbwwConvertFn',['../df/d9e/namespacefl_1_1detail_a101a347cecc7966808eb935b8045514e.html#a101a347cecc7966808eb935b8045514e',1,'fl::detail']]],
+  ['routehandler_25',['RouteHandler',['../dd/d94/namespacefl_1_1asio_1_1http_a652aaaf92902469bc0cfbfaa3a62ae24.html#a652aaaf92902469bc0cfbfaa3a62ae24',1,'fl::asio::http']]],
+  ['rpcdestroyfn_26',['RpcDestroyFn',['../df/d9e/namespacefl_1_1detail_a9c66c9a22da79d7f6166fa3af160b903.html#a9c66c9a22da79d7f6166fa3af160b903',1,'fl::detail']]],
+  ['rpcfactory_27',['RpcFactory',['../d4/d36/namespacefl_a6a96f0f42e91af3eba4d008027418601.html#a6a96f0f42e91af3eba4d008027418601',1,'fl']]],
+  ['rpcfn_28',['RpcFn',['../d4/d36/namespacefl_a329bf8d3a347e5a77611902783e74f05.html#a329bf8d3a347e5a77611902783e74f05',1,'fl']]],
+  ['rpcresult_29',['RpcResult',['../dc/ddb/classfl_1_1_remote_a8df74919907c00db24e750bf217c095b.html#a8df74919907c00db24e750bf217c095b',1,'fl::Remote']]],
+  ['rpctrampolinefn_30',['RpcTrampolineFn',['../df/d9e/namespacefl_1_1detail_a55c1c9eada4576a0aa4ef560b0d48cde.html#a55c1c9eada4576a0aa4ef560b0d48cde',1,'fl::detail']]],
+  ['rxdevicefactory_31',['RxDeviceFactory',['../df/d9e/_auto_research_remote_8h_ad83f108b0b5c56404ea5a6bdcb330a60.html#ad83f108b0b5c56404ea5a6bdcb330a60',1,'AutoResearchRemote.h']]]
 ];

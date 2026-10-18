@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -554,7 +554,7 @@ Core Components</h2>
 <div class="line">    <span class="keywordtype">bool</span> mRequestPending;</div>
 <div class="line">};</div>
 </div><!-- fragment --><p><b>Usage Example (Client)</b>: </p><div class="fragment"><div class="line"><span class="comment">// Create HTTP client</span></div>
-<div class="line"><span class="keyword">auto</span> client = <a class="code hl_function" href="d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared&lt;HttpStreamClient&gt;</a>(<span class="stringliteral">&quot;localhost&quot;</span>, 8080);</div>
+<div class="line"><span class="keyword">auto</span> client = <a class="code hl_function" href="df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::make_shared&lt;HttpStreamClient&gt;</a>(<span class="stringliteral">&quot;localhost&quot;</span>, 8080);</div>
 <div class="line">client-&gt;setAutoReconnect(<span class="keyword">true</span>);</div>
 <div class="line">client-&gt;setHeartbeatInterval(30000);  <span class="comment">// 30s</span></div>
 <div class="line"> </div>
@@ -572,7 +572,7 @@ Core Components</h2>
 <div class="line">}</div>
 <div class="ttc" id="a_rpc_client_8ino_a2322979ac125e8fe8862058961e3d206_html_a2322979ac125e8fe8862058961e3d206"><div class="ttname"><a href="d8/db9/_rpc_client_8ino_a2322979ac125e8fe8862058961e3d206.html#a2322979ac125e8fe8862058961e3d206">remote</a></div><div class="ttdeci">fl::unique_ptr&lt; fl::Remote &gt; remote</div><div class="ttdef"><b>Definition</b> <a href="d8/db9/_rpc_client_8ino_source.html#l00043">RpcClient.ino:43</a></div></div>
 <div class="ttc" id="aclassfl_1_1_remote_html"><div class="ttname"><a href="dc/ddb/classfl_1_1_remote.html">fl::Remote</a></div><div class="ttdoc">JSON-RPC server with scheduling support.</div><div class="ttdef"><b>Definition</b> <a href="d6/d06/remote_8h_source.html#l00042">remote.h:42</a></div></div>
-<div class="ttc" id="anamespacefl_a87ae8a24cc8b709a64f39370e71846af_html_a87ae8a24cc8b709a64f39370e71846af"><div class="ttname"><a href="d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args &amp;&amp;... args) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="df/d6a/shared__ptr_8h_source.html#l00414">shared_ptr.h:414</a></div></div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c_html_a9fb4ec44d15efca3aed1890e7b57410c"><div class="ttname"><a href="df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::adl_barrier::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args &amp;&amp;... args) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="df/d6a/shared__ptr_8h_source.html#l00423">shared_ptr.h:423</a></div></div>
 </div><!-- fragment --><hr  />
 <h3><a class="anchor" id="autotoc_md486"></a>
 7. HttpStreamServer</h3>
@@ -611,7 +611,7 @@ Core Components</h2>
 <div class="line">    <span class="keywordtype">int</span> mCurrentClient;  <span class="comment">// Client to read from (round-robin)</span></div>
 <div class="line">};</div>
 </div><!-- fragment --><p><b>Usage Example (Server)</b>: </p><div class="fragment"><div class="line"><span class="comment">// Create HTTP server</span></div>
-<div class="line"><span class="keyword">auto</span> <a class="code hl_variable" href="d9/dce/_client_validation_real_8h_a508ca9e4d4d5e9774c787fe3167fb996.html#a508ca9e4d4d5e9774c787fe3167fb996">server</a> = <a class="code hl_function" href="d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared&lt;HttpStreamServer&gt;</a>(8080);</div>
+<div class="line"><span class="keyword">auto</span> <a class="code hl_variable" href="d9/dce/_client_validation_real_8h_a508ca9e4d4d5e9774c787fe3167fb996.html#a508ca9e4d4d5e9774c787fe3167fb996">server</a> = <a class="code hl_function" href="df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::make_shared&lt;HttpStreamServer&gt;</a>(8080);</div>
 <div class="line"><a class="code hl_variable" href="d9/dce/_client_validation_real_8h_a508ca9e4d4d5e9774c787fe3167fb996.html#a508ca9e4d4d5e9774c787fe3167fb996">server</a>-&gt;start();</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create Remote with server as transport</span></div>
@@ -922,7 +922,7 @@ Phase 3: HTTP Streaming RPC Integration</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><a class="el" href="dir_0dd6897a8ae40540acd9d694849e950e.html">stl</a></li><li class="navelem"><a class="el" href="dir_cdaac7ba5e9caead7c80e2b832ad4a37.html">asio</a></li><li class="navelem"><a class="el" href="dir_0f2bd2d50b17e2e1f42941f6b66850c3.html">http</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:13 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:38 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

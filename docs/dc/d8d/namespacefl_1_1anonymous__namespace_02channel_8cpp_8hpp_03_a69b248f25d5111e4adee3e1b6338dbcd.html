@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -135,23 +135,23 @@ $(function(){initNavTree('dc/d8d/namespacefl_1_1anonymous__namespace_02channel_8
 <p>Out-of-line cold-path emitter for the #2517 silent-drop DISABLED-driver diagnostic in <code>Channel::showPixels</code>. </p>
 <p><code>showPixels</code> runs every frame, but this diagnostic is gated behind a one-shot latch (<code>mDisabledDriverWarned</code>) and only fires when a bound driver has been runtime-disabled (typically by <code>FastLED.setExclusiveDriver&lt;OtherBus&gt;()</code>). Inlining the two alternative FL_ERROR chains was costing ~10 <code>operator&lt;&lt;</code> instantiations in showPixels' prologue/epilogue for code that runs at most once per channel lifetime. Splitting matches the same pattern the maintainer adopted for <code>resolveDynamicDriver()</code> in PR #2830 â€” keep the diagnostic chain in a <code>FL_NO_INLINE</code> helper so it can't fold back into the hot path. (#2773 follow-up to #2832.) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html#l00215">215</a> of file <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html">channel.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  217</span>                                                                            {</div>
-<div class="line"><span class="lineno">  218</span>    <a class="code hl_define" href="../../d4/d54/compiler__control_8h_a3600073df3d019f0b6288e9d59b3e883.html#a3600073df3d019f0b6288e9d59b3e883">FL_UNUSED</a>(channelName);  <span class="comment">// only consumed by FL_ERROR, a no-op on small platforms</span></div>
-<div class="line"><span class="lineno">  219</span>    <a class="code hl_define" href="../../d4/d54/compiler__control_8h_a3600073df3d019f0b6288e9d59b3e883.html#a3600073df3d019f0b6288e9d59b3e883">FL_UNUSED</a>(driverName);</div>
-<div class="line"><span class="lineno">  220</span>    <span class="keywordflow">if</span> (!exclusive.<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">empty</a>()) {</div>
-<div class="line"><span class="lineno">  221</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a>(<span class="stringliteral">&quot;Channel &#39;%s&#39;: bound driver &#39;%s&#39; is currently DISABLED by exclusive-driver selection &#39;%s&#39;. Frame will be silently dropped. Resolve with: FastLED.enableDrivers&lt;fl::Bus::%s&gt;() or FastLED.enableAllDrivers().&quot;</span>, channelName, driverName, exclusive, driverName);</div>
-<div class="line"><span class="lineno">  222</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  223</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a>(<span class="stringliteral">&quot;Channel &#39;%s&#39;: bound driver &#39;%s&#39; is currently DISABLED. Frame will be silently dropped. Resolve with: FastLED.enableDrivers&lt;fl::Bus::%s&gt;() or FastLED.enableAllDrivers().&quot;</span>, channelName, driverName, driverName);</div>
-<div class="line"><span class="lineno">  224</span>    }</div>
-<div class="line"><span class="lineno">  225</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html#l00200">200</a> of file <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html">channel.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  202</span>                                                                            {</div>
+<div class="line"><span class="lineno">  203</span>    <a class="code hl_define" href="../../d4/d54/compiler__control_8h_a3600073df3d019f0b6288e9d59b3e883.html#a3600073df3d019f0b6288e9d59b3e883">FL_UNUSED</a>(channelName);  <span class="comment">// only consumed by FL_ERROR, a no-op on small platforms</span></div>
+<div class="line"><span class="lineno">  204</span>    <a class="code hl_define" href="../../d4/d54/compiler__control_8h_a3600073df3d019f0b6288e9d59b3e883.html#a3600073df3d019f0b6288e9d59b3e883">FL_UNUSED</a>(driverName);</div>
+<div class="line"><span class="lineno">  205</span>    <span class="keywordflow">if</span> (!exclusive.<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">empty</a>()) {</div>
+<div class="line"><span class="lineno">  206</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a>(<span class="stringliteral">&quot;Channel &#39;&quot;</span> &lt;&lt; channelName &lt;&lt; <span class="stringliteral">&quot;&#39;: bound driver &#39;&quot;</span> &lt;&lt; driverName &lt;&lt; <span class="stringliteral">&quot;&#39; is currently DISABLED by exclusive-driver selection &#39;&quot;</span> &lt;&lt; exclusive &lt;&lt; <span class="stringliteral">&quot;&#39;. Frame will be silently dropped. Resolve with: FastLED.enableDrivers&lt;fl::Bus::&quot;</span> &lt;&lt; driverName &lt;&lt; <span class="stringliteral">&quot;&gt;() or FastLED.enableAllDrivers().&quot;</span>);</div>
+<div class="line"><span class="lineno">  207</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  208</span>        <a class="code hl_define" href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a>(<span class="stringliteral">&quot;Channel &#39;&quot;</span> &lt;&lt; channelName &lt;&lt; <span class="stringliteral">&quot;&#39;: bound driver &#39;&quot;</span> &lt;&lt; driverName &lt;&lt; <span class="stringliteral">&quot;&#39; is currently DISABLED. Frame will be silently dropped. Resolve with: FastLED.enableDrivers&lt;fl::Bus::&quot;</span> &lt;&lt; driverName &lt;&lt; <span class="stringliteral">&quot;&gt;() or FastLED.enableAllDrivers().&quot;</span>);</div>
+<div class="line"><span class="lineno">  209</span>    }</div>
+<div class="line"><span class="lineno">  210</span>}</div>
 <div class="ttc" id="aclassfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb_html_ac3effe716fde4667b05a52d78d74bbfb"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_ac3effe716fde4667b05a52d78d74bbfb.html#ac3effe716fde4667b05a52d78d74bbfb">fl::basic_string::empty</a></div><div class="ttdeci">bool empty() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00155">basic_string.h:155</a></div></div>
 <div class="ttc" id="acompiler__control_8h_a3600073df3d019f0b6288e9d59b3e883_html_a3600073df3d019f0b6288e9d59b3e883"><div class="ttname"><a href="../../d4/d54/compiler__control_8h_a3600073df3d019f0b6288e9d59b3e883.html#a3600073df3d019f0b6288e9d59b3e883">FL_UNUSED</a></div><div class="ttdeci">#define FL_UNUSED(x)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d54/compiler__control_8h_source.html#l00905">compiler_control.h:905</a></div></div>
-<div class="ttc" id="alog_8h_aa90e3b2c36c6225140f46a86c6ac19e2_html_aa90e3b2c36c6225140f46a86c6ac19e2"><div class="ttname"><a href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a></div><div class="ttdeci">#define FL_ERROR(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00372">log.h:372</a></div></div>
+<div class="ttc" id="alog_8h_aa90e3b2c36c6225140f46a86c6ac19e2_html_aa90e3b2c36c6225140f46a86c6ac19e2"><div class="ttname"><a href="../../d7/d7f/log_8h_aa90e3b2c36c6225140f46a86c6ac19e2.html#aa90e3b2c36c6225140f46a86c6ac19e2">FL_ERROR</a></div><div class="ttdeci">#define FL_ERROR(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00373">log.h:373</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html#l00215">emitDisabledDriverError()</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00372">FL_ERROR</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00905">FL_UNUSED</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html#l00200">emitDisabledDriverError()</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00373">FL_ERROR</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00905">FL_UNUSED</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html#l00215">emitDisabledDriverError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/de6/channel_8cpp_8hpp_source.html#l00200">emitDisabledDriverError()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -176,7 +176,7 @@ $(function(){initNavTree('dc/d8d/namespacefl_1_1anonymous__namespace_02channel_8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../dc/d8d/namespacefl_1_1anonymous__namespace_02channel_8cpp_8hpp_03.html">anonymous_namespace{channel.cpp.hpp}</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:33 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

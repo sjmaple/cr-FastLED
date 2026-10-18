@@ -1,21 +1,27 @@
 <map id="fl::CLEDController::setRgbww" name="fl::CLEDController::setRgbww">
-<area shape="rect" id="Node000001" title="Configure this channel for 5&#45;channel RGBWW (RGB + warm&#45;W + cool&#45;W) output." alt="" coords="5,124,141,164"/>
-<area shape="rect" id="Node000002" href="$d8/da0/classfl_1_1_c_l_e_d_controller_ae0828dffacb43dca565ddf8145153ed0.html#ae0828dffacb43dca565ddf8145153ed0" title="Protected constructor with registration mode." alt="" coords="242,60,378,100"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,123,189,109,228,99,229,104,190,115,143,128"/>
-<area shape="rect" id="Node000005" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a95ede2f374809004d76c246f747d056b.html#a95ede2f374809004d76c246f747d056b" title=" " alt="" coords="189,124,431,164"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="142,141,175,141,175,147,142,147"/>
-<area shape="rect" id="Node000007" href="$d6/dd0/structfl_1_1_rgbww_default_a8205ae34d66f3aafb06fe876126e7224.html#a8205ae34d66f3aafb06fe876126e7224" title=" " alt="" coords="221,189,399,214"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="142,161,190,173,233,183,231,188,189,179,141,166"/>
+<area shape="rect" id="Node000001" title="Configure this channel for 5&#45;channel RGBWW (RGB + warm&#45;W + cool&#45;W) output." alt="" coords="5,171,141,211"/>
+<area shape="rect" id="Node000002" href="$d8/da0/classfl_1_1_c_l_e_d_controller_ae0828dffacb43dca565ddf8145153ed0.html#ae0828dffacb43dca565ddf8145153ed0" title="Protected constructor with registration mode." alt="" coords="242,31,378,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,168,188,112,256,75,258,79,191,117,105,173"/>
+<area shape="rect" id="Node000005" href="$df/d9e/namespacefl_1_1detail_a2fb5059d4c10926f7daabcf655beff43.html#a2fb5059d4c10926f7daabcf655beff43" title="Installs the RGBWW pixel conversion (see enable_rgbw_conversion, #4795)." alt="" coords="949,191,1100,231"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="134,168,189,156,293,146,398,142,504,144,607,150,793,169,936,191,935,196,792,174,606,155,504,149,399,147,293,151,190,161,135,173"/>
+<area shape="rect" id="Node000006" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a95ede2f374809004d76c246f747d056b.html#a95ede2f374809004d76c246f747d056b" title=" " alt="" coords="189,171,431,211"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="142,188,175,188,175,193,142,193"/>
+<area shape="rect" id="Node000007" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a555ab146529e7623e53c780bdf111067.html#a555ab146529e7623e53c780bdf111067" title=" " alt="" coords="241,235,379,275"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="143,207,190,220,228,230,227,236,189,225,141,212"/>
+<area shape="rect" id="Node000009" href="$d6/dd0/structfl_1_1_rgbww_default_a8205ae34d66f3aafb06fe876126e7224.html#a8205ae34d66f3aafb06fe876126e7224" title=" " alt="" coords="221,299,399,325"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="95,209,136,248,162,268,191,284,211,293,209,298,188,289,159,272,133,252,91,213"/>
 <area shape="rect" id="Node000003" href="$d8/da0/classfl_1_1_c_l_e_d_controller_af0c5f56a02ad4e919df8181d3b267390.html#af0c5f56a02ad4e919df8181d3b267390" title="Add this controller to the linked list." alt="" coords="529,5,665,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="378,64,514,38,515,43,379,70"/>
-<area shape="rect" id="Node000004" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a346ffe73124af2abf1ccf82a96daee72.html#a346ffe73124af2abf1ccf82a96daee72" title="Check if this controller is in the linked list." alt="" coords="764,35,900,75"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="665,31,751,42,750,47,664,36"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="764,61,392,79,392,73,764,55"/>
-<area shape="rect" id="Node000006" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a749a14da275dfd7a2b91ec3e8b82fef7.html#a749a14da275dfd7a2b91ec3e8b82fef7" title="Return the name of a chipset whose wire format owns its white&#45;channel policy." alt="" coords="496,124,697,164"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="431,141,482,141,482,147,431,147"/>
-<area shape="rect" id="Node000008" href="$d4/df9/structfl_1_1_rgbww_a0d2908da04ace06a285f187b68b4e169.html#a0d2908da04ace06a285f187b68b4e169" title=" " alt="" coords="763,214,901,239"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="399,203,749,220,749,225,399,208"/>
-<area shape="rect" id="Node000009" href="$d6/dd0/structfl_1_1_rgbww_default_a61aa7b301c50a59a284664e21691e3e1.html#a61aa7b301c50a59a284664e21691e3e1" title=" " alt="" coords="479,239,715,265"/>
-<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="383,211,511,234,510,239,382,217"/>
-<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="714,237,749,233,749,238,715,242"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="378,50,514,38,515,43,379,55"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="529,26,392,38,392,33,528,21"/>
+<area shape="rect" id="Node000004" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a346ffe73124af2abf1ccf82a96daee72.html#a346ffe73124af2abf1ccf82a96daee72" title="Check if this controller is in the linked list." alt="" coords="764,31,900,71"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="665,30,751,39,750,45,664,35"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="764,58,715,60,597,62,479,60,392,57,392,52,479,55,597,57,715,55,764,53"/>
+<area shape="rect" id="Node000008" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a5e7f691ebcbbba6a71521e3b49bc2f69.html#a5e7f691ebcbbba6a71521e3b49bc2f69" title=" " alt="" coords="519,209,675,249"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="379,246,505,235,505,240,380,251"/>
+<area shape="rect" id="Node000010" href="$d4/df9/structfl_1_1_rgbww_a0d2908da04ace06a285f187b68b4e169.html#a0d2908da04ace06a285f187b68b4e169" title=" " alt="" coords="763,274,901,299"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="399,305,749,288,749,293,399,310"/>
+<area shape="rect" id="Node000011" href="$d6/dd0/structfl_1_1_rgbww_default_a61aa7b301c50a59a284664e21691e3e1.html#a61aa7b301c50a59a284664e21691e3e1" title=" " alt="" coords="479,325,715,350"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="399,317,465,323,464,328,399,322"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="864,271,960,233,962,238,866,276"/>
+<area shape="poly" id="edge14_Node000011_Node000010" title=" " alt="" coords="656,322,759,300,760,305,657,327"/>
 </map>

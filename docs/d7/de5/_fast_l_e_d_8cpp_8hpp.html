@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -130,10 +130,12 @@ $(function(){initNavTree('d7/de5/_fast_l_e_d_8cpp_8hpp.html','../../'); initResi
 <code>#include &quot;<a class="el" href="../../d0/d90/ui_2audio_8h_source.html">fl/ui/audio.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../de/d9a/hsv2rgb_8h_source.html">hsv2rgb.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/d7e/int_8h_source.html">fl/stl/int.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d63/type__traits_8h_source.html">fl/stl/type_traits.h</a>&quot;</code><br />
 <code>#include &quot;platforms/init.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/d09/fl_2channels_2config_8h_source.html">fl/channels/config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d0b/singleton_8h_source.html">fl/stl/singleton.h</a>&quot;</code><br />
 <code>#include &quot;platforms/is_platform.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d01/noexcept_8h_source.html">fl/stl/noexcept.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for FastLED.cpp.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -164,20 +166,20 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a0c54ccf760a43d54af03f5490f32a248" id="r_a0c54ccf760a43d54af03f5490f32a248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d54/compiler__control_8h_afde174fbd5fd09901dcac3f36aed38d8.html#afde174fbd5fd09901dcac3f36aed38d8">FL_LINK_WEAK</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_a0c54ccf760a43d54af03f5490f32a248.html#a0c54ccf760a43d54af03f5490f32a248">atexit</a> (void(*)())</td></tr>
 <tr class="separator:a0c54ccf760a43d54af03f5490f32a248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac8cbbec5959529df8322a72cd277954d" id="r_gac8cbbec5959529df8322a72cd277954d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/group___power_gac8cbbec5959529df8322a72cd277954d.html#gac8cbbec5959529df8322a72cd277954d">delay_at_max_brightness_for_power</a> (fl::u16 ms)</td></tr>
-<tr class="memdesc:gac8cbbec5959529df8322a72cd277954d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to <a class="el" href="../../dd/dbb/class_c_fast_l_e_d_a6819ff831058a710d4582dfc09817202.html#a6819ff831058a710d4582dfc09817202" title="Delay for the given number of milliseconds.">CFastLED::delay()</a>, but pre-adjusts brightness to keep below the power threshold.  <br /></td></tr>
-<tr class="separator:gac8cbbec5959529df8322a72cd277954d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af96d4a9d20c1f0f9f592f5f67d703bc8" id="r_af96d4a9d20c1f0f9f592f5f67d703bc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_af96d4a9d20c1f0f9f592f5f67d703bc8.html#af96d4a9d20c1f0f9f592f5f67d703bc8">get_brightness</a> ()</td></tr>
-<tr class="separator:af96d4a9d20c1f0f9f592f5f67d703bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadffc621f701c393dd741e9efb454d78b" id="r_gadffc621f701c393dd741e9efb454d78b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/group___power_gadffc621f701c393dd741e9efb454d78b.html#gadffc621f701c393dd741e9efb454d78b">set_max_power_in_milliwatts</a> (fl::u32 powerInmW)</td></tr>
-<tr class="memdesc:gadffc621f701c393dd741e9efb454d78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum power used in watts.  <br /></td></tr>
-<tr class="separator:gadffc621f701c393dd741e9efb454d78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacfe05558d8cf4bbe8b9b08b5cc55efea" id="r_gacfe05558d8cf4bbe8b9b08b5cc55efea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/group___power_gacfe05558d8cf4bbe8b9b08b5cc55efea.html#gacfe05558d8cf4bbe8b9b08b5cc55efea">set_max_power_in_volts_and_milliamps</a> (<a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> volts, fl::u32 milliamps)</td></tr>
-<tr class="memdesc:gacfe05558d8cf4bbe8b9b08b5cc55efea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum power used in milliamps for a given voltage.  <br /></td></tr>
-<tr class="separator:gacfe05558d8cf4bbe8b9b08b5cc55efea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga510b6ca1ea6da7f0f89dcf353f19ffde" id="r_ga510b6ca1ea6da7f0f89dcf353f19ffde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/group___power_ga510b6ca1ea6da7f0f89dcf353f19ffde.html#ga510b6ca1ea6da7f0f89dcf353f19ffde">show_at_max_brightness_for_power</a> ()</td></tr>
-<tr class="memdesc:ga510b6ca1ea6da7f0f89dcf353f19ffde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to <a class="el" href="../../dd/dbb/class_c_fast_l_e_d_a3adb23ec5f919524928d576002cb45de.html#a3adb23ec5f919524928d576002cb45de" title="Update all our controllers with the current led colors.">CFastLED::show()</a>, but pre-adjusts brightness to keep below the power threshold.  <br /></td></tr>
-<tr class="separator:ga510b6ca1ea6da7f0f89dcf353f19ffde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44a440ba6c1b8957cc059bf10765459f" id="r_ga44a440ba6c1b8957cc059bf10765459f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/group___power_ga44a440ba6c1b8957cc059bf10765459f.html#ga44a440ba6c1b8957cc059bf10765459f">delay_at_max_brightness_for_power</a> (fl::u16 ms) <a class="el" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:ga44a440ba6c1b8957cc059bf10765459f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to <a class="el" href="../../dd/dbb/class_c_fast_l_e_d_aa387a21813a918fd6817203b988fb8b7.html#aa387a21813a918fd6817203b988fb8b7" title="Delay for the given number of milliseconds.">CFastLED::delay()</a>, but pre-adjusts brightness to keep below the power threshold.  <br /></td></tr>
+<tr class="separator:ga44a440ba6c1b8957cc059bf10765459f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bdea90475d6e8876384a438d25f1da7" id="r_a1bdea90475d6e8876384a438d25f1da7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_a1bdea90475d6e8876384a438d25f1da7.html#a1bdea90475d6e8876384a438d25f1da7">get_brightness</a> () <a class="el" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></td></tr>
+<tr class="separator:a1bdea90475d6e8876384a438d25f1da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a6116b7b4cebcfc56faf56a3fe702a3" id="r_ga5a6116b7b4cebcfc56faf56a3fe702a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/group___power_ga5a6116b7b4cebcfc56faf56a3fe702a3.html#ga5a6116b7b4cebcfc56faf56a3fe702a3">set_max_power_in_milliwatts</a> (fl::u32 powerInmW) <a class="el" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:ga5a6116b7b4cebcfc56faf56a3fe702a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum power used in watts.  <br /></td></tr>
+<tr class="separator:ga5a6116b7b4cebcfc56faf56a3fe702a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3c72261f5d3afc8535cc2535dbaac80" id="r_gab3c72261f5d3afc8535cc2535dbaac80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/group___power_gab3c72261f5d3afc8535cc2535dbaac80.html#gab3c72261f5d3afc8535cc2535dbaac80">set_max_power_in_volts_and_milliamps</a> (<a class="el" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a> volts, fl::u32 milliamps) <a class="el" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:gab3c72261f5d3afc8535cc2535dbaac80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum power used in milliamps for a given voltage.  <br /></td></tr>
+<tr class="separator:gab3c72261f5d3afc8535cc2535dbaac80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9e9b50a4c5ccd7b249a35596691a42f" id="r_gae9e9b50a4c5ccd7b249a35596691a42f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/group___power_gae9e9b50a4c5ccd7b249a35596691a42f.html#gae9e9b50a4c5ccd7b249a35596691a42f">show_at_max_brightness_for_power</a> () <a class="el" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:gae9e9b50a4c5ccd7b249a35596691a42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to <a class="el" href="../../dd/dbb/class_c_fast_l_e_d_a22704597fae922e7d6a6a8258be76031.html#a22704597fae922e7d6a6a8258be76031" title="Update all our controllers with the current led colors.">CFastLED::show()</a>, but pre-adjusts brightness to keep below the power threshold.  <br /></td></tr>
+<tr class="separator:gae9e9b50a4c5ccd7b249a35596691a42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6c7e827ae13a7bc3da907399f25142f" id="r_ac6c7e827ae13a7bc3da907399f25142f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp_ac6c7e827ae13a7bc3da907399f25142f.html#ac6c7e827ae13a7bc3da907399f25142f">throttleToMaxRefreshRate</a> (fl::u32 minMicros) <a class="el" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a></td></tr>
 <tr class="separator:ac6c7e827ae13a7bc3da907399f25142f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -213,7 +215,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/de5/_fast_l_e_d_8cpp_8hpp.html">FastLED.cpp.hpp</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:03 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:18 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

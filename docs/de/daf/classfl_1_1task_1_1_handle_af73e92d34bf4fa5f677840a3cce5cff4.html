@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -126,24 +126,24 @@ $(function(){initNavTree('de/daf/classfl_1_1task_1_1_handle_af73e92d34bf4fa5f677
 <p>Constructs a handle for an existing task implementation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">impl</td><td>Task implementation. Ownership is shared: this handle, every copy of it, and the entry <a class="el" href="../../d2/d2b/classfl_1_1task_1_1_scheduler_ad1f60f825514d99a9ee0d06f564be1a7.html#ad1f60f825514d99a9ee0d06f564be1a7">Scheduler::add_task</a> keeps all hold the implementation alive, and it is destroyed when the last of them goes away. Passing nullptr yields an invalid handle that behaves exactly like a default-constructed one: <a class="el" href="../../de/daf/classfl_1_1task_1_1_handle_a9e7fdc78f4e3006f85e8599fac8bd659.html#a9e7fdc78f4e3006f85e8599fac8bd659" title="Returns whether this handle refers to a task.">is_valid()</a> returns false, every accessor returns a default value, every mutator is a no-op, and the scheduler refuses to register it. </td></tr>
+    <tr><td class="paramname">impl</td><td>Task implementation. Ownership is shared: this handle, every copy of it, and the entry <a class="el" href="../../d2/d2b/classfl_1_1task_1_1_scheduler_a5f2fabbf7e39f5472bdff5535c113781.html#a5f2fabbf7e39f5472bdff5535c113781">Scheduler::add_task</a> keeps all hold the implementation alive, and it is destroyed when the last of them goes away. Passing nullptr yields an invalid handle that behaves exactly like a default-constructed one: <a class="el" href="../../de/daf/classfl_1_1task_1_1_handle_a9e7fdc78f4e3006f85e8599fac8bd659.html#a9e7fdc78f4e3006f85e8599fac8bd659" title="Returns whether this handle refers to a task.">is_valid()</a> returns false, every accessor returns a default value, every mutator is a no-op, and the scheduler refuses to register it. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This is public only because <a class="el" href="../../d7/d04/classfl_1_1task_1_1_i_task_impl.html">ITaskImpl</a> is forward-declared. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/db6/task_8cpp_8hpp_source.html#l00273">273</a> of file <a class="el" href="../../df/db6/task_8cpp_8hpp_source.html">task.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  273</span>: <a class="code hl_variable" href="../../de/daf/classfl_1_1task_1_1_handle_af0eb4d2fa3c0a4207288598a8cccce94.html#af0eb4d2fa3c0a4207288598a8cccce94">mImpl</a>(<a class="code hl_function" href="../../d4/d36/namespacefl_a0c8a67e528dcd96ee58216754a07a733.html#a0c8a67e528dcd96ee58216754a07a733">fl::move</a>(impl)) {}</div>
+<div class="fragment"><div class="line"><span class="lineno">  273</span>: <a class="code hl_variable" href="../../de/daf/classfl_1_1task_1_1_handle_af0eb4d2fa3c0a4207288598a8cccce94.html#af0eb4d2fa3c0a4207288598a8cccce94">mImpl</a>(<a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc.html#a12b4192c17e37b3e4322cec1a2debdcc">fl::move</a>(impl)) {}</div>
 <div class="ttc" id="aclassfl_1_1task_1_1_handle_af0eb4d2fa3c0a4207288598a8cccce94_html_af0eb4d2fa3c0a4207288598a8cccce94"><div class="ttname"><a href="../../de/daf/classfl_1_1task_1_1_handle_af0eb4d2fa3c0a4207288598a8cccce94.html#af0eb4d2fa3c0a4207288598a8cccce94">fl::task::Handle::mImpl</a></div><div class="ttdeci">shared_ptr&lt; ITaskImpl &gt; mImpl</div><div class="ttdef"><b>Definition</b> <a href="../../db/da4/task_8h_source.html#l00245">task.h:245</a></div></div>
-<div class="ttc" id="anamespacefl_a0c8a67e528dcd96ee58216754a07a733_html_a0c8a67e528dcd96ee58216754a07a733"><div class="ttname"><a href="../../d4/d36/namespacefl_a0c8a67e528dcd96ee58216754a07a733.html#a0c8a67e528dcd96ee58216754a07a733">fl::move</a></div><div class="ttdeci">constexpr remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;t) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d83/move_8h_source.html#l00028">move.h:28</a></div></div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc_html_a12b4192c17e37b3e4322cec1a2debdcc"><div class="ttname"><a href="../../df/d34/namespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc.html#a12b4192c17e37b3e4322cec1a2debdcc">fl::adl_barrier::move</a></div><div class="ttdeci">constexpr remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;t) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d83/move_8h_source.html#l00030">move.h:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../db/da4/task_8h_source.html#l00245">mImpl</a>, and <a class="el" href="../../d9/d83/move_8h_source.html#l00028">fl::move()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../db/da4/task_8h_source.html#l00245">mImpl</a>, and <a class="el" href="../../d9/d83/move_8h_source.html#l00030">fl::adl_barrier::move()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/daf/classfl_1_1task_1_1_handle_af73e92d34bf4fa5f677840a3cce5cff4_af73e92d34bf4fa5f677840a3cce5cff4_cgraph.svg" width="308" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/daf/classfl_1_1task_1_1_handle_af73e92d34bf4fa5f677840a3cce5cff4_af73e92d34bf4fa5f677840a3cce5cff4_cgraph.svg" width="387" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -155,7 +155,7 @@ $(function(){initNavTree('de/daf/classfl_1_1task_1_1_handle_af73e92d34bf4fa5f677
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../db/d5c/namespacefl_1_1task.html">task</a></li><li class="navelem"><a class="el" href="../../de/daf/classfl_1_1task_1_1_handle.html">Handle</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:12 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:36 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

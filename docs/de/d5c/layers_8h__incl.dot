@@ -22,15 +22,15 @@ digraph "/home/runner/work/FastLED/FastLED/examples/MoodRing/layers.h"
   Node6 -> Node7 [id="edge9_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
   Node7 [id="Node000007",label="fl/stl/span.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d7a/span_8h.html",tooltip=" "];
   Node6 -> Node3 [id="edge10_Node000006_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node5 -> Node25 [id="edge11_Node000005_Node000025",color="steelblue1",style="solid",tooltip=" "];
-  Node25 [id="Node000025",label="room_sense.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/dd8/room__sense_8h.html",tooltip=" "];
-  Node25 -> Node2 [id="edge12_Node000025_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node25 -> Node26 [id="edge13_Node000025_Node000026",color="steelblue1",style="solid",tooltip=" "];
-  Node26 [id="Node000026",label="fl/audio/audio_processor.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$de/dd5/audio__processor_8h.html",tooltip=" "];
-  Node26 -> Node28 [id="edge14_Node000026_Node000028",color="steelblue1",style="solid",tooltip=" "];
-  Node28 [id="Node000028",label="fl/stl/shared_ptr.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d6a/shared__ptr_8h.html",tooltip=" "];
-  Node25 -> Node28 [id="edge15_Node000025_Node000028",color="steelblue1",style="solid",tooltip=" "];
-  Node25 -> Node3 [id="edge16_Node000025_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node26 [id="edge11_Node000005_Node000026",color="steelblue1",style="solid",tooltip=" "];
+  Node26 [id="Node000026",label="room_sense.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/dd8/room__sense_8h.html",tooltip=" "];
+  Node26 -> Node2 [id="edge12_Node000026_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node26 -> Node27 [id="edge13_Node000026_Node000027",color="steelblue1",style="solid",tooltip=" "];
+  Node27 [id="Node000027",label="fl/audio/audio_processor.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$de/dd5/audio__processor_8h.html",tooltip=" "];
+  Node27 -> Node29 [id="edge14_Node000027_Node000029",color="steelblue1",style="solid",tooltip=" "];
+  Node29 [id="Node000029",label="fl/stl/shared_ptr.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/d6a/shared__ptr_8h.html",tooltip=" "];
+  Node26 -> Node29 [id="edge15_Node000026_Node000029",color="steelblue1",style="solid",tooltip=" "];
+  Node26 -> Node3 [id="edge16_Node000026_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node6 [id="edge17_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
-  Node1 -> Node25 [id="edge18_Node000001_Node000025",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node26 [id="edge18_Node000001_Node000026",color="steelblue1",style="solid",tooltip=" "];
 }

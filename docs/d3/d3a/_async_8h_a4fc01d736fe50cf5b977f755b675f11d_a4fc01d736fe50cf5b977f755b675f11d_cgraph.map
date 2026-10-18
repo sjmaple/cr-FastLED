@@ -1,31 +1,37 @@
 <map id="setup" name="setup">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,64,129"/>
-<area shape="rect" id="Node000002" href="$db/d5c/namespacefl_1_1task_a7972dc3aa503dbb109098b96ba8df203.html#a7972dc3aa503dbb109098b96ba8df203" title="Creates a task that runs at a fixed frame rate." alt="" coords="112,5,271,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,102,72,71,111,40,123,33,125,38,113,44,75,75,48,105"/>
-<area shape="rect" id="Node000004" href="$db/d5c/namespacefl_1_1task_ad990b0044cf3097520e9afa9aa6b27f5.html#ad990b0044cf3097520e9afa9aa6b27f5" title="Creates a task that runs at a fixed millisecond interval." alt="" coords="122,55,261,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="63,105,111,89,134,82,136,87,113,94,65,110"/>
-<area shape="rect" id="Node000005" href="$d1/dfb/colorutils_8h_a3198008d7f952f27c3c83aeefedec06b.html#a3198008d7f952f27c3c83aeefedec06b" title="Fill a range of LEDs with a solid color." alt="" coords="153,104,229,129"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="64,114,140,114,140,119,64,119"/>
-<area shape="rect" id="Node000006" href="$d2/d0d/group___random_gafb55d95e3e866dce182f149535903dd8.html#gafb55d95e3e866dce182f149535903dd8" title="Generate an 8&#45;bit random number." alt="" coords="151,153,231,179"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="65,123,139,147,137,152,63,128"/>
-<area shape="rect" id="Node000007" href="$de/daf/classfl_1_1task_1_1_handle_a0d96031ff5c53ece780698c5f39d9d2b.html#a0d96031ff5c53ece780698c5f39d9d2b" title="Sets the callback invoked when the task runs successfully." alt="" coords="113,203,270,228"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="48,128,76,158,113,188,128,195,125,200,111,192,72,162,44,131"/>
-<area shape="rect" id="Node000003" href="$d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af" title=" " alt="" coords="343,29,469,55"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="271,24,330,31,329,36,271,30"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="261,57,329,48,330,54,261,62"/>
-<area shape="rect" id="Node000008" href="$de/daf/classfl_1_1task_1_1_handle_ab6f4687accc4a4a3c703732554746e91.html#ab6f4687accc4a4a3c703732554746e91" title="Constructs an empty, invalid handle." alt="" coords="319,123,493,148"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="234,200,270,188,318,165,355,150,357,155,320,170,272,192,236,205"/>
-<area shape="rect" id="Node000009" href="$d2/d2b/classfl_1_1task_1_1_scheduler_ad1f60f825514d99a9ee0d06f564be1a7.html#ad1f60f825514d99a9ee0d06f564be1a7" title=" " alt="" coords="337,223,475,263"/>
-<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="271,223,323,230,322,235,270,228"/>
-<area shape="rect" id="Node000010" href="$d4/d36/namespacefl_a0c8a67e528dcd96ee58216754a07a733.html#a0c8a67e528dcd96ee58216754a07a733" title=" " alt="" coords="601,173,676,199"/>
-<area shape="poly" id="edge15_Node000007_Node000010" title=" " alt="" coords="270,208,588,187,588,192,270,213"/>
-<area shape="rect" id="Node000012" href="$d2/d2b/classfl_1_1task_1_1_scheduler_a266030d285c7f6ae31eb3c619cee8693.html#a266030d285c7f6ae31eb3c619cee8693" title=" " alt="" coords="337,287,475,327"/>
-<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="219,226,320,273,337,280,335,285,318,278,217,231"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="475,224,587,196,588,201,476,229"/>
-<area shape="rect" id="Node000011" href="$de/dca/classfl_1_1_engine_events_a72f24bd8f5798f69531fef3a895ab3cd.html#a72f24bd8f5798f69531fef3a895ab3cd" title=" " alt="" coords="541,223,736,263"/>
-<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="476,241,528,241,528,246,476,246"/>
-<area shape="rect" id="Node000013" href="$d2/d2b/classfl_1_1task_1_1_scheduler_ae121a634a1a55f695f640be58619bb46.html#ae121a634a1a55f695f640be58619bb46" title=" " alt="" coords="569,287,708,327"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="476,305,556,305,556,310,476,310"/>
-<area shape="rect" id="Node000014" href="$d9/d5b/classfl_1_1_singleton_ad5cb1b704e17768f75802673abb0ff75.html#ad5cb1b704e17768f75802673abb0ff75" title=" " alt="" coords="557,352,720,377"/>
-<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="476,322,574,346,573,351,475,327"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,135,64,161"/>
+<area shape="rect" id="Node000002" href="$db/d5c/namespacefl_1_1task_a7972dc3aa503dbb109098b96ba8df203.html#a7972dc3aa503dbb109098b96ba8df203" title="Creates a task that runs at a fixed frame rate." alt="" coords="112,37,271,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,133,72,102,111,71,123,65,125,70,113,76,75,106,48,137"/>
+<area shape="rect" id="Node000005" href="$db/d5c/namespacefl_1_1task_ad990b0044cf3097520e9afa9aa6b27f5.html#ad990b0044cf3097520e9afa9aa6b27f5" title="Creates a task that runs at a fixed millisecond interval." alt="" coords="122,86,261,111"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="63,136,111,120,134,113,136,118,113,125,65,141"/>
+<area shape="rect" id="Node000007" href="$d1/dfb/colorutils_8h_a3198008d7f952f27c3c83aeefedec06b.html#a3198008d7f952f27c3c83aeefedec06b" title="Fill a range of LEDs with a solid color." alt="" coords="153,135,229,161"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="64,145,140,145,140,151,64,151"/>
+<area shape="rect" id="Node000008" href="$d2/d0d/group___random_gafb55d95e3e866dce182f149535903dd8.html#gafb55d95e3e866dce182f149535903dd8" title="Generate an 8&#45;bit random number." alt="" coords="151,185,231,210"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="65,155,139,178,137,183,63,160"/>
+<area shape="rect" id="Node000009" href="$de/daf/classfl_1_1task_1_1_handle_a0d96031ff5c53ece780698c5f39d9d2b.html#a0d96031ff5c53ece780698c5f39d9d2b" title="Sets the callback invoked when the task runs successfully." alt="" coords="113,234,270,259"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="48,159,76,189,113,219,128,226,125,231,111,224,72,193,44,163"/>
+<area shape="rect" id="Node000003" href="$df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c" title=" " alt="" coords="330,29,482,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="271,47,316,47,316,52,271,52"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="366,30,364,20,370,10,384,5,406,3,431,6,445,13,442,18,429,11,406,8,386,10,373,15,369,21,371,28"/>
+<area shape="rect" id="Node000004" href="$df/d34/namespacefl_1_1adl__barrier_ac53ccff21210ad77549fafb987263051.html#ac53ccff21210ad77549fafb987263051" title=" " alt="" coords="555,37,722,62"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="482,47,541,47,541,52,482,52"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="247,83,316,67,317,72,248,89"/>
+<area shape="rect" id="Node000006" href="$d7/d04/classfl_1_1task_1_1_i_task_impl_a0572cc4ea50787f893949d3c9988e5c1.html#a0572cc4ea50787f893949d3c9988e5c1" title=" " alt="" coords="338,117,474,157"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="261,108,325,120,324,125,260,114"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="366,118,364,108,370,98,384,93,406,91,431,94,445,101,442,106,429,99,406,96,386,98,373,103,369,109,371,116"/>
+<area shape="rect" id="Node000010" href="$de/daf/classfl_1_1task_1_1_handle_ab6f4687accc4a4a3c703732554746e91.html#ab6f4687accc4a4a3c703732554746e91" title="Constructs an empty, invalid handle." alt="" coords="319,182,493,207"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="244,231,339,208,340,213,245,237"/>
+<area shape="rect" id="Node000011" href="$d2/d2b/classfl_1_1task_1_1_scheduler_a5f2fabbf7e39f5472bdff5535c113781.html#a5f2fabbf7e39f5472bdff5535c113781" title=" " alt="" coords="337,283,475,323"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="241,257,324,279,323,284,240,262"/>
+<area shape="rect" id="Node000012" href="$df/d34/namespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc.html#a12b4192c17e37b3e4322cec1a2debdcc" title=" " alt="" coords="562,233,715,258"/>
+<area shape="poly" id="edge19_Node000009_Node000012" title=" " alt="" coords="270,244,548,243,548,248,270,249"/>
+<area shape="rect" id="Node000014" href="$d2/d2b/classfl_1_1task_1_1_scheduler_a40cdf8c37f1288adfea9d7c1d8bc4bd0.html#a40cdf8c37f1288adfea9d7c1d8bc4bd0" title=" " alt="" coords="337,347,475,387"/>
+<area shape="poly" id="edge16_Node000009_Node000014" title=" " alt="" coords="210,257,258,293,320,332,333,339,331,344,317,337,255,298,207,262"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="475,283,573,259,574,264,476,288"/>
+<area shape="rect" id="Node000013" href="$de/dca/classfl_1_1_engine_events_a72f24bd8f5798f69531fef3a895ab3cd.html#a72f24bd8f5798f69531fef3a895ab3cd" title=" " alt="" coords="541,283,736,323"/>
+<area shape="poly" id="edge15_Node000011_Node000013" title=" " alt="" coords="476,300,528,300,528,305,476,305"/>
+<area shape="rect" id="Node000015" href="$d2/d2b/classfl_1_1task_1_1_scheduler_ae121a634a1a55f695f640be58619bb46.html#ae121a634a1a55f695f640be58619bb46" title=" " alt="" coords="569,347,708,387"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="476,364,556,364,556,369,476,369"/>
+<area shape="rect" id="Node000016" href="$d9/d5b/classfl_1_1_singleton_ad5cb1b704e17768f75802673abb0ff75.html#ad5cb1b704e17768f75802673abb0ff75" title=" " alt="" coords="557,411,720,437"/>
+<area shape="poly" id="edge18_Node000014_Node000016" title=" " alt="" coords="476,381,574,405,573,411,475,386"/>
 </map>

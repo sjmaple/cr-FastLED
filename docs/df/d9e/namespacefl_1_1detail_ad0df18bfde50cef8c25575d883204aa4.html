@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -131,19 +131,18 @@ $(function(){initNavTree('df/d9e/namespacefl_1_1detail_ad0df18bfde50cef8c25575d8
 
 <p class="definition">Definition at line <a class="el" href="../../d8/dab/log_8cpp_8hpp_source.html#l00087">87</a> of file <a class="el" href="../../d8/dab/log_8cpp_8hpp_source.html">log.cpp.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   88</span>                                                                  {</div>
-<div class="line"><span class="lineno">   89</span>    <span class="comment">// Mirror log_emit_f&#39;s existing printf specializations so this safe</span></div>
-<div class="line"><span class="lineno">   90</span>    <span class="comment">// literal path adds no large four-argument formatter instantiation.</span></div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_a4e339e8d2eb5d116d63e96d48abec5b5.html#a4e339e8d2eb5d116d63e96d48abec5b5">log_emit_prefix</a>(kind, file, line);</div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_function" href="../../d4/d36/namespacefl_a23e9f3b5be31d78996d08b3c811ec5d1.html#a23e9f3b5be31d78996d08b3c811ec5d1">fl::print</a>(body);</div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_ab77cc492128e9d51a4b0a4dabf4c1d62.html#ab77cc492128e9d51a4b0a4dabf4c1d62">log_emit_newline</a>();</div>
-<div class="line"><span class="lineno">   94</span>}</div>
+<div class="line"><span class="lineno">   89</span>    <span class="comment">// Prefix + literal + newline, with no formatter involved.</span></div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_a4e339e8d2eb5d116d63e96d48abec5b5.html#a4e339e8d2eb5d116d63e96d48abec5b5">log_emit_prefix</a>(kind, file, line);</div>
+<div class="line"><span class="lineno">   91</span>    <a class="code hl_function" href="../../d4/d36/namespacefl_a137568a66ee46dd29136aa1b9386c8f1.html#a137568a66ee46dd29136aa1b9386c8f1">fl::print</a>(body);</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_function" href="../../df/d9e/namespacefl_1_1detail_ab77cc492128e9d51a4b0a4dabf4c1d62.html#ab77cc492128e9d51a4b0a4dabf4c1d62">log_emit_newline</a>();</div>
+<div class="line"><span class="lineno">   93</span>}</div>
 <div class="ttc" id="anamespacefl_1_1detail_a4e339e8d2eb5d116d63e96d48abec5b5_html_a4e339e8d2eb5d116d63e96d48abec5b5"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_a4e339e8d2eb5d116d63e96d48abec5b5.html#a4e339e8d2eb5d116d63e96d48abec5b5">fl::detail::log_emit_prefix</a></div><div class="ttdeci">FL_NO_INLINE void log_emit_prefix(log_kind kind, const char *file, int line) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/log_8cpp_8hpp_source.html#l00026">log.cpp.hpp:26</a></div></div>
 <div class="ttc" id="anamespacefl_1_1detail_ab77cc492128e9d51a4b0a4dabf4c1d62_html_ab77cc492128e9d51a4b0a4dabf4c1d62"><div class="ttname"><a href="../../df/d9e/namespacefl_1_1detail_ab77cc492128e9d51a4b0a4dabf4c1d62.html#ab77cc492128e9d51a4b0a4dabf4c1d62">fl::detail::log_emit_newline</a></div><div class="ttdeci">FL_NO_INLINE void log_emit_newline() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/log_8cpp_8hpp_source.html#l00048">log.cpp.hpp:48</a></div></div>
-<div class="ttc" id="anamespacefl_a23e9f3b5be31d78996d08b3c811ec5d1_html_a23e9f3b5be31d78996d08b3c811ec5d1"><div class="ttname"><a href="../../d4/d36/namespacefl_a23e9f3b5be31d78996d08b3c811ec5d1.html#a23e9f3b5be31d78996d08b3c811ec5d1">fl::print</a></div><div class="ttdeci">void print(const char *str)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d7a/cstdio_8cpp_8hpp_source.html#l00077">cstdio.cpp.hpp:77</a></div></div>
+<div class="ttc" id="anamespacefl_a137568a66ee46dd29136aa1b9386c8f1_html_a137568a66ee46dd29136aa1b9386c8f1"><div class="ttname"><a href="../../d4/d36/namespacefl_a137568a66ee46dd29136aa1b9386c8f1.html#a137568a66ee46dd29136aa1b9386c8f1">fl::print</a></div><div class="ttdeci">void print(const char *str) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d7a/cstdio_8cpp_8hpp_source.html#l00078">cstdio.cpp.hpp:78</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00353">FL_NO_INLINE</a>, <a class="el" href="../../d8/dab/log_8cpp_8hpp_source.html#l00048">log_emit_newline()</a>, <a class="el" href="../../d8/dab/log_8cpp_8hpp_source.html#l00026">log_emit_prefix()</a>, and <a class="el" href="../../dd/d7a/cstdio_8cpp_8hpp_source.html#l00077">fl::print()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d4/d54/compiler__control_8h_source.html#l00353">FL_NO_INLINE</a>, <a class="el" href="../../d8/dab/log_8cpp_8hpp_source.html#l00048">log_emit_newline()</a>, <a class="el" href="../../d8/dab/log_8cpp_8hpp_source.html#l00026">log_emit_prefix()</a>, and <a class="el" href="../../dd/d7a/cstdio_8cpp_8hpp_source.html#l00078">fl::print()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d7f/log_8h_source.html#l00259">log_emit_auto()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d7f/log_8h_source.html#l00245">log_emit_auto()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -168,7 +167,7 @@ $(function(){initNavTree('df/d9e/namespacefl_1_1detail_ad0df18bfde50cef8c25575d8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../df/d9e/namespacefl_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

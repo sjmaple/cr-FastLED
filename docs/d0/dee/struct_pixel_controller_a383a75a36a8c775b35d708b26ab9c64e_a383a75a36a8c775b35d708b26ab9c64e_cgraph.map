@@ -1,0 +1,27 @@
+<map id="PixelController::loadAndScaleRGBWW" name="PixelController::loadAndScaleRGBWW">
+<area shape="rect" id="Node000001" title="Load + scale a single pixel to 5&#45;channel RGBWW (issue #2558)." alt="" coords="5,133,184,173"/>
+<area shape="rect" id="Node000002" href="$d0/dee/struct_pixel_controller_ac781d584232fa20252e834c6443b01df.html#ac781d584232fa20252e834c6443b01df" title="non&#45;template alias of loadAndScale&lt;0&gt;()" alt="" coords="235,5,413,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,131,169,93,231,55,245,48,248,53,233,60,172,98,122,135"/>
+<area shape="rect" id="Node000006" href="$d0/dee/struct_pixel_controller_a4cdddff28824a4128241865201b079f3.html#a4cdddff28824a4128241865201b079f3" title="non&#45;template alias of loadAndScale&lt;1&gt;()" alt="" coords="235,69,413,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="166,131,238,110,240,116,168,136"/>
+<area shape="rect" id="Node000007" href="$d0/dee/struct_pixel_controller_abfe5d7e4f55da80cc41d6b6bf75c1d7b.html#abfe5d7e4f55da80cc41d6b6bf75c1d7b" title="non&#45;template alias of loadAndScale&lt;2&gt;()" alt="" coords="235,133,413,173"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="184,151,221,151,221,156,184,156"/>
+<area shape="rect" id="Node000008" href="$d0/dee/struct_pixel_controller_aacf4590eedb79bdcf64e8fb03872bf3f.html#aacf4590eedb79bdcf64e8fb03872bf3f" title="loadAndScaleRGBWW before its wire reorder. See loadAndScaleRGBWUnordered." alt="" coords="235,197,413,237"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="168,171,240,191,238,196,166,176"/>
+<area shape="rect" id="Node000012" href="$d4/d36/namespacefl_a0ada914bf8a8dbf0fc5a374efccb6007.html#a0ada914bf8a8dbf0fc5a374efccb6007" title="Dispatch RGB&#45;&gt;RGBWW for a given mode." alt="" coords="232,262,416,287"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="121,171,171,210,233,247,254,255,252,260,231,252,168,214,117,175"/>
+<area shape="rect" id="Node000003" href="$d0/dee/struct_pixel_controller_a28eb1755a900be9b4a008a8f8672f51e.html#a28eb1755a900be9b4a008a8f8672f51e" title="Complete pipeline: load â†’ dither â†’ scale (THE MAGIC HAPPENS HERE!) Order is critical: pixel + dit..." alt="" coords="464,69,643,109"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="397,43,469,63,468,68,396,48"/>
+<area shape="rect" id="Node000004" href="$d0/dee/struct_pixel_controller_a15c94e0bc05c85f6e4a790abea8f0050.html#a15c94e0bc05c85f6e4a790abea8f0050" title="Copy constructor." alt="" coords="691,77,911,102"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="643,87,677,87,677,92,643,92"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="761,78,752,68,757,58,773,52,801,50,835,54,845,59,849,64,844,67,842,63,834,59,801,55,774,57,760,62,758,68,765,75"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="414,87,450,87,450,92,414,92"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="396,131,468,110,469,116,397,136"/>
+<area shape="rect" id="Node000009" href="$d0/dee/struct_pixel_controller_a51a13a6ff889168738e41eb793daf5c8.html#a51a13a6ff889168738e41eb793daf5c8" title="One source channel, loaded, dithered and scaled – loadAndScale&lt;SLOT&gt; with RO(SLOT) replaced by a runt..." alt="" coords="464,165,643,205"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="413,202,450,197,451,202,414,208"/>
+<area shape="rect" id="Node000011" href="$d4/d36/namespacefl_ad4f9f0e8a803c639d39f18fb703dfbed.html#ad4f9f0e8a803c639d39f18fb703dfbed" title=" " alt="" coords="491,254,615,279"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="414,234,481,248,480,254,413,239"/>
+<area shape="rect" id="Node000010" href="$dd/d6c/structfl_1_1_binary_dither_a855eeda5bd1b617b06acd895eeba5b03.html#a855eeda5bd1b617b06acd895eeba5b03" title="Add the offset to a source byte, before scaling. Black is never lifted." alt="" coords="719,173,883,198"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="643,183,705,183,705,188,643,188"/>
+<area shape="poly" id="edge13_Node000011_Node000011" title=" " alt="" coords="516,256,508,246,512,236,528,230,553,227,586,231,598,241,595,245,584,236,553,233,529,235,516,240,513,245,520,252"/>
+</map>

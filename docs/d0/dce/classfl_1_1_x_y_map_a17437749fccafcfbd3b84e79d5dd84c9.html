@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -115,29 +115,29 @@ $(function(){initNavTree('d0/dce/classfl_1_1_x_y_map_a17437749fccafcfbd3b84e79d5
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/db7/xymap_8cpp_8hpp_source.html#l00012">12</a> of file <a class="el" href="../../de/db7/xymap_8cpp_8hpp_source.html">xymap.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   12</span>                                   {</div>
-<div class="line"><span class="lineno">   13</span>    <span class="keyword">const</span> u16 <a class="code hl_function" href="../../d6/daf/direct_8h_a1ddd0aa76a31f81b55f0ffccc1f3d4de.html#a1ddd0aa76a31f81b55f0ffccc1f3d4de">length</a> = <a class="code hl_variable" href="../../d0/dce/classfl_1_1_x_y_map_aabb1e697518d86d6eb34d156006cda57.html#aabb1e697518d86d6eb34d156006cda57">width</a> * <a class="code hl_variable" href="../../d0/dce/classfl_1_1_x_y_map_ae022a6d2dcbb07adfdaedbd152cc4d8d.html#ae022a6d2dcbb07adfdaedbd152cc4d8d">height</a>;</div>
-<div class="line"><span class="lineno">   14</span>    ScreenMap out(<a class="code hl_function" href="../../d6/daf/direct_8h_a1ddd0aa76a31f81b55f0ffccc1f3d4de.html#a1ddd0aa76a31f81b55f0ffccc1f3d4de">length</a>);</div>
-<div class="line"><span class="lineno">   15</span>    <span class="keywordflow">for</span> (u16 w = 0; w &lt; <a class="code hl_variable" href="../../d0/dce/classfl_1_1_x_y_map_aabb1e697518d86d6eb34d156006cda57.html#aabb1e697518d86d6eb34d156006cda57">width</a>; w++) {</div>
-<div class="line"><span class="lineno">   16</span>        <span class="keywordflow">for</span> (u16 h = 0; h &lt; <a class="code hl_variable" href="../../d0/dce/classfl_1_1_x_y_map_ae022a6d2dcbb07adfdaedbd152cc4d8d.html#ae022a6d2dcbb07adfdaedbd152cc4d8d">height</a>; h++) {</div>
-<div class="line"><span class="lineno">   17</span>            u16 index = <a class="code hl_function" href="../../d0/dce/classfl_1_1_x_y_map_a8bf06efe63f5a257e02769da221c0529.html#a8bf06efe63f5a257e02769da221c0529">mapToIndex</a>(w, h);</div>
-<div class="line"><span class="lineno">   18</span>            <a class="code hl_typedef" href="../../d4/d36/namespacefl_a48a8de5776a08438981ff547032a8401.html#a48a8de5776a08438981ff547032a8401">vec2f</a> p = {<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(w), <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(h)};</div>
-<div class="line"><span class="lineno">   19</span>            out.set(index, p);</div>
-<div class="line"><span class="lineno">   20</span>        }</div>
-<div class="line"><span class="lineno">   21</span>    }</div>
-<div class="line"><span class="lineno">   22</span>    <span class="comment">// Store a shared_ptr to this XYMap so it can be used for encoding</span></div>
-<div class="line"><span class="lineno">   23</span>    out.setSourceXYMap(<a class="code hl_function" href="../../d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared&lt;XYMap&gt;</a>(*<span class="keyword">this</span>));</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><span class="lineno">   25</span>}</div>
-<div class="ttc" id="aclassfl_1_1_x_y_map_a8bf06efe63f5a257e02769da221c0529_html_a8bf06efe63f5a257e02769da221c0529"><div class="ttname"><a href="../../d0/dce/classfl_1_1_x_y_map_a8bf06efe63f5a257e02769da221c0529.html#a8bf06efe63f5a257e02769da221c0529">fl::XYMap::mapToIndex</a></div><div class="ttdeci">u16 mapToIndex(const u16 &amp;x, const u16 &amp;y) const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../de/db7/xymap_8cpp_8hpp_source.html#l00124">xymap.cpp.hpp:124</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../de/db7/xymap_8cpp_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../de/db7/xymap_8cpp_8hpp_source.html">xymap.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   13</span>                                                {</div>
+<div class="line"><span class="lineno">   14</span>    <span class="keyword">const</span> u16 <a class="code hl_function" href="../../d6/daf/direct_8h_a1ddd0aa76a31f81b55f0ffccc1f3d4de.html#a1ddd0aa76a31f81b55f0ffccc1f3d4de">length</a> = <a class="code hl_variable" href="../../d0/dce/classfl_1_1_x_y_map_aabb1e697518d86d6eb34d156006cda57.html#aabb1e697518d86d6eb34d156006cda57">width</a> * <a class="code hl_variable" href="../../d0/dce/classfl_1_1_x_y_map_ae022a6d2dcbb07adfdaedbd152cc4d8d.html#ae022a6d2dcbb07adfdaedbd152cc4d8d">height</a>;</div>
+<div class="line"><span class="lineno">   15</span>    ScreenMap out(<a class="code hl_function" href="../../d6/daf/direct_8h_a1ddd0aa76a31f81b55f0ffccc1f3d4de.html#a1ddd0aa76a31f81b55f0ffccc1f3d4de">length</a>);</div>
+<div class="line"><span class="lineno">   16</span>    <span class="keywordflow">for</span> (u16 w = 0; w &lt; <a class="code hl_variable" href="../../d0/dce/classfl_1_1_x_y_map_aabb1e697518d86d6eb34d156006cda57.html#aabb1e697518d86d6eb34d156006cda57">width</a>; w++) {</div>
+<div class="line"><span class="lineno">   17</span>        <span class="keywordflow">for</span> (u16 h = 0; h &lt; <a class="code hl_variable" href="../../d0/dce/classfl_1_1_x_y_map_ae022a6d2dcbb07adfdaedbd152cc4d8d.html#ae022a6d2dcbb07adfdaedbd152cc4d8d">height</a>; h++) {</div>
+<div class="line"><span class="lineno">   18</span>            u16 index = <a class="code hl_function" href="../../d0/dce/classfl_1_1_x_y_map_a8bf06efe63f5a257e02769da221c0529.html#a8bf06efe63f5a257e02769da221c0529">mapToIndex</a>(w, h);</div>
+<div class="line"><span class="lineno">   19</span>            <a class="code hl_typedef" href="../../d4/d36/namespacefl_a48a8de5776a08438981ff547032a8401.html#a48a8de5776a08438981ff547032a8401">vec2f</a> p = {<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(w), <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(h)};</div>
+<div class="line"><span class="lineno">   20</span>            out.set(index, p);</div>
+<div class="line"><span class="lineno">   21</span>        }</div>
+<div class="line"><span class="lineno">   22</span>    }</div>
+<div class="line"><span class="lineno">   23</span>    <span class="comment">// Store a shared_ptr to this XYMap so it can be used for encoding</span></div>
+<div class="line"><span class="lineno">   24</span>    out.setSourceXYMap(<a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::make_shared&lt;XYMap&gt;</a>(*<span class="keyword">this</span>));</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">   26</span>}</div>
+<div class="ttc" id="aclassfl_1_1_x_y_map_a8bf06efe63f5a257e02769da221c0529_html_a8bf06efe63f5a257e02769da221c0529"><div class="ttname"><a href="../../d0/dce/classfl_1_1_x_y_map_a8bf06efe63f5a257e02769da221c0529.html#a8bf06efe63f5a257e02769da221c0529">fl::XYMap::mapToIndex</a></div><div class="ttdeci">u16 mapToIndex(const u16 &amp;x, const u16 &amp;y) const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../de/db7/xymap_8cpp_8hpp_source.html#l00125">xymap.cpp.hpp:125</a></div></div>
 <div class="ttc" id="aclassfl_1_1_x_y_map_aabb1e697518d86d6eb34d156006cda57_html_aabb1e697518d86d6eb34d156006cda57"><div class="ttname"><a href="../../d0/dce/classfl_1_1_x_y_map_aabb1e697518d86d6eb34d156006cda57.html#aabb1e697518d86d6eb34d156006cda57">fl::XYMap::width</a></div><div class="ttdeci">u16 width</div><div class="ttdef"><b>Definition</b> <a href="../../da/d61/xymap_8h_source.html#l00128">xymap.h:128</a></div></div>
 <div class="ttc" id="aclassfl_1_1_x_y_map_ae022a6d2dcbb07adfdaedbd152cc4d8d_html_ae022a6d2dcbb07adfdaedbd152cc4d8d"><div class="ttname"><a href="../../d0/dce/classfl_1_1_x_y_map_ae022a6d2dcbb07adfdaedbd152cc4d8d.html#ae022a6d2dcbb07adfdaedbd152cc4d8d">fl::XYMap::height</a></div><div class="ttdeci">u16 height</div><div class="ttdef"><b>Definition</b> <a href="../../da/d61/xymap_8h_source.html#l00129">xymap.h:129</a></div></div>
 <div class="ttc" id="adirect_8h_a1ddd0aa76a31f81b55f0ffccc1f3d4de_html_a1ddd0aa76a31f81b55f0ffccc1f3d4de"><div class="ttname"><a href="../../d6/daf/direct_8h_a1ddd0aa76a31f81b55f0ffccc1f3d4de.html#a1ddd0aa76a31f81b55f0ffccc1f3d4de">length</a></div><div class="ttdeci">fl::UISlider length(&quot;Length&quot;, 1.0f, 0.0f, 1.0f, 0.01f)</div></div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c_html_a9fb4ec44d15efca3aed1890e7b57410c"><div class="ttname"><a href="../../df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::adl_barrier::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args &amp;&amp;... args) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00423">shared_ptr.h:423</a></div></div>
 <div class="ttc" id="anamespacefl_a48a8de5776a08438981ff547032a8401_html_a48a8de5776a08438981ff547032a8401"><div class="ttname"><a href="../../d4/d36/namespacefl_a48a8de5776a08438981ff547032a8401.html#a48a8de5776a08438981ff547032a8401">fl::vec2f</a></div><div class="ttdeci">vec2&lt; float &gt; vec2f</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d67/geometry_8h_source.html#l00333">geometry.h:333</a></div></div>
-<div class="ttc" id="anamespacefl_a87ae8a24cc8b709a64f39370e71846af_html_a87ae8a24cc8b709a64f39370e71846af"><div class="ttname"><a href="../../d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args &amp;&amp;... args) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00414">shared_ptr.h:414</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d61/xymap_8h_source.html#l00129">height</a>, <a class="el" href="../../d6/daf/direct_8h_a1ddd0aa76a31f81b55f0ffccc1f3d4de.html#a1ddd0aa76a31f81b55f0ffccc1f3d4de">length()</a>, <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00414">fl::make_shared()</a>, <a class="el" href="../../de/db7/xymap_8cpp_8hpp_source.html#l00124">mapToIndex()</a>, <a class="el" href="../../d5/d05/screenmap_8cpp_8hpp_source.html#l00607">fl::ScreenMap::set()</a>, <a class="el" href="../../d5/d05/screenmap_8cpp_8hpp_source.html#l00731">fl::ScreenMap::setSourceXYMap()</a>, and <a class="el" href="../../da/d61/xymap_8h_source.html#l00128">width</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../da/d61/xymap_8h_source.html#l00129">height</a>, <a class="el" href="../../d6/daf/direct_8h_a1ddd0aa76a31f81b55f0ffccc1f3d4de.html#a1ddd0aa76a31f81b55f0ffccc1f3d4de">length()</a>, <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00423">fl::adl_barrier::make_shared()</a>, <a class="el" href="../../de/db7/xymap_8cpp_8hpp_source.html#l00125">mapToIndex()</a>, <a class="el" href="../../d5/d05/screenmap_8cpp_8hpp_source.html#l00607">fl::ScreenMap::set()</a>, <a class="el" href="../../d5/d05/screenmap_8cpp_8hpp_source.html#l00731">fl::ScreenMap::setSourceXYMap()</a>, and <a class="el" href="../../da/d61/xymap_8h_source.html#l00128">width</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/dce/classfl_1_1_x_y_map_a927c18e50a0c6e23f41a0ef0d3206a21.html#a927c18e50a0c6e23f41a0ef0d3206a21">operator=()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -145,7 +145,7 @@ $(function(){initNavTree('d0/dce/classfl_1_1_x_y_map_a17437749fccafcfbd3b84e79d5
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dce/classfl_1_1_x_y_map_a17437749fccafcfbd3b84e79d5dd84c9_a17437749fccafcfbd3b84e79d5dd84c9_cgraph.svg" width="640" height="250"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dce/classfl_1_1_x_y_map_a17437749fccafcfbd3b84e79d5dd84c9_a17437749fccafcfbd3b84e79d5dd84c9_cgraph.svg" width="640" height="290"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -164,7 +164,7 @@ $(function(){initNavTree('d0/dce/classfl_1_1_x_y_map_a17437749fccafcfbd3b84e79d5
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d0/dce/classfl_1_1_x_y_map.html">XYMap</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:33 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

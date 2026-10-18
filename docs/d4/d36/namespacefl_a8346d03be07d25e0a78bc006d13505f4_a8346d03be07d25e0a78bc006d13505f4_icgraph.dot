@@ -8,11 +8,19 @@ digraph "fl::XY"
   rankdir="RL";
   Node1 [id="Node000001",label="fl::XY",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="plotDot",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/db7/examples_2_luminova_2luminova_8h_a51ece01deb8ffb2d71d6487c4171e369.html#a51ece01deb8ffb2d71d6487c4171e369",tooltip=" "];
+  Node2 [id="Node000002",label="fl::NoisePalette::mapNoise\lToLEDsUsingPalette",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d41/classfl_1_1_noise_palette_a3ff6d46e0e1878043e162e0ba90df4e5.html#a3ff6d46e0e1878043e162e0ba90df4e5",tooltip=" "];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="plotSoftDot",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/db7/examples_2_luminova_2luminova_8h_a40f3cc59a4c51aba63f21eff4110f624.html#a40f3cc59a4c51aba63f21eff4110f624",tooltip=" "];
-  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="loop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/db7/examples_2_luminova_2luminova_8h_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f",tooltip=" "];
-  Node1 -> Node5 [id="edge4_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="xy_map_function",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/db7/examples_2_luminova_2luminova_8h_a461397a4e9ca2f1e4d520e1aff130299.html#a461397a4e9ca2f1e4d520e1aff130299",tooltip=" "];
+  Node3 [id="Node000003",label="fl::NoisePalette::draw",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d41/classfl_1_1_noise_palette_ac6f1af737028ee36fb7be09e9ae4d911.html#ac6f1af737028ee36fb7be09e9ae4d911",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="plotDot",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/db7/examples_2_luminova_2luminova_8h_a51ece01deb8ffb2d71d6487c4171e369.html#a51ece01deb8ffb2d71d6487c4171e369",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::Luminova::plotSoftDot",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/df2/classfl_1_1_luminova_a87f49f4b941618b23faa7e92720e920b.html#a87f49f4b941618b23faa7e92720e920b",tooltip=" "];
+  Node4 -> Node6 [id="edge5_Node000004_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="plotSoftDot",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/db7/examples_2_luminova_2luminova_8h_a40f3cc59a4c51aba63f21eff4110f624.html#a40f3cc59a4c51aba63f21eff4110f624",tooltip=" "];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="fl::Luminova::draw",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/df2/classfl_1_1_luminova_a41e7ac0b4dfa23a932ea0f8f9934b3e4.html#a41e7ac0b4dfa23a932ea0f8f9934b3e4",tooltip=" "];
+  Node6 -> Node8 [id="edge7_Node000006_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="loop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/db7/examples_2_luminova_2luminova_8h_afe461d27b9c48d5921c00d521181f12f.html#afe461d27b9c48d5921c00d521181f12f",tooltip=" "];
+  Node1 -> Node9 [id="edge8_Node000001_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="xy_map_function",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/db7/examples_2_luminova_2luminova_8h_a461397a4e9ca2f1e4d520e1aff130299.html#a461397a4e9ca2f1e4d520e1aff130299",tooltip=" "];
 }

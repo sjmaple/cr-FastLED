@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(function(){initNavTree('d3/da0/classfl_1_1_i_channel_driver_aee84e43543461834b
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc5/fl_2channels_2driver_8cpp_8hpp_source.html#l00072">72</a> of file <a class="el" href="../../df/dc5/fl_2channels_2driver_8cpp_8hpp_source.html">driver.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   72</span>                                                         {</div>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                                                                      {</div>
 <div class="line"><span class="lineno">   73</span>    <span class="comment">// wait until the driver is in a READY or DRAINING state.</span></div>
 <div class="line"><span class="lineno">   74</span>    <span class="keywordtype">bool</span> ok = <a class="code hl_function" href="../../d3/da0/classfl_1_1_i_channel_driver_a699840e6b4d11e9215de9e4a7e8f8c3d.html#a699840e6b4d11e9215de9e4a7e8f8c3d">waitForCondition</a>([<span class="keyword">this</span>]() {</div>
 <div class="line"><span class="lineno">   75</span>        <span class="keyword">auto</span> <a class="code hl_variable" href="../../d9/dce/_client_validation_real_8h_adc6e5733fc3c22f0a7b2914188c49c90.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a> = <a class="code hl_function" href="../../d3/da0/classfl_1_1_i_channel_driver_ad32c1041bd75ed5e9d51167a06323ca7.html#ad32c1041bd75ed5e9d51167a06323ca7">poll</a>();</div>
@@ -130,13 +130,13 @@ $(function(){initNavTree('d3/da0/classfl_1_1_i_channel_driver_aee84e43543461834b
 <div class="ttc" id="astructfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b_html_a97f46a6aca470ea25d69bb42e078577ba8076a15dd185db82b38286042c379821"><div class="ttname"><a href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba8076a15dd185db82b38286042c379821">fl::IChannelDriver::DriverState::READY</a></div><div class="ttdeci">@ READY</div><div class="ttdoc">Hardware idle; ready to accept new transmissions.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00170">driver.h:170</a></div></div>
 <div class="ttc" id="astructfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b_html_a97f46a6aca470ea25d69bb42e078577ba82b900257142627eeebf46638e194e23"><div class="ttname"><a href="../../d9/d94/structfl_1_1_i_channel_driver_1_1_driver_state_a97f46a6aca470ea25d69bb42e078577b.html#a97f46a6aca470ea25d69bb42e078577ba82b900257142627eeebf46638e194e23">fl::IChannelDriver::DriverState::DRAINING</a></div><div class="ttdeci">@ DRAINING</div><div class="ttdoc">All channels submitted; still transmitting.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00172">driver.h:172</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00172">fl::IChannelDriver::DriverState::DRAINING</a>, <a class="el" href="../../d3/da0/classfl_1_1_i_channel_driver_ad32c1041bd75ed5e9d51167a06323ca7.html#ad32c1041bd75ed5e9d51167a06323ca7">poll()</a>, <a class="el" href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00170">fl::IChannelDriver::DriverState::READY</a>, <a class="el" href="../../d9/dce/_client_validation_real_8h_source.html#l00049">state</a>, and <a class="el" href="../../df/dc5/fl_2channels_2driver_8cpp_8hpp_source.html#l00013">waitForCondition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00172">fl::IChannelDriver::DriverState::DRAINING</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d3/da0/classfl_1_1_i_channel_driver_ad32c1041bd75ed5e9d51167a06323ca7.html#ad32c1041bd75ed5e9d51167a06323ca7">poll()</a>, <a class="el" href="../../d3/dc9/fl_2channels_2driver_8h_source.html#l00170">fl::IChannelDriver::DriverState::READY</a>, <a class="el" href="../../d9/dce/_client_validation_real_8h_source.html#l00049">state</a>, and <a class="el" href="../../df/dc5/fl_2channels_2driver_8cpp_8hpp_source.html#l00013">waitForCondition()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/da0/classfl_1_1_i_channel_driver_aee84e43543461834b1cf985f011279da_aee84e43543461834b1cf985f011279da_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/da0/classfl_1_1_i_channel_driver_aee84e43543461834b1cf985f011279da_aee84e43543461834b1cf985f011279da_cgraph.svg" width="100%" height="506"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -148,7 +148,7 @@ $(function(){initNavTree('d3/da0/classfl_1_1_i_channel_driver_aee84e43543461834b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d3/da0/classfl_1_1_i_channel_driver.html">IChannelDriver</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:09 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:30 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

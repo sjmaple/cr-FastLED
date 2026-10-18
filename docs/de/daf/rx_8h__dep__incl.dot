@@ -41,8 +41,16 @@ digraph "fl/channels/rx.h"
   Node18 [id="Node000018",label="fl/channels/rx/_build.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d8f/fl_2channels_2rx_2__build_8cpp_8hpp.html",tooltip=" "];
   Node18 -> Node7 [id="edge18_Node000018_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node19 [id="edge19_Node000001_Node000019",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node19 [id="Node000019",label="fl/channels/rx/decode\l_ws2812.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d09/decode__ws2812_8h.html",tooltip="Shared 4-phase WS2812 edge-pair -> byte decoder (declaration)."];
-  Node19 -> Node20 [id="edge20_Node000019_Node000020",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node20 [id="Node000020",label="fl/channels/rx/decode\l_ws2812.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/db5/decode__ws2812_8cpp_8hpp.html",tooltip="Shared 4-phase WS2812 edge-pair -> byte decoder (definition)."];
-  Node20 -> Node18 [id="edge21_Node000020_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node19 [id="Node000019",label="fl/channels/rx/config.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d5c/fl_2channels_2rx_2config_8h.html",tooltip=" "];
+  Node19 -> Node10 [id="edge20_Node000019_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node20 [id="edge21_Node000001_Node000020",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node20 [id="Node000020",label="fl/channels/rx/decode\l_ws2812.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d09/decode__ws2812_8h.html",tooltip="Shared 4-phase WS2812 edge-pair -> byte decoder (declaration)."];
+  Node20 -> Node21 [id="edge22_Node000020_Node000021",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node21 [id="Node000021",label="fl/channels/rx/decode\l_ws2812.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/db5/decode__ws2812_8cpp_8hpp.html",tooltip="Shared 4-phase WS2812 edge-pair -> byte decoder (definition)."];
+  Node21 -> Node18 [id="edge23_Node000021_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node22 [id="edge24_Node000001_Node000022",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node22 [id="Node000022",label="fl/channels/rx/ws2812\l_stream_decoder.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d0c/ws2812__stream__decoder_8h.html",tooltip="WS2812 decoder for paired rise/fall capture timestamps, in batch and streaming form."];
+  Node22 -> Node23 [id="edge25_Node000022_Node000023",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node23 [id="Node000023",label="fl/channels/rx/ws2812\l_stream_decoder.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d06/ws2812__stream__decoder_8cpp_8hpp.html",tooltip="WS2812 capture-pair decoder, batch and streaming (definition)."];
+  Node23 -> Node18 [id="edge26_Node000023_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

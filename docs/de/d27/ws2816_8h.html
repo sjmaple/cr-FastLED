@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -119,6 +119,7 @@ $(function(){initNavTree('de/d27/ws2816_8h.html','../../'); initResizable(true);
 
 <p class="definition">Definition in file <a class="el" href="../../de/d27/ws2816_8h_source.html">ws2816.h</a>.</p>
 </div><div class="textblock"><code>#include &quot;<a class="el" href="../../df/dd8/stdint_8h_source.html">fl/stl/stdint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d01/noexcept_8h_source.html">fl/stl/noexcept.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d63/array_8h_source.html">fl/stl/array.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/d41/pair_8h_source.html">fl/stl/pair.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -146,13 +147,13 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a13921ab63664ac04043398f986046c46" id="r_a13921ab63664ac04043398f986046c46"><td class="memTemplParams" colspan="2">template&lt;typename InputIterator, typename OutputIterator&gt; </td></tr>
-<tr class="memitem:a13921ab63664ac04043398f986046c46"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_a13921ab63664ac04043398f986046c46.html#a13921ab63664ac04043398f986046c46">fl::encodeWS2816</a> (InputIterator first, InputIterator last, OutputIterator out)</td></tr>
-<tr class="memdesc:a13921ab63664ac04043398f986046c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode 16-bit RGB pixel data into dual 8-bit RGB format for WS2816.  <br /></td></tr>
-<tr class="separator:a13921ab63664ac04043398f986046c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acabc73bc4c4ef4f3745eb06e549846ce" id="r_acabc73bc4c4ef4f3745eb06e549846ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/db3/structfl_1_1pair.html">pair</a>&lt; <a class="el" href="../../da/dd6/structfl_1_1_c_r_g_b.html">CRGB</a>, <a class="el" href="../../da/dd6/structfl_1_1_c_r_g_b.html">CRGB</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_acabc73bc4c4ef4f3745eb06e549846ce.html#acabc73bc4c4ef4f3745eb06e549846ce">fl::packWS2816Pixel</a> (u16 s0, u16 s1, u16 s2)</td></tr>
-<tr class="memdesc:acabc73bc4c4ef4f3745eb06e549846ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a single 16-bit RGB pixel into two 8-bit <a class="el" href="../../da/dd6/structfl_1_1_c_r_g_b.html" title="Representation of an 8-bit RGB pixel (Red, Green, Blue)">CRGB</a> pixels for WS2816.  <br /></td></tr>
-<tr class="separator:acabc73bc4c4ef4f3745eb06e549846ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa142a648d33230aafa50db92cdad36" id="r_a1fa142a648d33230aafa50db92cdad36"><td class="memTemplParams" colspan="2">template&lt;typename InputIterator, typename OutputIterator&gt; </td></tr>
+<tr class="memitem:a1fa142a648d33230aafa50db92cdad36"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_a1fa142a648d33230aafa50db92cdad36.html#a1fa142a648d33230aafa50db92cdad36">fl::encodeWS2816</a> (InputIterator first, InputIterator last, OutputIterator out) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a1fa142a648d33230aafa50db92cdad36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode 16-bit RGB pixel data into dual 8-bit RGB format for WS2816.  <br /></td></tr>
+<tr class="separator:a1fa142a648d33230aafa50db92cdad36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352e53e8328d30665a0b6733ebb174ad" id="r_a352e53e8328d30665a0b6733ebb174ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/db3/structfl_1_1pair.html">pair</a>&lt; <a class="el" href="../../da/dd6/structfl_1_1_c_r_g_b.html">CRGB</a>, <a class="el" href="../../da/dd6/structfl_1_1_c_r_g_b.html">CRGB</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d36/namespacefl_a352e53e8328d30665a0b6733ebb174ad.html#a352e53e8328d30665a0b6733ebb174ad">fl::packWS2816Pixel</a> (u16 s0, u16 s1, u16 s2) <a class="el" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a></td></tr>
+<tr class="memdesc:a352e53e8328d30665a0b6733ebb174ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a single 16-bit RGB pixel into two 8-bit <a class="el" href="../../da/dd6/structfl_1_1_c_r_g_b.html" title="Representation of an 8-bit RGB pixel (Red, Green, Blue)">CRGB</a> pixels for WS2816.  <br /></td></tr>
+<tr class="separator:a352e53e8328d30665a0b6733ebb174ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -161,7 +162,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><a class="el" href="../../dir_4bca70778167b44495d699f593f26052.html">chipsets</a></li><li class="navelem"><a class="el" href="../../dir_d192c7b937ee683426e0e6cba42a0235.html">encoders</a></li><li class="navelem"><a class="el" href="../../de/d27/ws2816_8h.html">ws2816.h</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:03 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:18 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

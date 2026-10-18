@@ -10,5 +10,7 @@ digraph "fl::third_party::nsgif__parse_extension_application"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="fl::third_party::nsgif\l__app_ext_is_loop_count",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d86/namespacefl_1_1third__party_a2e76ad5b35f23605308c7192db5882ad.html#a2e76ad5b35f23605308c7192db5882ad",tooltip="Check an app ext identifier and authentication code for loop count extension."];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::strncmp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a9b6e249bbb99db8c4349d156189958c9.html#a9b6e249bbb99db8c4349d156189958c9",tooltip=" "];
+  Node3 [id="Node000003",label="fl::strncmp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ae4f9974f0f7348de2f9fc9f71859966b.html#ae4f9974f0f7348de2f9fc9f71859966b",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::libc_impl::strncmp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/dbc/namespacefl_1_1libc__impl_a48696f1b9939b2e1a1d8d54b69f3dfb5.html#a48696f1b9939b2e1a1d8d54b69f3dfb5",tooltip=" "];
 }

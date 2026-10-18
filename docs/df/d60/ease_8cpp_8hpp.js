@@ -22,5 +22,5 @@ var ease_8cpp_8hpp =
     [ "fl::easeOutSine16", "d4/d36/namespacefl_a407f6f9f63c9a625b24286167f916b80.html#a407f6f9f63c9a625b24286167f916b80", null ],
     [ "fl::easeOutSine8", "d4/d36/namespacefl_abab11f221ebf64df027ce9156e4e9562.html#abab11f221ebf64df027ce9156e4e9562", null ],
     [ "fl::FL_ALIGN_PROGMEM", "d4/d36/namespacefl_ae8353ddb1c2b689091a221598638eb16.html#ae8353ddb1c2b689091a221598638eb16", null ],
-    [ "fl::gamma_2_8", "d4/d36/namespacefl_aa12ff729500796fbd28fc43aad562817.html#aa12ff729500796fbd28fc43aad562817", null ]
+    [ "fl::gamma_2_8", "d4/d36/namespacefl_a1ac8184a6a3c417bdd3c7ce3adfcbbc0.html#a1ac8184a6a3c417bdd3c7ce3adfcbbc0", null ]
 ];

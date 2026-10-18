@@ -1,0 +1,16 @@
+digraph "fl::Server::update"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fl::Server::update",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Main update: pull + push."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::Server::pull",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d00/classfl_1_1_server_a7ebd11f9a95e723be0971ca3ec620e5c.html#a7ebd11f9a95e723be0971ca3ec620e5c",tooltip="Pull requests from source, process, queue responses."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::adl_barrier::move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d34/namespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc.html#a12b4192c17e37b3e4322cec1a2debdcc",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::Server::push",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d00/classfl_1_1_server_ace1a0a4830754bdd8220cc3b43ed3fe0.html#ace1a0a4830754bdd8220cc3b43ed3fe0",tooltip="Push queued responses to sink."];
+}

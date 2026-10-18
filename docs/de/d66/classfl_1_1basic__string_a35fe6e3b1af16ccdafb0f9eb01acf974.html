@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -127,11 +127,11 @@ $(function(){initNavTree('de/d66/classfl_1_1basic__string_a35fe6e3b1af16ccdafb0f
 <div class="fragment"><div class="line"><span class="lineno"> 1228</span>                                                             {</div>
 <div class="line"><span class="lineno"> 1229</span>    <span class="keywordflow">if</span> (other.isInline()) {</div>
 <div class="line"><span class="lineno"> 1230</span>        <a class="code hl_variable" href="../../de/d66/classfl_1_1basic__string_a9fd4a1143177b317978e8ba38939c060.html#a9fd4a1143177b317978e8ba38939c060">mLength</a> = other.mLength;</div>
-<div class="line"><span class="lineno"> 1231</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_a35ff6755912c639a5e5bd35fc59e57ff.html#a35ff6755912c639a5e5bd35fc59e57ff">fl::memcpy</a>(<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_a8f1ed124471f133d9efee78fe4bb69b3.html#a8f1ed124471f133d9efee78fe4bb69b3">inlineBufferPtr</a>(), other.inlineBufferPtr(), other.mLength + 1);</div>
+<div class="line"><span class="lineno"> 1231</span>        <a class="code hl_function" href="../../d4/d36/namespacefl_a7b6c734893ba8183b7e611e507b73984.html#a7b6c734893ba8183b7e611e507b73984">fl::memcpy</a>(<a class="code hl_function" href="../../de/d66/classfl_1_1basic__string_a8f1ed124471f133d9efee78fe4bb69b3.html#a8f1ed124471f133d9efee78fe4bb69b3">inlineBufferPtr</a>(), other.inlineBufferPtr(), other.mLength + 1);</div>
 <div class="line"><span class="lineno"> 1232</span>        <span class="comment">// mStorage is already empty (inline mode) from constructor</span></div>
 <div class="line"><span class="lineno"> 1233</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno"> 1234</span>        <a class="code hl_variable" href="../../de/d66/classfl_1_1basic__string_a9fd4a1143177b317978e8ba38939c060.html#a9fd4a1143177b317978e8ba38939c060">mLength</a> = other.mLength;</div>
-<div class="line"><span class="lineno"> 1235</span>        <a class="code hl_variable" href="../../de/d66/classfl_1_1basic__string_aa4b96230d35407cdaac045c72aba42f7.html#aa4b96230d35407cdaac045c72aba42f7">mStorage</a> = <a class="code hl_function" href="../../d4/d36/namespacefl_a0c8a67e528dcd96ee58216754a07a733.html#a0c8a67e528dcd96ee58216754a07a733">fl::move</a>(other.mStorage);</div>
+<div class="line"><span class="lineno"> 1235</span>        <a class="code hl_variable" href="../../de/d66/classfl_1_1basic__string_aa4b96230d35407cdaac045c72aba42f7.html#aa4b96230d35407cdaac045c72aba42f7">mStorage</a> = <a class="code hl_function" href="../../df/d34/namespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc.html#a12b4192c17e37b3e4322cec1a2debdcc">fl::move</a>(other.mStorage);</div>
 <div class="line"><span class="lineno"> 1236</span>    }</div>
 <div class="line"><span class="lineno"> 1237</span>    other.mLength = 0;</div>
 <div class="line"><span class="lineno"> 1238</span>    other.mStorage.reset();</div>
@@ -140,10 +140,10 @@ $(function(){initNavTree('de/d66/classfl_1_1basic__string_a35fe6e3b1af16ccdafb0f
 <div class="ttc" id="aclassfl_1_1basic__string_a8f1ed124471f133d9efee78fe4bb69b3_html_a8f1ed124471f133d9efee78fe4bb69b3"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_a8f1ed124471f133d9efee78fe4bb69b3.html#a8f1ed124471f133d9efee78fe4bb69b3">fl::basic_string::inlineBufferPtr</a></div><div class="ttdeci">char * inlineBufferPtr() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00495">basic_string.h:495</a></div></div>
 <div class="ttc" id="aclassfl_1_1basic__string_a9fd4a1143177b317978e8ba38939c060_html_a9fd4a1143177b317978e8ba38939c060"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_a9fd4a1143177b317978e8ba38939c060.html#a9fd4a1143177b317978e8ba38939c060">fl::basic_string::mLength</a></div><div class="ttdeci">fl::size mLength</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00490">basic_string.h:490</a></div></div>
 <div class="ttc" id="aclassfl_1_1basic__string_aa4b96230d35407cdaac045c72aba42f7_html_aa4b96230d35407cdaac045c72aba42f7"><div class="ttname"><a href="../../de/d66/classfl_1_1basic__string_aa4b96230d35407cdaac045c72aba42f7.html#aa4b96230d35407cdaac045c72aba42f7">fl::basic_string::mStorage</a></div><div class="ttdeci">fl::variant&lt; NotNullStringHolderPtr, ConstLiteral, ConstView &gt; mStorage</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4b/basic__string_8h_source.html#l00491">basic_string.h:491</a></div></div>
-<div class="ttc" id="anamespacefl_a0c8a67e528dcd96ee58216754a07a733_html_a0c8a67e528dcd96ee58216754a07a733"><div class="ttname"><a href="../../d4/d36/namespacefl_a0c8a67e528dcd96ee58216754a07a733.html#a0c8a67e528dcd96ee58216754a07a733">fl::move</a></div><div class="ttdeci">constexpr remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;t) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d83/move_8h_source.html#l00028">move.h:28</a></div></div>
-<div class="ttc" id="anamespacefl_a35ff6755912c639a5e5bd35fc59e57ff_html_a35ff6755912c639a5e5bd35fc59e57ff"><div class="ttname"><a href="../../d4/d36/namespacefl_a35ff6755912c639a5e5bd35fc59e57ff.html#a35ff6755912c639a5e5bd35fc59e57ff">fl::memcpy</a></div><div class="ttdeci">void * memcpy(void *dest, const void *src, size_t n) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/da3/cstring_8cpp_8hpp_source.html#l00128">cstring.cpp.hpp:128</a></div></div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc_html_a12b4192c17e37b3e4322cec1a2debdcc"><div class="ttname"><a href="../../df/d34/namespacefl_1_1adl__barrier_a12b4192c17e37b3e4322cec1a2debdcc.html#a12b4192c17e37b3e4322cec1a2debdcc">fl::adl_barrier::move</a></div><div class="ttdeci">constexpr remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;t) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d83/move_8h_source.html#l00030">move.h:30</a></div></div>
+<div class="ttc" id="anamespacefl_a7b6c734893ba8183b7e611e507b73984_html_a7b6c734893ba8183b7e611e507b73984"><div class="ttname"><a href="../../d4/d36/namespacefl_a7b6c734893ba8183b7e611e507b73984.html#a7b6c734893ba8183b7e611e507b73984">fl::memcpy</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void * memcpy(void *dest, const void *src, size_t n) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d8d/cstring_8h_source.html#l00136">cstring.h:136</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00455">basic_string()</a>, <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00495">inlineBufferPtr()</a>, <a class="el" href="../../df/da3/cstring_8cpp_8hpp_source.html#l00128">fl::memcpy()</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00490">mLength</a>, <a class="el" href="../../d9/d83/move_8h_source.html#l00028">fl::move()</a>, and <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00491">mStorage</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00455">basic_string()</a>, <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00495">inlineBufferPtr()</a>, <a class="el" href="../../dd/d8d/cstring_8h_source.html#l00136">fl::memcpy()</a>, <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00490">mLength</a>, <a class="el" href="../../d9/d83/move_8h_source.html#l00030">fl::adl_barrier::move()</a>, and <a class="el" href="../../df/d4b/basic__string_8h_source.html#l00491">mStorage</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/d66/string_8h_source.html#l00133">fl::string_n&lt; 32 &gt;::string_n()</a>, and <a class="el" href="../../de/d66/classfl_1_1basic__string_a3d17855029014decbff82d0297734043.html#a3d17855029014decbff82d0297734043">operator=()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -151,7 +151,7 @@ $(function(){initNavTree('de/d66/classfl_1_1basic__string_a35fe6e3b1af16ccdafb0f
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d66/classfl_1_1basic__string_a35fe6e3b1af16ccdafb0f9eb01acf974_a35fe6e3b1af16ccdafb0f9eb01acf974_cgraph.svg" width="612" height="263"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d66/classfl_1_1basic__string_a35fe6e3b1af16ccdafb0f9eb01acf974_a35fe6e3b1af16ccdafb0f9eb01acf974_cgraph.svg" width="624" height="263"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -170,7 +170,7 @@ $(function(){initNavTree('de/d66/classfl_1_1basic__string_a35fe6e3b1af16ccdafb0f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../de/d66/classfl_1_1basic__string.html">basic_string</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

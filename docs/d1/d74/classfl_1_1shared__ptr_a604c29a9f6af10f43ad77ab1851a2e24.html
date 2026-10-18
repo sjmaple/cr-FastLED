@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -128,7 +128,7 @@ template&lt;typename Y&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../dc/db4/weak__ptr_8h_source.html#l00209">209</a> of file <a class="el" href="../../dc/db4/weak__ptr_8h_source.html">weak_ptr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  209</span>                                                 : <a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a92385bb56992085d087ac58515716a8f.html#a92385bb56992085d087ac58515716a8f">mPtr</a>(<span class="keyword">nullptr</span>), <a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>(<span class="keyword">nullptr</span>) {</div>
+<div class="fragment"><div class="line"><span class="lineno">  209</span>                                                              : <a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a92385bb56992085d087ac58515716a8f.html#a92385bb56992085d087ac58515716a8f">mPtr</a>(<span class="keyword">nullptr</span>), <a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>(<span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  210</span>    <span class="keywordflow">if</span> (!<a class="code hl_class" href="../../d1/d74/classfl_1_1shared__ptr.html">weak</a>.expired()) {</div>
 <div class="line"><span class="lineno">  211</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="../../d1/d74/classfl_1_1shared__ptr.html">weak</a>.<a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a> &amp;&amp; <a class="code hl_class" href="../../d1/d74/classfl_1_1shared__ptr.html">weak</a>.<a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>-&gt;<a class="code hl_variable" href="../../d4/dc0/structfl_1_1detail_1_1_control_block_base_a37ba061d57889c1c19287c826cbd65cd.html#a37ba061d57889c1c19287c826cbd65cd">shared_count</a> &gt; 0) {</div>
 <div class="line"><span class="lineno">  212</span>            ++<a class="code hl_class" href="../../d1/d74/classfl_1_1shared__ptr.html">weak</a>.<a class="code hl_variable" href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">mControlBlock</a>-&gt;<a class="code hl_variable" href="../../d4/dc0/structfl_1_1detail_1_1_control_block_base_a37ba061d57889c1c19287c826cbd65cd.html#a37ba061d57889c1c19287c826cbd65cd">shared_count</a>;</div>
@@ -141,18 +141,18 @@ template&lt;typename Y&gt; </div>
 <div class="line"><span class="lineno">  219</span>        <span class="comment">// For now, just leave as default-constructed (nullptr)</span></div>
 <div class="line"><span class="lineno">  220</span>    }</div>
 <div class="line"><span class="lineno">  221</span>}</div>
-<div class="ttc" id="aclassfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603_html_a06482c24a03a0c99936fb0f629ecc603"><div class="ttname"><a href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">fl::shared_ptr::mControlBlock</a></div><div class="ttdeci">detail::ControlBlockBase * mControlBlock</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00158">shared_ptr.h:158</a></div></div>
-<div class="ttc" id="aclassfl_1_1shared__ptr_a92385bb56992085d087ac58515716a8f_html_a92385bb56992085d087ac58515716a8f"><div class="ttname"><a href="../../d1/d74/classfl_1_1shared__ptr_a92385bb56992085d087ac58515716a8f.html#a92385bb56992085d087ac58515716a8f">fl::shared_ptr::mPtr</a></div><div class="ttdeci">T * mPtr</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00157">shared_ptr.h:157</a></div></div>
-<div class="ttc" id="aclassfl_1_1shared__ptr_html"><div class="ttname"><a href="../../d1/d74/classfl_1_1shared__ptr.html">fl::shared_ptr</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00155">shared_ptr.h:155</a></div></div>
-<div class="ttc" id="astructfl_1_1detail_1_1_control_block_base_a37ba061d57889c1c19287c826cbd65cd_html_a37ba061d57889c1c19287c826cbd65cd"><div class="ttname"><a href="../../d4/dc0/structfl_1_1detail_1_1_control_block_base_a37ba061d57889c1c19287c826cbd65cd.html#a37ba061d57889c1c19287c826cbd65cd">fl::detail::ControlBlockBase::shared_count</a></div><div class="ttdeci">fl::atomic_u32 shared_count</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00029">shared_ptr.h:29</a></div></div>
+<div class="ttc" id="aclassfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603_html_a06482c24a03a0c99936fb0f629ecc603"><div class="ttname"><a href="../../d1/d74/classfl_1_1shared__ptr_a06482c24a03a0c99936fb0f629ecc603.html#a06482c24a03a0c99936fb0f629ecc603">fl::shared_ptr::mControlBlock</a></div><div class="ttdeci">detail::ControlBlockBase * mControlBlock</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00166">shared_ptr.h:166</a></div></div>
+<div class="ttc" id="aclassfl_1_1shared__ptr_a92385bb56992085d087ac58515716a8f_html_a92385bb56992085d087ac58515716a8f"><div class="ttname"><a href="../../d1/d74/classfl_1_1shared__ptr_a92385bb56992085d087ac58515716a8f.html#a92385bb56992085d087ac58515716a8f">fl::shared_ptr::mPtr</a></div><div class="ttdeci">T * mPtr</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00165">shared_ptr.h:165</a></div></div>
+<div class="ttc" id="aclassfl_1_1shared__ptr_html"><div class="ttname"><a href="../../d1/d74/classfl_1_1shared__ptr.html">fl::shared_ptr</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00163">shared_ptr.h:163</a></div></div>
+<div class="ttc" id="astructfl_1_1detail_1_1_control_block_base_a37ba061d57889c1c19287c826cbd65cd_html_a37ba061d57889c1c19287c826cbd65cd"><div class="ttname"><a href="../../d4/dc0/structfl_1_1detail_1_1_control_block_base_a37ba061d57889c1c19287c826cbd65cd.html#a37ba061d57889c1c19287c826cbd65cd">fl::detail::ControlBlockBase::shared_count</a></div><div class="ttdeci">fl::atomic_u32 shared_count</div><div class="ttdef"><b>Definition</b> <a href="../../df/d6a/shared__ptr_8h_source.html#l00037">shared_ptr.h:37</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dc/db4/weak__ptr_8h_source.html#l00136">fl::weak_ptr&lt; T &gt;::expired()</a>, <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00158">mControlBlock</a>, <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00157">mPtr</a>, and <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00392">weak_ptr</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00166">mControlBlock</a>, <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00165">mPtr</a>, and <a class="el" href="../../df/d6a/shared__ptr_8h_source.html#l00400">weak_ptr</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d74/classfl_1_1shared__ptr_a604c29a9f6af10f43ad77ab1851a2e24_a604c29a9f6af10f43ad77ab1851a2e24_cgraph.svg" width="638" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d74/classfl_1_1shared__ptr_a604c29a9f6af10f43ad77ab1851a2e24_a604c29a9f6af10f43ad77ab1851a2e24_cgraph.svg" width="418" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -164,7 +164,7 @@ template&lt;typename Y&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d1/d74/classfl_1_1shared__ptr.html">shared_ptr</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:32 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

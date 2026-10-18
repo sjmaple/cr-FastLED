@@ -1,0 +1,28 @@
+digraph "fl::get_objectfled_async_logger_isr"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fl::get_objectfled\l_async_logger_isr",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fl::get_async_logger\l_by_index",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_ab9e85de8ff537df22a9f8ca73384c8c7.html#ab9e85de8ff537df22a9f8ca73384c8c7",tooltip="Template-based logger accessor with auto-registration and enablement check."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fl::detail::checkLoggerEnabled",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a459f07a7662ef6824a45c65030eea973.html#a459f07a7662ef6824a45c65030eea973",tooltip="Check if logger is enabled and print error once if not."];
+  Node3 -> Node3 [id="edge3_Node000003_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node4 [id="edge4_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::detail::printLoggerDisabled\lError",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d9e/namespacefl_1_1detail_a04a82f7594c477ed5de6dc9867d8cf30.html#a04a82f7594c477ed5de6dc9867d8cf30",tooltip="Print error message for disabled logger (non-template helper) Called from checkLoggerEnabled template..."];
+  Node2 -> Node2 [id="edge5_Node000002_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node5 [id="edge6_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fl::detail::ActiveLogger\lRegistry::instance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d7b/structfl_1_1detail_1_1_active_logger_registry_a40df9624b0a468b7be13677315a5d654.html#a40df9624b0a468b7be13677315a5d654",tooltip=" "];
+  Node5 -> Node6 [id="edge7_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fl::SingletonShared\l::instance",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$db/d4a/classfl_1_1_singleton_shared_a1ec246efec2c46bc053a64fe7e8170ad.html#a1ec246efec2c46bc053a64fe7e8170ad",tooltip=" "];
+  Node2 -> Node13 [id="edge8_Node000002_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="fl::detail::AsyncLoggerService\lTask::instance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d06/classfl_1_1detail_1_1_async_logger_service_task_aa3d6958d41d1783e7327153c0ea6020f.html#aa3d6958d41d1783e7327153c0ea6020f",tooltip=" "];
+  Node13 -> Node14 [id="edge9_Node000013_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="fl::detail::AsyncLoggerService\lTask::AsyncLoggerServiceTask",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d06/classfl_1_1detail_1_1_async_logger_service_task_a76e22f26c5676ba890e783435db46aa6.html#a76e22f26c5676ba890e783435db46aa6",tooltip=" "];
+  Node2 -> Node6 [id="edge10_Node000002_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node1 [id="edge11_Node000001_Node000001",color="steelblue1",style="solid",tooltip=" "];
+}

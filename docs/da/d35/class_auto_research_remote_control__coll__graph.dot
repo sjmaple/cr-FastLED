@@ -29,13 +29,13 @@ digraph "AutoResearchRemoteControl"
   Node32 [id="Node000032",label="fl::vector\< fl::DriverInfo \>",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d24/classfl_1_1vector.html",tooltip=" "];
   Node33 -> Node31 [id="edge11_Node000031_Node000033",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" rx_channel\nrx_factory",fontcolor="grey" ];
   Node33 [id="Node000033",label="fl::shared_ptr\< fl\l::RxChannel \>",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d1/d74/classfl_1_1shared__ptr.html",tooltip=" "];
-  Node44 -> Node33 [id="edge12_Node000033_Node000044",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mControlBlock",fontcolor="grey" ];
-  Node44 [id="Node000044",label="fl::detail::ControlBlockBase",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/dc0/structfl_1_1detail_1_1_control_block_base.html",tooltip=" "];
-  Node47 -> Node33 [id="edge13_Node000033_Node000047",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< fl::RxChannel \>",fontcolor="grey" ];
-  Node47 [id="Node000047",label="fl::shared_ptr\< T \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d1/d74/classfl_1_1shared__ptr.html",tooltip=" "];
-  Node44 -> Node47 [id="edge14_Node000047_Node000044",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mControlBlock",fontcolor="grey" ];
-  Node48 -> Node31 [id="edge15_Node000031_Node000048",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" rx_buffer",fontcolor="grey" ];
-  Node48 [id="Node000048",label="fl::span\< uint8_t \>",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/d08/classfl_1_1span.html",tooltip=" "];
-  Node44 -> Node30 [id="edge16_Node000030_Node000044",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mControlBlock",fontcolor="grey" ];
-  Node47 -> Node30 [id="edge17_Node000030_Node000047",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< AutoResearchState \>",fontcolor="grey" ];
+  Node45 -> Node33 [id="edge12_Node000033_Node000045",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mControlBlock",fontcolor="grey" ];
+  Node45 [id="Node000045",label="fl::detail::ControlBlockBase",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/dc0/structfl_1_1detail_1_1_control_block_base.html",tooltip=" "];
+  Node48 -> Node33 [id="edge13_Node000033_Node000048",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< fl::RxChannel \>",fontcolor="grey" ];
+  Node48 [id="Node000048",label="fl::shared_ptr\< T \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d1/d74/classfl_1_1shared__ptr.html",tooltip=" "];
+  Node45 -> Node48 [id="edge14_Node000048_Node000045",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mControlBlock",fontcolor="grey" ];
+  Node49 -> Node31 [id="edge15_Node000031_Node000049",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" rx_buffer",fontcolor="grey" ];
+  Node49 [id="Node000049",label="fl::span\< uint8_t \>",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/d08/classfl_1_1span.html",tooltip=" "];
+  Node45 -> Node30 [id="edge16_Node000030_Node000045",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mControlBlock",fontcolor="grey" ];
+  Node48 -> Node30 [id="edge17_Node000030_Node000048",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< AutoResearchState \>",fontcolor="grey" ];
 }

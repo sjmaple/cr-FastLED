@@ -21,12 +21,12 @@ digraph "fl::ChannelManager::notifyPollNeeded"
   Node3 -> Node2 [id="edge7_Node000003_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 -> Node13 [id="edge8_Node000003_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node13 [id="Node000013",label="fl::ChannelManager\l::operator=",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d6b/classfl_1_1_channel_manager_a8812a49a3286c310431bf9d89ea0f00a.html#a8812a49a3286c310431bf9d89ea0f00a",tooltip=" "];
-  Node3 -> Node31 [id="edge9_Node000003_Node000031",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node31 [id="Node000031",label="fl::ChannelManager\l::operator=",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d6b/classfl_1_1_channel_manager_a343903c6e7d54837fe45caa5af70497c.html#a343903c6e7d54837fe45caa5af70497c",tooltip=" "];
-  Node3 -> Node32 [id="edge10_Node000003_Node000032",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node32 [id="Node000032",label="fl::ChannelManager\l::registry",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d6b/classfl_1_1_channel_manager_a58d12a4cf75bb181c7093141240bb94b.html#a58d12a4cf75bb181c7093141240bb94b",tooltip="Get the singleton WITHOUT registering platform default drivers."];
-  Node32 -> Node6 [id="edge11_Node000032_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 -> Node36 [id="edge12_Node000003_Node000036",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node36 [id="Node000036",label="fl::ChannelManager\l::setExclusiveDriver",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d6b/classfl_1_1_channel_manager_ab9c9a1f5d639849bdb5cf352dd22e0b2.html#ab9c9a1f5d639849bdb5cf352dd22e0b2",tooltip="Register a single driver at a priority above the platform default and disable all others (compile-tim..."];
-  Node36 -> Node36 [id="edge13_Node000036_Node000036",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node32 [id="edge9_Node000003_Node000032",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node32 [id="Node000032",label="fl::ChannelManager\l::operator=",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d6b/classfl_1_1_channel_manager_a343903c6e7d54837fe45caa5af70497c.html#a343903c6e7d54837fe45caa5af70497c",tooltip=" "];
+  Node3 -> Node33 [id="edge10_Node000003_Node000033",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node33 [id="Node000033",label="fl::ChannelManager\l::registry",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d6b/classfl_1_1_channel_manager_a58d12a4cf75bb181c7093141240bb94b.html#a58d12a4cf75bb181c7093141240bb94b",tooltip="Get the singleton WITHOUT registering platform default drivers."];
+  Node33 -> Node6 [id="edge11_Node000033_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node37 [id="edge12_Node000003_Node000037",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node37 [id="Node000037",label="fl::ChannelManager\l::setExclusiveDriver",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d2/d6b/classfl_1_1_channel_manager_ab9c9a1f5d639849bdb5cf352dd22e0b2.html#ab9c9a1f5d639849bdb5cf352dd22e0b2",tooltip="Register a single driver at a priority above the platform default and disable all others (compile-tim..."];
+  Node37 -> Node37 [id="edge13_Node000037_Node000037",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

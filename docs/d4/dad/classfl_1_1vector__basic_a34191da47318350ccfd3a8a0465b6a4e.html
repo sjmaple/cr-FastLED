@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -125,27 +125,27 @@ $(function(){initNavTree('d4/dad/classfl_1_1vector__basic_a34191da47318350ccfd3a
 
 <p>Ensure capacity for at least n elements. Grows if needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00049">49</a> of file <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html">basic_vector.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>                                           {</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (n &lt;= <a class="code hl_variable" href="../../d4/dad/classfl_1_1vector__basic_a934eb2b574453f80d31984ddb7f3748b.html#a934eb2b574453f80d31984ddb7f3748b">mCapacity</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   51</span>    fl::size new_capacity = (3 * <a class="code hl_variable" href="../../d4/dad/classfl_1_1vector__basic_a934eb2b574453f80d31984ddb7f3748b.html#a934eb2b574453f80d31984ddb7f3748b">mCapacity</a>) / 2;</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (new_capacity &lt; n) {</div>
-<div class="line"><span class="lineno">   53</span>        new_capacity = n;</div>
-<div class="line"><span class="lineno">   54</span>    }</div>
-<div class="line"><span class="lineno">   55</span>    <a class="code hl_function" href="../../d4/dad/classfl_1_1vector__basic_a67795afe6afd360b8f3bffb772fde73b.html#a67795afe6afd360b8f3bffb772fde73b">grow_to</a>(new_capacity);</div>
-<div class="line"><span class="lineno">   56</span>}</div>
-<div class="ttc" id="aclassfl_1_1vector__basic_a67795afe6afd360b8f3bffb772fde73b_html_a67795afe6afd360b8f3bffb772fde73b"><div class="ttname"><a href="../../d4/dad/classfl_1_1vector__basic_a67795afe6afd360b8f3bffb772fde73b.html#a67795afe6afd360b8f3bffb772fde73b">fl::vector_basic::grow_to</a></div><div class="ttdeci">void grow_to(fl::size new_capacity) FL_NO_EXCEPT</div><div class="ttdoc">Grow to new_capacity. Moves existing elements.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00058">basic_vector.cpp.hpp:58</a></div></div>
-<div class="ttc" id="aclassfl_1_1vector__basic_a934eb2b574453f80d31984ddb7f3748b_html_a934eb2b574453f80d31984ddb7f3748b"><div class="ttname"><a href="../../d4/dad/classfl_1_1vector__basic_a934eb2b574453f80d31984ddb7f3748b.html#a934eb2b574453f80d31984ddb7f3748b">fl::vector_basic::mCapacity</a></div><div class="ttdeci">fl::size mCapacity</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d47/basic__vector_8h_source.html#l00134">basic_vector.h:134</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html">basic_vector.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>                                                        {</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">if</span> (n &lt;= <a class="code hl_variable" href="../../d4/dad/classfl_1_1vector__basic_a934eb2b574453f80d31984ddb7f3748b.html#a934eb2b574453f80d31984ddb7f3748b">mCapacity</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   64</span>    fl::size new_capacity = (3 * <a class="code hl_variable" href="../../d4/dad/classfl_1_1vector__basic_a934eb2b574453f80d31984ddb7f3748b.html#a934eb2b574453f80d31984ddb7f3748b">mCapacity</a>) / 2;</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">if</span> (new_capacity &lt; n) {</div>
+<div class="line"><span class="lineno">   66</span>        new_capacity = n;</div>
+<div class="line"><span class="lineno">   67</span>    }</div>
+<div class="line"><span class="lineno">   68</span>    <a class="code hl_function" href="../../d4/dad/classfl_1_1vector__basic_a67795afe6afd360b8f3bffb772fde73b.html#a67795afe6afd360b8f3bffb772fde73b">grow_to</a>(new_capacity);</div>
+<div class="line"><span class="lineno">   69</span>}</div>
+<div class="ttc" id="aclassfl_1_1vector__basic_a67795afe6afd360b8f3bffb772fde73b_html_a67795afe6afd360b8f3bffb772fde73b"><div class="ttname"><a href="../../d4/dad/classfl_1_1vector__basic_a67795afe6afd360b8f3bffb772fde73b.html#a67795afe6afd360b8f3bffb772fde73b">fl::vector_basic::grow_to</a></div><div class="ttdeci">void grow_to(fl::size new_capacity) FL_NO_EXCEPT</div><div class="ttdoc">Grow to new_capacity. Moves existing elements.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00071">basic_vector.cpp.hpp:71</a></div></div>
+<div class="ttc" id="aclassfl_1_1vector__basic_a934eb2b574453f80d31984ddb7f3748b_html_a934eb2b574453f80d31984ddb7f3748b"><div class="ttname"><a href="../../d4/dad/classfl_1_1vector__basic_a934eb2b574453f80d31984ddb7f3748b.html#a934eb2b574453f80d31984ddb7f3748b">fl::vector_basic::mCapacity</a></div><div class="ttdeci">fl::size mCapacity</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d47/basic__vector_8h_source.html#l00131">basic_vector.h:131</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00058">grow_to()</a>, and <a class="el" href="../../d5/d47/basic__vector_8h_source.html#l00134">mCapacity</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00071">grow_to()</a>, and <a class="el" href="../../d5/d47/basic__vector_8h_source.html#l00131">mCapacity</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00238">insert_copy_impl()</a>, <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00269">insert_move_impl()</a>, <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00152">push_back_copy_impl()</a>, <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00164">push_back_move_impl()</a>, <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00297">resize_impl()</a>, and <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00330">resize_value_impl()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00249">insert_copy_impl()</a>, <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00280">insert_move_impl()</a>, <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00165">push_back_copy_impl()</a>, <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00177">push_back_move_impl()</a>, <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00308">resize_impl()</a>, and <a class="el" href="../../d3/d53/basic__vector_8cpp_8hpp_source.html#l00339">resize_value_impl()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/dad/classfl_1_1vector__basic_a34191da47318350ccfd3a8a0465b6a4e_a34191da47318350ccfd3a8a0465b6a4e_cgraph.svg" width="100%" height="394"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/dad/classfl_1_1vector__basic_a34191da47318350ccfd3a8a0465b6a4e_a34191da47318350ccfd3a8a0465b6a4e_cgraph.svg" width="100%" height="441"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -164,7 +164,7 @@ $(function(){initNavTree('d4/dad/classfl_1_1vector__basic_a34191da47318350ccfd3a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d4/dad/classfl_1_1vector__basic.html">vector_basic</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:33 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

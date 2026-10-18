@@ -39,5 +39,6 @@ var searchData=
   ['writeresult_36',['WriteResult',['../dc/dc4/structfl_1_1_write_result.html',1,'fl']]],
   ['ws2801controller_37',['WS2801Controller',['../d9/d95/class_w_s2801_controller.html',1,'']]],
   ['ws2801controller_3c_20data_5fpin_2c_20clock_5fpin_2c_20rgb_2c_20data_5frate_5fmhz_2825_29_20_3e_38',['WS2801Controller&lt; DATA_PIN, CLOCK_PIN, RGB, DATA_RATE_MHZ(25) &gt;',['../d9/d95/class_w_s2801_controller.html',1,'']]],
-  ['ws2803controller_39',['WS2803Controller',['../dc/d28/class_w_s2803_controller.html',1,'']]]
+  ['ws2803controller_39',['WS2803Controller',['../dc/d28/class_w_s2803_controller.html',1,'']]],
+  ['ws2812streamdecoder_40',['Ws2812StreamDecoder',['../d2/d7b/classfl_1_1channels_1_1rx_1_1_ws2812_stream_decoder.html',1,'fl::channels::rx']]]
 ];

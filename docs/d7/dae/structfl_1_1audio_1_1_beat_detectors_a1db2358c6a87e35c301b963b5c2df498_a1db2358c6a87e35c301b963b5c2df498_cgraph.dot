@@ -8,12 +8,12 @@ digraph "fl::audio::BeatDetectors::~BeatDetectors"
   rankdir="LR";
   Node1 [id="Node000001",label="fl::audio::BeatDetectors\l::~BeatDetectors",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::audio::BeatDetectors\l::detectBeats",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/dae/structfl_1_1audio_1_1_beat_detectors_a19cf7b1808f16de6c503d9c23b847da4.html#a19cf7b1808f16de6c503d9c23b847da4",tooltip=" "];
+  Node2 [id="Node000002",label="fl::audio::BeatDetectors\l::detectBeats",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/dae/structfl_1_1audio_1_1_beat_detectors_aee24eace426a47c00cde996c876d020b.html#aee24eace426a47c00cde996c876d020b",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="fl::audio::BeatDetectors\l::reset",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/dae/structfl_1_1audio_1_1_beat_detectors_abe42107745e95aa186819ad310d10b56.html#abe42107745e95aa186819ad310d10b56",tooltip=" "];
+  Node3 [id="Node000003",label="fl::audio::BeatDetectors\l::reset",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/dae/structfl_1_1audio_1_1_beat_detectors_a11aa9cabe74e546bbb58dd0ce35d357c.html#a11aa9cabe74e546bbb58dd0ce35d357c",tooltip=" "];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="fl::audio::BeatDetectors\l::BeatDetectors",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/dae/structfl_1_1audio_1_1_beat_detectors_ac1df9ef898301c12c79e7ec3197e4c10.html#ac1df9ef898301c12c79e7ec3197e4c10",tooltip=" "];
   Node3 -> Node3 [id="edge4_Node000003_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node5 [id="edge5_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="fl::audio::BeatDetectors\l::setThresholds",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/dae/structfl_1_1audio_1_1_beat_detectors_a05b382499c8b1820c547bce5f26b4700.html#a05b382499c8b1820c547bce5f26b4700",tooltip=" "];
+  Node5 [id="Node000005",label="fl::audio::BeatDetectors\l::setThresholds",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/dae/structfl_1_1audio_1_1_beat_detectors_a123750f495f9f3edf81a779a9e6ca1b1.html#a123750f495f9f3edf81a779a9e6ca1b1",tooltip=" "];
 }

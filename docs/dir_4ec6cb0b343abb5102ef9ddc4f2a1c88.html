@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -213,10 +213,10 @@ JPEG Decoding</h2>
 <div class="line">config.quality = fl::JpegDecoderConfig::Medium;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create decoder</span></div>
-<div class="line"><span class="keyword">auto</span> decoder = <a class="code hl_function" href="df/d28/classfl_1_1_jpeg_a6070d60029c1e6852a533f1e0fb99561.html#a6070d60029c1e6852a533f1e0fb99561">fl::Jpeg::createDecoder</a>(config);</div>
+<div class="line"><span class="keyword">auto</span> decoder = <a class="code hl_function" href="df/d28/classfl_1_1_jpeg_ad2abbfe76f426e36def19f2d26b06e84.html#ad2abbfe76f426e36def19f2d26b06e84">fl::Jpeg::createDecoder</a>(config);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create stream from data</span></div>
-<div class="line"><span class="keyword">auto</span> stream = <a class="code hl_function" href="d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared&lt;fl::ByteStreamMemory&gt;</a>(jpegData, dataSize);</div>
+<div class="line"><span class="keyword">auto</span> stream = <a class="code hl_function" href="df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::make_shared&lt;fl::ByteStreamMemory&gt;</a>(jpegData, dataSize);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Decode</span></div>
 <div class="line"><span class="keywordflow">if</span> (decoder-&gt;begin(stream)) {</div>
@@ -226,11 +226,11 @@ JPEG Decoding</h2>
 <div class="line">    }</div>
 <div class="line">    decoder-&gt;end();</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassfl_1_1_jpeg_a6070d60029c1e6852a533f1e0fb99561_html_a6070d60029c1e6852a533f1e0fb99561"><div class="ttname"><a href="df/d28/classfl_1_1_jpeg_a6070d60029c1e6852a533f1e0fb99561.html#a6070d60029c1e6852a533f1e0fb99561">fl::Jpeg::createDecoder</a></div><div class="ttdeci">static JpegDecoderPtr createDecoder(const JpegConfig &amp;config)</div><div class="ttdef"><b>Definition</b> <a href="dd/d39/jpeg_8cpp_8hpp_source.html#l00372">jpeg.cpp.hpp:372</a></div></div>
+<div class="ttc" id="aclassfl_1_1_jpeg_ad2abbfe76f426e36def19f2d26b06e84_html_ad2abbfe76f426e36def19f2d26b06e84"><div class="ttname"><a href="df/d28/classfl_1_1_jpeg_ad2abbfe76f426e36def19f2d26b06e84.html#ad2abbfe76f426e36def19f2d26b06e84">fl::Jpeg::createDecoder</a></div><div class="ttdeci">static JpegDecoderPtr createDecoder(const JpegConfig &amp;config) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="dd/d39/jpeg_8cpp_8hpp_source.html#l00372">jpeg.cpp.hpp:372</a></div></div>
 <div class="ttc" id="ajpeg_8h_html"><div class="ttname"><a href="d3/d31/jpeg_8h.html">jpeg.h</a></div></div>
-<div class="ttc" id="anamespacefl_a87ae8a24cc8b709a64f39370e71846af_html_a87ae8a24cc8b709a64f39370e71846af"><div class="ttname"><a href="d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af">fl::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args &amp;&amp;... args) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="df/d6a/shared__ptr_8h_source.html#l00414">shared_ptr.h:414</a></div></div>
+<div class="ttc" id="anamespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c_html_a9fb4ec44d15efca3aed1890e7b57410c"><div class="ttname"><a href="df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c">fl::adl_barrier::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args &amp;&amp;... args) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="df/d6a/shared__ptr_8h_source.html#l00423">shared_ptr.h:423</a></div></div>
 <div class="ttc" id="anamespacefl_aaed350b21465df8c68244fc4d77fa693_html_aaed350b21465df8c68244fc4d77fa693a505a83f220c02df2f85c3810cd9ceb38"><div class="ttname"><a href="d4/d36/namespacefl_aaed350b21465df8c68244fc4d77fa693.html#aaed350b21465df8c68244fc4d77fa693a505a83f220c02df2f85c3810cd9ceb38">fl::DecodeResult::Success</a></div><div class="ttdeci">@ Success</div><div class="ttdef"><b>Definition</b> <a href="d0/dfc/idecoder_8h_source.html#l00019">idecoder.h:19</a></div></div>
-<div class="ttc" id="anamespacefl_aef30cbd1dac648887ffa5dc1086b0164_html_aef30cbd1dac648887ffa5dc1086b0164a30ff380a3be74628024063a99fba10f0"><div class="ttname"><a href="d4/d36/namespacefl_aef30cbd1dac648887ffa5dc1086b0164.html#aef30cbd1dac648887ffa5dc1086b0164a30ff380a3be74628024063a99fba10f0">fl::PixelFormat::RGB888</a></div><div class="ttdeci">@ RGB888</div><div class="ttdef"><b>Definition</b> <a href="dd/dcd/pixel_8h_source.html#l00009">pixel.h:9</a></div></div>
+<div class="ttc" id="anamespacefl_aef30cbd1dac648887ffa5dc1086b0164_html_aef30cbd1dac648887ffa5dc1086b0164a30ff380a3be74628024063a99fba10f0"><div class="ttname"><a href="d4/d36/namespacefl_aef30cbd1dac648887ffa5dc1086b0164.html#aef30cbd1dac648887ffa5dc1086b0164a30ff380a3be74628024063a99fba10f0">fl::PixelFormat::RGB888</a></div><div class="ttdeci">@ RGB888</div><div class="ttdef"><b>Definition</b> <a href="dd/dcd/pixel_8h_source.html#l00010">pixel.h:10</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md928"></a>
 MPEG1 Video Playback</h2>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="de/da7/mpeg1_8h.html">fl/codec/mpeg1.h</a>&quot;</span></div>
@@ -319,7 +319,7 @@ Optimization Tips</h2>
 Error Handling</h1>
 <p>All decoders provide comprehensive error reporting:</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="d2/db2/classfl_1_1string.html">fl::string</a> error_msg;</div>
-<div class="line"><span class="keyword">auto</span> decoder = <a class="code hl_function" href="df/d28/classfl_1_1_jpeg_a6070d60029c1e6852a533f1e0fb99561.html#a6070d60029c1e6852a533f1e0fb99561">fl::Jpeg::createDecoder</a>(config, &amp;error_msg);</div>
+<div class="line"><span class="keyword">auto</span> decoder = <a class="code hl_function" href="df/d28/classfl_1_1_jpeg_ad2abbfe76f426e36def19f2d26b06e84.html#ad2abbfe76f426e36def19f2d26b06e84">fl::Jpeg::createDecoder</a>(config, &amp;error_msg);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">if</span> (!decoder) {</div>
 <div class="line">    <a class="code hl_define" href="de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.println(<span class="stringliteral">&quot;Failed to create decoder: &quot;</span> + error_msg);</div>
@@ -330,7 +330,7 @@ Error Handling</h1>
 <div class="line">    <a class="code hl_define" href="de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a>.println(<span class="stringliteral">&quot;Decoder error: &quot;</span> + error_msg);</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassfl_1_1string_html"><div class="ttname"><a href="d2/db2/classfl_1_1string.html">fl::string</a></div><div class="ttdef"><b>Definition</b> <a href="da/d66/string_8h_source.html#l00202">string.h:202</a></div></div>
-<div class="ttc" id="asystem_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3_html_ab1a8531ded8c3d5bee8e36aebec7a8f3"><div class="ttname"><a href="de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a></div><div class="ttdeci">#define Serial</div><div class="ttdef"><b>Definition</b> <a href="de/d8b/system_2serial_8h_source.html#l00304">serial.h:304</a></div></div>
+<div class="ttc" id="asystem_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3_html_ab1a8531ded8c3d5bee8e36aebec7a8f3"><div class="ttname"><a href="de/d8b/system_2serial_8h_ab1a8531ded8c3d5bee8e36aebec7a8f3.html#ab1a8531ded8c3d5bee8e36aebec7a8f3">Serial</a></div><div class="ttdeci">#define Serial</div><div class="ttdef"><b>Definition</b> <a href="de/d8b/system_2serial_8h_source.html#l00309">serial.h:309</a></div></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md937"></a>
 Performance Tips</h1>
 <ol type="1">
@@ -391,7 +391,7 @@ Further Reading</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_4ec6cb0b343abb5102ef9ddc4f2a1c88.html">Codec</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:13 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

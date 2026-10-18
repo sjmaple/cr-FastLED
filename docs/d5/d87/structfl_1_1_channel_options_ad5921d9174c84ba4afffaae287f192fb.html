@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -124,21 +124,21 @@ $(function(){initNavTree('d5/d87/structfl_1_1_channel_options_ad5921d9174c84ba4a
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The active <a class="el" href="../../d7/d27/structfl_1_1_rgbw.html">Rgbw</a> if mWhiteCfg holds one, else <a class="el" href="../../d2/d73/structfl_1_1_rgbw_invalid_ad749a3bc8d27f6eb3ea14150a6103cc5.html#ad749a3bc8d27f6eb3ea14150a6103cc5">RgbwInvalid::value()</a>. Backward-compat shim for code paths that pre-date the variant migration. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d5b/options_8h_source.html#l00319">319</a> of file <a class="el" href="../../d7/d5b/options_8h_source.html">options.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  319</span>                                   {</div>
-<div class="line"><span class="lineno">  320</span>        <span class="keywordflow">if</span> (<span class="keyword">auto</span>* p = <a class="code hl_variable" href="../../d5/d87/structfl_1_1_channel_options_a734b4aa2326f122fcd7ca9e06c26e3c9.html#a734b4aa2326f122fcd7ca9e06c26e3c9">mWhiteCfg</a>.ptr&lt;Rgbw&gt;()) <span class="keywordflow">return</span> *p;</div>
-<div class="line"><span class="lineno">  321</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d2/d73/structfl_1_1_rgbw_invalid_ad749a3bc8d27f6eb3ea14150a6103cc5.html#ad749a3bc8d27f6eb3ea14150a6103cc5">RgbwInvalid::value</a>();</div>
-<div class="line"><span class="lineno">  322</span>    }</div>
-<div class="ttc" id="astructfl_1_1_channel_options_a734b4aa2326f122fcd7ca9e06c26e3c9_html_a734b4aa2326f122fcd7ca9e06c26e3c9"><div class="ttname"><a href="../../d5/d87/structfl_1_1_channel_options_a734b4aa2326f122fcd7ca9e06c26e3c9.html#a734b4aa2326f122fcd7ca9e06c26e3c9">fl::ChannelOptions::mWhiteCfg</a></div><div class="ttdeci">fl::variant&lt; fl::Empty, Rgbw, Rgbww &gt; mWhiteCfg</div><div class="ttdoc">White-channel selection (variant): Empty = plain RGB, Rgbw = 4-channel, Rgbww = 5-channel.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d5b/options_8h_source.html#l00091">options.h:91</a></div></div>
-<div class="ttc" id="astructfl_1_1_rgbw_invalid_ad749a3bc8d27f6eb3ea14150a6103cc5_html_ad749a3bc8d27f6eb3ea14150a6103cc5"><div class="ttname"><a href="../../d2/d73/structfl_1_1_rgbw_invalid_ad749a3bc8d27f6eb3ea14150a6103cc5.html#ad749a3bc8d27f6eb3ea14150a6103cc5">fl::RgbwInvalid::value</a></div><div class="ttdeci">static Rgbw value() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00253">rgbw.h:253</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d5b/options_8h_source.html#l00329">329</a> of file <a class="el" href="../../d7/d5b/options_8h_source.html">options.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  329</span>                                   {</div>
+<div class="line"><span class="lineno">  330</span>        <span class="keywordflow">if</span> (<span class="keyword">auto</span>* p = <a class="code hl_variable" href="../../d5/d87/structfl_1_1_channel_options_a734b4aa2326f122fcd7ca9e06c26e3c9.html#a734b4aa2326f122fcd7ca9e06c26e3c9">mWhiteCfg</a>.ptr&lt;Rgbw&gt;()) <span class="keywordflow">return</span> *p;</div>
+<div class="line"><span class="lineno">  331</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d2/d73/structfl_1_1_rgbw_invalid_ad749a3bc8d27f6eb3ea14150a6103cc5.html#ad749a3bc8d27f6eb3ea14150a6103cc5">RgbwInvalid::value</a>();</div>
+<div class="line"><span class="lineno">  332</span>    }</div>
+<div class="ttc" id="astructfl_1_1_channel_options_a734b4aa2326f122fcd7ca9e06c26e3c9_html_a734b4aa2326f122fcd7ca9e06c26e3c9"><div class="ttname"><a href="../../d5/d87/structfl_1_1_channel_options_a734b4aa2326f122fcd7ca9e06c26e3c9.html#a734b4aa2326f122fcd7ca9e06c26e3c9">fl::ChannelOptions::mWhiteCfg</a></div><div class="ttdeci">fl::variant&lt; fl::Empty, Rgbw, Rgbww &gt; mWhiteCfg</div><div class="ttdoc">White-channel selection (variant): Empty = plain RGB, Rgbw = 4-channel, Rgbww = 5-channel.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d5b/options_8h_source.html#l00099">options.h:99</a></div></div>
+<div class="ttc" id="astructfl_1_1_rgbw_invalid_ad749a3bc8d27f6eb3ea14150a6103cc5_html_ad749a3bc8d27f6eb3ea14150a6103cc5"><div class="ttname"><a href="../../d2/d73/structfl_1_1_rgbw_invalid_ad749a3bc8d27f6eb3ea14150a6103cc5.html#ad749a3bc8d27f6eb3ea14150a6103cc5">fl::RgbwInvalid::value</a></div><div class="ttdeci">static Rgbw value() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00279">rgbw.h:279</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d7/d5b/options_8h_source.html#l00091">mWhiteCfg</a>, and <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00253">fl::RgbwInvalid::value()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d7/d5b/options_8h_source.html#l00099">mWhiteCfg</a>, and <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00279">fl::RgbwInvalid::value()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d87/structfl_1_1_channel_options_ad5921d9174c84ba4afffaae287f192fb_ad5921d9174c84ba4afffaae287f192fb_cgraph.svg" width="618" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/d87/structfl_1_1_channel_options_ad5921d9174c84ba4afffaae287f192fb_ad5921d9174c84ba4afffaae287f192fb_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -150,7 +150,7 @@ $(function(){initNavTree('d5/d87/structfl_1_1_channel_options_ad5921d9174c84ba4a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d5/d87/structfl_1_1_channel_options.html">ChannelOptions</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

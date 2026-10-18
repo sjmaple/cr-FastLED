@@ -25,7 +25,7 @@ digraph "fl::ScopedTrace::operator="
   Node10 -> Node11 [id="edge10_Node000010_Node000011",color="steelblue1",style="solid",tooltip=" "];
   Node11 [id="Node000011",label="fl::snprintf",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a17646782eea1132270233120225036ac.html#a17646782eea1132270233120225036ac",tooltip=" "];
   Node11 -> Node12 [id="edge11_Node000011_Node000012",color="steelblue1",style="solid",tooltip=" "];
-  Node12 [id="Node000012",label="fl::format",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_aee6f6a125b8389786800233a69115983.html#aee6f6a125b8389786800233a69115983",tooltip="Format with no arguments."];
+  Node12 [id="Node000012",label="fl::format",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a51d1a2465c939bcdfa5e221adeda9951.html#a51d1a2465c939bcdfa5e221adeda9951",tooltip="Format with no arguments."];
   Node11 -> Node17 [id="edge12_Node000011_Node000017",color="steelblue1",style="solid",tooltip=" "];
   Node17 [id="Node000017",label="fl::printf_detail::\lparse_format_spec",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/de0/namespacefl_1_1printf__detail_a815b73d378ad98c5db7890a7836da1b1.html#a815b73d378ad98c5db7890a7836da1b1",tooltip=" "];
   Node17 -> Node12 [id="edge13_Node000017_Node000012",color="steelblue1",style="solid",tooltip=" "];

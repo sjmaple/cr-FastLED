@@ -8,5 +8,5 @@ digraph "fl::CLEDController::getTemperature"
   rankdir="RL";
   Node1 [id="Node000001",label="fl::CLEDController\l::getTemperature",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Get the color temperature, aka white point, for this controller."];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="fl::Channel::getTemperature",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_a0e4ba64322a406c2f40d1d40d9498f12.html#a0e4ba64322a406c2f40d1d40d9498f12",tooltip="Get the color temperature."];
+  Node2 [id="Node000002",label="fl::Channel::getTemperature",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d8b/classfl_1_1_channel_a21cfbded2b6d3e0bca89c877fae54a83.html#a21cfbded2b6d3e0bca89c877fae54a83",tooltip="Get the color temperature."];
 }

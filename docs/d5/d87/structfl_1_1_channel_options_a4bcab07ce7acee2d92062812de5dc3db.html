@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -123,23 +123,23 @@ $(function(){initNavTree('d5/d87/structfl_1_1_channel_options_a4bcab07ce7acee2d9
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d5b/options_8h_source.html#l00305">305</a> of file <a class="el" href="../../d7/d5b/options_8h_source.html">options.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  305</span>                                           {</div>
-<div class="line"><span class="lineno">  306</span><span class="preprocessor">#if FL_COLOR_PROFILE_RUNTIME</span></div>
-<div class="line"><span class="lineno">  307</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d5/d87/structfl_1_1_channel_options_a7d33849ac993a966ad630ffcf58de219.html#a7d33849ac993a966ad630ffcf58de219">hasColorProfile</a>() &amp;&amp; !mWarnedProfileCleared) {</div>
-<div class="line"><span class="lineno">  308</span>            <a class="code hl_define" href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a>(<span class="stringliteral">&quot;Legacy correction/temperature clears color profile&quot;</span>);</div>
-<div class="line"><span class="lineno">  309</span>            <a class="code hl_function" href="../../d4/d36/namespacefl_a4d523439a3a0b7fdf7187bccdc1479b6.html#a4d523439a3a0b7fdf7187bccdc1479b6">notifyColorProfileClearedByLegacy</a>();</div>
-<div class="line"><span class="lineno">  310</span>            mWarnedProfileCleared = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  311</span>        }</div>
-<div class="line"><span class="lineno">  312</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  313</span>    }</div>
-<div class="ttc" id="alog_8h_a4804912fba6eed63e1afd84b8768aced_html_a4804912fba6eed63e1afd84b8768aced"><div class="ttname"><a href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a></div><div class="ttdeci">#define FL_WARN(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00440">log.h:440</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d5b/options_8h_source.html#l00315">315</a> of file <a class="el" href="../../d7/d5b/options_8h_source.html">options.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  315</span>                                           {</div>
+<div class="line"><span class="lineno">  316</span><span class="preprocessor">#if FL_COLOR_PROFILE_RUNTIME</span></div>
+<div class="line"><span class="lineno">  317</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d5/d87/structfl_1_1_channel_options_a7d33849ac993a966ad630ffcf58de219.html#a7d33849ac993a966ad630ffcf58de219">hasColorProfile</a>() &amp;&amp; !mWarnedProfileCleared) {</div>
+<div class="line"><span class="lineno">  318</span>            <a class="code hl_define" href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a>(<span class="stringliteral">&quot;Legacy correction/temperature clears color profile&quot;</span>);</div>
+<div class="line"><span class="lineno">  319</span>            <a class="code hl_function" href="../../d4/d36/namespacefl_a4d523439a3a0b7fdf7187bccdc1479b6.html#a4d523439a3a0b7fdf7187bccdc1479b6">notifyColorProfileClearedByLegacy</a>();</div>
+<div class="line"><span class="lineno">  320</span>            mWarnedProfileCleared = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  321</span>        }</div>
+<div class="line"><span class="lineno">  322</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  323</span>    }</div>
+<div class="ttc" id="alog_8h_a4804912fba6eed63e1afd84b8768aced_html_a4804912fba6eed63e1afd84b8768aced"><div class="ttname"><a href="../../d7/d7f/log_8h_a4804912fba6eed63e1afd84b8768aced.html#a4804912fba6eed63e1afd84b8768aced">FL_WARN</a></div><div class="ttdeci">#define FL_WARN(...)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7f/log_8h_source.html#l00437">log.h:437</a></div></div>
 <div class="ttc" id="anamespacefl_a4d523439a3a0b7fdf7187bccdc1479b6_html_a4d523439a3a0b7fdf7187bccdc1479b6"><div class="ttname"><a href="../../d4/d36/namespacefl_a4d523439a3a0b7fdf7187bccdc1479b6.html#a4d523439a3a0b7fdf7187bccdc1479b6">fl::notifyColorProfileClearedByLegacy</a></div><div class="ttdeci">void notifyColorProfileClearedByLegacy() FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d09/pipeline__binding_8cpp_8hpp_source.html#l00334">pipeline_binding.cpp.hpp:334</a></div></div>
-<div class="ttc" id="astructfl_1_1_channel_options_a7d33849ac993a966ad630ffcf58de219_html_a7d33849ac993a966ad630ffcf58de219"><div class="ttname"><a href="../../d5/d87/structfl_1_1_channel_options_a7d33849ac993a966ad630ffcf58de219.html#a7d33849ac993a966ad630ffcf58de219">fl::ChannelOptions::hasColorProfile</a></div><div class="ttdeci">bool hasColorProfile() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d5b/options_8h_source.html#l00235">options.h:235</a></div></div>
+<div class="ttc" id="astructfl_1_1_channel_options_a7d33849ac993a966ad630ffcf58de219_html_a7d33849ac993a966ad630ffcf58de219"><div class="ttname"><a href="../../d5/d87/structfl_1_1_channel_options_a7d33849ac993a966ad630ffcf58de219.html#a7d33849ac993a966ad630ffcf58de219">fl::ChannelOptions::hasColorProfile</a></div><div class="ttdeci">bool hasColorProfile() const FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d5b/options_8h_source.html#l00242">options.h:242</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00440">FL_WARN</a>, <a class="el" href="../../d7/d5b/options_8h_source.html#l00235">hasColorProfile()</a>, and <a class="el" href="../../d6/d09/pipeline__binding_8cpp_8hpp_source.html#l00334">fl::notifyColorProfileClearedByLegacy()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../d7/d7f/log_8h_source.html#l00437">FL_WARN</a>, <a class="el" href="../../d7/d5b/options_8h_source.html#l00242">hasColorProfile()</a>, and <a class="el" href="../../d6/d09/pipeline__binding_8cpp_8hpp_source.html#l00334">fl::notifyColorProfileClearedByLegacy()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d5b/options_8h_source.html#l00277">setLegacyCorrection()</a>, and <a class="el" href="../../d7/d5b/options_8h_source.html#l00278">setLegacyTemperature()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d5b/options_8h_source.html#l00287">setLegacyCorrection()</a>, and <a class="el" href="../../d7/d5b/options_8h_source.html#l00288">setLegacyTemperature()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -164,7 +164,7 @@ $(function(){initNavTree('d5/d87/structfl_1_1_channel_options_a4bcab07ce7acee2d9
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d5/d87/structfl_1_1_channel_options.html">ChannelOptions</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

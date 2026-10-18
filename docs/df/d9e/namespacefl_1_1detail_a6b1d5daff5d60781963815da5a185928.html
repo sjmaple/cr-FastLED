@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ $(function(){initNavTree('df/d9e/namespacefl_1_1detail_a6b1d5daff5d60781963815da
 <p class="definition">Definition at line <a class="el" href="../../d4/d05/json_8h_source.html#l00144">144</a> of file <a class="el" href="../../d4/d05/json_8h_source.html">json.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  144</span>   : <a class="code hl_typedef" href="../../d4/d36/namespacefl_aec5b506b1eebcaf642acbdbef139775a.html#aec5b506b1eebcaf642acbdbef139775a">fl::true_type</a> {};</div>
 <div class="line"><span class="lineno">  145</span> </div>
-<div class="line"><span class="lineno">  146</span><span class="keyword">inline</span> u32 <a class="code hl_function" href="#a6b1d5daff5d60781963815da5a185928">round_shift_right_u64</a>(<a class="code hl_typedef" href="../../df/dd8/stdint_8h_a46762d78d719ea1edce386124c4aa46b.html#a46762d78d719ea1edce386124c4aa46b">u64</a> <a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a>, <span class="keywordtype">int</span> shift) <a class="code hl_variable" href="../../d4/d36/namespacefl_aa317f89ca911371e798d08a93770402f.html#aa317f89ca911371e798d08a93770402f">FL_NO_EXCEPT</a> {</div>
+<div class="line"><span class="lineno">  146</span><span class="keyword">inline</span> u32 <a class="code hl_function" href="#a6b1d5daff5d60781963815da5a185928">round_shift_right_u64</a>(<a class="code hl_typedef" href="../../df/dd8/stdint_8h_a46762d78d719ea1edce386124c4aa46b.html#a46762d78d719ea1edce386124c4aa46b">u64</a> <a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a>, <span class="keywordtype">int</span> shift) <a class="code hl_variable" href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">FL_NO_EXCEPT</a> {</div>
 <div class="line"><span class="lineno">  147</span>    <span class="keywordflow">if</span> (shift &lt;= 0) {</div>
 <div class="line"><span class="lineno">  148</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>u32<span class="keyword">&gt;</span>(<a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a>);</div>
 <div class="line"><span class="lineno">  149</span>    }</div>
@@ -143,9 +143,9 @@ $(function(){initNavTree('df/d9e/namespacefl_1_1detail_a6b1d5daff5d60781963815da
 <div class="line"><span class="lineno">  156</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../df/dd8/stdint_8h_a46762d78d719ea1edce386124c4aa46b.html#a46762d78d719ea1edce386124c4aa46b">u64</a> remainder = <a class="code hl_variable" href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">value</a> &amp; mask;</div>
 <div class="line"><span class="lineno">  157</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> round_up = remainder &gt; half || (remainder == half &amp;&amp; (truncated &amp; 1));</div>
 <div class="ttc" id="anamespacefl_1_1detail_a6b1d5daff5d60781963815da5a185928_html_a6b1d5daff5d60781963815da5a185928"><div class="ttname"><a href="#a6b1d5daff5d60781963815da5a185928">fl::detail::round_shift_right_u64</a></div><div class="ttdeci">u32 round_shift_right_u64(u64 value, int shift) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d05/json_8h_source.html#l00144">json.h:144</a></div></div>
+<div class="ttc" id="anamespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5_html_a0f2fe8e60b0edbe21ace28f787ba7cb5"><div class="ttname"><a href="../../d4/d36/namespacefl_a0f2fe8e60b0edbe21ace28f787ba7cb5.html#a0f2fe8e60b0edbe21ace28f787ba7cb5">fl::FL_NO_EXCEPT</a></div><div class="ttdeci">u8 u8 fract8 blur_amount FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../d4/df5/blur_8h_source.html#l00186">blur.h:186</a></div></div>
 <div class="ttc" id="anamespacefl_a13766ae9e150185981f5096f90a439d7_html_a13766ae9e150185981f5096f90a439d7"><div class="ttname"><a href="../../d4/d36/namespacefl_a13766ae9e150185981f5096f90a439d7.html#a13766ae9e150185981f5096f90a439d7">fl::value</a></div><div class="ttdeci">constexpr int type_rank&lt; T &gt;::value</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d37/static__constexpr__defs_8cpp_8hpp_source.html#l00082">static_constexpr_defs.cpp.hpp:82</a></div></div>
-<div class="ttc" id="anamespacefl_aa317f89ca911371e798d08a93770402f_html_aa317f89ca911371e798d08a93770402f"><div class="ttname"><a href="../../d4/d36/namespacefl_aa317f89ca911371e798d08a93770402f.html#aa317f89ca911371e798d08a93770402f">fl::FL_NO_EXCEPT</a></div><div class="ttdeci">InputGamut g FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">rgbw.h:121</a></div></div>
-<div class="ttc" id="anamespacefl_aec5b506b1eebcaf642acbdbef139775a_html_aec5b506b1eebcaf642acbdbef139775a"><div class="ttname"><a href="../../d4/d36/namespacefl_aec5b506b1eebcaf642acbdbef139775a.html#aec5b506b1eebcaf642acbdbef139775a">fl::true_type</a></div><div class="ttdeci">integral_constant&lt; bool, true &gt; true_type</div><div class="ttdef"><b>Definition</b> <a href="../../df/d63/type__traits_8h_source.html#l00027">type_traits.h:27</a></div></div>
+<div class="ttc" id="anamespacefl_aec5b506b1eebcaf642acbdbef139775a_html_aec5b506b1eebcaf642acbdbef139775a"><div class="ttname"><a href="../../d4/d36/namespacefl_aec5b506b1eebcaf642acbdbef139775a.html#aec5b506b1eebcaf642acbdbef139775a">fl::true_type</a></div><div class="ttdeci">integral_constant&lt; bool, true &gt; true_type</div><div class="ttdef"><b>Definition</b> <a href="../../df/d63/type__traits_8h_source.html#l00028">type_traits.h:28</a></div></div>
 <div class="ttc" id="astdint_8h_a46762d78d719ea1edce386124c4aa46b_html_a46762d78d719ea1edce386124c4aa46b"><div class="ttname"><a href="../../df/dd8/stdint_8h_a46762d78d719ea1edce386124c4aa46b.html#a46762d78d719ea1edce386124c4aa46b">u64</a></div><div class="ttdeci">fl::u64 u64</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00220">stdint.h:220</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -157,7 +157,7 @@ $(function(){initNavTree('df/d9e/namespacefl_1_1detail_a6b1d5daff5d60781963815da
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../df/d9e/namespacefl_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -21,14 +21,14 @@ digraph "loop"
   Node6 [id="Node000006",label="autoresearch::low_memory\l::remoteState",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d9f/namespaceautoresearch_1_1low__memory_a595ea1a952d6e6465edca7d66ca81941.html#a595ea1a952d6e6465edca7d66ca81941",tooltip=" "];
   Node6 -> Node7 [id="edge8_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
   Node7 [id="Node000007",label="fl::SingletonShared\l::instance",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$db/d4a/classfl_1_1_singleton_shared_a1ec246efec2c46bc053a64fe7e8170ad.html#a1ec246efec2c46bc053a64fe7e8170ad",tooltip=" "];
-  Node2 -> Node13 [id="edge9_Node000002_Node000013",color="steelblue1",style="solid",tooltip=" "];
-  Node13 [id="Node000013",label="fl::Remote::update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/ddb/classfl_1_1_remote_a4579a9af2b68eb330345740407ef37fd.html#a4579a9af2b68eb330345740407ef37fd",tooltip="Main update: pull + tick + push (overrides Server::update)"];
-  Node13 -> Node14 [id="edge10_Node000013_Node000014",color="steelblue1",style="solid",tooltip=" "];
-  Node14 [id="Node000014",label="fl::json::object",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d40/classfl_1_1json_ae7744bee3369b3debf7e30e4a4a18526.html#ae7744bee3369b3debf7e30e4a4a18526",tooltip=" "];
-  Node13 -> Node15 [id="edge11_Node000013_Node000015",color="steelblue1",style="solid",tooltip=" "];
-  Node15 [id="Node000015",label="fl::Server::pull",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$dc/d00/classfl_1_1_server_a4b8b9821566f8389e43734b90ae36798.html#a4b8b9821566f8389e43734b90ae36798",tooltip="Pull requests from source, process, queue responses."];
-  Node13 -> Node17 [id="edge12_Node000013_Node000017",color="steelblue1",style="solid",tooltip=" "];
-  Node17 [id="Node000017",label="fl::Server::push",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d00/classfl_1_1_server_a049bc5d74287eaf42b1b4b8086e7213d.html#a049bc5d74287eaf42b1b4b8086e7213d",tooltip="Push queued responses to sink."];
-  Node13 -> Node18 [id="edge13_Node000013_Node000018",color="steelblue1",style="solid",tooltip=" "];
-  Node18 [id="Node000018",label="fl::Remote::tick",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/ddb/classfl_1_1_remote_a3653f4ef8d9753d8577e3c18a07d3e0a.html#a3653f4ef8d9753d8577e3c18a07d3e0a",tooltip="Process scheduled calls (call regularly)"];
+  Node2 -> Node14 [id="edge9_Node000002_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="fl::Remote::update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/ddb/classfl_1_1_remote_a9b18ba2e5a6d45d4454aa5fec973112c.html#a9b18ba2e5a6d45d4454aa5fec973112c",tooltip="Main update: pull + tick + push (overrides Server::update)"];
+  Node14 -> Node15 [id="edge10_Node000014_Node000015",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="fl::json::object",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d40/classfl_1_1json_ae7744bee3369b3debf7e30e4a4a18526.html#ae7744bee3369b3debf7e30e4a4a18526",tooltip=" "];
+  Node14 -> Node16 [id="edge11_Node000014_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="fl::Server::pull",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$dc/d00/classfl_1_1_server_a7ebd11f9a95e723be0971ca3ec620e5c.html#a7ebd11f9a95e723be0971ca3ec620e5c",tooltip="Pull requests from source, process, queue responses."];
+  Node14 -> Node18 [id="edge12_Node000014_Node000018",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="fl::Server::push",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d00/classfl_1_1_server_ace1a0a4830754bdd8220cc3b43ed3fe0.html#ace1a0a4830754bdd8220cc3b43ed3fe0",tooltip="Push queued responses to sink."];
+  Node14 -> Node19 [id="edge13_Node000014_Node000019",color="steelblue1",style="solid",tooltip=" "];
+  Node19 [id="Node000019",label="fl::Remote::tick",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/ddb/classfl_1_1_remote_af891bf2e9a6d53157f2e36d22ad26127.html#af891bf2e9a6d53157f2e36d22ad26127",tooltip="Process scheduled calls (call regularly)"];
 }

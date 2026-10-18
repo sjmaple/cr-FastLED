@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -131,7 +131,7 @@ template&lt;typename T, fl::size SLAB_SIZE = FASTLED_DEFAULT_SLAB_SIZE&gt; </div
 <div class="line"><span class="lineno">  696</span>        <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d5/db8/classfl_1_1_slab_allocator_a71c38c4906ef0538d832369a02787dfd.html#a71c38c4906ef0538d832369a02787dfd">mSlabs</a>) {</div>
 <div class="line"><span class="lineno">  697</span>            <a class="code hl_struct" href="../../d9/d08/structfl_1_1_slab_allocator_1_1_slab.html">Slab</a>* <a class="code hl_class" href="../../d5/db8/classfl_1_1_slab_allocator.html">next</a> = <a class="code hl_variable" href="../../d5/db8/classfl_1_1_slab_allocator_a71c38c4906ef0538d832369a02787dfd.html#a71c38c4906ef0538d832369a02787dfd">mSlabs</a>-&gt;next;</div>
 <div class="line"><span class="lineno">  698</span>            <a class="code hl_variable" href="../../d5/db8/classfl_1_1_slab_allocator_a71c38c4906ef0538d832369a02787dfd.html#a71c38c4906ef0538d832369a02787dfd">mSlabs</a>-&gt;~Slab();</div>
-<div class="line"><span class="lineno">  699</span>            <a class="code hl_function" href="../../d4/d36/namespacefl_a01907b76b610d0663ed9b4204cdf68a2.html#a01907b76b610d0663ed9b4204cdf68a2">Free</a>(<a class="code hl_variable" href="../../d5/db8/classfl_1_1_slab_allocator_a71c38c4906ef0538d832369a02787dfd.html#a71c38c4906ef0538d832369a02787dfd">mSlabs</a>);</div>
+<div class="line"><span class="lineno">  699</span>            <a class="code hl_function" href="../../d4/d36/namespacefl_a4343890eed79592c52cdafd696bacd74.html#a4343890eed79592c52cdafd696bacd74">Free</a>(<a class="code hl_variable" href="../../d5/db8/classfl_1_1_slab_allocator_a71c38c4906ef0538d832369a02787dfd.html#a71c38c4906ef0538d832369a02787dfd">mSlabs</a>);</div>
 <div class="line"><span class="lineno">  700</span>            <a class="code hl_variable" href="../../d5/db8/classfl_1_1_slab_allocator_a71c38c4906ef0538d832369a02787dfd.html#a71c38c4906ef0538d832369a02787dfd">mSlabs</a> = <a class="code hl_class" href="../../d5/db8/classfl_1_1_slab_allocator.html">next</a>;</div>
 <div class="line"><span class="lineno">  701</span>        }</div>
 <div class="line"><span class="lineno">  702</span>        <a class="code hl_variable" href="../../d5/db8/classfl_1_1_slab_allocator_ab57be2feb17e5f675463d7d58e941689.html#ab57be2feb17e5f675463d7d58e941689">mTotalAllocated</a> = 0;</div>
@@ -142,10 +142,10 @@ template&lt;typename T, fl::size SLAB_SIZE = FASTLED_DEFAULT_SLAB_SIZE&gt; </div
 <div class="ttc" id="aclassfl_1_1_slab_allocator_ab57be2feb17e5f675463d7d58e941689_html_ab57be2feb17e5f675463d7d58e941689"><div class="ttname"><a href="../../d5/db8/classfl_1_1_slab_allocator_ab57be2feb17e5f675463d7d58e941689.html#ab57be2feb17e5f675463d7d58e941689">fl::SlabAllocator::mTotalAllocated</a></div><div class="ttdeci">fl::size mTotalAllocated</div><div class="ttdef"><b>Definition</b> <a href="../../da/da9/allocator_8h_source.html#l00488">allocator.h:488</a></div></div>
 <div class="ttc" id="aclassfl_1_1_slab_allocator_ae18012ce53103c93212eeb9c10e8e5f1_html_ae18012ce53103c93212eeb9c10e8e5f1"><div class="ttname"><a href="../../d5/db8/classfl_1_1_slab_allocator_ae18012ce53103c93212eeb9c10e8e5f1.html#ae18012ce53103c93212eeb9c10e8e5f1">fl::SlabAllocator::mMutex</a></div><div class="ttdeci">fl::detail::slab_mutex mMutex</div><div class="ttdef"><b>Definition</b> <a href="../../da/da9/allocator_8h_source.html#l00487">allocator.h:487</a></div></div>
 <div class="ttc" id="aclassfl_1_1_slab_allocator_html"><div class="ttname"><a href="../../d5/db8/classfl_1_1_slab_allocator.html">fl::SlabAllocator</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da9/allocator_8h_source.html#l00462">allocator.h:462</a></div></div>
-<div class="ttc" id="anamespacefl_a01907b76b610d0663ed9b4204cdf68a2_html_a01907b76b610d0663ed9b4204cdf68a2"><div class="ttname"><a href="../../d4/d36/namespacefl_a01907b76b610d0663ed9b4204cdf68a2.html#a01907b76b610d0663ed9b4204cdf68a2">fl::Free</a></div><div class="ttdeci">void Free(void *ptr)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6b/allocator_8cpp_8hpp_source.html#l00179">allocator.cpp.hpp:179</a></div></div>
+<div class="ttc" id="anamespacefl_a4343890eed79592c52cdafd696bacd74_html_a4343890eed79592c52cdafd696bacd74"><div class="ttname"><a href="../../d4/d36/namespacefl_a4343890eed79592c52cdafd696bacd74.html#a4343890eed79592c52cdafd696bacd74">fl::Free</a></div><div class="ttdeci">void Free(void *ptr) FL_NO_EXCEPT</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6b/allocator_8cpp_8hpp_source.html#l00179">allocator.cpp.hpp:179</a></div></div>
 <div class="ttc" id="astructfl_1_1_slab_allocator_1_1_slab_html"><div class="ttname"><a href="../../d9/d08/structfl_1_1_slab_allocator_1_1_slab.html">fl::SlabAllocator::Slab</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da9/allocator_8h_source.html#l00469">allocator.h:469</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../dc/d6b/allocator_8cpp_8hpp_source.html#l00179">fl::Free()</a>, <a class="el" href="../../da/da9/allocator_8h_source.html#l00487">mMutex</a>, <a class="el" href="../../da/da9/allocator_8h_source.html#l00484">mSlabs</a>, <a class="el" href="../../da/da9/allocator_8h_source.html#l00488">mTotalAllocated</a>, and <a class="el" href="../../da/da9/allocator_8h_source.html#l00489">mTotalDeallocated</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, <a class="el" href="../../dc/d6b/allocator_8cpp_8hpp_source.html#l00179">fl::Free()</a>, <a class="el" href="../../da/da9/allocator_8h_source.html#l00487">mMutex</a>, <a class="el" href="../../da/da9/allocator_8h_source.html#l00484">mSlabs</a>, <a class="el" href="../../da/da9/allocator_8h_source.html#l00488">mTotalAllocated</a>, and <a class="el" href="../../da/da9/allocator_8h_source.html#l00489">mTotalDeallocated</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/da9/allocator_8h_source.html#l00596">~SlabAllocator()</a>, and <a class="el" href="../../da/da9/allocator_8h_source.html#l00612">operator=()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -172,7 +172,7 @@ template&lt;typename T, fl::size SLAB_SIZE = FASTLED_DEFAULT_SLAB_SIZE&gt; </div
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d5/db8/classfl_1_1_slab_allocator.html">SlabAllocator</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:10 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:32 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

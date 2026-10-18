@@ -11,15 +11,15 @@
 <area shape="rect" id="Node000012" href="$d4/d36/namespacefl_ad4e39b6ae17313fe651e8059338b8518.html#ad4e39b6ae17313fe651e8059338b8518" title="Invert the emitter matrix for a three&#45;emitter profile." alt="" coords="777,256,975,281"/>
 <area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="459,266,763,266,763,271,459,271"/>
 <area shape="rect" id="Node000015" href="$d4/d36/namespacefl_ae477fa69441dfe37f8fe3d7f4e2b9445.html#ae477fa69441dfe37f8fe3d7f4e2b9445" title="s16.16 of a float, rounded to nearest, computed from its IEEE&#45;754 bits with integer arithmetic only –..." alt="" coords="1049,280,1203,305"/>
-<area shape="poly" id="edge21_Node000002_Node000015" title=" " alt="" coords="459,274,757,290,1036,291,1036,297,757,295,459,279"/>
-<area shape="rect" id="Node000018" href="$d4/d36/namespacefl_a5ceffc39c2bae8d63b8b8d3fe8459dcb.html#a5ceffc39c2bae8d63b8b8d3fe8459dcb" title="Quantize the source matrix for primaries." alt="" coords="517,104,699,129"/>
-<area shape="poly" id="edge14_Node000002_Node000018" title=" " alt="" coords="364,254,422,203,462,173,505,146,541,131,543,136,508,151,465,177,426,207,367,258"/>
-<area shape="rect" id="Node000019" href="$d4/d36/namespacefl_a341823148029d76970034a1d746263c6.html#a341823148029d76970034a1d746263c6" title="Pre&#45;multiply the adaptation into a source matrix, in place." alt="" coords="507,357,709,397"/>
-<area shape="poly" id="edge19_Node000002_Node000019" title=" " alt="" coords="381,279,508,336,541,349,539,354,506,340,379,284"/>
-<area shape="rect" id="Node000020" href="$d4/d36/namespacefl_a87ae8a24cc8b709a64f39370e71846af.html#a87ae8a24cc8b709a64f39370e71846af" title=" " alt="" coords="545,421,671,447"/>
-<area shape="poly" id="edge20_Node000002_Node000020" title=" " alt="" coords="365,280,421,341,462,376,508,406,533,417,531,422,505,411,459,380,418,344,361,283"/>
-<area shape="rect" id="Node000021" href="$d0/d69/classfl_1_1_flux_scalar_aecccb32c6da23b8d889ad0d5367b1439.html#aecccb32c6da23b8d889ad0d5367b1439" title="Identity. Drives pass through unchanged." alt="" coords="535,471,681,496"/>
-<area shape="poly" id="edge22_Node000002_Node000021" title=" " alt="" coords="362,280,382,316,414,364,457,415,481,438,508,457,523,465,521,470,505,462,478,442,453,418,410,368,377,319,357,283"/>
+<area shape="poly" id="edge23_Node000002_Node000015" title=" " alt="" coords="459,274,757,290,1036,291,1036,297,757,295,459,279"/>
+<area shape="rect" id="Node000019" href="$d4/d36/namespacefl_a5ceffc39c2bae8d63b8b8d3fe8459dcb.html#a5ceffc39c2bae8d63b8b8d3fe8459dcb" title="Quantize the source matrix for primaries." alt="" coords="517,104,699,129"/>
+<area shape="poly" id="edge14_Node000002_Node000019" title=" " alt="" coords="364,254,422,203,462,173,505,146,541,131,543,136,508,151,465,177,426,207,367,258"/>
+<area shape="rect" id="Node000020" href="$d4/d36/namespacefl_a341823148029d76970034a1d746263c6.html#a341823148029d76970034a1d746263c6" title="Pre&#45;multiply the adaptation into a source matrix, in place." alt="" coords="507,357,709,397"/>
+<area shape="poly" id="edge19_Node000002_Node000020" title=" " alt="" coords="381,279,508,336,541,349,539,354,506,340,379,284"/>
+<area shape="rect" id="Node000021" href="$df/d34/namespacefl_1_1adl__barrier_a9fb4ec44d15efca3aed1890e7b57410c.html#a9fb4ec44d15efca3aed1890e7b57410c" title=" " alt="" coords="532,445,684,485"/>
+<area shape="poly" id="edge20_Node000002_Node000021" title=" " alt="" coords="367,280,426,338,508,407,556,436,553,440,505,411,422,342,363,284"/>
+<area shape="rect" id="Node000023" href="$d0/d69/classfl_1_1_flux_scalar_aecccb32c6da23b8d889ad0d5367b1439.html#aecccb32c6da23b8d889ad0d5367b1439" title="Identity. Drives pass through unchanged." alt="" coords="535,509,681,535"/>
+<area shape="poly" id="edge24_Node000002_Node000023" title=" " alt="" coords="360,280,378,322,409,380,453,442,479,470,508,494,523,503,520,508,505,499,475,474,448,446,404,383,373,324,355,282"/>
 <area shape="rect" id="Node000004" href="$df/d9e/namespacefl_1_1detail_a059959606a2f6831afbe363775710399.html#a059959606a2f6831afbe363775710399" title="One s16.16 matrix row against a vector, rounded and saturated." alt="" coords="797,5,955,31"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="677,52,792,31,793,36,678,57"/>
 <area shape="rect" id="Node000005" href="$df/d9e/namespacefl_1_1detail_a28fc4ef5fdd1fcf9a5868033fc0617b2.html#a28fc4ef5fdd1fcf9a5868033fc0617b2" title="The s16.16 building blocks the bind&#45;time builders share." alt="" coords="774,55,978,80"/>
@@ -33,11 +33,14 @@
 <area shape="poly" id="edge10_Node000011_Node000008" title=" " alt="" coords="692,215,744,215,744,220,692,220"/>
 <area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="676,228,795,251,794,256,675,233"/>
 <area shape="poly" id="edge12_Node000012_Node000015" title=" " alt="" coords="976,276,1036,281,1036,287,975,281"/>
-<area shape="poly" id="edge15_Node000018_Node000004" title=" " alt="" coords="679,102,708,89,722,77,731,65,740,52,756,40,782,29,784,33,759,44,744,56,735,68,726,81,711,94,681,106"/>
-<area shape="poly" id="edge17_Node000018_Node000005" title=" " alt="" coords="677,101,792,80,793,85,678,107"/>
-<area shape="poly" id="edge18_Node000018_Node000006" title=" " alt="" coords="700,114,771,114,771,119,700,119"/>
+<area shape="poly" id="edge15_Node000019_Node000004" title=" " alt="" coords="679,102,708,89,722,77,731,65,740,52,756,40,782,29,784,33,759,44,744,56,735,68,726,81,711,94,681,106"/>
+<area shape="poly" id="edge17_Node000019_Node000005" title=" " alt="" coords="677,101,792,80,793,85,678,107"/>
+<area shape="poly" id="edge18_Node000019_Node000006" title=" " alt="" coords="700,114,771,114,771,119,700,119"/>
 <area shape="rect" id="Node000014" href="$d4/d36/namespacefl_acc62e8cbc43e6a7b23c7e7f5ebf72a1a.html#acc62e8cbc43e6a7b23c7e7f5ebf72a1a" title="Inverse of an s16.16 3x3 matrix, in s16.16, computed without floats." alt="" coords="813,153,939,179"/>
-<area shape="poly" id="edge16_Node000018_Node000014" title=" " alt="" coords="678,127,800,149,799,155,677,132"/>
-<area shape="rect" id="Node000022" href="$d0/d69/classfl_1_1_flux_scalar_a5a9296a2c583b737dad92df25efc0bc6.html#a5a9296a2c583b737dad92df25efc0bc6" title=" " alt="" coords="785,471,967,496"/>
-<area shape="poly" id="edge23_Node000021_Node000022" title=" " alt="" coords="681,481,771,481,771,486,681,486"/>
+<area shape="poly" id="edge16_Node000019_Node000014" title=" " alt="" coords="678,127,800,149,799,155,677,132"/>
+<area shape="poly" id="edge22_Node000021_Node000021" title=" " alt="" coords="560,445,558,435,565,426,582,420,608,418,638,421,654,428,652,433,636,426,608,423,583,425,568,430,563,436,566,443"/>
+<area shape="rect" id="Node000022" href="$df/d34/namespacefl_1_1adl__barrier_ac53ccff21210ad77549fafb987263051.html#ac53ccff21210ad77549fafb987263051" title=" " alt="" coords="793,452,959,477"/>
+<area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="684,462,779,462,779,467,684,467"/>
+<area shape="rect" id="Node000024" href="$d0/d69/classfl_1_1_flux_scalar_a5a9296a2c583b737dad92df25efc0bc6.html#a5a9296a2c583b737dad92df25efc0bc6" title=" " alt="" coords="785,509,967,535"/>
+<area shape="poly" id="edge25_Node000023_Node000024" title=" " alt="" coords="681,519,771,519,771,525,681,525"/>
 </map>

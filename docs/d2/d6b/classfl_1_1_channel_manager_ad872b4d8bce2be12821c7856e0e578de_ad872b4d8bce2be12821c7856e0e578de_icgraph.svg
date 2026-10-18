@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 516;
+var viewWidth = 685;
 var viewHeight = 86;
 var sectionId = 'dynsection-1';
 </script>
@@ -59,9 +59,9 @@ var sectionId = 'dynsection-1';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Select best driver for channel data (used by Channel::showPixels)">
-<polygon fill="#999999" stroke="#666666" points="508,-54 371,-54 371,-24 508,-24 508,-54"/>
-<text text-anchor="start" x="379" y="-42" font-family="Helvetica,sans-Serif" font-size="10.00">fl::ChannelManager</text>
-<text text-anchor="middle" x="439.5" y="-31" font-family="Helvetica,sans-Serif" font-size="10.00">::selectDriverForChannel</text>
+<polygon fill="#999999" stroke="#666666" points="677,-54 540,-54 540,-24 677,-24 677,-54"/>
+<text text-anchor="start" x="548" y="-42" font-family="Helvetica,sans-Serif" font-size="10.00">fl::ChannelManager</text>
+<text text-anchor="middle" x="608.5" y="-31" font-family="Helvetica,sans-Serif" font-size="10.00">::selectDriverForChannel</text>
 </a>
 </g>
 </g>
@@ -69,9 +69,9 @@ var sectionId = 'dynsection-1';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="../../de/d07/classfl_1_1_slim_spi_bridge_controller_ad342cd44bd75c6d02679ca04b6d4f895.html#ad342cd44bd75c6d02679ca04b6d4f895" target="_top" xlink:title="Resolve the driver for this frame.">
-<polygon fill="white" stroke="#666666" points="330.5,-78 185.5,-78 185.5,-48 330.5,-48 330.5,-78"/>
-<text text-anchor="start" x="193.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">fl::SlimSpiBridgeController</text>
-<text text-anchor="middle" x="258" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::resolveDriver</text>
+<polygon fill="white" stroke="#666666" points="499.5,-78 354.5,-78 354.5,-48 499.5,-48 499.5,-78"/>
+<text text-anchor="start" x="362.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">fl::SlimSpiBridgeController</text>
+<text text-anchor="middle" x="427" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::resolveDriver</text>
 </a>
 </g>
 </g>
@@ -79,18 +79,18 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M360.95,-49.37C350.91,-50.71 340.67,-52.08 330.74,-53.41"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="361.45,-52.83 370.89,-48.04 360.52,-45.9 361.45,-52.83"/>
+<path fill="none" stroke="#63b8ff" d="M529.95,-49.37C519.91,-50.71 509.67,-52.08 499.74,-53.41"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="530.45,-52.83 539.89,-48.04 529.52,-45.9 530.45,-52.83"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../d5/d8b/classfl_1_1_channel_a1ac53e5596ff3b71fd028a159eb542fb.html#a1ac53e5596ff3b71fd028a159eb542fb" target="_top" xlink:title="Cold slow&#45;path helper for showPixels().">
-<polygon fill="white" stroke="#666666" points="335,-30 181,-30 181,0 335,0 335,-30"/>
-<text text-anchor="start" x="189" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">fl::Channel::resolveDynamic</text>
-<text text-anchor="middle" x="258" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Driver</text>
+<g id="a_Node000004"><a xlink:href="../../d5/d8b/classfl_1_1_channel_a84ce5edb96769fc68a7599d9250e8797.html#a84ce5edb96769fc68a7599d9250e8797" target="_top" xlink:title="Cold slow&#45;path helper for showPixels().">
+<polygon fill="white" stroke="#666666" points="504,-30 350,-30 350,0 504,0 504,-30"/>
+<text text-anchor="start" x="358" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">fl::Channel::resolveDynamic</text>
+<text text-anchor="middle" x="427" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Driver</text>
 </a>
 </g>
 </g>
@@ -98,8 +98,8 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M360.98,-28.63C352.45,-27.5 343.78,-26.34 335.27,-25.2"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="360.52,-32.1 370.89,-29.96 361.45,-25.17 360.52,-32.1"/>
+<path fill="none" stroke="#63b8ff" d="M529.98,-28.63C521.45,-27.5 512.78,-26.34 504.27,-25.2"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="529.52,-32.1 539.89,-29.96 530.45,-25.17 529.52,-32.1"/>
 </a>
 </g>
 </g>
@@ -107,9 +107,9 @@ var sectionId = 'dynsection-1';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="../../de/d07/classfl_1_1_slim_spi_bridge_controller_abbd35c320bbde28d28f84e1014e0e77f.html#abbd35c320bbde28d28f84e1014e0e77f" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="145,-78 0,-78 0,-48 145,-48 145,-78"/>
-<text text-anchor="start" x="8" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">fl::SlimSpiBridgeController</text>
-<text text-anchor="middle" x="72.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::showPixels</text>
+<polygon fill="white" stroke="#666666" points="314,-78 169,-78 169,-48 314,-48 314,-78"/>
+<text text-anchor="start" x="177" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">fl::SlimSpiBridgeController</text>
+<text text-anchor="middle" x="241.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::showPixels</text>
 </a>
 </g>
 </g>
@@ -117,17 +117,17 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M174.99,-63C165.05,-63 154.96,-63 145.18,-63"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="175.27,-66.5 185.27,-63 175.27,-59.5 175.27,-66.5"/>
+<path fill="none" stroke="#63b8ff" d="M343.99,-63C334.05,-63 323.96,-63 314.18,-63"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="344.27,-66.5 354.27,-63 344.27,-59.5 344.27,-66.5"/>
 </a>
 </g>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="../../d5/d8b/classfl_1_1_channel_a44414e176c7d2ef65fcdd390f6852322.html#a44414e176c7d2ef65fcdd390f6852322" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="136.5,-24.5 8.5,-24.5 8.5,-5.5 136.5,-5.5 136.5,-24.5"/>
-<text text-anchor="middle" x="72.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">fl::Channel::showPixels</text>
+<g id="a_Node000005"><a xlink:href="../../d5/d8b/classfl_1_1_channel_a3d4edf43dc08d5c1eef22dc727ef626d.html#a3d4edf43dc08d5c1eef22dc727ef626d" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="305.5,-24.5 177.5,-24.5 177.5,-5.5 305.5,-5.5 305.5,-24.5"/>
+<text text-anchor="middle" x="241.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">fl::Channel::showPixels</text>
 </a>
 </g>
 </g>
@@ -135,8 +135,36 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M170.74,-15C159.26,-15 147.67,-15 136.68,-15"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="170.77,-18.5 180.77,-15 170.77,-11.5 170.77,-18.5"/>
+<path fill="none" stroke="#63b8ff" d="M339.74,-15C328.26,-15 316.67,-15 305.68,-15"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="339.77,-18.5 349.77,-15 339.77,-11.5 339.77,-18.5"/>
+</a>
+</g>
+</g>
+<!-- Node6 -->
+<g id="Node000006" class="node">
+<title>Node6</title>
+<g id="a_Node000006"><a xlink:href="../../d5/d8b/classfl_1_1_channel_a8ba6f538fc2fb555f8154171fc187d04.html#a8ba6f538fc2fb555f8154171fc187d04" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="133,-30 0,-30 0,0 133,0 133,-30"/>
+<text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">fl::Channel::StaticProfile</text>
+<text text-anchor="middle" x="66.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Channel</text>
+</a>
+</g>
+</g>
+<!-- Node5&#45;&gt;Node6 -->
+<g id="edge5_Node000005_Node000006" class="edge">
+<title>Node5&#45;&gt;Node6</title>
+<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M166.9,-15C155.72,-15 144.25,-15 133.25,-15"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="167.06,-18.5 177.06,-15 167.06,-11.5 167.06,-18.5"/>
+</a>
+</g>
+</g>
+<!-- Node6&#45;&gt;Node6 -->
+<g id="edge6_Node000006_Node000006" class="edge">
+<title>Node6&#45;&gt;Node6</title>
+<g id="a_edge6_Node000006_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M96.96,-40.6C92.79,-44.97 82.64,-48 66.5,-48 39.31,-48 29.12,-39.41 35.91,-30.28"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="100.46,-40.32 97.09,-30.28 93.46,-40.23 100.46,-40.32"/>
 </a>
 </g>
 </g>

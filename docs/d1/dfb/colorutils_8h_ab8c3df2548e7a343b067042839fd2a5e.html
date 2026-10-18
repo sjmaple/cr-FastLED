@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -146,47 +146,48 @@ $(function(){initNavTree('d1/dfb/colorutils_8h_ab8c3df2548e7a343b067042839fd2a5e
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d78/fill_8cpp_8hpp_source.html#l00107">107</a> of file <a class="el" href="../../d2/d78/fill_8cpp_8hpp_source.html">fill.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  108</span>                                                  {</div>
-<div class="line"><span class="lineno">  109</span>    <span class="comment">// if the points are in the wrong order, straighten them</span></div>
-<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (endpos &lt; startpos) {</div>
-<div class="line"><span class="lineno">  111</span>        u16 <a class="code hl_variable" href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a> = endpos;</div>
-<div class="line"><span class="lineno">  112</span>        <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a> tc = endcolor;</div>
-<div class="line"><span class="lineno">  113</span>        endcolor = startcolor;</div>
-<div class="line"><span class="lineno">  114</span>        endpos = startpos;</div>
-<div class="line"><span class="lineno">  115</span>        startpos = <a class="code hl_variable" href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a>;</div>
-<div class="line"><span class="lineno">  116</span>        startcolor = tc;</div>
-<div class="line"><span class="lineno">  117</span>    }</div>
-<div class="line"><span class="lineno">  118</span> </div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_define" href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a> rdistance87;</div>
-<div class="line"><span class="lineno">  120</span>    <a class="code hl_define" href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a> gdistance87;</div>
-<div class="line"><span class="lineno">  121</span>    <a class="code hl_define" href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a> bdistance87;</div>
-<div class="line"><span class="lineno">  122</span> </div>
-<div class="line"><span class="lineno">  123</span>    rdistance87 = (endcolor.r - startcolor.r) &lt;&lt; 7;</div>
-<div class="line"><span class="lineno">  124</span>    gdistance87 = (endcolor.g - startcolor.g) &lt;&lt; 7;</div>
-<div class="line"><span class="lineno">  125</span>    bdistance87 = (endcolor.b - startcolor.b) &lt;&lt; 7;</div>
-<div class="line"><span class="lineno">  126</span> </div>
-<div class="line"><span class="lineno">  127</span>    u16 pixeldistance = endpos - startpos;</div>
-<div class="line"><span class="lineno">  128</span>    i16 divisor = pixeldistance ? pixeldistance : 1;</div>
-<div class="line"><span class="lineno">  129</span> </div>
-<div class="line"><span class="lineno">  130</span>    <a class="code hl_define" href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a> rdelta87 = rdistance87 / divisor;</div>
-<div class="line"><span class="lineno">  131</span>    <a class="code hl_define" href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a> gdelta87 = gdistance87 / divisor;</div>
-<div class="line"><span class="lineno">  132</span>    <a class="code hl_define" href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a> bdelta87 = bdistance87 / divisor;</div>
-<div class="line"><span class="lineno">  133</span> </div>
-<div class="line"><span class="lineno">  134</span>    rdelta87 *= 2;</div>
-<div class="line"><span class="lineno">  135</span>    gdelta87 *= 2;</div>
-<div class="line"><span class="lineno">  136</span>    bdelta87 *= 2;</div>
-<div class="line"><span class="lineno">  137</span> </div>
-<div class="line"><span class="lineno">  138</span>    <a class="code hl_typedef" href="../../d4/d36/namespacefl_adc3b5ed85741f7c9262998df8fae7c03.html#adc3b5ed85741f7c9262998df8fae7c03">accum88</a> r88 = startcolor.r &lt;&lt; 8;</div>
-<div class="line"><span class="lineno">  139</span>    <a class="code hl_typedef" href="../../d4/d36/namespacefl_adc3b5ed85741f7c9262998df8fae7c03.html#adc3b5ed85741f7c9262998df8fae7c03">accum88</a> g88 = startcolor.g &lt;&lt; 8;</div>
-<div class="line"><span class="lineno">  140</span>    <a class="code hl_typedef" href="../../d4/d36/namespacefl_adc3b5ed85741f7c9262998df8fae7c03.html#adc3b5ed85741f7c9262998df8fae7c03">accum88</a> b88 = startcolor.b &lt;&lt; 8;</div>
-<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">for</span> (u16 i = startpos; i &lt;= endpos; ++i) {</div>
-<div class="line"><span class="lineno">  142</span>        <a class="code hl_variable" href="../../d5/d17/_analog_output_8ino_a1039e408783ef35dd94161e35efe8ee9.html#a1039e408783ef35dd94161e35efe8ee9">leds</a>[i] = <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>(r88 &gt;&gt; 8, g88 &gt;&gt; 8, b88 &gt;&gt; 8);</div>
-<div class="line"><span class="lineno">  143</span>        r88 += rdelta87;</div>
-<div class="line"><span class="lineno">  144</span>        g88 += gdelta87;</div>
-<div class="line"><span class="lineno">  145</span>        b88 += bdelta87;</div>
-<div class="line"><span class="lineno">  146</span>    }</div>
-<div class="line"><span class="lineno">  147</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d78/fill_8cpp_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../d2/d78/fill_8cpp_8hpp_source.html">fill.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  109</span>                                                               {</div>
+<div class="line"><span class="lineno">  110</span>    <span class="comment">// if the points are in the wrong order, straighten them</span></div>
+<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">if</span> (endpos &lt; startpos) {</div>
+<div class="line"><span class="lineno">  112</span>        u16 <a class="code hl_variable" href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a> = endpos;</div>
+<div class="line"><span class="lineno">  113</span>        <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a> tc = endcolor;</div>
+<div class="line"><span class="lineno">  114</span>        endcolor = startcolor;</div>
+<div class="line"><span class="lineno">  115</span>        endpos = startpos;</div>
+<div class="line"><span class="lineno">  116</span>        startpos = <a class="code hl_variable" href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a>;</div>
+<div class="line"><span class="lineno">  117</span>        startcolor = tc;</div>
+<div class="line"><span class="lineno">  118</span>    }</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>    <a class="code hl_define" href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a> rdistance87;</div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_define" href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a> gdistance87;</div>
+<div class="line"><span class="lineno">  122</span>    <a class="code hl_define" href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a> bdistance87;</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="comment">// Each difference is in [-255, 255], so scaling fits signed Q8.7.</span></div>
+<div class="line"><span class="lineno">  125</span>    rdistance87 = (endcolor.r - startcolor.r) * 128;</div>
+<div class="line"><span class="lineno">  126</span>    gdistance87 = (endcolor.g - startcolor.g) * 128;</div>
+<div class="line"><span class="lineno">  127</span>    bdistance87 = (endcolor.b - startcolor.b) * 128;</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>    u16 pixeldistance = endpos - startpos;</div>
+<div class="line"><span class="lineno">  130</span>    i16 divisor = pixeldistance ? pixeldistance : 1;</div>
+<div class="line"><span class="lineno">  131</span> </div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_define" href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a> rdelta87 = rdistance87 / divisor;</div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_define" href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a> gdelta87 = gdistance87 / divisor;</div>
+<div class="line"><span class="lineno">  134</span>    <a class="code hl_define" href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a> bdelta87 = bdistance87 / divisor;</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>    rdelta87 *= 2;</div>
+<div class="line"><span class="lineno">  137</span>    gdelta87 *= 2;</div>
+<div class="line"><span class="lineno">  138</span>    bdelta87 *= 2;</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_typedef" href="../../d4/d36/namespacefl_adc3b5ed85741f7c9262998df8fae7c03.html#adc3b5ed85741f7c9262998df8fae7c03">accum88</a> r88 = startcolor.r &lt;&lt; 8;</div>
+<div class="line"><span class="lineno">  141</span>    <a class="code hl_typedef" href="../../d4/d36/namespacefl_adc3b5ed85741f7c9262998df8fae7c03.html#adc3b5ed85741f7c9262998df8fae7c03">accum88</a> g88 = startcolor.g &lt;&lt; 8;</div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_typedef" href="../../d4/d36/namespacefl_adc3b5ed85741f7c9262998df8fae7c03.html#adc3b5ed85741f7c9262998df8fae7c03">accum88</a> b88 = startcolor.b &lt;&lt; 8;</div>
+<div class="line"><span class="lineno">  143</span>    <span class="keywordflow">for</span> (u16 i = startpos; i &lt;= endpos; ++i) {</div>
+<div class="line"><span class="lineno">  144</span>        <a class="code hl_variable" href="../../d5/d17/_analog_output_8ino_a1039e408783ef35dd94161e35efe8ee9.html#a1039e408783ef35dd94161e35efe8ee9">leds</a>[i] = <a class="code hl_typedef" href="../../dd/dc7/group___h_s_v2_r_g_b_ga65c1895006b38f8c5114118b6a170327.html#ga65c1895006b38f8c5114118b6a170327">CRGB</a>(r88 &gt;&gt; 8, g88 &gt;&gt; 8, b88 &gt;&gt; 8);</div>
+<div class="line"><span class="lineno">  145</span>        r88 += rdelta87;</div>
+<div class="line"><span class="lineno">  146</span>        g88 += gdelta87;</div>
+<div class="line"><span class="lineno">  147</span>        b88 += bdelta87;</div>
+<div class="line"><span class="lineno">  148</span>    }</div>
+<div class="line"><span class="lineno">  149</span>}</div>
 <div class="ttc" id="a_analog_output_8ino_a1039e408783ef35dd94161e35efe8ee9_html_a1039e408783ef35dd94161e35efe8ee9"><div class="ttname"><a href="../../d5/d17/_analog_output_8ino_a1039e408783ef35dd94161e35efe8ee9.html#a1039e408783ef35dd94161e35efe8ee9">leds</a></div><div class="ttdeci">CRGB leds[1]</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d17/_analog_output_8ino_source.html#l00026">AnalogOutput.ino:26</a></div></div>
 <div class="ttc" id="aexamples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe_html_ae96c939a2a46590dc79c7d9ca8331dfe"><div class="ttname"><a href="../../dc/db7/examples_2_luminova_2luminova_8h_ae96c939a2a46590dc79c7d9ca8331dfe.html#ae96c939a2a46590dc79c7d9ca8331dfe">t</a></div><div class="ttdeci">static uint32_t t</div><div class="ttdef"><b>Definition</b> <a href="../../dc/db7/examples_2_luminova_2luminova_8h_source.html#l00055">Luminova.h:55</a></div></div>
 <div class="ttc" id="afill_8h_a4e6572c5f2133d608390adfd06215c86_html_a4e6572c5f2133d608390adfd06215c86"><div class="ttname"><a href="../../d2/d78/fill_8h_a4e6572c5f2133d608390adfd06215c86.html#a4e6572c5f2133d608390adfd06215c86">saccum87</a></div><div class="ttdeci">#define saccum87</div><div class="ttdoc">ANSI: signed short _Accum.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d78/fill_8h_source.html#l00019">fill.h:19</a></div></div>
@@ -211,7 +212,7 @@ $(function(){initNavTree('d1/dfb/colorutils_8h_ab8c3df2548e7a343b067042839fd2a5e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/dfb/colorutils_8h.html">colorutils.h</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:04 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:19 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

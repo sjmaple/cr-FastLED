@@ -8,8 +8,11 @@ digraph "fl::rgb_2_rgbww"
   rankdir="RL";
   Node1 [id="Node000001",label="fl::rgb_2_rgbww",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="PixelController::loadAnd\lScaleRGBWWUnordered",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_a36f10f439589e250d8608724be6136dc.html#a36f10f439589e250d8608724be6136dc",tooltip="loadAndScaleRGBWW before its wire reorder. See loadAndScaleRGBWUnordered."];
+  Node2 [id="Node000002",label="PixelController::loadAnd\lScaleRGBWWUnordered",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_aacf4590eedb79bdcf64e8fb03872bf3f.html#aacf4590eedb79bdcf64e8fb03872bf3f",tooltip="loadAndScaleRGBWW before its wire reorder. See loadAndScaleRGBWUnordered."];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="PixelController::loadAnd\lScaleRGBWW",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_a48468aafc35cdf4f317b7256c0221789.html#a48468aafc35cdf4f317b7256c0221789",tooltip="Load + scale a single pixel to 5-channel RGBWW (issue #2558)."];
+  Node3 [id="Node000003",label="PixelController::loadAnd\lScaleRGBWW",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dee/struct_pixel_controller_a383a75a36a8c775b35d708b26ab9c64e.html#a383a75a36a8c775b35d708b26ab9c64e",tooltip="Load + scale a single pixel to 5-channel RGBWW (issue #2558)."];
   Node1 -> Node1 [id="edge3_Node000001_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node4 [id="edge4_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fl::detail::anonymous\l_namespace\{rgbww::cpp\l::hpp\}::rgbww_convert_pixel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d60/namespacefl_1_1detail_1_1anonymous__namespace_02rgbww_8cpp_8hpp_03_a5651d94e3d6958efd782d6d8bf3316bb.html#a5651d94e3d6958efd782d6d8bf3316bb",tooltip=" "];
+  Node4 -> Node4 [id="edge5_Node000004_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

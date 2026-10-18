@@ -16,7 +16,7 @@ digraph "fl::detail::scale_pow2_"
   Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node5 [id="Node000005",label="fl::exp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a2532eee1f3e3a5a9fb5cc5c5e341316d.html#a2532eee1f3e3a5a9fb5cc5c5e341316d",tooltip=" "];
   Node4 -> Node6 [id="edge5_Node000004_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="fl::pow_impl_double",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a324e17ab1c91f5fcc95356b34ca2dc3f.html#a324e17ab1c91f5fcc95356b34ca2dc3f",tooltip=" "];
+  Node6 [id="Node000006",label="fl::pow_impl_double",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a5fa05a9a50f915256f2d0f36a086e187.html#a5fa05a9a50f915256f2d0f36a086e187",tooltip=" "];
   Node3 -> Node8 [id="edge6_Node000003_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node8 [id="Node000008",label="fl::exp_impl_float",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d36/namespacefl_a40a7b61a808fb87231530da119eae16f.html#a40a7b61a808fb87231530da119eae16f",tooltip=" "];
   Node8 -> Node9 [id="edge7_Node000008_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
@@ -24,6 +24,6 @@ digraph "fl::detail::scale_pow2_"
   Node8 -> Node10 [id="edge8_Node000008_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node10 [id="Node000010",label="fl::expf",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_af27046964143ce28bf18ce86d152ff93.html#af27046964143ce28bf18ce86d152ff93",tooltip=" "];
   Node8 -> Node48 [id="edge9_Node000008_Node000048",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node48 [id="Node000048",label="fl::pow_impl_float",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a96f5f2dd80fb8deeb8997822bedd433f.html#a96f5f2dd80fb8deeb8997822bedd433f",tooltip=" "];
+  Node48 [id="Node000048",label="fl::pow_impl_float",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d4/d36/namespacefl_a819e43f1b90d47dab7932b2c0f47992e.html#a819e43f1b90d47dab7932b2c0f47992e",tooltip=" "];
   Node3 -> Node2 [id="edge10_Node000003_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

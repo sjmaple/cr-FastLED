@@ -44,14 +44,14 @@ digraph "fl/math/fixed_point/u16x16.h"
   Node15 -> Node59 [id="edge20_Node000015_Node000059",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node59 [id="Node000059",label="fl/gfx/five_bit_hd\l_gamma.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d89/five__bit__hd__gamma_8cpp_8hpp.html",tooltip=" "];
   Node59 -> Node10 [id="edge21_Node000059_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node15 -> Node205 [id="edge22_Node000015_Node000205",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node205 [id="Node000205",label="fl/gfx/hsv16.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d2f/hsv16_8cpp_8hpp.html",tooltip=" "];
-  Node205 -> Node10 [id="edge23_Node000205_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node15 -> Node206 [id="edge24_Node000015_Node000206",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node206 [id="Node000206",label="fl/gfx/hsv16.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/d1a/hsv16_8h.html",tooltip=" "];
-  Node206 -> Node205 [id="edge25_Node000206_Node000205",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 -> Node206 [id="edge22_Node000015_Node000206",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node206 [id="Node000206",label="fl/gfx/hsv16.cpp.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d2f/hsv16_8cpp_8hpp.html",tooltip=" "];
+  Node206 -> Node10 [id="edge23_Node000206_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 -> Node207 [id="edge24_Node000015_Node000207",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node207 [id="Node000207",label="fl/gfx/hsv16.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/d1a/hsv16_8h.html",tooltip=" "];
+  Node207 -> Node206 [id="edge25_Node000207_Node000206",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node15 -> Node12 [id="edge26_Node000015_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node15 -> Node191 [id="edge27_Node000015_Node000191",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node191 [id="Node000191",label="lib8tion.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/da5/lib8tion_8h.html",tooltip="Fast, efficient 8-bit math functions specifically designed for high-performance LED programming."];
-  Node191 -> Node12 [id="edge28_Node000191_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 -> Node192 [id="edge27_Node000015_Node000192",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node192 [id="Node000192",label="lib8tion.h",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$df/da5/lib8tion_8h.html",tooltip="Fast, efficient 8-bit math functions specifically designed for high-performance LED programming."];
+  Node192 -> Node12 [id="edge28_Node000192_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

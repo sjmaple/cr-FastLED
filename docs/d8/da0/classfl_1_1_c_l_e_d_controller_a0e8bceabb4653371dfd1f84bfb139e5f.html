@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -122,15 +122,15 @@ $(function(){initNavTree('d8/da0/classfl_1_1_c_l_e_d_controller_a0e8bceabb465337
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="../../d4/df9/structfl_1_1_rgbww.html" title="Per-strip RGBWW configuration.">Rgbww</a> configuration if this channel is in 5-channel mode, otherwise <a class="el" href="../../d3/d33/structfl_1_1_rgbww_invalid_a14535e5d62b94f0bea2a7503a9c525ef.html#a14535e5d62b94f0bea2a7503a9c525ef">RgbwwInvalid::value()</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="../../d4/df9/structfl_1_1_rgbww.html">Rgbww</a> configuration if this channel is in 5-channel mode, otherwise <a class="el" href="../../d3/d33/structfl_1_1_rgbww_invalid_a14535e5d62b94f0bea2a7503a9c525ef.html#a14535e5d62b94f0bea2a7503a9c525ef">RgbwwInvalid::value()</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00230">230</a> of file <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html">cled_controller.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  230</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ab755095ff9f9a11b38650c0726537386.html#ab755095ff9f9a11b38650c0726537386">mSettings</a>.rgbww(); }</div>
-<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_ab755095ff9f9a11b38650c0726537386_html_ab755095ff9f9a11b38650c0726537386"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_ab755095ff9f9a11b38650c0726537386.html#ab755095ff9f9a11b38650c0726537386">fl::CLEDController::mSettings</a></div><div class="ttdeci">ChannelOptions mSettings</div><div class="ttdoc">Optional channel settings (correction, temperature, dither, rgbw, affinity)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00044">cled_controller.h:44</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00229">229</a> of file <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html">cled_controller.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  229</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a74a93f39b05b86fe3e466f8ff40463aa.html#a74a93f39b05b86fe3e466f8ff40463aa">mLegacySettings</a>.rgbww(); }</div>
+<div class="ttc" id="aclassfl_1_1_c_l_e_d_controller_a74a93f39b05b86fe3e466f8ff40463aa_html_a74a93f39b05b86fe3e466f8ff40463aa"><div class="ttname"><a href="../../d8/da0/classfl_1_1_c_l_e_d_controller_a74a93f39b05b86fe3e466f8ff40463aa.html#a74a93f39b05b86fe3e466f8ff40463aa">fl::CLEDController::mLegacySettings</a></div><div class="ttdeci">LegacySettings mLegacySettings</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00052">cled_controller.h:52</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00044">mSettings</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">fl::FL_NO_EXCEPT</a>, and <a class="el" href="../../d6/d9d/fl_2channels_2cled__controller_8h_source.html#l00052">mLegacySettings</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d99/slim__bridge__controller_8h_source.html#l00133">fl::SlimBridgeController&lt; DATA_PIN, TIMING, RGB_ORDER, WAIT_TIME, DriverTraits, XTRA0, DIRECT_SHOW &gt;::showPixels()</a>, and <a class="el" href="../../d5/d9b/slim__spi__bridge__controller_8h_source.html#l00098">fl::SlimSpiBridgeController&lt; CHIPSET, RGB_ORDER, B, B_WHICH &gt;::showPixels()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d99/slim__bridge__controller_8h_source.html#l00136">fl::SlimBridgeController&lt; DATA_PIN, TIMING, RGB_ORDER, WAIT_TIME, DriverTraits, XTRA0, DIRECT_SHOW &gt;::showPixels()</a>, and <a class="el" href="../../d5/d9b/slim__spi__bridge__controller_8h_source.html#l00098">fl::SlimSpiBridgeController&lt; CHIPSET, RGB_ORDER, B, B_WHICH &gt;::showPixels()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -148,7 +148,7 @@ $(function(){initNavTree('d8/da0/classfl_1_1_c_l_e_d_controller_a0e8bceabb465337
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="../../d8/da0/classfl_1_1_c_l_e_d_controller.html">CLEDController</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:08 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:29 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

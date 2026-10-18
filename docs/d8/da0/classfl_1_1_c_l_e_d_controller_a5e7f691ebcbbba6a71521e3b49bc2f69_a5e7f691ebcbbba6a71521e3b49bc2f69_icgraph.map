@@ -1,0 +1,40 @@
+<map id="fl::CLEDController::onSettingsChanged" name="fl::CLEDController::onSettingsChanged">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1016,241,1172,281"/>
+<area shape="rect" id="Node000002" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a555ab146529e7623e53c780bdf111067.html#a555ab146529e7623e53c780bdf111067" title=" " alt="" coords="829,241,968,281"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1003,264,968,264,968,259,1003,259"/>
+<area shape="rect" id="Node000003" href="$d8/da0/classfl_1_1_c_l_e_d_controller_aae2f642f0dc806e8874cdaa3b86ae177.html#aae2f642f0dc806e8874cdaa3b86ae177" title="Reset this channel to plain 3&#45;channel RGB (clears any RGBW/RGBWW configuration)." alt="" coords="628,5,781,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="884,230,868,191,846,146,816,100,780,59,763,48,766,43,783,55,820,96,850,143,873,189,889,228"/>
+<area shape="rect" id="Node000004" href="$d8/da0/classfl_1_1_c_l_e_d_controller_af0d30f71a36e250fce4a47dd21c64ec0.html#af0d30f71a36e250fce4a47dd21c64ec0" title="The color corrction to use for this controller, expressed as a CRGB object." alt="" coords="637,69,773,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="875,231,835,177,809,149,780,123,761,112,763,107,783,119,812,145,839,173,880,228"/>
+<area shape="rect" id="Node000006" href="$d8/da0/classfl_1_1_c_l_e_d_controller_ad8e020b604e927758a28470f0b49c0bf.html#ad8e020b604e927758a28470f0b49c0bf" title="The color corrction to use for this controller, expressed as a CRGB object." alt="" coords="637,133,773,173"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="857,235,780,188,756,176,758,171,783,183,859,231"/>
+<area shape="rect" id="Node000007" href="$d8/da0/classfl_1_1_c_l_e_d_controller_ac6da605f844f65d778d05a9962fd327b.html#ac6da605f844f65d778d05a9962fd327b" title="Set the dithering mode for this controller to use." alt="" coords="637,197,773,237"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="815,245,772,235,773,230,816,240"/>
+<area shape="rect" id="Node000017" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a364042729b1cf127821d255d67f0f91c.html#a364042729b1cf127821d255d67f0f91c" title=" " alt="" coords="637,285,773,325"/>
+<area shape="poly" id="edge13_Node000002_Node000017" title=" " alt="" coords="816,283,773,293,772,287,815,277"/>
+<area shape="rect" id="Node000020" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a559245ee781072f6602ce27c8b5dce5e.html#a559245ee781072f6602ce27c8b5dce5e" title="Configure this channel for 5&#45;channel RGBWW (RGB + warm&#45;W + cool&#45;W) output." alt="" coords="637,349,773,389"/>
+<area shape="poly" id="edge17_Node000002_Node000020" title=" " alt="" coords="859,292,783,340,758,352,756,347,780,335,857,287"/>
+<area shape="rect" id="Node000021" href="$d8/da0/classfl_1_1_c_l_e_d_controller_af4dfaa16e23f4bde54d366f6950afabe.html#af4dfaa16e23f4bde54d366f6950afabe" title="Set the color temperature, aka white point, for this controller." alt="" coords="637,413,773,453"/>
+<area shape="poly" id="edge18_Node000002_Node000021" title=" " alt="" coords="880,295,839,349,812,378,783,403,763,415,761,411,780,399,809,374,835,346,875,291"/>
+<area shape="rect" id="Node000022" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a436416f75884d028d60cc2de24480d81.html#a436416f75884d028d60cc2de24480d81" title="Set the color temperature, aka white point, for this controller." alt="" coords="637,477,773,517"/>
+<area shape="poly" id="edge19_Node000002_Node000022" title=" " alt="" coords="889,295,873,334,850,380,820,426,783,467,766,479,763,475,780,463,816,423,846,377,868,332,884,293"/>
+<area shape="rect" id="Node000005" href="$dd/dbb/class_c_fast_l_e_d_a0ef3749ee9f081643342a2dee063c024.html#a0ef3749ee9f081643342a2dee063c024" title="Set a global color correction." alt="" coords="307,39,485,65"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="623,82,485,65,485,60,623,77"/>
+<area shape="rect" id="Node000008" href="$d8/da0/classfl_1_1_c_l_e_d_controller_a8ce6792c65f6f5dabf990b7e73960401.html#a8ce6792c65f6f5dabf990b7e73960401" title=" " alt="" coords="328,140,464,180"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="623,205,464,175,465,170,624,200"/>
+<area shape="rect" id="Node000009" href="$dd/dbb/class_c_fast_l_e_d_a5929c4c4c55bd81c7ce3859c94beb4ff.html#a5929c4c4c55bd81c7ce3859c94beb4ff" title="Update all our controllers with the current led colors, using the passed in brightness." alt="" coords="23,121,147,146"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="634,193,626,187,611,172,603,156,594,142,579,130,520,109,458,96,395,91,332,92,218,105,131,123,130,118,217,99,332,86,395,86,459,91,522,104,581,126,598,138,608,153,616,168,630,183,637,188"/>
+<area shape="rect" id="Node000010" href="$dd/dbb/class_c_fast_l_e_d_a95ca26d3b5877b87eda4f9d8877a33c0.html#a95ca26d3b5877b87eda4f9d8877a33c0" title="Set all leds on all controllers to the given color/scale." alt="" coords="5,174,164,199"/>
+<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="622,216,164,193,164,188,623,211"/>
+<area shape="rect" id="Node000016" href="$dd/dbb/class_c_fast_l_e_d_a7164f1c2822a754ecb2711d1241b9066.html#a7164f1c2822a754ecb2711d1241b9066" title="Set the dithering mode." alt="" coords="321,255,471,281"/>
+<area shape="poly" id="edge10_Node000007_Node000016" title=" " alt="" coords="623,233,472,258,471,253,623,228"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="314,156,147,141,147,136,315,150"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="315,170,165,183,164,177,314,164"/>
+<area shape="poly" id="edge16_Node000017_Node000017" title=" " alt="" coords="737,273,726,267,705,264,686,266,675,271,671,277,674,284,668,286,666,276,672,267,685,261,705,259,727,262,740,269"/>
+<area shape="rect" id="Node000018" href="$d4/d28/group___chipsets_ga97658e9e649de018721c764471a1f28b.html#ga97658e9e649de018721c764471a1f28b" title="Constructor with optional RGBW configuration." alt="" coords="297,305,495,345"/>
+<area shape="poly" id="edge14_Node000017_Node000018" title=" " alt="" coords="623,313,495,322,495,316,623,308"/>
+<area shape="rect" id="Node000019" href="$dd/d78/classfl_1_1_u_c_s7604_controller_t_add5d5c951f716317e0181b06af9d9cbc.html#add5d5c951f716317e0181b06af9d9cbc" title=" " alt="" coords="212,370,580,454"/>
+<area shape="poly" id="edge15_Node000017_Node000019" title=" " alt="" coords="645,333,581,360,544,372,543,367,579,355,642,328"/>
+<area shape="rect" id="Node000023" href="$dd/dbb/class_c_fast_l_e_d_acd6116a75cc3cfd9a8b42ef375b1da22.html#acd6116a75cc3cfd9a8b42ef375b1da22" title="Set a global color temperature." alt="" coords="300,485,492,510"/>
+<area shape="poly" id="edge20_Node000022_Node000023" title=" " alt="" coords="623,500,492,500,492,495,623,495"/>
+</map>

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -117,31 +117,33 @@ $(function(){initNavTree('d4/d36/namespacefl_a43cf87c5783c64b286e3119a15479be0.h
 
 <p>8-bit cubic ease-in/ease-out function Takes an input value 0-255 and returns an eased value 0-255 More pronounced easing curve than quadratic </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html">ease.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>                         {</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keyword">constexpr</span> u16 MAX = 0xFF;                  <span class="comment">// 255</span></div>
-<div class="line"><span class="lineno">   86</span>    <span class="keyword">constexpr</span> u16 HALF = (MAX + 1) &gt;&gt; 1;       <span class="comment">// 128</span></div>
-<div class="line"><span class="lineno">   87</span>    <span class="keyword">constexpr</span> u32 DENOM = (u32)MAX * MAX; <span class="comment">// 255*255 = 65025</span></div>
-<div class="line"><span class="lineno">   88</span>    <span class="keyword">constexpr</span> u32 ROUND = DENOM &gt;&gt; 1;          <span class="comment">// for rounding</span></div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">if</span> (i &lt; HALF) {</div>
-<div class="line"><span class="lineno">   91</span>        <span class="comment">// first half: y = 4·(i/MAX)³ → y_i = 4·i³ / MAX²</span></div>
-<div class="line"><span class="lineno">   92</span>        u32 ii = i;</div>
-<div class="line"><span class="lineno">   93</span>        u32 cube = ii * ii * ii;    <span class="comment">// i³</span></div>
-<div class="line"><span class="lineno">   94</span>        u32 num = 4 * cube + ROUND; <span class="comment">// 4·i³, +half denom for rounding</span></div>
-<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a>(num / DENOM);</div>
-<div class="line"><span class="lineno">   96</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   97</span>        <span class="comment">// second half: y = 1 − ((−2·t+2)³)/2</span></div>
-<div class="line"><span class="lineno">   98</span>        <span class="comment">// where t = i/MAX; equivalently:</span></div>
-<div class="line"><span class="lineno">   99</span>        <span class="comment">// y_i = MAX − (4·(MAX−i)³ / MAX²)</span></div>
-<div class="line"><span class="lineno">  100</span>        u32 d = MAX - i;</div>
-<div class="line"><span class="lineno">  101</span>        u32 cube = d * d * d; <span class="comment">// (MAX−i)³</span></div>
-<div class="line"><span class="lineno">  102</span>        u32 num = 4 * cube + ROUND;</div>
-<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a>(MAX - (num / DENOM));</div>
-<div class="line"><span class="lineno">  104</span>    }</div>
-<div class="line"><span class="lineno">  105</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html#l00085">85</a> of file <a class="el" href="../../df/d60/ease_8cpp_8hpp_source.html">ease.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>                                      {</div>
+<div class="line"><span class="lineno">   86</span>    <span class="keyword">constexpr</span> u16 MAX = 0xFF;                  <span class="comment">// 255</span></div>
+<div class="line"><span class="lineno">   87</span>    <span class="keyword">constexpr</span> u16 HALF = (MAX + 1) &gt;&gt; 1;       <span class="comment">// 128</span></div>
+<div class="line"><span class="lineno">   88</span>    <span class="keyword">constexpr</span> u32 DENOM = (u32)MAX * MAX; <span class="comment">// 255*255 = 65025</span></div>
+<div class="line"><span class="lineno">   89</span>    <span class="keyword">constexpr</span> u32 ROUND = DENOM &gt;&gt; 1;          <span class="comment">// for rounding</span></div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">if</span> (i &lt; HALF) {</div>
+<div class="line"><span class="lineno">   92</span>        <span class="comment">// first half: y = 4·(i/MAX)³ → y_i = 4·i³ / MAX²</span></div>
+<div class="line"><span class="lineno">   93</span>        u32 ii = i;</div>
+<div class="line"><span class="lineno">   94</span>        u32 cube = ii * ii * ii;    <span class="comment">// i³</span></div>
+<div class="line"><span class="lineno">   95</span>        u32 num = 4 * cube + ROUND; <span class="comment">// 4·i³, +half denom for rounding</span></div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a>(num / DENOM);</div>
+<div class="line"><span class="lineno">   97</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   98</span>        <span class="comment">// second half: y = 1 − ((−2·t+2)³)/2</span></div>
+<div class="line"><span class="lineno">   99</span>        <span class="comment">// where t = i/MAX; equivalently:</span></div>
+<div class="line"><span class="lineno">  100</span>        <span class="comment">// y_i = MAX − (4·(MAX−i)³ / MAX²)</span></div>
+<div class="line"><span class="lineno">  101</span>        u32 d = MAX - i;</div>
+<div class="line"><span class="lineno">  102</span>        u32 cube = d * d * d; <span class="comment">// (MAX−i)³</span></div>
+<div class="line"><span class="lineno">  103</span>        u32 num = 4 * cube + ROUND;</div>
+<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a>(MAX - (num / DENOM));</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+<div class="line"><span class="lineno">  106</span>}</div>
 <div class="ttc" id="anamespacefl_a058ceeac48f181da463c2ba07401292c_html_a058ceeac48f181da463c2ba07401292c"><div class="ttname"><a href="../../d4/d36/namespacefl_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">fl::u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00131">stdint.h:131</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">FL_NO_EXCEPT</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../db/d19/ease_8h_source.html#l00224">ease8()</a>, and <a class="el" href="../../db/d19/ease_8h_source.html#l00208">ease8()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -160,7 +162,7 @@ $(function(){initNavTree('d4/d36/namespacefl_a43cf87c5783c64b286e3119a15479be0.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:07 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:28 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

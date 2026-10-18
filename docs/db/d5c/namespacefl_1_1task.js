@@ -1,8 +1,8 @@
 var namespacefl_1_1task =
 [
     [ "anonymous_namespace{task.cpp.hpp}", "d1/df1/namespacefl_1_1task_1_1anonymous__namespace_02task_8cpp_8hpp_03.html", [
-      [ "make_trace_label", "d1/df1/namespacefl_1_1task_1_1anonymous__namespace_02task_8cpp_8hpp_03_a970507b3c42f77e7f23c8310e8e240ab.html#a970507b3c42f77e7f23c8310e8e240ab", null ],
-      [ "next_task_id", "d1/df1/namespacefl_1_1task_1_1anonymous__namespace_02task_8cpp_8hpp_03_adde333eb117a0cf707f40c74ae143ec2.html#adde333eb117a0cf707f40c74ae143ec2", null ]
+      [ "make_trace_label", "d1/df1/namespacefl_1_1task_1_1anonymous__namespace_02task_8cpp_8hpp_03_acaab9e15a9380c03474838313d6ee051.html#acaab9e15a9380c03474838313d6ee051", null ],
+      [ "next_task_id", "d1/df1/namespacefl_1_1task_1_1anonymous__namespace_02task_8cpp_8hpp_03_af30705ca492a95fd532747a443e131b7.html#af30705ca492a95fd532747a443e131b7", null ]
     ] ],
     [ "detail", "de/d4f/namespacefl_1_1task_1_1detail.html", "de/d4f/namespacefl_1_1task_1_1detail" ],
     [ "Coroutine", "d7/dd9/classfl_1_1task_1_1_coroutine.html", "d7/dd9/classfl_1_1task_1_1_coroutine" ],
@@ -30,7 +30,7 @@ var namespacefl_1_1task =
       [ "kAfterFrame", "db/d5c/namespacefl_1_1task_ae06d127a1ddb858d432f064e4393f4fd.html#ae06d127a1ddb858d432f064e4393f4fda6079a274a1dcd7e08722e5316af0b537", null ],
       [ "kCoroutine", "db/d5c/namespacefl_1_1task_ae06d127a1ddb858d432f064e4393f4fd.html#ae06d127a1ddb858d432f064e4393f4fdaf79290fdb06503a03f8d833da7eabda2", null ]
     ] ],
-    [ "active_tasks", "db/d5c/namespacefl_1_1task_a6a58101911996ef5e9fbf0d79b3faa81.html#a6a58101911996ef5e9fbf0d79b3faa81", null ],
+    [ "active_tasks", "db/d5c/namespacefl_1_1task_a856dd0fbd58312a6412fb836d3fc665f.html#a856dd0fbd58312a6412fb836d3fc665f", null ],
     [ "after_frame", "db/d5c/namespacefl_1_1task_a2cf7a502efaac92b3c0228e4c19a3c62.html#a2cf7a502efaac92b3c0228e4c19a3c62", null ],
     [ "after_frame", "db/d5c/namespacefl_1_1task_aad7ed3cc9d48bf535574cca4aeeeb6d4.html#aad7ed3cc9d48bf535574cca4aeeeb6d4", null ],
     [ "after_frame", "db/d5c/namespacefl_1_1task_ab174ceb644dcb2fc8f49d2778871f4d5.html#ab174ceb644dcb2fc8f49d2778871f4d5", null ],
@@ -38,24 +38,25 @@ var namespacefl_1_1task =
     [ "at_framerate", "db/d5c/namespacefl_1_1task_a7972dc3aa503dbb109098b96ba8df203.html#a7972dc3aa503dbb109098b96ba8df203", null ],
     [ "at_framerate", "db/d5c/namespacefl_1_1task_a5a76b9235c43573eac6cf6aa053fa5c1.html#a5a76b9235c43573eac6cf6aa053fa5c1", null ],
     [ "await", "db/d5c/namespacefl_1_1task_a85deae5ae9d4c15fc28125ffd9a7637b.html#a85deae5ae9d4c15fc28125ffd9a7637b", null ],
-    [ "await_top_level", "db/d5c/namespacefl_1_1task_ab96dc4828a01d1cff109d355d8ffc23d.html#ab96dc4828a01d1cff109d355d8ffc23d", null ],
+    [ "await_top_level", "db/d5c/namespacefl_1_1task_afc3fa4e9491bbb7bbb8575225af6a731.html#afc3fa4e9491bbb7bbb8575225af6a731", null ],
     [ "before_frame", "db/d5c/namespacefl_1_1task_a1865fb97f123e1ba94b5885c03c272fd.html#a1865fb97f123e1ba94b5885c03c272fd", null ],
     [ "before_frame", "db/d5c/namespacefl_1_1task_a92a539bc4facb1c70cc6c448dc977aa3.html#a92a539bc4facb1c70cc6c448dc977aa3", null ],
     [ "coroutine", "db/d5c/namespacefl_1_1task_a5122e88cce37c48ef7b7c9360e3b7f53.html#a5122e88cce37c48ef7b7c9360e3b7f53", null ],
     [ "every_ms", "db/d5c/namespacefl_1_1task_ad990b0044cf3097520e9afa9aa6b27f5.html#ad990b0044cf3097520e9afa9aa6b27f5", null ],
     [ "every_ms", "db/d5c/namespacefl_1_1task_a992ce678ab8aaa8378eae6d71d386ce3.html#a992ce678ab8aaa8378eae6d71d386ce3", null ],
     [ "exit_current", "db/d5c/namespacefl_1_1task_af022846676fa6b1c8acf02b97ddd5634.html#af022846676fa6b1c8acf02b97ddd5634", null ],
-    [ "has_tasks", "db/d5c/namespacefl_1_1task_a05592fe9c4d006c2fc3e7bc0c3454639.html#a05592fe9c4d006c2fc3e7bc0c3454639", null ],
-    [ "make_error", "db/d5c/namespacefl_1_1task_a711cd941776eddb82036bca338add1df.html#a711cd941776eddb82036bca338add1df", null ],
-    [ "make_error", "db/d5c/namespacefl_1_1task_ad825b06c2050f8ccbb83547496bec96d.html#ad825b06c2050f8ccbb83547496bec96d", null ],
-    [ "make_error", "db/d5c/namespacefl_1_1task_a60965f75d35becdd28a09d8116bae477.html#a60965f75d35becdd28a09d8116bae477", null ],
-    [ "make_error", "db/d5c/namespacefl_1_1task_a935dfe05413e5dd22457fd3a51b7bae3.html#a935dfe05413e5dd22457fd3a51b7bae3", null ],
+    [ "has_tasks", "db/d5c/namespacefl_1_1task_a89ed81a473954fc0c9f648980fd1dc86.html#a89ed81a473954fc0c9f648980fd1dc86", null ],
+    [ "make_error", "db/d5c/namespacefl_1_1task_adbcbf556946e05166e0ea590d6d38564.html#adbcbf556946e05166e0ea590d6d38564", null ],
+    [ "make_error", "db/d5c/namespacefl_1_1task_a44e75cce90a6ed89b6bd468fd38cc403.html#a44e75cce90a6ed89b6bd468fd38cc403", null ],
+    [ "make_error", "db/d5c/namespacefl_1_1task_a6de919e593aa763216539b7b6fd05085.html#a6de919e593aa763216539b7b6fd05085", null ],
+    [ "make_error", "db/d5c/namespacefl_1_1task_a87334dbeefb15841d96923cf79a3fcdc.html#a87334dbeefb15841d96923cf79a3fcdc", null ],
     [ "make_rejected_promise", "db/d5c/namespacefl_1_1task_a4db420b5c5a95086c5bb2af14528b2cc.html#a4db420b5c5a95086c5bb2af14528b2cc", null ],
     [ "make_rejected_promise", "db/d5c/namespacefl_1_1task_a626a7fa700d62ff4bf48ece1ac33db19.html#a626a7fa700d62ff4bf48ece1ac33db19", null ],
     [ "make_resolved_promise", "db/d5c/namespacefl_1_1task_aa07eea38975519ed11d9533b8ce59c21.html#aa07eea38975519ed11d9533b8ce59c21", null ],
-    [ "make_success", "db/d5c/namespacefl_1_1task_a1f88c7d21ca665e4b874f60575f0e8c8.html#a1f88c7d21ca665e4b874f60575f0e8c8", null ],
-    [ "make_success", "db/d5c/namespacefl_1_1task_a5ffea087444767b0c9a74fc1dff65ed2.html#a5ffea087444767b0c9a74fc1dff65ed2", null ],
-    [ "operator&", "db/d5c/namespacefl_1_1task_afc49216ea6aa9f8b92deb25a61f22d2e.html#afc49216ea6aa9f8b92deb25a61f22d2e", null ],
-    [ "operator|", "db/d5c/namespacefl_1_1task_a063141fc1de4825bbac14f255e3cb551.html#a063141fc1de4825bbac14f255e3cb551", null ],
-    [ "run", "db/d5c/namespacefl_1_1task_a2d40b476742263a3fa212e24b722e3ef.html#a2d40b476742263a3fa212e24b722e3ef", null ]
+    [ "make_success", "db/d5c/namespacefl_1_1task_a572891a462df7cf872dce761485b1836.html#a572891a462df7cf872dce761485b1836", null ],
+    [ "make_success", "db/d5c/namespacefl_1_1task_ae51223bd3a32eced6f96548691450dd0.html#ae51223bd3a32eced6f96548691450dd0", null ],
+    [ "operator&", "db/d5c/namespacefl_1_1task_af4059ad4a1fab6b91cb1aa0b10ae8919.html#af4059ad4a1fab6b91cb1aa0b10ae8919", null ],
+    [ "operator|", "db/d5c/namespacefl_1_1task_ade576cbee7f382431e8ea5771b0905d4.html#ade576cbee7f382431e8ea5771b0905d4", null ],
+    [ "run", "db/d5c/namespacefl_1_1task_a87731f311576c5c3ee37172107671afd.html#a87731f311576c5c3ee37172107671afd", null ],
+    [ "yield_system", "db/d5c/namespacefl_1_1task_a671f011a329e7aba52d4c0790273e05c.html#a671f011a329e7aba52d4c0790273e05c", null ]
 ];

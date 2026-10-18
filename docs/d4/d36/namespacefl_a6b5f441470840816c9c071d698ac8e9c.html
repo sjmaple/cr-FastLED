@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -122,22 +122,22 @@ $(function(){initNavTree('d4/d36/namespacefl_a6b5f441470840816c9c071d698ac8e9c.h
 <p>Out-param overload: fill an existing 2 KB <a class="el" href="../../d6/d18/classfl_1_1_l_u_t.html">LUT</a> in place. </p>
 <p>Prefer this on embedded targets — the by-value overload materialises a 2 KB temporary on the caller's stack (FastLED#3569 stack-canary panic on classic ESP32's 8 KB loop task). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d81/wave8_8cpp_8hpp_source.html#l00314">314</a> of file <a class="el" href="../../d8/d81/wave8_8cpp_8hpp_source.html">wave8.cpp.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  315</span>                                                                         {</div>
-<div class="line"><span class="lineno">  316</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> b = 0; b &lt; 256; ++b) {</div>
-<div class="line"><span class="lineno">  317</span>        <span class="keyword">const</span> <a class="code hl_struct" href="../../d4/d36/namespacefl.html#df/dfb/structfl_1_1_wave8_bit">Wave8Bit</a> *hi = nibble.lut[(b &gt;&gt; 4) &amp; 0xF];</div>
-<div class="line"><span class="lineno">  318</span>        <span class="keyword">const</span> <a class="code hl_struct" href="../../d4/d36/namespacefl.html#df/dfb/structfl_1_1_wave8_bit">Wave8Bit</a> *lo = nibble.lut[b &amp; 0xF];</div>
-<div class="line"><span class="lineno">  319</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 4; ++i) {</div>
-<div class="line"><span class="lineno">  320</span>            out.lut[b].symbols[i] = hi[i];</div>
-<div class="line"><span class="lineno">  321</span>            out.lut[b].symbols[i + 4] = lo[i];</div>
-<div class="line"><span class="lineno">  322</span>        }</div>
-<div class="line"><span class="lineno">  323</span>    }</div>
-<div class="line"><span class="lineno">  324</span>}</div>
-<div class="ttc" id="anamespacefl_html_df/dfb/structfl_1_1_wave8_bit"><div class="ttname"><a href="../../d4/d36/namespacefl.html#df/dfb/structfl_1_1_wave8_bit">fl::Wave8Bit</a></div><div class="ttdoc">Type-safe container for packed 8-bit wave pulse pattern.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d32/wave8_8h_source.html#l00022">wave8.h:22</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d8/d81/wave8_8cpp_8hpp_source.html#l00315">315</a> of file <a class="el" href="../../d8/d81/wave8_8cpp_8hpp_source.html">wave8.cpp.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  316</span>                                                                         {</div>
+<div class="line"><span class="lineno">  317</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> b = 0; b &lt; 256; ++b) {</div>
+<div class="line"><span class="lineno">  318</span>        <span class="keyword">const</span> <a class="code hl_struct" href="../../d4/d36/namespacefl.html#df/dfb/structfl_1_1_wave8_bit">Wave8Bit</a> *hi = nibble.lut[(b &gt;&gt; 4) &amp; 0xF];</div>
+<div class="line"><span class="lineno">  319</span>        <span class="keyword">const</span> <a class="code hl_struct" href="../../d4/d36/namespacefl.html#df/dfb/structfl_1_1_wave8_bit">Wave8Bit</a> *lo = nibble.lut[b &amp; 0xF];</div>
+<div class="line"><span class="lineno">  320</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 4; ++i) {</div>
+<div class="line"><span class="lineno">  321</span>            out.lut[b].symbols[i] = hi[i];</div>
+<div class="line"><span class="lineno">  322</span>            out.lut[b].symbols[i + 4] = lo[i];</div>
+<div class="line"><span class="lineno">  323</span>        }</div>
+<div class="line"><span class="lineno">  324</span>    }</div>
+<div class="line"><span class="lineno">  325</span>}</div>
+<div class="ttc" id="anamespacefl_html_df/dfb/structfl_1_1_wave8_bit"><div class="ttname"><a href="../../d4/d36/namespacefl.html#df/dfb/structfl_1_1_wave8_bit">fl::Wave8Bit</a></div><div class="ttdoc">Type-safe container for packed 8-bit wave pulse pattern.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d32/wave8_8h_source.html#l00023">wave8.h:23</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/df8/fl_2gfx_2rgbw_8h_source.html#l00121">FL_NO_EXCEPT</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/blur_8h_source.html#l00186">FL_NO_EXCEPT</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d81/wave8_8cpp_8hpp_source.html#l00326">buildWave8ByteExpansionLUT()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d81/wave8_8cpp_8hpp_source.html#l00327">buildWave8ByteExpansionLUT()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -155,7 +155,7 @@ $(function(){initNavTree('d4/d36/namespacefl_a6b5f441470840816c9c071d698ac8e9c.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d36/namespacefl.html">fl</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:07 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:28 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->

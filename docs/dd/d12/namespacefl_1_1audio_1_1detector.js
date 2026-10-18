@@ -1,7 +1,7 @@
 var namespacefl_1_1audio_1_1detector =
 [
     [ "anonymous_namespace{equalizer.cpp.hpp}", "dd/dab/namespacefl_1_1audio_1_1detector_1_1anonymous__namespace_02equalizer_8cpp_8hpp_03.html", [
-      [ "applyScaling", "dd/dab/namespacefl_1_1audio_1_1detector_1_1anonymous__namespace_02equalizer_8cpp_8hpp_03_a2453925bbae4e1b50541dd85dd4b5cbb.html#a2453925bbae4e1b50541dd85dd4b5cbb", null ],
+      [ "applyScaling", "dd/dab/namespacefl_1_1audio_1_1detector_1_1anonymous__namespace_02equalizer_8cpp_8hpp_03_aa47f737a712e83d33c77770ab263b511.html#aa47f737a712e83d33c77770ab263b511", null ],
       [ "kBassEnd", "dd/dab/namespacefl_1_1audio_1_1detector_1_1anonymous__namespace_02equalizer_8cpp_8hpp_03_a4e0cc4906bd595664c9259bde92b8b14.html#a4e0cc4906bd595664c9259bde92b8b14", null ],
       [ "kBassStart", "dd/dab/namespacefl_1_1audio_1_1detector_1_1anonymous__namespace_02equalizer_8cpp_8hpp_03_a5fe5890a681c5cf0f9889cf1d74ec17b.html#a5fe5890a681c5cf0f9889cf1d74ec17b", null ],
       [ "kMidEnd", "dd/dab/namespacefl_1_1audio_1_1detector_1_1anonymous__namespace_02equalizer_8cpp_8hpp_03_aa10704265dbb17cac21f946cb31af19d.html#aa10704265dbb17cac21f946cb31af19d", null ],

@@ -31,7 +31,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.10.8</span>
    </div>
   </td>
  </tr>
@@ -122,38 +122,38 @@ $(function(){initNavTree('d6/db6/stream__server_8h_source.html','../../'); initR
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">class </span><a class="code hl_typedef" href="../../d7/d8f/namespacefl_1_1net_1_1rpc_a9b2e6d9dfa1b5f4487550ab2891bf7ad.html#a9b2e6d9dfa1b5f4487550ab2891bf7ad">HttpStreamServer</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../db/d4e/classfl_1_1net_1_1http_1_1_http_stream_transport.html">HttpStreamTransport</a> {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_typedef" href="../../d7/d8f/namespacefl_1_1net_1_1rpc_a9b2e6d9dfa1b5f4487550ab2891bf7ad.html#a9b2e6d9dfa1b5f4487550ab2891bf7ad">HttpStreamServer</a>(u16 port = 8080, u32 heartbeatIntervalMs = 30000);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_typedef" href="../../d7/d8f/namespacefl_1_1net_1_1rpc_a9b2e6d9dfa1b5f4487550ab2891bf7ad.html#a9b2e6d9dfa1b5f4487550ab2891bf7ad">HttpStreamServer</a>(u16 port = 8080, u32 heartbeatIntervalMs = 30000) <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    ~HttpStreamServer() <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a> override;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">// Connection Management (override from HttpStreamTransport)</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">bool</span> connect() override;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">bool</span> connect() <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a> override;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> disconnect() override;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> disconnect() <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a> override;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">bool</span> isConnected() const override;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">bool</span> isConnected() const <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a> override;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// Server-specific methods</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    u16 port() const;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    u16 port() const <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a>;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> acceptClients();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> acceptClients() <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">size_t</span> getClientCount() const;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">size_t</span> getClientCount() const <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a>;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> disconnectClient(u32 clientId);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> disconnectClient(u32 clientId) <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    fl::vector&lt;u32&gt; getClientIds() const;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    fl::vector&lt;u32&gt; getClientIds() const <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a>;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>protected:</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// Abstract methods implementation (from HttpStreamTransport)</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">int</span> sendData(fl::span&lt;const <a class="code hl_typedef" href="../../df/da5/lib8tion_8h_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a>&gt; data) override;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">int</span> sendData(fl::span&lt;const <a class="code hl_typedef" href="../../df/da5/lib8tion_8h_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a>&gt; data) <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a> override;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">int</span> recvData(fl::span&lt;<a class="code hl_typedef" href="../../df/da5/lib8tion_8h_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a>&gt; buffer) override;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">int</span> recvData(fl::span&lt;<a class="code hl_typedef" href="../../df/da5/lib8tion_8h_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a>&gt; buffer) <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a> override;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">void</span> triggerReconnect() override;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">void</span> triggerReconnect() <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a> override;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>private:</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    struct ClientState {</div>
@@ -175,24 +175,24 @@ $(function(){initNavTree('d6/db6/stream__server_8h_source.html','../../'); initR
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        ClientState(u32 <span class="keywordtype">id</span>)</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            : clientId(id)</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            , httpHeaderReceived(false)</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            , httpHeaderSent(false)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a> : clientId(<span class="keywordtype">id</span>)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            , httpHeaderReceived(<span class="keyword">false</span>)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            , httpHeaderSent(<span class="keyword">false</span>)</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            , requestParser()</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            , pendingData()</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        {</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    };</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">bool</span> readHttpRequestHeader(u32 clientId);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">bool</span> readHttpRequestHeader(u32 clientId) <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a>;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">bool</span> sendHttpResponseHeader(u32 clientId);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">bool</span> sendHttpResponseHeader(u32 clientId) <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a>;</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordtype">bool</span> processClientData(u32 clientId);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordtype">bool</span> processClientData(u32 clientId) <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a>;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    ClientState* getOrCreateClientState(u32 clientId);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    ClientState* getOrCreateClientState(u32 clientId) <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a>;</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordtype">void</span> removeClientState(u32 clientId);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordtype">void</span> removeClientState(u32 clientId) <a class="code hl_define" href="../../df/d96/s16x16x4_8h_abae81a69398c715960350e0a571b754a.html#abae81a69398c715960350e0a571b754a">FL_NO_EXCEPT</a>;</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span></div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    fl::unique_ptr&lt;NativeHttpServer&gt; mNativeServer;</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span></div>
@@ -214,7 +214,7 @@ $(function(){initNavTree('d6/db6/stream__server_8h_source.html','../../'); initR
 <div class="ttc" id="aflat__map_8h_html"><div class="ttname"><a href="../../dd/d68/flat__map_8h.html">flat_map.h</a></div></div>
 <div class="ttc" id="ahttp__parser_8h_html"><div class="ttname"><a href="../../d0/dd7/http__parser_8h.html">http_parser.h</a></div></div>
 <div class="ttc" id="alib8tion_8h_a058ceeac48f181da463c2ba07401292c_html_a058ceeac48f181da463c2ba07401292c"><div class="ttname"><a href="../../df/da5/lib8tion_8h_a058ceeac48f181da463c2ba07401292c.html#a058ceeac48f181da463c2ba07401292c">u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd8/stdint_8h_source.html#l00131">stdint.h:131</a></div></div>
-<div class="ttc" id="anamespacefl_1_1net_1_1http_html"><div class="ttname"><a href="../../d1/d13/namespacefl_1_1net_1_1http.html">fl::net::http</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dee/chunked__encoding_8cpp_8hpp_source.html#l00012">chunked_encoding.cpp.hpp:12</a></div></div>
+<div class="ttc" id="anamespacefl_1_1net_1_1http_html"><div class="ttname"><a href="../../d1/d13/namespacefl_1_1net_1_1http.html">fl::net::http</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dee/chunked__encoding_8cpp_8hpp_source.html#l00013">chunked_encoding.cpp.hpp:13</a></div></div>
 <div class="ttc" id="anamespacefl_1_1net_1_1rpc_a9b2e6d9dfa1b5f4487550ab2891bf7ad_html_a9b2e6d9dfa1b5f4487550ab2891bf7ad"><div class="ttname"><a href="../../d7/d8f/namespacefl_1_1net_1_1rpc_a9b2e6d9dfa1b5f4487550ab2891bf7ad.html#a9b2e6d9dfa1b5f4487550ab2891bf7ad">fl::net::rpc::HttpStreamServer</a></div><div class="ttdeci">::fl::net::http::HttpStreamServer HttpStreamServer</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dd2/net_2rpc_8h_source.html#l00018">rpc.h:18</a></div></div>
 <div class="ttc" id="anamespacefl_1_1net_html"><div class="ttname"><a href="../../d5/dc9/namespacefl_1_1net.html">fl::net</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d43/ble_8cpp_8hpp_source.html#l00018">ble.cpp.hpp:18</a></div></div>
 <div class="ttc" id="anamespacefl_html"><div class="ttname"><a href="../../d4/d36/namespacefl.html">fl</a></div><div class="ttdoc">Base definition for an LED controller.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d4b/crgb_8hpp_source.html#l00179">crgb.hpp:179</a></div></div>
@@ -232,7 +232,7 @@ $(function(){initNavTree('d6/db6/stream__server_8h_source.html','../../'); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><a class="el" href="../../dir_ee7bb840567d2a40e3fb8b087d5fcce7.html">net</a></li><li class="navelem"><a class="el" href="../../dir_86ed0646f3ed90748433a3a21bcd7a77.html">http</a></li><li class="navelem"><a class="el" href="../../d6/db6/stream__server_8h.html">stream_server.h</a></li>
-    <li class="footer">Generated on Sun Oct 4 2026 23:09:01 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Oct 18 2026 00:46:15 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 <!-- ... -->
